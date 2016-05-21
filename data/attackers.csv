@@ -2,22 +2,20 @@
 "David Villa","COC-G",2013,2,3
 "David Villa","COC-G",2009,3,3
 "Fernando Llorente","COC-G",2009,1,1
-"Mario Balotelli","COC-G",2013,3,2
-"Pedro","COC-G",2013,2,1
 "Fernando Torres","COC-G",2013,2,5
 "Fernando Torres","COC-G",2009,3,3
 "Lukas Podolski","COC-G",2005,2,1
+"Mario Balotelli","COC-G",2013,3,2
+"Pedro","COC-G",2013,2,1
 "Theofanis Gekas","COC-G",2005,2,0
 "David Silva","COC-K",2013,1,0
 "David Villa","COC-K",2013,1,0
 "David Villa","COC-K",2009,2,0
 "Fernando Llorente","COC-K",2009,1,0
-"Pedro","COC-K",2013,2,0
 "Fernando Torres","COC-K",2013,2,0
 "Fernando Torres","COC-K",2009,2,0
 "Lukas Podolski","COC-K",2005,2,2
-"Shane Long","EUC-G",2012,2,0
-"Simon Cox","EUC-G",2012,3,0
+"Pedro","COC-K",2013,2,0
 "Aiden McGeady","EUC-G",2012,1,0
 "Alan Dzagoev","EUC-G",2012,3,3
 "Aleksandr Kokorin","EUC-G",2012,1,0
@@ -117,7 +115,9 @@
 "Roman Kienast","EUC-G",2008,3,0
 "Roman Pavlyuchenko","EUC-G",2012,3,1
 "Roman Pavlyuchenko","EUC-G",2008,3,1
+"Shane Long","EUC-G",2012,2,0
 "Silvestre Varela","EUC-G",2012,2,1
+"Simon Cox","EUC-G",2012,3,0
 "Sotiris Ninis","EUC-G",2012,1,0
 "Theofanis Gekas","EUC-G",2012,3,1
 "Theofanis Gekas","EUC-G",2008,2,0
@@ -798,6 +798,16 @@
 "Helder Postiga","Friendlies",2004,4,1
 "Helder Postiga","Friendlies",2003,4,2
 "Hovhannes Goharyan","Friendlies",2009,1,0
+"Hugo Almeida","Friendlies",2015,1,0
+"Hugo Almeida","Friendlies",2014,2,2
+"Hugo Almeida","Friendlies",2013,1,0
+"Hugo Almeida","Friendlies",2012,5,1
+"Hugo Almeida","Friendlies",2011,4,2
+"Hugo Almeida","Friendlies",2010,4,4
+"Hugo Almeida","Friendlies",2009,3,2
+"Hugo Almeida","Friendlies",2008,5,0
+"Hugo Almeida","Friendlies",2006,1,0
+"Hugo Almeida","Friendlies",2004,1,0
 "Igor de Camargo","Friendlies",2012,1,0
 "Igor de Camargo","Friendlies",2011,2,0
 "Igor de Camargo","Friendlies",2009,1,0
@@ -1043,6 +1053,9 @@
 "Nejc Pecnik","Friendlies",2011,2,0
 "Nejc Pecnik","Friendlies",2010,1,0
 "Nejc Pecnik","Friendlies",2009,1,0
+"Nelson Oliveira","Friendlies",2015,2,0
+"Nelson Oliveira","Friendlies",2013,4,0
+"Nelson Oliveira","Friendlies",2012,4,1
 "Nicklas Bendtner","Friendlies",2015,4,3
 "Nicklas Bendtner","Friendlies",2014,3,0
 "Nicklas Bendtner","Friendlies",2013,1,0
@@ -1395,19 +1408,6 @@
 "Zlatko Dedic","Friendlies",2010,4,1
 "Zlatko Dedic","Friendlies",2009,2,0
 "Zlatko Dedic","Friendlies",2008,1,0
-"Hugo Almeida","Friendliesendlies",2015,1,0
-"Hugo Almeida","Friendliesendlies",2014,2,2
-"Hugo Almeida","Friendliesendlies",2013,1,0
-"Hugo Almeida","Friendliesendlies",2012,5,1
-"Hugo Almeida","Friendliesendlies",2011,4,2
-"Hugo Almeida","Friendliesendlies",2010,4,4
-"Hugo Almeida","Friendliesendlies",2009,3,2
-"Hugo Almeida","Friendliesendlies",2008,5,0
-"Hugo Almeida","Friendliesendlies",2006,1,0
-"Hugo Almeida","Friendliesendlies",2004,1,0
-"Nelson Oliveira","Friendliesendlies",2015,2,0
-"Nelson Oliveira","Friendliesendlies",2013,4,0
-"Nelson Oliveira","Friendliesendlies",2012,4,1
 "David Lafata","KIC",2011,2,0
 "Jelle Vossen","KIC",2009,2,0
 "Nicklas Pedersen","KIC",2011,2,0
@@ -1417,15 +1417,12 @@
 "Robbie Keane","NAC",2011,2,3
 "Shane Long","NAC",2011,1,0
 "Simon Cox","NAC",2011,2,1
-"Andraz Kirm","WOC",2010,2,0
-"Antonio Cassano","WOC",2014,2,0
-"Hugo Almeida","WOC",2014,1,0
-"Milivoje Novakovic","WOC",2010,3,0
-"Tim Matavz","WOC",2010,1,0
 "Aleksandr Kokorin","WOC-G",2014,2,0
 "Alexander Kerzhakov","WOC-G",2002,1,0
+"Andraz Kirm","WOC-G",2010,2,0
 "Andriy Shevchenko","WOC-G",2006,3,2
 "Andriy Voronin","WOC-G",2006,3,0
+"Antonio Cassano","WOC-G",2014,2,0
 "Antonio Di Natale","WOC-G",2010,3,1
 "Arjen Robben","WOC-G",2014,3,3
 "Arjen Robben","WOC-G",2010,1,0
@@ -1463,6 +1460,7 @@
 "Georgios Samaras","WOC-G",2010,2,0
 "Helder Postiga","WOC-G",2014,1,0
 "Helder Postiga","WOC-G",2006,1,0
+"Hugo Almeida","WOC-G",2014,1,0
 "Hugo Almeida","WOC-G",2010,1,1
 "Ivan Perisic","WOC-G",2014,3,0
 "Jermain Defoe","WOC-G",2010,3,1
@@ -1482,6 +1480,7 @@
 "Mesut Ozil","WOC-G",2014,3,0
 "Milan Baros","WOC-G",2006,1,0
 "Milan Jovanovic","WOC-G",2010,3,1
+"Milivoje Novakovic","WOC-G",2010,3,0
 "Milos Krasic","WOC-G",2010,3,0
 "Miroslav Klose","WOC-G",2014,2,1
 "Miroslav Klose","WOC-G",2010,2,1
@@ -1509,6 +1508,7 @@
 "Theofanis Gekas","WOC-G",2010,2,0
 "Thomas Muller","WOC-G",2014,3,3
 "Thomas Muller","WOC-G",2010,3,1
+"Tim Matavz","WOC-G",2010,1,0
 "Valter Birsa","WOC-G",2010,2,1
 "Vladimir Weiss","WOC-G",2010,2,0
 "Zlatan Ibrahimovic","WOC-G",2006,2,0
