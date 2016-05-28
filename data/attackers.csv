@@ -1,4 +1,4 @@
-"Player","Contest","Year","Apps","Goals","Home Advantage"
+"Player","Contest","Year","Apps","Goals For","Home Advantage"
 "Aiden McGeady","EUC-G",2012,1,0,
 "Alan Dzagoev","EUC-G",2012,2,2,
 "Alan Dzagoev","EUC-G",2012,1,1,-1
@@ -59,6 +59,7 @@
 "Alvaro Negredo","Friendlies",2011,1,1,-1
 "Alvaro Negredo","WOC-Q",2010,2,2,
 "Alvaro Negredo","Friendlies",2009,1,0,1
+"Anatoliy Tymoshchuk","EUC-Q",2016,1,0,-1
 "Andre Schurrle","EUC-K",2014,2,0,
 "Andre Schurrle","EUC-K",2012,1,0,
 "Andrey Arshavin","EUC-G",2012,2,0,
