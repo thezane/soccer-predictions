@@ -176,11 +176,14 @@
 "Artem Milevskyi","Friendlies",2007,1,0,
 "Artem Milevskyi","WOC-G",2006,2,0,
 "Artem Milevskyi","WOC-K",2006,2,0,
-"Artur Sobiech","Friendlies",2015,2,0,
-"Artur Sobiech","WOC-Q",2014,2,0,
-"Artur Sobiech","Friendlies",2013,2,1,
-"Artur Sobiech","Friendlies",2012,4,1,
-"Artur Sobiech","Friendlies",2010,3,0,
+"Artur Sobiech","Friendlies",2015,1,0,1
+"Artur Sobiech","Friendlies",2013,2,1,1
+"Artur Sobiech","Friendlies",2012,2,0,1
+"Artur Sobiech","Friendlies",2012,1,1,
+"Artur Sobiech","Friendlies",2012,1,0,-1
+"Artur Sobiech","Friendlies",2010,1,0,1
+"Artur Sobiech","Friendlies",2010,1,0,
+"Artur Sobiech","Friendlies",2010,1,0,-1
 "Ashley Young","EUC-G",2012,2,0,
 "Cristiano Ronaldo","EUC-Q",2016,6,5,
 "Cristiano Ronaldo","Friendlies",2016,2,1,1
@@ -440,26 +443,41 @@
 "Franck Ribery","WOC-Q",2010,6,3,
 "Franck Ribery","WOC-G",2006,3,0,
 "Frantisek Rajtoral","EUC-G",2012,1,0,
-"Georgios Samaras","EUC-Q",2016,3,0,
-"Georgios Samaras","Friendlies",2014,4,0,
+"Georgios Samaras","Friendlies",2014,1,0,1
+"Georgios Samaras","Friendlies",2014,1,0,
 "Georgios Samaras","WOC-G",2014,3,1,
 "Georgios Samaras","WOC-K",2014,1,0,
-"Georgios Samaras","WOC-Q",2014,10,0,
+"Georgios Samaras","WOC-Q",2014,4,0,1
+"Georgios Samaras","WOC-Q",2014,3,0,-1
 "Georgios Samaras","EUC-G",2012,2,0,
 "Georgios Samaras","EUC-G",2012,1,0,-1
 "Georgios Samaras","EUC-K",2012,1,1,
-"Georgios Samaras","EUC-Q",2012,8,1,
-"Georgios Samaras","Friendlies",2012,5,0,
-"Georgios Samaras","Friendlies",2011,4,0,
-"Georgios Samaras","Friendlies",2010,5,1,
+"Georgios Samaras","EUC-Q",2012,4,1,1
+"Georgios Samaras","EUC-Q",2012,4,0,-1
+"Georgios Samaras","Friendlies",2012,1,0,1
+"Georgios Samaras","Friendlies",2012,2,0,
+"Georgios Samaras","Friendlies",2012,2,0,-1
+"Georgios Samaras","Friendlies",2011,2,0,1
+"Georgios Samaras","Friendlies",2011,1,0,
+"Georgios Samaras","Friendlies",2011,1,0,-1
+"Georgios Samaras","Friendlies",2010,1,0,1
+"Georgios Samaras","Friendlies",2010,2,0,
+"Georgios Samaras","Friendlies",2010,2,1,-1
 "Georgios Samaras","WOC-G",2010,2,0,
-"Georgios Samaras","WOC-Q",2010,10,2,
-"Georgios Samaras","Friendlies",2009,2,0,
+"Georgios Samaras","WOC-Q",2010,5,2,1
+"Georgios Samaras","WOC-Q",2010,5,0,-1
+"Georgios Samaras","Friendlies",2009,1,0,1
+"Georgios Samaras","Friendlies",2009,1,0,-1
 "Georgios Samaras","EUC-G",2008,1,0,
-"Georgios Samaras","EUC-Q",2008,8,1,
-"Georgios Samaras","Friendlies",2008,3,0,
+"Georgios Samaras","EUC-Q",2008,3,0,1
+"Georgios Samaras","EUC-Q",2008,5,1,-1
+"Georgios Samaras","Friendlies",2008,1,0,1
+"Georgios Samaras","Friendlies",2008,1,0,
+"Georgios Samaras","Friendlies",2008,1,0,-1
 "Georgios Samaras","Friendlies",2007,1,0,
-"Georgios Samaras","Friendlies",2006,5,2,
+"Georgios Samaras","Friendlies",2006,1,1,1
+"Georgios Samaras","Friendlies",2006,1,1,
+"Georgios Samaras","Friendlies",2006,3,0,-1
 "Helder Postiga","EUC-Q",2016,1,0,
 "Helder Postiga","Friendlies",2014,3,0,
 "Helder Postiga","WOC-G",2014,1,0,
@@ -948,18 +966,28 @@
 "Pavel Pogrebnyak","Friendlies",2007,1,0,
 "Pavel Pogrebnyak","Friendlies",2006,1,1,
 "Pawel Brozek","Friendlies",2014,1,1,
-"Pawel Brozek","WOC-Q",2014,1,0,
+"Pawel Brozek","WOC-Q",2014,1,0,-1
 "Pawel Brozek","EUC-G",2012,2,0,1
-"Pawel Brozek","Friendlies",2012,2,0,
-"Pawel Brozek","Friendlies",2011,9,3,
-"Pawel Brozek","Friendlies",2010,3,2,
-"Pawel Brozek","WOC-Q",2010,5,1,
-"Pawel Brozek","Friendlies",2009,3,1,
-"Pawel Brozek","Friendlies",2008,3,0,
-"Pawel Brozek","Friendlies",2007,2,0,
-"Pawel Brozek","Friendlies",2006,2,0,
-"Pawel Brozek","WOC-Q",2006,3,0,
-"Pawel Brozek","Friendlies",2005,2,1,
+"Pawel Brozek","Friendlies",2012,2,0,1
+"Pawel Brozek","Friendlies",2011,7,3,1
+"Pawel Brozek","Friendlies",2011,1,0,
+"Pawel Brozek","Friendlies",2011,1,0,-1
+"Pawel Brozek","Friendlies",2010,2,0,1
+"Pawel Brozek","Friendlies",2010,1,2,
+"Pawel Brozek","WOC-Q",2010,3,1,1
+"Pawel Brozek","WOC-Q",2010,2,0,-1
+"Pawel Brozek","Friendlies",2009,1,0,1
+"Pawel Brozek","Friendlies",2009,2,1,
+"Pawel Brozek","Friendlies",2008,1,0,1
+"Pawel Brozek","Friendlies",2008,1,0,
+"Pawel Brozek","Friendlies",2008,1,0,-1
+"Pawel Brozek","Friendlies",2007,1,0,1
+"Pawel Brozek","Friendlies",2007,1,0,
+"Pawel Brozek","Friendlies",2006,1,0,1
+"Pawel Brozek","Friendlies",2006,1,0,-1
+"Pawel Brozek","WOC-G",2006,3,0,
+"Pawel Brozek","Friendlies",2005,1,0,1
+"Pawel Brozek","Friendlies",2005,1,1,
 "Pedro","EUC-Q",2016,8,2,
 "Pedro","Friendlies",2016,1,0,
 "Pedro","Friendlies",2015,2,0,
@@ -1012,19 +1040,29 @@
 "Robbie Keane","Friendlies",2000,6,1,
 "Robbie Keane","Friendlies",1999,3,0,
 "Robbie Keane","Friendlies",1998,3,0,
-"Robert Lewandowski ","EUC-Q",2016,10,13,
-"Robert Lewandowski ","Friendlies",2016,2,0,
-"Robert Lewandowski ","Friendlies",2015,1,2,
-"Robert Lewandowski ","Friendlies",2014,2,1,
-"Robert Lewandowski ","WOC-Q",2014,9,3,
-"Robert Lewandowski ","Friendlies",2013,4,0,
-"Robert Lewandowski ","EUC-G",2012,3,1,1
-"Robert Lewandowski ","Friendlies",2012,4,1,
-"Robert Lewandowski ","Friendlies",2011,11,4,
-"Robert Lewandowski ","Friendlies",2010,13,5,
-"Robert Lewandowski ","WOC-Q",2010,9,2,
-"Robert Lewandowski ","Friendlies",2009,6,0,
-"Robert Lewandowski ","Friendlies",2008,1,1,
+"Robert Lewandowski ","EUC-Q",2016,5,7,1
+"Robert Lewandowski ","EUC-Q",2016,5,6,-1
+"Robert Lewandowski ","Friendlies",2016,3,0,1
+"Robert Lewandowski ","Friendlies",2015,1,2,1
+"Robert Lewandowski ","Friendlies",2014,2,1,1
+"Robert Lewandowski ","WOC-Q",2014,5,3,1
+"Robert Lewandowski ","WOC-Q",2014,4,0,-1
+"Robert Lewandowski ","Friendlies",2013,3,0,1
+"Robert Lewandowski ","Friendlies",2013,1,0,-1
+"Robert Lewandowski ","EUC-G",2012,3,1,
+"Robert Lewandowski ","Friendlies",2012,3,1,1
+"Robert Lewandowski ","Friendlies",2012,1,0,-1
+"Robert Lewandowski ","Friendlies",2011,6,1,1
+"Robert Lewandowski ","Friendlies",2011,2,2,
+"Robert Lewandowski ","Friendlies",2011,3,1,-1
+"Robert Lewandowski ","Friendlies",2010,6,3,1
+"Robert Lewandowski ","Friendlies",2010,3,2,
+"Robert Lewandowski ","Friendlies",2010,4,0,-1
+"Robert Lewandowski ","WOC-Q",2010,5,1,1
+"Robert Lewandowski ","WOC-Q",2010,4,1,-1
+"Robert Lewandowski ","Friendlies",2009,3,0,1
+"Robert Lewandowski ","Friendlies",2009,3,0,-1
+"Robert Lewandowski ","Friendlies",2008,1,1,-1
 "Robin van Persie","EUC-Q",2016,8,3,
 "Robin van Persie","Friendlies",2015,1,0,
 "Robin van Persie","Friendlies",2014,5,2,
