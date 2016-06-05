@@ -185,6 +185,30 @@
 "Andrey Arshavin",2004,"Friendlies",1,1,1
 "Andrey Arshavin",2004,"Friendlies",1,-1,-1
 "Andrey Arshavin",2002,"Friendlies",2,0,1
+"Arjen Robben",2016,"EUC-Q",2,1,1
+"Arjen Robben",2014,"WOC-Q",2,6,1
+"Arjen Robben",2013,"Friendlies",2,3,-1
+"Arjen Robben",2012,"Friendlies",3,5,1
+"Arjen Robben",2012,"Friendlies",2,0,-1
+"Arjen Robben",2011,"Friendlies",1,0,-1
+"Arjen Robben",2010,"Friendlies",2,6,1
+"Arjen Robben",2010,"WOC-Q",3,9,1
+"Arjen Robben",2010,"WOC-Q",3,3,-1
+"Arjen Robben",2009,"Friendlies",2,3,1
+"Arjen Robben",2009,"Friendlies",1,0,-1
+"Arjen Robben",2008,"Friendlies",2,2,1
+"Arjen Robben",2008,"Friendlies",1,0,-1
+"Arjen Robben",2007,"EUC-Q",3,3,1
+"Arjen Robben",2007,"EUC-Q",3,0,-1
+"Arjen Robben",2006,"Friendlies",4,2,1
+"Arjen Robben",2006,"Friendlies",1,4,-1
+"Arjen Robben",2006,"WOC-Q",2,6,1
+"Arjen Robben",2006,"WOC-Q",1,3,
+"Arjen Robben",2006,"WOC-Q",3,8,-1
+"Arjen Robben",2005,"Friendlies",2,0,1
+"Arjen Robben",2004,"EUC-Q",2,7,1
+"Arjen Robben",2004,"Friendlies",2,0,1
+"Arjen Robben",2004,"Friendlies",1,3,
 "Artur Sobiech",2015,"Friendlies",1,2,-1
 "Artur Sobiech",2014,"WOC-Q",1,2,1
 "Artur Sobiech",2014,"WOC-Q",1,0,-1
@@ -624,6 +648,26 @@
 "Kim Kallstrom",2002,"Friendlies",2,0,-1
 "Kim Kallstrom",2001,"Friendlies",1,0,
 "Kim Kallstrom",2001,"Friendlies",1,-1,-1
+"Klaas-Jan Huntelaar",2016,"EUC-Q",1,2,1
+"Klaas-Jan Huntelaar",2016,"EUC-Q",1,-2,-1
+"Klaas-Jan Huntelaar",2014,"Friendlies",1,2,1
+"Konstantinos Fortounis",2016,"EUC-Q",2,0,1
+"Konstantinos Fortounis",2016,"EUC-Q",2,0,-1
+"Konstantinos Fortounis",2016,"Friendlies",1,1,1
+"Konstantinos Fortounis",2015,"Friendlies",1,0,-1
+"Konstantinos Fortounis",2014,"WOC-Q",1,0,1
+"Konstantinos Fortounis",2013,"Friendlies",1,0,1
+"Konstantinos Fortounis",2013,"Friendlies",1,2,-1
+"Konstantinos Fortounis",2012,"Friendlies",1,0,1
+"Konstantinos Fortounis",2012,"Friendlies",1,0,
+"Konstantinos Fortounis",2012,"Friendlies",2,2,-1
+"Konstantinos Mitroglou",2014,"WOC-Q",3,4,1
+"Konstantinos Mitroglou",2014,"WOC-Q",1,1,-1
+"Luciano Narsingh",2016,"EUC-Q",2,-1,1
+"Luciano Narsingh",2016,"EUC-Q",1,2,-1
+"Luciano Narsingh",2015,"Friendlies",1,-1,1
+"Luciano Narsingh",2014,"WOC-Q",1,2,1
+"Luciano Narsingh",2012,"Friendlies",1,6,1
 "Luka Modric",2016,"EUC-Q",4,-1,-1
 "Luka Modric",2016,"EUC-Q",4,15,1
 "Luka Modric",2016,"Friendlies",1,0,-1
@@ -653,6 +697,7 @@
 "Luka Modric",2006,"Friendlies",2,5,-1
 "Luka Modric",2006,"Friendlies",1,0,1
 "Luka Modric",2006,"Friendlies",1,-1,
+"Luuk de Jong",2016,"Friendlies",1,0,-1
 "Marcin Wasilewski",2013,"Friendlies",1,-2,-1
 "Mark van Bommel",2012,"EUC-Q",4,7,-1
 "Mark van Bommel",2012,"EUC-Q",4,16,1
@@ -818,6 +863,9 @@
 "Raul Meireles",2008,"Friendlies",3,6,1
 "Raul Meireles",2008,"Friendlies",1,-2,
 "Raul Meireles",2007,"Friendlies",1,0,-1
+"Robin van Persie",2016,"EUC-Q",1,-2,-1
+"Robin van Persie",2015,"Friendlies",1,-1,1
+"Robin van Persie",2014,"WOC-Q",1,3,1
 "Ruben Micael",2014,"WOC-Q",3,1,-1
 "Ruben Micael",2014,"WOC-Q",2,0,1
 "Ruben Micael",2013,"Friendlies",1,1,-1
@@ -1010,4 +1058,3 @@
 "Yuri Zhirkov",2006,"WOC-Q",1,2,1
 "Yuri Zhirkov",2006,"WOC-Q",1,0,-1
 "Yuri Zhirkov",2005,"Friendlies",2,-2,-1
-"Arjen Robben",,,,,
