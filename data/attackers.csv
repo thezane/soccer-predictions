@@ -1,8 +1,5 @@
 "Player","Year","Contest","Apps","Goals For","Home Advantage"
-"Aiden McGeady",2012,"EUC-G",1,0,
 "Alan Dzagoev",2014,"WOC-Q",2,0,1
-"Alan Dzagoev",2012,"EUC-G",2,2,
-"Alan Dzagoev",2012,"EUC-G",1,1,-1
 "Aleksandr Kokorin",2016,"EUC-Q",9,3,
 "Aleksandr Kokorin",2016,"Friendlies",1,1,1
 "Aleksandr Kokorin",2015,"Friendlies",1,1,1
@@ -11,7 +8,6 @@
 "Aleksandr Kokorin",2014,"WOC-G",2,0,
 "Aleksandr Kokorin",2014,"WOC-Q",8,4,
 "Aleksandr Kokorin",2013,"Friendlies",2,0,
-"Aleksandr Kokorin",2012,"EUC-G",1,0,
 "Aleksandr Kokorin",2012,"Friendlies",3,0,1
 "Aleksandr Kokorin",2012,"Friendlies",2,0,
 "Aleksandr Kokorin",2012,"Friendlies",1,0,-1
@@ -24,8 +20,6 @@
 "Alexander Kerzhakov",2014,"WOC-G",3,1,
 "Alexander Kerzhakov",2014,"WOC-Q",10,5,
 "Alexander Kerzhakov",2013,"Friendlies",2,0,
-"Alexander Kerzhakov",2012,"EUC-G",2,0,
-"Alexander Kerzhakov",2012,"EUC-G",1,0,-1
 "Alexander Kerzhakov",2012,"EUC-Q",5,2,
 "Alexander Kerzhakov",2012,"Friendlies",2,1,1
 "Alexander Kerzhakov",2012,"Friendlies",2,1,
@@ -39,7 +33,6 @@
 "Alexander Kerzhakov",2006,"Friendlies",1,0,-1
 "Alexander Kerzhakov",2006,"WOC-Q",10,4,
 "Alexander Kerzhakov",2005,"Friendlies",2,0,-1
-"Alexander Kerzhakov",2004,"EUC-G",1,0,
 "Alexander Kerzhakov",2004,"EUC-Q",7,2,
 "Alexander Kerzhakov",2004,"Friendlies",1,0,1
 "Alexander Kerzhakov",2004,"Friendlies",3,0,-1
@@ -51,8 +44,6 @@
 "Alvaro Negredo",2014,"WOC-Q",4,3,
 "Alvaro Negredo",2013,"Friendlies",2,0,
 "Alvaro Negredo",2013,"Friendlies",3,1,-1
-"Alvaro Negredo",2012,"EUC-G",1,0,
-"Alvaro Negredo",2012,"EUC-K",1,0,
 "Alvaro Negredo",2012,"EUC-Q",1,2,
 "Alvaro Negredo",2012,"Friendlies",1,0,1
 "Alvaro Negredo",2012,"Friendlies",2,1,
@@ -66,93 +57,103 @@
 "Andre Schurrle",2014,"Friendlies",2,1,1
 "Andre Schurrle",2014,"WOC-K",2,0,
 "Andre Schurrle",2014,"WOC-Q",2,0,-1
-"Andre Schurrle",2012,"EUC-K",1,0,
 "Andre Schurrle",2012,"EUC-Q",1,1,1
 "Andre Schurrle",2012,"EUC-Q",3,1,-1
 "Andre Schurrle",2012,"Friendlies",2,1,1
 "Andre Schurrle",2012,"Friendlies",1,0,-1
 "Andre Schurrle",2012,"Friendlies",1,1,-1
 "Andre Schurrle",2011,"Friendlies",1,1,1
-"Andrey Arshavin",2012,"EUC-G",2,0,
-"Andrey Arshavin",2012,"EUC-G",1,0,-1
-"Andriy Shevchenko",2012,"EUC-G",3,2,1
-"Andriy Shevchenko",2012,"Friendlies",3,0,
-"Andriy Shevchenko",2011,"Friendlies",5,1,
-"Andriy Shevchenko",2010,"Friendlies",6,2,
-"Andriy Shevchenko",2010,"WOC-Q",11,6,
-"Andriy Shevchenko",2009,"Friendlies",1,0,
-"Andriy Shevchenko",2008,"EUC-Q",8,5,
-"Andriy Shevchenko",2008,"Friendlies",3,1,
-"Andriy Shevchenko",2007,"Friendlies",2,0,
-"Andriy Shevchenko",2006,"Friendlies",1,1,
+"Andriy Shevchenko",2012,"Friendlies",1,0,
+"Andriy Shevchenko",2011,"Friendlies",5,1,1
+"Andriy Shevchenko",2010,"Friendlies",5,2,1
+"Andriy Shevchenko",2010,"Friendlies",1,0,-1
+"Andriy Shevchenko",2010,"WOC-Q",5,2,1
+"Andriy Shevchenko",2010,"WOC-Q",6,4,-1
+"Andriy Shevchenko",2009,"Friendlies",1,0,1
+"Andriy Shevchenko",2008,"EUC-Q",5,4,1
+"Andriy Shevchenko",2008,"EUC-Q",3,1,-1
+"Andriy Shevchenko",2008,"Friendlies",2,1,1
+"Andriy Shevchenko",2008,"Friendlies",1,0,-1
+"Andriy Shevchenko",2007,"Friendlies",1,0,1
+"Andriy Shevchenko",2007,"Friendlies",1,0,-1
+"Andriy Shevchenko",2006,"Friendlies",1,1,-1
 "Andriy Shevchenko",2006,"WOC-G",3,2,
 "Andriy Shevchenko",2006,"WOC-K",2,0,
-"Andriy Shevchenko",2006,"WOC-Q",9,6,
-"Andriy Shevchenko",2005,"Friendlies",1,0,
-"Andriy Shevchenko",2004,"EUC-Q",4,3,
-"Andriy Shevchenko",2004,"Friendlies",2,0,
-"Andriy Shevchenko",2003,"Friendlies",4,0,
-"Andriy Shevchenko",2002,"Friendlies",2,0,
-"Andriy Shevchenko",2002,"WOC-Q",12,10,
-"Andriy Shevchenko",2000,"EUC-Q",12,2,
-"Andriy Shevchenko",2000,"Friendlies",2,1,
-"Andriy Shevchenko",1998,"Friendlies",2,1,
-"Andriy Shevchenko",1998,"WOC-Q",8,4,
-"Andriy Shevchenko",1997,"Friendlies",1,0,
-"Andriy Shevchenko",1996,"EUC-Q",2,0,
-"Andriy Shevchenko",1996,"Friendlies",2,1,
-"Andriy Voronin",2012,"EUC-G",1,0,1
-"Andriy Voronin",2012,"Friendlies",3,1,
-"Andriy Voronin",2011,"Friendlies",5,1,
-"Andriy Voronin",2010,"Friendlies",3,0,
-"Andriy Voronin",2010,"WOC-Q",6,0,
+"Andriy Shevchenko",2006,"WOC-Q",4,4,1
+"Andriy Shevchenko",2006,"WOC-Q",5,2,-1
+"Andriy Shevchenko",2005,"Friendlies",1,0,1
+"Andriy Shevchenko",2004,"EUC-Q",2,2,1
+"Andriy Shevchenko",2004,"EUC-Q",2,1,-1
+"Andriy Shevchenko",2004,"Friendlies",2,0,-1
+"Andriy Shevchenko",2003,"Friendlies",2,0,1
+"Andriy Shevchenko",2003,"Friendlies",2,0,-1
+"Andriy Shevchenko",2002,"Friendlies",1,0,1
+"Andriy Shevchenko",2002,"Friendlies",1,0,-1
+"Andriy Shevchenko",2002,"WOC-Q",6,2,1
+"Andriy Shevchenko",2002,"WOC-Q",8,6,-1
+"Andriy Shevchenko",2000,"EUC-Q",6,0,1
+"Andriy Shevchenko",2000,"EUC-Q",6,2,-1
+"Andriy Shevchenko",2000,"Friendlies",2,1,-1
+"Andriy Shevchenko",1998,"Friendlies",2,1,1
+"Andriy Shevchenko",1998,"WOC-Q",5,3,1
+"Andriy Shevchenko",1998,"WOC-Q",3,1,-1
+"Andriy Shevchenko",1997,"Friendlies",1,0,1
+"Andriy Shevchenko",1996,"EUC-Q",1,0,1
+"Andriy Shevchenko",1996,"EUC-Q",1,0,-1
+"Andriy Shevchenko",1996,"Friendlies",2,1,-1
+"Andriy Voronin",2012,"Friendlies",1,1,
+"Andriy Voronin",2012,"Friendlies",2,0,-1
+"Andriy Voronin",2011,"Friendlies",4,1,1
+"Andriy Voronin",2010,"EUC-Q",3,0,-1
+"Andriy Voronin",2010,"Friendlies",2,0,1
+"Andriy Voronin",2010,"Friendlies",1,0,-1
+"Andriy Voronin",2010,"WOC-Q",3,0,1
 "Andriy Voronin",2009,"Friendlies",1,0,
-"Andriy Voronin",2008,"EUC-Q",12,1,
-"Andriy Voronin",2008,"Friendlies",3,0,
-"Andriy Voronin",2007,"Friendlies",2,0,
-"Andriy Voronin",2006,"Friendlies",6,2,
+"Andriy Voronin",2008,"EUC-Q",6,1,1
+"Andriy Voronin",2008,"EUC-Q",6,0,-1
+"Andriy Voronin",2008,"Friendlies",2,0,1
+"Andriy Voronin",2008,"Friendlies",1,0,-1
+"Andriy Voronin",2007,"Friendlies",1,0,1
+"Andriy Voronin",2007,"Friendlies",1,0,-1
+"Andriy Voronin",2006,"Friendlies",3,1,1
+"Andriy Voronin",2006,"Friendlies",1,0,
+"Andriy Voronin",2006,"Friendlies",2,1,-1
 "Andriy Voronin",2006,"WOC-G",3,0,
 "Andriy Voronin",2006,"WOC-K",1,0,
-"Andriy Voronin",2006,"WOC-Q",11,1,
-"Andriy Voronin",2005,"Friendlies",1,0,
-"Andriy Voronin",2004,"EUC-Q",7,2,
-"Andriy Voronin",2004,"Friendlies",2,0,
-"Andriy Voronin",2003,"Friendlies",4,0,
-"Andriy Voronin",2002,"Friendlies",2,0,
-"Andriy Yarmolenko",2012,"EUC-G",1,0,1
+"Andriy Voronin",2006,"WOC-Q",6,1,1
+"Andriy Voronin",2006,"WOC-Q",5,0,-1
+"Andriy Voronin",2005,"Friendlies",1,0,1
+"Andriy Voronin",2004,"EUC-Q",4,2,1
+"Andriy Voronin",2004,"EUC-Q",3,0,-1
+"Andriy Voronin",2004,"Friendlies",2,0,-1
+"Andriy Voronin",2003,"Friendlies",2,0,1
+"Andriy Voronin",2003,"Friendlies",2,0,-1
+"Andriy Voronin",2002,"Friendlies",2,0,-1
+"Andriy Yarmolenko",2016,"EUC-Q",1,1,1
+"Andriy Yarmolenko",2016,"EUC-Q",2,0,-1
+"Andriy Yarmolenko",2014,"Friendlies",2,0,1
+"Andriy Yarmolenko",2012,"Friendlies",1,0,1
 "Andy Carroll",2014,"WOC-Q",1,0,
-"Andy Carroll",2012,"EUC-G",1,1,
-"Andy Carroll",2012,"EUC-G",1,0,-1
-"Andy Carroll",2012,"EUC-K",1,0,
 "Andy Carroll",2012,"EUC-Q",1,0,
 "Andy Carroll",2012,"Friendlies",2,0,
 "Andy Carroll",2011,"Friendlies",1,1,
 "Andy Carroll",2010,"Friendlies",1,0,
 "Antonio Cassano",2014,"Friendlies",2,0,
 "Antonio Cassano",2014,"WOC-G",2,0,
-"Antonio Cassano",2012,"EUC-G",3,1,
-"Antonio Cassano",2012,"EUC-K",3,0,
 "Antonio Cassano",2012,"EUC-Q",10,6,
 "Antonio Cassano",2012,"Friendlies",1,0,
 "Antonio Cassano",2011,"Friendlies",2,0,
 "Antonio Cassano",2010,"Friendlies",1,0,
-"Antonio Cassano",2008,"EUC-G",3,0,
-"Antonio Cassano",2008,"EUC-K",1,0,
 "Antonio Cassano",2008,"EUC-Q",2,0,
 "Antonio Cassano",2008,"Friendlies",1,0,
 "Antonio Cassano",2006,"WOC-Q",2,0,
-"Antonio Cassano",2004,"EUC-G",2,1,
 "Antonio Cassano",2004,"Friendlies",1,0,
 "Antonio Cassano",2003,"Friendlies",2,1,
-"Antonio Di Natale",2012,"EUC-G",3,1,
-"Antonio Di Natale",2012,"EUC-K",2,0,
 "Antonio Di Natale",2012,"Friendlies",1,0,
 "Antonio Di Natale",2010,"Friendlies",3,0,
 "Antonio Di Natale",2010,"WOC-G",3,1,
 "Antonio Di Natale",2010,"WOC-Q",7,2,
 "Antonio Di Natale",2009,"Friendlies",2,0,
-"Antonio Di Natale",2008,"EUC-G",1,0,
-"Antonio Di Natale",2008,"EUC-K",1,0,
 "Antonio Di Natale",2008,"EUC-Q",8,2,
 "Antonio Di Natale",2008,"Friendlies",4,3,
 "Antonio Di Natale",2007,"Friendlies",1,1,
@@ -171,20 +172,15 @@
 "Arjen Robben",2013,"Friendlies",1,0,1
 "Arjen Robben",2013,"Friendlies",1,1,
 "Arjen Robben",2013,"Friendlies",1,0,-1
-"Arjen Robben",2012,"EUC-G",3,0,
 "Arjen Robben",2012,"Friendlies",2,0,1
 "Arjen Robben",2010,"Friendlies",1,2,1
 "Arjen Robben",2010,"WOC-G",1,0,
 "Arjen Robben",2010,"WOC-K",4,2,
-"Arjen Robben",2008,"EUC-G",1,0,
 "Arjen Robben",2006,"WOC-G",2,1,
 "Arjen Robben",2006,"WOC-K",1,0,
-"Arjen Robben",2004,"EUC-G",2,0,
-"Arjen Robben",2004,"EUC-K",2,0,
 "Arjen Robben",2004,"EUC-Q",2,1,1
 "Arjen Robben",2003,"Friendlies",1,0,1
 "Artem Milevskyi",2014,"WOC-Q",1,0,
-"Artem Milevskyi",2012,"EUC-G",2,0,
 "Artem Milevskyi",2012,"Friendlies",4,1,
 "Artem Milevskyi",2011,"Friendlies",9,2,
 "Artem Milevskyi",2010,"Friendlies",6,1,
@@ -203,7 +199,10 @@
 "Artur Sobiech",2010,"Friendlies",1,0,1
 "Artur Sobiech",2010,"Friendlies",1,0,
 "Artur Sobiech",2010,"Friendlies",1,0,-1
-"Ashley Young",2012,"EUC-G",2,0,
+"Ashley Young",2012,"EUC-Q",1,0,1
+"Ashley Young",2010,"Friendlies",2,0,1
+"Ashley Young",2008,"Friendlies",1,0,1
+"Ashley Young",2008,"Friendlies",1,0,-1
 "Cristiano Ronaldo",2016,"EUC-Q",6,5,
 "Cristiano Ronaldo",2016,"Friendlies",2,1,1
 "Cristiano Ronaldo",2015,"Friendlies",1,0,1
@@ -214,8 +213,6 @@
 "Cristiano Ronaldo",2014,"WOC-Q",10,8,
 "Cristiano Ronaldo",2013,"Friendlies",2,2,
 "Cristiano Ronaldo",2013,"Friendlies",1,1,
-"Cristiano Ronaldo",2012,"EUC-G",3,2,
-"Cristiano Ronaldo",2012,"EUC-K",2,1,
 "Cristiano Ronaldo",2012,"EUC-Q",8,7,
 "Cristiano Ronaldo",2012,"Friendlies",3,1,1
 "Cristiano Ronaldo",2012,"Friendlies",1,0,
@@ -227,8 +224,6 @@
 "Cristiano Ronaldo",2010,"WOC-K",1,0,
 "Cristiano Ronaldo",2010,"WOC-Q",7,0,
 "Cristiano Ronaldo",2009,"Friendlies",2,1,1
-"Cristiano Ronaldo",2008,"EUC-G",2,1,
-"Cristiano Ronaldo",2008,"EUC-K",1,0,
 "Cristiano Ronaldo",2008,"EUC-Q",13,8,
 "Cristiano Ronaldo",2008,"Friendlies",1,0,1
 "Cristiano Ronaldo",2008,"Friendlies",1,0,
@@ -243,20 +238,17 @@
 "Cristiano Ronaldo",2005,"Friendlies",2,0,1
 "Cristiano Ronaldo",2005,"Friendlies",1,0,
 "Cristiano Ronaldo",2005,"Friendlies",1,0,-1
-"Cristiano Ronaldo",2004,"EUC-G",3,1,
-"Cristiano Ronaldo",2004,"EUC-K",3,1,
 "Cristiano Ronaldo",2004,"Friendlies",5,0,1
 "Cristiano Ronaldo",2003,"Friendlies",2,0,1
-"Damien Duff",2012,"EUC-G",1,0,
+"Damien Duff",2009,"Friendlies",1,0,1
+"Damien Duff",2002,"WOC-Q",1,0,1
+"Damien Duff",2000,"EUC-Q",1,0,-1
 "Danny Welbeck",2016,"EUC-Q",5,6,
 "Danny Welbeck",2016,"Friendlies",1,0,
 "Danny Welbeck",2014,"Friendlies",6,0,
 "Danny Welbeck",2014,"WOC-G",2,0,
 "Danny Welbeck",2014,"WOC-Q",8,4,
 "Danny Welbeck",2013,"Friendlies",2,1,
-"Danny Welbeck",2012,"EUC-G",2,1,
-"Danny Welbeck",2012,"EUC-G",1,0,-1
-"Danny Welbeck",2012,"EUC-K",1,0,
 "Danny Welbeck",2012,"EUC-Q",1,0,
 "Danny Welbeck",2012,"Friendlies",3,2,
 "Danny Welbeck",2011,"Friendlies",2,0,
@@ -266,7 +258,6 @@
 "David Lafata",2014,"WOC-Q",2,0,1
 "David Lafata",2014,"WOC-Q",2,0,-1
 "David Lafata",2013,"Friendlies",1,1,-1
-"David Lafata",2012,"EUC-G",1,0,
 "David Lafata",2012,"EUC-Q",2,0,1
 "David Lafata",2012,"Friendlies",3,2,1
 "David Lafata",2012,"Friendlies",1,1,
@@ -284,16 +275,11 @@
 "David Lafata",2006,"Friendlies",1,0,1
 "David Silva",2014,"WOC-G",2,0,
 "David Silva",2014,"WOC-Q",5,0,
-"David Silva",2013,"COC-K",1,0,
-"David Silva",2012,"EUC-G",3,1,
-"David Silva",2012,"EUC-K",3,1,
 "David Silva",2012,"EUC-Q",6,4,
 "David Silva",2010,"WOC-G",1,0,
 "David Villa",2014,"Friendlies",1,2,
 "David Villa",2014,"WOC-G",1,1,
 "David Villa",2014,"WOC-Q",4,0,
-"David Villa",2013,"COC-G",2,3,
-"David Villa",2013,"COC-K",1,0,-1
 "David Villa",2013,"Friendlies",4,0,
 "David Villa",2012,"EUC-Q",8,7,
 "David Villa",2012,"Friendlies",2,2,
@@ -302,12 +288,7 @@
 "David Villa",2010,"WOC-G",3,4,
 "David Villa",2010,"WOC-K",4,1,
 "David Villa",2010,"WOC-Q",7,7,
-"David Villa",2009,"COC-G",2,2,
-"David Villa",2009,"COC-G",1,1,-1
-"David Villa",2009,"COC-K",2,0,
 "David Villa",2009,"Friendlies",5,6,
-"David Villa",2008,"EUC-G",3,4,
-"David Villa",2008,"EUC-K",1,0,
 "David Villa",2008,"EUC-Q",11,7,
 "David Villa",2008,"Friendlies",5,3,
 "David Villa",2007,"Friendlies",2,0,
@@ -317,7 +298,6 @@
 "David Villa",2006,"WOC-Q",4,1,
 "Dennis Rommedahl",2014,"WOC-Q",1,0,1
 "Dennis Rommedahl",2014,"WOC-Q",1,0,-1
-"Dennis Rommedahl",2012,"EUC-G",2,0,
 "Dennis Rommedahl",2012,"EUC-Q",4,0,1
 "Dennis Rommedahl",2012,"EUC-Q",4,3,-1
 "Dennis Rommedahl",2012,"Friendlies",2,0,1
@@ -345,7 +325,6 @@
 "Dennis Rommedahl",2006,"WOC-Q",6,1,-1
 "Dennis Rommedahl",2005,"Friendlies",1,1,1
 "Dennis Rommedahl",2005,"Friendlies",1,0,-1
-"Dennis Rommedahl",2004,"EUC-G",3,0,
 "Dennis Rommedahl",2004,"EUC-Q",4,0,1
 "Dennis Rommedahl",2004,"EUC-Q",4,2,-1
 "Dennis Rommedahl",2004,"Friendlies",2,0,1
@@ -367,8 +346,6 @@
 "Dimitris Salpingidis",2014,"WOC-Q",3,2,1
 "Dimitris Salpingidis",2014,"WOC-Q",3,0,-1
 "Dimitris Salpingidis",2013,"Friendlies",1,0,1
-"Dimitris Salpingidis",2012,"EUC-G",3,1,
-"Dimitris Salpingidis",2012,"EUC-K",1,1,
 "Dimitris Salpingidis",2012,"EUC-Q",5,1,1
 "Dimitris Salpingidis",2012,"EUC-Q",5,0,-1
 "Dimitris Salpingidis",2012,"Friendlies",1,1,1
@@ -383,7 +360,6 @@
 "Dimitris Salpingidis",2010,"WOC-Q",5,1,1
 "Dimitris Salpingidis",2010,"WOC-Q",4,1,-1
 "Dimitris Salpingidis",2009,"Friendlies",1,0,-1
-"Dimitris Salpingidis",2008,"EUC-G",1,0,
 "Dimitris Salpingidis",2008,"EUC-Q",4,0,-1
 "Dimitris Salpingidis",2008,"Friendlies",3,0,1
 "Dimitris Salpingidis",2008,"Friendlies",2,0,
@@ -399,7 +375,6 @@
 "Dirk Kuyt",2014,"WOC-Q",1,0,1
 "Dirk Kuyt",2014,"WOC-Q",2,0,-1
 "Dirk Kuyt",2013,"Friendlies",1,0,1
-"Dirk Kuyt",2012,"EUC-G",2,0,
 "Dirk Kuyt",2012,"EUC-Q",4,3,1
 "Dirk Kuyt",2012,"EUC-Q",5,3,-1
 "Dirk Kuyt",2012,"Friendlies",3,0,1
@@ -412,8 +387,6 @@
 "Dirk Kuyt",2010,"WOC-Q",4,3,1
 "Dirk Kuyt",2010,"WOC-Q",4,0,-1
 "Dirk Kuyt",2009,"Friendlies",6,1,
-"Dirk Kuyt",2008,"EUC-G",3,1,
-"Dirk Kuyt",2008,"EUC-K",1,0,
 "Dirk Kuyt",2008,"EUC-Q",2,1,1
 "Dirk Kuyt",2008,"EUC-Q",4,0,-1
 "Dirk Kuyt",2008,"Friendlies",5,2,1
@@ -432,7 +405,6 @@
 "Eduardo",2014,"WOC-G",1,0,
 "Eduardo",2014,"WOC-Q",7,2,
 "Eduardo",2013,"Friendlies",2,2,
-"Eduardo",2012,"EUC-G",3,0,
 "Eduardo",2012,"EUC-Q",11,3,
 "Eduardo",2012,"Friendlies",4,3,
 "Eduardo",2011,"Friendlies",2,1,
@@ -445,9 +417,11 @@
 "Eduardo",2006,"Friendlies",3,1,
 "Eduardo",2005,"Friendlies",2,0,
 "Eduardo",2004,"Friendlies",1,0,
-"Emir Bajrami",2012,"EUC-G",1,0,
-"Emir Bajrami",2012,"EUC-Q",6,1,
-"Fabio Borini",2012,"Friendlies",1,0,
+"Emir Bajrami",2014,"WOC-Q",1,0,1
+"Emir Bajrami",2012,"EUC-Q",1,0,-1
+"Emir Bajrami",2012,"Friendlies",1,0,-1
+"Emir Bajrami",2011,"Friendlies",1,0,
+"Fabio Borini",2012,"Friendlies",1,0,1
 "Fernando Llorente",2013,"Friendlies",3,0,
 "Fernando Llorente",2012,"EUC-Q",5,3,
 "Fernando Llorente",2012,"Friendlies",2,0,
@@ -455,19 +429,12 @@
 "Fernando Llorente",2010,"Friendlies",5,2,
 "Fernando Llorente",2010,"WOC-K",1,0,
 "Fernando Llorente",2010,"WOC-Q",1,0,
-"Fernando Llorente",2009,"COC-G",1,1,
-"Fernando Llorente",2009,"COC-K",1,0,
 "Fernando Llorente",2009,"Friendlies",1,1,
 "Fernando Llorente",2008,"Friendlies",1,0,
 "Fernando Torres",2014,"Friendlies",1,1,
 "Fernando Torres",2014,"WOC-G",3,1,
 "Fernando Torres",2014,"WOC-Q",1,0,
-"Fernando Torres",2013,"COC-G",2,5,
-"Fernando Torres",2013,"COC-K",1,0,
-"Fernando Torres",2013,"COC-K",1,0,-1
 "Fernando Torres",2013,"Friendlies",1,0,
-"Fernando Torres",2012,"EUC-G",3,2,
-"Fernando Torres",2012,"EUC-K",2,1,
 "Fernando Torres",2012,"EUC-Q",3,2,
 "Fernando Torres",2012,"Friendlies",4,1,
 "Fernando Torres",2011,"Friendlies",7,1,
@@ -475,12 +442,7 @@
 "Fernando Torres",2010,"WOC-G",3,0,
 "Fernando Torres",2010,"WOC-K",4,0,
 "Fernando Torres",2010,"WOC-Q",7,0,
-"Fernando Torres",2009,"COC-G",2,3,
-"Fernando Torres",2009,"COC-G",1,0,-1
-"Fernando Torres",2009,"COC-K",2,0,
 "Fernando Torres",2009,"Friendlies",3,2,
-"Fernando Torres",2008,"EUC-G",2,1,
-"Fernando Torres",2008,"EUC-K",3,1,
 "Fernando Torres",2008,"EUC-Q",7,2,
 "Fernando Torres",2008,"Friendlies",6,1,
 "Fernando Torres",2007,"Friendlies",2,0,
@@ -489,38 +451,29 @@
 "Fernando Torres",2006,"WOC-K",1,0,
 "Fernando Torres",2006,"WOC-Q",11,7,
 "Fernando Torres",2005,"Friendlies",3,1,
-"Fernando Torres",2004,"EUC-G",3,0,
 "Fernando Torres",2004,"EUC-Q",2,0,
 "Fernando Torres",2004,"Friendlies",6,1,
 "Fernando Torres",2003,"Friendlies",1,0,
+"Florent Malouda",2012,"Friendlies",1,0,1
 "Florent Malouda",2010,"WOC-G",1,0,
-"Florent Malouda",2008,"EUC-G",2,0,
-"Florent Malouda",2008,"EUC-Q",10,1,
+"Florent Malouda",2008,"Friendlies",1,0,1
 "Florent Malouda",2006,"WOC-G",1,0,
 "Florent Malouda",2006,"WOC-K",3,0,
-"Florent Malouda",2006,"WOC-Q",4,0,
 "Franck Ribery",2014,"Friendlies",1,0,1
 "Franck Ribery",2014,"WOC-Q",4,1,1
 "Franck Ribery",2014,"WOC-Q",1,0,-1
 "Franck Ribery",2013,"Friendlies",1,0,1
-"Franck Ribery",2012,"EUC-G",2,0,
-"Franck Ribery",2012,"EUC-G",1,0,-1
-"Franck Ribery",2012,"EUC-K",1,0,
 "Franck Ribery",2012,"EUC-Q",4,0,
 "Franck Ribery",2012,"Friendlies",1,0,1
 "Franck Ribery",2010,"WOC-G",2,0,
 "Franck Ribery",2010,"WOC-Q",6,3,
 "Franck Ribery",2006,"WOC-G",3,0,
-"Frantisek Rajtoral",2012,"EUC-G",1,0,
 "Georgios Samaras",2014,"Friendlies",1,0,1
 "Georgios Samaras",2014,"Friendlies",1,0,
 "Georgios Samaras",2014,"WOC-G",3,1,
 "Georgios Samaras",2014,"WOC-K",1,0,
 "Georgios Samaras",2014,"WOC-Q",4,0,1
 "Georgios Samaras",2014,"WOC-Q",3,0,-1
-"Georgios Samaras",2012,"EUC-G",2,0,
-"Georgios Samaras",2012,"EUC-G",1,0,-1
-"Georgios Samaras",2012,"EUC-K",1,1,
 "Georgios Samaras",2012,"EUC-Q",4,1,1
 "Georgios Samaras",2012,"EUC-Q",4,0,-1
 "Georgios Samaras",2012,"Friendlies",1,0,1
@@ -537,7 +490,6 @@
 "Georgios Samaras",2010,"WOC-Q",5,0,-1
 "Georgios Samaras",2009,"Friendlies",1,0,1
 "Georgios Samaras",2009,"Friendlies",1,0,-1
-"Georgios Samaras",2008,"EUC-G",1,0,
 "Georgios Samaras",2008,"EUC-Q",3,0,1
 "Georgios Samaras",2008,"EUC-Q",5,1,-1
 "Georgios Samaras",2008,"Friendlies",1,0,1
@@ -552,14 +504,10 @@
 "Helder Postiga",2014,"WOC-G",1,0,
 "Helder Postiga",2014,"WOC-Q",10,6,
 "Helder Postiga",2013,"Friendlies",3,1,
-"Helder Postiga",2012,"EUC-G",3,1,
-"Helder Postiga",2012,"EUC-K",1,0,
 "Helder Postiga",2012,"EUC-Q",8,5,
 "Helder Postiga",2012,"Friendlies",3,0,
 "Helder Postiga",2011,"Friendlies",3,1,
 "Helder Postiga",2010,"Friendlies",1,2,
-"Helder Postiga",2008,"EUC-G",1,1,
-"Helder Postiga",2008,"EUC-K",1,0,
 "Helder Postiga",2008,"EUC-Q",2,1,
 "Helder Postiga",2008,"Friendlies",1,0,
 "Helder Postiga",2007,"Friendlies",2,0,
@@ -568,7 +516,6 @@
 "Helder Postiga",2006,"WOC-K",2,0,
 "Helder Postiga",2006,"WOC-Q",8,3,
 "Helder Postiga",2005,"Friendlies",4,2,
-"Helder Postiga",2004,"EUC-K",1,1,
 "Helder Postiga",2004,"Friendlies",4,1,
 "Helder Postiga",2003,"Friendlies",4,2,
 "Hugo Almeida",2016,"EUC-Q",0,0,
@@ -577,7 +524,6 @@
 "Hugo Almeida",2014,"WOC-G",1,0,
 "Hugo Almeida",2014,"WOC-Q",6,1,
 "Hugo Almeida",2013,"Friendlies",1,0,
-"Hugo Almeida",2012,"EUC-K",2,0,
 "Hugo Almeida",2012,"EUC-Q",6,2,
 "Hugo Almeida",2012,"Friendlies",5,1,
 "Hugo Almeida",2011,"Friendlies",4,2,
@@ -586,30 +532,21 @@
 "Hugo Almeida",2010,"WOC-K",1,0,
 "Hugo Almeida",2010,"WOC-Q",7,2,
 "Hugo Almeida",2009,"Friendlies",3,2,
-"Hugo Almeida",2008,"EUC-G",2,0,
 "Hugo Almeida",2008,"EUC-Q",4,2,
 "Hugo Almeida",2008,"Friendlies",5,0,
 "Hugo Almeida",2006,"Friendlies",1,0,
 "Hugo Almeida",2006,"WOC-Q",0,0,
 "Hugo Almeida",2004,"Friendlies",1,0,
-"Ibrahim Afellay",2012,"EUC-G",2,0,
 "Ibrahim Afellay",2012,"EUC-Q",6,3,
 "Ivan Perisic",2014,"WOC-G",3,0,
 "Ivan Perisic",2014,"WOC-Q",10,2,
-"Ivan Perisic",2012,"EUC-G",2,0,
 "Ivan Perisic",2012,"EUC-Q",6,0,
 "Jakub Blaszczykowski",2016,"EUC-Q",1,0,-1
 "Jakub Blaszczykowski",2013,"Friendlies",1,0,1
-"Jakub Blaszczykowski",2012,"EUC-G",3,1,1
 "Jakub Blaszczykowski",2012,"WOC-Q",3,1,
-"Jan Rezek",2012,"EUC-G",1,0,
-"Jan Rezek",2012,"EUC-G",1,0,-1
-"Jeremy Menez",2012,"EUC-G",1,0,
-"Jeremy Menez",2012,"EUC-G",1,0,-1
 "Jeremy Menez",2012,"EUC-Q",3,1,
 "Jermain Defoe",2014,"WOC-Q",4,3,
 "Jermain Defoe",2013,"Friendlies",2,0,
-"Jermain Defoe",2012,"EUC-G",1,0,
 "Jermain Defoe",2012,"EUC-Q",2,3,
 "Jermain Defoe",2012,"Friendlies",2,1,
 "Jermain Defoe",2011,"Friendlies",1,0,
@@ -629,14 +566,12 @@
 "Johan Elmander",2014,"Friendlies",3,0,
 "Johan Elmander",2014,"WOC-Q",8,3,
 "Johan Elmander",2013,"Friendlies",2,0,
-"Johan Elmander",2012,"EUC-G",2,0,
 "Johan Elmander",2012,"EUC-Q",10,2,
 "Johan Elmander",2012,"Friendlies",2,1,
 "Johan Elmander",2011,"Friendlies",4,1,
 "Johan Elmander",2010,"Friendlies",2,1,
 "Johan Elmander",2010,"WOC-Q",6,0,
 "Johan Elmander",2009,"Friendlies",2,1,
-"Johan Elmander",2008,"EUC-G",1,0,
 "Johan Elmander",2008,"Friendlies",4,0,
 "Johan Elmander",2007,"Friendlies",1,0,
 "Johan Elmander",2006,"Friendlies",3,0,
@@ -651,27 +586,22 @@
 "Jonathan Walters",2014,"Friendlies",3,1,
 "Jonathan Walters",2014,"WOC-Q",8,3,
 "Jonathan Walters",2013,"Friendlies",5,0,
-"Jonathan Walters",2012,"EUC-G",3,0,
 "Jonathan Walters",2012,"EUC-Q",2,1,
 "Jonathan Walters",2012,"Friendlies",4,0,
 "Jonathan Walters",2011,"NAC",1,0,1
 "Jonathan Walters",2010,"Friendlies",1,0,
-"Juan Mata",2013,"COC-K",1,0,-1
 "Karim Benzema",2015,"Friendlies",4,2,
 "Karim Benzema",2014,"Friendlies",8,4,
 "Karim Benzema",2014,"WOC-G",3,2,
 "Karim Benzema",2014,"WOC-K",2,1,
 "Karim Benzema",2014,"WOC-Q",9,2,
 "Karim Benzema",2013,"Friendlies",4,1,
-"Karim Benzema",2012,"EUC-G",1,0,-1
-"Karim Benzema",2012,"EUC-K",3,0,
 "Karim Benzema",2012,"EUC-Q",7,3,
 "Karim Benzema",2012,"Friendlies",5,2,
 "Karim Benzema",2011,"Friendlies",6,1,
 "Karim Benzema",2010,"Friendlies",2,1,
 "Karim Benzema",2010,"WOC-Q",8,2,
 "Karim Benzema",2009,"Friendlies",3,1,
-"Karim Benzema",2008,"EUC-G",2,0,
 "Karim Benzema",2008,"EUC-Q",5,2,
 "Karim Benzema",2008,"Friendlies",6,2,
 "Karim Benzema",2007,"Friendlies",3,1,
@@ -680,7 +610,6 @@
 "Kevin Doyle",2014,"Friendlies",3,2,
 "Kevin Doyle",2014,"WOC-Q",3,1,
 "Kevin Doyle",2013,"Friendlies",2,0,
-"Kevin Doyle",2012,"EUC-G",2,0,
 "Kevin Doyle",2012,"EUC-Q",9,2,
 "Kevin Doyle",2012,"Friendlies",4,1,
 "Kevin Doyle",2011,"NAC",1,0,1
@@ -699,7 +628,6 @@
 "Klaas-Jan Huntelaar",2014,"WOC-K",3,1,
 "Klaas-Jan Huntelaar",2014,"WOC-Q",2,2,
 "Klaas-Jan Huntelaar",2013,"Friendlies",1,0,-1
-"Klaas-Jan Huntelaar",2012,"EUC-G",3,0,
 "Klaas-Jan Huntelaar",2012,"EUC-Q",4,7,1
 "Klaas-Jan Huntelaar",2012,"EUC-Q",4,5,-1
 "Klaas-Jan Huntelaar",2012,"Friendlies",3,0,1
@@ -714,7 +642,6 @@
 "Klaas-Jan Huntelaar",2010,"WOC-Q",4,0,-1
 "Klaas-Jan Huntelaar",2009,"Friendlies",3,1,1
 "Klaas-Jan Huntelaar",2009,"Friendlies",3,1,-1
-"Klaas-Jan Huntelaar",2008,"EUC-G",1,1,
 "Klaas-Jan Huntelaar",2008,"EUC-Q",3,1,1
 "Klaas-Jan Huntelaar",2008,"EUC-Q",1,0,-1
 "Klaas-Jan Huntelaar",2008,"Friendlies",2,2,1
@@ -726,7 +653,6 @@
 "Konstantinos Fortounis",2016,"Friendlies",1,2,1
 "Konstantinos Fortounis",2014,"WOC-Q",1,0,1
 "Konstantinos Fortounis",2014,"WOC-Q",1,0,-1
-"Konstantinos Fortounis",2012,"EUC-G",1,0,
 "Konstantinos Fortounis",2012,"Friendlies",1,0,1
 "Konstantinos Mitroglou",2016,"EUC-Q",4,1,1
 "Konstantinos Mitroglou",2016,"EUC-Q",4,0,-1
@@ -741,7 +667,6 @@
 "Konstantinos Mitroglou",2014,"WOC-Q",3,2,-1
 "Konstantinos Mitroglou",2013,"Friendlies",1,0,1
 "Konstantinos Mitroglou",2013,"Friendlies",1,2,-1
-"Konstantinos Mitroglou",2012,"EUC-G",1,0,
 "Konstantinos Mitroglou",2012,"EUC-Q",4,0,1
 "Konstantinos Mitroglou",2012,"EUC-Q",1,0,-1
 "Konstantinos Mitroglou",2012,"Friendlies",2,0,
@@ -758,7 +683,6 @@
 "Luciano Narsingh",2013,"Friendlies",1,0,1
 "Luciano Narsingh",2012,"Friendlies",1,0,1
 "Luciano Narsingh",2012,"Friendlies",1,1,-1
-"Ludovic Obraniak",2012,"EUC-G",2,0,1
 "Lukas Podolski",2016,"EUC-Q",1,0,1
 "Lukas Podolski",2016,"EUC-Q",2,0,-1
 "Lukas Podolski",2015,"Friendlies",1,1,1
@@ -766,8 +690,6 @@
 "Lukas Podolski",2014,"WOC-Q",1,0,1
 "Lukas Podolski",2014,"WOC-Q",1,0,-1
 "Lukas Podolski",2013,"Friendlies",4,2,
-"Lukas Podolski",2012,"EUC-G",3,1,
-"Lukas Podolski",2012,"EUC-K",1,0,
 "Lukas Podolski",2012,"EUC-Q",4,2,1
 "Lukas Podolski",2012,"EUC-Q",5,1,-1
 "Lukas Podolski",2012,"Friendlies",1,0,1
@@ -782,7 +704,6 @@
 "Lukas Podolski",2010,"WOC-Q",4,2,-1
 "Lukas Podolski",2009,"Friendlies",3,2,1
 "Lukas Podolski",2009,"Friendlies",1,1,-1
-"Lukas Podolski",2008,"EUC-K",3,0,
 "Lukas Podolski",2008,"EUC-Q",4,2,1
 "Lukas Podolski",2008,"EUC-Q",5,6,-1
 "Lukas Podolski",2008,"Friendlies",4,0,1
@@ -792,11 +713,8 @@
 "Lukas Podolski",2006,"Friendlies",1,0,-1
 "Lukas Podolski",2006,"WOC-G",3,1,
 "Lukas Podolski",2006,"WOC-K",4,2,
-"Lukas Podolski",2005,"COC-G",2,1,1
-"Lukas Podolski",2005,"COC-K",2,2,1
 "Lukas Podolski",2005,"Friendlies",3,3,1
 "Lukas Podolski",2005,"Friendlies",5,2,-1
-"Lukas Podolski",2004,"EUC-G",1,0,
 "Lukas Podolski",2004,"Friendlies",1,0,1
 "Lukas Podolski",2004,"Friendlies",5,2,-1
 "Luuk de Jong",2016,"EUC-Q",1,0,
@@ -807,25 +725,19 @@
 "Luuk de Jong",2012,"Friendlies",1,0,-1
 "Luuk de Jong",2011,"Friendlies",2,0,1
 "Luuk de Jong",2011,"Friendlies",2,0,-1
-"Maciej Rybus",2012,"EUC-G",1,0,1
 "Marco Reus",2016,"EUC-Q",4,1,
 "Marco Reus",2016,"Friendlies",2,0,
 "Marco Reus",2015,"Friendlies",1,1,
 "Marco Reus",2014,"Friendlies",3,0,
 "Marco Reus",2014,"WOC-Q",6,5,
 "Marco Reus",2013,"Friendlies",3,0,
-"Marco Reus",2012,"EUC-K",1,1,
 "Marco Reus",2012,"EUC-Q",2,0,
 "Marco Reus",2012,"Friendlies",5,1,
 "Marco Reus",2011,"Friendlies",1,0,
 "Mario Balotelli",2014,"Friendlies",1,0,
 "Mario Balotelli",2014,"WOC-Q",3,1,
 "Mario Balotelli",2014,"WOC-Q",5,5,
-"Mario Balotelli",2013,"COC-G",2,1,
-"Mario Balotelli",2013,"COC-G",1,0,-1
 "Mario Balotelli",2013,"Friendlies",6,1,
-"Mario Balotelli",2012,"EUC-G",3,1,
-"Mario Balotelli",2012,"EUC-K",3,2,
 "Mario Balotelli",2012,"EUC-Q",2,0,
 "Mario Balotelli",2012,"Friendlies",2,0,
 "Mario Balotelli",2011,"Friendlies",3,1,
@@ -835,8 +747,6 @@
 "Mario Gomez",2014,"Friendlies",1,0,1
 "Mario Gomez",2013,"Friendlies",1,0,1
 "Mario Gomez",2013,"Friendlies",1,0,-1
-"Mario Gomez",2012,"EUC-G",3,3,
-"Mario Gomez",2012,"EUC-K",2,0,
 "Mario Gomez",2012,"EUC-Q",2,1,1
 "Mario Gomez",2012,"EUC-Q",4,5,-1
 "Mario Gomez",2012,"Friendlies",2,1,1
@@ -850,8 +760,6 @@
 "Mario Gomez",2010,"WOC-Q",5,0,-1
 "Mario Gomez",2009,"Friendlies",3,1,1
 "Mario Gomez",2009,"Friendlies",2,4,-1
-"Mario Gomez",2008,"EUC-G",3,0,
-"Mario Gomez",2008,"EUC-K",1,0,
 "Mario Gomez",2008,"EUC-Q",5,2,1
 "Mario Gomez",2008,"EUC-Q",1,0,-1
 "Mario Gomez",2008,"Friendlies",2,0,1
@@ -866,7 +774,6 @@
 "Mario Mandzukic",2014,"WOC-G",2,2,
 "Mario Mandzukic",2014,"WOC-Q",12,4,
 "Mario Mandzukic",2013,"Friendlies",2,1,
-"Mario Mandzukic",2012,"EUC-G",3,3,
 "Mario Mandzukic",2012,"EUC-Q",10,3,
 "Mario Mandzukic",2012,"Friendlies",4,0,
 "Mario Mandzukic",2011,"Friendlies",1,0,
@@ -877,20 +784,15 @@
 "Marko Devic",2014,"Friendlies",2,1,
 "Marko Devic",2014,"WOC-Q",6,4,
 "Marko Devic",2013,"Friendlies",2,0,
-"Marko Devic",2012,"EUC-G",2,0,
-"Marko Devic",2012,"EUC-G",1,0,1
 "Marko Devic",2012,"Friendlies",5,0,
 "Marko Devic",2011,"Friendlies",10,2,
 "Marko Devic",2010,"Friendlies",5,0,
 "Marko Devic",2009,"Friendlies",1,0,
 "Marko Devic",2008,"Friendlies",1,0,
-"Markus Rosenberg",2012,"EUC-G",1,0,
-"Markus Rosenberg",2012,"EUC-G",1,0,-1
 "Markus Rosenberg",2012,"EUC-Q",0,0,
 "Markus Rosenberg",2012,"Friendlies",1,0,
 "Markus Rosenberg",2010,"WOC-Q",3,0,
 "Markus Rosenberg",2009,"Friendlies",2,0,
-"Markus Rosenberg",2008,"EUC-G",2,0,
 "Markus Rosenberg",2008,"EUC-Q",6,2,
 "Markus Rosenberg",2008,"Friendlies",4,0,
 "Markus Rosenberg",2007,"Friendlies",3,1,
@@ -904,11 +806,7 @@
 "Michael Krohn-Dehli",2014,"WOC-Q",2,0,1
 "Michael Krohn-Dehli",2014,"WOC-Q",2,0,-1
 "Michael Krohn-Dehli",2013,"Friendlies",1,0,-1
-"Michael Krohn-Dehli",2012,"EUC-G",3,2,
 "Michael Krohn-Dehli",2012,"Friendlies",1,0,1
-"Milan Baros",2012,"EUC-G",2,0,
-"Milan Baros",2012,"EUC-G",1,0,-1
-"Milan Baros",2012,"EUC-K",1,0,
 "Milan Baros",2012,"EUC-Q",3,1,1
 "Milan Baros",2012,"EUC-Q",4,0,-1
 "Milan Baros",2012,"Friendlies",1,0,1
@@ -919,7 +817,6 @@
 "Milan Baros",2010,"WOC-Q",5,1,-1
 "Milan Baros",2009,"Friendlies",1,1,1
 "Milan Baros",2009,"Friendlies",1,0,-1
-"Milan Baros",2008,"EUC-G",1,0,
 "Milan Baros",2008,"EUC-Q",5,3,1
 "Milan Baros",2008,"EUC-Q",3,0,-1
 "Milan Baros",2008,"Friendlies",1,0,1
@@ -933,8 +830,6 @@
 "Milan Baros",2006,"WOC-Q",7,4,1
 "Milan Baros",2006,"WOC-Q",5,1,-1
 "Milan Baros",2005,"Friendlies",2,0,-1
-"Milan Baros",2004,"EUC-G",3,3,
-"Milan Baros",2004,"EUC-K",2,2,
 "Milan Baros",2004,"EUC-Q",4,2,1
 "Milan Baros",2004,"EUC-Q",2,1,-1
 "Milan Baros",2004,"Friendlies",4,3,1
@@ -953,8 +848,6 @@
 "Miroslav Klose",2014,"WOC-Q",3,1,-1
 "Miroslav Klose",2013,"Friendlies",1,0,1
 "Miroslav Klose",2013,"Friendlies",1,0,-1
-"Miroslav Klose",2012,"EUC-G",3,0,
-"Miroslav Klose",2012,"EUC-K",2,1,
 "Miroslav Klose",2012,"EUC-Q",4,7,1
 "Miroslav Klose",2012,"EUC-Q",2,2,-1
 "Miroslav Klose",2012,"Friendlies",3,0,1
@@ -968,8 +861,6 @@
 "Miroslav Klose",2010,"WOC-Q",4,2,1
 "Miroslav Klose",2010,"WOC-Q",4,5,-1
 "Miroslav Klose",2009,"Friendlies",2,0,1
-"Miroslav Klose",2008,"EUC-G",3,1,
-"Miroslav Klose",2008,"EUC-K",3,1,
 "Miroslav Klose",2008,"EUC-Q",5,1,1
 "Miroslav Klose",2008,"EUC-Q",4,4,-1
 "Miroslav Klose",2008,"Friendlies",3,1,1
@@ -980,7 +871,6 @@
 "Miroslav Klose",2006,"WOC-K",4,1,
 "Miroslav Klose",2005,"Friendlies",1,0,1
 "Miroslav Klose",2005,"Friendlies",4,0,-1
-"Miroslav Klose",2004,"EUC-G",2,0,
 "Miroslav Klose",2004,"EUC-Q",4,1,1
 "Miroslav Klose",2004,"EUC-Q",4,1,-1
 "Miroslav Klose",2004,"Friendlies",4,2,1
@@ -997,17 +887,12 @@
 "Miroslav Klose",2001,"Friendlies",1,0,-1
 "Nani",2014,"WOC-G",3,1,
 "Nani",2014,"WOC-Q",10,1,
-"Nani",2012,"EUC-G",3,0,
-"Nani",2012,"EUC-K",2,0,
 "Nani",2012,"EUC-Q",10,5,
 "Nani",2010,"WOC-Q",11,3,
-"Nani",2008,"EUC-G",2,0,
 "Nani",2008,"EUC-Q",9,1,
 "Nelson Oliveira",2015,"Friendlies",2,0,
 "Nelson Oliveira",2014,"WOC-Q",2,0,
 "Nelson Oliveira",2013,"Friendlies",4,0,
-"Nelson Oliveira",2012,"EUC-G",3,0,
-"Nelson Oliveira",2012,"EUC-K",1,0,
 "Nelson Oliveira",2012,"Friendlies",4,1,
 "Nicklas Bendtner",2016,"EUC-Q",5,0,1
 "Nicklas Bendtner",2016,"EUC-Q",5,2,-1
@@ -1018,7 +903,6 @@
 "Nicklas Bendtner",2014,"WOC-Q",1,2,1
 "Nicklas Bendtner",2014,"WOC-Q",2,1,-1
 "Nicklas Bendtner",2013,"Friendlies",1,0,1
-"Nicklas Bendtner",2012,"EUC-G",3,2,
 "Nicklas Bendtner",2012,"EUC-Q",2,3,1
 "Nicklas Bendtner",2012,"EUC-Q",3,0,-1
 "Nicklas Bendtner",2012,"Friendlies",3,0,1
@@ -1054,7 +938,6 @@
 "Nikica Jelavic",2014,"WOC-G",2,0,
 "Nikica Jelavic",2014,"WOC-Q",6,1,
 "Nikica Jelavic",2013,"Friendlies",2,1,
-"Nikica Jelavic",2012,"EUC-G",3,1,
 "Nikica Jelavic",2012,"EUC-Q",9,0,
 "Nikica Jelavic",2012,"Friendlies",2,0,
 "Nikica Jelavic",2011,"Friendlies",2,0,
@@ -1071,10 +954,8 @@
 "Nikola Kalinic",2012,"Friendlies",1,1,
 "Nikola Kalinic",2011,"Friendlies",3,2,
 "Nikola Kalinic",2010,"WOC-Q",1,0,
-"Nikola Kalinic",2008,"EUC-G",1,0,
 "Nikola Kalinic",2008,"EUC-Q",0,0,
 "Nikola Kalinic",2008,"Friendlies",1,0,
-"Nikos Liberopoulos",2012,"EUC-K",1,0,
 "Nikos Liberopoulos",2012,"EUC-Q",2,0,-1
 "Nikos Liberopoulos",2012,"Friendlies",1,0,
 "Nikos Liberopoulos",2011,"Friendlies",3,0,1
@@ -1084,7 +965,6 @@
 "Nikos Liberopoulos",2010,"WOC-Q",2,0,-1
 "Nikos Liberopoulos",2009,"Friendlies",1,0,1
 "Nikos Liberopoulos",2009,"Friendlies",1,0,-1
-"Nikos Liberopoulos",2008,"EUC-G",1,0,
 "Nikos Liberopoulos",2008,"EUC-Q",5,2,1
 "Nikos Liberopoulos",2008,"EUC-Q",4,1,-1
 "Nikos Liberopoulos",2008,"Friendlies",2,0,1
@@ -1114,8 +994,6 @@
 "Ola Toivonen",2014,"Friendlies",4,1,
 "Ola Toivonen",2014,"WOC-Q",5,0,
 "Ola Toivonen",2013,"Friendlies",2,0,
-"Ola Toivonen",2012,"EUC-G",1,0,
-"Ola Toivonen",2012,"EUC-G",1,0,-1
 "Ola Toivonen",2012,"EUC-Q",9,2,
 "Ola Toivonen",2012,"Friendlies",5,2,
 "Ola Toivonen",2011,"Friendlies",3,0,
@@ -1130,12 +1008,8 @@
 "Olivier Giroud",2014,"WOC-K",2,0,
 "Olivier Giroud",2014,"WOC-Q",9,2,
 "Olivier Giroud",2013,"Friendlies",5,2,
-"Olivier Giroud",2012,"EUC-G",1,0,
-"Olivier Giroud",2012,"EUC-G",1,0,-1
-"Olivier Giroud",2012,"EUC-K",1,0,
 "Olivier Giroud",2012,"Friendlies",7,1,
 "Olivier Giroud",2011,"Friendlies",2,0,
-"Pavel Pogrebnyak",2012,"EUC-G",1,0,
 "Pavel Pogrebnyak",2012,"EUC-Q",2,0,1
 "Pavel Pogrebnyak",2012,"EUC-Q",5,2,-1
 "Pavel Pogrebnyak",2012,"Friendlies",1,0,1
@@ -1156,7 +1030,6 @@
 "Pavel Pogrebnyak",2006,"Friendlies",1,1,-1
 "Pawel Brozek",2014,"Friendlies",1,1,
 "Pawel Brozek",2014,"WOC-Q",1,0,-1
-"Pawel Brozek",2012,"EUC-G",2,0,1
 "Pawel Brozek",2012,"Friendlies",2,0,1
 "Pawel Brozek",2011,"Friendlies",7,3,1
 "Pawel Brozek",2011,"Friendlies",1,0,
@@ -1183,27 +1056,18 @@
 "Pedro",2014,"Friendlies",5,1,
 "Pedro",2014,"WOC-G",2,0,
 "Pedro",2014,"WOC-Q",8,4,
-"Pedro",2013,"COC-G",2,1,
-"Pedro",2013,"COC-K",1,0,
-"Pedro",2013,"COC-K",1,0,-1
 "Pedro",2013,"Friendlies",5,2,
-"Pedro",2012,"EUC-K",3,0,
 "Pedro",2012,"EUC-Q",2,0,
 "Pedro",2012,"Friendlies",2,4,
 "Pedro",2011,"Friendlies",3,1,
 "Pedro",2010,"Friendlies",5,1,
 "Pedro",2010,"WOC-G",1,0,
 "Pedro",2010,"WOC-K",4,0,
-"Petr Jiracek",2012,"EUC-G",1,1,
-"Petr Jiracek",2012,"EUC-G",1,1,-1
-"Petr Jiracek",2012,"EUC-K",1,0,
 "Petr Jiracek",2012,"EUC-Q",4,1,
-"Ricardo Quaresma",2008,"EUC-G",1,0,
 "Robbie Keane",2016,"EUC-Q",9,5,
 "Robbie Keane",2014,"Friendlies",3,0,
 "Robbie Keane",2014,"WOC-Q",7,6,
 "Robbie Keane",2013,"Friendlies",4,3,
-"Robbie Keane",2012,"EUC-G",3,0,
 "Robbie Keane",2012,"EUC-Q",11,7,
 "Robbie Keane",2012,"Friendlies",3,0,
 "Robbie Keane",2011,"Friendlies",1,0,
@@ -1238,7 +1102,6 @@
 "Robert Lewandowski ",2014,"WOC-Q",4,0,-1
 "Robert Lewandowski ",2013,"Friendlies",3,0,1
 "Robert Lewandowski ",2013,"Friendlies",1,0,-1
-"Robert Lewandowski ",2012,"EUC-G",3,1,
 "Robert Lewandowski ",2012,"Friendlies",3,1,1
 "Robert Lewandowski ",2012,"Friendlies",1,0,-1
 "Robert Lewandowski ",2011,"Friendlies",6,1,1
@@ -1262,7 +1125,6 @@
 "Robin van Persie",2014,"WOC-Q",5,4,-1
 "Robin van Persie",2013,"Friendlies",1,0,1
 "Robin van Persie",2013,"Friendlies",3,1,-1
-"Robin van Persie",2012,"EUC-G",2,1,
 "Robin van Persie",2012,"EUC-Q",3,5,1
 "Robin van Persie",2012,"EUC-Q",3,1,-1
 "Robin van Persie",2012,"Friendlies",3,3,1
@@ -1276,8 +1138,6 @@
 "Robin van Persie",2010,"WOC-Q",4,0,-1
 "Robin van Persie",2009,"Friendlies",2,1,1
 "Robin van Persie",2009,"Friendlies",2,0,-1
-"Robin van Persie",2008,"EUC-G",1,1,
-"Robin van Persie",2008,"EUC-K",1,0,
 "Robin van Persie",2008,"EUC-Q",4,3,1
 "Robin van Persie",2008,"EUC-Q",3,1,-1
 "Robin van Persie",2008,"Friendlies",2,2,1
@@ -1290,8 +1150,6 @@
 "Robin van Persie",2006,"WOC-Q",3,0,1
 "Robin van Persie",2006,"WOC-Q",2,1,-1
 "Robin van Persie",2005,"Friendlies",1,0,1
-"Roman Pavlyuchenko",2012,"EUC-G",2,1,
-"Roman Pavlyuchenko",2012,"EUC-G",1,0,-1
 "Roman Pavlyuchenko",2012,"EUC-Q",5,4,1
 "Roman Pavlyuchenko",2012,"EUC-Q",2,0,-1
 "Roman Pavlyuchenko",2012,"Friendlies",1,0,1
@@ -1303,8 +1161,6 @@
 "Roman Pavlyuchenko",2010,"WOC-Q",5,4,1
 "Roman Pavlyuchenko",2010,"WOC-Q",4,1,-1
 "Roman Pavlyuchenko",2009,"Friendlies",1,1,1
-"Roman Pavlyuchenko",2008,"EUC-G",3,1,
-"Roman Pavlyuchenko",2008,"EUC-K",2,2,
 "Roman Pavlyuchenko",2008,"EUC-Q",3,2,1
 "Roman Pavlyuchenko",2008,"EUC-Q",3,0,-1
 "Roman Pavlyuchenko",2008,"Friendlies",1,0,1
@@ -1320,12 +1176,9 @@
 "Sebastian Giovinco",2014,"Friendlies",2,0,
 "Sebastian Giovinco",2014,"WOC-Q",4,0,
 "Sebastian Giovinco",2013,"Friendlies",0,0,
-"Sebastian Giovinco",2012,"EUC-G",2,0,
 "Sebastian Giovinco",2012,"EUC-Q",3,0,
 "Sebastian Giovinco",2012,"Friendlies",3,0,
 "Sebastian Giovinco",2011,"Friendlies",3,0,
-"Sebastian Larsson",2012,"EUC-G",1,1,
-"Sebastian Larsson",2012,"EUC-G",1,0,-1
 "Sebastian Larsson",2012,"EUC-Q",10,3,
 "Shane Long",2016,"EUC-Q",9,3,
 "Shane Long",2016,"Friendlies",2,1,
@@ -1333,7 +1186,6 @@
 "Shane Long",2014,"Friendlies",7,1,
 "Shane Long",2014,"WOC-Q",7,0,
 "Shane Long",2013,"Friendlies",6,2,
-"Shane Long",2012,"EUC-G",2,0,
 "Shane Long",2012,"EUC-Q",5,1,
 "Shane Long",2012,"Friendlies",4,2,
 "Shane Long",2011,"Friendlies",3,1,
@@ -1346,8 +1198,6 @@
 "Silvestre Varela",2015,"Friendlies",1,0,
 "Silvestre Varela",2014,"Friendlies",4,0,
 "Silvestre Varela",2013,"Friendlies",2,0,
-"Silvestre Varela",2012,"EUC-G",2,1,
-"Silvestre Varela",2012,"EUC-K",1,0,
 "Silvestre Varela",2012,"EUC-Q",2,0,
 "Silvestre Varela",2012,"Friendlies",3,0,
 "Silvestre Varela",2011,"Friendlies",2,1,
@@ -1355,12 +1205,10 @@
 "Simon Cox",2014,"Friendlies",3,0,
 "Simon Cox",2014,"WOC-Q",5,0,
 "Simon Cox",2013,"Friendlies",4,1,
-"Simon Cox",2012,"EUC-G",3,0,
 "Simon Cox",2012,"EUC-Q",6,0,
 "Simon Cox",2012,"Friendlies",5,1,
 "Simon Cox",2011,"Friendlies",1,1,
 "Simon Cox",2011,"NAC",2,1,1
-"Sotiris Ninis",2012,"EUC-G",1,0,-1
 "Theo Walcott",2016,"EUC-Q",4,3,
 "Theo Walcott",2016,"Friendlies",1,0,
 "Theo Walcott",2015,"Friendlies",2,0,
@@ -1381,9 +1229,6 @@
 "Theofanis Gekas",2014,"WOC-K",1,0,
 "Theofanis Gekas",2014,"WOC-Q",2,0,1
 "Theofanis Gekas",2014,"WOC-Q",4,2,-1
-"Theofanis Gekas",2012,"EUC-G",2,1,
-"Theofanis Gekas",2012,"EUC-G",1,0,-1
-"Theofanis Gekas",2012,"EUC-K",1,0,
 "Theofanis Gekas",2012,"EUC-Q",2,1,1
 "Theofanis Gekas",2012,"EUC-Q",2,0,-1
 "Theofanis Gekas",2012,"Friendlies",2,0,
@@ -1396,7 +1241,6 @@
 "Theofanis Gekas",2010,"WOC-Q",6,5,1
 "Theofanis Gekas",2010,"WOC-Q",6,5,-1
 "Theofanis Gekas",2009,"Friendlies",2,1,1
-"Theofanis Gekas",2008,"EUC-G",2,0,
 "Theofanis Gekas",2008,"EUC-Q",5,5,1
 "Theofanis Gekas",2008,"EUC-Q",4,0,-1
 "Theofanis Gekas",2008,"Friendlies",2,1,1
@@ -1408,7 +1252,6 @@
 "Theofanis Gekas",2006,"Friendlies",3,0,-1
 "Theofanis Gekas",2006,"WOC-Q",1,0,1
 "Theofanis Gekas",2006,"WOC-Q",2,0,-1
-"Theofanis Gekas",2005,"COC-G",2,0,
 "Theofanis Gekas",2005,"Friendlies",1,0,1
 "Thomas Muller",2016,"EUC-Q",2,2,1
 "Thomas Muller",2016,"EUC-Q",1,0,-1
@@ -1418,7 +1261,6 @@
 "Thomas Muller",2014,"WOC-G",3,3,
 "Thomas Muller",2014,"WOC-K",4,2,
 "Thomas Muller",2014,"WOC-Q",1,1,-1
-"Thomas Muller",2012,"EUC-G",3,0,
 "Thomas Muller",2012,"EUC-Q",5,2,1
 "Thomas Muller",2012,"EUC-Q",5,1,-1
 "Thomas Muller",2012,"Friendlies",2,0,1
@@ -1439,7 +1281,6 @@
 "Tobias Hysen",2006,"Friendlies",2,0,
 "Tobias Hysen",2005,"Friendlies",3,0,
 "Tobias Mikkelsen",2014,"WOC-Q",1,0,1
-"Tobias Mikkelsen",2012,"EUC-G",3,0,
 "Tobias Mikkelsen",2012,"Friendlies",3,1,1
 "Tobias Mikkelsen",2011,"Friendlies",1,0,1
 "Tomas Necid",2016,"EUC-Q",1,0,1
@@ -1465,9 +1306,6 @@
 "Tomas Necid",2009,"Friendlies",1,0,-1
 "Tomas Pekhart",2014,"WOC-Q",2,1,1
 "Tomas Pekhart",2014,"WOC-Q",2,1,-1
-"Tomas Pekhart",2012,"EUC-G",1,0,
-"Tomas Pekhart",2012,"EUC-G",1,0,-1
-"Tomas Pekhart",2012,"EUC-K",1,0,
 "Tomas Pekhart",2012,"EUC-Q",2,0,1
 "Tomas Pekhart",2012,"EUC-Q",3,0,-1
 "Tomas Pekhart",2012,"Friendlies",2,0,1
@@ -1476,17 +1314,12 @@
 "Tomas Pekhart",2011,"Friendlies",1,0,-1
 "Tomas Pekhart",2010,"Friendlies",1,0,
 "Tomas Rosicky",2016,"EUC-Q",1,0,1
-"Vaclav Pilar",2012,"EUC-G",2,1,
-"Vaclav Pilar",2012,"EUC-G",1,1,-1
-"Vaclav Pilar",2012,"EUC-K",1,0,
 "Wayne Rooney",2016,"EUC-Q",8,7,
 "Wayne Rooney",2015,"Friendlies",4,1,
 "Wayne Rooney",2014,"Friendlies",6,4,
 "Wayne Rooney",2014,"WOC-G",2,0,
 "Wayne Rooney",2014,"WOC-Q",6,7,
 "Wayne Rooney",2013,"Friendlies",6,2,
-"Wayne Rooney",2012,"EUC-G",1,1,-1
-"Wayne Rooney",2012,"EUC-K",1,0,
 "Wayne Rooney",2012,"EUC-Q",7,3,
 "Wayne Rooney",2012,"Friendlies",1,0,
 "Wayne Rooney",2011,"Friendlies",1,0,
@@ -1502,15 +1335,9 @@
 "Wayne Rooney",2006,"WOC-K",2,0,
 "Wayne Rooney",2006,"WOC-Q",7,0,
 "Wayne Rooney",2005,"Friendlies",3,2,
-"Wayne Rooney",2004,"EUC-G",3,4,
-"Wayne Rooney",2004,"EUC-K",1,0,
 "Wayne Rooney",2004,"EUC-Q",6,2,
 "Wayne Rooney",2004,"Friendlies",5,2,
 "Wayne Rooney",2003,"Friendlies",3,1,
-"Wesley Sneijder",2012,"EUC-G",1,0,
-"Wesley Sneijder",2008,"EUC-G",2,2,
-"Wesley Sneijder",2008,"EUC-K",1,0,
-"Yevhen Konoplyanka",2012,"EUC-G",1,0,1
 "Yevhen Seleznyov",2016,"EUC-Q",5,2,
 "Yevhen Seleznyov",2015,"Friendlies",1,0,
 "Yevhen Seleznyov",2014,"Friendlies",0,0,
@@ -1529,12 +1356,10 @@
 "Zlatan Ibrahimovic",2014,"Friendlies",3,2,
 "Zlatan Ibrahimovic",2014,"WOC-Q",11,8,
 "Zlatan Ibrahimovic",2013,"Friendlies",3,3,
-"Zlatan Ibrahimovic",2012,"EUC-G",1,0,
 "Zlatan Ibrahimovic",2012,"Friendlies",5,7,
 "Zlatan Ibrahimovic",2011,"Friendlies",3,0,
 "Zlatan Ibrahimovic",2010,"Friendlies",1,1,
 "Zlatan Ibrahimovic",2010,"WOC-Q",9,2,
-"Zlatan Ibrahimovic",2008,"EUC-G",3,2,
 "Zlatan Ibrahimovic",2008,"EUC-Q",7,0,
 "Zlatan Ibrahimovic",2008,"Friendlies",1,0,
 "Zlatan Ibrahimovic",2007,"Friendlies",1,0,
@@ -1542,8 +1367,6 @@
 "Zlatan Ibrahimovic",2006,"WOC-G",2,0,
 "Zlatan Ibrahimovic",2006,"WOC-K",1,0,
 "Zlatan Ibrahimovic",2006,"WOC-Q",8,8,
-"Zlatan Ibrahimovic",2004,"EUC-G",3,2,
-"Zlatan Ibrahimovic",2004,"EUC-K",1,0,
 "Zlatan Ibrahimovic",2004,"EUC-Q",5,3,
 "Zlatan Ibrahimovic",2004,"Friendlies",5,2,
 "Zlatan Ibrahimovic",2003,"Friendlies",1,1,
