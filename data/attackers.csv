@@ -218,6 +218,10 @@
 "Bastian Schweinsteiger",2006,"Friendlies",1,1,1
 "Bastian Schweinsteiger",2005,"Friendlies",1,0,-1
 "Bastian Schweinsteiger",2004,"Friendlies",1,0,-1
+"Christian Poulsen",2011,"EUC-Q",1,0,-1
+"Christian Poulsen",2007,"Friendlies",1,0,-1
+"Christian Wilhelmsson",2012,"Friendlies",1,1,1
+"Christian Wilhelmsson",2007,"EUC-Q",1,0,-1
 "Cristiano Ronaldo",2016,"Friendlies",2,1,1
 "Cristiano Ronaldo",2015,"EUC-Q",2,0,1
 "Cristiano Ronaldo",2015,"EUC-Q",3,4,-1
@@ -631,6 +635,12 @@
 "Jonathan Walters",2011,"EUC-Q",2,1,
 "Jonathan Walters",2011,"NAC",1,0,1
 "Jonathan Walters",2010,"Friendlies",1,0,
+"Juan Mata",2015,"EUC-Q",1,0,1
+"Juan Mata",2015,"EUC-Q",1,0,-1
+"Juan Mata",2013,"Friendlies",1,0,
+"Juan Mata",2012,"Friendlies",1,0,1
+"Juan Mata",2009,"Friendlies",1,0,1
+"Juan Mata",2009,"WOC-Q",1,0,1
 "Karim Benzema",2015,"Friendlies",4,2,
 "Karim Benzema",2014,"Friendlies",8,4,
 "Karim Benzema",2013,"Friendlies",4,1,
@@ -822,7 +832,9 @@
 "Markus Rosenberg",2007,"Friendlies",3,1,
 "Markus Rosenberg",2006,"Friendlies",4,0,
 "Markus Rosenberg",2005,"Friendlies",6,3,
-"Mesut Ozil",2013,"WOC-Q",10,8,
+"Mesut Ozil",2013,"Friendlies",1,0,-1
+"Mesut Ozil",2013,"WOC-Q",1,1,1
+"Mesut Ozil",2009,"WOC-Q",1,0,-1
 "Michael Krohn-Dehli",2013,"Friendlies",1,0,-1
 "Michael Krohn-Dehli",2013,"WOC-Q",2,0,1
 "Michael Krohn-Dehli",2013,"WOC-Q",2,0,-1
