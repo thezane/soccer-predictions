@@ -861,6 +861,8 @@
 "Michael Krohn-Dehli",2013,"WOC-Q",2,0,1
 "Michael Krohn-Dehli",2013,"WOC-Q",2,0,-1
 "Michael Krohn-Dehli",2012,"Friendlies",1,0,1
+"Michael Krohn-Dehli",2010,"Friendlies",1,0,
+"Michael Krohn-Dehli",2007,"EUC-Q",1,0,-1
 "Milan Baros",2012,"Friendlies",1,0,1
 "Milan Baros",2012,"Friendlies",1,1,
 "Milan Baros",2012,"Friendlies",1,1,-1
@@ -930,6 +932,7 @@
 "Miroslav Klose",2001,"Friendlies",1,0,-1
 "Miroslav Klose",2001,"WOC-Q",3,1,1
 "Miroslav Klose",2001,"WOC-Q",2,1,-1
+"Miguel Veloso",2008,"Friendlies",1,0,1
 "Nani",2013,"WOC-Q",10,1,
 "Nani",2011,"EUC-Q",10,5,
 "Nani",2009,"WOC-Q",11,3,
@@ -976,6 +979,7 @@
 "Nicklas Pedersen",2011,"Friendlies",1,0,1
 "Nicklas Pedersen",2011,"Friendlies",1,0,-1
 "Nicklas Pedersen",2010,"Friendlies",1,0,1
+"Nigel de Jong",2013,"Friendlies",1,0,1
 "Nikica Jelavic",2015,"EUC-Q",1,0,
 "Nikica Jelavic",2014,"Friendlies",3,1,
 "Nikica Jelavic",2013,"Friendlies",2,1,
@@ -986,6 +990,10 @@
 "Nikica Jelavic",2010,"Friendlies",3,1,
 "Nikica Jelavic",2009,"Friendlies",2,1,
 "Nikica Jelavic",2009,"WOC-Q",1,0,
+"Niko Kranjcar",2013,"WOC-Q",2,0,1
+"Niko Kranjcar",2013,"Friendlies",1,0,
+"Niko Kranjcar",2012,"Friendlies",2,0,1
+"Niko Kranjcar",2009,"Friendlies",1,1,-1
 "Nikola Kalinic",2016,"Friendlies",1,0,
 "Nikola Kalinic",2015,"EUC-Q",4,1,
 "Nikola Kalinic",2015,"Friendlies",1,1,
@@ -1100,6 +1108,11 @@
 "Pedro",2011,"Friendlies",3,1,
 "Pedro",2010,"Friendlies",5,1,
 "Petr Jiracek",2011,"EUC-Q",4,1,
+"Rafael van der Vaart",2005,"WOC-Q",1,0,-1
+"Rafael van der Vaart",2003,"EUC-Q",1,0,-1
+"Rafael van der Vaart",2003,"Friendlies",1,0,1
+"Rafael van der Vaart",2001,"WOC-Q",1,0,1
+"Raul Meireles",2010,"Friendlies",1,0,1
 "Robbie Keane",2015,"EUC-Q",9,5,
 "Robbie Keane",2014,"Friendlies",3,0,
 "Robbie Keane",2013,"Friendlies",4,3,
@@ -1200,6 +1213,14 @@
 "Roman Pavlyuchenko",2005,"WOC-Q",2,1,1
 "Roman Pavlyuchenko",2005,"WOC-Q",1,0,-1
 "Roman Pavlyuchenko",2003,"Friendlies",1,0,1
+"Ruslan Rotan",2016,"Friendlies",1,0,1
+"Ruslan Rotan",2012,"Friendlies",1,0,1
+"Ruslan Rotan",2011,"Friendlies",1,0,1
+"Ruslan Rotan",2010,"Friendlies",1,0,1
+"Ruslan Rotan",2010,"Friendlies",1,0,-1
+"Ruslan Rotan",2005,"Friendlies",1,0,1
+"Ruslan Rotan",2005,"WOC-Q",1,0,-1
+"Ruslan Rotan",2003,"Friendlies",1,0,-1
 "Sebastian Giovinco",2015,"EUC-Q",4,0,
 "Sebastian Giovinco",2014,"Friendlies",2,0,
 "Sebastian Giovinco",2013,"Friendlies",0,0,
@@ -1237,6 +1258,7 @@
 "Simon Cox",2011,"EUC-Q",6,0,
 "Simon Cox",2011,"Friendlies",1,1,
 "Simon Cox",2011,"NAC",2,1,1
+"Steven Gerrard",2010,"Friendlies",1,0,
 "Theo Walcott",2016,"Friendlies",1,0,
 "Theo Walcott",2015,"EUC-Q",4,3,
 "Theo Walcott",2015,"Friendlies",2,0,
