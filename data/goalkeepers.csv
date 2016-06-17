@@ -1,6 +1,6 @@
 "Player","Year","Contest","Apps","Goals Conceded","Home Advantage"
 "Dimitris Salpingidis",2010,"Friendlies",1,0,1
-"Igor Akinfeev",2015,"EUC-Q",4,1,1
+"Igor Akinfeev",2015,"EUC-Q",5,1,1
 "Igor Akinfeev",2015,"EUC-Q",5,3,-1
 "Igor Akinfeev",2015,"Friendlies",2,2,1
 "Igor Akinfeev",2014,"Friendlies",4,0,1
@@ -8,12 +8,12 @@
 "Igor Akinfeev",2013,"Friendlies",2,1,
 "Igor Akinfeev",2013,"WOC-Q",4,1,1
 "Igor Akinfeev",2013,"WOC-Q",5,3,-1
-"Igor Akinfeev",2012,"Friendlies",1,1,1
+"Igor Akinfeev",2012,"Friendlies",1,0,1
 "Igor Akinfeev",2012,"Friendlies",2,0,
 "Igor Akinfeev",2011,"EUC-Q",2,2,1
 "Igor Akinfeev",2011,"EUC-Q",4,2,-1
 "Igor Akinfeev",2011,"Friendlies",1,0,1
-"Igor Akinfeev",2011,"Friendlies",1,1,-1
+"Igor Akinfeev",2011,"Friendlies",1,1,
 "Igor Akinfeev",2010,"Friendlies",2,2,1
 "Igor Akinfeev",2010,"Friendlies",1,1,-1
 "Igor Akinfeev",2009,"Friendlies",1,3,1
@@ -37,8 +37,7 @@
 "Maarten Stekelenburg",2011,"EUC-Q",3,2,1
 "Maarten Stekelenburg",2011,"EUC-Q",3,0,-1
 "Maarten Stekelenburg",2011,"Friendlies",2,1,1
-"Maarten Stekelenburg",2011,"Friendlies",2,2,-1
-"Maarten Stekelenburg",2010,"Friendlies",3,2,1
+"Maarten Stekelenburg",2011,"Friendlies",1,3,-1
 "Maarten Stekelenburg",2010,"Friendlies",3,2,1
 "Maarten Stekelenburg",2010,"Friendlies",1,1,
 "Maarten Stekelenburg",2009,"Friendlies",2,2,1
@@ -49,12 +48,13 @@
 "Maarten Stekelenburg",2008,"Friendlies",1,1,-1
 "Maarten Stekelenburg",2007,"EUC-Q",2,0,1
 "Maarten Stekelenburg",2007,"EUC-Q",2,3,-1
+"Maarten Stekelenburg",2007,"Friendlies",1,1,1
 "Maarten Stekelenburg",2007,"Friendlies",2,1,-1
-"Maarten Stekelenburg",2006,"Friendlies",2,2,1
+"Maarten Stekelenburg",2006,"Friendlies",2,0,1
 "Maarten Stekelenburg",2004,"Friendlies",1,0,1
 "Petr Cech",2015,"EUC-Q",4,4,1
-"Petr Cech",2015,"EUC-Q",8,5,-1
-"Petr Cech",2015,"Friendlies",1,1,-1
+"Petr Cech",2015,"EUC-Q",5,8,-1
+"Petr Cech",2015,"Friendlies",1,3,-1
 "Petr Cech",2014,"Friendlies",2,3,1
 "Petr Cech",2013,"Friendlies",1,0,1
 "Petr Cech",2013,"WOC-Q",5,6,1
@@ -82,13 +82,13 @@
 "Petr Cech",2005,"Friendlies",1,2,-1
 "Petr Cech",2005,"WOC-Q",5,6,1
 "Petr Cech",2005,"WOC-Q",8,4,-1
-"Petr Cech",2004,"Friendlies",4,2,1
-"Petr Cech",2004,"Friendlies",1,2,-1
+"Petr Cech",2004,"Friendlies",4,1,1
+"Petr Cech",2004,"Friendlies",1,0,-1
 "Petr Cech",2003,"EUC-Q",4,1,1
 "Petr Cech",2003,"EUC-Q",4,4,-1
 "Petr Cech",2003,"Friendlies",1,0,1
 "Petr Cech",2003,"Friendlies",1,0,-1
-"Petr Cech",2002,"Friendlies",4,3,1
+"Petr Cech",2002,"Friendlies",3,2,1
 "Petr Cech",2002,"Friendlies",1,0,
 "Petr Cech",2002,"Friendlies",1,0,-1
 "Rafael van der Vaart",2008,"Friendlies",1,1,1
