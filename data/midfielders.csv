@@ -45,6 +45,9 @@
 "Alan Dzagoev",2009,"Friendlies",1,-1,1
 "Alan Dzagoev",2009,"WOC-Q",2,0,-1
 "Alan Dzagoev",2009,"WOC-Q",2,1,1
+"Aleksandr Anyukov",2007,"EUC-Q",1,0,1
+"Aleksandr Anyukov",2007,"EUC-Q",1,2,-1
+"Aleksandr Anyukov",2005,"WOC-Q",1,0,1
 "Aleksandr Kokorin",2015,"EUC-Q",3,7,-1
 "Aleksandr Kokorin",2015,"EUC-Q",2,3,1
 "Aleksandr Kokorin",2014,"Friendlies",1,1,-1
@@ -498,6 +501,10 @@
 "Danny Welbeck",2013,"WOC-Q",1,0,-1
 "Danny Welbeck",2013,"WOC-Q",3,6,1
 "Danny Welbeck",2011,"Friendlies",1,-1,1
+"Dariusz Dudka",2012,"Friendlies",1,1,1
+"Dariusz Dudka",2012,"Friendlies",1,0,
+"Dariusz Dudka",2011,"Friendlies",2,0,1
+"Dariusz Dudka",2005,"Friendlies",1,1,1
 "David Lafata",2013,"WOC-Q",1,2,-1
 "David Lafata",2013,"WOC-Q",1,0,1
 "David Lafata",2012,"Friendlies",1,-1,1
@@ -904,6 +911,7 @@
 "Johan Elmander",2009,"WOC-Q",1,0,1
 "Johan Elmander",2008,"Friendlies",1,0,1
 "Johan Elmander",2005,"WOC-Q",1,1,1
+"John Heitinga",2005,"Friendlies",1,-1,-1
 "Jonathan Walters",2015,"EUC-Q",2,0,-1
 "Jonathan Walters",2015,"EUC-Q",1,2,1
 "Jonathan Walters",2014,"Friendlies",1,1,1
@@ -912,6 +920,7 @@
 "Jonathan Walters",2013,"WOC-Q",2,-1,-1
 "Jonathan Walters",2013,"WOC-Q",2,-1,1
 "Jonathan Walters",2010,"Friendlies",1,-1,1
+"Joris Mathijsen",2005,"WOC-Q",1,0,
 "Juan Mata",2015,"EUC-Q",1,0,-1
 "Juan Mata",2014,"Friendlies",1,0,1
 "Juan Mata",2013,"Friendlies",1,1,-1
@@ -1416,6 +1425,8 @@
 "Sebastian Larsson",2008,"Friendlies",2,0,-1
 "Sebastian Larsson",2008,"Friendlies",2,1,1
 "Sebastian Larsson",2008,"Friendlies",1,0,
+"Sergei Ignashevich",2011,"Friendlies",1,0,1
+"Sergei Ignashevich",2008,"Friendlies",1,3,1
 "Shane Long",2015,"EUC-Q",1,0,1
 "Shane Long",2015,"WOC-Q",1,-3,-1
 "Shane Long",2011,"EUC-Q",1,2,1
