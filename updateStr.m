@@ -1,18 +1,31 @@
 function [a d] = updateStr(A, a, d, alpha)
   aPrev = a;
   dPrev = d;
-  [aNext dNext] = computeStr(A, a, d);
-  strNext = [aNext dNext];
-  str = [aPrev dPrev];
-  str = alpha .* strNext + (1 - alpha) .* str;
-  a = str(:, 1);
-  d = str(:, 2);
-  [a d]'
+  roe = 1;
+  
+  while (1)
+    [aNext dNext] = computeStr(A, a, d);
+    aDel = aNext - a;
+    dDel = dNext - d;
+    
+    if (norm(aDel) < roe && norm(dDel) < roe)
+      strNext = [aNext dNext];
+      str = [aPrev dPrev];
+      str = alpha .* strNext + (1 - alpha) .* str;   
+      a = str(:, 1);
+      d = str(:, 2);
+      (1 - 1 ./ [a d]') .* [1 1; -1 -1]
+      return;
+    end   
+    
+    a = aNext;
+    d = dNext;
+  end
 end
 
 function [a d] = computeStr(A, a, d)
   tol = 1e-06;
-  lambda = 0.01;
+  lambda = 0.1;
   A = A + lambda * fliplr(eye(2));
   [aRelA dRelA] = computeStrRelA(A, a, tol);
   [aRelD dRelD] = computeStrRelD(A, d, tol);
