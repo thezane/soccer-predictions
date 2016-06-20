@@ -1,26 +1,42 @@
-function [a d dVs] = updateStr(A, a, d, alpha)
+function [a d] = updateStr(A, a, d, alpha)
+  aPrev = a;
+  dPrev = d;
+  tol = 0.01;
+  
+  while (1)
+    [aNext dNext] = computeStr(A, a, d);
+    aDel = aNext - a;
+    dDel = dNext - d;
+    
+    if (norm(aDel) < tol && norm(dDel) < tol)
+      strNext = [aNext dNext];
+      str = [aPrev dPrev];
+      str = alpha .* strNext + (1 - alpha) .* str;
+      a = str(1: 2, 1);
+      d = str(1: 2, 2);
+      [a d]
+      return
+    end
+    
+    a = aNext;
+    d = dNext;
+  end
+end
+
+function [a d] = computeStr(A, a, d)
   tol = 1e-06;
-  lambda = 0.01;
-  k = 3;
-  A = [A; zeros(k - 2, 2)];
-  A = [A zeros(k, k - 2)];
-  A = A + lambda;
-  a = [a; ones(k - 2, 1)];
-  d = [d; ones(k - 2, 1)];
-  [aRelA dRelA] = updateStrRelA(A, a, tol);
-  [aRelD dRelD] = updateStrRelD(A, d, tol);
+  lambda = 0.5;
+  A = A + lambda - lambda * eye(2);
+  [aRelA dRelA] = computeStrRelA(A, a, tol);
+  [aRelD dRelD] = computeStrRelD(A, d, tol);
   onesCol = ones(2, 1);
   aNext = (aRelA + aRelD) / 2;
   dNext = (dRelA + dRelD) / 2;
-  strNext = [aNext dNext];
-  str = [a d];
-  str = alpha .* strNext + (1 - alpha) .* str;
-  a = str(1: 2, 1);
-  d = str(1: 2, 2);
-  [a d]
+  a = aNext;
+  d = dNext;
 end
 
-function [a d] = updateStrRelA(A, a, tol)
+function [a d] = computeStrRelA(A, a, tol)
   d = A * (1 ./ a);
   
   while (1)
@@ -37,7 +53,7 @@ function [a d] = updateStrRelA(A, a, tol)
   end
 end
 
-function [a d] = updateStrRelD(A, d, tol)
+function [a d] = computeStrRelD(A, d, tol)
   a = A' * (1 ./ d);
   
   while (1)
