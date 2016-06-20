@@ -14,7 +14,6 @@ function [a d] = computeStr(A, a, d)
   tol = 1e-06;
   lambda = 0.01;
   A = A + lambda * fliplr(eye(2));
-  pause
   [aRelA dRelA] = computeStrRelA(A, a, tol);
   [aRelD dRelD] = computeStrRelD(A, d, tol);
   aNext = (aRelA + aRelD) / 2;
