@@ -1,9 +1,0 @@
-A1 = [0 0; 0 0];
-A2 = [0 2; 0 0];
-A3 = [0 1; 3 0];
-A4 = [0 1; 0 0];
-alpha = 0.5;
-[a d] = updateStr(A1, [1 1]', [1 1]', alpha);
-[a d] = updateStr(A2, a, d, alpha);
-[a d] = updateStr(A3, a, d, alpha);
-[a d] = updateStr(A4, a, d, alpha);

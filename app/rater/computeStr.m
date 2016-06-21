@@ -1,9 +1,9 @@
-function [a d] = updateStr(A, a, d, alpha, nu, lambda)
+function [a d] = computeStr(A, a, d, alpha, nu, lambda)
   aPrev = a;
   dPrev = d;
   
   while (true)
-    [aNext dNext] = computeStr(A, a, d, lambda);
+    [aNext dNext] = computeAD(A, a, d, lambda);
     aDel = aNext - a;
     dDel = dNext - d;
     
@@ -13,7 +13,6 @@ function [a d] = updateStr(A, a, d, alpha, nu, lambda)
       str = alpha .* strNext + (1 - alpha) .* str;   
       a = str(:, 1);
       d = str(:, 2);
-      (1 - 1 ./ [a d]) .* [1 -1; 1 -1]
       return;
     end   
     
@@ -22,7 +21,7 @@ function [a d] = updateStr(A, a, d, alpha, nu, lambda)
   end
 end
 
-function [a d] = computeStr(A, a, d, lambda)
+function [a d] = computeAD(A, a, d, lambda)
   tol = sqrt(eps);
   A = A + lambda * fliplr(eye(2));
   [aRelA dRelA] = computeStrRelA(A, a, tol);

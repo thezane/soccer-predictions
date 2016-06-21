@@ -38,6 +38,7 @@ function mTree = addMatch(T, i, mTree, homeTeam, awayTeam, ...
     mTree(match.date) = [];
   end
   
+  match.i = length(mTree(match.date)) + 1;
   mTree(match.date) = [mTree(match.date) match];
 end
 
@@ -54,7 +55,7 @@ function match = makeMatch(T, i, homeTeam, awayTeam, dateOutFormat)
   match.contest = char(T{i, 'Contest'});
   match.days = datenum(char(T{i, 'Date'}), dateInFormat);
   match.date = datestr(match.days, dateOutFormat);
-  match.teams = [homeTeam awayTeam];
+  match.teamNames = {homeTeam.name awayTeam.name};
   match.goals = [T{i, 'HomeGoals'} T{i, 'AwayGoals'}];
   match.homeAdvantage = T{i, 'HomeAdvantage'};
 end

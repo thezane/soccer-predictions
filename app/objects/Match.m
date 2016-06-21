@@ -3,11 +3,12 @@ classdef Match
     contest
     date
     days
-    teams
+    teamNames
     goals
-    teamStrOld
-    teamStrNew
+    teamStr
+    teamStrNext
     homeAdvantage
+    i
   end
   
   methods
