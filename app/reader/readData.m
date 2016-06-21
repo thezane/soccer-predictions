@@ -1,4 +1,4 @@
-function [tTree mTree] = readFeatures(dataPath)
+function [tTree mTree] = readData(dataPath)
   loadUtilityConstants;
   tTree = buildType2AnyMap('char');
   mTree = buildType2AnyMap('char');
@@ -34,11 +34,11 @@ function mTree = addMatch(T, i, mTree, homeTeam, awayTeam, ...
     dateOutFormat)
   match = makeMatch(T, i, homeTeam, awayTeam, dateOutFormat);
   
-  if (isKey(mTree, match.date))
-    mTree(match.date) = [mTree(match.date) match];
-  else
-    mTree(match.date) = [match];
+  if (~isKey(mTree, match.date))
+    mTree(match.date) = [];
   end
+  
+  mTree(match.date) = [mTree(match.date) match];
 end
 
 function team = makeTeam(T, i, teamName)
@@ -52,9 +52,8 @@ function match = makeMatch(T, i, homeTeam, awayTeam, dateOutFormat)
   dateInFormat = 'mm/dd/yy';
   match = Match;
   match.contest = char(T{i, 'Contest'});
-  match.date = datestr(datenum(char(T{i, 'Date'}), dateInFormat), ...
-      dateOutFormat);
-  match.id = i;
+  match.days = datenum(char(T{i, 'Date'}), dateInFormat);
+  match.date = datestr(match.days, dateOutFormat);
   match.teams = [homeTeam awayTeam];
   match.goals = [T{i, 'HomeGoals'} T{i, 'AwayGoals'}];
   match.homeAdvantage = T{i, 'HomeAdvantage'};
