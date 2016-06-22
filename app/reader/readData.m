@@ -1,7 +1,7 @@
 function [tTree mTree] = readData(dataPath)
-  loadUtilityConstants;
   tTree = buildType2AnyMap('char');
   mTree = buildType2AnyMap('char');
+  dateFormat = 'yyyy/mm/dd';
   T = buildTable(dataPath, 'matches.csv');
   n = height(T);
   i = 1;
@@ -9,7 +9,7 @@ function [tTree mTree] = readData(dataPath)
   while (i <= n)
     [tTree homeTeam] = addTeam(T, i, tTree, true);
     [tTree awayTeam] = addTeam(T, i, tTree, false);
-    mTree = addMatch(T, i, mTree, homeTeam, awayTeam, DATE_FORMAT);
+    mTree = addMatch(T, i, mTree, homeTeam, awayTeam, dateFormat);
     i = i + 1;
   end
 end
@@ -46,6 +46,7 @@ function team = makeTeam(T, i, teamName)
   team = Team;
   team.name = teamName;
   team.str = [1 1];
+  team.updateDays = 0;
   team.xp = 0;
 end
 

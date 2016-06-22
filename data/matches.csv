@@ -426,6 +426,12 @@
 "Slovakia","Belarus","10/9/15","EUC-Q",0,1,1
 "Macedonia","Ukraine","10/9/15","EUC-Q",0,2,1
 "Liechtenstein","Sweden","10/9/15","EUC-Q",0,2,1
+"Bosnia-Herzegovina","Portugal","11/11/11","EUC-Q",0,0,1
+"Turkey","Croatia","11/11/11","EUC-Q",0,3,1
+"Czech Republic","Montenegro","11/11/11","EUC-Q",2,0,1
+"Estonia","Republic of Ireland","11/11/11","EUC-Q",0,4,1
+"Norway","Hungary","11/12/15","EUC-Q",0,1,1
+"Bosnia-Herzegovina","Republic of Ireland","11/13/15","EUC-Q",1,1,1
 "Germany","Gibraltar","11/14/14","EUC-Q",4,0,1
 "Romania","Northern Ireland","11/14/14","EUC-Q",2,0,1
 "Scotland","Republic of Ireland","11/14/14","EUC-Q",1,0,1
@@ -434,6 +440,13 @@
 "Portugal","Armenia","11/14/14","EUC-Q",1,0,1
 "Georgia","Poland","11/14/14","EUC-Q",0,4,1
 "Greece","Faroe Islands","11/14/14","EUC-Q",0,1,1
+"Ukraine","Slovenia","11/14/15","EUC-Q",2,0,1
+"Sweden","Denmark","11/14/15","EUC-Q",2,1,1
+"Croatia","Slovenia","11/15/03","EUC-Q",1,1,1
+"Russia","Wales","11/15/03","EUC-Q",0,0,1
+"Scotland","Netherlands","11/15/03","EUC-Q",1,0,1
+"Latvia","Turkey","11/15/03","EUC-Q",1,0,1
+"Spain","Norway","11/15/03","EUC-Q",2,1,1
 "Republic of Ireland","San Marino","11/15/06","EUC-Q",5,0,1
 "Portugal","Kazakhstan","11/15/06","EUC-Q",3,0,1
 "Israel","Croatia","11/15/06","EUC-Q",3,4,1
@@ -441,6 +454,10 @@
 "Cyprus","Germany","11/15/06","EUC-Q",1,1,1
 "Belgium","Poland","11/15/06","EUC-Q",0,1,1
 "Macedonia","Russia","11/15/06","EUC-Q",0,2,1
+"Croatia","Turkey","11/15/11","EUC-Q",0,0,1
+"Montenegro","Czech Republic","11/15/11","EUC-Q",0,1,1
+"Republic of Ireland","Estonia","11/15/11","EUC-Q",1,1,1
+"Portugal","Bosnia-Herzegovina","11/15/11","EUC-Q",6,2,1
 "Switzerland","Lithuania","11/15/14","EUC-Q",4,0,1
 "Spain","Belarus","11/15/14","EUC-Q",3,0,1
 "England","Slovenia","11/15/14","EUC-Q",3,1,1
@@ -450,6 +467,7 @@
 "Macedonia","Slovakia","11/15/14","EUC-Q",0,2,1
 "San Marino","Estonia","11/15/14","EUC-Q",0,0,1
 "Moldova","Liechtenstein","11/15/14","EUC-Q",0,1,1
+"Hungary","Norway","11/15/15","EUC-Q",2,1,1
 "Netherlands","Latvia","11/16/14","EUC-Q",6,0,1
 "Cyprus","Andorra","11/16/14","EUC-Q",5,0,1
 "Turkey","Kazakhstan","11/16/14","EUC-Q",3,1,1
@@ -459,6 +477,7 @@
 "Bulgaria","Malta","11/16/14","EUC-Q",1,1,1
 "Belgium","Wales","11/16/14","EUC-Q",0,0,1
 "Azerbaijan","Norway","11/16/14","EUC-Q",0,1,1
+"Republic of Ireland","Bosnia-Herzegovina","11/16/15","EUC-Q",2,0,1
 "Greece","Malta","11/17/07","EUC-Q",5,0,1
 "Germany","Cyprus","11/17/07","EUC-Q",4,0,1
 "Latvia","Liechtenstein","11/17/07","EUC-Q",4,1,1
@@ -481,6 +500,13 @@
 "Andorra","Estonia","11/17/07","EUC-Q",0,2,1
 "Finland","San Marino","11/17/10","EUC-Q",8,0,1
 "Croatia","Malta","11/17/10","EUC-Q",3,0,1
+"Denmark","Sweden","11/17/15","EUC-Q",2,2,1
+"Slovenia","Ukraine","11/17/15","EUC-Q",1,1,1
+"Slovenia","Croatia","11/19/03","EUC-Q",0,1,1
+"Wales","Russia","11/19/03","EUC-Q",0,1,1
+"Turkey","Latvia","11/19/03","EUC-Q",2,2,1
+"Norway","Spain","11/19/03","EUC-Q",0,3,1
+"Netherlands","Scotland","11/19/03","EUC-Q",6,0,1
 "Cyprus","Malta","11/20/02","EUC-Q",2,1,1
 "Azerbaijan","Wales","11/20/02","EUC-Q",0,2,1
 "San Marino","Latvia","11/20/02","EUC-Q",0,1,1
@@ -1098,29 +1124,1014 @@
 "Azerbaijan","Bulgaria","9/9/14","EUC-Q",1,2,1
 "Kazakhstan","Latvia","9/9/14","EUC-Q",0,0,1
 "Norway","Italy","9/9/14","EUC-Q",0,2,1
-"Hungary","Norway","11/15/15","EUC-Q",2,1,1
-"Republic of Ireland","Bosnia-Herzegovina","11/16/15","EUC-Q",2,0,1
-"Denmark","Sweden","11/17/15","EUC-Q",2,2,1
-"Slovenia","Ukraine","11/17/15","EUC-Q",1,1,1
-"Norway","Hungary","11/12/15","EUC-Q",0,1,1
-"Bosnia-Herzegovina","Republic of Ireland","11/13/15","EUC-Q",1,1,1
-"Ukraine","Slovenia","11/14/15","EUC-Q",2,0,1
-"Sweden","Denmark","11/14/15","EUC-Q",2,1,1
-"Croatia","Turkey","11/15/11","EUC-Q",0,0,1
-"Montenegro","Czech Republic","11/15/11","EUC-Q",0,1,1
-"Republic of Ireland","Estonia","11/15/11","EUC-Q",1,1,1
-"Portugal","Bosnia-Herzegovina","11/15/11","EUC-Q",6,2,1
-"Bosnia-Herzegovina","Portugal","11/11/11","EUC-Q",0,0,1
-"Turkey","Croatia","11/11/11","EUC-Q",0,3,1
-"Czech Republic","Montenegro","11/11/11","EUC-Q",2,0,1
-"Estonia","Republic of Ireland","11/11/11","EUC-Q",0,4,1
-"Slovenia","Croatia","11/19/03","EUC-Q",0,1,1
-"Wales","Russia","11/19/03","EUC-Q",0,1,1
-"Turkey","Latvia","11/19/03","EUC-Q",2,2,1
-"Norway","Spain","11/19/03","EUC-Q",0,3,1
-"Netherlands","Scotland","11/19/03","EUC-Q",6,0,1
-"Croatia","Slovenia","11/15/03","EUC-Q",1,1,1
-"Russia","Wales","11/15/03","EUC-Q",0,0,1
-"Scotland","Netherlands","11/15/03","EUC-Q",1,0,1
-"Latvia","Turkey","11/15/03","EUC-Q",1,0,1
-"Spain","Norway","11/15/03","EUC-Q",2,1,1
+"Denmark","Sweden","10/10/09","WOC-Q",1,0,1
+"Portugal","Hungary","10/10/09","WOC-Q",3,0,1
+"Czech Republic","Poland","10/10/09","WOC-Q",2,0,1
+"Slovakia","Slovenia","10/10/09","WOC-Q",0,2,1
+"Finland","Wales","10/10/09","WOC-Q",2,1,1
+"Russia","Germany","10/10/09","WOC-Q",0,1,1
+"Liechtenstein","Azerbaijan","10/10/09","WOC-Q",0,2,1
+"Estonia","Bosnia-Herzegovina","10/10/09","WOC-Q",0,2,1
+"Armenia","Spain","10/10/09","WOC-Q",1,2,1
+"Belgium","Turkey","10/10/09","WOC-Q",2,0,1
+"Belarus","Kazakhstan","10/10/09","WOC-Q",4,0,1
+"Ukraine","England","10/10/09","WOC-Q",1,0,1
+"Serbia","Romania","10/10/09","WOC-Q",5,0,1
+"Austria","Lithuania","10/10/09","WOC-Q",2,1,1
+"France","Faroe Islands","10/10/09","WOC-Q",5,0,1
+"Montenegro","Georgia","10/10/09","WOC-Q",2,1,1
+"Cyprus","Bulgaria","10/10/09","WOC-Q",4,1,1
+"Republic of Ireland","Italy","10/10/09","WOC-Q",2,2,1
+"Croatia","Scotland","10/11/00","WOC-Q",1,1,1
+"Slovenia","Switzerland","10/11/00","WOC-Q",2,2,1
+"Russia","Luxembourg","10/11/00","WOC-Q",3,0,1
+"Republic of Ireland","Estonia","10/11/00","WOC-Q",2,0,1
+"Netherlands","Portugal","10/11/00","WOC-Q",0,2,1
+"Denmark","Bulgaria","10/11/00","WOC-Q",1,1,1
+"Malta","Czech Republic","10/11/00","WOC-Q",0,0,1
+"Iceland","Northern Ireland","10/11/00","WOC-Q",1,0,1
+"Slovakia","Sweden","10/11/00","WOC-Q",0,0,1
+"Moldova","Macedonia","10/11/00","WOC-Q",0,0,1
+"Azerbaijan","Turkey","10/11/00","WOC-Q",0,1,1
+"Poland","Wales","10/11/00","WOC-Q",0,0,1
+"Belarus","Armenia","10/11/00","WOC-Q",2,1,1
+"Norway","Ukraine","10/11/00","WOC-Q",0,1,1
+"Austria","Spain","10/11/00","WOC-Q",1,1,1
+"Israel","Bosnia-Herzegovina","10/11/00","WOC-Q",3,1,1
+"Lithuania","Hungary","10/11/00","WOC-Q",1,6,1
+"Italy","Georgia","10/11/00","WOC-Q",2,0,1
+"Finland","England","10/11/00","WOC-Q",0,0,1
+"Albania","Greece","10/11/00","WOC-Q",2,0,1
+"Hungary","Albania","10/11/08","WOC-Q",2,0,1
+"Sweden","Portugal","10/11/08","WOC-Q",0,0,1
+"Denmark","Malta","10/11/08","WOC-Q",3,0,1
+"Poland","Czech Republic","10/11/08","WOC-Q",2,1,1
+"San Marino","Slovakia","10/11/08","WOC-Q",1,3,1
+"Slovenia","Northern Ireland","10/11/08","WOC-Q",2,0,1
+"Finland","Azerbaijan","10/11/08","WOC-Q",1,0,1
+"Wales","Liechtenstein","10/11/08","WOC-Q",2,0,1
+"Germany","Russia","10/11/08","WOC-Q",2,1,1
+"Turkey","Bosnia-Herzegovina","10/11/08","WOC-Q",2,1,1
+"Estonia","Spain","10/11/08","WOC-Q",0,3,1
+"Belgium","Armenia","10/11/08","WOC-Q",2,0,1
+"England","Kazakhstan","10/11/08","WOC-Q",5,1,1
+"Ukraine","Croatia","10/11/08","WOC-Q",0,0,1
+"Faroe Islands","Austria","10/11/08","WOC-Q",1,1,1
+"Romania","France","10/11/08","WOC-Q",2,2,1
+"Serbia","Lithuania","10/11/08","WOC-Q",3,0,1
+"Georgia","Cyprus","10/11/08","WOC-Q",1,1,1
+"Bulgaria","Italy","10/11/08","WOC-Q",0,0,1
+"Scotland","Norway","10/11/08","WOC-Q",0,0,1
+"Netherlands","Iceland","10/11/08","WOC-Q",2,0,1
+"Croatia","Belgium","10/11/13","WOC-Q",1,2,1
+"Wales","Macedonia","10/11/13","WOC-Q",1,0,1
+"Armenia","Bulgaria","10/11/13","WOC-Q",2,1,1
+"Malta","Czech Republic","10/11/13","WOC-Q",1,4,1
+"Denmark","Italy","10/11/13","WOC-Q",2,2,1
+"Faroe Islands","Kazakhstan","10/11/13","WOC-Q",1,1,1
+"Germany","Republic of Ireland","10/11/13","WOC-Q",3,0,1
+"Sweden","Austria","10/11/13","WOC-Q",2,1,1
+"Andorra","Romania","10/11/13","WOC-Q",0,4,1
+"Netherlands","Hungary","10/11/13","WOC-Q",8,1,1
+"Estonia","Turkey","10/11/13","WOC-Q",0,2,1
+"Albania","Switzerland","10/11/13","WOC-Q",1,2,1
+"Iceland","Cyprus","10/11/13","WOC-Q",2,0,1
+"Slovenia","Norway","10/11/13","WOC-Q",3,0,1
+"Azerbaijan","Northern Ireland","10/11/13","WOC-Q",2,0,1
+"Luxembourg","Russia","10/11/13","WOC-Q",0,4,1
+"Portugal","Israel","10/11/13","WOC-Q",1,1,1
+"Lithuania","Latvia","10/11/13","WOC-Q",2,0,1
+"Bosnia-Herzegovina","Liechtenstein","10/11/13","WOC-Q",4,1,1
+"Greece","Slovakia","10/11/13","WOC-Q",1,0,1
+"Moldova","San Marino","10/11/13","WOC-Q",3,0,1
+"Ukraine","Poland","10/11/13","WOC-Q",1,0,1
+"England","Montenegro","10/11/13","WOC-Q",4,1,1
+"Spain","Belarus","10/11/13","WOC-Q",2,1,1
+"Andorra","Armenia","10/12/05","WOC-Q",0,3,1
+"Finland","Czech Republic","10/12/05","WOC-Q",0,3,1
+"Netherlands","Macedonia","10/12/05","WOC-Q",0,0,1
+"Kazakhstan","Denmark","10/12/05","WOC-Q",1,2,1
+"Greece","Georgia","10/12/05","WOC-Q",1,0,1
+"Albania","Turkey","10/12/05","WOC-Q",0,1,1
+"Portugal","Latvia","10/12/05","WOC-Q",3,0,1
+"Luxembourg","Estonia","10/12/05","WOC-Q",0,2,1
+"Slovakia","Russia","10/12/05","WOC-Q",0,0,1
+"France","Cyprus","10/12/05","WOC-Q",4,0,1
+"Republic of Ireland","Switzerland","10/12/05","WOC-Q",0,0,1
+"Lithuania","Belgium","10/12/05","WOC-Q",1,1,1
+"Serbia and Montenegro","Bosnia-Herzegovina","10/12/05","WOC-Q",1,0,1
+"San Marino","Spain","10/12/05","WOC-Q",0,6,1
+"Malta","Bulgaria","10/12/05","WOC-Q",1,1,1
+"Hungary","Croatia","10/12/05","WOC-Q",0,0,1
+"Sweden","Iceland","10/12/05","WOC-Q",3,1,1
+"Austria","Northern Ireland","10/12/05","WOC-Q",2,0,1
+"England","Poland","10/12/05","WOC-Q",2,1,1
+"Wales","Azerbaijan","10/12/05","WOC-Q",2,0,1
+"Slovenia","Scotland","10/12/05","WOC-Q",0,3,1
+"Italy","Moldova","10/12/05","WOC-Q",2,1,1
+"Belarus","Norway","10/12/05","WOC-Q",0,1,1
+"Macedonia","Croatia","10/12/12","WOC-Q",1,2,1
+"Serbia","Belgium","10/12/12","WOC-Q",0,3,1
+"Wales","Scotland","10/12/12","WOC-Q",2,1,1
+"Czech Republic","Malta","10/12/12","WOC-Q",3,1,1
+"Armenia","Italy","10/12/12","WOC-Q",1,3,1
+"Bulgaria","Denmark","10/12/12","WOC-Q",1,1,1
+"Kazakhstan","Austria","10/12/12","WOC-Q",0,0,1
+"Faroe Islands","Sweden","10/12/12","WOC-Q",1,2,1
+"Republic of Ireland","Germany","10/12/12","WOC-Q",1,6,1
+"Turkey","Romania","10/12/12","WOC-Q",0,1,1
+"Netherlands","Andorra","10/12/12","WOC-Q",3,0,1
+"Estonia","Hungary","10/12/12","WOC-Q",0,1,1
+"Albania","Iceland","10/12/12","WOC-Q",1,2,1
+"Switzerland","Norway","10/12/12","WOC-Q",1,1,1
+"Slovenia","Cyprus","10/12/12","WOC-Q",2,1,1
+"Russia","Portugal","10/12/12","WOC-Q",1,0,1
+"Luxembourg","Israel","10/12/12","WOC-Q",0,6,1
+"Liechtenstein","Lithuania","10/12/12","WOC-Q",0,2,1
+"Slovakia","Latvia","10/12/12","WOC-Q",2,1,1
+"Greece","Bosnia-Herzegovina","10/12/12","WOC-Q",0,0,1
+"Moldova","Ukraine","10/12/12","WOC-Q",0,0,1
+"England","San Marino","10/12/12","WOC-Q",5,0,1
+"Finland","Georgia","10/12/12","WOC-Q",1,1,1
+"Belarus","Spain","10/12/12","WOC-Q",0,4,1
+"Andorra","Macedonia","10/13/04","WOC-Q",1,0,1
+"Armenia","Czech Republic","10/13/04","WOC-Q",0,3,1
+"Netherlands","Finland","10/13/04","WOC-Q",3,1,1
+"Kazakhstan","Albania","10/13/04","WOC-Q",0,1,1
+"Ukraine","Georgia","10/13/04","WOC-Q",2,0,1
+"Denmark","Turkey","10/13/04","WOC-Q",1,1,1
+"Latvia","Estonia","10/13/04","WOC-Q",2,2,1
+"Luxembourg","Liechtenstein","10/13/04","WOC-Q",0,4,1
+"Portugal","Russia","10/13/04","WOC-Q",7,1,1
+"Republic of Ireland","Faroe Islands","10/13/04","WOC-Q",2,0,1
+"Cyprus","France","10/13/04","WOC-Q",0,2,1
+"Serbia and Montenegro","San Marino","10/13/04","WOC-Q",5,0,1
+"Lithuania","Spain","10/13/04","WOC-Q",0,0,1
+"Bulgaria","Malta","10/13/04","WOC-Q",4,1,1
+"Iceland","Sweden","10/13/04","WOC-Q",1,4,1
+"Azerbaijan","England","10/13/04","WOC-Q",0,1,1
+"Northern Ireland","Austria","10/13/04","WOC-Q",3,3,1
+"Wales","Poland","10/13/04","WOC-Q",2,3,1
+"Norway","Slovenia","10/13/04","WOC-Q",3,0,1
+"Moldova","Scotland","10/13/04","WOC-Q",1,1,1
+"Italy","Belarus","10/13/04","WOC-Q",4,3,1
+"Denmark","Hungary","10/14/09","WOC-Q",0,1,1
+"Sweden","Albania","10/14/09","WOC-Q",4,1,1
+"Portugal","Malta","10/14/09","WOC-Q",4,0,1
+"San Marino","Slovenia","10/14/09","WOC-Q",0,3,1
+"Poland","Slovakia","10/14/09","WOC-Q",0,1,1
+"Czech Republic","Northern Ireland","10/14/09","WOC-Q",0,0,1
+"Azerbaijan","Russia","10/14/09","WOC-Q",1,1,1
+"Germany","Finland","10/14/09","WOC-Q",1,1,1
+"Liechtenstein","Wales","10/14/09","WOC-Q",0,2,1
+"Bosnia-Herzegovina","Spain","10/14/09","WOC-Q",2,5,1
+"Turkey","Armenia","10/14/09","WOC-Q",2,0,1
+"Estonia","Belgium","10/14/09","WOC-Q",2,0,1
+"Andorra","Ukraine","10/14/09","WOC-Q",0,6,1
+"Kazakhstan","Croatia","10/14/09","WOC-Q",1,2,1
+"England","Belarus","10/14/09","WOC-Q",3,0,1
+"Lithuania","Serbia","10/14/09","WOC-Q",2,1,1
+"France","Austria","10/14/09","WOC-Q",3,1,1
+"Romania","Faroe Islands","10/14/09","WOC-Q",3,1,1
+"Republic of Ireland","Montenegro","10/14/09","WOC-Q",0,0,1
+"Italy","Cyprus","10/14/09","WOC-Q",3,2,1
+"Bulgaria","Georgia","10/14/09","WOC-Q",6,2,1
+"Malta","Hungary","10/15/08","WOC-Q",0,1,1
+"Portugal","Albania","10/15/08","WOC-Q",0,0,1
+"Czech Republic","Slovenia","10/15/08","WOC-Q",1,0,1
+"Slovakia","Poland","10/15/08","WOC-Q",2,1,1
+"Northern Ireland","San Marino","10/15/08","WOC-Q",4,0,1
+"Russia","Finland","10/15/08","WOC-Q",3,0,1
+"Germany","Wales","10/15/08","WOC-Q",1,0,1
+"Bosnia-Herzegovina","Armenia","10/15/08","WOC-Q",4,1,1
+"Estonia","Turkey","10/15/08","WOC-Q",0,0,1
+"Belgium","Spain","10/15/08","WOC-Q",1,2,1
+"Croatia","Andorra","10/15/08","WOC-Q",4,0,1
+"Belarus","England","10/15/08","WOC-Q",1,3,1
+"Lithuania","Faroe Islands","10/15/08","WOC-Q",1,0,1
+"Austria","Serbia","10/15/08","WOC-Q",1,3,1
+"Georgia","Bulgaria","10/15/08","WOC-Q",0,0,1
+"Republic of Ireland","Cyprus","10/15/08","WOC-Q",1,0,1
+"Italy","Montenegro","10/15/08","WOC-Q",2,1,1
+"Norway","Netherlands","10/15/08","WOC-Q",0,1,1
+"Iceland","Macedonia","10/15/08","WOC-Q",1,0,1
+"Serbia","Macedonia","10/15/13","WOC-Q",5,1,1
+"Belgium","Wales","10/15/13","WOC-Q",1,1,1
+"Scotland","Croatia","10/15/13","WOC-Q",2,0,1
+"Bulgaria","Czech Republic","10/15/13","WOC-Q",0,1,1
+"Denmark","Malta","10/15/13","WOC-Q",6,0,1
+"Italy","Armenia","10/15/13","WOC-Q",2,2,1
+"Faroe Islands","Austria","10/15/13","WOC-Q",0,3,1
+"Sweden","Germany","10/15/13","WOC-Q",3,5,1
+"Republic of Ireland","Kazakhstan","10/15/13","WOC-Q",3,1,1
+"Turkey","Netherlands","10/15/13","WOC-Q",0,2,1
+"Romania","Estonia","10/15/13","WOC-Q",2,0,1
+"Hungary","Andorra","10/15/13","WOC-Q",2,0,1
+"Cyprus","Albania","10/15/13","WOC-Q",0,0,1
+"Norway","Iceland","10/15/13","WOC-Q",1,1,1
+"Switzerland","Slovenia","10/15/13","WOC-Q",1,0,1
+"Portugal","Luxembourg","10/15/13","WOC-Q",3,0,1
+"Israel","Northern Ireland","10/15/13","WOC-Q",1,1,1
+"Azerbaijan","Russia","10/15/13","WOC-Q",1,1,1
+"Lithuania","Bosnia-Herzegovina","10/15/13","WOC-Q",0,1,1
+"Greece","Liechtenstein","10/15/13","WOC-Q",2,0,1
+"Latvia","Slovakia","10/15/13","WOC-Q",2,2,1
+"San Marino","Ukraine","10/15/13","WOC-Q",0,8,1
+"England","Poland","10/15/13","WOC-Q",2,0,1
+"Montenegro","Moldova","10/15/13","WOC-Q",2,5,1
+"France","Finland","10/15/13","WOC-Q",3,0,1
+"Spain","Georgia","10/15/13","WOC-Q",2,0,1
+"Croatia","Wales","10/16/12","WOC-Q",2,0,1
+"Macedonia","Serbia","10/16/12","WOC-Q",1,0,1
+"Belgium","Scotland","10/16/12","WOC-Q",2,0,1
+"Czech Republic","Bulgaria","10/16/12","WOC-Q",0,0,1
+"Italy","Denmark","10/16/12","WOC-Q",3,1,1
+"Faroe Islands","Republic of Ireland","10/16/12","WOC-Q",1,4,1
+"Austria","Kazakhstan","10/16/12","WOC-Q",4,0,1
+"Germany","Sweden","10/16/12","WOC-Q",4,4,1
+"Andorra","Estonia","10/16/12","WOC-Q",0,1,1
+"Romania","Netherlands","10/16/12","WOC-Q",1,4,1
+"Hungary","Turkey","10/16/12","WOC-Q",3,1,1
+"Cyprus","Norway","10/16/12","WOC-Q",1,3,1
+"Iceland","Switzerland","10/16/12","WOC-Q",0,2,1
+"Albania","Slovenia","10/16/12","WOC-Q",1,0,1
+"Russia","Azerbaijan","10/16/12","WOC-Q",1,0,1
+"Israel","Luxembourg","10/16/12","WOC-Q",3,0,1
+"Portugal","Northern Ireland","10/16/12","WOC-Q",1,1,1
+"Latvia","Liechtenstein","10/16/12","WOC-Q",2,0,1
+"Bosnia-Herzegovina","Lithuania","10/16/12","WOC-Q",3,0,1
+"Slovakia","Greece","10/16/12","WOC-Q",0,1,1
+"Ukraine","Montenegro","10/16/12","WOC-Q",0,1,1
+"San Marino","Moldova","10/16/12","WOC-Q",0,2,1
+"Belarus","Georgia","10/16/12","WOC-Q",2,0,1
+"Spain","France","10/16/12","WOC-Q",1,1,1
+"Poland","England","10/17/12","WOC-Q",1,1,1
+"Israel","Austria","10/27/01","WOC-Q",1,1,1
+"Malta","Azerbaijan","10/6/00","WOC-Q",3,0,1
+"Scotland","Latvia","10/6/01","WOC-Q",2,1,1
+"Croatia","Belgium","10/6/01","WOC-Q",1,0,1
+"Russia","Switzerland","10/6/01","WOC-Q",4,0,1
+"Slovenia","Faroe Islands","10/6/01","WOC-Q",3,0,1
+"Yugoslavia","Luxembourg","10/6/01","WOC-Q",6,2,1
+"Republic of Ireland","Cyprus","10/6/01","WOC-Q",4,0,1
+"Portugal","Estonia","10/6/01","WOC-Q",5,0,1
+"Netherlands","Andorra","10/6/01","WOC-Q",4,0,1
+"Malta","Northern Ireland","10/6/01","WOC-Q",0,1,1
+"Czech Republic","Bulgaria","10/6/01","WOC-Q",6,0,1
+"Denmark","Iceland","10/6/01","WOC-Q",6,0,1
+"Moldova","Turkey","10/6/01","WOC-Q",0,3,1
+"Poland","Ukraine","10/6/01","WOC-Q",1,1,1
+"Wales","Belarus","10/6/01","WOC-Q",1,0,1
+"Armenia","Norway","10/6/01","WOC-Q",1,4,1
+"Italy","Hungary","10/6/01","WOC-Q",1,0,1
+"Romania","Georgia","10/6/01","WOC-Q",1,1,1
+"England","Greece","10/6/01","WOC-Q",2,2,1
+"Germany","Finland","10/6/01","WOC-Q",0,0,1
+"Latvia","Belgium","10/7/00","WOC-Q",0,4,1
+"San Marino","Scotland","10/7/00","WOC-Q",0,2,1
+"Luxembourg","Slovenia","10/7/00","WOC-Q",1,2,1
+"Switzerland","Faroe Islands","10/7/00","WOC-Q",5,1,1
+"Andorra","Estonia","10/7/00","WOC-Q",1,2,1
+"Portugal","Republic of Ireland","10/7/00","WOC-Q",1,1,1
+"Cyprus","Netherlands","10/7/00","WOC-Q",0,4,1
+"Northern Ireland","Denmark","10/7/00","WOC-Q",1,1,1
+"Bulgaria","Malta","10/7/00","WOC-Q",3,0,1
+"Czech Republic","Iceland","10/7/00","WOC-Q",4,0,1
+"Sweden","Turkey","10/7/00","WOC-Q",1,1,1
+"Moldova","Slovakia","10/7/00","WOC-Q",0,1,1
+"Armenia","Ukraine","10/7/00","WOC-Q",2,3,1
+"Wales","Norway","10/7/00","WOC-Q",1,1,1
+"Poland","Belarus","10/7/00","WOC-Q",3,1,1
+"Spain","Israel","10/7/00","WOC-Q",2,0,1
+"Liechtenstein","Austria","10/7/00","WOC-Q",0,1,1
+"Italy","Romania","10/7/00","WOC-Q",3,0,1
+"Lithuania","Georgia","10/7/00","WOC-Q",0,4,1
+"Greece","Finland","10/7/00","WOC-Q",1,0,1
+"England","Germany","10/7/00","WOC-Q",0,1,1
+"Macedonia","Slovakia","10/7/01","WOC-Q",0,5,1
+"Sweden","Azerbaijan","10/7/01","WOC-Q",3,0,1
+"Bosnia-Herzegovina","Liechtenstein","10/7/01","WOC-Q",5,0,1
+"Finland","Romania","10/8/05","WOC-Q",0,1,1
+"Czech Republic","Netherlands","10/8/05","WOC-Q",0,2,1
+"Georgia","Kazakhstan","10/8/05","WOC-Q",0,0,1
+"Ukraine","Albania","10/8/05","WOC-Q",2,2,1
+"Denmark","Greece","10/8/05","WOC-Q",1,0,1
+"Slovakia","Estonia","10/8/05","WOC-Q",1,0,1
+"Russia","Luxembourg","10/8/05","WOC-Q",5,1,1
+"Portugal","Liechtenstein","10/8/05","WOC-Q",2,1,1
+"Switzerland","France","10/8/05","WOC-Q",1,1,1
+"Cyprus","Republic of Ireland","10/8/05","WOC-Q",0,1,1
+"Israel","Faroe Islands","10/8/05","WOC-Q",2,1,1
+"Lithuania","Serbia and Montenegro","10/8/05","WOC-Q",0,2,1
+"Bosnia-Herzegovina","San Marino","10/8/05","WOC-Q",3,0,1
+"Belgium","Spain","10/8/05","WOC-Q",0,2,1
+"Croatia","Sweden","10/8/05","WOC-Q",1,0,1
+"Bulgaria","Hungary","10/8/05","WOC-Q",2,0,1
+"Northern Ireland","Wales","10/8/05","WOC-Q",2,3,1
+"England","Austria","10/8/05","WOC-Q",1,0,1
+"Scotland","Belarus","10/8/05","WOC-Q",0,1,1
+"Norway","Moldova","10/8/05","WOC-Q",1,0,1
+"Italy","Slovenia","10/8/05","WOC-Q",1,0,1
+"Finland","Armenia","10/9/04","WOC-Q",3,1,1
+"Czech Republic","Romania","10/9/04","WOC-Q",1,0,1
+"Macedonia","Netherlands","10/9/04","WOC-Q",2,2,1
+"Ukraine","Greece","10/9/04","WOC-Q",1,1,1
+"Turkey","Kazakhstan","10/9/04","WOC-Q",4,0,1
+"Albania","Denmark","10/9/04","WOC-Q",0,2,1
+"France","Republic of Ireland","10/9/04","WOC-Q",0,0,1
+"Israel","Switzerland","10/9/04","WOC-Q",2,2,1
+"Cyprus","Faroe Islands","10/9/04","WOC-Q",2,2,1
+"Bosnia-Herzegovina","Serbia and Montenegro","10/9/04","WOC-Q",0,0,1
+"Spain","Belgium","10/9/04","WOC-Q",2,0,1
+"Sweden","Hungary","10/9/04","WOC-Q",3,0,1
+"Croatia","Bulgaria","10/9/04","WOC-Q",2,2,1
+"Malta","Iceland","10/9/04","WOC-Q",0,0,1
+"England","Wales","10/9/04","WOC-Q",2,0,1
+"Azerbaijan","Northern Ireland","10/9/04","WOC-Q",0,0,1
+"Austria","Poland","10/9/04","WOC-Q",1,3,1
+"Scotland","Norway","10/9/04","WOC-Q",0,1,1
+"Belarus","Moldova","10/9/04","WOC-Q",4,0,1
+"Slovenia","Italy","10/9/04","WOC-Q",1,0,1
+"Belgium","Czech Republic","11/10/01","WOC-Q",1,0,1
+"Ukraine","Germany","11/10/01","WOC-Q",1,1,1
+"Slovenia","Romania","11/10/01","WOC-Q",2,1,1
+"Austria","Turkey","11/10/01","WOC-Q",0,1,1
+"Spain","Slovakia","11/12/05","WOC-Q",5,1,1
+"Switzerland","Turkey","11/12/05","WOC-Q",2,0,1
+"Norway","Czech Republic","11/12/05","WOC-Q",0,1,1
+"Czech Republic","Belgium","11/14/01","WOC-Q",0,1,1
+"Germany","Ukraine","11/14/01","WOC-Q",4,1,1
+"Romania","Slovenia","11/14/01","WOC-Q",1,1,1
+"Turkey","Austria","11/14/01","WOC-Q",5,0,1
+"Northern Ireland","Azerbaijan","11/14/12","WOC-Q",1,1,1
+"Montenegro","San Marino","11/14/12","WOC-Q",3,0,1
+"San Marino","Latvia","11/15/00","WOC-Q",0,1,1
+"Cyprus","Andorra","11/15/00","WOC-Q",5,0,1
+"Slovakia","Spain","11/16/05","WOC-Q",1,1,1
+"Turkey","Switzerland","11/16/05","WOC-Q",4,2,1
+"Czech Republic","Norway","11/16/05","WOC-Q",1,0,1
+"Macedonia","Czech Republic","11/17/04","WOC-Q",0,2,1
+"Armenia","Romania","11/17/04","WOC-Q",1,1,1
+"Andorra","Netherlands","11/17/04","WOC-Q",0,3,1
+"Georgia","Denmark","11/17/04","WOC-Q",2,2,1
+"Turkey","Ukraine","11/17/04","WOC-Q",0,3,1
+"Greece","Kazakhstan","11/17/04","WOC-Q",3,1,1
+"Russia","Estonia","11/17/04","WOC-Q",4,0,1
+"Liechtenstein","Latvia","11/17/04","WOC-Q",1,3,1
+"Luxembourg","Portugal","11/17/04","WOC-Q",0,5,1
+"Cyprus","Israel","11/17/04","WOC-Q",1,2,1
+"Belgium","Serbia and Montenegro","11/17/04","WOC-Q",0,2,1
+"San Marino","Lithuania","11/17/04","WOC-Q",0,1,1
+"Malta","Hungary","11/17/04","WOC-Q",0,2,1
+"San Marino","Czech Republic","11/19/08","WOC-Q",0,3,1
+"Malta","Albania","2/11/09","WOC-Q",0,0,1
+"San Marino","Northern Ireland","2/11/09","WOC-Q",0,3,1
+"Republic of Ireland","Georgia","2/11/09","WOC-Q",2,1,1
+"Belgium","San Marino","2/28/01","WOC-Q",10,1,1
+"Portugal","Andorra","2/28/01","WOC-Q",3,0,1
+"Macedonia","Andorra","2/9/05","WOC-Q",0,0,1
+"Albania","Ukraine","2/9/05","WOC-Q",0,2,1
+"Greece","Denmark","2/9/05","WOC-Q",2,1,1
+"Spain","San Marino","2/9/05","WOC-Q",5,0,1
+"Croatia","Serbia","3/22/13","WOC-Q",2,0,1
+"Macedonia","Belgium","3/22/13","WOC-Q",0,2,1
+"Scotland","Wales","3/22/13","WOC-Q",1,2,1
+"Bulgaria","Malta","3/22/13","WOC-Q",6,0,1
+"Czech Republic","Denmark","3/22/13","WOC-Q",0,3,1
+"Kazakhstan","Germany","3/22/13","WOC-Q",0,3,1
+"Austria","Faroe Islands","3/22/13","WOC-Q",6,0,1
+"Sweden","Republic of Ireland","3/22/13","WOC-Q",0,0,1
+"Andorra","Turkey","3/22/13","WOC-Q",0,2,1
+"Netherlands","Estonia","3/22/13","WOC-Q",3,0,1
+"Hungary","Romania","3/22/13","WOC-Q",2,2,1
+"Slovenia","Iceland","3/22/13","WOC-Q",1,2,1
+"Norway","Albania","3/22/13","WOC-Q",0,1,1
+"Israel","Portugal","3/22/13","WOC-Q",3,3,1
+"Luxembourg","Azerbaijan","3/22/13","WOC-Q",0,0,1
+"Liechtenstein","Latvia","3/22/13","WOC-Q",1,1,1
+"Slovakia","Lithuania","3/22/13","WOC-Q",1,1,1
+"Bosnia-Herzegovina","Greece","3/22/13","WOC-Q",3,1,1
+"Moldova","Montenegro","3/22/13","WOC-Q",0,1,1
+"Poland","Ukraine","3/22/13","WOC-Q",1,3,1
+"San Marino","England","3/22/13","WOC-Q",0,8,1
+"Spain","Finland","3/22/13","WOC-Q",1,1,1
+"France","Georgia","3/22/13","WOC-Q",3,1,1
+"Cyprus","Switzerland","3/23/13","WOC-Q",0,0,1
+"Croatia","Latvia","3/24/01","WOC-Q",4,1,1
+"Scotland","Belgium","3/24/01","WOC-Q",2,2,1
+"Luxembourg","Faroe Islands","3/24/01","WOC-Q",0,2,1
+"Russia","Slovenia","3/24/01","WOC-Q",1,1,1
+"Yugoslavia","Switzerland","3/24/01","WOC-Q",1,1,1
+"Cyprus","Republic of Ireland","3/24/01","WOC-Q",0,4,1
+"Andorra","Netherlands","3/24/01","WOC-Q",0,5,1
+"Northern Ireland","Czech Republic","3/24/01","WOC-Q",0,1,1
+"Malta","Denmark","3/24/01","WOC-Q",0,5,1
+"Bulgaria","Iceland","3/24/01","WOC-Q",2,1,1
+"Sweden","Macedonia","3/24/01","WOC-Q",1,0,1
+"Turkey","Slovakia","3/24/01","WOC-Q",1,1,1
+"Azerbaijan","Moldova","3/24/01","WOC-Q",0,0,1
+"Norway","Poland","3/24/01","WOC-Q",2,3,1
+"Bosnia-Herzegovina","Austria","3/24/01","WOC-Q",1,1,1
+"Romania","Italy","3/24/01","WOC-Q",0,2,1
+"Hungary","Lithuania","3/24/01","WOC-Q",1,1,1
+"England","Finland","3/24/01","WOC-Q",2,1,1
+"Germany","Albania","3/24/01","WOC-Q",2,1,1
+"Czech Republic","Finland","3/26/05","WOC-Q",4,3,1
+"Armenia","Andorra","3/26/05","WOC-Q",2,1,1
+"Romania","Netherlands","3/26/05","WOC-Q",0,2,1
+"Georgia","Greece","3/26/05","WOC-Q",1,3,1
+"Turkey","Albania","3/26/05","WOC-Q",2,0,1
+"Denmark","Kazakhstan","3/26/05","WOC-Q",3,0,1
+"Liechtenstein","Russia","3/26/05","WOC-Q",1,2,1
+"Estonia","Slovakia","3/26/05","WOC-Q",1,2,1
+"France","Switzerland","3/26/05","WOC-Q",0,0,1
+"Israel","Republic of Ireland","3/26/05","WOC-Q",1,1,1
+"Belgium","Bosnia-Herzegovina","3/26/05","WOC-Q",4,1,1
+"Bulgaria","Sweden","3/26/05","WOC-Q",0,3,1
+"Croatia","Iceland","3/26/05","WOC-Q",4,0,1
+"Wales","Austria","3/26/05","WOC-Q",0,2,1
+"England","Northern Ireland","3/26/05","WOC-Q",4,0,1
+"Poland","Azerbaijan","3/26/05","WOC-Q",8,0,1
+"Italy","Scotland","3/26/05","WOC-Q",2,0,1
+"Serbia","Scotland","3/26/13","WOC-Q",2,0,1
+"Belgium","Macedonia","3/26/13","WOC-Q",1,0,1
+"Wales","Croatia","3/26/13","WOC-Q",1,2,1
+"Armenia","Czech Republic","3/26/13","WOC-Q",0,3,1
+"Denmark","Bulgaria","3/26/13","WOC-Q",1,1,1
+"Malta","Italy","3/26/13","WOC-Q",0,2,1
+"Germany","Kazakhstan","3/26/13","WOC-Q",4,1,1
+"Republic of Ireland","Austria","3/26/13","WOC-Q",2,2,1
+"Estonia","Andorra","3/26/13","WOC-Q",2,0,1
+"Turkey","Hungary","3/26/13","WOC-Q",1,1,1
+"Netherlands","Romania","3/26/13","WOC-Q",4,0,1
+"Azerbaijan","Portugal","3/26/13","WOC-Q",0,2,1
+"Northern Ireland","Israel","3/26/13","WOC-Q",0,2,1
+"Ukraine","Moldova","3/26/13","WOC-Q",2,1,1
+"Poland","San Marino","3/26/13","WOC-Q",5,0,1
+"Montenegro","England","3/26/13","WOC-Q",1,1,1
+"France","Spain","3/26/13","WOC-Q",0,1,1
+"Scotland","San Marino","3/28/01","WOC-Q",4,0,1
+"Switzerland","Luxembourg","3/28/01","WOC-Q",5,0,1
+"Russia","Faroe Islands","3/28/01","WOC-Q",1,0,1
+"Slovenia","Yugoslavia","3/28/01","WOC-Q",1,1,1
+"Cyprus","Estonia","3/28/01","WOC-Q",2,2,1
+"Andorra","Republic of Ireland","3/28/01","WOC-Q",0,3,1
+"Portugal","Netherlands","3/28/01","WOC-Q",2,2,1
+"Czech Republic","Denmark","3/28/01","WOC-Q",0,0,1
+"Bulgaria","Northern Ireland","3/28/01","WOC-Q",4,3,1
+"Moldova","Sweden","3/28/01","WOC-Q",0,2,1
+"Macedonia","Turkey","3/28/01","WOC-Q",1,2,1
+"Slovakia","Azerbaijan","3/28/01","WOC-Q",3,1,1
+"Wales","Ukraine","3/28/01","WOC-Q",1,1,1
+"Poland","Armenia","3/28/01","WOC-Q",4,0,1
+"Belarus","Norway","3/28/01","WOC-Q",2,1,1
+"Ukraine","Belarus","3/28/01","WOC-Q",0,0,1
+"Armenia","Wales","3/28/01","WOC-Q",2,2,1
+"Austria","Israel","3/28/01","WOC-Q",2,1,1
+"Liechtenstein","Bosnia-Herzegovina","3/28/01","WOC-Q",0,3,1
+"Spain","Liechtenstein","3/28/01","WOC-Q",5,0,1
+"Italy","Lithuania","3/28/01","WOC-Q",4,0,1
+"Georgia","Romania","3/28/01","WOC-Q",0,2,1
+"Greece","Germany","3/28/01","WOC-Q",2,4,1
+"Albania","England","3/28/01","WOC-Q",1,3,1
+"Malta","Denmark","3/28/09","WOC-Q",0,3,1
+"Albania","Hungary","3/28/09","WOC-Q",0,1,1
+"Portugal","Sweden","3/28/09","WOC-Q",0,0,1
+"Northern Ireland","Poland","3/28/09","WOC-Q",3,2,1
+"Slovenia","Czech Republic","3/28/09","WOC-Q",0,0,1
+"Russia","Azerbaijan","3/28/09","WOC-Q",2,0,1
+"Wales","Finland","3/28/09","WOC-Q",0,2,1
+"Germany","Liechtenstein","3/28/09","WOC-Q",4,0,1
+"Armenia","Estonia","3/28/09","WOC-Q",2,2,1
+"Belgium","Bosnia-Herzegovina","3/28/09","WOC-Q",2,4,1
+"Spain","Turkey","3/28/09","WOC-Q",1,0,1
+"Romania","Serbia","3/28/09","WOC-Q",2,3,1
+"Lithuania","France","3/28/09","WOC-Q",0,1,1
+"Cyprus","Georgia","3/28/09","WOC-Q",2,1,1
+"Montenegro","Italy","3/28/09","WOC-Q",0,2,1
+"Republic of Ireland","Bulgaria","3/28/09","WOC-Q",1,1,1
+"Netherlands","Scotland","3/28/09","WOC-Q",3,0,1
+"Andorra","Czech Republic","3/30/05","WOC-Q",0,4,1
+"Macedonia","Romania","3/30/05","WOC-Q",1,2,1
+"Netherlands","Armenia","3/30/05","WOC-Q",2,0,1
+"Ukraine","Denmark","3/30/05","WOC-Q",1,0,1
+"Georgia","Turkey","3/30/05","WOC-Q",2,5,1
+"Greece","Albania","3/30/05","WOC-Q",2,0,1
+"Estonia","Russia","3/30/05","WOC-Q",1,1,1
+"Latvia","Luxembourg","3/30/05","WOC-Q",4,0,1
+"Slovakia","Portugal","3/30/05","WOC-Q",1,1,1
+"Israel","France","3/30/05","WOC-Q",1,1,1
+"Switzerland","Cyprus","3/30/05","WOC-Q",1,0,1
+"Bosnia-Herzegovina","Lithuania","3/30/05","WOC-Q",1,1,1
+"San Marino","Belgium","3/30/05","WOC-Q",1,2,1
+"Serbia and Montenegro","Spain","3/30/05","WOC-Q",0,0,1
+"Hungary","Bulgaria","3/30/05","WOC-Q",1,1,1
+"Croatia","Malta","3/30/05","WOC-Q",3,0,1
+"Poland","Northern Ireland","3/30/05","WOC-Q",1,0,1
+"Austria","Wales","3/30/05","WOC-Q",1,0,1
+"England","Azerbaijan","3/30/05","WOC-Q",2,0,1
+"Moldova","Norway","3/30/05","WOC-Q",0,0,1
+"Slovenia","Belarus","3/30/05","WOC-Q",1,1,1
+"Hungary","Malta","4/1/09","WOC-Q",3,0,1
+"Denmark","Albania","4/1/09","WOC-Q",3,0,1
+"Czech Republic","Slovakia","4/1/09","WOC-Q",1,2,1
+"Poland","San Marino","4/1/09","WOC-Q",10,0,1
+"Northern Ireland","Slovenia","4/1/09","WOC-Q",1,0,1
+"Liechtenstein","Russia","4/1/09","WOC-Q",0,1,1
+"Wales","Germany","4/1/09","WOC-Q",0,2,1
+"Estonia","Armenia","4/1/09","WOC-Q",1,0,1
+"Turkey","Spain","4/1/09","WOC-Q",1,2,1
+"Bosnia-Herzegovina","Belgium","4/1/09","WOC-Q",2,1,1
+"Kazakhstan","Belarus","4/1/09","WOC-Q",1,5,1
+"Andorra","Croatia","4/1/09","WOC-Q",0,2,1
+"England","Ukraine","4/1/09","WOC-Q",2,1,1
+"Austria","Romania","4/1/09","WOC-Q",2,1,1
+"France","Lithuania","4/1/09","WOC-Q",1,0,1
+"Bulgaria","Cyprus","4/1/09","WOC-Q",2,0,1
+"Georgia","Montenegro","4/1/09","WOC-Q",0,0,1
+"Italy","Republic of Ireland","4/1/09","WOC-Q",1,1,1
+"Netherlands","Macedonia","4/1/09","WOC-Q",4,0,1
+"Scotland","Iceland","4/1/09","WOC-Q",2,1,1
+"Latvia","San Marino","4/25/01","WOC-Q",1,1,1
+"Yugoslavia","Russia","4/25/01","WOC-Q",0,1,1
+"Republic of Ireland","Andorra","4/25/01","WOC-Q",3,1,1
+"Netherlands","Cyprus","4/25/01","WOC-Q",4,0,1
+"Malta","Iceland","4/25/01","WOC-Q",1,4,1
+"Austria","Liechtenstein","4/25/01","WOC-Q",2,0,1
+"Sweden","Malta","6/10/09","WOC-Q",4,0,1
+"Finland","Russia","6/10/09","WOC-Q",0,3,1
+"Ukraine","Kazakhstan","6/10/09","WOC-Q",2,1,1
+"England","Andorra","6/10/09","WOC-Q",6,0,1
+"Faroe Islands","Serbia","6/10/09","WOC-Q",0,2,1
+"Macedonia","Iceland","6/10/09","WOC-Q",2,0,1
+"Netherlands","Norway","6/10/09","WOC-Q",2,0,1
+"Denmark","Armenia","6/11/13","WOC-Q",0,4,1
+"Sweden","Faroe Islands","6/11/13","WOC-Q",2,0,1
+"Belarus","Finland","6/11/13","WOC-Q",1,1,1
+"Croatia","San Marino","6/2/01","WOC-Q",4,0,1
+"Belgium","Latvia","6/2/01","WOC-Q",3,1,1
+"Slovenia","Luxembourg","6/2/01","WOC-Q",2,0,1
+"Faroe Islands","Switzerland","6/2/01","WOC-Q",0,1,1
+"Russia","Yugoslavia","6/2/01","WOC-Q",1,1,1
+"Republic of Ireland","Portugal","6/2/01","WOC-Q",1,1,1
+"Estonia","Netherlands","6/2/01","WOC-Q",2,4,1
+"Denmark","Czech Republic","6/2/01","WOC-Q",2,1,1
+"Northern Ireland","Bulgaria","6/2/01","WOC-Q",0,1,1
+"Iceland","Malta","6/2/01","WOC-Q",3,0,1
+"Turkey","Azerbaijan","6/2/01","WOC-Q",3,0,1
+"Macedonia","Moldova","6/2/01","WOC-Q",2,2,1
+"Sweden","Slovakia","6/2/01","WOC-Q",2,0,1
+"Wales","Poland","6/2/01","WOC-Q",1,2,1
+"Armenia","Belarus","6/2/01","WOC-Q",0,0,1
+"Ukraine","Norway","6/2/01","WOC-Q",0,0,1
+"Liechtenstein","Israel","6/2/01","WOC-Q",0,3,1
+"Spain","Bosnia-Herzegovina","6/2/01","WOC-Q",4,1,1
+"Georgia","Italy","6/2/01","WOC-Q",1,2,1
+"Romania","Hungary","6/2/01","WOC-Q",2,0,1
+"Finland","Germany","6/2/01","WOC-Q",2,2,1
+"Greece","Albania","6/2/01","WOC-Q",1,0,1
+"Czech Republic","Andorra","6/4/05","WOC-Q",8,1,1
+"Armenia","Macedonia","6/4/05","WOC-Q",1,2,1
+"Netherlands","Romania","6/4/05","WOC-Q",2,0,1
+"Ukraine","Kazakhstan","6/4/05","WOC-Q",2,0,1
+"Turkey","Greece","6/4/05","WOC-Q",0,0,1
+"Albania","Georgia","6/4/05","WOC-Q",3,2,1
+"Russia","Latvia","6/4/05","WOC-Q",2,0,1
+"Estonia","Liechtenstein","6/4/05","WOC-Q",2,0,1
+"Portugal","Slovakia","6/4/05","WOC-Q",2,0,1
+"Republic of Ireland","Israel","6/4/05","WOC-Q",2,2,1
+"Faroe Islands","Switzerland","6/4/05","WOC-Q",1,3,1
+"Serbia and Montenegro","Belgium","6/4/05","WOC-Q",0,0,1
+"San Marino","Bosnia-Herzegovina","6/4/05","WOC-Q",1,3,1
+"Spain","Lithuania","6/4/05","WOC-Q",1,0,1
+"Sweden","Malta","6/4/05","WOC-Q",6,0,1
+"Bulgaria","Croatia","6/4/05","WOC-Q",1,3,1
+"Iceland","Hungary","6/4/05","WOC-Q",2,3,1
+"Azerbaijan","Poland","6/4/05","WOC-Q",0,3,1
+"Scotland","Moldova","6/4/05","WOC-Q",2,0,1
+"Belarus","Slovenia","6/4/05","WOC-Q",1,1,1
+"Norway","Italy","6/4/05","WOC-Q",0,0,1
+"San Marino","Belgium","6/6/01","WOC-Q",1,4,1
+"Latvia","Croatia","6/6/01","WOC-Q",0,1,1
+"Switzerland","Slovenia","6/6/01","WOC-Q",0,1,1
+"Luxembourg","Russia","6/6/01","WOC-Q",1,2,1
+"Faroe Islands","Yugoslavia","6/6/01","WOC-Q",0,6,1
+"Portugal","Cyprus","6/6/01","WOC-Q",6,0,1
+"Estonia","Republic of Ireland","6/6/01","WOC-Q",0,2,1
+"Czech Republic","Northern Ireland","6/6/01","WOC-Q",3,1,1
+"Denmark","Malta","6/6/01","WOC-Q",2,1,1
+"Iceland","Bulgaria","6/6/01","WOC-Q",1,1,1
+"Azerbaijan","Slovakia","6/6/01","WOC-Q",2,0,1
+"Turkey","Macedonia","6/6/01","WOC-Q",3,3,1
+"Sweden","Moldova","6/6/01","WOC-Q",6,0,1
+"Armenia","Poland","6/6/01","WOC-Q",1,1,1
+"Ukraine","Wales","6/6/01","WOC-Q",1,1,1
+"Norway","Belarus","6/6/01","WOC-Q",1,1,1
+"Israel","Spain","6/6/01","WOC-Q",1,1,1
+"Hungary","Georgia","6/6/01","WOC-Q",4,1,1
+"Lithuania","Romania","6/6/01","WOC-Q",1,2,1
+"Greece","England","6/6/01","WOC-Q",0,2,1
+"Albania","Germany","6/6/01","WOC-Q",0,2,1
+"Sweden","Denmark","6/6/09","WOC-Q",0,1,1
+"Albania","Portugal","6/6/09","WOC-Q",1,2,1
+"Slovakia","San Marino","6/6/09","WOC-Q",7,0,1
+"Azerbaijan","Wales","6/6/09","WOC-Q",0,1,1
+"Finland","Liechtenstein","6/6/09","WOC-Q",2,1,1
+"Kazakhstan","England","6/6/09","WOC-Q",0,4,1
+"Belarus","Andorra","6/6/09","WOC-Q",5,1,1
+"Croatia","Ukraine","6/6/09","WOC-Q",2,2,1
+"Lithuania","Romania","6/6/09","WOC-Q",0,1,1
+"Serbia","Austria","6/6/09","WOC-Q",1,0,1
+"Cyprus","Montenegro","6/6/09","WOC-Q",2,2,1
+"Bulgaria","Republic of Ireland","6/6/09","WOC-Q",1,1,1
+"Macedonia","Norway","6/6/09","WOC-Q",0,0,1
+"Iceland","Netherlands","6/6/09","WOC-Q",1,2,1
+"Croatia","Scotland","6/7/13","WOC-Q",0,1,1
+"Belgium","Serbia","6/7/13","WOC-Q",2,1,1
+"Armenia","Malta","6/7/13","WOC-Q",0,1,1
+"Czech Republic","Italy","6/7/13","WOC-Q",0,0,1
+"Republic of Ireland","Faroe Islands","6/7/13","WOC-Q",3,0,1
+"Austria","Sweden","6/7/13","WOC-Q",2,1,1
+"Albania","Norway","6/7/13","WOC-Q",1,1,1
+"Iceland","Slovenia","6/7/13","WOC-Q",2,4,1
+"Azerbaijan","Luxembourg","6/7/13","WOC-Q",1,1,1
+"Portugal","Russia","6/7/13","WOC-Q",1,0,1
+"Latvia","Bosnia-Herzegovina","6/7/13","WOC-Q",0,5,1
+"Liechtenstein","Slovakia","6/7/13","WOC-Q",1,1,1
+"Lithuania","Greece","6/7/13","WOC-Q",0,1,1
+"Moldova","Poland","6/7/13","WOC-Q",1,1,1
+"Montenegro","Ukraine","6/7/13","WOC-Q",0,4,1
+"Finland","Belarus","6/7/13","WOC-Q",1,0,1
+"Czech Republic","Macedonia","6/8/05","WOC-Q",6,1,1
+"Romania","Armenia","6/8/05","WOC-Q",3,0,1
+"Finland","Netherlands","6/8/05","WOC-Q",0,4,1
+"Kazakhstan","Turkey","6/8/05","WOC-Q",0,6,1
+"Denmark","Albania","6/8/05","WOC-Q",3,1,1
+"Greece","Ukraine","6/8/05","WOC-Q",0,1,1
+"Latvia","Liechtenstein","6/8/05","WOC-Q",1,0,1
+"Luxembourg","Slovakia","6/8/05","WOC-Q",0,4,1
+"Estonia","Portugal","6/8/05","WOC-Q",0,1,1
+"Faroe Islands","Republic of Ireland","6/8/05","WOC-Q",0,2,1
+"Spain","Bosnia-Herzegovina","6/8/05","WOC-Q",1,1,1
+"Iceland","Malta","6/8/05","WOC-Q",4,1,1
+"Belarus","Scotland","6/8/05","WOC-Q",0,0,1
+"Switzerland","Cyprus","6/8/13","WOC-Q",1,0,1
+"Slovenia","San Marino","8/12/09","WOC-Q",5,0,1
+"Azerbaijan","Germany","8/12/09","WOC-Q",0,2,1
+"Belarus","Croatia","8/12/09","WOC-Q",1,3,1
+"Faroe Islands","France","8/12/09","WOC-Q",0,1,1
+"Norway","Scotland","8/12/09","WOC-Q",4,0,1
+"Northern Ireland","Russia","8/14/13","WOC-Q",1,0,1
+"Yugoslavia","Faroe Islands","8/15/01","WOC-Q",2,0,1
+"Estonia","Cyprus","8/15/01","WOC-Q",2,2,1
+"Estonia","Andorra","8/16/00","WOC-Q",1,0,1
+"Macedonia","Finland","8/17/05","WOC-Q",0,3,1
+"Romania","Andorra","8/17/05","WOC-Q",2,0,1
+"Kazakhstan","Georgia","8/17/05","WOC-Q",1,2,1
+"Liechtenstein","Slovakia","8/17/05","WOC-Q",0,0,1
+"Latvia","Russia","8/17/05","WOC-Q",1,1,1
+"Liechtenstein","Slovakia","8/17/05","WOC-Q",0,0,1
+"Faroe Islands","Cyprus","8/17/05","WOC-Q",0,3,1
+"Macedonia","Armenia","8/18/04","WOC-Q",3,0,1
+"Romania","Finland","8/18/04","WOC-Q",2,1,1
+"Liechtenstein","Estonia","8/18/04","WOC-Q",1,2,1
+"Slovakia","Luxembourg","8/18/04","WOC-Q",3,1,1
+"Kazakhstan","Andorra","8/20/08","WOC-Q",3,0,1
+"Scotland","Croatia","9/1/01","WOC-Q",0,0,1
+"Slovenia","Russia","9/1/01","WOC-Q",2,1,1
+"Switzerland","Yugoslavia","9/1/01","WOC-Q",1,2,1
+"Faroe Islands","Luxembourg","9/1/01","WOC-Q",1,0,1
+"Andorra","Portugal","9/1/01","WOC-Q",1,7,1
+"Republic of Ireland","Netherlands","9/1/01","WOC-Q",1,0,1
+"Malta","Bulgaria","9/1/01","WOC-Q",0,2,1
+"Denmark","Northern Ireland","9/1/01","WOC-Q",1,1,1
+"Iceland","Czech Republic","9/1/01","WOC-Q",3,1,1
+"Macedonia","Sweden","9/1/01","WOC-Q",1,2,1
+"Slovakia","Turkey","9/1/01","WOC-Q",0,1,1
+"Moldova","Azerbaijan","9/1/01","WOC-Q",2,0,1
+"Wales","Armenia","9/1/01","WOC-Q",0,0,1
+"Poland","Norway","9/1/01","WOC-Q",3,0,1
+"Belarus","Ukraine","9/1/01","WOC-Q",0,2,1
+"Spain","Austria","9/1/01","WOC-Q",4,0,1
+"Bosnia-Herzegovina","Israel","9/1/01","WOC-Q",0,0,1
+"Lithuania","Italy","9/1/01","WOC-Q",0,0,1
+"Georgia","Hungary","9/1/01","WOC-Q",3,1,1
+"Albania","Finland","9/1/01","WOC-Q",0,2,1
+"Germany","England","9/1/01","WOC-Q",1,5,1
+"Luxembourg","Russia","9/10/04","WOC-Q",0,4,1
+"Slovakia","Latvia","9/10/04","WOC-Q",4,1,1
+"Liechtenstein","Portugal","9/10/04","WOC-Q",2,2,1
+"Sweden","Hungary","9/10/08","WOC-Q",2,1,1
+"Albania","Malta","9/10/08","WOC-Q",3,0,1
+"Portugal","Denmark","9/10/08","WOC-Q",2,3,1
+"San Marino","Poland","9/10/08","WOC-Q",0,2,1
+"Slovenia","Slovakia","9/10/08","WOC-Q",2,1,1
+"Northern Ireland","Czech Republic","9/10/08","WOC-Q",0,0,1
+"Russia","Wales","9/10/08","WOC-Q",2,1,1
+"Azerbaijan","Liechtenstein","9/10/08","WOC-Q",0,0,1
+"Finland","Germany","9/10/08","WOC-Q",3,3,1
+"Turkey","Belgium","9/10/08","WOC-Q",1,1,1
+"Bosnia-Herzegovina","Estonia","9/10/08","WOC-Q",7,0,1
+"Spain","Armenia","9/10/08","WOC-Q",4,0,1
+"Kazakhstan","Ukraine","9/10/08","WOC-Q",1,3,1
+"Andorra","Belarus","9/10/08","WOC-Q",1,3,1
+"Croatia","England","9/10/08","WOC-Q",1,4,1
+"Faroe Islands","Romania","9/10/08","WOC-Q",0,1,1
+"Lithuania","Austria","9/10/08","WOC-Q",2,0,1
+"France","Serbia","9/10/08","WOC-Q",2,1,1
+"Montenegro","Republic of Ireland","9/10/08","WOC-Q",0,0,1
+"Italy","Georgia","9/10/08","WOC-Q",2,0,1
+"Iceland","Scotland","9/10/08","WOC-Q",1,2,1
+"Macedonia","Netherlands","9/10/08","WOC-Q",1,2,1
+"Macedonia","Scotland","9/10/13","WOC-Q",1,2,1
+"Wales","Serbia","9/10/13","WOC-Q",0,3,1
+"Armenia","Denmark","9/10/13","WOC-Q",0,1,1
+"Malta","Bulgaria","9/10/13","WOC-Q",1,2,1
+"Italy","Czech Republic","9/10/13","WOC-Q",2,1,1
+"Kazakhstan","Sweden","9/10/13","WOC-Q",0,1,1
+"Austria","Republic of Ireland","9/10/13","WOC-Q",1,0,1
+"Faroe Islands","Germany","9/10/13","WOC-Q",0,3,1
+"Romania","Turkey","9/10/13","WOC-Q",0,2,1
+"Andorra","Netherlands","9/10/13","WOC-Q",0,2,1
+"Hungary","Estonia","9/10/13","WOC-Q",5,1,1
+"Norway","Switzerland","9/10/13","WOC-Q",0,2,1
+"Cyprus","Slovenia","9/10/13","WOC-Q",0,2,1
+"Iceland","Albania","9/10/13","WOC-Q",2,1,1
+"Russia","Israel","9/10/13","WOC-Q",3,1,1
+"Luxembourg","Northern Ireland","9/10/13","WOC-Q",3,2,1
+"Lithuania","Liechtenstein","9/10/13","WOC-Q",2,0,1
+"Slovakia","Bosnia-Herzegovina","9/10/13","WOC-Q",1,2,1
+"Greece","Latvia","9/10/13","WOC-Q",1,0,1
+"San Marino","Poland","9/10/13","WOC-Q",1,5,1
+"Ukraine","England","9/10/13","WOC-Q",0,0,1
+"Georgia","Finland","9/10/13","WOC-Q",0,1,1
+"Belarus","France","9/10/13","WOC-Q",2,4,1
+"Serbia","Wales","9/11/12","WOC-Q",6,1,1
+"Belgium","Croatia","9/11/12","WOC-Q",1,1,1
+"Scotland","Macedonia","9/11/12","WOC-Q",1,1,1
+"Bulgaria","Armenia","9/11/12","WOC-Q",1,0,1
+"Italy","Malta","9/11/12","WOC-Q",2,0,1
+"Sweden","Kazakhstan","9/11/12","WOC-Q",2,0,1
+"Austria","Germany","9/11/12","WOC-Q",1,2,1
+"Romania","Andorra","9/11/12","WOC-Q",4,0,1
+"Turkey","Estonia","9/11/12","WOC-Q",3,0,1
+"Hungary","Netherlands","9/11/12","WOC-Q",1,4,1
+"Cyprus","Iceland","9/11/12","WOC-Q",1,0,1
+"Norway","Slovenia","9/11/12","WOC-Q",2,1,1
+"Switzerland","Albania","9/11/12","WOC-Q",2,0,1
+"Israel","Russia","9/11/12","WOC-Q",0,4,1
+"Northern Ireland","Luxembourg","9/11/12","WOC-Q",1,1,1
+"Portugal","Azerbaijan","9/11/12","WOC-Q",3,0,1
+"Bosnia-Herzegovina","Latvia","9/11/12","WOC-Q",4,1,1
+"Slovakia","Liechtenstein","9/11/12","WOC-Q",2,0,1
+"Greece","Lithuania","9/11/12","WOC-Q",2,0,1
+"San Marino","Montenegro","9/11/12","WOC-Q",0,6,1
+"Poland","Moldova","9/11/12","WOC-Q",2,0,1
+"England","Ukraine","9/11/12","WOC-Q",1,1,1
+"Georgia","Spain","9/11/12","WOC-Q",0,1,1
+"France","Belarus","9/11/12","WOC-Q",3,1,1
+"Latvia","Scotland","9/2/00","WOC-Q",0,1,1
+"Belgium","Croatia","9/2/00","WOC-Q",0,0,1
+"Switzerland","Russia","9/2/00","WOC-Q",0,1,1
+"Andorra","Cyprus","9/2/00","WOC-Q",2,3,1
+"Netherlands","Republic of Ireland","9/2/00","WOC-Q",2,2,1
+"Northern Ireland","Malta","9/2/00","WOC-Q",1,0,1
+"Bulgaria","Czech Republic","9/2/00","WOC-Q",0,1,1
+"Iceland","Denmark","9/2/00","WOC-Q",1,2,1
+"Turkey","Moldova","9/2/00","WOC-Q",2,0,1
+"Azerbaijan","Sweden","9/2/00","WOC-Q",0,1,1
+"Ukraine","Poland","9/2/00","WOC-Q",1,3,1
+"Norway","Armenia","9/2/00","WOC-Q",0,0,1
+"Belarus","Wales","9/2/00","WOC-Q",2,1,1
+"Israel","Liechtenstein","9/2/00","WOC-Q",2,0,1
+"Bosnia-Herzegovina","Spain","9/2/00","WOC-Q",1,2,1
+"Finland","Albania","9/2/00","WOC-Q",2,1,1
+"Germany","Greece","9/2/00","WOC-Q",2,0,1
+"Luxembourg","Yugoslavia","9/3/00","WOC-Q",0,2,1
+"Faroe Islands","Slovenia","9/3/00","WOC-Q",2,2,1
+"Estonia","Portugal","9/3/00","WOC-Q",1,3,1
+"Slovakia","Macedonia","9/3/00","WOC-Q",2,0,1
+"Romania","Lithuania","9/3/00","WOC-Q",1,0,1
+"Hungary","Italy","9/3/00","WOC-Q",2,2,1
+"Andorra","Finland","9/3/05","WOC-Q",0,0,1
+"Romania","Czech Republic","9/3/05","WOC-Q",2,0,1
+"Armenia","Netherlands","9/3/05","WOC-Q",0,1,1
+"Georgia","Ukraine","9/3/05","WOC-Q",1,1,1
+"Turkey","Denmark","9/3/05","WOC-Q",2,2,1
+"Albania","Kazakhstan","9/3/05","WOC-Q",2,1,1
+"Estonia","Latvia","9/3/05","WOC-Q",2,1,1
+"Russia","Liechtenstein","9/3/05","WOC-Q",2,0,1
+"Portugal","Luxembourg","9/3/05","WOC-Q",6,0,1
+"France","Faroe Islands","9/3/05","WOC-Q",3,0,1
+"Switzerland","Israel","9/3/05","WOC-Q",1,1,1
+"Bosnia-Herzegovina","Belgium","9/3/05","WOC-Q",1,0,1
+"Serbia and Montenegro","Lithuania","9/3/05","WOC-Q",2,0,1
+"Hungary","Malta","9/3/05","WOC-Q",4,0,1
+"Sweden","Bulgaria","9/3/05","WOC-Q",3,0,1
+"Iceland","Croatia","9/3/05","WOC-Q",1,3,1
+"Northern Ireland","Azerbaijan","9/3/05","WOC-Q",2,0,1
+"Wales","England","9/3/05","WOC-Q",0,1,1
+"Poland","Austria","9/3/05","WOC-Q",3,2,1
+"Moldova","Belarus","9/3/05","WOC-Q",2,0,1
+"Scotland","Italy","9/3/05","WOC-Q",1,1,1
+"Slovenia","Norway","9/3/05","WOC-Q",2,3,1
+"Finland","Andorra","9/4/04","WOC-Q",3,0,1
+"Romania","Macedonia","9/4/04","WOC-Q",2,1,1
+"Turkey","Georgia","9/4/04","WOC-Q",1,1,1
+"Denmark","Ukraine","9/4/04","WOC-Q",1,1,1
+"Albania","Greece","9/4/04","WOC-Q",2,1,1
+"Estonia","Luxembourg","9/4/04","WOC-Q",4,0,1
+"Russia","Slovakia","9/4/04","WOC-Q",1,1,1
+"Latvia","Portugal","9/4/04","WOC-Q",0,2,1
+"Republic of Ireland","Cyprus","9/4/04","WOC-Q",3,0,1
+"France","Israel","9/4/04","WOC-Q",0,0,1
+"Switzerland","Faroe Islands","9/4/04","WOC-Q",6,0,1
+"Belgium","Lithuania","9/4/04","WOC-Q",1,1,1
+"San Marino","Serbia and Montenegro","9/4/04","WOC-Q",0,3,1
+"Croatia","Hungary","9/4/04","WOC-Q",3,0,1
+"Malta","Sweden","9/4/04","WOC-Q",0,7,1
+"Iceland","Bulgaria","9/4/04","WOC-Q",1,3,1
+"Northern Ireland","Poland","9/4/04","WOC-Q",0,3,1
+"Azerbaijan","Wales","9/4/04","WOC-Q",1,1,1
+"Austria","England","9/4/04","WOC-Q",2,2,1
+"Slovenia","Moldova","9/4/04","WOC-Q",3,0,1
+"Italy","Norway","9/4/04","WOC-Q",2,1,1
+"Belgium","Scotland","9/5/01","WOC-Q",2,0,1
+"San Marino","Croatia","9/5/01","WOC-Q",0,4,1
+"Luxembourg","Switzerland","9/5/01","WOC-Q",0,3,1
+"Faroe Islands","Russia","9/5/01","WOC-Q",0,3,1
+"Yugoslavia","Slovenia","9/5/01","WOC-Q",1,1,1
+"Cyprus","Portugal","9/5/01","WOC-Q",1,3,1
+"Netherlands","Estonia","9/5/01","WOC-Q",5,0,1
+"Bulgaria","Denmark","9/5/01","WOC-Q",0,2,1
+"Czech Republic","Malta","9/5/01","WOC-Q",3,2,1
+"Northern Ireland","Iceland","9/5/01","WOC-Q",3,0,1
+"Turkey","Sweden","9/5/01","WOC-Q",1,2,1
+"Slovakia","Moldova","9/5/01","WOC-Q",4,2,1
+"Azerbaijan","Macedonia","9/5/01","WOC-Q",1,1,1
+"Ukraine","Armenia","9/5/01","WOC-Q",3,0,1
+"Norway","Wales","9/5/01","WOC-Q",3,2,1
+"Belarus","Poland","9/5/01","WOC-Q",4,1,1
+"Liechtenstein","Spain","9/5/01","WOC-Q",0,2,1
+"Austria","Bosnia-Herzegovina","9/5/01","WOC-Q",2,0,1
+"Georgia","Lithuania","9/5/01","WOC-Q",2,0,1
+"Hungary","Romania","9/5/01","WOC-Q",0,2,1
+"Finland","Greece","9/5/01","WOC-Q",5,1,1
+"England","Albania","9/5/01","WOC-Q",2,0,1
+"Denmark","Portugal","9/5/09","WOC-Q",1,1,1
+"Hungary","Sweden","9/5/09","WOC-Q",1,2,1
+"Slovakia","Czech Republic","9/5/09","WOC-Q",2,2,1
+"Poland","Northern Ireland","9/5/09","WOC-Q",1,1,1
+"Russia","Liechtenstein","9/5/09","WOC-Q",3,0,1
+"Azerbaijan","Finland","9/5/09","WOC-Q",1,2,1
+"Armenia","Bosnia-Herzegovina","9/5/09","WOC-Q",0,2,1
+"Turkey","Estonia","9/5/09","WOC-Q",4,2,1
+"Spain","Belgium","9/5/09","WOC-Q",5,0,1
+"Ukraine","Andorra","9/5/09","WOC-Q",5,0,1
+"Croatia","Belarus","9/5/09","WOC-Q",1,0,1
+"Austria","Faroe Islands","9/5/09","WOC-Q",3,1,1
+"France","Romania","9/5/09","WOC-Q",1,1,1
+"Georgia","Italy","9/5/09","WOC-Q",0,2,1
+"Bulgaria","Montenegro","9/5/09","WOC-Q",4,1,1
+"Cyprus","Republic of Ireland","9/5/09","WOC-Q",1,2,1
+"Scotland","Macedonia","9/5/09","WOC-Q",2,0,1
+"Iceland","Norway","9/5/09","WOC-Q",1,1,1
+"Albania","Sweden","9/6/08","WOC-Q",0,0,1
+"Hungary","Denmark","9/6/08","WOC-Q",0,0,1
+"Malta","Portugal","9/6/08","WOC-Q",0,4,1
+"Poland","Slovenia","9/6/08","WOC-Q",1,1,1
+"Slovakia","Northern Ireland","9/6/08","WOC-Q",2,1,1
+"Wales","Azerbaijan","9/6/08","WOC-Q",1,0,1
+"Liechtenstein","Germany","9/6/08","WOC-Q",0,6,1
+"Armenia","Turkey","9/6/08","WOC-Q",0,2,1
+"Belgium","Estonia","9/6/08","WOC-Q",3,2,1
+"Spain","Bosnia-Herzegovina","9/6/08","WOC-Q",1,0,1
+"Ukraine","Belarus","9/6/08","WOC-Q",1,0,1
+"Andorra","England","9/6/08","WOC-Q",0,2,1
+"Croatia","Kazakhstan","9/6/08","WOC-Q",3,0,1
+"Romania","Lithuania","9/6/08","WOC-Q",0,3,1
+"Serbia","Faroe Islands","9/6/08","WOC-Q",2,0,1
+"Austria","France","9/6/08","WOC-Q",3,1,1
+"Georgia","Republic of Ireland","9/6/08","WOC-Q",1,2,1
+"Montenegro","Bulgaria","9/6/08","WOC-Q",2,2,1
+"Cyprus","Italy","9/6/08","WOC-Q",1,2,1
+"Macedonia","Scotland","9/6/08","WOC-Q",1,0,1
+"Norway","Iceland","9/6/08","WOC-Q",2,2,1
+"Macedonia","Wales","9/6/13","WOC-Q",2,1,1
+"Serbia","Croatia","9/6/13","WOC-Q",1,1,1
+"Scotland","Belgium","9/6/13","WOC-Q",0,2,1
+"Czech Republic","Armenia","9/6/13","WOC-Q",1,2,1
+"Malta","Denmark","9/6/13","WOC-Q",1,2,1
+"Italy","Bulgaria","9/6/13","WOC-Q",1,0,1
+"Kazakhstan","Faroe Islands","9/6/13","WOC-Q",2,1,1
+"Germany","Austria","9/6/13","WOC-Q",3,0,1
+"Republic of Ireland","Sweden","9/6/13","WOC-Q",1,2,1
+"Turkey","Andorra","9/6/13","WOC-Q",5,0,1
+"Romania","Hungary","9/6/13","WOC-Q",3,0,1
+"Estonia","Netherlands","9/6/13","WOC-Q",2,2,1
+"Norway","Cyprus","9/6/13","WOC-Q",2,0,1
+"Switzerland","Iceland","9/6/13","WOC-Q",4,4,1
+"Slovenia","Albania","9/6/13","WOC-Q",1,0,1
+"Russia","Luxembourg","9/6/13","WOC-Q",4,1,1
+"Northern Ireland","Portugal","9/6/13","WOC-Q",2,4,1
+"Latvia","Lithuania","9/6/13","WOC-Q",2,1,1
+"Bosnia-Herzegovina","Slovakia","9/6/13","WOC-Q",0,1,1
+"Liechtenstein","Greece","9/6/13","WOC-Q",0,1,1
+"Ukraine","San Marino","9/6/13","WOC-Q",9,0,1
+"Poland","Montenegro","9/6/13","WOC-Q",1,1,1
+"England","Moldova","9/6/13","WOC-Q",4,0,1
+"Georgia","France","9/6/13","WOC-Q",0,0,1
+"Finland","Spain","9/6/13","WOC-Q",0,2,1
+"Czech Republic","Armenia","9/7/05","WOC-Q",4,1,1
+"Finland","Macedonia","9/7/05","WOC-Q",5,1,1
+"Netherlands","Andorra","9/7/05","WOC-Q",4,0,1
+"Kazakhstan","Greece","9/7/05","WOC-Q",1,2,1
+"Ukraine","Turkey","9/7/05","WOC-Q",0,1,1
+"Denmark","Georgia","9/7/05","WOC-Q",6,1,1
+"Russia","Portugal","9/7/05","WOC-Q",0,0,1
+"Latvia","Slovakia","9/7/05","WOC-Q",1,1,1
+"Liechtenstein","Luxembourg","9/7/05","WOC-Q",3,0,1
+"Cyprus","Switzerland","9/7/05","WOC-Q",1,3,1
+"Faroe Islands","Israel","9/7/05","WOC-Q",0,2,1
+"Republic of Ireland","France","9/7/05","WOC-Q",0,1,1
+"Lithuania","Bosnia-Herzegovina","9/7/05","WOC-Q",0,1,1
+"Belgium","San Marino","9/7/05","WOC-Q",8,0,1
+"Spain","Serbia and Montenegro","9/7/05","WOC-Q",1,1,1
+"Malta","Croatia","9/7/05","WOC-Q",1,1,1
+"Hungary","Sweden","9/7/05","WOC-Q",0,1,1
+"Bulgaria","Iceland","9/7/05","WOC-Q",3,2,1
+"Azerbaijan","Austria","9/7/05","WOC-Q",0,0,1
+"Poland","Wales","9/7/05","WOC-Q",1,0,1
+"Northern Ireland","England","9/7/05","WOC-Q",1,0,1
+"Belarus","Italy","9/7/05","WOC-Q",1,4,1
+"Norway","Scotland","9/7/05","WOC-Q",1,2,1
+"Moldova","Slovenia","9/7/05","WOC-Q",1,2,1
+"Croatia","Macedonia","9/7/12","WOC-Q",1,0,1
+"Wales","Belgium","9/7/12","WOC-Q",0,2,1
+"Malta","Armenia","9/7/12","WOC-Q",0,1,1
+"Bulgaria","Italy","9/7/12","WOC-Q",2,2,1
+"Kazakhstan","Republic of Ireland","9/7/12","WOC-Q",1,2,1
+"Germany","Faroe Islands","9/7/12","WOC-Q",3,0,1
+"Estonia","Romania","9/7/12","WOC-Q",0,2,1
+"Andorra","Hungary","9/7/12","WOC-Q",0,5,1
+"Netherlands","Turkey","9/7/12","WOC-Q",2,0,1
+"Albania","Cyprus","9/7/12","WOC-Q",3,1,1
+"Slovenia","Switzerland","9/7/12","WOC-Q",0,2,1
+"Iceland","Norway","9/7/12","WOC-Q",2,0,1
+"Russia","Northern Ireland","9/7/12","WOC-Q",2,0,1
+"Azerbaijan","Israel","9/7/12","WOC-Q",1,1,1
+"Luxembourg","Portugal","9/7/12","WOC-Q",1,2,1
+"Liechtenstein","Bosnia-Herzegovina","9/7/12","WOC-Q",1,8,1
+"Lithuania","Slovakia","9/7/12","WOC-Q",1,1,1
+"Latvia","Greece","9/7/12","WOC-Q",1,2,1
+"Montenegro","Poland","9/7/12","WOC-Q",2,2,1
+"Moldova","England","9/7/12","WOC-Q",0,5,1
+"Georgia","Belarus","9/7/12","WOC-Q",1,0,1
+"Finland","France","9/7/12","WOC-Q",0,1,1
+"Israel","Azerbaijan","9/7/13","WOC-Q",1,1,1
+"Andorra","Romania","9/8/04","WOC-Q",1,5,1
+"Netherlands","Czech Republic","9/8/04","WOC-Q",2,0,1
+"Armenia","Finland","9/8/04","WOC-Q",0,2,1
+"Kazakhstan","Ukraine","9/8/04","WOC-Q",1,2,1
+"Georgia","Albania","9/8/04","WOC-Q",2,0,1
+"Greece","Turkey","9/8/04","WOC-Q",0,0,1
+"Luxembourg","Latvia","9/8/04","WOC-Q",3,4,1
+"Slovakia","Liechtenstein","9/8/04","WOC-Q",7,0,1
+"Portugal","Estonia","9/8/04","WOC-Q",4,0,1
+"Switzerland","Republic of Ireland","9/8/04","WOC-Q",1,1,1
+"Israel","Cyprus","9/8/04","WOC-Q",2,1,1
+"Faroe Islands","France","9/8/04","WOC-Q",0,2,1
+"Lithuania","San Marino","9/8/04","WOC-Q",4,0,1
+"Bosnia-Herzegovina","Spain","9/8/04","WOC-Q",1,1,1
+"Sweden","Croatia","9/8/04","WOC-Q",0,1,1
+"Hungary","Iceland","9/8/04","WOC-Q",3,2,1
+"Austria","Azerbaijan","9/8/04","WOC-Q",2,0,1
+"Poland","England","9/8/04","WOC-Q",1,2,1
+"Wales","Northern Ireland","9/8/04","WOC-Q",2,2,1
+"Norway","Belarus","9/8/04","WOC-Q",1,1,1
+"Moldova","Italy","9/8/04","WOC-Q",0,1,1
+"Scotland","Slovenia","9/8/04","WOC-Q",0,0,1
+"Scotland","Serbia","9/8/12","WOC-Q",0,0,1
+"Denmark","Czech Republic","9/8/12","WOC-Q",0,0,1
+"Malta","Sweden","9/9/09","WOC-Q",0,1,1
+"Albania","Denmark","9/9/09","WOC-Q",1,1,1
+"Hungary","Portugal","9/9/09","WOC-Q",0,1,1
+"Czech Republic","San Marino","9/9/09","WOC-Q",7,0,1
+"Slovenia","Poland","9/9/09","WOC-Q",3,0,1
+"Northern Ireland","Slovakia","9/9/09","WOC-Q",0,2,1
+"Liechtenstein","Finland","9/9/09","WOC-Q",1,1,1
+"Wales","Russia","9/9/09","WOC-Q",1,3,1
+"Germany","Azerbaijan","9/9/09","WOC-Q",4,0,1
+"Armenia","Belgium","9/9/09","WOC-Q",2,1,1
+"Bosnia-Herzegovina","Turkey","9/9/09","WOC-Q",1,1,1
+"Spain","Estonia","9/9/09","WOC-Q",3,0,1
+"Belarus","Ukraine","9/9/09","WOC-Q",0,0,1
+"Andorra","Kazakhstan","9/9/09","WOC-Q",1,3,1
+"England","Croatia","9/9/09","WOC-Q",5,1,1
+"Faroe Islands","Lithuania","9/9/09","WOC-Q",2,1,1
+"Romania","Austria","9/9/09","WOC-Q",1,1,1
+"Serbia","France","9/9/09","WOC-Q",1,1,1
+"Montenegro","Cyprus","9/9/09","WOC-Q",1,1,1
+"Italy","Bulgaria","9/9/09","WOC-Q",2,0,1
+"Scotland","Netherlands","9/9/09","WOC-Q",0,1,1
+"Norway","Macedonia","9/9/09","WOC-Q",2,1,1

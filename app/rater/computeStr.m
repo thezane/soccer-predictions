@@ -1,6 +1,7 @@
-function [a d] = computeStr(A, a, d, alpha, nu, lambda)
+function [a d] = computeStr(A, a, d, alphas, nu, lambda)
   aPrev = a;
   dPrev = d;
+  alphasMat = [alphas; alphas];
   
   while (true)
     [aNext dNext] = computeAD(A, a, d, lambda);
@@ -10,7 +11,7 @@ function [a d] = computeStr(A, a, d, alpha, nu, lambda)
     if (norm(aDel) < nu && norm(dDel) < nu)
       strNext = [aNext dNext];
       str = [aPrev dPrev];
-      str = alpha .* strNext + (1 - alpha) .* str;   
+      str = alphasMat .* strNext + (1 - alphasMat) .* str;   
       a = str(:, 1);
       d = str(:, 2);
       return;

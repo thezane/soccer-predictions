@@ -3,6 +3,7 @@ classdef Team
     name
     str
     updateDate
+    updateDays
     xp
   end
 end
