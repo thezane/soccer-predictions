@@ -1,4 +1,4 @@
-function strNorm = computeRatingsNorm(str)
+function strNorm = computeStrNorm(str)
   a = str(:, 1);
   d = str(:, 2);
   aNorm = a;
