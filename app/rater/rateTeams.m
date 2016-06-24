@@ -71,6 +71,7 @@ function rOutput = updateCost(rOutput, rOptions, match, ...
   expectedActualCost = contestCost * norm(strNorm - strExpectedNorm);
   winTeamI = 1;
   loseTeamI = 2;
+  rOutput = rOutput.updateStrAll(str);
 
   if (match.goals(1) == match.goals(2))
     rOutput.cost = rOutput.cost + ...
@@ -80,16 +81,12 @@ function rOutput = updateCost(rOutput, rOptions, match, ...
     winTeamI = 2;
     loseTeamI = 1;
   end
-  
+
+  rOutput.cost = rOutput.cost + expectedActualCost;
   rOutput.results(1: 2) = evaluatePrediction(rOutput.results(1: 2), ...
       winTeamI, loseTeamI, contestCost, strNorm);
   rOutput.results(3: 4) = evaluatePrediction(rOutput.results(3: 4), ...
-      winTeamI, loseTeamI, contestCost, strExpectedNorm);
-  rOutput.results(5: 6) = evaluatePrediction(rOutput.results(5: 6), ...
       winTeamI, loseTeamI, ~match.isQualifier(), strNorm);
-  rOutput.results(7: 8) = evaluatePrediction(rOutput.results(7: 8), ...
-      winTeamI, loseTeamI, ~match.isQualifier(), strExpectedNorm);
-  rOutput.cost = rOutput.cost + expectedActualCost;
 end
 
 function results = evaluatePrediction(results, ...

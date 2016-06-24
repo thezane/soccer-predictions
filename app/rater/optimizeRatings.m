@@ -1,14 +1,14 @@
 function [tTree mTree mi] = optimizeRatings(tTree, mTree, mi, ...
-    winTiesRatio, isOptimized)
-  qTCostRatio = 0.01;
+    winTiesRatio, numMatches, isOptimized)
+  qTCostRatio = 0.1;
   rOptions = RatingsOptions(qTCostRatio, winTiesRatio);
-  rOutput = RatingsOutput(0, zeros(1, 8));
-  nu = 0.7613;
-  lambda = 0.3008;
-  k = 1.1789;
-  homeAdvantage = 0.8591;
-  qWeight = 0.092;
-  tWeight = 0.2026;
+  rOutput = RatingsOutput(0, zeros(1, 4), numMatches);
+  nu = 0.7546;
+  lambda = 0.18;
+  k = 1.1947;
+  homeAdvantage = 0.6461;
+  qWeight = 0.1074;
+  tWeight = 0.2093;
   x = [nu lambda k homeAdvantage qWeight tWeight];
   
   if (isOptimized)
@@ -28,5 +28,7 @@ function [y tTree mTree mi rOptions rOutput] = modelRatings(x, ...
   rOptions = rOptions.update(x(1), x(2), x(3), x(4), x(5), x(6));
   [tTree mTree mi rOptions rOutput] = rateTeams(tTree, mTree, mi, ...
       rOptions, rOutput);
-  y = rOutput.results(2) ^ 2;
+  [rOutput strMedian] = rOutput.updateStrMedian();
+  p = 2 + norm([1 1] - strMedian);
+  y = rOutput.cost + rOutput.results(2) ^ p;
 end
