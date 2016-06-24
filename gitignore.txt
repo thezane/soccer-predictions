@@ -1,2 +1,0 @@
-#bivpois lib
-predictor/bivpois-Rcode
