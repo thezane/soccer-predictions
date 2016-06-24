@@ -1,6 +1,7 @@
-function [tTree mTree] = readData(dataPath)
+function [tTree mTree T winTiesRatio] = readData(dataPath)
   tTree = buildType2AnyMap('char');
   mTree = buildType2AnyMap('char');
+  numWins = 0;
   dateInFormat = 'mm/dd/yy';
   dateOutFormat = 'yyyy/mm/dd';
   T = buildTable(dataPath, 'matches.csv');
@@ -10,10 +11,12 @@ function [tTree mTree] = readData(dataPath)
   while (i <= n)
     [tTree homeTeam] = addTeam(T, i, tTree, true);
     [tTree awayTeam] = addTeam(T, i, tTree, false);
-    mTree = addMatch(T, i, mTree, homeTeam, awayTeam, ...
-        dateInFormat, dateOutFormat);
+    [mTree numWins] = addMatch(T, i, mTree, homeTeam, awayTeam, ...
+        numWins, dateInFormat, dateOutFormat);
     i = i + 1;
   end
+  
+  winTiesRatio = numWins / (n - numWins);
 end
 
 function [tTree team] = addTeam(T, i, tTree, isHome)
@@ -32,8 +35,8 @@ function [tTree team] = addTeam(T, i, tTree, isHome)
   team = tTree(teamName);
 end
 
-function mTree = addMatch(T, i, mTree, homeTeam, awayTeam, ...
-    dateInFormat, dateOutFormat)
+function [mTree numWins] = addMatch(T, i, mTree, homeTeam, ...
+    awayTeam, numWins, dateInFormat, dateOutFormat)
   match = Match(T, i, homeTeam, awayTeam, dateInFormat, dateOutFormat);
   
   if (~isKey(mTree, match.date))
@@ -42,4 +45,5 @@ function mTree = addMatch(T, i, mTree, homeTeam, awayTeam, ...
   
   match.i = length(mTree(match.date)) + 1;
   mTree(match.date) = [mTree(match.date) match];
+  numWins = numWins + (match.goals(1) ~= match.goals(2));
 end

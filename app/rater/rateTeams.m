@@ -11,15 +11,9 @@ function [tTree mTree mi rOptions rOutput] = rateTeams(tTree, ...
     mList = mTree(match.date);
     mList(match.i) = match;
     mTree(match.date) = mList;
-    
-    if (match.days < rOptions.daysStart)
-      continue;
-    end
-    
-    strNorm = computeStrNorm(match.teamStr);
-    strNormExpected = computeStrNormExpected(A, a, d, rOptions.lambda);
-    rOutput = updateCost(rOutput, match, strNormExpected, strNorm, ...
-        rOptions.contestCosts(match.contest));
+    strExpected = computeStrExpected(A, a, d, rOptions.lambda);
+    rOutput = updateCost(rOutput, rOptions, match, match.teamStr, ...
+        strExpected);
   end
 end
 
@@ -61,17 +55,20 @@ function [tTree match] = updateStr(tTree, match, A, a, d, ...
   tTree(match.teamNames{2}) = awayTeam;
 end
 
-function strNormExpected = computeStrNormExpected(A, a, d, lambda)
+function strExpected = computeStrExpected(A, a, d, lambda)
   alphas = [1 1];
   nu = 1e-06;
   [a d] = computeStr(A, a, d, alphas, nu, lambda);
-  strNormExpected = computeStrNorm([a d]);
+  strExpected = [a d];
 end
 
-function rOutput = updateCost(rOutput, match, strNormExpected, ...
-    strNorm, contestCost)
-  diagonalInfatedConst = 10;
-  expectedActualCost = contestCost * norm(strNormExpected - strNorm);
+function rOutput = updateCost(rOutput, rOptions, match, ...
+    str, strExpected)
+  contestCost = rOptions.contestCosts(match.contest);
+  diagonalInfatedConst = rOptions.winTiesRatio;
+  strNorm = computeStrNorm(str);
+  strExpectedNorm = computeStrNorm(strExpected);
+  expectedActualCost = contestCost * norm(strNorm - strExpectedNorm);
   winTeamI = 1;
   loseTeamI = 2;
 
@@ -84,11 +81,20 @@ function rOutput = updateCost(rOutput, match, strNormExpected, ...
     loseTeamI = 1;
   end
   
-  strAvg = mean(strNorm');
-  isCorrect = strAvg(winTeamI) > strAvg(loseTeamI);
-  results = rOutput.results;
+  rOutput.results(1: 2) = evaluatePrediction(rOutput.results(1: 2), ...
+      winTeamI, loseTeamI, contestCost, strNorm);
+  rOutput.results(3: 4) = evaluatePrediction(rOutput.results(3: 4), ...
+      winTeamI, loseTeamI, contestCost, strExpectedNorm);
+  rOutput.results(5: 6) = evaluatePrediction(rOutput.results(5: 6), ...
+      winTeamI, loseTeamI, ~match.isQualifier(), strNorm);
+  rOutput.results(7: 8) = evaluatePrediction(rOutput.results(7: 8), ...
+      winTeamI, loseTeamI, ~match.isQualifier(), strExpectedNorm);
+  rOutput.cost = rOutput.cost + expectedActualCost;
+end
+
+function results = evaluatePrediction(results, ...
+    winTeamI, loseTeamI, contestCost, strNorm)
+  isCorrect = strNorm(winTeamI) > strNorm(loseTeamI);
   results(1) = results(1) + contestCost * isCorrect;
   results(2) = results(2) + contestCost * ~isCorrect;
-  rOutput.results = results;
-  rOutput.cost = rOutput.cost + expectedActualCost;
 end

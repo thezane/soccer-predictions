@@ -9,6 +9,7 @@ classdef Match
     teamStrNext
     existsHomeAdvantage
     i
+    row
   end
   
   methods
@@ -20,6 +21,7 @@ classdef Match
       match.teamNames = {homeTeam.name awayTeam.name};
       match.goals = [T{i, 'HomeGoals'} T{i, 'AwayGoals'}];
       match.existsHomeAdvantage = T{i, 'HomeAdvantage'};
+      match.row = i;
     end
 
     function tf = isQualifier(match)

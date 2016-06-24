@@ -1,20 +1,26 @@
-function [tTree mTree mi] = optimizeRatings(tTree, mTree, mi)
-  rOptions = RatingsOptions({'EUC-Q', 'WOC-Q', 'EUC-G', 'EUC-K'}, ...
-      0.05, datenum('2004-06-12', 'yyyy-mm-dd'));
-  rOutput = RatingsOutput(0, [0 0]);
-  nu = 0.32;
-  lambda = 0.83;
-  k = 0.87;
-  homeAdvantage = 0.96;
-  qWeight = 0.02;
-  tWeight = 0.18;
-  x0 = [nu lambda k homeAdvantage qWeight tWeight];
-  diary on
-  f = @(x) modelRatings(x, tTree, mTree, mi, rOptions, rOutput);
-  x = fminsearch(f, x0)
-  diary off
-  [y tTree mTree mi rOptions rOutput] = modelRatings(x0, ...
-    tTree, mTree, mi, rOptions, rOutput);
+function [tTree mTree mi] = optimizeRatings(tTree, mTree, mi, ...
+    winTiesRatio, isOptimized)
+  qTCostRatio = 0.01;
+  rOptions = RatingsOptions(qTCostRatio, winTiesRatio);
+  rOutput = RatingsOutput(0, zeros(1, 8));
+  nu = 0.7613;
+  lambda = 0.3008;
+  k = 1.1789;
+  homeAdvantage = 0.8591;
+  qWeight = 0.092;
+  tWeight = 0.2026;
+  x = [nu lambda k homeAdvantage qWeight tWeight];
+  
+  if (isOptimized)
+    options = optimset('Display', 'iter', 'TolFun', 0.1, 'TolX', 0.1);
+    f = @(x) modelRatings(x, tTree, mTree, mi, rOptions, rOutput);
+    x = fminsearch(f, x, options)
+  end
+  
+  [y tTree mTree mi rOptions rOutput] = modelRatings(x, ...
+      tTree, mTree, mi, rOptions, rOutput);
+  display(rOutput);
+  display(cell2mat(values(rOptions.contestWeights)));
 end
 
 function [y tTree mTree mi rOptions rOutput] = modelRatings(x, ...
@@ -22,10 +28,5 @@ function [y tTree mTree mi rOptions rOutput] = modelRatings(x, ...
   rOptions = rOptions.update(x(1), x(2), x(3), x(4), x(5), x(6));
   [tTree mTree mi rOptions rOutput] = rateTeams(tTree, mTree, mi, ...
       rOptions, rOutput);
-  y = rOutput.cost + rOutput.results(2) ^ 2;
-  display('Model ratings');
-  display(rOptions)
-  display(cell2mat(values(rOptions.contestWeights)))
-  display(rOutput)
-  display(y)
+  y = rOutput.results(2) ^ 2;
 end

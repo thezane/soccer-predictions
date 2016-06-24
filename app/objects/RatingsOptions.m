@@ -7,16 +7,15 @@ classdef RatingsOptions
     contests
     contestWeights
     contestCosts
-    daysStart
+    winTiesRatio
   end
   
   methods
-    function rOptions = RatingsOptions(contests, qTCostRatio, ...
-        daysStart)
-      rOptions.contests = contests;
+    function rOptions = RatingsOptions(qTCostRatio, winTiesRatio)
+      rOptions.contests = {'EUC-Q', 'WOC-Q', 'EUC-G', 'EUC-K'};
       rOptions.contestCosts = containers.Map(rOptions.contests, ...
           {qTCostRatio, qTCostRatio, 1, 1});
-      rOptions.daysStart = daysStart;
+      rOptions.winTiesRatio = winTiesRatio;
     end
     
     function rOptions = update(rOptions, nu, lambda, k, ...
