@@ -3,12 +3,12 @@ function [tTree mTree mi] = optimizeRatings(tTree, mTree, mi, ...
   qTCostRatio = 0.1;
   rOptions = RatingsOptions(qTCostRatio, winTiesRatio);
   rOutput = RatingsOutput(0, zeros(1, 4), numMatches);
-  nu = 0.7546;
-  lambda = 0.18;
-  k = 1.1947;
-  homeAdvantage = 0.6461;
-  qWeight = 0.1074;
-  tWeight = 0.2093;
+  nu = 0.7531;
+  lambda = 0.1984;
+  k = 1.1914;
+  homeAdvantage = 0.6304;
+  qWeight = 0.1077;
+  tWeight = 0.2222;
   x = [nu lambda k homeAdvantage qWeight tWeight];
   
   if (isOptimized)
