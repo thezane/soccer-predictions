@@ -1,3 +1,38 @@
-computeDataFrame <-function(matches) {
+computeDataFrame <-function(matches, meanGoalsMap) {
+  meanGoals <- apply(matches, 1, mapContestToMeanGoals,
+      meanGoalsMap=meanGoalsMap)
+  meanGoals <- t(meanGoals)
+  matches[["HomeMeanGoals"]] <- meanGoals[, 1]
+  matches[["AwayMeanGoals"]] <- meanGoals[, 2]
+  strVars <- c("HomeAttack", "HomeDefense",
+      "AwayAttack", "AwayDefense")
+  n <- length(strVars)
+  i <- 1
   
-} 
+  while (i <= n) {
+    matches[strVars[i]] <- log(matches[strVars[i]])
+    i <- i + 1
+  }
+  
+  matches
+}
+
+mapContestToMeanGoals <- function(matchesRow, meanGoalsMap) {
+  meanGoals <- vector(mode="double", 2)
+  contest <- matchesRow["Contest"]
+  
+  if (contest == "EUC-Q" || contest == "WOC-Q") {
+    meanGoals[1] <- meanGoalsMap[["qHome"]]
+    meanGoals[2] <- meanGoalsMap[["qAway"]]
+  }
+  else if (contest == "EUC-G") {
+    meanGoals[1] <- meanGoalsMap[["group"]]
+    meanGoals[2] <- meanGoals[1]
+  }
+  else {
+    meanGoals[1] <- meanGoalsMap[["knockout"]]
+    meanGoals[2] <- meanGoals[1]
+  }
+  
+  meanGoals
+}
