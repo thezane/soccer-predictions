@@ -1,10 +1,10 @@
-function T = writeData(mTree, mi, T)
+function T = writeData(mTree, mi, T, dataPath)
   NUM_DECIMALS = 4;
-  onesCol = ones(height(T), 1);
-  T.HomeAttack = onesCol;
-  T.HomeDefense = onesCol;
-  T.AwayAttack = onesCol;
-  T.AwayDefense = onesCol;
+  colNames = {'HomeAttack', 'HomeDefense', ...
+      'AwayAttack', 'AwayDefense', ...
+      'HomeAttackNext', 'HomeDefenseNext', ...
+      'AwayAttackNext', 'AwayDefenseNext'};
+  T = addCols(T, colNames);
   mi = mi.reset();
   
   while (mi.hasNext())
@@ -12,22 +12,37 @@ function T = writeData(mTree, mi, T)
     T = updateMatches(T, match, NUM_DECIMALS);
   end
   
-  outFile = 'ratedMatches.csv';
+  outFile = strcat(dataPath, 'ratedMatches.csv');
   write(T, outFile);
+end
+
+function T = addCols(T, colNames)
+  onesCol = ones(height(T), 1);
+  n = length(colNames);
+  i = 1;
+  
+  while (i <= n)
+    T{:, colNames{i}} = onesCol;
+    i = i + 1;
+  end
 end
 
 function T = updateMatches(T, match, numDecimals)
   i = match.row;
+  teamStr = roundDecimals(log(match.teamStr), numDecimals);
+  teamStrNext = roundDecimals(log(match.teamStrNext), numDecimals);
   T{i, 'HomeTeam'} = quoteStr(T{i, 'HomeTeam'});
   T{i, 'AwayTeam'} = quoteStr(T{i, 'AwayTeam'});
   T{i, 'Date'} = {quoteStr(match.date)};
   T{i, 'Contest'} = quoteStr(T{i, 'Contest'});
-  T{i, 'HomeAttack'} = roundDecimals(match.teamStr(1, 1), numDecimals);
-  T{i, 'HomeDefense'} = roundDecimals(match.teamStr(1, 2), ...
-      numDecimals);
-  T{i, 'AwayAttack'} = roundDecimals(match.teamStr(2, 1), numDecimals);
-  T{i, 'AwayDefense'} = roundDecimals(match.teamStr(2, 2), ...
-      numDecimals);  
+  T{i, 'HomeAttack'} = teamStr(1, 1);
+  T{i, 'HomeDefense'} = teamStr(1, 2);
+  T{i, 'AwayAttack'} = teamStr(2, 1);
+  T{i, 'AwayDefense'} = teamStr(2, 2);
+  T{i, 'HomeAttackNext'} = teamStrNext(1, 1);
+  T{i, 'HomeDefenseNext'} = teamStrNext(1, 2);
+  T{i, 'AwayAttackNext'} = teamStrNext(2, 1);
+  T{i, 'AwayDefenseNext'} = teamStrNext(2, 2);    
 end
 
 function quotedStr = quoteStr(str)

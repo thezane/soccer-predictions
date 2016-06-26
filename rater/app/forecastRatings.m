@@ -6,6 +6,6 @@ function [tTree mTree] = forecastRatings(isOptimized, isUpdated)
       winTiesRatio, height(T), isOptimized);
   
   if (isUpdated)
-    T = writeData(mTree, mi, T);
+    T = writeData(mTree, mi, T, dataPath);
   end
 end 

@@ -4,16 +4,7 @@ computeDataFrame <-function(matches, meanGoalsMap) {
   meanGoals <- t(meanGoals)
   matches[["HomeMeanGoals"]] <- meanGoals[, 1]
   matches[["AwayMeanGoals"]] <- meanGoals[, 2]
-  strVars <- c("HomeAttack", "HomeDefense",
-      "AwayAttack", "AwayDefense")
-  n <- length(strVars)
-  i <- 1
-  
-  while (i <= n) {
-    matches[strVars[i]] <- log(matches[strVars[i]])
-    i <- i + 1
-  }
-  
+  matches <- matches[order(rev(matches$Date)), ] 
   matches
 }
 
