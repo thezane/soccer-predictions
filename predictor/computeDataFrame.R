@@ -13,8 +13,8 @@ mapContestToMeanGoals <- function(matchesRow, meanGoalsMap) {
   contest <- matchesRow["Contest"]
   
   if (contest == "EUC-Q" || contest == "WOC-Q") {
-    meanGoals[1] <- meanGoalsMap[["qHome"]]
-    meanGoals[2] <- meanGoalsMap[["qAway"]]
+    meanGoals[1] <- meanGoalsMap[["qualifierHome"]]
+    meanGoals[2] <- meanGoalsMap[["qualifierAway"]]
   }
   else if (contest == "EUC-G") {
     meanGoals[1] <- meanGoalsMap[["group"]]

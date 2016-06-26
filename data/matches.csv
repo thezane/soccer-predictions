@@ -2135,3 +2135,42 @@
 "Iceland","Turkey","9/9/14","EUC-Q",3,0,1
 "Kazakhstan","Latvia","9/9/14","EUC-Q",0,0,1
 "Norway","Italy","9/9/14","EUC-Q",0,2,1
+"Romania","Albania","6/19/16","EUC-G",0,1,0
+"France","Switzerland","6/19/16","EUC-G",0,0,1
+"Romania","Switzerland","6/15/16","EUC-G",1,1,0
+"France","Albania","6/15/16","EUC-G",2,0,1
+"France","Romania","6/10/16","EUC-G",2,1,1
+"Albania","Switzerland","6/11/16","EUC-G",0,1,0
+"Russia","Wales","6/20/16","EUC-G",0,3,0
+"Slovakia","England","6/20/16","EUC-G",0,0,0
+"Russia","Slovakia","6/15/16","EUC-G",1,2,0
+"England","Wales","6/16/16","EUC-G",2,1,0
+"Wales","Slovakia","6/11/16","EUC-G",2,1,0
+"England","Russia","6/11/16","EUC-G",1,1,0
+"Ukraine","Poland","6/21/16","EUC-G",0,1,0
+"Northern Ireland","Germany","6/21/16","EUC-G",0,1,0
+"Ukraine","Northern Ireland","6/16/16","EUC-G",0,2,0
+"Germany","Poland","6/16/16","EUC-G",0,0,0
+"Poland","Northern Ireland","6/12/16","EUC-G",1,0,0
+"Germany","Ukraine","6/12/16","EUC-G",2,0,0
+"Croatia","Spain","6/21/16","EUC-G",2,1,0
+"Czech Republic","Turkey","6/21/16","EUC-G",0,2,0
+"Czech Republic","Croatia","6/17/16","EUC-G",2,2,0
+"Spain","Turkey","6/17/16","EUC-G",3,0,0
+"Turkey","Croatia","6/12/16","EUC-G",0,1,0
+"Spain","Czech Republic","6/13/16","EUC-G",1,0,0
+"Sweden","Belgium","6/22/16","EUC-G",0,1,0
+"Italy","Republic of Ireland","6/22/16","EUC-G",0,1,0
+"Italy","Sweden","6/17/16","EUC-G",1,0,0
+"Belgium","Republic of Ireland","6/18/16","EUC-G",3,0,0
+"Republic of Ireland","Sweden","6/13/16","EUC-G",1,1,0
+"Belgium","Italy","6/13/16","EUC-G",0,2,0
+"Iceland","Austria","6/22/16","EUC-G",2,1,0
+"Hungary","Portugal","6/22/16","EUC-G",3,3,0
+"Iceland","Hungary","6/18/16","EUC-G",1,1,0
+"Portugal","Austria","6/18/16","EUC-G",0,0,0
+"Austria","Hungary","6/14/16","EUC-G",0,2,0
+"Portugal","Iceland","6/14/16","EUC-G",1,1,0
+"Switzerland","Poland","6/25/16","EUC-K",0,0,0
+"Wales","Northern Ireland","6/25/16","EUC-K",1,0,0
+"Croatia","Portugal","6/25/16","EUC-K",0,1,0
