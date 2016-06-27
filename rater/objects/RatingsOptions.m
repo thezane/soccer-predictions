@@ -1,31 +1,34 @@
 classdef RatingsOptions
   properties
-    nu
+    c
     lambda
     k
     homeAdvantage
-    contests
-    contestWeights
-    contestCosts
+    qWeight
+    tWeight
+    maxGoals
+    nu
+    qTCostRatio
     winTiesRatio
   end
   
   methods
-    function rOptions = RatingsOptions(qTCostRatio, winTiesRatio)
-      rOptions.contests = {'EUC-Q', 'WOC-Q', 'EUC-G', 'EUC-K'};
-      rOptions.contestCosts = containers.Map(rOptions.contests, ...
-          {qTCostRatio, qTCostRatio, 1, 1});
+    function rOptions = RatingsOptions(maxGoals, nu, qTCostRatio, ...
+        winTiesRatio)
+      rOptions.maxGoals = maxGoals;
+      rOptions.nu = nu;
+      rOptions.qTCostRatio = qTCostRatio;
       rOptions.winTiesRatio = winTiesRatio;
     end
     
-    function rOptions = update(rOptions, nu, lambda, k, ...
+    function rOptions = update(rOptions, c, lambda, k, ...
         homeAdvantage, qWeight, tWeight)
-      rOptions.nu = nu;
+      rOptions.c = c;
       rOptions.lambda = lambda;
       rOptions.k = k;
       rOptions.homeAdvantage = homeAdvantage;
-      rOptions.contestWeights = containers.Map(rOptions.contests, ...
-          {qWeight, qWeight, tWeight, tWeight});
+      rOptions.qWeight = qWeight;
+      rOptions.tWeight = tWeight; 
     end
   end
 end

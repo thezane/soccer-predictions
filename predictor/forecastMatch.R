@@ -1,6 +1,6 @@
 forecastMatch <- function (homeTeam, awayTeam, contest, teams.=teams,
     model.=model, meanGoalsMap.=meanGoalsMap) {
-  MAX_GOALS <- 10
+  MAX_GOALS <- 15
   NUM_DECIMALS <- 4
   
   if (contest == "qualifier") {
@@ -40,7 +40,7 @@ computeLambdas <- function(model, homeStr, awayStr,
 computeMatchResults <- function(lambdas, maxGoals, numDecimals) {
   n <- maxGoals + 1
   homeAwayGoals <- matrix(nrow=n, ncol=n)
-  matchProbs <- list("HomeWin"=0, "AwayWin"=0, "Tie"=0)
+  matchProbs <- list("HomeWin"=0, "Tie"=0, "AwayWin"=0)
   i <- 1
   
   while (i <= n) {

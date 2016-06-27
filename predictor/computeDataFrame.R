@@ -4,7 +4,8 @@ computeDataFrame <-function(matches, meanGoalsMap) {
   meanGoals <- t(meanGoals)
   matches[["HomeMeanGoals"]] <- meanGoals[, 1]
   matches[["AwayMeanGoals"]] <- meanGoals[, 2]
-  matches <- matches[order(rev(matches$Date)), ] 
+  matches <- matches[rev(order(as.Date(matches[, "Date"],
+      format="%Y/%m/%d"))), ]
   matches
 }
 

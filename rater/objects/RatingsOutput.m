@@ -1,7 +1,8 @@
 classdef RatingsOutput
   properties
-    cost
-    results
+    strDel
+    qResults
+    tResults
     strAll
     strMedian
     n
@@ -9,9 +10,11 @@ classdef RatingsOutput
   end
   
   methods
-    function rOutput = RatingsOutput(cost, results, numMatches)
-      rOutput.cost = cost;
-      rOutput.results = results;
+    function rOutput = RatingsOutput(numMatches)
+      rOutput.strDel = 0;
+      zerosRow = zeros(1, 4);
+      rOutput.qResults = zerosRow;
+      rOutput.tResults = zerosRow;
       rOutput.n = 2 * numMatches;
       rOutput.strAll = zeros(numMatches, 2);
       rOutput.i = 1;

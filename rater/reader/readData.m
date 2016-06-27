@@ -1,4 +1,5 @@
-function [tTree mTree T winTiesRatio] = readData(dataPath)
+function [tTree mTree T winTiesRatio] = readData(dataPath, ...
+    exemptedTeams)
   tTree = buildType2AnyMap('char');
   mTree = buildType2AnyMap('char');
   numWins = 0;
@@ -9,24 +10,30 @@ function [tTree mTree T winTiesRatio] = readData(dataPath)
   i = 1;
   
   while (i <= n)
-    [tTree homeTeam] = addTeam(T, i, tTree, true);
-    [tTree awayTeam] = addTeam(T, i, tTree, false);
-    [mTree numWins] = addMatch(T, i, mTree, homeTeam, awayTeam, ...
-        numWins, dateInFormat, dateOutFormat);
-    i = i + 1;
+    teamNames = {char(T{i, 'HomeTeam'}) char(T{i, 'AwayTeam'})};
+    
+    if (~sum(ismember(teamNames, exemptedTeams)))
+      [tTree homeTeam] = addTeam(T, i, tTree, teamNames{1}, true);
+      [tTree awayTeam] = addTeam(T, i, tTree, teamNames{2}, false);
+      [mTree numWins] = addMatch(T, i, mTree, homeTeam, awayTeam, ...
+          numWins, dateInFormat, dateOutFormat);
+      i = i + 1;
+    else
+      T(i, :) = [];
+      n = n - 1;
+    end
+    
   end
   
   winTiesRatio = numWins / (n - numWins);
 end
 
-function [tTree team] = addTeam(T, i, tTree, isHome)
+function [tTree team] = addTeam(T, i, tTree, teamName, isHome)
   colHeader = 'Away';
   
   if (isHome)
     colHeader = 'Home';
   end
-  
-  teamName = char(T{i, strcat(colHeader, 'Team')});
   
   if (~isKey(tTree, teamName))
     tTree(teamName) = Team(T, teamName);
