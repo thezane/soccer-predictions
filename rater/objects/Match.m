@@ -13,10 +13,10 @@ classdef Match
   end
   
   methods
-    function match = Match(T, i, homeTeam, awayTeam, dateInFormat, ...
+    function match = Match(T, i, homeTeam, awayTeam, days, ...
         dateOutFormat)
       match.contest = char(T{i, 'Contest'});
-      match.days = datenum(char(T{i, 'Date'}), dateInFormat);
+      match.days = days;
       match.date = datestr(match.days, dateOutFormat);
       match.teamNames = {homeTeam.name awayTeam.name};
       match.goals = [T{i, 'HomeGoals'} T{i, 'AwayGoals'}];

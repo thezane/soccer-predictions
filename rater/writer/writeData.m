@@ -12,6 +12,7 @@ function T = writeData(mTree, mi, T, dataPath)
     T = updateMatches(T, match, NUM_DECIMALS);
   end
   
+  T = sortrows(T, 'Date', 'descend');
   outFile = strcat(dataPath, 'ratedMatches.csv');
   write(T, outFile);
 end

@@ -1,22 +1,23 @@
-function [tTree mTree T winTiesRatio] = readData(dataPath, ...
-    exemptedTeams)
+function [tTree mTree T winTiesRatio] = readData(currentDate, ...
+    dataPath)
   tTree = buildType2AnyMap('char');
   mTree = buildType2AnyMap('char');
   numWins = 0;
   dateInFormat = 'mm/dd/yy';
   dateOutFormat = 'yyyy/mm/dd';
+  currentDays = datenum(currentDate, dateInFormat);
   T = buildTable(dataPath, 'matches.csv');
   n = height(T);
   i = 1;
   
   while (i <= n)
-    teamNames = {char(T{i, 'HomeTeam'}) char(T{i, 'AwayTeam'})};
+    days = datenum(char(T{i, 'Date'}), dateInFormat);
     
-    if (~sum(ismember(teamNames, exemptedTeams)))
-      [tTree homeTeam] = addTeam(T, i, tTree, teamNames{1}, true);
-      [tTree awayTeam] = addTeam(T, i, tTree, teamNames{2}, false);
+    if (days <= currentDays)
+      [tTree homeTeam] = addTeam(T, i, tTree, true);
+      [tTree awayTeam] = addTeam(T, i, tTree, false);
       [mTree numWins] = addMatch(T, i, mTree, homeTeam, awayTeam, ...
-          numWins, dateInFormat, dateOutFormat);
+          numWins, days, dateOutFormat);
       i = i + 1;
     else
       T(i, :) = [];
@@ -28,13 +29,15 @@ function [tTree mTree T winTiesRatio] = readData(dataPath, ...
   winTiesRatio = numWins / (n - numWins);
 end
 
-function [tTree team] = addTeam(T, i, tTree, teamName, isHome)
+function [tTree team] = addTeam(T, i, tTree, isHome)
   colHeader = 'Away';
   
   if (isHome)
     colHeader = 'Home';
   end
-  
+
+  teamName = char(T{i, strcat(colHeader, 'Team')});
+
   if (~isKey(tTree, teamName))
     tTree(teamName) = Team(T, teamName);
   end
@@ -43,8 +46,8 @@ function [tTree team] = addTeam(T, i, tTree, teamName, isHome)
 end
 
 function [mTree numWins] = addMatch(T, i, mTree, homeTeam, ...
-    awayTeam, numWins, dateInFormat, dateOutFormat)
-  match = Match(T, i, homeTeam, awayTeam, dateInFormat, dateOutFormat);
+    awayTeam, numWins, days, dateOutFormat)
+  match = Match(T, i, homeTeam, awayTeam, days, dateOutFormat);
   
   if (~isKey(mTree, match.date))
     mTree(match.date) = [];
