@@ -1,9 +1,11 @@
 function [tTree mTree mi] = optimizeRatings(tTree, mTree, mi, ...
     winTiesRatio, numMatches)
   maxGoals = 3;
+  c = 0;
   nu = 1e-06;
   qTCostRatio = 0.01;
-  rOptions = RatingsOptions(maxGoals, nu, qTCostRatio, winTiesRatio);
+  rOptions = RatingsOptions(maxGoals, c, nu, qTCostRatio, ...
+      winTiesRatio);
   rOutput = RatingsOutput(numMatches);
   f = @(x) modelRatings(x, tTree, mTree, mi, rOptions, rOutput);
   x = findMinimizer(f);
@@ -12,13 +14,12 @@ function [tTree mTree mi] = optimizeRatings(tTree, mTree, mi, ...
 end
 
 function x = findMinimizer(f)
-  cBds = [0 2]';
   lambdaBds = [0.1 0.3]';
-  kBds = [0.6 1.4]';
+  kBds = [0.6 1]';
   homeAdvantageBds = [0.7 0.9]';
-  qWeightBds = [0.01 0.4]';
-  tWeightBds = [0.4 0.8]';
-  bds = [cBds lambdaBds kBds homeAdvantageBds qWeightBds tWeightBds]';
+  qWeightBds = [0.1 0.3]';
+  tWeightBds = [0.3 0.7]';
+  bds = [lambdaBds kBds homeAdvantageBds qWeightBds tWeightBds]';
   printLevel = 2;
   n = length(bds);
   numLevels = 5 * n + 10;
@@ -30,7 +31,7 @@ end
 
 function [y tTree mTree mi rOptions rOutput] = modelRatings(x, ...
     tTree, mTree, mi, rOptions, rOutput)
-  rOptions = rOptions.update(x(1), x(2), x(3), x(4), x(5), x(6));
+  rOptions = rOptions.update(x(1), x(2), x(3), x(4), x(5));
   [tTree mTree mi rOptions rOutput] = rateTeams(tTree, mTree, mi, ...
       rOptions, rOutput);
   [rOutput strMedian] = rOutput.updateStrMedian();
