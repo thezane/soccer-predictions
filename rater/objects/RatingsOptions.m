@@ -3,8 +3,7 @@ classdef RatingsOptions
     lambda
     k
     homeAdvantage
-    qWeight
-    tWeight
+    qTWeightRatio
     maxGoals
     c
     nu
@@ -23,12 +22,11 @@ classdef RatingsOptions
     end
     
     function rOptions = update(rOptions, lambda, k, homeAdvantage, ...
-        qWeight, tWeight)
+        qTWeightRatio)
       rOptions.lambda = lambda;
       rOptions.k = k;
       rOptions.homeAdvantage = homeAdvantage;
-      rOptions.qWeight = qWeight;
-      rOptions.tWeight = tWeight; 
+      rOptions.qTWeightRatio = qTWeightRatio; 
     end
   end
 end

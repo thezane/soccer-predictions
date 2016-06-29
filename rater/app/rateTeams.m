@@ -21,13 +21,14 @@ function [A a d teamsXP match] = computeStrPrereqs(tTree, match, ...
   homeTeam = tTree(match.teamNames{1});
   awayTeam = tTree(match.teamNames{2});
   match.teamStr = [homeTeam.str; awayTeam.str];
-  goals = normGoals(match.goals, rOptions.c, rOptions.maxGoals);
-  A = [0 goals(2); goals(1) 0];
-  
+  goals = match.goals; 
+  goals = normGoals(goals, rOptions.c, rOptions.maxGoals);
+
   if (match.isQualifier())
-    A(2, 1) = rOptions.homeAdvantage * A(2, 1);
+    goals(1) = rOptions.homeAdvantage * goals(1);
   end
 
+  A = [0 goals(2); goals(1) 0];
   a = match.teamStr(:, 1);
   d = match.teamStr(:, 2);
   t = match.days - [homeTeam.updateDays awayTeam.updateDays];
@@ -56,8 +57,8 @@ end
 
 function contestWeight = computeContestWeight(contest, rOptions)
   if (strcmp(contest, 'EUC-Q') || strcmp(contest, 'WOC-Q'))
-    contestWeight = rOptions.qWeight;
+    contestWeight = rOptions.qTWeightRatio;
   else
-    contestWeight = rOptions.tWeight;
+    contestWeight = 1;
   end
 end
