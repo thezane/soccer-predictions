@@ -23,42 +23,35 @@ function [A a d teamsXP match] = computeStrPrereqs(tTree, match, ...
   match.teamStr = [homeTeam.str; awayTeam.str];
   goals = match.goals; 
   goals = normGoals(goals, rOptions.c, rOptions.maxGoals);
+  k = rOptions.tK;
 
   if (match.isQualifier())
     goals(1) = rOptions.homeAdvantage * goals(1);
+    k = rOptions.qK;
   end
 
   A = [0 goals(2); goals(1) 0];
   a = match.teamStr(:, 1);
   d = match.teamStr(:, 2);
   t = match.days - [homeTeam.updateDays awayTeam.updateDays];
-  teamsXP = expDecay(t, rOptions.k / 365, [homeTeam.xp awayTeam.xp]);
+  teamsXP = expDecay(t, k / 365, [homeTeam.xp awayTeam.xp]);
 end
 
 function [tTree match] = updateStr(tTree, match, A, a, d, ...
     rOptions, teamsXP)
   homeTeam = tTree(match.teamNames{1});
   awayTeam = tTree(match.teamNames{2});
-  contestWeight = computeContestWeight(match.contest, rOptions);
-  alphas = contestWeight ./ (teamsXP + contestWeight);
+  alphas = 1 ./ (1 + teamsXP);
   [a d] = computeStr(A, a, d, alphas, rOptions.nu, rOptions.lambda);
   match.teamStrNext = [a d];
   homeTeam.str = [a(1) d(1)];
   awayTeam.str = [a(2) d(2)];
-  homeTeam.xp = teamsXP(1) + contestWeight;
-  awayTeam.xp = teamsXP(2) + contestWeight;
+  homeTeam.xp = teamsXP(1) + 1;
+  awayTeam.xp = teamsXP(2) + 1;
   homeTeam.updateDate = match.date;
   awayTeam.updateDate = match.date;
   homeTeam.updateDays = match.days;
   awayTeam.updateDays = match.days;
   tTree(match.teamNames{1}) = homeTeam;
   tTree(match.teamNames{2}) = awayTeam;
-end
-
-function contestWeight = computeContestWeight(contest, rOptions)
-  if (strcmp(contest, 'EUC-Q') || strcmp(contest, 'WOC-Q'))
-    contestWeight = rOptions.qTWeightRatio;
-  else
-    contestWeight = 1;
-  end
 end

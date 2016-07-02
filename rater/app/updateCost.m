@@ -3,7 +3,7 @@ function rOutput = updateCost(rOutput, rOptions, match, ...
   diagonalInfatedConst = rOptions.winTiesRatio;
   strNorm = computeStrNorm(str);
   strExpectedNorm = computeStrNorm(strExpected);
-  contestCost = computeContestCost(rOptions, match.contest);
+  contestCost = computeContestCost(match, rOptions);
   strDel = contestCost * norm(strNorm - strExpectedNorm);
   winTeamI = 1;
   loseTeamI = 2;
@@ -28,8 +28,8 @@ function rOutput = updateCost(rOutput, rOptions, match, ...
   end
 end
 
-function contestCost = computeContestCost(contest, rOptions)
-  if (strcmp(contest, 'EUC-Q') || strcmp(contest, 'WOC-Q'))
+function contestCost = computeContestCost(match, rOptions)
+  if (match.isQualifier())
     contestCost = rOptions.qTCostRatio;
   else
     contestCost = 1;

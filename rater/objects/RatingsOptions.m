@@ -1,9 +1,9 @@
 classdef RatingsOptions
   properties
+    qK
+    tK
     lambda
-    k
     homeAdvantage
-    qTWeightRatio
     maxGoals
     c
     nu
@@ -21,12 +21,12 @@ classdef RatingsOptions
       rOptions.winTiesRatio = winTiesRatio;
     end
     
-    function rOptions = update(rOptions, lambda, k, homeAdvantage, ...
-        qTWeightRatio)
+    function rOptions = update(rOptions, qK, tK, ...
+        lambda, homeAdvantage)
+      rOptions.qK = qK;
+      rOptions.tK = tK;
       rOptions.lambda = lambda;
-      rOptions.k = k;
       rOptions.homeAdvantage = homeAdvantage;
-      rOptions.qTWeightRatio = qTWeightRatio; 
     end
   end
 end
