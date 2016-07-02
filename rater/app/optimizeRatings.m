@@ -16,7 +16,6 @@ end
 function x = findMinimizer(f)
   qKBds = [0.1 2.1]';
   tKBds = [2 4]';
-  qWeightBds = [0.2 1]';
   lambdaBds = [0.1 0.3]';
   homeAdvantageBds = [0.7 0.9]';
   bds = [qKBds tKBds lambdaBds homeAdvantageBds]';
@@ -38,7 +37,7 @@ function [y tTree mTree mi rOptions rOutput] = modelRatings(x, ...
   resultsCost = 20 * (rOptions.qTCostRatio * rOutput.qResults(2) + ...
       rOutput.tResults(2));
   strCost = rOutput.strDel;
-  medianCost = 1e+03 * (0.9 * norm(log(strMedian(1))) + ...
+  medianCost = 1e+03 * (norm(log(strMedian(1))) + ...
       norm(log(strMedian(2))));
   y = resultsCost + strCost + medianCost;
   display(rOptions);
