@@ -1,7 +1,0 @@
-\documentclass{article}
-\setlength{\parindent}{0pt}
-\usepackage{amsmath}
-
-\begin{document}
-	\textbf{1.} C4, Q52.  Let X $\sim$ Binomial(20, 0.3).  If n is large, then
-\end{document}
