@@ -39,6 +39,4 @@ function [y tTree mTree mi rOptions rOutput] = modelRatings(x, ...
   strDelCost = rOutput.strDelCost;
   [rOutput strMedianCost] = rOutput.updateStrMedianCost();
   y = strCost + 0.5 * strDelCost + 100 * strMedianCost;
-  display(rOptions);
-  display(rOutput);
 end
