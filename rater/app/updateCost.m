@@ -1,31 +1,14 @@
 function rOutput = updateCost(rOutput, rOptions, match, ...
     str, strExpected)
-  diagonalInfatedConst = rOptions.winTiesRatio;
+  contestCost = computeContestCost(match, rOptions);
   strNorm = computeStrNorm(str);
   strExpectedNorm = computeStrNorm(strExpected);
-  contestCost = computeContestCost(match, rOptions);
+  strDifference = contestCost * computeStrDifference(strNorm);
   strDel = contestCost * norm(strNorm - strExpectedNorm);
-  winTeamI = 1;
-  loseTeamI = 2;
+  tieInflation = rOptions.winTiesRatio;
+  rOutput = evaluatePrediction(rOutput, match, ...
+      strNorm, strDifference, strDel, tieInflation);
   rOutput = rOutput.updateStrAll(str);
-
-  if (match.goals(1) == match.goals(2))
-    rOutput.strDel = rOutput.strDel + diagonalInfatedConst * strDel;
-    return;
-  elseif (match.goals(1) < match.goals(2))
-    winTeamI = 2;
-    loseTeamI = 1;
-  end
-
-  rOutput.strDel = rOutput.strDel + strDel;
-  
-  if (match.isQualifier)
-    rOutput.qResults = evaluatePrediction(rOutput.qResults, ...
-        winTeamI, loseTeamI, strNorm, strExpectedNorm);
-  else
-    rOutput.tResults = evaluatePrediction(rOutput.tResults, ...
-        winTeamI, loseTeamI, strNorm, strExpectedNorm);
-  end
 end
 
 function contestCost = computeContestCost(match, rOptions)
@@ -36,11 +19,32 @@ function contestCost = computeContestCost(match, rOptions)
   end
 end 
 
-function results = evaluatePrediction(results, winTeamI, ...
-    loseTeamI, strNorm, strExpectedNorm)
-  isCorrect = strNorm(winTeamI) > strNorm(loseTeamI);
-  isExpectedCorrect = strExpectedNorm(winTeamI) > ...
-      strExpectedNorm(loseTeamI);
-  results = results + [isCorrect ~isCorrect ...
-      isExpectedCorrect ~isExpectedCorrect];
+function rOutput = evaluatePrediction(rOutput, match, ...
+    strNorm, strDifference, strDel, tieInflation)
+  goals = match.goals;
+  
+  if (goals(1) == goals(2))
+    rOutput.strCost = rOutput.strCost + tieInflation * strDifference;
+    rOutput.strDelCost = rOutput.strDelCost + tieInflation * strDel;
+    return;
+  end
+  
+  isCorrect = (goals(1) < goals(2) && strNorm(1) < strNorm(2)) || ...
+      (goals(1) > goals(2) && strNorm(1) > strNorm(2));
+  
+  if (isCorrect && match.isQualifier())
+    rOutput.strCost = rOutput.strCost - strDifference;
+    rOutput.qResults(1) = rOutput.qResults(1) + 1;
+  elseif (isCorrect)
+    rOutput.strCost = rOutput.strCost - strDifference;
+    rOutput.tResults(1) = rOutput.tResults(1) + 1;
+  elseif (~isCorrect && match.isQualifier())
+    rOutput.strCost = rOutput.strCost + strDifference;
+    rOutput.qResults(2) = rOutput.qResults(2) + 1;
+  elseif (~isCorrect)
+    rOutput.strCost = rOutput.strCost + strDifference;
+    rOutput.tResults(2) = rOutput.tResults(2) + 1;    
+  end
+  
+  rOutput.strDelCost = rOutput.strDelCost + strDel;
 end
