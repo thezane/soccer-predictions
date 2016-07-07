@@ -22,7 +22,7 @@ function [A a d teamsXP match] = computeStrPrereqs(tTree, match, ...
   awayTeam = tTree(match.teamNames{2});
   match.teamStr = [homeTeam.str; awayTeam.str];
   goals = match.goals; 
-  goals = normGoals(goals, rOptions.c, rOptions.maxGoals);
+  goals = normGoals(goals, rOptions.maxGoals);
   k = rOptions.tK;
 
   if (match.isQualifier())
@@ -42,7 +42,7 @@ function [tTree match] = updateStr(tTree, match, A, a, d, ...
   homeTeam = tTree(match.teamNames{1});
   awayTeam = tTree(match.teamNames{2});
   alphas = 1 ./ (1 + teamsXP);
-  [a d] = computeStr(A, a, d, alphas, rOptions.nu, rOptions.lambda);
+  [a d] = computeStr(A, a, d, alphas, rOptions.nu, rOptions.c);
   match.teamStrNext = [a d];
   homeTeam.str = [a(1) d(1)];
   awayTeam.str = [a(2) d(2)];

@@ -2,31 +2,28 @@ classdef RatingsOptions
   properties
     qK
     tK
-    lambda
+    c
     homeAdvantage
     maxGoals
-    c
     nu
     qTCostRatio
     winTiesRatio
   end
   
   methods
-    function rOptions = RatingsOptions(maxGoals, c, nu, ...
-        qTCostRatio, winTiesRatio)
+    function rOptions = RatingsOptions(maxGoals, homeAdvantage, ...
+        nu, qTCostRatio, winTiesRatio)
       rOptions.maxGoals = maxGoals;
-      rOptions.c = c;
+      rOptions.homeAdvantage = homeAdvantage;
       rOptions.nu = nu;
       rOptions.qTCostRatio = qTCostRatio;
       rOptions.winTiesRatio = winTiesRatio;
     end
     
-    function rOptions = update(rOptions, qK, tK, ...
-        lambda, homeAdvantage)
+    function rOptions = update(rOptions, qK, tK, c)
       rOptions.qK = qK;
       rOptions.tK = tK;
-      rOptions.lambda = lambda;
-      rOptions.homeAdvantage = homeAdvantage;
+      rOptions.c = c;
     end
   end
 end

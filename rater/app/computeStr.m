@@ -1,10 +1,10 @@
-function [a d] = computeStr(A, a, d, alphas, nu, lambda)
+function [a d] = computeStr(A, a, d, alphas, nu, c)
   aPrev = a;
   dPrev = d;
   alphasMat = [alphas; alphas];
   
   while (true)
-    [aNext dNext] = computeAD(A, a, d, lambda);
+    [aNext dNext] = computeAD(A, a, d, c);
     aDel = aNext - a;
     dDel = dNext - d;
     
@@ -22,9 +22,9 @@ function [a d] = computeStr(A, a, d, alphas, nu, lambda)
   end
 end
 
-function [a d] = computeAD(A, a, d, lambda)
+function [a d] = computeAD(A, a, d, c)
   tol = sqrt(eps);
-  A = A + lambda * fliplr(eye(2));
+  A = A + c * fliplr(eye(2));
   [aRelA dRelA] = computeStrRelA(A, a, tol);
   [aRelD dRelD] = computeStrRelD(A, d, tol);
   aNext = (aRelA + aRelD) / 2;

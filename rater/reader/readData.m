@@ -1,7 +1,9 @@
-function [tTree mTree T winTiesRatio] = readData(currentDate, ...
-    dataPath)
+function [tTree mTree T homeAdvantage qTRatio winTiesRatio] = ...
+    readData(currentDate, dataPath)
   tTree = buildType2AnyMap('char');
   mTree = buildType2AnyMap('char');
+  homeAwayGoals = [0 0];
+  numQualifiers = 0;
   numWins = 0;
   dateInFormat = 'mm/dd/yy';
   dateOutFormat = 'yyyy/mm/dd';
@@ -16,8 +18,12 @@ function [tTree mTree T winTiesRatio] = readData(currentDate, ...
     if (days <= currentDays)
       [tTree homeTeam] = addTeam(T, i, tTree, true);
       [tTree awayTeam] = addTeam(T, i, tTree, false);
-      [mTree numWins] = addMatch(T, i, mTree, homeTeam, awayTeam, ...
-          numWins, days, dateOutFormat);
+      [mTree match] = addMatch(T, i, mTree, homeTeam, awayTeam, ...
+          days, dateOutFormat);
+      isQualifier = match.isQualifier();
+      homeAwayGoals = homeAwayGoals + isQualifier * match.goals;
+      numQualifiers = numQualifiers + isQualifier;
+      numWins = numWins + (match.goals(1) ~= match.goals(2));
       i = i + 1;
     else
       T(i, :) = [];
@@ -26,6 +32,8 @@ function [tTree mTree T winTiesRatio] = readData(currentDate, ...
     
   end
   
+  homeAdvantage = homeAwayGoals(2) / homeAwayGoals(1);
+  qTRatio = numQualifiers / (n - numQualifiers);
   winTiesRatio = numWins / (n - numWins);
 end
 
@@ -45,8 +53,8 @@ function [tTree team] = addTeam(T, i, tTree, isHome)
   team = tTree(teamName);
 end
 
-function [mTree numWins] = addMatch(T, i, mTree, homeTeam, ...
-    awayTeam, numWins, days, dateOutFormat)
+function [mTree match] = addMatch(T, i, mTree, homeTeam, awayTeam, ...
+    days, dateOutFormat)
   match = Match(T, i, homeTeam, awayTeam, days, dateOutFormat);
   
   if (~isKey(mTree, match.date))
@@ -55,5 +63,4 @@ function [mTree numWins] = addMatch(T, i, mTree, homeTeam, ...
   
   match.i = length(mTree(match.date)) + 1;
   mTree(match.date) = [mTree(match.date) match];
-  numWins = numWins + (match.goals(1) ~= match.goals(2));
 end
