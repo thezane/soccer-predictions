@@ -3,11 +3,13 @@ classdef Match
     contest
     date
     days
+    year
     teamNames
     goals
     teamStr
     teamStrNext
     existsHomeAdvantage
+    isCorrect
     i
     row
   end
@@ -18,6 +20,7 @@ classdef Match
       match.contest = char(T{i, 'Contest'});
       match.days = days;
       match.date = datestr(match.days, dateOutFormat);
+      match.year = str2num(match.date(1: 4));
       match.teamNames = {homeTeam.name awayTeam.name};
       match.goals = [T{i, 'HomeGoals'} T{i, 'AwayGoals'}];
       match.existsHomeAdvantage = T{i, 'HomeAdvantage'};

@@ -15,7 +15,7 @@ function [tTree mTree mi] = optimizeRatings(tTree, mTree, mi, ...
 end
 
 function x = findMinimizer(f)
-  qKBds = [0.1 2.1]';
+  qKBds = [0.01 2]';
   tKBds = [2 4]';
   cBds = [0.2 0.4]';
   bds = [qKBds tKBds cBds]';
@@ -36,5 +36,7 @@ function [y tTree mTree mi rOptions rOutput] = modelRatings(x, ...
   strCost = rOutput.strCost;
   strDelCost = rOutput.strDelCost;
   [rOutput strMedianCost] = rOutput.updateStrMedianCost();
-  y = strCost + 0.5 * strDelCost + 100 * strMedianCost;
+  y = strCost + 1e+06 * (...
+      (min(0, strCost - 4 * strDelCost)) ^ 2 + ...
+      (min(0, 1 - 20 * strMedianCost)) ^ 2);
 end

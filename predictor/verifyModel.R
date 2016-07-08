@@ -1,3 +1,4 @@
 verifyModel <- function (model) {
-  summary(model$residuals)
+  residuals <- c(model$residuals[, "x"], model$residuals[, "y"])
+  summary(residuals)
 }

@@ -8,11 +8,10 @@ function [tTree mTree mi rOptions rOutput] = rateTeams(tTree, ...
     [A a d teamsXP match] = computeStrPrereqs(tTree, match, rOptions);
     [tTree match] = updateStr(tTree, match, A, a, d, rOptions, ...
         teamsXP);
+    [rOutput match] = updateCost(rOutput, rOptions, match);
     mList = mTree(match.date);
     mList(match.i) = match;
     mTree(match.date) = mList;
-    rOutput = updateCost(rOutput, rOptions, match, match.teamStr, ...
-        match.teamStrNext);
   end
 end
 
