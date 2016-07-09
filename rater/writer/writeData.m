@@ -6,14 +6,17 @@ function T = writeData(mi, T, dataPath)
       'AwayAttackNext', 'AwayDefenseNext'};
   T = addCols(T, colNames);
   mi = mi.reset();
+  date = '';
   
   while (mi.hasNext())
     [mi match] = mi.next();
     T = updateMatches(T, match, NUM_DECIMALS);
+    date = match.date;
   end
   
   T = sortrows(T, 'Date', 'descend');
-  outFile = strcat(dataPath, 'ratedMatches.csv');
+  date = strrep(date, '/', '-');
+  outFile = strcat(dataPath, date, '.csv');
   write(T, outFile);
 end
 

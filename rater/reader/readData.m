@@ -1,5 +1,5 @@
-function [tTree mTree T homeAdvantage qTRatio winTiesRatio] = ...
-    readData(currentDate, dataPath)
+function [tTree mTree T homeAdvantage qTRatio] = readData(...
+    currentDate, dataPath)
   tTree = buildType2AnyMap('char');
   mTree = buildType2AnyMap('char');
   homeAwayGoals = [0 0];
@@ -23,7 +23,6 @@ function [tTree mTree T homeAdvantage qTRatio winTiesRatio] = ...
       isQualifier = match.isQualifier();
       homeAwayGoals = homeAwayGoals + isQualifier * match.goals;
       numQualifiers = numQualifiers + isQualifier;
-      numWins = numWins + (match.goals(1) ~= match.goals(2));
       i = i + 1;
     else
       T(i, :) = [];
@@ -34,7 +33,6 @@ function [tTree mTree T homeAdvantage qTRatio winTiesRatio] = ...
   
   homeAdvantage = homeAwayGoals(2) / homeAwayGoals(1);
   qTRatio = numQualifiers / (n - numQualifiers);
-  winTiesRatio = numWins / (n - numWins);
 end
 
 function [tTree team] = addTeam(T, i, tTree, isHome)

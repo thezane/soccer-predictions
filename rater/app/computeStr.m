@@ -1,4 +1,4 @@
-function [a d] = computeStr(A, a, d, alphas, nu, c)
+function [a d] = computeStr(A, a, d, alphas, c, tolRel)
   aPrev = a;
   dPrev = d;
   alphasMat = [alphas; alphas];
@@ -8,7 +8,7 @@ function [a d] = computeStr(A, a, d, alphas, nu, c)
     aDel = aNext - a;
     dDel = dNext - d;
     
-    if (norm(aDel) < nu && norm(dDel) < nu)
+    if (norm(aDel) < tolRel && norm(dDel) < tolRel)
       strNext = [aNext dNext];
       str = [aPrev dPrev];
       str = alphasMat .* strNext + (1 - alphasMat) .* str;   
@@ -23,17 +23,17 @@ function [a d] = computeStr(A, a, d, alphas, nu, c)
 end
 
 function [a d] = computeAD(A, a, d, c)
-  tol = sqrt(eps);
+  tolScale = 1e-03;
   A = A + c * fliplr(eye(2));
-  [aRelA dRelA] = scaleCol(A, a, tol);
-  [dRelD aRelD] = scaleCol(A', d, tol);
+  [aRelA dRelA] = scaleCol(A, a, tolScale);
+  [dRelD aRelD] = scaleCol(A', d, tolScale);
   aNext = (aRelA + aRelD) / 2;
   dNext = (dRelA + dRelD) / 2;
   a = aNext;
   d = dNext;
 end
 
-function [x y] = scaleCol(A, x, tol)
+function [x y] = scaleCol(A, x, tolScale)
   y = A * (1 ./ x);
   
   while (true)
@@ -44,7 +44,7 @@ function [x y] = scaleCol(A, x, tol)
     x = xNext;
     y = yNext;
     
-    if (norm(xDel) < tol && norm(yDel) < tol)
+    if (norm(xDel) < tolScale && norm(yDel) < tolScale)
       return;
     end
   end

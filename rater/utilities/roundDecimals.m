@@ -3,4 +3,4 @@ function x = roundDecimals(x, n)
   x = c * x;
   x = round(x);
   x = x ./ c;
-end 
+end

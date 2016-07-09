@@ -5,19 +5,17 @@ classdef RatingsOptions
     c
     homeAdvantage
     maxGoals
-    nu
+    tolRel
     qTCostRatio
-    winTiesRatio
   end
   
   methods
     function rOptions = RatingsOptions(maxGoals, homeAdvantage, ...
-        nu, qTCostRatio, winTiesRatio)
+        tolRel, qTCostRatio, winTiesRatio)
       rOptions.maxGoals = maxGoals;
       rOptions.homeAdvantage = homeAdvantage;
-      rOptions.nu = nu;
+      rOptions.tolRel = tolRel;
       rOptions.qTCostRatio = qTCostRatio;
-      rOptions.winTiesRatio = winTiesRatio;
     end
     
     function rOptions = update(rOptions, qK, tK, c)

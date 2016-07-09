@@ -1,14 +1,13 @@
 function [rOutput match] = updateCost(rOutput, rOptions, match)
   str = match.teamStr;
-  strExpected = match.teamStrNext;
+  strNext = match.teamStrNext;
   contestCost = computeContestCost(match, rOptions);
   strNorm = computeStrNorm(str);
-  strExpectedNorm = computeStrNorm(strExpected);
+  strNextNorm = computeStrNorm(strNext);
   strDifference = contestCost * computeStrDifference(strNorm);
-  strDel = contestCost * norm(strNorm - strExpectedNorm);
-  tieInflation = rOptions.winTiesRatio;
+  strDel = contestCost * norm(strNextNorm - strNorm);
   [rOutput match] = evaluatePrediction(rOutput, match, ...
-      strNorm, strDifference, strDel, tieInflation);
+      strNorm, strDifference, strDel);
   rOutput = rOutput.updateStrAll(str);
 end
 
@@ -21,13 +20,12 @@ function contestCost = computeContestCost(match, rOptions)
 end 
 
 function [rOutput match] = evaluatePrediction(rOutput, match, ...
-    strNorm, strDifference, strDel, tieInflation)
+    strNorm, strDifference, strDel)
   goals = match.goals;
+  rOutput.strDelCost = rOutput.strDelCost + strDel;
   
   if (goals(1) == goals(2))
-    match.isCorrect = -1;
-    rOutput.strCost = rOutput.strCost + tieInflation * strDifference;
-    rOutput.strDelCost = rOutput.strDelCost + tieInflation * strDel;
+    rOutput.strCost = rOutput.strCost + strDifference;
     return;
   end
   
@@ -37,7 +35,7 @@ function [rOutput match] = evaluatePrediction(rOutput, match, ...
   match.isCorrect = isCorrect;
   
   if (isCorrect)
-    rOutput.strCost = rOutput.strCost - strDifference;
+    rOutput.strIncome = rOutput.strIncome + strDifference;
     rOutput.qResults(1) = rOutput.qResults(1) + isQualifier;
     rOutput.tResults(1) = rOutput.tResults(1) + ~isQualifier;
   else
@@ -45,6 +43,4 @@ function [rOutput match] = evaluatePrediction(rOutput, match, ...
     rOutput.qResults(2) = rOutput.qResults(2) + isQualifier;
     rOutput.tResults(2) = rOutput.tResults(2) + ~isQualifier;
   end
-  
-  rOutput.strDelCost = rOutput.strDelCost + strDel;
 end
