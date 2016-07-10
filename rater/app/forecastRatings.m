@@ -5,6 +5,7 @@ function [tTree mTree] = forecastRatings(currentDate)
   mi = MatchIterator(mTree);
   [tTree mTree mi] = optimizeRatings(tTree, mTree, mi, ...
       homeAdvantage, qTRatio, height(T));
-  displayResults(verifyModel(mi));
+  vTree = verifyModel(mi);
+  displayResults(vTree);
   T = writeData(mi, T, dataPath);
 end 
