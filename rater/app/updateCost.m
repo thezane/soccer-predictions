@@ -35,7 +35,7 @@ function [rOutput match] = evaluatePrediction(rOutput, match, ...
     strNorm, strDifference, strExpectedDifference, strDel)
   rOutput.strDelCost = rOutput.strDelCost + strDel;
   rOutput.strCost = rOutput.strCost + ...
-      meanSquareError(strDifference, strExpectedDifference);
+      meanSquaredError(strDifference, strExpectedDifference);
   goals = match.goals;
   
   if (goals(1) == goals(2))
