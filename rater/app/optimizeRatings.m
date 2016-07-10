@@ -1,6 +1,6 @@
 function [tTree mTree mi] = optimizeRatings(tTree, mTree, mi, ...
     homeAdvantage, qTRatio, numMatches)
-  maxGoals = 3;
+  maxGoals = 2;
   tolRel = 1e-03;
   qTCostRatio = 1 / qTRatio;
   rOptions = RatingsOptions(maxGoals, homeAdvantage, tolRel, ...
@@ -33,9 +33,8 @@ function x = findMinimizer(f)
   tK = 4;
   c = 0.2;
   x = [qK tK c]';
-  e = 1e-06;
   tol = 1e-03;
-  gradientF = @(x, fx) approxGradient(x, fx, f, e);
-  hessianF = @(x, g) approxHessian(x, g, f, e);
-  x = trustRegion(x, f, gradientF, hessianF, tol)
+  gradientF = @(x) approxGradient(x, f);
+  hessianF = @(x, g) approxHessian(x, g, f);
+  x = bfgs(x, f, gradientF, hessianF, tol)
 end

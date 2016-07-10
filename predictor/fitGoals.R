@@ -13,6 +13,6 @@ fitGoals <- function (currentDate) {
       common.intercept=TRUE, data=matches, pres=1e-06)
   teams <- constructTeams(matches)
   forecastPrereq <- list("meanGoalsMap"=meanGoalsMap,
-      "matches"=matches, "model"=model)
+      "matches"=matches, "model"=model, "teams"=teams)
   forecastPrereq
 }
