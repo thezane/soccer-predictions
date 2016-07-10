@@ -1,6 +1,5 @@
 classdef RatingsOutput
   properties
-    strIncome
     strCost
     strDelCost
     strMedianCost
@@ -14,7 +13,6 @@ classdef RatingsOutput
   
   methods
     function rOutput = RatingsOutput(numMatches)
-      rOutput.strIncome = 0;
       rOutput.strCost = 0;
       rOutput.strDelCost = 0;
       zerosRow = zeros(1, 2);

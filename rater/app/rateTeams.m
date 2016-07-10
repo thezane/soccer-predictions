@@ -8,7 +8,7 @@ function [tTree mTree mi rOptions rOutput] = rateTeams(tTree, ...
     [A a d teamsXP match] = computeStrPrereqs(tTree, match, rOptions);
     [tTree match] = updateStr(tTree, match, A, a, d, rOptions, ...
         teamsXP);
-    [rOutput match] = updateCost(rOutput, rOptions, match);
+    [rOutput match] = updateCost(rOutput, rOptions, match, A, a, d);
     mList = mTree(match.date);
     mList(match.i) = match;
     mTree(match.date) = mList;
@@ -20,8 +20,7 @@ function [A a d teamsXP match] = computeStrPrereqs(tTree, match, ...
   homeTeam = tTree(match.teamNames{1});
   awayTeam = tTree(match.teamNames{2});
   match.teamStr = [homeTeam.str; awayTeam.str];
-  goals = match.goals; 
-  goals = normGoals(goals, rOptions.maxGoals);
+  goals = normGoals(match.goals, rOptions.maxGoals);
   k = rOptions.tK;
 
   if (match.isQualifier())

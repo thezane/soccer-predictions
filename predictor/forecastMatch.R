@@ -1,10 +1,11 @@
 forecastMatch <- function (homeTeam, awayTeam, contest,
-    forecastPrereq.=forecastPrereq) {
+    forecastPrereq) {
   MAX_GOALS <- 15
   NUM_DECIMALS <- 4
   meanGoalsMap <- forecastPrereq[["meanGoalsMap"]]
   matches <- forecastPrereq[["matches"]]
   model <- forecastPrereq[["model"]]
+  teams <- forecastPrereq[["teams"]]
   
   if (contest == "qualifier") {
     homeMeanGoals <- meanGoalsMap[[paste(contest, "Home", sep="")]]
