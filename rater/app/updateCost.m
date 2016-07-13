@@ -1,19 +1,13 @@
 function [rOutput match] = updateCost(rOutput, rOptions, match, ...
     A, a, d)
-  contestCost = computeContestCost(match, rOptions);
   str = match.teamStr;
   strNext = match.teamStrNext;
   strExpected = computeStrExpected(A, a, d, rOptions);
   strNorm = computeStrNorm(str);
   strNextNorm = computeStrNorm(strNext);
   strExpectedNorm = computeStrNorm(strExpected);
-  strDifference = contestCost * meanSquaredError(...
-      strNorm(1), strNorm(2));
-  strExpectedDifference = contestCost * meanSquaredError(...
-      strExpectedNorm(1), strExpectedNorm(2));
-  strDel = contestCost * norm(strNextNorm - strNorm);
-  [rOutput match] = evaluatePrediction(rOutput, match, ...
-      strNorm, strDifference, strExpectedDifference, strDel);
+  [rOutput match] = evaluatePrediction(rOptions, rOutput, match, ...
+      strNorm, strNextNorm, strExpectedNorm);
   rOutput = rOutput.updateStrAll(str);
 end
 
@@ -31,11 +25,15 @@ function strExpected = computeStrExpected(A, a, d, rOptions)
   strExpected = [a d];
 end
 
-function [rOutput match] = evaluatePrediction(rOutput, match, ...
-    strNorm, strDifference, strExpectedDifference, strDel)
-  rOutput.strDelCost = rOutput.strDelCost + strDel;
-  rOutput.strCost = rOutput.strCost + ...
-      meanSquaredError(strDifference, strExpectedDifference);
+function [rOutput match] = evaluatePrediction(rOptions, rOutput, ...
+    match, strNorm, strNextNorm, strExpectedNorm)
+  contestCost = computeContestCost(match, rOptions);
+  strDelCost = meanSquaredError(strNorm(1), strNextNorm(1)) + ...
+      meanSquaredError(strNorm(2), strNextNorm(2));
+  strCost = meanSquaredError(strNorm(1), strExpectedNorm(1)) + ...
+      meanSquaredError(strNorm(2), strExpectedNorm(2));
+  rOutput.strDelCost = rOutput.strDelCost + contestCost * strDelCost;
+  rOutput.strCost = rOutput.strCost + contestCost * strCost;
   goals = match.goals;
   
   if (goals(1) == goals(2))

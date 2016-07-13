@@ -25,15 +25,15 @@ end
 function [a d] = computeAD(A, a, d, c)
   tolScale = 1e-03;
   A = A + c * fliplr(eye(2));
-  [aRelA dRelA] = scaleCol(A, a, tolScale);
-  [dRelD aRelD] = scaleCol(A', d, tolScale);
+  [aRelA dRelA] = scaleRating(A, a, tolScale);
+  [dRelD aRelD] = scaleRating(A', d, tolScale);
   aNext = (aRelA + aRelD) / 2;
   dNext = (dRelA + dRelD) / 2;
   a = aNext;
   d = dNext;
 end
 
-function [x y] = scaleCol(A, x, tolScale)
+function [x y] = scaleRating(A, x, tolScale)
   y = A * (1 ./ x);
   
   while (true)
