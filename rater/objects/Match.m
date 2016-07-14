@@ -4,13 +4,15 @@ classdef Match
     date
     days
     year
-    teamNames
     goals
+    teamNames
     teamStr
     teamStrNext
+    teamStrPost
+    teamXP
     existsHomeAdvantage
-    isCorrect
     i
+    isCorrect
     row
   end
   

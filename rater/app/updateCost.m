@@ -1,8 +1,9 @@
-function [rOutput match] = updateCost(rOutput, rOptions, match, ...
-    A, a, d)
+function [rOutput match] = updateCost(rOutput, rOptions, match, A)
   str = match.teamStr;
+  strPost = match.teamStrPost;
   strNext = match.teamStrNext;
-  strExpected = computeStrExpected(A, a, d, rOptions);
+  alphas = [0.5 0.5]';
+  strExpected = computeStrNext(str, strPost, alphas);
   strNorm = computeStrNorm(str);
   strNextNorm = computeStrNorm(strNext);
   strExpectedNorm = computeStrNorm(strExpected);
@@ -20,7 +21,7 @@ function contestCost = computeContestCost(match, rOptions)
 end
 
 function strExpected = computeStrExpected(A, a, d, rOptions)
-  alphas = [0.5 0.5];
+  alphas = [0.5 0.5]';
   [a d] = computeStr(A, a, d, alphas, rOptions.c, rOptions.tolRel);
   strExpected = [a d];
 end
@@ -42,6 +43,7 @@ function [rOutput match] = evaluatePrediction(rOptions, rOutput, ...
   
   isCorrect = (goals(1) < goals(2) && strNorm(1) < strNorm(2)) || ...
       (goals(1) > goals(2) && strNorm(1) > strNorm(2));
+  match.isCorrect = isCorrect;
   isQualifier = match.isQualifier();
   
   if (isCorrect)

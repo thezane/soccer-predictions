@@ -1,24 +1,19 @@
-function [a d] = computeStr(A, a, d, alphas, c, tolRel)
-  aPrev = a;
-  dPrev = d;
-  alphasMat = [alphas; alphas];
+function strPost = computeStr(A, str, c, tolRel)
+  a = str(:, 1);
+  d = str(:, 2);
   
   while (true)
-    [aNext dNext] = computeAD(A, a, d, c);
-    aDel = aNext - a;
-    dDel = dNext - d;
+    [aPost dPost] = computeAD(A, a, d, c);
+    aDel = aPost - a;
+    dDel = dPost - d;
     
     if (norm(aDel) < tolRel && norm(dDel) < tolRel)
-      strNext = [aNext dNext];
-      str = [aPrev dPrev];
-      str = alphasMat .* strNext + (1 - alphasMat) .* str;   
-      a = str(:, 1);
-      d = str(:, 2);
+      strPost = [aPost dPost];
       return;
     end   
     
-    a = aNext;
-    d = dNext;
+    a = aPost;
+    d = dPost;
   end
 end
 
@@ -27,22 +22,22 @@ function [a d] = computeAD(A, a, d, c)
   A = A + c * fliplr(eye(2));
   [aRelA dRelA] = scaleRating(A, a, tolScale);
   [dRelD aRelD] = scaleRating(A', d, tolScale);
-  aNext = (aRelA + aRelD) / 2;
-  dNext = (dRelA + dRelD) / 2;
-  a = aNext;
-  d = dNext;
+  aPost = (aRelA + aRelD) / 2;
+  dPost = (dRelA + dRelD) / 2;
+  a = aPost;
+  d = dPost;
 end
 
 function [x y] = scaleRating(A, x, tolScale)
   y = A * (1 ./ x);
   
   while (true)
-    xNext = A' * (1 ./ y);
-    yNext = A * (1 ./ x);
-    xDel = xNext - x;
-    yDel = yNext - y;
-    x = xNext;
-    y = yNext;
+    xPost = A' * (1 ./ y);
+    yPost = A * (1 ./ x);
+    xDel = xPost - x;
+    yDel = yPost - y;
+    x = xPost;
+    y = yPost;
     
     if (norm(xDel) < tolScale && norm(yDel) < tolScale)
       return;
