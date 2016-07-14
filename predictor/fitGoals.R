@@ -1,8 +1,9 @@
 fitGoals <- function (currentDate) {
   source("setup.R")
   dataPath <- "../data/"
+  header = "sodm-"
   fileType <- ".csv"
-  matchSrc <- paste(dataPath, currentDate, fileType, sep ="")
+  matchSrc <- paste(dataPath, header, currentDate, fileType, sep ="")
   matches <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
   meanGoalsMap <- computeMeanGoals(matches)

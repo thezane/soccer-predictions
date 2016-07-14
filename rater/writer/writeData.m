@@ -16,7 +16,7 @@ function T = writeData(mi, T, dataPath)
   
   T = sortrows(T, 'Date', 'descend');
   date = strrep(date, '/', '-');
-  outFile = strcat(dataPath, date, '.csv');
+  outFile = strcat(dataPath, 'sodm-', date, '.csv');
   write(T, outFile);
 end
 
