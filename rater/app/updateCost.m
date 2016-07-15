@@ -1,4 +1,4 @@
-function [rOutput match] = updateCost(rOutput, rOptions, match, A)
+function rOutput = updateCost(rOutput, rOptions, match, A)
   str = match.teamStr;
   strPost = match.teamStrPost;
   strNext = match.teamStrNext;
@@ -7,7 +7,7 @@ function [rOutput match] = updateCost(rOutput, rOptions, match, A)
   strNorm = computeStrNorm(str);
   strNextNorm = computeStrNorm(strNext);
   strExpectedNorm = computeStrNorm(strExpected);
-  [rOutput match] = evaluatePrediction(rOptions, rOutput, match, ...
+  rOutput = updateRatingsCost(rOptions, rOutput, match, ...
       strNorm, strNextNorm, strExpectedNorm);
   rOutput = rOutput.updateStrAll(str);
 end
@@ -26,7 +26,7 @@ function strExpected = computeStrExpected(A, a, d, rOptions)
   strExpected = [a d];
 end
 
-function [rOutput match] = evaluatePrediction(rOptions, rOutput, ...
+function rOutput = updateRatingsCost(rOptions, rOutput, ...
     match, strNorm, strNextNorm, strExpectedNorm)
   contestCost = computeContestCost(match, rOptions);
   strDelCost = meanSquaredError(strNorm(1), strNextNorm(1)) + ...
@@ -35,22 +35,4 @@ function [rOutput match] = evaluatePrediction(rOptions, rOutput, ...
       meanSquaredError(strNorm(2), strExpectedNorm(2));
   rOutput.strDelCost = rOutput.strDelCost + contestCost * strDelCost;
   rOutput.strCost = rOutput.strCost + contestCost * strCost;
-  goals = match.goals;
-  
-  if (goals(1) == goals(2))
-    return;
-  end
-  
-  isCorrect = (goals(1) < goals(2) && strNorm(1) < strNorm(2)) || ...
-      (goals(1) > goals(2) && strNorm(1) > strNorm(2));
-  match.isCorrect = isCorrect;
-  isQualifier = match.isQualifier();
-  
-  if (isCorrect)
-    rOutput.qResults(1) = rOutput.qResults(1) + isQualifier;
-    rOutput.tResults(1) = rOutput.tResults(1) + ~isQualifier;
-  else
-    rOutput.qResults(2) = rOutput.qResults(2) + isQualifier;
-    rOutput.tResults(2) = rOutput.tResults(2) + ~isQualifier;
-  end
 end

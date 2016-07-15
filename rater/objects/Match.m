@@ -12,7 +12,6 @@ classdef Match
     teamXP
     existsHomeAdvantage
     i
-    isCorrect
     row
   end
   
@@ -26,7 +25,6 @@ classdef Match
       match.teamNames = {homeTeam.name awayTeam.name};
       match.goals = [T{i, 'HomeGoals'} T{i, 'AwayGoals'}];
       match.existsHomeAdvantage = T{i, 'HomeAdvantage'};
-      match.isCorrect = -1;
       match.row = i;
     end
 

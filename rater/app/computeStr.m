@@ -6,14 +6,13 @@ function strPost = computeStr(A, str, c, tolRel)
     [aPost dPost] = computeAD(A, a, d, c);
     aDel = aPost - a;
     dDel = dPost - d;
+    a = aPost;
+    d = dPost;
     
     if (norm(aDel) < tolRel && norm(dDel) < tolRel)
       strPost = [aPost dPost];
       return;
     end   
-    
-    a = aPost;
-    d = dPost;
   end
 end
 

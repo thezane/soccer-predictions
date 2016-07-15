@@ -3,8 +3,6 @@ classdef RatingsOutput
     strCost
     strDelCost
     strMedianCost
-    qResults
-    tResults
     strAll
     strMedian
     n
@@ -15,9 +13,6 @@ classdef RatingsOutput
     function rOutput = RatingsOutput(numMatches)
       rOutput.strCost = 0;
       rOutput.strDelCost = 0;
-      zerosRow = zeros(1, 2);
-      rOutput.qResults = zerosRow;
-      rOutput.tResults = zerosRow;
       rOutput.n = 2 * numMatches;
       rOutput.strAll = zeros(numMatches, 2);
       rOutput.i = 1;
