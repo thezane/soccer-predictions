@@ -3,19 +3,14 @@ classdef RatingsOptions
     qK
     tK
     c
-    homeAdvantage
-    maxGoals
     tolRel
     qTCostRatio
   end
   
   methods
-    function rOptions = RatingsOptions(maxGoals, homeAdvantage, ...
-        tolRel, qTCostRatio, winTiesRatio)
-      rOptions.maxGoals = maxGoals;
-      rOptions.homeAdvantage = homeAdvantage;
-      rOptions.tolRel = tolRel;
+    function rOptions = RatingsOptions(qTCostRatio, tolRel)
       rOptions.qTCostRatio = qTCostRatio;
+      rOptions.tolRel = tolRel;
     end
     
     function rOptions = update(rOptions, qK, tK, c)

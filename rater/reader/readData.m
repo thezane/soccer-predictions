@@ -31,7 +31,7 @@ function [tTree mTree T homeAdvantage qTRatio] = readData(...
     
   end
   
-  homeAdvantage = homeAwayGoals(2) / homeAwayGoals(1);
+  homeAdvantage = homeAwayGoals(1) / homeAwayGoals(2);
   qTRatio = numQualifiers / (n - numQualifiers);
 end
 

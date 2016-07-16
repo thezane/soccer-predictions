@@ -3,8 +3,9 @@ function [tTree mTree] = forecastRatings(currentDate)
   [tTree mTree T homeAdvantage qTRatio] = readData(currentDate, ...
       dataPath);
   mi = MatchIterator(mTree);
-  [tTree mTree mi] = optimizeRatings(tTree, mTree, mi, ...
-      homeAdvantage, qTRatio, height(T));
+  [mTree mi] = normalizeMatchGoals(mTree, mi, homeAdvantage);
+  [tTree mTree mi] = optimizeRatings(tTree, mTree, mi, qTRatio, ...
+      height(T));
   vTree = verifyModel(mi);
   displayResults(vTree);
   T = writeData(mi, T, dataPath);

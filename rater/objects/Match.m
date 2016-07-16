@@ -5,6 +5,7 @@ classdef Match
     days
     year
     goals
+    goalsNorm
     teamNames
     teamStr
     teamStrNext

@@ -18,15 +18,14 @@ function [A match] = computeStrPrereqs(tTree, match, rOptions)
   homeTeam = tTree(match.teamNames{1});
   awayTeam = tTree(match.teamNames{2});
   match.teamStr = [homeTeam.str; awayTeam.str];
-  goals = normGoals(match.goals, rOptions.maxGoals);
 
   if (match.isQualifier())
     k = rOptions.qK;
-    goals(1) = rOptions.homeAdvantage * goals(1);
   else
     k = rOptions.tK;
   end
 
+  goals = match.goalsNorm;
   A = [0 goals(2); goals(1) 0];
   t = match.days - [homeTeam.updateDays awayTeam.updateDays]';
   match.teamXP = expDecay(t, k / 365, [homeTeam.xp awayTeam.xp]');

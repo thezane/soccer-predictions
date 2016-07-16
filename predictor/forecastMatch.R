@@ -1,6 +1,6 @@
 forecastMatch <- function (homeTeam, awayTeam, contest,
     forecastPrereq) {
-  MAX_GOALS <- 15
+  MAX_GOALS <- 20
   NUM_DECIMALS <- 4
   meanGoalsMap <- forecastPrereq[["meanGoalsMap"]]
   matches <- forecastPrereq[["matches"]]
@@ -21,8 +21,10 @@ forecastMatch <- function (homeTeam, awayTeam, contest,
   lambdas <- computeLambdas(model, homeStr, awayStr, homeMeanGoals,
       awayMeanGoals)
   matchResults <- computeMatchResults(lambdas, MAX_GOALS, NUM_DECIMALS)
-  matchResults["HomeGoals"] <- round(lambdas[1], NUM_DECIMALS)
-  matchResults["AwayGoals"] <- round(lambdas[2], NUM_DECIMALS)
+  matchResults["HomeGoals"] <- round(lambdas[1] + lambdas[3],
+      NUM_DECIMALS)
+  matchResults["AwayGoals"] <- round(lambdas[2] + lambdas[3],
+      NUM_DECIMALS)
   matchResults
 }
 
@@ -44,7 +46,7 @@ computeLambdas <- function(model, homeStr, awayStr,
 computeMatchResults <- function(lambdas, maxGoals, numDecimals) {
   n <- maxGoals + 1
   homeAwayGoals <- matrix(nrow=n, ncol=n)
-  matchProbs <- list("HomeWin"=0, "Tie"=0, "AwayWin"=0)
+  matchPs <- list("HomeWin"=0, "Tie"=0, "AwayWin"=0)
   i <- 1
   
   while (i <= n) {
@@ -55,27 +57,26 @@ computeMatchResults <- function(lambdas, maxGoals, numDecimals) {
       awayGoals <- j - 1
       p <- round(pbivpois(homeGoals, awayGoals, lambdas), numDecimals)
       homeAwayGoals[i, j] <- p
-      matchProbs <- updateMatchProbs(matchProbs, homeGoals, awayGoals,
-          p)      
+      matchPs <- updateMatchPs(matchPs, homeGoals, awayGoals, p)      
       j <- j + 1
     }
     
     i <- i + 1
   }
   
-  list("HomeAwayGoals"=homeAwayGoals, "MatchProbs"=matchProbs)
+  list("HomeAwayGoals"=homeAwayGoals, "MatchPs"=matchPs)
 }
 
-updateMatchProbs <- function(matchProbs, homeGoals, awayGoals, p) {
+updateMatchPs <- function(matchPs, homeGoals, awayGoals, p) {
   if (homeGoals < awayGoals) {
-    matchProbs["AwayWin"] <- matchProbs[["AwayWin"]] + p
+    matchPs["AwayWin"] <- matchPs[["AwayWin"]] + p
   }
   else if (homeGoals == awayGoals) {
-    matchProbs["Tie"] <- matchProbs[["Tie"]] + p
+    matchPs["Tie"] <- matchPs[["Tie"]] + p
   }
   else {
-    matchProbs["HomeWin"] <- matchProbs[["HomeWin"]] + p
+    matchPs["HomeWin"] <- matchPs[["HomeWin"]] + p
   }
   
-  matchProbs
+  matchPs
 }
