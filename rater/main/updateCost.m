@@ -14,7 +14,7 @@ end
 
 function contestCost = computeContestCost(match, rOptions)
   if (match.isQualifier())
-    contestCost = rOptions.qTCostRatio;
+    contestCost = 0;
   else
     contestCost = 1;
   end

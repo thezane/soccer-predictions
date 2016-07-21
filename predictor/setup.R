@@ -1,8 +1,0 @@
-library(hash)
-source("computeDataFrame.R")
-source("computeMeanGoals.R")
-source("constructTeams.R")
-source("forecastMatch.R")
-source("verifyModel.R")
-bivPoisFiles <- list.files("bivpois-Rcode", full.names=TRUE)
-sapply(bivPoisFiles, source) 

@@ -20,12 +20,13 @@ forecastMatch <- function (homeTeam, awayTeam, contest,
   awayStr <- teams[[awayTeam]]
   lambdas <- computeLambdas(model, homeStr, awayStr, homeMeanGoals,
       awayMeanGoals)
-  matchResults <- computeMatchResults(lambdas, MAX_GOALS, NUM_DECIMALS)
-  matchResults["HomeGoals"] <- round(lambdas[1] + lambdas[3],
+  matchPrediction <- computeMatchPrediction(lambdas,
+      MAX_GOALS, NUM_DECIMALS)
+  matchPrediction["HomeGoals"] <- round(lambdas[1] + lambdas[3],
       NUM_DECIMALS)
-  matchResults["AwayGoals"] <- round(lambdas[2] + lambdas[3],
+  matchPrediction["AwayGoals"] <- round(lambdas[2] + lambdas[3],
       NUM_DECIMALS)
-  matchResults
+  matchPrediction
 }
 
 computeLambdas <- function(model, homeStr, awayStr,
@@ -43,7 +44,7 @@ computeLambdas <- function(model, homeStr, awayStr,
   lambdas
 }
 
-computeMatchResults <- function(lambdas, maxGoals, numDecimals) {
+computeMatchPrediction <- function(lambdas, maxGoals, numDecimals) {
   n <- maxGoals + 1
   homeAwayGoals <- matrix(nrow=n, ncol=n)
   matchPs <- list("HomeWin"=0, "Tie"=0, "AwayWin"=0)

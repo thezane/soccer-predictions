@@ -1,6 +1,6 @@
 function [tTree mTree mi] = optimizeRatings(tTree, mTree, mi, ...
-    qTRatio, numMatches)
-  qTCostRatio = 1 / qTRatio;
+    numMatches)
+  qTCostRatio = 0;
   tolRel = 1e-03;
   rOptions = RatingsOptions(qTCostRatio, tolRel);
   rOutput = RatingsOutput(numMatches);
@@ -29,8 +29,8 @@ function [y tTree mTree mi rOptions rOutput] = modelRatings(...
 end
 
 function x = minimize(constrainedF)
-  qK = 0.4;
-  tK = 2;
+  qK = 0.3;
+  tK = 3;
   c = 0.3;
   x = [qK tK c]';
   options = optimset;
