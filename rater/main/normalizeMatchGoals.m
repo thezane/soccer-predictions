@@ -5,7 +5,7 @@ function [mTree mi] = normalizeMatchGoals(mTree, mi, homeAdvantage)
   while (mi.hasNext())
     [mi match] = mi.next();
     match.goalsNorm = computeGoalsNorm(match.goals, c, ...
-        homeAdvantage, match.isQualifier());
+        homeAdvantage, match.isQualifier);
     mList = mTree(match.date);
     mList(match.i) = match;
     mTree(match.date) = mList;

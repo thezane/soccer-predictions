@@ -19,7 +19,7 @@ function [A match] = computeStrPrereqs(tTree, match, rOptions)
   awayTeam = tTree(match.teamNames{2});
   match.teamStr = [homeTeam.str; awayTeam.str];
 
-  if (match.isQualifier())
+  if (match.isQualifier)
     k = rOptions.qK;
   else
     k = rOptions.tK;

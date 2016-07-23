@@ -1,8 +1,7 @@
 function [tTree mTree mi] = optimizeRatings(tTree, mTree, mi, ...
     numMatches)
-  qTCostRatio = 0;
   tolRel = 1e-03;
-  rOptions = RatingsOptions(qTCostRatio, tolRel);
+  rOptions = RatingsOptions(tolRel);
   rOutput = RatingsOutput(numMatches);
   constrainedF = @(x, penalty) modelRatings(x, penalty, ...
       tTree, mTree, mi, rOptions, rOutput);
@@ -22,9 +21,10 @@ function [y tTree mTree mi rOptions rOutput] = modelRatings(...
   strCost = rOutput.strCost;
   strDelCost = rOutput.strDelCost;
   [rOutput strMedianCost] = rOutput.updateStrMedianCost();
-  delConstraint = min(0, strCost - 2.5 * strDelCost);
-  medianConstraint = 10 * min(0, 1 - 10 * strMedianCost);
-  constraints = [delConstraint medianConstraint]';
+  delConstraint = 0.1 * min(0, strCost - 2.5 * strDelCost);
+  medianConstraint = min(0, 1 - 10 * strMedianCost);
+  varsConstraint = sum(min(zeros(length(x), 1), x));
+  constraints = [delConstraint medianConstraint varsConstraint]';
   y = strCost + penalty * constraints' * constraints;
 end
 

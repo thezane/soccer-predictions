@@ -4,12 +4,10 @@ classdef RatingsOptions
     tK
     c
     tolRel
-    qTCostRatio
   end
   
   methods
-    function rOptions = RatingsOptions(qTCostRatio, tolRel)
-      rOptions.qTCostRatio = qTCostRatio;
+    function rOptions = RatingsOptions(tolRel)
       rOptions.tolRel = tolRel;
     end
     

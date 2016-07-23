@@ -12,6 +12,7 @@ classdef Match
     teamStrPost
     teamXP
     existsHomeAdvantage
+    isQualifier
     i
     row
   end
@@ -26,12 +27,8 @@ classdef Match
       match.teamNames = {homeTeam.name awayTeam.name};
       match.goals = [T{i, 'HomeGoals'} T{i, 'AwayGoals'}];
       match.existsHomeAdvantage = T{i, 'HomeAdvantage'};
+      match.isQualifier = length(regexp(match.contest, '-Q')) > 0;
       match.row = i;
-    end
-
-    function tf = isQualifier(match)
-      tf = strcmp(match.contest, 'EUC-Q') || ...
-          strcmp(match.contest, 'WOC-Q');
     end
   end
 end

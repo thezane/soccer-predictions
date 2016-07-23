@@ -19,8 +19,7 @@ function [tTree mTree T homeAdvantage] = readData(currentDate, ...
       [tTree awayTeam] = addTeam(T, i, tTree, false);
       [mTree match] = addMatch(T, i, mTree, homeTeam, awayTeam, ...
           days, dateOutFormat);
-      isQualifier = match.isQualifier();
-      homeAwayGoals = homeAwayGoals + isQualifier * match.goals;
+      homeAwayGoals = homeAwayGoals + match.isQualifier * match.goals;
       i = i + 1;
     else
       T(i, :) = [];
