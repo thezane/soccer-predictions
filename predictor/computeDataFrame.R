@@ -1,5 +1,9 @@
-computeDataFrame <-function(matches, meanGoalsMap) {
-  meanGoals <- apply(matches, MARGIN=1, mapContestToMeanGoals,
+computeDataFrame <-function(matches) {
+  generalContests <- unlist(lapply(matches[, "Contest"],
+      getGeneralContest))
+  matches[, "GeneralContest"] <- generalContests
+  meanGoalsMap <- computeMeanGoals(matches)
+  meanGoals <- apply(matches, 1, mapContestToMeanGoals,
       meanGoalsMap=meanGoalsMap)
   meanGoals <- t(meanGoals)
   matches[["HomeMeanGoals"]] <- meanGoals[, 1]
@@ -9,8 +13,22 @@ computeDataFrame <-function(matches, meanGoalsMap) {
   matchContests <- lapply(matches[, "Contest"], getGeneralContest)
   tMatches <- matches[matchContests != "qualifier", ]
   rownames(tMatches) <- 1:nrow(tMatches)
-  matchFrames <- list("Matches"=matches, "TMatches"=tMatches)
+  matchFrames <- list("Matches"=matches, "TMatches"=tMatches,
+      "MeanGoalsMap"=meanGoalsMap)
   matchFrames
+}
+
+computeMeanGoals <- function (matches) {
+  homeGoals <- aggregate(matches[, "HomeGoals"],
+      list(matches$GeneralContest), mean)
+  awayGoals <- aggregate(matches[, "AwayGoals"],
+      list(matches$GeneralContest), mean)
+  h <- hash()
+  h["group"] <- mean(c(homeGoals[1, 2], awayGoals[1, 2]))
+  h["knockout"] <- mean(c(homeGoals[2, 2], awayGoals[2, 2]))
+  h["qualifierHome"] <- homeGoals[3, 2]
+  h["qualifierAway"] <- awayGoals[3, 2]
+  h
 }
 
 mapContestToMeanGoals <- function(matchesRow, meanGoalsMap) {

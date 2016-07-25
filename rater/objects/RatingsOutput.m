@@ -5,12 +5,18 @@ classdef RatingsOutput
     strMedianCost
     strAll
     strMedian
+    mTree
+    mi
+    tTree
     n
     i
   end
   
   methods
-    function rOutput = RatingsOutput(numMatches)
+    function rOutput = RatingsOutput(tTree, mTree, mi, numMatches)
+      rOutput.tTree = tTree;
+      rOutput.mTree = mTree;
+      rOutput.mi = mi;
       rOutput.strCost = 0;
       rOutput.strDelCost = 0;
       rOutput.n = 2 * numMatches;

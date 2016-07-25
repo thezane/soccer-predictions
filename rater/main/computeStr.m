@@ -1,9 +1,9 @@
-function strPost = computeStr(A, str, c, tolRel)
+function strPost = computeStr(A, str, c, tolRel, tolScale)
   a = str(:, 1);
   d = str(:, 2);
   
   while (true)
-    [aPost dPost] = computeAD(A, a, d, c);
+    [aPost dPost] = computeAD(A, a, d, c, tolScale);
     aDel = aPost - a;
     dDel = dPost - d;
     a = aPost;
@@ -16,8 +16,7 @@ function strPost = computeStr(A, str, c, tolRel)
   end
 end
 
-function [a d] = computeAD(A, a, d, c)
-  tolScale = 1e-03;
+function [a d] = computeAD(A, a, d, c, tolScale)
   A = A + c * fliplr(eye(2));
   [aRelA dRelA] = scaleRating(A, a, tolScale);
   [dRelD aRelD] = scaleRating(A', d, tolScale);

@@ -5,7 +5,7 @@ function tTree = resetRatings(tTree)
   
   while (i <= n)
     team = tTree(teams{i});
-    team.str = [1 1];
+    team.str = [];
     team.updateDate = [];
     team.xp = 0;
     tTree(teams{i}) = team;

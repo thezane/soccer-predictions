@@ -10,10 +10,10 @@ fitGoals <- function (currentDate, matchSrc="") {
   
   matches <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
-  meanGoalsMap <- computeMeanGoals(matches)
-  matchFrames <- computeDataFrame(matches, meanGoalsMap)
+  matchFrames <- computeDataFrame(matches)
   matches <- matchFrames[["Matches"]]
   tMatches <- matchFrames[["TMatches"]]
+  meanGoalsMap <- matchFrames[["MeanGoalsMap"]]
   form1 <- ~c(HomeMeanGoals, AwayMeanGoals) +
       c(HomeAttack, AwayAttack) + c(AwayDefense, HomeDefense)
   model <- lm.bp(HomeGoals~1, AwayGoals~1, l1l2=form1,
@@ -27,7 +27,6 @@ fitGoals <- function (currentDate, matchSrc="") {
 fitGoalsSetup <- function() {
   library(hash)
   source("computeDataFrame.R")
-  source("computeMeanGoals.R")
   source("constructTeams.R")
   source("forecastMatch.R")
   source("getGeneralContest.R")

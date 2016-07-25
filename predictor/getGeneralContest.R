@@ -1,8 +1,8 @@
 getGeneralContest <- function(tContest) {
-  if (grepl("Q", tContest)) {
+  if (grepl("-Q", tContest)) {
     generalContest <- "qualifier"
   }
-  else if (grepl("G", tContest)) {
+  else if (grepl("-G", tContest)) {
     generalContest <- "group"
   }
   else {
