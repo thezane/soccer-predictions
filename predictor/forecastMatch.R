@@ -20,11 +20,16 @@ forecastMatch <- function (homeTeam, awayTeam, contest,
   awayStr <- teams[[awayTeam]]
   lambdas <- computeLambdas(model, homeStr, awayStr, homeMeanGoals,
       awayMeanGoals)
-  matchPrediction <- computeMatchPrediction(lambdas,
+  geomP <- model[["theta"]]
+  inflatedP <- model[["p"]]
+  geomMean <- 1 / geomP
+  matchPrediction <- computeMatchPrediction(lambdas, geomP, inflatedP,
       MAX_GOALS, NUM_DECIMALS)
-  matchPrediction["HomeGoals"] <- round(lambdas[1] + lambdas[3],
+  matchPrediction["HomeGoals"] <- round(
+      inflateY(lambdas[1] + lambdas[3], geomMean, inflatedP),
       NUM_DECIMALS)
-  matchPrediction["AwayGoals"] <- round(lambdas[2] + lambdas[3],
+  matchPrediction["AwayGoals"] <- round(
+      inflateY(lambdas[2] + lambdas[3], geomMean, inflatedP),
       NUM_DECIMALS)
   matchPrediction
 }
@@ -44,7 +49,8 @@ computeLambdas <- function(model, homeStr, awayStr,
   lambdas
 }
 
-computeMatchPrediction <- function(lambdas, maxGoals, numDecimals) {
+computeMatchPrediction <- function(lambdas, geomP, inflatedP,
+    maxGoals, numDecimals) {
   n <- maxGoals + 1
   homeAwayGoals <- matrix(nrow=n, ncol=n)
   matchPs <- list("HomeWin"=0, "Tie"=0, "AwayWin"=0)
@@ -56,7 +62,16 @@ computeMatchPrediction <- function(lambdas, maxGoals, numDecimals) {
     while (j <= n) {
       homeGoals <- i - 1
       awayGoals <- j - 1
-      p <- round(pbivpois(homeGoals, awayGoals, lambdas), numDecimals)
+      fBP <- pbivpois(homeGoals, awayGoals, lambdas)
+      
+      if (homeGoals == awayGoals) {
+        p <- inflateY(fBP, dgeom(homeGoals, geomP), inflatedP)
+      }
+      else {
+        p <- inflateY(fBP, 0, inflatedP)
+      }
+      
+      p <- round(p, numDecimals)
       homeAwayGoals[i, j] <- p
       matchPs <- updateMatchPs(matchPs, homeGoals, awayGoals, p)      
       j <- j + 1
@@ -80,4 +95,8 @@ updateMatchPs <- function(matchPs, homeGoals, awayGoals, p) {
   }
   
   matchPs
+}
+
+inflateY <- function(x, y, p) {
+  (1 - p) * x + p * y
 }

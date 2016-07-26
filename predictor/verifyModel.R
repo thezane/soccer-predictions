@@ -34,7 +34,7 @@ addMeanSquaredErrors <- function (matches, dataPath) {
   
   while (i <= n) {
     currentDate <- as.Date(formatDate(matches[i, "Date"])) - 1
-    matchSrcNext <- getMatchSrc(currentDate, 
+    matchSrcNext <- getNextMatchSrc(currentDate, 
         dataPath, header, fileType)
     
     if (matchSrcNext != matchSrc) {
@@ -57,7 +57,7 @@ formatDate <- function(oldDate) {
       format=oldDateFormat), format=newDateFormat)
 }
 
-getMatchSrc <- function(currentDate, dataPath, header, fileType) {
+getNextMatchSrc <- function(currentDate, dataPath, header, fileType) {
   while (TRUE) {
     matchSrc <- paste(dataPath, header, currentDate, fileType, sep="")
     
