@@ -1,9 +1,9 @@
-fitGoals <- function (currentDate, matchSrc="", includeQs=FALSE) {
+fitGoals <- function (currentDate, matchSrc="") {
   fitGoalsSetup()
   matchSrc <- getMatchSrc(currentDate, matchSrc)  
   matches <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
-  forecastPrereq <- computeDataFrame(matches, includeQs)
+  forecastPrereq <- computeDataFrame(matches)
   matches <- forecastPrereq[["Matches"]]
   meanGoalsMap <- forecastPrereq[["MeanGoalsMap"]]
   teams <- forecastPrereq[["Teams"]]  

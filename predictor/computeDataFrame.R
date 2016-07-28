@@ -1,16 +1,12 @@
-computeDataFrame <-function(matches, includeQs) {
+computeDataFrame <-function(matches) {
   teams <- constructTeams(matches)
   generalContests <- unlist(lapply(matches[, "Contest"],
       getGeneralContest))
   matches[, "GeneralContest"] <- generalContests
-  
-  if (!includeQs) {
-    matchContests <- lapply(matches[, "Contest"], getGeneralContest)
-    matches <- matches[matchContests != "q", ]
-    rownames(tMatches) <- 1:nrow(tMatches)
-  }
-  
-  meanGoalsMap <- computeMeanGoals(matches, includeQs)
+  meanGoalsMap <- computeMeanGoals(matches)
+  matchContests <- lapply(matches[, "Contest"], getGeneralContest)
+  matches <- matches[matchContests != "q", ]
+  rownames(tMatches) <- 1:nrow(tMatches)
   meanGoals <- apply(matches, 1, mapContestToMeanGoals,
       meanGoalsMap=meanGoalsMap)
   meanGoals <- t(meanGoals)
@@ -23,22 +19,18 @@ computeDataFrame <-function(matches, includeQs) {
   forecastPrereq
 }
 
-computeMeanGoals <- function (matches, includeQs) {
+computeMeanGoals <- function (matches) {
   matchGoals <- aggregateMatchGoals(matches, sum)
   numMatches <- aggregateMatchGoals(matches, length)
   meanGoalsMap <- hash()
+  meanGoalsMap["qHome"] <- matchGoals[["qHome"]] /
+      numMatches[["qHome"]]
+  meanGoalsMap["qAway"] <- matchGoals[["qAway"]] /
+      numMatches[["qAway"]]   
   meanGoalsMap["tHome"] <- matchGoals[["tHome"]] /
       numMatches[["tHome"]]
   meanGoalsMap["tAway"] <- matchGoals[["tAway"]] /
-      numMatches[["tAway"]]
-  
-  if (includeQs) {
-    meanGoalsMap["qHome"] <- matchGoals[["qHome"]] /
-        numMatches[["qHome"]]
-    meanGoalsMap["qAway"] <- matchGoals[["qAway"]] /
-        numMatches[["qAway"]]
-  }
-  
+      numMatches[["tAway"]]  
   meanGoalsMap
 }
 
@@ -51,10 +43,10 @@ aggregateMatchGoals <- function(matches, fun) {
   awayQGoals = awayGoals[which(awayGoals$Group.1 == "q"), ]
   homeTGoals = homeGoals[intersect(
       which(homeGoals$Group.1 == "t"),
-      which(homeGoals$Group.2 == 1)), ]
+      which(homeGoals$Group.2 == TRUE)), ]
   awayTGoalsHA <- homeGoals[intersect(
       which(homeGoals$Group.1 == "t"),
-      which(homeGoals$Group.2 == 0)), ]
+      which(homeGoals$Group.2 == FALSE)), ]
   awayTGoalsNeutral <- awayGoals[
       which(awayGoals$Group.1 == "t"), ]
   awayTGoalsFrame <- rbind(awayTGoalsHA, awayTGoalsNeutral)
@@ -70,9 +62,9 @@ mapContestToMeanGoals <- function(matchesRow, meanGoalsMap) {
   contest <- getGeneralContest(matchesRow[["Contest"]])
   existsHA <- as.numeric(matchesRow[["HomeAdvantage"]])
  
-  if (contest == "qualifier") {
+  if (contest == "q") {
     meanGoals[1] <- meanGoalsMap[["qHome"]]
-    meanGoals[2] <- meanGoalsMap[["qAway"]]
+    meanGoals[2] <- meanGoalsMap[["qAway"]]   
   }
   else if (existsHA) {
     meanGoals[1] <- meanGoalsMap[["tHome"]]

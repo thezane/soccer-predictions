@@ -9,7 +9,8 @@ forecastMatch <- function (homeTeam, awayTeam, contest,
   homeContest = paste(contest, "Home", sep="")
   awayContest = paste(contest, "Away", sep="")
   
-  if (contest == "q" || is.element(homeTeam, locations)) {
+  if (contest == "q" ||
+      (contest == "t" && is.element(homeTeam, locations))) {
     homeMeanGoals <- meanGoalsMap[[homeContest]]
     awayMeanGoals <- meanGoalsMap[[awayContest]]
   }
