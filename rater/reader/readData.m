@@ -1,6 +1,4 @@
-function [tTree fTree mTree T homeAdvantage] = readData(...
-    currentDate, dataPath)
+function [tTree fTree mTree T hA] = readData(currentDate, dataPath)
   [tTree fTree] = constructTeams(dataPath);
-  [mTree T homeAdvantage] = constructMatches(currentDate, dataPath, ...
-      tTree);
+  [mTree T hA] = constructMatches(currentDate, dataPath, tTree);
 end

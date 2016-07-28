@@ -1,7 +1,6 @@
-function [mTree T homeAdvantage] = constructMatches(currentDate, ...
-    dataPath, tTree)
+function [mTree T hA] = constructMatches(currentDate, dataPath, tTree)
   mTree = buildType2AnyMap('char');
-  homeAwayGoals = [0 0];
+  hA = HomeAdvantage;
   dateInFormat = 'mm/dd/yy';
   dateOutFormat = 'yyyy/mm/dd';
   currentDays = datenum(currentDate, dateInFormat);
@@ -17,7 +16,7 @@ function [mTree T homeAdvantage] = constructMatches(currentDate, ...
       awayTeam = tTree(char(T{i, 'AwayTeam'}));
       [mTree match] = addMatch(T, i, mTree, homeTeam, awayTeam, ...
           days, dateOutFormat);
-      homeAwayGoals = homeAwayGoals + match.isQualifier * match.goals;
+      hA = hA.updateHA(match);
       i = i + 1;
     else
       T(i, :) = [];
@@ -25,8 +24,6 @@ function [mTree T homeAdvantage] = constructMatches(currentDate, ...
     end
     
   end
-  
-  homeAdvantage = homeAwayGoals(1) / homeAwayGoals(2);
 end 
 
 function [mTree match] = addMatch(T, i, mTree, homeTeam, awayTeam, ...

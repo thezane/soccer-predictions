@@ -1,11 +1,12 @@
 computeDataFrame <-function(matches, includeQs) {
+  teams <- constructTeams(matches)
   generalContests <- unlist(lapply(matches[, "Contest"],
       getGeneralContest))
   matches[, "GeneralContest"] <- generalContests
   
   if (!includeQs) {
     matchContests <- lapply(matches[, "Contest"], getGeneralContest)
-    matches <- matches[matchContests != "qualifier", ]
+    matches <- matches[matchContests != "q", ]
     rownames(tMatches) <- 1:nrow(tMatches)
   }
   
@@ -17,41 +18,68 @@ computeDataFrame <-function(matches, includeQs) {
   matches[["AwayMeanGoals"]] <- meanGoals[, 2]
   matches <- matches[rev(order(as.Date(matches[, "Date"],
       format="%Y/%m/%d"))), ]
-  matchFrame <- list("Matches"=matches, "MeanGoalsMap"=meanGoalsMap)
-  matchFrame
+  forecastPrereq <- list("Matches"=matches,
+      "MeanGoalsMap"=meanGoalsMap, "Teams"=teams)
+  forecastPrereq
 }
 
 computeMeanGoals <- function (matches, includeQs) {
-  homeGoals <- aggregate(matches[, "HomeGoals"],
-      list(matches$GeneralContest), mean)
-  awayGoals <- aggregate(matches[, "AwayGoals"],
-      list(matches$GeneralContest), mean)
-  h <- hash()
-  h["group"] <- mean(c(homeGoals[1, 2], awayGoals[1, 2]))
-  h["knockout"] <- mean(c(homeGoals[2, 2], awayGoals[2, 2]))
+  matchGoals <- aggregateMatchGoals(matches, sum)
+  numMatches <- aggregateMatchGoals(matches, length)
+  meanGoalsMap <- hash()
+  meanGoalsMap["tHome"] <- matchGoals[["tHome"]] /
+      numMatches[["tHome"]]
+  meanGoalsMap["tAway"] <- matchGoals[["tAway"]] /
+      numMatches[["tAway"]]
   
   if (includeQs) {
-    h["qualifierHome"] <- homeGoals[3, 2]
-    h["qualifierAway"] <- awayGoals[3, 2]
+    meanGoalsMap["qHome"] <- matchGoals[["qHome"]] /
+        numMatches[["qHome"]]
+    meanGoalsMap["qAway"] <- matchGoals[["qAway"]] /
+        numMatches[["qAway"]]
   }
   
-  h
+  meanGoalsMap
+}
+
+aggregateMatchGoals <- function(matches, fun) {
+  homeGoals <- aggregate(matches[, "HomeGoals"],
+      list(matches$GeneralContest, matches$HomeAdvantage), fun)
+  awayGoals <- aggregate(matches[, "AwayGoals"],
+      list(matches$GeneralContest, matches$HomeAdvantage), fun)
+  homeQGoals = homeGoals[which(homeGoals$Group.1 == "q"), ]
+  awayQGoals = awayGoals[which(awayGoals$Group.1 == "q"), ]
+  homeTGoals = homeGoals[intersect(
+      which(homeGoals$Group.1 == "t"),
+      which(homeGoals$Group.2 == 1)), ]
+  awayTGoalsHA <- homeGoals[intersect(
+      which(homeGoals$Group.1 == "t"),
+      which(homeGoals$Group.2 == 0)), ]
+  awayTGoalsNeutral <- awayGoals[
+      which(awayGoals$Group.1 == "t"), ]
+  awayTGoalsFrame <- rbind(awayTGoalsHA, awayTGoalsNeutral)
+  awayTGoals <- colSums(awayTGoalsFrame["x"])
+  matchGoals <- list(
+      "qHome"=homeQGoals[["x"]], "qAway"=awayQGoals[["x"]],
+      "tHome"=homeTGoals[["x"]], "tAway"=awayTGoals[["x"]])
+  matchGoals
 }
 
 mapContestToMeanGoals <- function(matchesRow, meanGoalsMap) {
   meanGoals <- vector(mode="double", 2)
   contest <- getGeneralContest(matchesRow[["Contest"]])
-  
+  existsHA <- as.numeric(matchesRow[["HomeAdvantage"]])
+ 
   if (contest == "qualifier") {
-    meanGoals[1] <- meanGoalsMap[["qualifierHome"]]
-    meanGoals[2] <- meanGoalsMap[["qualifierAway"]]
+    meanGoals[1] <- meanGoalsMap[["qHome"]]
+    meanGoals[2] <- meanGoalsMap[["qAway"]]
   }
-  else if (contest == "group") {
-    meanGoals[1] <- meanGoalsMap[["group"]]
-    meanGoals[2] <- meanGoals[1]
+  else if (existsHA) {
+    meanGoals[1] <- meanGoalsMap[["tHome"]]
+    meanGoals[2] <- meanGoalsMap[["tAway"]]
   }
   else {
-    meanGoals[1] <- meanGoalsMap[["knockout"]]
+    meanGoals[1] <- meanGoalsMap[["tAway"]]
     meanGoals[2] <- meanGoals[1]
   }
   

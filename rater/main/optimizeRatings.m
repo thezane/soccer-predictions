@@ -21,13 +21,9 @@ function [y rOptions rOutput] = modelRatings(x, penalty, ...
   rOptions = rOptions.update(x(1), x(2), x(3), x(4: end));
   [rOptions rOutput] = rateTeams(rOptions, rOutput);
   strCost = rOutput.strCost;
-  strDelCost = rOutput.strDelCost;
   [rOutput strMedianCost] = rOutput.updateStrMedianCost();
-  delConstraint = 0.1 * min(0, strCost - 1.5 * strDelCost);
   medianConstraint = min(0, 1 - 10 * strMedianCost);
-  varsConstraint = sum(min(zeros(length(x), 1), x));
-  constraints = [delConstraint medianConstraint varsConstraint]';
-  y = strCost + penalty * constraints' * constraints;
+  y = strCost + penalty * medianConstraint ^ 2;
 end
 
 function x = minimize(constrainedF, numFs)

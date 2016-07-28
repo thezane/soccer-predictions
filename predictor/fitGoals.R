@@ -3,17 +3,17 @@ fitGoals <- function (currentDate, matchSrc="", includeQs=FALSE) {
   matchSrc <- getMatchSrc(currentDate, matchSrc)  
   matches <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
-  matchFrame <- computeDataFrame(matches, includeQs)
-  matches <- matchFrame[["Matches"]]  
-  meanGoalsMap <- matchFrame[["MeanGoalsMap"]]
+  forecastPrereq <- computeDataFrame(matches, includeQs)
+  matches <- forecastPrereq[["Matches"]]
+  meanGoalsMap <- forecastPrereq[["MeanGoalsMap"]]
+  teams <- forecastPrereq[["Teams"]]  
   form1 <- ~c(HomeMeanGoals, AwayMeanGoals) +
       c(HomeAttack, AwayAttack) + c(AwayDefense, HomeDefense)
   model <- lm.dibp(HomeGoals~1, AwayGoals~1, l1l2=form1,
       common.intercept=TRUE, data=matches, pres=1e-08,
       distribution="geometric")
-  teams <- constructTeams(matches)
-  forecastPrereq <- list("meanGoalsMap"=meanGoalsMap,
-      "matches"=matches, "model"=model, "teams"=teams)
+  forecastPrereq <- list("Matches"=matches,
+      "MeanGoalsMap"=meanGoalsMap, "Model"=model, "Teams"=teams)
   forecastPrereq
 }
 

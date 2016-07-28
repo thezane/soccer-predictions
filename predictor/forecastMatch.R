@@ -1,18 +1,20 @@
 forecastMatch <- function (homeTeam, awayTeam, contest,
-    forecastPrereq) {
-  MAX_GOALS <- 20
-  NUM_DECIMALS <- 4
-  meanGoalsMap <- forecastPrereq[["meanGoalsMap"]]
-  matches <- forecastPrereq[["matches"]]
-  model <- forecastPrereq[["model"]]
-  teams <- forecastPrereq[["teams"]]
+    forecastPrereq, locations=c()) {
+  maxGoals <- 20
+  numDecimals <- 4
+  meanGoalsMap <- forecastPrereq[["MeanGoalsMap"]]
+  matches <- forecastPrereq[["Matches"]]
+  model <- forecastPrereq[["Model"]]
+  teams <- forecastPrereq[["Teams"]]
+  homeContest = paste(contest, "Home", sep="")
+  awayContest = paste(contest, "Away", sep="")
   
-  if (contest == "qualifier") {
-    homeMeanGoals <- meanGoalsMap[[paste(contest, "Home", sep="")]]
-    awayMeanGoals <- meanGoalsMap[[paste(contest, "Away", sep="")]]
+  if (contest == "q" || is.element(homeTeam, locations)) {
+    homeMeanGoals <- meanGoalsMap[[homeContest]]
+    awayMeanGoals <- meanGoalsMap[[awayContest]]
   }
   else {
-    homeMeanGoals <- meanGoalsMap[[contest]]
+    homeMeanGoals <- meanGoalsMap[[awayContest]]
     awayMeanGoals <- homeMeanGoals
   }
   
@@ -24,13 +26,13 @@ forecastMatch <- function (homeTeam, awayTeam, contest,
   inflatedP <- model[["p"]]
   geomMean <- 1 / geomP
   matchPrediction <- computeMatchPrediction(lambdas, geomP, inflatedP,
-      MAX_GOALS, NUM_DECIMALS)
+      maxGoals, numDecimals)
   matchPrediction["HomeGoals"] <- round(
       inflateY(lambdas[1] + lambdas[3], geomMean, inflatedP),
-      NUM_DECIMALS)
+      numDecimals)
   matchPrediction["AwayGoals"] <- round(
       inflateY(lambdas[2] + lambdas[3], geomMean, inflatedP),
-      NUM_DECIMALS)
+      numDecimals)
   matchPrediction
 }
 

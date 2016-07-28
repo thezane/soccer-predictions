@@ -1,22 +1,24 @@
-function [mTree mi] = normalizeMatchGoals(mTree, mi, homeAdvantage)
+function [mTree mi] = normalizeMatchGoals(mTree, mi, hA)
+  [qHA tHA] = hA.computeHA();
   mi = mi.reset();
-  c = 3 / log(10);
 
   while (mi.hasNext())
     [mi match] = mi.next();
-    match.goalsNorm = computeGoalsNorm(match.goals, c, ...
-        homeAdvantage, match.isQualifier);
+    match.goalsNorm = computeGoalsNorm(match, qHA, tHA);
     mList = mTree(match.date);
     mList(match.i) = match;
     mTree(match.date) = mList;
   end
 end
 
-function goals = computeGoalsNorm(goals, c, ...
-    homeAdvantage, isQualifier)
-  if (isQualifier)
-    goals(1) = goals(1) / homeAdvantage;
+function goals = computeGoalsNorm(match, qHA, tHA)
+  goals = match.goals;
+  
+  if (match.isQualifier)
+    goals(1) = goals(1) / qHA;
+  elseif (match.existsHomeAdvantage)
+    goals(1) = goals(1) / tHA;
   end
   
-  goals = c * log(1 + goals);
+  goals = sqrt(goals);
 end

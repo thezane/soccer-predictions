@@ -1,4 +1,4 @@
-verifyModel <- function (currentYear) {
+verifyModel <- function (currentYear, locations) {
   verifyModelSetup()
   dataPath <- "../data/"
   fileName <- "matches.csv"
@@ -6,7 +6,10 @@ verifyModel <- function (currentYear) {
   matches <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
   matches <- getRelevantMatches(matches, currentYear)
-  matches <- addMeanSquaredErrors(matches, dataPath)
+  matches <- addMSEs(matches, locations, dataPath)
+  matchDest <- paste(dataPath, "verified-", currentYear, ".csv",
+      sep="")
+  write.csv(matches, matchDest, row.names=FALSE)
   matches
 }
 
@@ -22,10 +25,13 @@ getRelevantMatches <- function (matches, currentYear) {
   matchDates <- format(as.Date(matches[["Date"]],
       format=matchDateFormat), format=matchYearFormat)
   matches[matchDates == currentYear, ]
+  matches <- matches[rev(order(as.Date(matches[, "Date"],
+      format=matchDateFormat))), ]
 }
 
-addMeanSquaredErrors <- function (matches, dataPath) {
-  matches["MSE"] <- 0
+addMSEs <- function (matches, locations, dataPath) {
+  vNames <- c("HomeWin", "Tie", "AwayWin", "MSE")
+  matches[vNames] <- 0
   header = "sodm-"
   fileType <- ".csv"
   matchSrc <- ""
@@ -34,6 +40,7 @@ addMeanSquaredErrors <- function (matches, dataPath) {
   
   while (i <= n) {
     currentDate <- as.Date(formatDate(matches[i, "Date"])) - 1
+    print(currentDate)
     matchSrcNext <- getNextMatchSrc(currentDate, 
         dataPath, header, fileType)
     
@@ -42,8 +49,8 @@ addMeanSquaredErrors <- function (matches, dataPath) {
       forecastPrereq <- fitGoals("", matchSrc)
     }
     
-    mse <- computeMeanSquaredError(forecastPrereq, matches[i, ])
-    matches[i, "MSE"] <- mse
+    matchV <- computeV(forecastPrereq, matches[i, ], locations)
+    matches[i, vNames] <- matchV
     i <- i + 1
   }
   
@@ -72,17 +79,19 @@ getNextMatchSrc <- function(currentDate, dataPath, header, fileType) {
   matchSrc
 }
 
-computeMeanSquaredError <- function(forecastPrereq, matchesRow) {
+computeV <- function(forecastPrereq, matchesRow, locations) {
+  numDecimals <- 4
   homeTeam <- matchesRow[["HomeTeam"]]
   awayTeam <- matchesRow[["AwayTeam"]]
   contest <- getGeneralContest(matchesRow[["Contest"]])
   homeGoals <- matchesRow[["HomeGoals"]]
   awayGoals <- matchesRow[["AwayGoals"]]
   matchPrediction <- forecastMatch(homeTeam, awayTeam, contest,
-      forecastPrereq)
+      forecastPrereq, locations)
   matchPs <- matchPrediction[["MatchPs"]]
   matchResults <- c(homeGoals > awayGoals, homeGoals == awayGoals,
       homeGoals < awayGoals)
-  mse <- sum((unlist(matchPs) - matchResults) ^ 2)
-  mse
+  mse <- round(sum((unlist(matchPs) - matchResults) ^ 2), numDecimals)
+  matchV <-append(matchPs, list("MSE"=mse))
+  matchV
 }

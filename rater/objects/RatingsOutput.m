@@ -1,7 +1,6 @@
 classdef RatingsOutput
   properties
     strCost
-    strDelCost
     strMedianCost
     strAll
     strMedian
@@ -18,7 +17,6 @@ classdef RatingsOutput
       rOutput.mTree = mTree;
       rOutput.mi = mi;
       rOutput.strCost = 0;
-      rOutput.strDelCost = 0;
       rOutput.n = 2 * numMatches;
       rOutput.strAll = zeros(numMatches, 2);
       rOutput.i = 1;
