@@ -19,6 +19,4 @@ function goals = computeGoalsNorm(match, qHA, tHA)
   elseif (match.existsHomeAdvantage)
     goals(1) = goals(1) / tHA;
   end
-  
-  goals = sqrt(goals);
 end
