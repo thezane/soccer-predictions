@@ -30,8 +30,9 @@ function isCorrect = evaluatePrediction(match)
     isCorrect = -1;
     return;
   else
-    strNorm = computeStrNorm(match.teamStr);
-    isCorrect = (goals(1) < goals(2) && strNorm(1) < strNorm(2)) || ...
-        (goals(1) > goals(2) && strNorm(1) > strNorm(2));
+    str = match.teamStr;
+    strComp = str(:, 1) ./ str(:, 2);
+    isCorrect = (goals(1) < goals(2) && strComp(1) < strComp(2)) || ...
+        (goals(1) > goals(2) && strComp(1) > strComp(2));
   end
 end

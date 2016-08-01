@@ -1,5 +1,5 @@
 function T = writeData(mi, T, dataPath)
-  NUM_DECIMALS = 4;
+  numDecimals = 4;
   colNames = {'HomeAttack', 'HomeDefense', ...
       'AwayAttack', 'AwayDefense', ...
       'HomeAttackNext', 'HomeDefenseNext', ...
@@ -10,7 +10,7 @@ function T = writeData(mi, T, dataPath)
   
   while (mi.hasNext())
     [mi match] = mi.next();
-    T = updateMatches(T, match, NUM_DECIMALS);
+    T = updateMatches(T, match, numDecimals);
     date = match.date;
   end
   
@@ -33,20 +33,22 @@ end
 
 function T = updateMatches(T, match, numDecimals)
   i = match.row;
-  teamStr = roundDecimals(log(match.teamStr), numDecimals);
-  teamStrNext = roundDecimals(log(match.teamStrNext), numDecimals);
+  strNorm = roundDecimals(computeStrNorm(match.teamStr), ...
+      numDecimals);
+  strNextNorm = roundDecimals(computeStrNorm(match.teamStrNext), ...
+      numDecimals);
   T{i, 'HomeTeam'} = quoteStr(T{i, 'HomeTeam'});
   T{i, 'AwayTeam'} = quoteStr(T{i, 'AwayTeam'});
   T{i, 'Date'} = {quoteStr(match.date)};
   T{i, 'Contest'} = quoteStr(T{i, 'Contest'});
-  T{i, 'HomeAttack'} = teamStr(1, 1);
-  T{i, 'HomeDefense'} = teamStr(1, 2);
-  T{i, 'AwayAttack'} = teamStr(2, 1);
-  T{i, 'AwayDefense'} = teamStr(2, 2);
-  T{i, 'HomeAttackNext'} = teamStrNext(1, 1);
-  T{i, 'HomeDefenseNext'} = teamStrNext(1, 2);
-  T{i, 'AwayAttackNext'} = teamStrNext(2, 1);
-  T{i, 'AwayDefenseNext'} = teamStrNext(2, 2);    
+  T{i, 'HomeAttack'} = strNorm(1, 1);
+  T{i, 'HomeDefense'} = strNorm(1, 2);
+  T{i, 'AwayAttack'} = strNorm(2, 1);
+  T{i, 'AwayDefense'} = strNorm(2, 2);
+  T{i, 'HomeAttackNext'} = strNextNorm(1, 1);
+  T{i, 'HomeDefenseNext'} = strNextNorm(1, 2);
+  T{i, 'AwayAttackNext'} = strNextNorm(2, 1);
+  T{i, 'AwayDefenseNext'} = strNextNorm(2, 2);    
 end
 
 function quotedStr = quoteStr(str)

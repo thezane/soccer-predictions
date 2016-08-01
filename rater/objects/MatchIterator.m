@@ -25,8 +25,8 @@ classdef MatchIterator
       end
                
       nextDate = mi.dates{mi.I(1)};
-      mdList = mi.mTree(nextDate);
-      match = mdList(mi.I(2));
+      mDateList = mi.mTree(nextDate);
+      match = mDateList(mi.I(2));
       mi.I(2) = mi.I(2) + 1;
     end
     

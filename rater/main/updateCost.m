@@ -13,14 +13,10 @@ function rOutput = updateCost(rOutput, rOptions, match, A)
       str, strExpected);
 end
 
-function strExpected = computeStrExpected(A, a, d, rOptions)
-  alphas = [0.5 0.5]';
-  [a d] = computeStr(A, a, d, alphas, rOptions.c, rOptions.tolRel);
-  strExpected = [a d];
-end
-
 function rOutput = updateRatingsCost(rOptions, rOutput, ...
-    match, str, strExpected)  
-  strCost = meanSquaredError(str, strExpected);
+    match, str, strExpected)
+  strNorm = computeStrNorm(str);
+  strExpectedNorm = computeStrNorm(strExpected);
+  strCost = computeMSE(strNorm, strExpectedNorm);
   rOutput.strCost = rOutput.strCost + strCost;
 end

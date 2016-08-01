@@ -32,8 +32,9 @@ classdef RatingsOutput
     function [rOutput strMedianCost] = updateStrMedianCost(rOutput)
       rOutput.strMedian = median(rOutput.strAll);
       strMedian = rOutput.strMedian;
-      rOutput.strMedianCost = norm(log(strMedian(1))) + ...
-          norm(log(strMedian(2)));
+      rOutput.strMedianCost = ...
+          computeMSE(computeStrNorm(strMedian(1)), 0) + ...
+          computeMSE(computeStrNorm(strMedian(2)), 0);
       strMedianCost = rOutput.strMedianCost;
     end
   end

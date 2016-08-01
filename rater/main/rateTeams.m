@@ -35,13 +35,7 @@ function [A match] = computeStrPrereqs(tTree, match, rOptions)
   end
   
   match.teamStr = [homeTeam.str; awayTeam.str];
-
-  if (match.isQualifier)
-    k = rOptions.qK;
-  else
-    k = rOptions.tK;
-  end
-
+  k = rOptions.k;
   goals = match.goalsNorm;
   A = [0 goals(2); goals(1) 0];
   t = match.days - [homeTeam.updateDays awayTeam.updateDays]';

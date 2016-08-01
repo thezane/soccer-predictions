@@ -18,20 +18,19 @@ end
 
 function [y rOptions rOutput] = modelRatings(x, penalty, ...
     rOptions, rOutput)
-  rOptions = rOptions.update(x(1), x(2), x(3), x(4: end));
+  rOptions = rOptions.update(x(1), x(2), x(3: end));
   [rOptions rOutput] = rateTeams(rOptions, rOutput);
   strCost = rOutput.strCost;
   [rOutput strMedianCost] = rOutput.updateStrMedianCost();
-  medianConstraint = min(0, 1 - 10 * strMedianCost);
+  medianConstraint = min(0, 1 - 50 * strMedianCost);
   y = strCost + penalty * medianConstraint ^ 2;
 end
 
 function x = minimize(constrainedF, numFs)
-  qK = 1;
-  tK = 1;
+  k = 1;
   c = 0.5;
   strFs = ones(1, numFs);
-  x = [qK tK c strFs]';
+  x = [k c strFs]';
   options = optimset;
   options.TolFun = 0.01;
   options.TolX = 0.01;

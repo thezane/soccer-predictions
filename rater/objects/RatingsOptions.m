@@ -1,7 +1,6 @@
 classdef RatingsOptions
   properties
-    qK
-    tK
+    k
     c
     fTree
     fNames
@@ -19,9 +18,8 @@ classdef RatingsOptions
       rOptions.numFs = length(rOptions.fNames);
     end
     
-    function rOptions = update(rOptions, qK, tK, c, strFs)
-      rOptions.qK = qK;
-      rOptions.tK = tK;
+    function rOptions = update(rOptions, k, c, strFs)
+      rOptions.k = k;
       rOptions.c = c;
       i = 1;
       
