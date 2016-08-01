@@ -4,17 +4,23 @@ rateTeams <- function(rOptions, rOutput) {
   gi <- rOutput$gi
   tTree <- resetRatings(tTree)
   gi <- reset(gi)
+  i <- 1
   
-  while (hasNext(gi)) {
+  while (hasNextGame(gi)) {
     gameData <- nextGame(gi)
-    strPrereqs <- computeStrPrereq(tTree, game, rOptions)
+    gi <- gameData[["gi"]]
+    game <- gameData[["game"]]
+    strPrereqs <- computeStrPrereqs(tTree, game, rOptions)
     A <- strPrereqs[["A"]]
     game <- strPrereqs[["game"]]
     updateStrData <- updateStr(tTree, game, A, rOptions)
+    tTree <- updateStrData[["tTree"]]
+    game <- updateStrData[["game"]]
     rOutput <- updateCost(rOutput, rOptions, game)
-    gDateList <- gTree(game$gameDate)
-    gDateList[game$gameNum] <- game
-    gTree[game$gameData] <- gDateList
+    gDateList <- gTree[[game$gameDateStr]]
+    gDateList[[game$gameNum]] <- game
+    gTree[game$gameDateStr] <- gDateList
+    i <- i + 1
   }
   
   rOutput$tTree <- tTree
@@ -32,16 +38,21 @@ computeStrPrereqs <- function(tTree, game, rOptions) {
   
   if (homeTeam$xp == 0) {
     homeTeam$teamStr <- fTree[[homeTeam$fName]]
-  }
-  else if (awayTeam$xp == 0) {
-    awayTeam$teamStr <- fTree[[awayTeam$fName]]
+    homeTeam$updateDate <- game$gameDate
   }
   
-  game$teamStr <- matrix(c(homeTeam$teamStr, awayTeam$teamStr), TRUE)
+  if (awayTeam$xp == 0) {
+    awayTeam$teamStr <- fTree[[awayTeam$fName]]
+    awayTeam$updateDate <- game$gameDate
+  }
+  
+  game$teamStr <- matrix(c(homeTeam$teamStr, awayTeam$teamStr), 2, 2,
+      TRUE)
   k <- rOptions$k
   goals <- game$goalsNorm
-  A <- matrix(c(0, goals(2), goals(1), 0), 2, 2, TRUE)
-  t <- game$gameDate - c(homeTeam$updateDate, awayTeam$updateDate)
+  A <- matrix(c(0, goals[2], goals[1], 0), 2, 2, TRUE)
+  t <- as.numeric(
+      game$gameDate - c(homeTeam$updateDate, awayTeam$updateDate))
   game$teamXP <- expDecay(t, k / 365, c(homeTeam$xp, awayTeam$xp))
   strPrereqs <- list(A=A, game=game)
   strPrereqs
@@ -51,7 +62,7 @@ updateStr <- function(tTree, game, A, rOptions) {
   homeTeamName <- game$teamNames[1]
   awayTeamName <- game$teamNames[2]
   homeTeam <- tTree[[homeTeamName]]
-  awayTeam <- tTree[[awayTeamname]]
+  awayTeam <- tTree[[awayTeamName]]
   teamStr <- game$teamStr
   strPost <- computeStr(A, teamStr, rOptions$c,
       rOptions$tolRel, rOptions$tolScale)
@@ -68,6 +79,6 @@ updateStr <- function(tTree, game, A, rOptions) {
   awayTeam$updateDate <- game$gameDate
   tTree[homeTeamName] <- homeTeam
   tTree[awayTeamName] <- awayTeam
-  updateStrData <- list(tTree=tTree, game=game, strPost=strPost)
+  updateStrData <- list(tTree=tTree, game=game)
   updateStrData
 }

@@ -25,7 +25,7 @@ nextGame <- function(gi) {
                
   nextDate <- gi$dates[gi$I[1]]
   gDateList <- gi$gTree[[nextDate]]
-  game <- gDateList[gi$I[2]]
+  game <- gDateList[[gi$I[2]]]
   gi$I[2] <- gi$I[2] + 1
   gameData <- list(gi=gi, game=game)
   gameData

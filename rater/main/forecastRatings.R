@@ -8,12 +8,13 @@ forecastRatings <- function(currentDate) {
   fTree <- readsData[["fTree"]]
   gTree <- readsData[["gTree"]]
   T <- readsData[["T"]]
-  hA <- reads[["hA"]]
+  hA <- readsData[["hA"]]
   gi <- newGameIterator(gTree)
   gamesData <- normalizeGameGoals(gTree, gi, hA)
   rOutput <- optimizeRatings(tTree, fTree, gTree, gi, nrow(T))
   gi <- rOutput$gi
   writeData(gi, T, dataPath)
+  rOutput
 }
 
 forecastRatingsSetup <- function() {

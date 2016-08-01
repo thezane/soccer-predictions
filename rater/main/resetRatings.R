@@ -12,4 +12,6 @@ resetRatings <- function(tTree) {
     tTree[teamName] <- team
     i <- i + 1
   }
+  
+  tTree
 } 

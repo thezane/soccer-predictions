@@ -7,15 +7,14 @@ computeStr <- function(A, teamStr, c, tolRel, tolScale) {
 
   while (TRUE) {
     strPost <- computeAD(A, a, d, tolScale);
-    aPost <- strPost[["aPost"]]
-    dPost <- strPost[["dPost"]]
-    aDel <- aPost - a;
-    dDel <- dPost - d;
+    aPost <- strPost[, 1]
+    dPost <- strPost[, 2]
+    aDel <- matrix(aPost - a);
+    dDel <- matrix(dPost - d);
     a <- aPost;
     d <- dPost;
     
     if (norm(aDel) < tolRel && norm(dDel) < tolRel) {
-      strPost <- list(aPost=aPost, dPost=dPost);
       break;
     }
   }
@@ -32,7 +31,7 @@ computeAD <- function(A, a, d, tolScale) {
   aRelD <- strRelD[["y"]]
   aPost <- (aRelA + aRelD) / 2;
   dPost <- (dRelA + dRelD) / 2;
-  strPost <- list(aPost=aPost, dPost=dPost)
+  strPost <- matrix(c(aPost, dPost), 2, 2)
   strPost
 }
 

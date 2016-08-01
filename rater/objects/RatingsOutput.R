@@ -25,7 +25,8 @@ updateStrAll <- function(rOutput, teamStr) {
 }
 
 computeStrMedianCost <- function(rOutput) {
-  strMedian <- median(rOutput$strAll)
+  strMedian <- c(median(rOutput$strAll[, 1]),
+      median(rOutput$strAll[, 2]))
   strMedianCost <-
       computeMSE(computeStrNorm(strMedian[1]), 0) +
       computeMSE(computeStrNorm(strMedian[2]), 0)

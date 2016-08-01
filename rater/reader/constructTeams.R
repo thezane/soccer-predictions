@@ -4,7 +4,7 @@ constructTeams <- function(dataPath) {
   teamsSrc <- paste(dataPath, "teams.csv", sep="")
   T <- read.csv(teamsSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
-  n <- ncol(T)
+  n <- nrow(T)
   i <- 1
   
   while (i <= n) {

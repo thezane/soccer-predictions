@@ -17,8 +17,8 @@ updateHA <- function(hA, game) {
   goals <- game$goals
   
   if (game$isQualifier) {
-    hA$homeGoals <- hA$homeGoals + goals[1]
-    hA$awayGoals <- hA$awayGoals + goals[2]
+    hA$qHomeGoals <- hA$qHomeGoals + goals[1]
+    hA$qAwayGoals <- hA$qAwayGoals + goals[2]
     hA$numQsHA <- hA$numQsHA + 1;
   }
   else if (game$existsHA) {
@@ -36,7 +36,7 @@ updateHA <- function(hA, game) {
 
 computeHA <- function(hA) {
   qHA <- hA$qHomeGoals / hA$qAwayGoals;
-  tAwayGoals <- hA.tAwayGoals + hA$tNeutralGoals;
+  tAwayGoals <- hA$tAwayGoals + hA$tNeutralGoals;
   numTsAway <- hA$numTsHA + 2 * hA$numTsNeutral;
   tHA <- (hA$tHomeGoals / hA$numTsHA) / (tAwayGoals / numTsAway);
   hAData <- list(qHA=qHA, tHA=tHA)

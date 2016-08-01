@@ -4,7 +4,7 @@ newTeam <- function(teamName, fName) {
     updateDate="",
     xp=0,
     fName=fName,
-    str=matrix(0, 2, 2)
+    teamStr=c(1, 1)
   )
   class(team) <- "Team"
   team

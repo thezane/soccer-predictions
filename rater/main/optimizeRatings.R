@@ -9,8 +9,8 @@ optimizeRatings <- function(tTree, fTree, gTree, gi, numMatches) {
 }
 
 modelRatings <- function(x, penalty, rOptions, rOutput) {
-  rOptions <- updateOptions(x[1], x[2], x[3, ])
-  rOptions <- rateTeams(rOptions, rOutput)
+  rOptions <- updateOptions(rOptions, x[1], x[2], x[-c(1, 2)])
+  rOutput <- rateTeams(rOptions, rOutput)
   strCost <- rOutput$strCost
   strMedianCost <- computeStrMedianCost(rOutput)
   medianConstraint <- min(0, 1 - 50 * strMedianCost)
@@ -26,11 +26,18 @@ minimize <- function(rOptions, rOutput) {
   penalty <- 1
   penaltyGrowth <- 10
   tolPenalty <- 0.01
+  objFun <- function(x, penalty.=penalty,
+      rOptions.=rOptions, rOutput.=rOutput) {
+      rOutput <- modelRatings(x, penalty, rOptions, rOutput)
+      rOutput$y}
+  controlArgs <- list(trace=TRUE)
   
   while (TRUE) {
-    xNext <- optim(x, objFun, method="Nelder-Mead")
+    xNext <- optim(x, objFun, method="Nelder-Mead",
+        control=controlArgs)
     xDel <- matrix(xNext - x)
     x <- xNext
+    print(x)
     
     if (norm(xDel) < tolPenalty) {
       break
@@ -40,10 +47,4 @@ minimize <- function(rOptions, rOutput) {
   }
   
   x
-}
-
-objFun <- function(x, penalty.=penalty,
-    rOptions.=rOptions, rOutput.=rOutput) {
-  rOptions <- modelRatings(x, penalty, rOptions, rOutput)
-  rOptions$y
 }

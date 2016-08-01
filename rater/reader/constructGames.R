@@ -5,10 +5,10 @@ constructGames <- function(currentDate, dateFormat, tTree,
   matchSrc <- paste(dataPath, "matches.csv", sep="")
   T <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
-  n <- ncol(T)
+  n <- nrow(T)
   i <- 1
   
-  while (i <- n) {
+  while (i <= n) {
     gameDate <- as.Date(T[[i, "Date"]], dateFormat)
     
     if (gameDate <= currentDate) {
@@ -38,11 +38,13 @@ addGame <- function(T, i, gTree, homeTeamName, awayTeamName,
   gameDateStr <- game$gameDateStr
   
   if (!has.key(gameDateStr, gTree)) {
-    gTree[gameDateStr] <- c()
+    gTree[gameDateStr] <- NULL
   }
   
-  game$i <- length(gTree[[gameDateStr]]) + 1
-  gTree[[gameDateStr]] <- c(gTree[[gameDateStr]], game)
+  gDateList <- gTree[[gameDateStr]]
+  game$gameNum <- length(gDateList) + 1
+  gDateList[[game$gameNum]] <- game
+  gTree[[gameDateStr]] <- gDateList
   gameData <- list(gTree=gTree, game=game)
   gameData
 }

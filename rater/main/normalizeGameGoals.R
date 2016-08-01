@@ -9,12 +9,12 @@ normalizeGameGoals <- function(gTree, gi, hA) {
     gi <- gameData[["gi"]]
     game <- gameData[["game"]]
     game$goalsNorm <- computeGoalsNorm(game, qHA, tHA)
-    gDateList <- gTree(game$gameDate)
-    gDateList[game$gameNum] <- game
-    gTree[game$gameDate] <- gDateList
+    gDateList <- gTree[[game$gameDateStr]]
+    gDateList[[game$gameNum]] <- game
+    gTree[game$gameDateStr] <- gDateList
   }
   
-  gamesData <- list(gTree=Tree, gi=gi)
+  gamesData <- list(gTree=gTree, gi=gi)
   gamesData
 }
 
