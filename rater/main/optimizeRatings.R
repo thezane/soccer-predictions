@@ -26,15 +26,11 @@ minimize <- function(rOptions, rOutput) {
   penalty <- 1
   penaltyGrowth <- 10
   tolPenalty <- 0.01
-  objFun <- function(x, penalty.=penalty,
-      rOptions.=rOptions, rOutput.=rOutput) {
-      rOutput <- modelRatings(x, penalty, rOptions, rOutput)
-      rOutput$y}
-  controlArgs <- list(trace=TRUE)
   
   while (TRUE) {
-    xNext <- optim(x, objFun, method="Nelder-Mead",
-        control=controlArgs)
+    optimData <- optim(x, objFun, penalty=penalty, rOptions=rOptions,
+        rOutput=rOutput, method="Nelder-Mead", control=list(trace=TRUE))
+    xNext <- optimData[["par"]]
     xDel <- matrix(xNext - x)
     x <- xNext
     print(x)
@@ -47,4 +43,9 @@ minimize <- function(rOptions, rOutput) {
   }
   
   x
+}
+
+objFun <- function(x, penalty, rOptions, rOutput) {
+  rOutput <- modelRatings(x, penalty, rOptions, rOutput)
+  rOutput$y
 }
