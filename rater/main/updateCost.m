@@ -1,4 +1,4 @@
-function rOutput = updateCost(rOutput, rOptions, match, A)
+function rOutput = updateCost(rOutput, rOptions, match)
   str = match.teamStr;
   rOutput = rOutput.updateStrAll(str);
   
@@ -9,12 +9,11 @@ function rOutput = updateCost(rOutput, rOptions, match, A)
   strPost = match.teamStrPost;
   alphas = [0.5 0.5]';
   strExpected = computeStrNext(str, strPost, alphas);
-  rOutput = updateRatingsCost(rOptions, rOutput, match, ...
-      str, strExpected);
+  rOutput = updateRatingsCost(rOptions, rOutput, str, strExpected);
 end
 
 function rOutput = updateRatingsCost(rOptions, rOutput, ...
-    match, str, strExpected)
+    str, strExpected)
   strNorm = computeStrNorm(str);
   strExpectedNorm = computeStrNorm(strExpected);
   strCost = computeMSE(strNorm, strExpectedNorm);

@@ -1,7 +1,7 @@
 constructTeams <- function(dataPath) {
-  tTree <- h()
-  fTree <- h()
-  teamsSrc <- paste(dataPath, "teams.csv")
+  tTree <- hash()
+  fTree <- hash()
+  teamsSrc <- paste(dataPath, "teams.csv", sep="")
   T <- read.csv(teamsSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
   n <- ncol(T)
@@ -23,6 +23,8 @@ addTeam <- function(T, i, tTree) {
   teamName <- T[[i, "Team"]]
   fName <- T[[i, "Federation"]]
   tTree[teamName] <- newTeam(teamName, fName)
+  teamData <- list(tTree=tTree, fName=fName)
+  teamData
 }
 
 addFederation <- function(fTree, fName) {

@@ -4,6 +4,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName, gameDate) {
   game <- list(
     contest=contest,
     gameDate=gameDate,
+    gameDateStr=as.character(gameDate),
     year=as.numeric(format(gameDate, "%Y")),
     goals=c(T[[i, "HomeGoals"]], T[[i, "AwayGoals"]]),
     goalsNorm=zeroesRow,
@@ -12,9 +13,9 @@ newGame <- function(T, i, homeTeamName, awayTeamName, gameDate) {
     teamStrNext=zeroesRow,
     teamStrPost=zeroesRow,
     teamXP=0,
-    existsHomeAdvantage=T[[i, "HomeAdvantage"]],
+    existsHA=T[[i, "HomeAdvantage"]],
     isQualifier=grepl("-Q", contest),
-    gameNumber=0,
+    gameNum=0,
     gameRow=i
   )
   class(game) <- "Game"

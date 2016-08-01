@@ -2,7 +2,6 @@ function [rOptions rOutput] = rateTeams(rOptions, rOutput)
   tTree = rOutput.tTree;
   mTree = rOutput.mTree;
   mi = rOutput.mi;
-  mi = rOutput.mi;
   tTree = resetRatings(tTree);
   mi = mi.reset();
   
@@ -10,7 +9,7 @@ function [rOptions rOutput] = rateTeams(rOptions, rOutput)
     [mi match] = mi.next();
     [A match] = computeStrPrereqs(tTree, match, rOptions);
     [tTree match] = updateStr(tTree, match, A, rOptions);
-    rOutput = updateCost(rOutput, rOptions, match, A);
+    rOutput = updateCost(rOutput, rOptions, match);
     mList = mTree(match.date);
     mList(match.i) = match;
     mTree(match.date) = mList;

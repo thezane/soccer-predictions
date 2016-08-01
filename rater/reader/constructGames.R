@@ -1,8 +1,8 @@
 constructGames <- function(currentDate, dateFormat, tTree,
     dataPath) {
-  gTree <- h()
+  gTree <- hash()
   hA <- newHomeAdvantage()
-  matchSrc <- paste(dataPath, "matches.csv")
+  matchSrc <- paste(dataPath, "matches.csv", sep="")
   T <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
   n <- ncol(T)
@@ -12,8 +12,8 @@ constructGames <- function(currentDate, dateFormat, tTree,
     gameDate <- as.Date(T[[i, "Date"]], dateFormat)
     
     if (gameDate <= currentDate) {
-      homeTeamName <- tTree[[i, "HomeTeam"]]
-      awayTeamName <- tTree[[i, "AwayTeam"]]
+      homeTeamName <- T[[i, "HomeTeam"]]
+      awayTeamName <- T[[i, "AwayTeam"]]
       gameData <- addGame(T, i, gTree, homeTeamName, awayTeamName,
           gameDate)
       gTree <- gameData[["gTree"]]
@@ -35,13 +35,14 @@ constructGames <- function(currentDate, dateFormat, tTree,
 addGame <- function(T, i, gTree, homeTeamName, awayTeamName,
     gameDate) {
   game <- newGame(T, i, homeTeamName, awayTeamName, gameDate)
+  gameDateStr <- game$gameDateStr
   
-  if (!has.key(gameDate, gTree)) {
-    gTree[gameDate] <- c()
+  if (!has.key(gameDateStr, gTree)) {
+    gTree[gameDateStr] <- c()
   }
   
-  game$i <- length(gTree[[gameDate]]) + 1
-  gTree[[gameDate]] <- c(gTree[[gameDate]], game)
+  game$i <- length(gTree[[gameDateStr]]) + 1
+  gTree[[gameDateStr]] <- c(gTree[[gameDateStr]], game)
   gameData <- list(gTree=gTree, game=game)
   gameData
 }

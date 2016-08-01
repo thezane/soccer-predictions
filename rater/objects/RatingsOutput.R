@@ -8,8 +8,7 @@ newRatingsOutput <- function(tTree, gTree, gi, numMatches) {
     strAll=matrix(0, numMatches, 2),
     startI=1,
     endI=2,
-    strMedian=c(1, 1),
-    strMedianCost=0
+    y=Inf
   )
   class(rOutput) <- "RatingsOutput"
   rOutput
@@ -25,11 +24,10 @@ updateStrAll <- function(rOutput, teamStr) {
   rOutput
 }
 
-updateStrMedianCost <- function(rOutput) {
+computeStrMedianCost <- function(rOutput) {
   strMedian <- median(rOutput$strAll)
-  rOutput$strMedian <- strMedian
-  rOutput$strMedianCost <-
+  strMedianCost <-
       computeMSE(computeStrNorm(strMedian[1]), 0) +
       computeMSE(computeStrNorm(strMedian[2]), 0)
-  rOutput
+  strMedianCost
 }

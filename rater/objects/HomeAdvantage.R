@@ -7,21 +7,21 @@ newHomeAdvantage <- function() {
       tAwayGoals=0,
       numTsHA=0,
       tNeutralGoals=0,
-      numTsNeutral=0,
+      numTsNeutral=0
   )
   class(hA) <- "HomeAdvantage"
   hA
 } 
 
 updateHA <- function(hA, game) {
-  goals <- game.goals
+  goals <- game$goals
   
-  if (isQualifier(game)) {
+  if (game$isQualifier) {
     hA$homeGoals <- hA$homeGoals + goals[1]
     hA$awayGoals <- hA$awayGoals + goals[2]
     hA$numQsHA <- hA$numQsHA + 1;
   }
-  else if (game$existsHomeAdvantage) {
+  else if (game$existsHA) {
     hA$tHomeGoals <- hA$tHomeGoals + goals[1];
     hA$tAwayGoals <- hA$tAwayGoals + goals[2];
     hA$numTsHA <- hA$numTsHA + 1;
