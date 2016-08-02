@@ -13,7 +13,7 @@ modelRatings <- function(x, penalty, rOptions, rOutput) {
   rOutput <- rateTeams(rOptions, rOutput)
   strCost <- rOutput$strCost
   strMedianCost <- computeStrMedianCost(rOutput)
-  medianConstraint <- min(0, 1 - 50 * strMedianCost)
+  medianConstraint <- min(0, 1 - 10 * strMedianCost)
   rOutput$y <- strCost + penalty * medianConstraint ^ 2
   rOutput
 }
@@ -23,7 +23,7 @@ minimize <- function(rOptions, rOutput) {
   c <- 0.5
   strFs <- matrix(1, 1, rOptions$numFs)
   x <- c(k, c, strFs)
-  penalty <- 0.01
+  penalty <- 1
   penaltyGrowth <- 10
   tolPenalty <- 1
   objFun <- function(x, penalty.=penalty,
@@ -31,12 +31,15 @@ minimize <- function(rOptions, rOutput) {
       rOutput <- modelRatings(x, penalty, rOptions, rOutput)
       rOutput$y
   }
+  options <- optimset(Display="iter", MaxIter=300,
+      TolFun=0.01, TolX=0.01)
   
   while (TRUE) {
-    print(x)
-    xNext <- fminsearch(objFun, x)
+    nmObj <- fminsearch(objFun, x, options)
+    xNext <- neldermead.get(nmObj, "xopt")
     xDel <- matrix(xNext - x)
     x <- xNext
+    print(x)
     
     if (norm(xDel) < tolPenalty) {
       break
@@ -44,7 +47,6 @@ minimize <- function(rOptions, rOutput) {
     
     penalty <- penaltyGrowth * penalty
   }
-
-  print(x)  
+  
   x
 }
