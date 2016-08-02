@@ -29,16 +29,14 @@ minimize <- function(rOptions, rOutput) {
   objFun <- function(x, penalty.=penalty,
       rOptions.=rOptions, rOutput.=rOutput) {
       rOutput <- modelRatings(x, penalty, rOptions, rOutput)
-      print(x)
       rOutput$y
   }
-  options <- optimset(Display="iter")
   
   while (TRUE) {
-    xNext <- fminsearch(objFun, x, options)
+    print(x)
+    xNext <- fminsearch(objFun, x)
     xDel <- matrix(xNext - x)
     x <- xNext
-    print(x)
     
     if (norm(xDel) < tolPenalty) {
       break
@@ -46,6 +44,7 @@ minimize <- function(rOptions, rOutput) {
     
     penalty <- penaltyGrowth * penalty
   }
-  
+
+  print(x)  
   x
 }
