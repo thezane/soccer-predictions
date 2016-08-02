@@ -23,14 +23,19 @@ minimize <- function(rOptions, rOutput) {
   c <- 0.5
   strFs <- matrix(1, 1, rOptions$numFs)
   x <- c(k, c, strFs)
-  penalty <- 1
+  penalty <- 0.01
   penaltyGrowth <- 10
-  tolPenalty <- 0.01
+  tolPenalty <- 1
+  objFun <- function(x, penalty.=penalty,
+      rOptions.=rOptions, rOutput.=rOutput) {
+      rOutput <- modelRatings(x, penalty, rOptions, rOutput)
+      print(x)
+      rOutput$y
+  }
+  options <- optimset(Display="iter")
   
   while (TRUE) {
-    optimData <- optim(x, objFun, penalty=penalty, rOptions=rOptions,
-        rOutput=rOutput, method="Nelder-Mead", control=list(trace=TRUE))
-    xNext <- optimData[["par"]]
+    xNext <- fminsearch(objFun, x, options)
     xDel <- matrix(xNext - x)
     x <- xNext
     print(x)
@@ -43,9 +48,4 @@ minimize <- function(rOptions, rOutput) {
   }
   
   x
-}
-
-objFun <- function(x, penalty, rOptions, rOutput) {
-  rOutput <- modelRatings(x, penalty, rOptions, rOutput)
-  rOutput$y
 }

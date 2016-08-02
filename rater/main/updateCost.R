@@ -1,8 +1,10 @@
 updateCost <- function(rOutput, rOptions, game) {
+  homeTeam <- rOutput$tTree[[game$teamNames[1]]]
+  awayTeam <- rOutput$tTree[[game$teamNames[2]]]
   teamStr <- game$teamStr
   rOutput <- updateStrAll(rOutput, teamStr)
   
-  if (!game$isQualifier) {
+  if (!game$isQualifier || homeTeam$fName != awayTeam$fName) {
     strPost <- game$teamStrPost
     alphas <- c(0.5, 0.5)
     strExpected <- computeStrNext(teamStr, strPost, alphas)

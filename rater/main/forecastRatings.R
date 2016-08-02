@@ -19,6 +19,7 @@ forecastRatings <- function(currentDate) {
 
 forecastRatingsSetup <- function() {
   library(hash)
+  library(neldermead)
   srcFiles <- list.files("../", ".*\\.R",
       full.names=TRUE, recursive=TRUE)
   lapply(srcFiles, source)
