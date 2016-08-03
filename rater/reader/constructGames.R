@@ -19,13 +19,12 @@ constructGames <- function(currentDate, dateFormat, tTree,
       gTree <- gameData[["gTree"]]
       game <- gameData[["game"]]
       hA <- updateHA(hA, game)
+      i <- i + 1
     }
     else {
       T <- T[-i, ]
       n <- n - 1
     }
-    
-    i <- i + 1
   }
   
   gamesData <- list(gTree=gTree, T=T, hA=hA)

@@ -25,10 +25,10 @@ updateStrAll <- function(rOutput, teamStr) {
 }
 
 computeStrMedianCost <- function(rOutput) {
-  strMedian <- c(median(rOutput$strAll[, 1]),
-      median(rOutput$strAll[, 2]))
-  strMedianCost <-
-      computeMSE(computeStrNorm(strMedian[1]), 0) +
-      computeMSE(computeStrNorm(strMedian[2]), 0)
+  aNormAll <- computeStrNorm(rOutput$strAll[, 1])
+  dNormAll <- computeStrNorm(rOutput$strAll[, 2])
+  strNormMedian <- c(median(aNormAll), median(dNormAll))
+  strMedianCost <- computeMSE(strNormMedian[1], 0) +
+      computeMSE(strNormMedian[2], 0)
   strMedianCost
 }

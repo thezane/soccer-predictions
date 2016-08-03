@@ -1,5 +1,9 @@
 forecastRatings <- function(currentDate) {
-  forecastRatingsSetup()
+  library(hash)
+  library(neldermead)
+  srcFiles <- list.files("../", ".*\\.R",
+      full.names=TRUE, recursive=TRUE)
+  lapply(srcFiles, source)
   dateFormat <- "%m/%d/%y"
   dataPath <- "../../data/"
   currentDate <- as.Date(currentDate, dateFormat)
@@ -15,12 +19,4 @@ forecastRatings <- function(currentDate) {
   gi <- rOutput$gi
   writeData(gi, T, dataPath)
   rOutput
-}
-
-forecastRatingsSetup <- function() {
-  library(hash)
-  library(neldermead)
-  srcFiles <- list.files("../", ".*\\.R",
-      full.names=TRUE, recursive=TRUE)
-  lapply(srcFiles, source)
 }

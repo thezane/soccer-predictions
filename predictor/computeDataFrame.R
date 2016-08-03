@@ -6,7 +6,7 @@ computeDataFrame <-function(matches) {
   meanGoalsMap <- computeMeanGoals(matches)
   matchContests <- lapply(matches[, "Contest"], getGeneralContest)
   matches <- matches[matchContests != "q", ]
-  rownames(tMatches) <- 1:nrow(tMatches)
+  rownames(matches) <- 1:nrow(matches)
   meanGoals <- apply(matches, 1, mapContestToMeanGoals,
       meanGoalsMap=meanGoalsMap)
   meanGoals <- t(meanGoals)

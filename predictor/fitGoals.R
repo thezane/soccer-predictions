@@ -8,8 +8,8 @@ fitGoals <- function (currentDate, matchSrc="") {
   meanGoalsMap <- forecastPrereq[["MeanGoalsMap"]]
   teams <- forecastPrereq[["Teams"]]  
   form1 <- ~c(HomeMeanGoals, AwayMeanGoals) +
-      c(HomeAttackNext, AwayAttackNext) +
-      c(AwayDefenseNext, HomeDefenseNext)
+      c(HomeAttack, AwayAttack) +
+      c(AwayDefense, HomeDefense)
   model <- lm.dibp(HomeGoals~1, AwayGoals~1, l1l2=form1,
       common.intercept=TRUE, data=matches, pres=1e-08,
       distribution="geometric")

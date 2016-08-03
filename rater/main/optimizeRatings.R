@@ -13,7 +13,7 @@ modelRatings <- function(x, penalty, rOptions, rOutput) {
   rOutput <- rateTeams(rOptions, rOutput)
   strCost <- rOutput$strCost
   strMedianCost <- computeStrMedianCost(rOutput)
-  medianConstraint <- min(0, 1 - 10 * strMedianCost)
+  medianConstraint <- min(0, 1 - 20 * strMedianCost) / 2
   rOutput$y <- strCost + penalty * medianConstraint ^ 2
   rOutput
 }
@@ -25,10 +25,11 @@ minimize <- function(rOptions, rOutput) {
   x <- c(k, c, strFs)
   penalty <- 1
   penaltyGrowth <- 10
-  tolPenalty <- 1
+  tolPenalty <- 0.01
   objFun <- function(x, penalty.=penalty,
       rOptions.=rOptions, rOutput.=rOutput) {
       rOutput <- modelRatings(x, penalty, rOptions, rOutput)
+      print(rOptions$fTree)
       rOutput$y
   }
   options <- optimset(Display="iter", MaxIter=300,
