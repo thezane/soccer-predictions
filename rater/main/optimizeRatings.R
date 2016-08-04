@@ -1,6 +1,6 @@
 optimizeRatings <- function(tTree, fTree, gTree, gi, numMatches) {
-  tolRel <- 1e-04
-  tolScale <- 1e-04
+  tolRel <- 0.01
+  tolScale <- 0.01
   rOptions <- newRatingsOptions(fTree, tolRel, tolScale)
   rOutput <- newRatingsOutput(tTree, gTree, gi, numMatches)
   x <- minimize(rOptions, rOutput)
@@ -13,7 +13,7 @@ modelRatings <- function(x, penalty, rOptions, rOutput) {
   rOutput <- rateTeams(rOptions, rOutput)
   strCost <- rOutput$strCost
   strMedianCost <- computeStrMedianCost(rOutput)
-  medianConstraint <- min(0, 1 - 20 * strMedianCost) / 2
+  medianConstraint <- 0.1 * min(0, 1 - 50 * strMedianCost)
   rOutput$y <- strCost + penalty * medianConstraint ^ 2
   rOutput
 }
@@ -29,7 +29,6 @@ minimize <- function(rOptions, rOutput) {
   objFun <- function(x, penalty.=penalty,
       rOptions.=rOptions, rOutput.=rOutput) {
       rOutput <- modelRatings(x, penalty, rOptions, rOutput)
-      print(rOptions$fTree)
       rOutput$y
   }
   options <- optimset(Display="iter", MaxIter=300,
