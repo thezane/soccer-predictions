@@ -1,11 +1,14 @@
 verifyModel <- function(model, currentYear) {
+  library(nnet)
   dataPath <- "../accuracy/"
   fileName <- paste(dataPath, "verified", model, currentYear, ".csv",
       sep ="")
   model <- read.csv(fileName, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
-  verifiedPredictions <- apply(model, 1, verifyPrediction)
-  model["MSE"] <- verifiedPredictions
+  verifiedPredictions <- do.call(rbind.data.frame,
+      apply(model, 1, verifyPrediction))
+  model["MSE"] <- verifiedPredictions[["MSE"]]
+  model["IsCorrect"] <- verifiedPredictions[["IsCorrect"]]
   write.csv(model, fileName, row.names=FALSE)
 } 
 
@@ -19,6 +22,9 @@ verifyPrediction <- function(matchesRow) {
   awayGoals <- matchesRow[["AwayGoals"]]
   actualResult <- c(homeGoals > awayGoals, homeGoals == awayGoals,
       homeGoals < awayGoals)
+  isCorrect <- as.numeric(which.is.max(expectedResult) ==
+      which.is.max(actualResult))
   mse <- round(sum((expectedResult - actualResult) ^ 2), numDecimals)
-  mse
+  verifiedPredictions <- list(IsCorrect=isCorrect, MSE=mse)
+  verifiedPredictions
 }
