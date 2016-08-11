@@ -4,6 +4,7 @@ rateTeams <- function(rOptions, rOutput) {
   gi <- rOutput$gi
   tTree <- resetRatings(tTree)
   gi <- reset(gi)
+  gamePrev <- NULL
   i <- 1
   
   while (hasNextGame(gi)) {
@@ -16,10 +17,11 @@ rateTeams <- function(rOptions, rOutput) {
     updateStrData <- updateStr(tTree, game, A, rOptions)
     tTree <- updateStrData[["tTree"]]
     game <- updateStrData[["game"]]
-    rOutput <- updateCost(rOutput, rOptions, game)
+    rOutput <- updateCost(rOutput, rOptions, game, gamePrev)
     gDateList <- gTree[[game$gameDateStr]]
     gDateList[[game$gameNum]] <- game
     gTree[game$gameDateStr] <- gDateList
+    gamePrev <- game
     i <- i + 1
   }
   

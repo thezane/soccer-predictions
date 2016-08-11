@@ -15,6 +15,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName, gameDate) {
     teamXP=c(0, 0),
     existsHA=T[[i, "HomeAdvantage"]],
     isQualifier=grepl("-Q", contest),
+    isWorldCupGroup=(contest=="WOC-G"),
     gameNum=0,
     gameRow=i
   )

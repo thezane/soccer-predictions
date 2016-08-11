@@ -20,19 +20,27 @@ Barbados,North America
 Belarus,Europe
 Belgium,Europe
 Belize,North America
+Benin,Africa
 Bermuda,North America
 Bolivia,South America
 Bosnia-Herzegovina,Europe
+Botswana,Africa
 Brazil,South America
 British Virgin Islands,North America
 Bulgaria,Europe
+Burkina Faso,Africa
+Burundi,Africa
 Cambodia,Asia
 Cameroon,Africa
 Canada,North America
+Cape Verde,Africa
 Cayman Islands,North America
+Central African Republic,Africa
+Chad,Africa
 Chile,South America
 China,Asia
 Colombia,South America
+Comoros,Africa
 Cook Islands,Oceania
 Costa Rica,North America
 Croatia,Europe
@@ -40,7 +48,9 @@ Cuba,North America
 Curacao,North America
 Cyprus,Europe
 Czech Republic,Europe
+Democratic Republic of the Congo,Africa
 Denmark,Europe
+Djibouti,Africa
 Dominica,North America
 Dominican Republic,North America
 East Timor,Asia
@@ -48,11 +58,15 @@ Ecuador,South America
 Egypt,Africa
 El Salvador,North America
 England,Europe
+Equatorial Guinea,Africa
+Eritrea,Africa
 Estonia,Europe
+Ethiopia,Africa
 Faroe Islands,Europe
 Fiji,Oceania
 Finland,Europe
 France,Europe
+Gabon,Africa
 Georgia,Europe
 Germany,Europe
 Ghana,Africa
@@ -60,6 +74,8 @@ Gibraltar,Europe
 Greece,Europe
 Grenada,North America
 Guatemala,North America
+Guinea,Africa
+Guinea-Bissau,Africa
 Guyana,North America
 Haiti,North America
 Honduras,North America
@@ -77,31 +93,44 @@ Jamaica,North America
 Japan,Asia
 Jordan,Asia
 Kazakhstan,Europe
+Kenya,Africa
 Kuwait,Asia
 Kyrgyzstan,Asia
 Laos,Asia
 Latvia,Europe
 Lebanon,Asia
+Lesotho,Africa
+Liberia,Africa
+Libya,Africa
 Liechtenstein,Europe
 Lithuania,Europe
 Luxembourg,Europe
 Macau,Asia
 Macedonia,Europe
+Madagascar,Africa
+Malawi,Africa
 Malaysia,Asia
 Maldives,Asia
+Mali,Africa
 Malta,Europe
+Mauritania,Africa
+Mauritius,Africa
 Mexico,North America
 Moldova,Europe
 Mongolia,Asia
 Montenegro,Europe
 Montserrat,North America
+Morocco,Africa
+Mozambique,Africa
 Myanmar,Asia
+Namibia,Africa
 Nepal,Asia
 Netherlands,Europe
 Netherlands Antilles,North America
 New Caledonia,Oceania
 New Zealand,Oceania
 Nicaragua,North America
+Niger,Africa
 Nigeria,Africa
 North Korea,Asia
 Northern Ireland,Europe
@@ -119,35 +148,45 @@ Portugal,Europe
 Puerto Rico,North America
 Qatar,Asia
 Republic of Ireland,Europe
+Republic of the Congo,Africa
 Romania,Europe
 Russia,Europe
+Rwanda,Africa
 Saint Kitts and Nevis,North America
 Saint Lucia,North America
 Saint Vincent and the Grenadines,North America
 Samoa,Oceania
 San Marino,Europe
+Sao Tome and Principe,Africa
 Saudi Arabia,Asia
 Scotland,Europe
 Senegal,Africa
 Serbia,Europe
 Serbia and Montenegro,Europe
+Seychelles,Africa
+Sierra Leone,Africa
 Singapore,Asia
 Slovakia,Europe
 Slovenia,Europe
 Solomon Islands,Oceania
+Somalia,Africa
 South Africa,Africa
 South Korea,Asia
 Spain,Europe
 Sri Lanka,Asia
+Sudan,Africa
 Suriname,North America
+Swaziland,Africa
 Sweden,Europe
 Switzerland,Europe
 Syria,Asia
 Tahiti,Oceania
 Taiwan,Asia
 Tajikistan,Asia
+Tanzania,Africa
 Thailand,Asia
-Togo,Oceania
+The Gambia,Africa
+Togo,Africa
 Tonga,Oceania
 Trinidad and Tobago,North America
 Tunisia,Africa
@@ -155,15 +194,17 @@ Turkey,Europe
 Turkmenistan,Asia
 Turks and Caicos Islands,North America
 Tuvalu,Oceania
+Uganda,Africa
 Ukraine,Europe
 United Arab Emirates,Asia
 United States,North America
 United States Virgin Islands,North America
 Uruguay,South America
-USA,North America
 Uzbekistan,Asia
 Vanuatu,Oceania
 Venezuela,South America
 Vietnam,Asia
 Wales,Europe
 Yemen,Asia
+Zambia,Africa
+Zimbabwe,Africa

@@ -1,9 +1,8 @@
-updateCost <- function(rOutput, rOptions, game) {
+updateCost <- function(rOutput, rOptions, game, gamePrev) {
   homeTeam <- rOutput$tTree[[game$teamNames[1]]]
   awayTeam <- rOutput$tTree[[game$teamNames[2]]]
-  teamStr <- game$teamStr
-  rOutput <- updateStrAll(rOutput, teamStr)
-  
+  teamStr <- game$teamStr  
+
   if (!game$isQualifier || homeTeam$fName != awayTeam$fName) {
     strPost <- game$teamStrPost
     alphas <- c(0.5, 0.5)
@@ -11,7 +10,11 @@ updateCost <- function(rOutput, rOptions, game) {
     rOutput <- updateRatingsCost(rOptions, rOutput,
         teamStr, strExpected)
   }
-  
+
+  if (!is.null(gamePrev) && gamePrev$isQualifier && game$isWorldCupGroup) {
+    rOutput <- updateStrMedianCosts(rOutput)
+  }
+
   rOutput
 } 
 
