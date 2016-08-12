@@ -5,7 +5,7 @@ updateCost <- function(rOutput, rOptions, game, gamePrev) {
 
   if (!game$isQualifier || homeTeam$fName != awayTeam$fName) {
     strPost <- game$teamStrPost
-    alphas <- c(0.5, 0.5)
+    alphas <- c(1, 1)
     strExpected <- computeStrNext(teamStr, strPost, alphas)
     rOutput <- updateRatingsCost(rOptions, rOutput,
         teamStr, strExpected)

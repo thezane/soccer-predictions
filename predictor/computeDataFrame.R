@@ -23,14 +23,14 @@ computeMeanGoals <- function (matches) {
   matchGoals <- aggregateMatchGoals(matches, sum)
   numMatches <- aggregateMatchGoals(matches, length)
   meanGoalsMap <- hash()
-  meanGoalsMap["qHome"] <- matchGoals[["qHome"]] /
-      numMatches[["qHome"]]
-  meanGoalsMap["qAway"] <- matchGoals[["qAway"]] /
-      numMatches[["qAway"]]   
-  meanGoalsMap["tHome"] <- matchGoals[["tHome"]] /
-      numMatches[["tHome"]]
-  meanGoalsMap["tAway"] <- matchGoals[["tAway"]] /
-      numMatches[["tAway"]]  
+  meanGoalsMap["qHome"] <- extractGoals(matchGoals, numMatches,
+      "qHome")
+  meanGoalsMap["qAway"] <- extractGoals(matchGoals, numMatches,
+      "qAway")
+  meanGoalsMap["tHome"] <- extractGoals(matchGoals, numMatches,
+      "tHome")
+  meanGoalsMap["tAway"] <- extractGoals(matchGoals, numMatches,
+      "tAway")
   meanGoalsMap
 }
 
@@ -55,6 +55,10 @@ aggregateMatchGoals <- function(matches, fun) {
       "qHome"=homeQGoals[["x"]], "qAway"=awayQGoals[["x"]],
       "tHome"=homeTGoals[["x"]], "tAway"=awayTGoals[["x"]])
   matchGoals
+}
+
+extractGoals <- function(matchGoals, numMatches, contest) {
+  log(matchGoals[[contest]] / numMatches[[contest]])
 }
 
 mapContestToMeanGoals <- function(matchesRow, meanGoalsMap) {

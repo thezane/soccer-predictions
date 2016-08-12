@@ -13,7 +13,7 @@ modelRatings <- function(x, penalty, rOptions, rOutput) {
   rOutput <- rateTeams(rOptions, rOutput)
   strCost <- rOutput$strCost
   strMedianCost <- computeStrMedianCost(rOutput)
-  medianConstraint <- min(0, 1 - 5 * strMedianCost)
+  medianConstraint <- min(0, 1 - 20 * strMedianCost)
   rOutput$y <- strCost + penalty * medianConstraint ^ 2
   rOutput
 }
