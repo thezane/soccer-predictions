@@ -27,6 +27,7 @@ computeGoalsNorm <- function(game, qHA, tHA) {
   else if (game$existsHA) {
     goals[1] <- goals[1] / tHA
   }
-  
+
+  goals <- sqrt(goals)
   goals
 }

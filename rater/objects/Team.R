@@ -1,10 +1,11 @@
 newTeam <- function(teamName, fName) {
   team <- list(
     name=teamName,
-    updateDate="",
-    xp=0,
     fName=fName,
-    teamStr=c(1, 1)
+    teamStr=c(1, 1),
+    isUpdated=FALSE,
+    updateDate=as.Date("0001-01-01"),
+    xp=0
   )
   class(team) <- "Team"
   team

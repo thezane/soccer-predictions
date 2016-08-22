@@ -1,35 +1,39 @@
-newRatingsOutput <- function(tTree, gTree, gi) {
+newRatingsOutput <- function(tTree, gTree, gi, currentDate) {
   rOutput <- list(
     tTree=tTree,
     gTree=gTree,
     gi=gi,
+    currentDate=currentDate,
     strCost=0,
-    strMedianCosts=NULL,
+    strMeanCosts=NULL,
     y=Inf
   )
   class(rOutput) <- "RatingsOutput"
   rOutput
 }
 
-updateStrMedianCosts <- function(rOutput) {
+updateStrMeanCosts <- function(rOutput) {
   teams <- data.frame(t(values(rOutput$tTree)))
   teamStrNorms <- computeStrNorm(data.frame(teams[["teamStr"]]))
-  strNormMedian <- c(median(teamStrNorms[[1]]),
-      median(teamStrNorms[[2]]))
-  strMedianCost <- computeMSE(strNormMedian, c(0, 0))
-  rOutput$strMedianCosts <- c(rOutput$strMedianCosts, strMedianCost)
+  strNormMean <- c(mean(teamStrNorms[[1]]),
+      mean(teamStrNorms[[2]]))
+  strMeanCost <- c(computeMSE(strNormMean[1], 0),
+      computeMSE(strNormMean[2], 0))
+  rOutput$strMeanCosts <- c(rOutput$strMeanCosts, strMeanCost)
   rOutput
 }
 
-computeStrMedianCost <- function(rOutput) {
-  strMedianCosts <- rOutput$strMedianCosts
+computeStrMeanCost <- function(rOutput) {
+  strMeanCosts <- rOutput$strMeanCosts
 
-  if (is.null(strMedianCosts)) {
-    strMedianCost <- 0
+  if (is.null(strMeanCosts)) {
+    strMeanCost <- c(0, 0)
   }
   else {
-    strMedianCost <- mean(strMedianCosts)
+	strMeanCostsMat <- matrix(strMeanCosts, ncol=2, byrow=TRUE)
+    strMeanCost <- c(mean(strMeanCostsMat[, 1]),
+        mean(strMeanCostsMat[, 2]))
   }
 
-  strMedianCost
+  strMeanCost
 }

@@ -1,9 +1,7 @@
 computeStr <- function(A, teamStr, c, tolRel, tolScale) {
   a <- teamStr[, 1];
   d <- teamStr[, 2];
-  n <- nrow(A)
-  I <- diag(n)
-  A <- A + c * I[1: n, n: 1];
+  A <- A + c;
 
   while (TRUE) {
     strPost <- computeAD(A, a, d, tolScale);

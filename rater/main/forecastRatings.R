@@ -1,6 +1,5 @@
 forecastRatings <- function(currentDate) {
   library(hash)
-  library(neldermead)
   srcFiles <- list.files("../", ".*\\.R",
       full.names=TRUE, recursive=TRUE)
   lapply(srcFiles, source)
@@ -15,7 +14,7 @@ forecastRatings <- function(currentDate) {
   hA <- readsData[["hA"]]
   gi <- newGameIterator(gTree)
   gamesData <- normalizeGameGoals(gTree, gi, hA)
-  rOutput <- optimizeRatings(tTree, fTree, gTree, gi)
+  rOutput <- optimizeRatings(tTree, fTree, gTree, gi, currentDate)
   gi <- rOutput$gi
   writeData(gi, T, dataPath)
   rOutput

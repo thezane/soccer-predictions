@@ -1,21 +1,18 @@
 newRatingsOptions <- function(fTree, tolRel, tolScale) {
   fNames <- keys(fTree)
   rOptions <- list(
-    k=1,
-    c=0.5,
+    k=0.8,
+    c=0.3,
+    xpDefault=1,
     fTree=fTree,
     fNames=fNames,
     numFs=length(fNames),
     tolRel=tolRel,
     tolScale=tolScale
   )
+  strFsNorm <- c(-0.3, -0.5, 0, -0.3, -0.6, 0.3)
+  strFs <- exp(strFsNorm)
   class(rOptions) <- "RatingsOptions"
-  rOptions
-}
-
-updateOptions <- function(rOptions, k, c, strFs) {
-  rOptions$k <- k
-  rOptions$c <- c
   i <- 1
   
   while (i <= rOptions$numFs) {
@@ -23,6 +20,11 @@ updateOptions <- function(rOptions, k, c, strFs) {
     rOptions$fTree[[rOptions$fNames[i]]] <- c(strF, 1 / strF)
     i <- i + 1
   }
-  
+
+  rOptions
+}
+
+updateOptions <- function(rOptions, k) {
+  rOptions$k <- k  
   rOptions
 }
