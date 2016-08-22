@@ -2,7 +2,7 @@ newRatingsOptions <- function(fTree, tolRel, tolScale) {
   fNames <- keys(fTree)
   rOptions <- list(
     k=0.8,
-    c=0.3,
+    c=0.4,
     xpDefault=1,
     fTree=fTree,
     fNames=fNames,
@@ -24,7 +24,8 @@ newRatingsOptions <- function(fTree, tolRel, tolScale) {
   rOptions
 }
 
-updateOptions <- function(rOptions, k) {
-  rOptions$k <- k  
+updateOptions <- function(rOptions, k, c) {
+  rOptions$k <- k
+  rOptions$c <- c
   rOptions
 }

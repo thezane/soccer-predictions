@@ -28,6 +28,5 @@ computeGoalsNorm <- function(game, qHA, tHA) {
     goals[1] <- goals[1] / tHA
   }
 
-  goals <- sqrt(goals)
   goals
 }

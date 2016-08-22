@@ -10,7 +10,7 @@ optimizeRatings <- function(tTree, fTree, gTree, gi, currentDate) {
 
 modelRatings <- function(x, rOptions, rOutput, lambda=1) {
   print(x)
-  rOptions <- updateOptions(rOptions, x)
+  rOptions <- updateOptions(rOptions, x[1], x[2])
   rOutput <- rateTeams(rOptions, rOutput)
   strCost <- rOutput$strCost
   rOutput$y <- strCost
@@ -19,7 +19,8 @@ modelRatings <- function(x, rOptions, rOutput, lambda=1) {
 
 minimizeError <- function(rOptions, rOutput) {
   k <- 0.8
-  x <- k
+  c <- 0.4
+  x <- c(k, c)
   lambda <- 1
   objFun <- function(x, rOptions.=rOptions, rOutput.=rOutput,
       lambda.=lambda) {
