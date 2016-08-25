@@ -1,4 +1,4 @@
-forecastRatings <- function(currentDate) {
+forecastRatings <- function(currentDate, contest) {
   library(hash)
   srcFiles <- list.files("../", ".*\\.R",
       full.names=TRUE, recursive=TRUE)
@@ -14,7 +14,8 @@ forecastRatings <- function(currentDate) {
   hA <- readsData[["hA"]]
   gi <- newGameIterator(gTree)
   gamesData <- normalizeGameGoals(gTree, gi, hA)
-  rOutput <- optimizeRatings(tTree, fTree, gTree, gi, currentDate)
+  rOutput <- optimizeRatings(tTree, fTree, gTree, gi,
+      currentDate, contest)
   gi <- rOutput$gi
   writeData(gi, T, dataPath)
   rOutput

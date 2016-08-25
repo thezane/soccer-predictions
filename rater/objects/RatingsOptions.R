@@ -1,18 +1,30 @@
-newRatingsOptions <- function(fTree, tolRel, tolScale) {
+newRatingsOptions <- function(fTree) {
   fNames <- keys(fTree)
+  numFs <- length(fNames)
+
   rOptions <- list(
-    k=0.8,
-    c=0.4,
+    ks=c(1, 1),
+    c=0.5,
+    model=newModel(),
     xpDefault=1,
     fTree=fTree,
     fNames=fNames,
-    numFs=length(fNames),
-    tolRel=tolRel,
-    tolScale=tolScale
+    numFs=numFs,
+    tolRel=0.01,
+    tolScale=0.01
   )
-  strFsNorm <- c(-0.3, -0.5, 0, -0.3, -0.6, 0.3)
-  strFs <- exp(strFsNorm)
+  
   class(rOptions) <- "RatingsOptions"
+  rOptions
+}
+
+updateOptions <- function(rOptions, ks, c, aBeta, dBeta, corrBeta,
+    p, strFsNorm) {
+  rOptions$ks <- ks
+  rOptions$c <- c
+  rOptions$model <- updateModel(rOptions$model, aBeta, dBeta, corrBeta,
+      p)
+  strFs <- exp(strFsNorm)
   i <- 1
   
   while (i <= rOptions$numFs) {
@@ -21,11 +33,5 @@ newRatingsOptions <- function(fTree, tolRel, tolScale) {
     i <- i + 1
   }
 
-  rOptions
-}
-
-updateOptions <- function(rOptions, k, c) {
-  rOptions$k <- k
-  rOptions$c <- c
   rOptions
 }

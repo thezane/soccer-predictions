@@ -35,10 +35,20 @@ updateHA <- function(hA, game) {
 }
 
 computeHA <- function(hA) {
-  qHA <- hA$qHomeGoals / hA$qAwayGoals;
-  tAwayGoals <- hA$tAwayGoals + hA$tNeutralGoals;
-  numTsAway <- hA$numTsHA + 2 * hA$numTsNeutral;
-  tHA <- (hA$tHomeGoals / hA$numTsHA) / (tAwayGoals / numTsAway);
-  hAData <- list(qHA=qHA, tHA=tHA)
+  qHomeMeanGoals <- hA$qHomeGoals / hA$numQsHA
+  qAwayMeanGoals <- hA$qAwayGoals / hA$numQsHA
+  qHA <- qHomeMeanGoals / qAwayMeanGoals
+  tAwayGoals <- hA$tAwayGoals + hA$tNeutralGoals
+  numTsAway <- hA$numTsHA + 2 * hA$numTsNeutral
+  tHomeMeanGoals <- hA$tHomeGoals / hA$numTsHA
+  tAwayMeanGoals <- tAwayGoals / numTsAway
+  tHA <- tHomeMeanGoals / tAwayMeanGoals
+  hAData <- list(
+      qHomeMeanGoals=qHomeMeanGoals,
+      qAwayMeanGoals=qAwayMeanGoals,
+      tHomeMeanGoals=tHomeMeanGoals,
+      tAwayMeanGoals=tAwayMeanGoals,
+      qHA=qHA,
+      tHA=tHA)
   hAData
 }

@@ -1,4 +1,4 @@
-resetRatings <- function(tTree, rOptions) {
+resetRatings <- function(tTree) {
   teams <- keys(tTree)
   n <- length(teams)
   i <- 1
@@ -6,10 +6,7 @@ resetRatings <- function(tTree, rOptions) {
   while (i <= n) {
     teamName <- teams[i]
     team <- tTree[[teamName]]
-    team$teamstr <- c(1, 1)
-    team$isUpdated <- FALSE
-    team$xp <- rOptions$xpDefault
-    tTree[teamName] <- team
+    tTree[teamName] <- resetTeam(team)
     i <- i + 1
   }
   

@@ -1,9 +1,10 @@
 writeData <- function(gi, T, dataPath) {
-  numDecimals <- 4
-  colNames = c("HomeAttack", "HomeDefense",
+  colNames = c(
+      "HomeAttack", "HomeDefense",
       "AwayAttack", "AwayDefense",
       "HomeAttackNext", "HomeDefenseNext",
-      "AwayAttackNext", "AwayDefenseNext")
+      "AwayAttackNext", "AwayDefenseNext",
+      "MSE")
   T[colNames] <- 0
   gi <- reset(gi)
   endDate <- ""
@@ -12,7 +13,7 @@ writeData <- function(gi, T, dataPath) {
     gameData <- nextGame(gi)
     gi <- gameData[["gi"]]
     game <- gameData[["game"]]
-    T <- updateGames(T, game, numDecimals)
+    T <- updateGames(T, game)
     endDate <- game$gameDate
   }
   
@@ -22,10 +23,11 @@ writeData <- function(gi, T, dataPath) {
   write.csv(T, outFile, row.names=FALSE)
 }
 
-updateGames <- function(T, game, numDecimals) {
+updateGames <- function(T, game) {
+  numDecimals <- 4
   i <- game$gameRow
-  strNorm <- round(computeStrNorm(game$teamStr), numDecimals);
-  strNextNorm <- round(computeStrNorm(game$teamStrNext), numDecimals)
+  strNorm <- round(game$strNorm, numDecimals);
+  strNextNorm <- round(computeStrNorm(game$strNext), numDecimals)
   T[i, 'Date'] <- game$gameDateStr
   T[i, 'HomeAttack'] <- strNorm[1, 1]
   T[i, 'HomeDefense'] <- strNorm[1, 2]
@@ -35,5 +37,6 @@ updateGames <- function(T, game, numDecimals) {
   T[i, 'HomeDefenseNext'] <- strNextNorm[1, 2]
   T[i, 'AwayAttackNext'] <- strNextNorm[2, 1]
   T[i, 'AwayDefenseNext'] <- strNextNorm[2, 2]
+  T[i, "MSE"] <- round(game$mse, numDecimals)
   T 
 }

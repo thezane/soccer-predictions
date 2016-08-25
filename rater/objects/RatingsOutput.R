@@ -1,9 +1,11 @@
-newRatingsOutput <- function(tTree, gTree, gi, currentDate) {
+newRatingsOutput <- function(tTree, gTree, gi, currentDate, contest) {
   rOutput <- list(
     tTree=tTree,
     gTree=gTree,
     gi=gi,
     currentDate=currentDate,
+    contest=contest,
+    kCost=1/365,
     strCost=0,
     strMeanCosts=NULL,
     y=Inf
@@ -20,6 +22,11 @@ updateStrMeanCosts <- function(rOutput) {
   strMeanCost <- c(computeMSE(strNormMean[1], 0),
       computeMSE(strNormMean[2], 0))
   rOutput$strMeanCosts <- c(rOutput$strMeanCosts, strMeanCost)
+  rOutput
+}
+
+updateStrCost <- function(rOutput, strCost) {
+  rOutput$strCost <- rOutput$strCost + strCost
   rOutput
 }
 
