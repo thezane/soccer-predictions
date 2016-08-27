@@ -1,7 +1,6 @@
-optimizeRatings <- function(tTree, fTree, gTree, gi,
-    currentDate, contest) {
+optimizeRatings <- function(tTree, fTree, gTree, gi, hA, currentDate) {
   rOptions <- newRatingsOptions(fTree)
-  rOutput <- newRatingsOutput(tTree, gTree, gi, currentDate, contest)
+  rOutput <- newRatingsOutput(tTree, gTree, gi, hA, currentDate)
   x <- c(2.59289653,  0.01000000,  0.48831919,  0.04059758,  0.94224021, -5.00000081,  0.15194786, -0.03565156, -1.54143405,  0.76698815,  0.47116043, -1.60973200, 1.86555621)
   #x <- minimizeError(rOptions, rOutput)
   rData <- modelRatings(x, rOptions, rOutput)

@@ -1,5 +1,5 @@
-newGame <- function(T, i, homeTeamName, awayTeamName, tTree, contest,
-      gameDate) {
+newGame <- function(T, i, homeTeamName, awayTeamName, tTree, gameDate,
+    currentContest) {
   contest <- T[[i, "Contest"]]
   goals <- c(T[[i, "HomeGoals"]], T[[i, "AwayGoals"]])
   zeroesMat <- matrix(0, 2, 2)
@@ -32,7 +32,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName, tTree, contest,
   awayTeam <- tTree[[game$teamNames[2]]]
   game$isRelevant <- homeTeam$fName != awayTeam$fName ||
         (!game$isQualifier &&
-        (game$isInternational || grepl(contest, game$contest)))
+        (game$isInternational || grepl(currentContest, game$contest)))
   
   class(game) <- "Game"
   game

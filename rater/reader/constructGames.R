@@ -1,5 +1,5 @@
-constructGames <- function(currentDate, tTree, contest, dateFormat,
-    dataPath) {
+constructGames <- function(currentDate, tTree, currentContest,
+    dateFormat, dataPath) {
   gTree <- hash()
   hA <- newHomeAdvantage()
   matchSrc <- paste(dataPath, "matches.csv", sep="")
@@ -15,7 +15,7 @@ constructGames <- function(currentDate, tTree, contest, dateFormat,
       homeTeamName <- T[[i, "HomeTeam"]]
       awayTeamName <- T[[i, "AwayTeam"]]
       gameData <- addGame(T, i, gTree, homeTeamName, awayTeamName,
-          tTree, contest, gameDate)
+          tTree, gameDate, currentContest)
       gTree <- gameData[["gTree"]]
       game <- gameData[["game"]]
       hA <- updateHA(hA, game)
@@ -32,9 +32,9 @@ constructGames <- function(currentDate, tTree, contest, dateFormat,
 }
 
 addGame <- function(T, i, gTree, homeTeamName, awayTeamName, tTree,
-    contest, gameDate) {
-  game <- newGame(T, i, homeTeamName, awayTeamName, tTree, contest,
-      gameDate)
+    gameDate, currentContest) {
+  game <- newGame(T, i, homeTeamName, awayTeamName, tTree, gameDate,
+      currentContest)
   gameDateStr <- game$gameDateStr
   
   if (!has.key(gameDateStr, gTree)) {

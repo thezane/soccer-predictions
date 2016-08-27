@@ -1,6 +1,14 @@
-forecastMatch <- function (game, model) {
+forecastGame <- function (gameHypo=NULL, model=NULL, game=NULL) {
   maxGoals <- 20
   numDecimals <- 4
+  isTraining <- !is.null(model)
+
+  if (!isTraining) {
+    rData <- gameHypo$rData
+    model <- rData[["rOptions"]]$model
+    game <- gameHypo
+  }
+
   meanGoals <- game$meanGoals
   homeMeanGoals <- meanGoals[1]
   awayMeanGoals <- meanGoals[2]
@@ -9,9 +17,23 @@ forecastMatch <- function (game, model) {
   awayStr <- strNorm[2, ]
   lambdas <- computeLambdas(model, homeMeanGoals, awayMeanGoals,
       homeStr, awayStr)
-  matchPs <- computeMatchPrediction(lambdas, model$theta, model$p,
+  theta <- model$theta
+  inflatedP <- model$p
+  gamePrediction <- computeGamePrediction(lambdas, theta, inflatedP,
       maxGoals)
-  matchPs
+
+  if (!isTraining) {
+    gamePrediction[["homeAwayGoals"]] <- round(
+       gamePrediction[["homeAwayGoals"]], numDecimals)
+    geomMean <- 1 / theta
+    expectedGoals <- c(
+        fDIBP(lambdas[1] + lambdas[3], geomMean, inflatedP),
+        fDIBP(lambdas[2] + lambdas[3], geomMean, inflatedP))
+    gamePrediction[["expectedGoals"]] <- round(expectedGoals,
+        numDecimals)
+  }
+
+  gamePrediction
 }
 
 computeLambdas <- function(model, homeMeanGoals, awayMeanGoals,
@@ -29,11 +51,11 @@ computeLambdas <- function(model, homeMeanGoals, awayMeanGoals,
   lambdas
 }
 
-computeMatchPrediction <- function(lambdas, geomP, inflatedP,
+computeGamePrediction <- function(lambdas, geomP, inflatedP,
     maxGoals) {
   n <- maxGoals + 1
   homeAwayGoals <- matrix(nrow=n, ncol=n)
-  matchPs <- rep(0, 3)
+  gamePs <- rep(0, 3)
   i <- 1
   
   while (i <= n) {
@@ -53,28 +75,29 @@ computeMatchPrediction <- function(lambdas, geomP, inflatedP,
       }
       
       homeAwayGoals[i, j] <- p
-      matchPs <- updateMatchPs(matchPs, homeGoals, awayGoals, p)      
+      gamePs <- updateGamePs(gamePs, homeGoals, awayGoals, p)      
       j <- j + 1
     }
     
     i <- i + 1
   }
   
-  matchPs
+  gamePrediction <- list(gamePs=gamePs, homeAwayGoals=homeAwayGoals)
+  gamePrediction
 }
 
-updateMatchPs <- function(matchPs, homeGoals, awayGoals, p) {
+updateGamePs <- function(gamePs, homeGoals, awayGoals, p) {
   if (homeGoals > awayGoals) {
-    matchPs[1] <- matchPs[1] + p
+    gamePs[1] <- gamePs[1] + p
   }
   else if (homeGoals == awayGoals) {
-    matchPs[2] <- matchPs[2] + p
+    gamePs[2] <- gamePs[2] + p
   }
   else {
-    matchPs[3] <- matchPs[3] + p
+    gamePs[3] <- gamePs[3] + p
   }
   
-  matchPs
+  gamePs
 }
 
 fDIBP <- function(fBP, fD, p) {

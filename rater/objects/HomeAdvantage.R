@@ -7,7 +7,8 @@ newHomeAdvantage <- function() {
       tAwayGoals=0,
       numTsHA=0,
       tNeutralGoals=0,
-      numTsNeutral=0
+      numTsNeutral=0,
+      hAData=NULL
   )
   class(hA) <- "HomeAdvantage"
   hA
@@ -34,7 +35,7 @@ updateHA <- function(hA, game) {
   hA
 }
 
-computeHA <- function(hA) {
+updateHAData <- function(hA) {
   qHomeMeanGoals <- hA$qHomeGoals / hA$numQsHA
   qAwayMeanGoals <- hA$qAwayGoals / hA$numQsHA
   qHA <- qHomeMeanGoals / qAwayMeanGoals
@@ -43,12 +44,12 @@ computeHA <- function(hA) {
   tHomeMeanGoals <- hA$tHomeGoals / hA$numTsHA
   tAwayMeanGoals <- tAwayGoals / numTsAway
   tHA <- tHomeMeanGoals / tAwayMeanGoals
-  hAData <- list(
+  hA$hAData <- list(
       qHomeMeanGoals=qHomeMeanGoals,
       qAwayMeanGoals=qAwayMeanGoals,
       tHomeMeanGoals=tHomeMeanGoals,
       tAwayMeanGoals=tAwayMeanGoals,
       qHA=qHA,
       tHA=tHA)
-  hAData
+  hA
 }

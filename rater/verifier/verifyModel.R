@@ -1,6 +1,6 @@
 verifyModel <- function(model, currentYear) {
   library(nnet)
-  dataPath <- "../accuracy/"
+  dataPath <- "../../accuracy/"
   fileName <- paste(dataPath, "verified", model, currentYear, ".csv",
       sep ="")
   model <- read.csv(fileName, header=TRUE, sep=",", quote="\"", 

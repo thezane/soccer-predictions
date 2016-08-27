@@ -1,13 +1,13 @@
-verifySodm <- function (currentYear, locations) {
+verifySodm <- function (currentYear, location) {
   verifyModelSetup()
-  dataPathIn <- "../data/"
+  dataPathIn <- "../../data/"
   fileName <- "matches.csv"
   matchSrc <- paste(dataPathIn, fileName, sep ="")
   matches <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
   matches <- getRelevantMatches(matches, currentYear)
-  matches <- addPredictions(matches, locations, dataPathIn)
-  dataPathOut <- "../accuracy/"
+  matches <- addPredictions(matches, location, dataPathIn)
+  dataPathOut <- "../../accuracy/"
   matchDest <- paste(dataPathOut, "verifiedSodm", currentYear, ".csv",
       sep="")
   write.csv(matches, matchDest, row.names=FALSE)
@@ -16,9 +16,9 @@ verifySodm <- function (currentYear, locations) {
 
 verifyModelSetup <- function() {
   library(hash)
-  source("fitGoals.R")
-  source("getGeneralContest.R")
-  source("verifyModel.R")
+  srcFiles <- list.files("../", ".*\\.R",
+      full.names=TRUE, recursive=TRUE)
+  lapply(srcFiles, source)
 }
 
 getRelevantMatches <- function (matches, currentYear) {
@@ -32,11 +32,11 @@ getRelevantMatches <- function (matches, currentYear) {
   matches
 }
 
-addPredictions <- function (matches, locations, dataPath) {
+addPredictions <- function (matches, location, dataPath) {
   vNames <- c("HomeWin", "Tie", "AwayWin")
   matches[vNames] <- 0
   header = "sodm-"
-  fileType <- ".csv"
+  fileType <- ".Rdata"
   matchSrc <- ""
   n <- nrow(matches)
   i <- 1
@@ -48,11 +48,11 @@ addPredictions <- function (matches, locations, dataPath) {
     
     if (matchSrcNext != matchSrc) {
       matchSrc <- matchSrcNext
-      forecastPrereq <- fitGoals("", matchSrc)
+      load(matchSrc)
     }
     
-    matchPs <- addPrediction(forecastPrereq, matches[i, ], locations)
-    matches[i, vNames] <- matchPs
+    gamePs <- addPrediction(rData, matches[i, ], location)
+    matches[i, vNames] <- gamePs
     i <- i + 1
   }
   
@@ -81,14 +81,27 @@ getNextMatchSrc <- function(currentDate, dataPath, header, fileType) {
   matchSrc
 }
 
-addPrediction <- function(forecastPrereq, matchesRow, locations) {
+addPrediction <- function(rData, matchesRow, location) {
   numDecimals <- 4
-  homeTeam <- matchesRow[["HomeTeam"]]
-  awayTeam <- matchesRow[["AwayTeam"]]
-  contest <- getGeneralContest(matchesRow[["Contest"]])
+  homeTeamName <- matchesRow[["HomeTeam"]]
+  awayTeamName <- matchesRow[["AwayTeam"]]
+  contestType <- getContestType(matchesRow[["Contest"]])
   homeGoals <- matchesRow[["HomeGoals"]]
   awayGoals <- matchesRow[["AwayGoals"]]
-  matchPrediction <- forecastMatch(homeTeam, awayTeam, contest,
-      forecastPrereq, locations)
-  matchPs <- matchPrediction[["MatchPs"]]
+  gameHypo <- newGameHypo(homeTeamName, awayTeamName, contestType,
+      location, rData)
+  gamePrediction <- forecastGame(gameHypo)
+  gamePs <- round(gamePrediction[["gamePs"]], numDecimals)
+  gamePs
 }
+
+getContestType <- function(contest) {
+  if (grepl("-Q", contest)) {
+    contestType <- "-Q"
+  }
+  else {
+    contestType <- "-T"
+  }
+  
+  contestType
+} 

@@ -1,10 +1,10 @@
-newRatingsOutput <- function(tTree, gTree, gi, currentDate, contest) {
+newRatingsOutput <- function(tTree, gTree, gi, hA, currentDate) {
   rOutput <- list(
     tTree=tTree,
     gTree=gTree,
     gi=gi,
+    hA=hA,
     currentDate=currentDate,
-    contest=contest,
     kCost=1/365,
     strCost=0,
     strMeanCosts=NULL,

@@ -16,9 +16,9 @@ updateCost <- function(rOptions, rOutput, game, gamePrev) {
 } 
 
 updateRatingsCost <- function(rOptions, rOutput, game) {
-  matchPs <- forecastMatch(game, rOptions$model)
+  gamePrediction <- forecastGame(model=rOptions$model, game=game)
   t <- as.numeric(rOutput$currentDate - game$gameDate)
-  strCost <- computeStrCost(game, matchPs)
+  strCost <- computeStrCost(game, gamePrediction[["gamePs"]])
   rOutput <- updateStrCost(rOutput,
       expDecay(t, rOutput$kCost, strCost))
   game <- updateMSE(game, strCost)
@@ -26,9 +26,9 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   costData
 }
 
-computeStrCost <- function(game, matchPs) {
+computeStrCost <- function(game, gamePs) {
   goals <- game$goals
-  expectedResult <- matchPs
+  expectedResult <- gamePs
   actualResult <- as.numeric(c(goals[1] > goals[2],
       goals[1] == goals[2], goals[1] < goals[2]))
   mse <- computeMSE(actualResult, expectedResult)

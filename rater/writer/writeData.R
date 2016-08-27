@@ -36,7 +36,7 @@ getGamesData <- function(gi, T) {
 updateGames <- function(T, game) {
   numDecimals <- 4
   i <- game$gameRow
-  strNorm <- round(game$strNorm, numDecimals);
+  strNorm <- round(game$strNorm, numDecimals)
   strNextNorm <- round(computeStrNorm(game$strNext), numDecimals)
   T[i, 'Date'] <- game$gameDateStr
   T[i, 'HomeAttack'] <- strNorm[1, 1]
