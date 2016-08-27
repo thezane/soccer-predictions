@@ -5,7 +5,7 @@ updateCost <- function(rOptions, rOutput, game, gamePrev) {
     rOutput <- updateStrMeanCosts(rOutput)
   }
 
-  if (isRelevant(game, rOutput$contest)) {
+  if (game$isRelevant) {
     costData <- updateRatingsCost(rOptions, rOutput, game)
   }
   else {
@@ -18,8 +18,9 @@ updateCost <- function(rOptions, rOutput, game, gamePrev) {
 updateRatingsCost <- function(rOptions, rOutput, game) {
   matchPs <- forecastMatch(game, rOptions$model)
   t <- as.numeric(rOutput$currentDate - game$gameDate)
-  strCost <- expDecay(t, rOutput$kCost, computeStrCost(game, matchPs))
-  rOutput <- updateStrCost(rOutput, strCost)
+  strCost <- computeStrCost(game, matchPs)
+  rOutput <- updateStrCost(rOutput,
+      expDecay(t, rOutput$kCost, strCost))
   game <- updateMSE(game, strCost)
   costData <- list(rOutput=rOutput, game=game)
   costData

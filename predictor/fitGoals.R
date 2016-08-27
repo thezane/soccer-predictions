@@ -25,7 +25,7 @@ fitGoalsSetup <- function() {
   source("forecastMatch.R")
   source("getGeneralContest.R")
   bivPoisFiles <- list.files("bivpois-Rcode", full.names=TRUE)
-  sapply(bivPoisFiles, source)
+  lapply(bivPoisFiles, source)
 }
 
 getMatchSrc <- function(currentDate, matchSrc) {

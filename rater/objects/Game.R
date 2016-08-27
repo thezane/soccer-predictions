@@ -1,4 +1,5 @@
-newGame <- function(T, i, homeTeamName, awayTeamName, gameDate) {
+newGame <- function(T, i, homeTeamName, awayTeamName, tTree, contest,
+      gameDate) {
   contest <- T[[i, "Contest"]]
   goals <- c(T[[i, "HomeGoals"]], T[[i, "AwayGoals"]])
   zeroesMat <- matrix(0, 2, 2)
@@ -26,6 +27,13 @@ newGame <- function(T, i, homeTeamName, awayTeamName, gameDate) {
     gameNum=0,
     gameRow=i
   )
+  
+  homeTeam <- tTree[[game$teamNames[1]]]
+  awayTeam <- tTree[[game$teamNames[2]]]
+  game$isRelevant <- homeTeam$fName != awayTeam$fName ||
+        (!game$isQualifier &&
+        (game$isInternational || grepl(contest, game$contest)))
+  
   class(game) <- "Game"
   game
 } 
@@ -73,15 +81,6 @@ updateGamePostRate <- function(game, strPost) {
   alphas <- 1 / (1 + game$teamXP)
   game$strNext <- alphas * strPost + (1 - alphas) * game$teamStr
   game
-}
-
-isRelevant <- function(game, contest) {
-  homeTeam <- rOutput$tTree[[game$teamNames[1]]]
-  awayTeam <- rOutput$tTree[[game$teamNames[2]]]
-  isRelevantGame <- homeTeam$fName != awayTeam$fName ||
-        (!game$isQualifier &&
-        (game$isInternational || grepl(contest, game$contest)))
-  isRelevantGame
 }
 
 updateMSE <- function(game, mse) {

@@ -6,7 +6,7 @@ forecastRatings <- function(currentDate, contest) {
   dateFormat <- "%m/%d/%y"
   dataPath <- "../../data/"
   currentDate <- as.Date(currentDate, dateFormat)
-  readsData <- readData(currentDate, dateFormat, dataPath)
+  readsData <- readData(currentDate, contest, dateFormat, dataPath)
   tTree <- readsData[["tTree"]]
   fTree <- readsData[["fTree"]]
   gTree <- readsData[["gTree"]]
@@ -14,9 +14,8 @@ forecastRatings <- function(currentDate, contest) {
   hA <- readsData[["hA"]]
   gi <- newGameIterator(gTree)
   gamesData <- normalizeGameGoals(gTree, gi, hA)
-  rOutput <- optimizeRatings(tTree, fTree, gTree, gi,
-      currentDate, contest)
-  gi <- rOutput$gi
-  writeData(gi, T, dataPath)
-  rOutput
+  rData <- optimizeRatings(tTree, fTree, gTree, gi, currentDate,
+      contest)
+  writeData(rData, T, dataPath)
+  rData
 }

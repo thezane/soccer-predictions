@@ -1,4 +1,14 @@
-writeData <- function(gi, T, dataPath) {
+writeData <- function(rData, T, dataPath) {
+  rOutput <- rData[["rOutput"]]
+  gamesData <- getGamesData(rOutput$gi, T)
+  endDate <- gamesData[["endDate"]]
+  T <- gamesData[["T"]]
+  outFile <- paste(dataPath, "sodm-", endDate, sep="")
+  save(rData, file=paste(outFile, ".RData", sep=""))
+  write.csv(T, paste(outFile, ".csv", sep=""), row.names=FALSE)
+}
+
+getGamesData <- function(gi, T) {
   colNames = c(
       "HomeAttack", "HomeDefense",
       "AwayAttack", "AwayDefense",
@@ -7,8 +17,8 @@ writeData <- function(gi, T, dataPath) {
       "MSE")
   T[colNames] <- 0
   gi <- reset(gi)
-  endDate <- ""
-  
+  endDate <- "" 
+
   while (hasNextGame(gi)) {
     gameData <- nextGame(gi)
     gi <- gameData[["gi"]]
@@ -19,8 +29,8 @@ writeData <- function(gi, T, dataPath) {
   
   T <- T[order(as.Date(T[, "Date"]), decreasing=TRUE), ]
   endDate <- gsub("/", "-", endDate)
-  outFile <- paste(dataPath, "sodm-", endDate, ".csv", sep="")
-  write.csv(T, outFile, row.names=FALSE)
+  gamesData <- list(T=T, endDate=endDate)
+  gamesData
 }
 
 updateGames <- function(T, game) {

@@ -1,10 +1,10 @@
 newModel <- function(fTree) {
   model <- list(
     aBeta=0.5,
-    dBeta=0.6,
+    dBeta=0.5,
     corrBeta=-5,
     p=0.05,
-    theta=0.9
+    theta=0.5
   )
   class(model) <- "Model"
   model
