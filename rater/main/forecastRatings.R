@@ -18,7 +18,9 @@ forecastRatings <- function(currentDate, currentContest) {
   gTree <- gamesData[["gTree"]]
   gi <- gamesData[["gi"]]
   hA <- gamesData[["hA"]]
-  rData <- optimizeRatings(tTree, fTree, gTree, gi, hA, currentDate)
+  relevantGoals <- gamesData[["goalsRelevant"]]
+  rData <- optimizeRatings(tTree, fTree, gTree, gi, hA, relevantGoals,
+      currentDate)
   writeData(rData, T, dataPath)
   rData
 }

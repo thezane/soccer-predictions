@@ -1,16 +1,25 @@
-newRatingsOutput <- function(tTree, gTree, gi, hA, currentDate) {
+newRatingsOutput <- function(tTree, gTree, gi, hA, goalsRelevant,
+    currentDate) {
   rOutput <- list(
     tTree=tTree,
     gTree=gTree,
     gi=gi,
     hA=hA,
+    goalsRelevant=goalsRelevant,
+    goalsExpected=0,
     currentDate=currentDate,
-    kCost=1/365,
+    kCost=1/(2*365),
     strCost=0,
     strMeanCosts=NULL,
     y=Inf
   )
   class(rOutput) <- "RatingsOutput"
+  rOutput
+}
+
+updateStrCost <- function(rOutput, goalsExpected, strCost) {
+  rOutput$strCost <- rOutput$strCost + strCost
+  rOutput$goalsExpected <- rOutput$goalsExpected + sum(goalsExpected)
   rOutput
 }
 
@@ -25,9 +34,11 @@ updateStrMeanCosts <- function(rOutput) {
   rOutput
 }
 
-updateStrCost <- function(rOutput, strCost) {
-  rOutput$strCost <- rOutput$strCost + strCost
-  rOutput
+computeGoalsCost <- function(rOutput) {
+  goalsExpected <- rOutput$goalsExpected
+  goalsRelevant <- rOutput$goalsRelevant
+  goalsCost <- max(c(goalsExpected / goalsRelevant,
+      goalsRelevant / goalsExpected))
 }
 
 computeStrMeanCost <- function(rOutput) {

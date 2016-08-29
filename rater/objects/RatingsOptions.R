@@ -4,7 +4,7 @@ newRatingsOptions <- function(fTree) {
 
   rOptions <- list(
     ks=c(1, 1),
-    c=0.5,
+    c=1,
     model=newModel(),
     xpDefault=1,
     fTree=fTree,

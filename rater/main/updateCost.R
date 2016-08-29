@@ -18,19 +18,24 @@ updateCost <- function(rOptions, rOutput, game, gamePrev) {
 updateRatingsCost <- function(rOptions, rOutput, game) {
   gamePrediction <- forecastGame(model=rOptions$model, game=game)
   t <- as.numeric(rOutput$currentDate - game$gameDate)
-  strCost <- computeStrCost(game, gamePrediction[["gamePs"]])
-  rOutput <- updateStrCost(rOutput,
-      expDecay(t, rOutput$kCost, strCost))
-  game <- updateMSE(game, strCost)
+  strCostData <- computeStrCost(game, gamePrediction)
+  mse <- strCostData[["mse"]]
+  rOutput <- updateStrCost(rOutput, strCostData[["goalsExpected"]],
+      expDecay(t, rOutput$kCost, mse))
+  game <- updateMSE(game, mse)
   costData <- list(rOutput=rOutput, game=game)
   costData
 }
 
-computeStrCost <- function(game, gamePs) {
+computeStrCost <- function(game, gamePrediction) {
   goals <- game$goals
+  gamePs <- gamePrediction[["gamePs"]]
   expectedResult <- gamePs
   actualResult <- as.numeric(c(goals[1] > goals[2],
       goals[1] == goals[2], goals[1] < goals[2]))
   mse <- computeMSE(actualResult, expectedResult)
-  mse
+  goals <- game$goals
+  goalsExpected <- sum(gamePrediction[["goalsExpected"]])
+  strCostData <- list(goalsExpected=goalsExpected, mse=mse)
+  strCostData
 }

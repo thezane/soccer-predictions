@@ -31,6 +31,21 @@ rateTeams <- function(rOptions, rOutput) {
   rOutput
 }
 
+resetRatings <- function(tTree) {
+  teams <- keys(tTree)
+  n <- length(teams)
+  i <- 1
+  
+  while (i <= n) {
+    teamName <- teams[i]
+    team <- tTree[[teamName]]
+    tTree[teamName] <- resetTeam(team)
+    i <- i + 1
+  }
+  
+  tTree
+} 
+
 computeStrPrereqs <- function(tTree, game, rOptions) {
   homeTeamName <- game$teamNames[1]
   awayTeamName <- game$teamNames[2]

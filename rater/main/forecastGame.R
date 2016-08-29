@@ -21,16 +21,16 @@ forecastGame <- function (gameHypo=NULL, model=NULL, game=NULL) {
   inflatedP <- model$p
   gamePrediction <- computeGamePrediction(lambdas, theta, inflatedP,
       maxGoals)
+  geomMean <- 1 / theta
+  gamePrediction[["goalsExpected"]] <- c(
+      fDIBP(lambdas[1] + lambdas[3], geomMean, inflatedP),
+      fDIBP(lambdas[2] + lambdas[3], geomMean, inflatedP))
 
   if (!isTraining) {
     gamePrediction[["homeAwayGoals"]] <- round(
-       gamePrediction[["homeAwayGoals"]], numDecimals)
-    geomMean <- 1 / theta
-    expectedGoals <- c(
-        fDIBP(lambdas[1] + lambdas[3], geomMean, inflatedP),
-        fDIBP(lambdas[2] + lambdas[3], geomMean, inflatedP))
-    gamePrediction[["expectedGoals"]] <- round(expectedGoals,
-        numDecimals)
+        gamePrediction[["homeAwayGoals"]], numDecimals)
+    gamePrediction[["goalsExpected"]] <- round(
+        gamePrediction[["goalsExpected"]], numDecimals)
   }
 
   gamePrediction
@@ -41,11 +41,11 @@ computeLambdas <- function(model, homeMeanGoals, awayMeanGoals,
   aBeta <- model$aBeta
   dBeta <- model$dBeta
   lambda1Log <- log(homeMeanGoals) +
-      aBeta * awayStr[2] +
-      dBeta * homeStr[1]
+      dBeta * awayStr[2] +
+      aBeta * homeStr[1]
   lambda2Log <- log(awayMeanGoals) +
-      aBeta * homeStr[2] +
-      dBeta * awayStr[1]
+      dBeta * homeStr[2] +
+      aBeta * awayStr[1]
   lambda3Log <- model$corrBeta
   lambdas <- exp(c(lambda1Log, lambda2Log, lambda3Log))
   lambdas
@@ -82,7 +82,7 @@ computeGamePrediction <- function(lambdas, geomP, inflatedP,
     i <- i + 1
   }
   
-  gamePrediction <- list(gamePs=gamePs, homeAwayGoals=homeAwayGoals)
+  gamePrediction <- list(homeAwayGoals=homeAwayGoals, gamePs=gamePs)
   gamePrediction
 }
 

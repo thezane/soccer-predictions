@@ -1,23 +1,26 @@
-optimizeRatings <- function(tTree, fTree, gTree, gi, hA, currentDate) {
+optimizeRatings <- function(tTree, fTree, gTree, gi, hA, relevantGoals,
+    currentDate) {
   rOptions <- newRatingsOptions(fTree)
-  rOutput <- newRatingsOutput(tTree, gTree, gi, hA, currentDate)
-  x <- c(2.59289653,  0.01000000,  0.48831919,  0.04059758,  0.94224021, -5.00000081,  0.15194786, -0.03565156, -1.54143405,  0.76698815,  0.47116043, -1.60973200, 1.86555621)
-  #x <- minimizeError(rOptions, rOutput)
+  rOutput <- newRatingsOutput(tTree, gTree, gi, hA, relevantGoals,
+      currentDate)
+  x <- minimizeError(rOptions, rOutput)
   rData <- modelRatings(x, rOptions, rOutput)
   rData
 }
 
-modelRatings <- function(x, rOptions, rOutput, lambda=1) {
+modelRatings <- function(x, rOptions, rOutput, lambdas=c(1, 1)) {
   print(x)
   rOptions <- updateOptions(rOptions, x[c(1, 2)], x[3], x[4], x[5],
       x[6], x[7], x[-c(1: 7)])
   rOutput <- rateTeams(rOptions, rOutput)
   strCost <- rOutput$strCost
+  goalsCost <- computeGoalsCost(rOutput)
   strMeanCost <- computeStrMeanCost(rOutput)
-  aReg <- lambda * min(0, 1 - 10 * strMeanCost[1]) ^ 2
-  dReg <- lambda * min(0, 1 - 10 * strMeanCost[2]) ^ 2
-  print(c(strCost, strMeanCost, aReg, dReg))
-  rOutput$y <- strCost + aReg + dReg
+  goalsReg <- lambdas[1] * min(0, 1.1 - goalsCost) ^ 2
+  aReg <- lambdas[2] * min(0, 1 - 10 * strMeanCost[1]) ^ 2
+  dReg <- lambdas[2] * min(0, 1 - 10 * strMeanCost[2]) ^ 2
+  print(c(strCost, goalsCost, strMeanCost, goalsReg, aReg, dReg))
+  rOutput$y <- strCost + goalsReg + aReg + dReg
   rData <- list(rOptions=rOptions, rOutput=rOutput)
   rData
 }
@@ -35,16 +38,16 @@ minimizeError <- function(rOptions, rOutput) {
   x <- c(ks, c, aBeta, dBeta, corrBeta, p, strFsNorm)
   xLBd <- c(modelLBd, strFsNormLBd)
   n <- length(x)
-  lambda <- 100
+  lambdas <- c(100, 100)
   tol <- 0.01
   objFun <- function(x, rOptions.=rOptions, rOutput.=rOutput,
-      lambda.=lambda) {
-      rData <- modelRatings(x, rOptions, rOutput, lambda)
+      lambdas.=lambdas) {
+      rData <- modelRatings(x, rOptions, rOutput, lambdas)
       rOutput <- rData[["rOutput"]]
       rOutput$y
   }
   optimObj <- optim(x, objFun, method="L-BFGS-B", lower=xLBd,
-      control=list(trace=3, maxit=4*n,
+      control=list(trace=3, maxit=2*n,
       abstol=tol, reltol=tol, pgtol=tol, REPORT=1))
   x <- optimObj$par
   x
