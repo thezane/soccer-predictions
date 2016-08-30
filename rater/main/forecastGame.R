@@ -17,14 +17,9 @@ forecastGame <- function (gameHypo=NULL, model=NULL, game=NULL) {
   awayStr <- strNorm[2, ]
   lambdas <- computeLambdas(model, homeMeanGoals, awayMeanGoals,
       homeStr, awayStr)
-  theta <- model$theta
-  inflatedP <- model$p
-  gamePrediction <- computeGamePrediction(lambdas, theta, inflatedP,
-      maxGoals)
-  geomMean <- 1 / theta
-  gamePrediction[["goalsExpected"]] <- c(
-      fDIBP(lambdas[1] + lambdas[3], geomMean, inflatedP),
-      fDIBP(lambdas[2] + lambdas[3], geomMean, inflatedP))
+  gamePrediction <- computeGamePrediction(lambdas, maxGoals)
+  gamePrediction[["goalsExpected"]] <- c(lambdas[1], lambdas[2]) +
+      lambdas[3]
 
   if (!isTraining) {
     gamePrediction[["homeAwayGoals"]] <- round(
@@ -38,21 +33,19 @@ forecastGame <- function (gameHypo=NULL, model=NULL, game=NULL) {
 
 computeLambdas <- function(model, homeMeanGoals, awayMeanGoals,
     homeStr, awayStr) {
-  aBeta <- model$aBeta
-  dBeta <- model$dBeta
+  strBetas <- model$strBetas
   lambda1Log <- log(homeMeanGoals) +
-      dBeta * awayStr[2] +
-      aBeta * homeStr[1]
+      strBetas[2] * awayStr[2] +
+      strBetas[1] * homeStr[1]
   lambda2Log <- log(awayMeanGoals) +
-      dBeta * homeStr[2] +
-      aBeta * awayStr[1]
+      strBetas[2] * homeStr[2] +
+      strBetas[1] * awayStr[1]
   lambda3Log <- model$corrBeta
   lambdas <- exp(c(lambda1Log, lambda2Log, lambda3Log))
   lambdas
 }
 
-computeGamePrediction <- function(lambdas, geomP, inflatedP,
-    maxGoals) {
+computeGamePrediction <- function(lambdas, maxGoals) {
   n <- maxGoals + 1
   homeAwayGoals <- matrix(nrow=n, ncol=n)
   gamePs <- rep(0, 3)
@@ -64,16 +57,7 @@ computeGamePrediction <- function(lambdas, geomP, inflatedP,
     while (j <= n) {
       homeGoals <- i - 1
       awayGoals <- j - 1
-      fBP <- pbivpois(homeGoals, awayGoals, lambdas)
-      
-      if (homeGoals == awayGoals) {
-		fD <- dgeom(homeGoals, geomP)
-        p <- fDIBP(fBP, fD, inflatedP)
-      }
-      else {
-        p <- fDIBP(fBP, 0, inflatedP)
-      }
-      
+      p <- pbivpois(homeGoals, awayGoals, lambdas)      
       homeAwayGoals[i, j] <- p
       gamePs <- updateGamePs(gamePs, homeGoals, awayGoals, p)      
       j <- j + 1
@@ -98,8 +82,4 @@ updateGamePs <- function(gamePs, homeGoals, awayGoals, p) {
   }
   
   gamePs
-}
-
-fDIBP <- function(fBP, fD, p) {
-  (1 - p) * fBP + p * fD
 }

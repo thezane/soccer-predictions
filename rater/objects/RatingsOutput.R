@@ -1,5 +1,4 @@
-newRatingsOutput <- function(tTree, gTree, gi, hA, goalsRelevant,
-    currentDate) {
+newRatingsOutput <- function(tTree, gTree, gi, hA, goalsRelevant) {
   rOutput <- list(
     tTree=tTree,
     gTree=gTree,
@@ -7,8 +6,7 @@ newRatingsOutput <- function(tTree, gTree, gi, hA, goalsRelevant,
     hA=hA,
     goalsRelevant=goalsRelevant,
     goalsExpected=0,
-    currentDate=currentDate,
-    kCost=1/(2*365),
+    kCost=1/(4*365),
     strCost=0,
     strMeanCosts=NULL,
     y=Inf

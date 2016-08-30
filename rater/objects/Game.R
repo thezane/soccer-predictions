@@ -28,11 +28,8 @@ newGame <- function(T, i, homeTeamName, awayTeamName, tTree, gameDate,
     gameRow=i
   )
   
-  homeTeam <- tTree[[game$teamNames[1]]]
-  awayTeam <- tTree[[game$teamNames[2]]]
-  game$isRelevant <- homeTeam$fName != awayTeam$fName ||
-        (!game$isQualifier &&
-        (game$isInternational || grepl(currentContest, game$contest)))
+  game$isRelevant <- !game$isQualifier &&
+        (game$isInternational || grepl(currentContest, game$contest))
   
   class(game) <- "Game"
   game

@@ -1,4 +1,4 @@
-normalizeGameGoals <- function(gTree, gi, hA) {
+computeOptPrereqs <- function(gTree, gi, hA) {
   hA <- updateHAData(hA)
   gi <- reset(gi)
   goalsRelevant <- 0
@@ -14,7 +14,7 @@ normalizeGameGoals <- function(gTree, gi, hA) {
         as.numeric(game$isRelevant) * sum(game$goals)
   }
   
-  gamesData <- list(gTree=gTree, gi=gi, hA=hA,
+  optPrereqs <- list(gTree=gTree, gi=gi, hA=hA,
       goalsRelevant=goalsRelevant)
-  gamesData
+  optPrereqs
 }

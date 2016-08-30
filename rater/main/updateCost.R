@@ -17,11 +17,10 @@ updateCost <- function(rOptions, rOutput, game, gamePrev) {
 
 updateRatingsCost <- function(rOptions, rOutput, game) {
   gamePrediction <- forecastGame(model=rOptions$model, game=game)
-  t <- as.numeric(rOutput$currentDate - game$gameDate)
   strCostData <- computeStrCost(game, gamePrediction)
   mse <- strCostData[["mse"]]
   rOutput <- updateStrCost(rOutput, strCostData[["goalsExpected"]],
-      expDecay(t, rOutput$kCost, mse))
+      mse)
   game <- updateMSE(game, mse)
   costData <- list(rOutput=rOutput, game=game)
   costData

@@ -1,8 +1,9 @@
-forecastRatings <- function(currentDate, currentContest) {
+forecastRatings <- function(currentDate, currentContest, rData=NULL) {
   library(hash)
+  library(parallel)
   srcFiles <- list.files("../", ".*\\.R",
       full.names=TRUE, recursive=TRUE)
-  lapply(srcFiles, source)
+  sapply(srcFiles, source)
   dateFormat <- "%m/%d/%y"
   dataPath <- "../../data/"
   currentDate <- as.Date(currentDate, dateFormat)
@@ -14,13 +15,9 @@ forecastRatings <- function(currentDate, currentContest) {
   T <- readsData[["T"]]
   hA <- readsData[["hA"]]
   gi <- newGameIterator(gTree)
-  gamesData <- normalizeGameGoals(gTree, gi, hA)
-  gTree <- gamesData[["gTree"]]
-  gi <- gamesData[["gi"]]
-  hA <- gamesData[["hA"]]
-  relevantGoals <- gamesData[["goalsRelevant"]]
-  rData <- optimizeRatings(tTree, fTree, gTree, gi, hA, relevantGoals,
-      currentDate)
+  optPrereqs <- computeOptPrereqs(gTree, gi, hA)
+  rData <- optimizeRatings(tTree, fTree, optPrereqs, relevantGoals,
+      rData)
   writeData(rData, T, dataPath)
   rData
 }
