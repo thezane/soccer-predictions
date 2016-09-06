@@ -1,7 +1,7 @@
 run <- function() {
   source("forecastRatings.R")
   source("../verifier/verifySodm.R")
-  load("../../data/sodm-2014-07-13.Rdata")
+  load("../../data/sodm-2014-07-13.RData")
   library(parallel)
   dates <- c("6/9/16", "6/14/16", "6/18/16", "6/24/16",
       "6/29/16", "7/5/16", "7/9/16")

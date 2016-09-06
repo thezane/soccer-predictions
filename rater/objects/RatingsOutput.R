@@ -6,10 +6,12 @@ newRatingsOutput <- function(tTree, gTree, gi, goalsRelevant,
     gi=gi,
     goalsRelevant=goalsRelevant,
     goalsExpected=0,
+    meanGoalsMap=meanGoalsMap,
     strCosts=0,
     strMeanCosts=NULL,
     y=Inf
   )
+  
   class(rOutput) <- "RatingsOutput"
   rOutput
 }

@@ -36,7 +36,7 @@ addPredictions <- function (matches, location, dataPath) {
   vNames <- c("HomeWin", "Tie", "AwayWin")
   matches[vNames] <- 0
   header = "sodm-"
-  fileType <- ".Rdata"
+  fileType <- ".RData"
   matchSrc <- ""
   n <- nrow(matches)
   i <- 1
@@ -86,8 +86,6 @@ addPrediction <- function(rData, matchesRow, location) {
   homeTeamName <- matchesRow[["HomeTeam"]]
   awayTeamName <- matchesRow[["AwayTeam"]]
   contestType <- getContestType(matchesRow[["Contest"]])
-  homeGoals <- matchesRow[["HomeGoals"]]
-  awayGoals <- matchesRow[["AwayGoals"]]
   gameHypo <- newGameHypo(homeTeamName, awayTeamName, contestType,
       location, rData)
   gamePrediction <- forecastGame(gameHypo)
