@@ -1,5 +1,4 @@
 updateCost <- function(rOptions, rOutput, game, gamePrev) {
-
   if (!is.null(gamePrev) && gamePrev$isQualifier && game$isWocG) {
     rOutput <- updateStrMeanCosts(rOutput)
   }
@@ -19,7 +18,7 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   strCostData <- computeStrCost(game, gamePrediction)
   sse <- strCostData[["sse"]]
   rOutput <- updateStrCosts(rOutput, strCostData[["goalsExpected"]],
-      sse)
+      sse, game)
   game <- updateSSE(game, sse)
   costData <- list(rOutput=rOutput, game=game)
   costData

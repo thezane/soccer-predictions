@@ -6,7 +6,6 @@ newRatingsOutput <- function(tTree, gTree, gi, goalsRelevant,
     gi=gi,
     goalsRelevant=goalsRelevant,
     goalsExpected=0,
-    kCost=1/(4*365),
     meanGoalsMap=meanGoalsMap,
     strCosts=0,
     strMeanCosts=NULL,
@@ -18,7 +17,7 @@ newRatingsOutput <- function(tTree, gTree, gi, goalsRelevant,
 }
 
 updateStrCosts <- function(rOutput, goalsExpected, strCosts, game) {
-  rOutput$strCosts <- c(rOutput$strCosts, strCosts)
+  rOutput$strCosts <- c(rOutput$strCosts, strCosts) * as.numeric(game$year == 2016)
   rOutput$goalsExpected <- rOutput$goalsExpected + sum(goalsExpected)
   rOutput
 }
