@@ -28,8 +28,8 @@ updateStrMeanCosts <- function(rOutput) {
   teamStrNorms <- computeStrNorm(data.frame(teams[["teamStr"]]))
   strNormMean <- c(mean(teamStrNorms[[1]]),
       mean(teamStrNorms[[2]]))
-  strMeanCost <- c(computeMSE(strNormMean[1], 0),
-      computeMSE(strNormMean[2], 0))
+  strMeanCost <- c(computeSSE(strNormMean[1], 0),
+      computeSSE(strNormMean[2], 0))
   rOutput$strMeanCosts <- c(rOutput$strMeanCosts, strMeanCost)
   rOutput
 }
