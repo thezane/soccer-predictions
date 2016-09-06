@@ -1,6 +1,7 @@
 forecastRatings <- function(currentDate, currentContest, rData=NULL) {
   library(hash)
   library(parallel)
+  library(MASS)
   srcFiles <- list.files("../", ".*\\.R",
       full.names=TRUE, recursive=TRUE)
   sapply(srcFiles, source)
@@ -13,9 +14,8 @@ forecastRatings <- function(currentDate, currentContest, rData=NULL) {
   fTree <- readsData[["fTree"]]
   gTree <- readsData[["gTree"]]
   T <- readsData[["T"]]
-  hA <- readsData[["hA"]]
   gi <- newGameIterator(gTree)
-  optPrereqs <- computeOptPrereqs(gTree, gi, hA)
+  optPrereqs <- computeOptPrereqs(gTree, gi, T)
   rData <- optimizeRatings(tTree, fTree, optPrereqs, relevantGoals,
       rData)
   writeData(rData, T, dataPath)

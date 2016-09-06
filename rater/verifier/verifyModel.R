@@ -7,7 +7,7 @@ verifyModel <- function(model, currentYear) {
       stringsAsFactors=FALSE)
   verifiedPredictions <- do.call(rbind.data.frame,
       apply(model, 1, verifyPrediction))
-  model["MSE"] <- verifiedPredictions[["MSE"]]
+  model["SSE"] <- verifiedPredictions[["SSE"]]
   model["IsCorrect"] <- verifiedPredictions[["IsCorrect"]]
   write.csv(model, fileName, row.names=FALSE)
 } 
@@ -24,7 +24,7 @@ verifyPrediction <- function(matchesRow) {
       homeGoals < awayGoals)
   isCorrect <- as.numeric(which.is.max(expectedResult) ==
       which.is.max(actualResult))
-  mse <- round(sum((expectedResult - actualResult) ^ 2), numDecimals)
-  verifiedPredictions <- list(IsCorrect=isCorrect, MSE=mse)
+  sse <- round(sum((expectedResult - actualResult) ^ 2), numDecimals)
+  verifiedPredictions <- list(IsCorrect=isCorrect, SSE=sse)
   verifiedPredictions
 }

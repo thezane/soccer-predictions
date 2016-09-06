@@ -6,7 +6,6 @@ readData <- function(currentDate, contest, dateFormat, dataPath) {
       dataPath)
   gTree <- gamesData[["gTree"]]
   T <- gamesData[["T"]]
-  hA <- gamesData[["hA"]]
-  readsData <- list(tTree=tTree, fTree=fTree, gTree=gTree, T=T, hA=hA)
+  readsData <- list(tTree=tTree, fTree=fTree, gTree=gTree, T=T)
   readsData
 } 

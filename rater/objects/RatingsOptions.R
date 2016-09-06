@@ -3,8 +3,8 @@ newRatingsOptions <- function(fTree) {
   numFs <- length(fNames)
 
   rOptions <- list(
-    ks=c(1, 1),
-    c=0.3,
+    ks=c(1.5, 1.5),
+    c=0.2,
     model=newModel(),
     xpDefault=1,
     fTree=fTree,
@@ -18,10 +18,10 @@ newRatingsOptions <- function(fTree) {
   rOptions
 }
 
-updateOptions <- function(rOptions, ks, c, strBeta, strFsNorm) {
+updateOptions <- function(rOptions, ks, c, strBetas, strFsNorm) {
   rOptions$ks <- ks
   rOptions$c <- c
-  rOptions$model <- updateModel(rOptions$model, strBeta)
+  rOptions$model <- updateModel(rOptions$model, strBetas)
   strFs <- exp(strFsNorm)
   i <- 1
   
@@ -32,12 +32,4 @@ updateOptions <- function(rOptions, ks, c, strBeta, strFsNorm) {
   }
 
   rOptions
-}
-
-convertToX <- function(rOptions) {
-  strFsMat <- values(rOptions$fTree)
-  strFsNorm <- log(matrix(strFsMat[1, ]))
-  model <- rOptions$model
-  x <- c(rOptions$ks, rOptions$c, model$strBetas[1], strFsNorm)
-  x
 }

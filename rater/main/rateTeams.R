@@ -51,9 +51,7 @@ computeStrPrereqs <- function(tTree, game, rOptions) {
   awayTeamName <- game$teamNames[2]
   homeTeam <- tTree[[homeTeamName]]
   awayTeam <- tTree[[awayTeamName]]
-  fTree <- rOptions$fTree 
-  game <- updateGamePreRate(game, fTree, rOptions$ks,
-      homeTeam, awayTeam)
+  game <- updateGamePreRate(game, rOptions, homeTeam, awayTeam)
   strPrereqs <- list(game=game, tTree=tTree)
   strPrereqs
 }

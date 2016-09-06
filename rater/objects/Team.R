@@ -24,7 +24,7 @@ resetTeam <- function(team) {
 
 updateTeam <- function(team, game, i) {
   team$updateDate <- game$gameDate
-  team$xp <- game$teamXP[i] + 1
+  team$xp <- game$teamXP[i]
   team$teamStr <- game$strNext[i, ]
   team$isUpdated <- TRUE
   team
@@ -47,7 +47,7 @@ computeXP <- function(team, gameDate, k) {
   }
   else {
     t <- as.numeric(gameDate - team$updateDate)
-    xp <- expDecay(t, k / 365, team$xp)
+    xp <- computeExpDecay(t, k / 365, team$xp)
   }
 
   xp

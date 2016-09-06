@@ -1,22 +1,24 @@
-newRatingsOutput <- function(tTree, gTree, gi, hA, goalsRelevant) {
+newRatingsOutput <- function(tTree, gTree, gi, goalsRelevant,
+    meanGoalsMap) {
   rOutput <- list(
     tTree=tTree,
     gTree=gTree,
     gi=gi,
-    hA=hA,
     goalsRelevant=goalsRelevant,
     goalsExpected=0,
     kCost=1/(4*365),
-    strCost=0,
+    meanGoalsMap=meanGoalsMap,
+    strCosts=0,
     strMeanCosts=NULL,
     y=Inf
   )
+  
   class(rOutput) <- "RatingsOutput"
   rOutput
 }
 
-updateStrCost <- function(rOutput, goalsExpected, strCost) {
-  rOutput$strCost <- rOutput$strCost + strCost
+updateStrCosts <- function(rOutput, goalsExpected, strCosts, game) {
+  rOutput$strCosts <- c(rOutput$strCosts, strCosts)
   rOutput$goalsExpected <- rOutput$goalsExpected + sum(goalsExpected)
   rOutput
 }

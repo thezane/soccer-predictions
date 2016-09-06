@@ -1,7 +1,6 @@
 updateCost <- function(rOptions, rOutput, game, gamePrev) {
 
-  if (!is.null(gamePrev) && gamePrev$isQualifier &&
-        game$isWorldCupGroup) {
+  if (!is.null(gamePrev) && gamePrev$isQualifier && game$isWocG) {
     rOutput <- updateStrMeanCosts(rOutput)
   }
 
@@ -18,10 +17,10 @@ updateCost <- function(rOptions, rOutput, game, gamePrev) {
 updateRatingsCost <- function(rOptions, rOutput, game) {
   gamePrediction <- forecastGame(model=rOptions$model, game=game)
   strCostData <- computeStrCost(game, gamePrediction)
-  mse <- strCostData[["mse"]]
-  rOutput <- updateStrCost(rOutput, strCostData[["goalsExpected"]],
-      mse)
-  game <- updateMSE(game, mse)
+  sse <- strCostData[["sse"]]
+  rOutput <- updateStrCosts(rOutput, strCostData[["goalsExpected"]],
+      sse)
+  game <- updateSSE(game, sse)
   costData <- list(rOutput=rOutput, game=game)
   costData
 }
@@ -32,9 +31,9 @@ computeStrCost <- function(game, gamePrediction) {
   expectedResult <- gamePs
   actualResult <- as.numeric(c(goals[1] > goals[2],
       goals[1] == goals[2], goals[1] < goals[2]))
-  mse <- computeMSE(actualResult, expectedResult)
+  sse <- sum(computeSSE(actualResult, expectedResult))
   goals <- game$goals
   goalsExpected <- sum(gamePrediction[["goalsExpected"]])
-  strCostData <- list(goalsExpected=goalsExpected, mse=mse)
+  strCostData <- list(goalsExpected=goalsExpected, sse=sse)
   strCostData
 }

@@ -1,5 +1,5 @@
-computeOptPrereqs <- function(gTree, gi, hA) {
-  hA <- updateHAData(hA)
+computeOptPrereqs <- function(gTree, gi, T) {
+  meanGoalsMap <- computeMeanGoalsMap(T)
   gi <- reset(gi)
   goalsRelevant <- 0
   
@@ -8,13 +8,13 @@ computeOptPrereqs <- function(gTree, gi, hA) {
     gi <- gameData[["gi"]]
     game <- gameData[["game"]]
     gDateList <- gTree[[game$gameDateStr]]
-    gDateList[[game$gameNum]] <- normalizeGoals(game, hA$hAData)
+    gDateList[[game$gameNum]] <- normalizeGoals(game, meanGoalsMap)
     gTree[game$gameDateStr] <- gDateList
     goalsRelevant <- goalsRelevant +
         as.numeric(game$isRelevant) * sum(game$goals)
   }
   
-  optPrereqs <- list(gTree=gTree, gi=gi, hA=hA,
-      goalsRelevant=goalsRelevant)
+  optPrereqs <- list(gTree=gTree, gi=gi, goalsRelevant=goalsRelevant,
+      meanGoalsMap=meanGoalsMap)
   optPrereqs
 }
