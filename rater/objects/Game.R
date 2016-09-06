@@ -23,7 +23,8 @@ newGame <- function(T, i, homeTeamName, awayTeamName, tTree, gameDate,
     existsHA=T[[i, "HomeAdvantage"]],
     isQualifier=grepl("-Q", contest),
     isInternational=grepl("(WOC)|(COC)", contest),
-    isWorldCupGroup=(contest=="WOC-G"),
+    isCoc=(contest=="COC"),
+    isWocG=(contest=="WOC-G"),
     gameNum=0,
     gameRow=i
   )
@@ -62,9 +63,8 @@ updateGamePreRate <- function(game, fTree, ks, homeTeam, awayTeam) {
   game$teamStr <- matrix(c(computeTeamStr(homeTeam, fTree),
       computeTeamStr(awayTeam, fTree)), 2, 2, TRUE)
   game$strNorm <- computeStrNorm(game$teamStr)
-  isQualifier <- game$isQualifier
-  k <- as.numeric(isQualifier) * ks[1] +
-      as.numeric(!isQualifier) * ks[2]
+  isKQ <- game$isQualifier || game$isCoc
+  k <- as.numeric(isKQ) * ks[1] + as.numeric(!isKQ) * ks[2]
   game$teamXP <- c(computeXP(homeTeam, gameDate, k),
       computeXP(awayTeam, gameDate, k))
   game

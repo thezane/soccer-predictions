@@ -1,7 +1,6 @@
 updateCost <- function(rOptions, rOutput, game, gamePrev) {
 
-  if (!is.null(gamePrev) && gamePrev$isQualifier &&
-        game$isWorldCupGroup) {
+  if (!is.null(gamePrev) && gamePrev$isQualifier && game$isWocG) {
     rOutput <- updateStrMeanCosts(rOutput)
   }
 
