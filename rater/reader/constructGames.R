@@ -17,7 +17,6 @@ constructGames <- function(currentDate, tTree, currentContest,
           tTree, gameDate, currentContest)
       gTree <- gameData[["gTree"]]
       game <- gameData[["game"]]
-      diffSameFGames <- gameData[["diffSameFGames"]]
       i <- i + 1
     }
     else {
@@ -35,8 +34,6 @@ addGame <- function(T, i, gTree, homeTeamName, awayTeamName, tTree,
   game <- newGame(T, i, homeTeamName, awayTeamName, tTree, gameDate,
       currentContest)
   gameDateStr <- game$gameDateStr
-  isRelevant <- game$isRelevant
-  isSameF <- game$isSameF
   
   if (!has.key(gameDateStr, gTree)) {
     gTree[gameDateStr] <- NULL

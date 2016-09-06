@@ -6,18 +6,16 @@ newRatingsOutput <- function(tTree, gTree, gi, goalsRelevant,
     gi=gi,
     goalsRelevant=goalsRelevant,
     goalsExpected=0,
-    meanGoalsMap=meanGoalsMap,
     strCosts=0,
     strMeanCosts=NULL,
     y=Inf
   )
-  
   class(rOutput) <- "RatingsOutput"
   rOutput
 }
 
-updateStrCosts <- function(rOutput, goalsExpected, strCosts, game) {
-  rOutput$strCosts <- c(rOutput$strCosts, strCosts) * as.numeric(game$year == 2016)
+updateStrCost <- function(rOutput, goalsExpected, strCost) {
+  rOutput$strCosts <- c(rOutput$strCosts, strCost)
   rOutput$goalsExpected <- rOutput$goalsExpected + sum(goalsExpected)
   rOutput
 }
@@ -27,8 +25,8 @@ updateStrMeanCosts <- function(rOutput) {
   teamStrNorms <- computeStrNorm(data.frame(teams[["teamStr"]]))
   strNormMean <- c(mean(teamStrNorms[[1]]),
       mean(teamStrNorms[[2]]))
-  strMeanCost <- c(computeSSE(strNormMean[1], 0),
-      computeSSE(strNormMean[2], 0))
+  strMeanCost <- c(computeMSE(strNormMean[1], 0),
+      computeMSE(strNormMean[2], 0))
   rOutput$strMeanCosts <- c(rOutput$strMeanCosts, strMeanCost)
   rOutput
 }

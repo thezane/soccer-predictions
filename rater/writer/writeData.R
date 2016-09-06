@@ -14,8 +14,7 @@ getGamesData <- function(gi, T) {
       "AwayAttack", "AwayDefense",
       "HomeAttackNext", "HomeDefenseNext",
       "AwayAttackNext", "AwayDefenseNext",
-      "HomeXP", "AwayXP",
-      "SSE")
+      "MSE")
   T[colNames] <- 0
   gi <- reset(gi)
   endDate <- "" 
@@ -39,18 +38,15 @@ updateGames <- function(T, game) {
   i <- game$gameRow
   strNorm <- round(game$strNorm, numDecimals)
   strNextNorm <- round(computeStrNorm(game$strNext), numDecimals)
-  teamXP <- round(game$teamXP, numDecimals)
-  T[i, "Date"] <- game$gameDateStr
-  T[i, "HomeAttack"] <- strNorm[1, 1]
-  T[i, "HomeDefense"] <- strNorm[1, 2]
-  T[i, "AwayAttack"] <- strNorm[2, 1]
-  T[i, "AwayDefense"] <- strNorm[2, 2]
-  T[i, "HomeAttackNext"] <- strNextNorm[1, 1]
-  T[i, "HomeDefenseNext"] <- strNextNorm[1, 2]
-  T[i, "AwayAttackNext"] <- strNextNorm[2, 1]
-  T[i, "AwayDefenseNext"] <- strNextNorm[2, 2]
-  T[i, "HomeXP"] <- teamXP[1]
-  T[i, "AwayXP"] <- teamXP[2]
-  T[i, "SSE"] <- round(game$sse, numDecimals)
+  T[i, 'Date'] <- game$gameDateStr
+  T[i, 'HomeAttack'] <- strNorm[1, 1]
+  T[i, 'HomeDefense'] <- strNorm[1, 2]
+  T[i, 'AwayAttack'] <- strNorm[2, 1]
+  T[i, 'AwayDefense'] <- strNorm[2, 2]
+  T[i, 'HomeAttackNext'] <- strNextNorm[1, 1]
+  T[i, 'HomeDefenseNext'] <- strNextNorm[1, 2]
+  T[i, 'AwayAttackNext'] <- strNextNorm[2, 1]
+  T[i, 'AwayDefenseNext'] <- strNextNorm[2, 2]
+  T[i, "MSE"] <- round(game$mse, numDecimals)
   T 
 }
