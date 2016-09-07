@@ -51,7 +51,8 @@ normalizeGoals <- function(game, meanGoalsMap) {
     meanGoals <- meanGoalsMap[["-T-Away"]] * c(1, 1)
   }
 
-  game$goalsNorm <- goalsNorm / (meanGoals[2] / meanGoals[1])
+  goalsNorm[1] <- goalsNorm[1] * (meanGoals[2] / meanGoals[1])
+  game$goalsNorm <- goalsNorm
   game$meanGoals <- meanGoals
   game$A <- matrix(c(0, goalsNorm[2], goalsNorm[1], 0), 2, 2, TRUE)
   game
