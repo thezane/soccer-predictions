@@ -1,6 +1,6 @@
 run <- function() {
   source("forecastRatings.R")
-  source("../verifier/verifySodm.R")
+  source("../verifier/verifyOdmS.R")
   load("../../data/sodm-2014-07-13.RData")
   library(parallel)
   dates <- c("6/9/16", "6/14/16", "6/18/16", "6/24/16",
@@ -13,5 +13,5 @@ run <- function() {
       contest.=contest, rData.=rData) {
       forecastRatings(currentDate, contest, rData)})
   stopCluster(cluster)
-  verifySodm(2016, "France")
+  verifyOdmS(2016, "France")
 }

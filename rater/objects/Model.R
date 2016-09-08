@@ -7,8 +7,8 @@ newModel <- function(fTree) {
   model
 }
 
-updateModel <- function(model, strBeta, corrBeta) {
-  model$strBetas <- c(strBeta, 2 * strBeta)
+updateModel <- function(model, strBetas, corrBeta) {
+  model$strBetas <- strBetas
   model$corrBeta <- corrBeta
   model
 }

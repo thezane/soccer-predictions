@@ -1,4 +1,4 @@
-verifySodm <- function (currentYear, location) {
+verifyOdmS <- function (currentYear, location) {
   verifyModelSetup()
   dataPathIn <- "../../data/"
   fileName <- "matches.csv"
@@ -8,10 +8,10 @@ verifySodm <- function (currentYear, location) {
   matches <- getRelevantMatches(matches, currentYear)
   matches <- addPredictions(matches, location, dataPathIn)
   dataPathOut <- "../../accuracy/"
-  matchDest <- paste(dataPathOut, "verifiedSodm", currentYear, ".csv",
+  matchDest <- paste(dataPathOut, "verifiedOdmS", currentYear, ".csv",
       sep="")
   write.csv(matches, matchDest, row.names=FALSE)
-  verifyModel("Sodm", currentYear)
+  verifyModel("OdmS", currentYear)
 }
 
 verifyModelSetup <- function() {
