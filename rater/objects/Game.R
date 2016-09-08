@@ -63,9 +63,14 @@ updateGamePreRate <- function(game, fTree, ks, homeTeam, awayTeam) {
   game$teamStr <- matrix(c(computeTeamStr(homeTeam, fTree),
       computeTeamStr(awayTeam, fTree)), 2, 2, TRUE)
   game$strNorm <- computeStrNorm(game$teamStr)
-  isQualifier <- game$isQualifier
-  k <- as.numeric(isQualifier) * ks[1] +
-      as.numeric(!isQualifier) * ks[2]
+  
+  if (game$isQualifier) {
+    k <- ks[1]
+  }
+  else {
+    k <- ks[2]
+  }
+  
   game$teamXP <- c(computeXP(homeTeam, gameDate, k),
       computeXP(awayTeam, gameDate, k))
   game
@@ -73,7 +78,7 @@ updateGamePreRate <- function(game, fTree, ks, homeTeam, awayTeam) {
 
 
 updateGamePostRate <- function(game, strPost) {
-  game$strPost <- strPost
+  game$strPost <- strPost  
   alphas <- 1 / (1 + game$teamXP)
   game$strNext <- alphas * strPost + (1 - alphas) * game$teamStr
   game
