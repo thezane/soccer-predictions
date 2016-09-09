@@ -14,7 +14,7 @@ optimizeRatings <- function(tTree, fTree, optPrereqs, relevantGoals,
   }
   else {
     rOptions <- rData[["rOptions"]]
-    rOutput <- rateTeams(rOptions, rOutput)
+    rOutput <- computeRatings(rOptions, rOutput)
     rData <- list(rOptions=rOptions, rOutput=rOutput)
   }
 
@@ -50,6 +50,28 @@ trainRater <- function(rOptions, rOutput) {
   stopCluster(cluster)
   x <- optimObj$par
   x
+}
+
+rateTeams <- function(x, rOptions, rOutput, lambdas=rep(1, 4)) {
+  print(x)
+  strFsNorm <- x[-c(1: 6)]
+  rOptions <- updateOptions(rOptions, x[c(1, 2)], x[3], x[c(4, 5)],
+      x[6], strFsNorm)
+  rOutput <- computeRatings(rOptions, rOutput)
+  strCost <- rOutput$strCost
+  goalsCost <- computeGoalsCost(rOutput)
+  strMeanCost <- computeStrMeanCost(rOutput)
+  strFsNormCost <- norm(matrix(strFsNorm), "f")
+  xpCost <- rOutput$xpCost
+  goalsReg <- lambdas[1] * min(0, 1.1 - goalsCost) ^ 2
+  strReg <- lambdas[2] * (min(0, 0.05 - strMeanCost[1]) ^ 2 +
+      min(0, 0.05 - strMeanCost[1]) ^ 2)
+  strFsNormReg <- lambdas[3] * min(0, 1 - strFsNormCost) ^ 2
+  xpReg <- lambdas[4] * xpCost
+  print(c(strCost, goalsReg, strReg, strFsNormReg, xpCost))
+  rOutput$y <- strCost + goalsReg + strReg + strFsNormReg + xpReg
+  rData <- list(rOptions=rOptions, rOutput=rOutput)
+  rData
 }
 
 computeGradientPar <- function(x, n, f, e, cluster) {

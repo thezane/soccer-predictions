@@ -1,4 +1,5 @@
-forecastRatings <- function(currentDate, currentContest, rData=NULL) {
+forecastRatings <- function(currentDate, currentContest="WOC",
+    rData=NULL) {
   library(hash)
   library(parallel)
   library(MASS)
