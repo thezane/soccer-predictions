@@ -50,7 +50,3 @@ computeTukeyCost <- function(x, c=4.685) {
 
   tukeyCost
 }
-
-computeSSE <- function(x1, x2) {
-  sum((x1 - x2) ^ 2)
-} 
