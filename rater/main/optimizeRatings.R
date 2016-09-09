@@ -44,7 +44,7 @@ modelRatings <- function(x, rOptions, rOutput, lambdas=rep(1, 4)) {
 }
 
 minimizeError <- function(rOptions, rOutput) {
-  model <- c(1.5, 1.5, 0.3, 0.5, 0.5, -5)
+  model <- c(1.5, 1.5, 0.3, 0.5, 0.5, -3)
   modelLBd <- c(0, 0, 0.01, 0, 0, -Inf)
   numFs <- rOptions$numFs
   strFsNorm <- c(-0.2, -0.6, 0.2, -0.2, -0.6, 0.6)
