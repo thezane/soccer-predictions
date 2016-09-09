@@ -3,6 +3,7 @@ newTeam <- function(teamName, fName) {
     name=teamName,
     fName=fName,
     teamStr=c(1, 1),
+    strNorm=c(0, 0),
     isUpdated=FALSE,
     updateDate=as.Date("0001-01-01"),
     alpha=0.5,
@@ -26,19 +27,23 @@ updateTeam <- function(team, game, i) {
   team$updateDate <- game$gameDate
   team$xp <- game$teamXP[i] + 1
   team$teamStr <- game$strNext[i, ]
+  team$strNorm <- game$strNextNorm[i, ]
   team$isUpdated <- TRUE
   team
 }
 
-computeTeamStr <- function(team, fTree) {
+computeTeamStrs <- function(team, fTree) {
   if (!team$isUpdated) {
     teamStr <- fTree[[team$fName]]
+    strNorm=computeStrNorm(teamStr)
   }
   else {
     teamStr <- team$teamStr
+    strNorm=team$strNorm
   }
 
-  teamStr
+  teamStrs <- list(teamStr=teamStr, strNorm=strNorm)
+  teamStrs
 }
 
 computeXP <- function(team, gameDate, k) {
@@ -47,7 +52,7 @@ computeXP <- function(team, gameDate, k) {
   }
   else {
     t <- as.numeric(gameDate - team$updateDate)
-    xp <- expDecay(t, k / 365, team$xp)
+    xp <- computeExpDecay(t, k / 365, team$xp)
   }
 
   xp

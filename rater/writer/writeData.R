@@ -39,7 +39,7 @@ updateGames <- function(T, game) {
   i <- game$gameRow
   teamXP <- round(game$teamXP, numDecimals)
   strNorm <- round(game$strNorm, numDecimals)
-  strNextNorm <- round(computeStrNorm(game$strNext), numDecimals)
+  strNextNorm <- round(game$strNextNorm, numDecimals)
   T[i, "Date"] <- game$gameDateStr
   T[i, "HomeAttack"] <- strNorm[1, 1]
   T[i, "HomeDefense"] <- strNorm[1, 2]
@@ -51,6 +51,6 @@ updateGames <- function(T, game) {
   T[i, "AwayDefenseNext"] <- strNextNorm[2, 2]
   T[i, "HomeXP"] <- teamXP[1]
   T[i, "AwayXP"] <- teamXP[2]
-  T[i, "MSE"] <- round(game$mse, numDecimals)
+  T[i, "SSE"] <- round(game$sse, numDecimals)
   T 
 }

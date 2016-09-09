@@ -12,7 +12,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName, tTree, gameDate,
     goals=goals,
     goalsNorm=c(0, 0),
     meanGoals=c(0, 0),
-    mse=0,
+    sse=0,
     A=zeroesMat,
     teamNames=c(homeTeamName, awayTeamName),
     teamStr=zeroesMat,
@@ -60,9 +60,12 @@ normalizeGoals <- function(game, meanGoalsMap) {
 
 updateGamePreRate <- function(game, fTree, ks, homeTeam, awayTeam) {
   gameDate <- game$gameDate
-  game$teamStr <- matrix(c(computeTeamStr(homeTeam, fTree),
-      computeTeamStr(awayTeam, fTree)), 2, 2, TRUE)
-  game$strNorm <- computeStrNorm(game$teamStr)
+  homeTeamStrs <- computeTeamStrs(homeTeam, fTree)
+  awayTeamStrs <- computeTeamStrs(awayTeam, fTree)
+  game$teamStr <- matrix(c(homeTeamStrs[["teamStr"]],
+      awayTeamStrs[["teamStr"]]), 2, 2, TRUE)
+  game$strNorm <- matrix(c(homeTeamStrs[["strNorm"]],
+      awayTeamStrs[["strNorm"]]), 2, 2, TRUE)
   
   if (game$isQualifier) {
     k <- ks[1]
@@ -81,10 +84,11 @@ updateGamePostRate <- function(game, strPost) {
   game$strPost <- strPost  
   alphas <- 1 / (1 + game$teamXP)
   game$strNext <- alphas * strPost + (1 - alphas) * game$teamStr
+  game$strNextNorm <- computeStrNorm(game$strNext)
   game
 }
 
-updateMSE <- function(game, mse) {
-  game$mse <- mse
+updateSSE <- function(game, sse) {
+  game$sse <- sse
   game
 }

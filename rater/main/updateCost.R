@@ -17,10 +17,10 @@ updateCost <- function(rOptions, rOutput, game, gamePrev) {
 updateRatingsCost <- function(rOptions, rOutput, game) {
   gamePrediction <- forecastGame(model=rOptions$model, game=game)
   strCostData <- computeStrCost(game, gamePrediction)
-  mse <- strCostData[["mse"]]
-  rOutput <- updateStrCost(rOutput, computeTukeyCost(mse),
+  sse <- strCostData[["sse"]]
+  rOutput <- updateStrCost(rOutput, computeTukeyCost(sse),
       strCostData[["goalsExpected"]], game$teamXP)
-  game <- updateMSE(game, mse)
+  game <- updateSSE(game, sse)
   costData <- list(rOutput=rOutput, game=game)
   costData
 }
@@ -31,23 +31,10 @@ computeStrCost <- function(game, gamePrediction) {
   expectedResult <- gamePs
   actualResult <- as.numeric(c(goals[1] > goals[2],
       goals[1] == goals[2], goals[1] < goals[2]))
-  mse <- computeMSE(actualResult, expectedResult)
+  sse <- computeSSE(actualResult, expectedResult)
   goalsExpected <- sum(gamePrediction[["goalsExpected"]])
-  strCostData <- list(goalsExpected=goalsExpected, mse=mse)
+  strCostData <- list(goalsExpected=goalsExpected, sse=sse)
   strCostData
-}
-
-computeHuberCost <- function(x, c=1.345) {
-  xAbs <- abs(x)
-
-  if (xAbs <= c) {
-    huberCost <- x ^ 2
-  }
-  else {
-    huberCost <- c * (2 * xAbs - c)
-  }
-
-  huberCost
 }
 
 computeTukeyCost <- function(x, c=4.685) {

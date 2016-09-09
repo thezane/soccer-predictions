@@ -1,4 +1,4 @@
-"HomeTeam","AwayTeam","Date","Contest","HomeGoals","AwayGoals","HomeAdvantage","HomeWin","Tie","AwayWin","MSE","IsCorrect"
+"HomeTeam","AwayTeam","Date","Contest","HomeGoals","AwayGoals","HomeAdvantage","HomeWin","Tie","AwayWin","SSE","IsCorrect"
 "France","Portugal","07/10/16","EUC-K",0,1,1,0.469,0.2634,0.2677,0.8256,0
 "France","Germany","07/07/16","EUC-K",2,0,1,0.3716,0.2793,0.3491,0.5948,1
 "Portugal","Wales","07/06/16","EUC-K",2,0,0,0.3865,0.284,0.3295,0.5656,1
