@@ -1,5 +1,5 @@
-computeOptPrereqs <- function(gTree, gi, T) {
-  meanGoalsMap <- computeMeanGoalsMap(T)
+constructOptPrereqs <- function(gTree, gi, T) {
+  meanGoalsMap <- constructMeanGoalsMap(T)
   gi <- reset(gi)
   goalsRelevant <- 0
   

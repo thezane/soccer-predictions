@@ -1,5 +1,5 @@
-computeMeanGoalsMap <- function(T) {
-  meanGoalsData <- computeMeanGoalsData(T)
+constructMeanGoalsMap <- function(T) {
+  meanGoalsData <- constructMeanGoalsData(T)
   model <- rlm(Goals~GeneralContest, meanGoalsData)
   meanGoalsMap <- hash()
   modelBetas <- model$coefficients
@@ -19,7 +19,7 @@ computeMeanGoalsMap <- function(T) {
   meanGoalsMap
 }
 
-computeMeanGoalsData <- function(T) {
+constructMeanGoalsData <- function(T) {
   n <- nrow(T)
   meanGoalsData <- data.frame(matrix(nrow=2*n, ncol=0))
   meanGoalsData[1: n, "Contest"] <- T["Contest"]
