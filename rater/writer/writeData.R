@@ -15,7 +15,7 @@ getGamesData <- function(gi, T) {
       "HomeAttackNext", "HomeDefenseNext",
       "AwayAttackNext", "AwayDefenseNext",
       "HomeXP", "AwayXP",
-      "MSE")
+      "SSE")
   T[colNames] <- 0
   gi <- reset(gi)
   endDate <- "" 
