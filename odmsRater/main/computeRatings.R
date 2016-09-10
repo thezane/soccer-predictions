@@ -11,7 +11,7 @@ computeRatings <- function(rOptions, rOutput) {
     gameData <- nextGame(gi)
     gi <- gameData[["gi"]]
     game <- gameData[["game"]]
-    strPrereqs <- computeStrPrereqs(tTree, game, rOptions)
+    strPrereqs <- constructStrPrereqs(tTree, game, rOptions)
     updateStrData <- updateStr(strPrereqs, rOptions)
     tTree <- updateStrData[["tTree"]]
     game <- updateStrData[["game"]]
@@ -46,7 +46,7 @@ resetRatings <- function(tTree) {
   tTree
 } 
 
-computeStrPrereqs <- function(tTree, game, rOptions) {
+constructStrPrereqs <- function(tTree, game, rOptions) {
   homeTeamName <- game$teamNames[1]
   awayTeamName <- game$teamNames[2]
   homeTeam <- tTree[[homeTeamName]]
