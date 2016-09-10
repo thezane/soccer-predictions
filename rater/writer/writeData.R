@@ -3,7 +3,7 @@ writeData <- function(rData, T, dataPath) {
   gamesData <- getGamesData(rOutput$gi, T)
   endDate <- gamesData[["endDate"]]
   T <- gamesData[["T"]]
-  outFile <- paste(dataPath, "sodm-", endDate, sep="")
+  outFile <- paste(dataPath, "odms-", endDate, sep="")
   save(rData, file=paste(outFile, ".RData", sep=""))
   write.csv(T, paste(outFile, ".csv", sep=""), row.names=FALSE)
 }

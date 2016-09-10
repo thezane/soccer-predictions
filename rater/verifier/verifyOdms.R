@@ -1,4 +1,4 @@
-verifyOdmS <- function (currentYear, location) {
+verifyOdms <- function (currentYear, location) {
   verifyModelSetup()
   dataPathIn <- "../../data/"
   fileName <- "matches.csv"
@@ -8,10 +8,10 @@ verifyOdmS <- function (currentYear, location) {
   matches <- getRelevantMatches(matches, currentYear)
   matches <- addPredictions(matches, location, dataPathIn)
   dataPathOut <- "../../accuracy/"
-  matchDest <- paste(dataPathOut, "verifiedOdmS", currentYear, ".csv",
+  matchDest <- paste(dataPathOut, "verifiedOdms", currentYear, ".csv",
       sep="")
   write.csv(matches, matchDest, row.names=FALSE)
-  verifyModel("OdmS", currentYear)
+  verifyModel("Odms", currentYear)
 }
 
 verifyModelSetup <- function() {
@@ -35,7 +35,7 @@ getRelevantMatches <- function (matches, currentYear) {
 addPredictions <- function (matches, location, dataPath) {
   vNames <- c("HomeWin", "Tie", "AwayWin")
   matches[vNames] <- 0
-  header = "sodm-"
+  header = "odms-"
   fileType <- ".RData"
   matchSrc <- ""
   n <- nrow(matches)
