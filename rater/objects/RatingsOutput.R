@@ -27,9 +27,8 @@ updateStrCost <- function(rOutput, strCost, goalsExpected, teamXP) {
 
 updateStrMeanCosts <- function(rOutput) {
   teams <- data.frame(t(values(rOutput$tTree)))
-  teamStrNorms <- computeStrNorm(data.frame(teams[["teamStr"]]))
-  strNormMean <- c(mean(teamStrNorms[[1]]),
-      mean(teamStrNorms[[2]]))
+  strNorms <- data.frame(teams[["strNorm"]])
+  strNormMean <- c(mean(strNorms[[1]]), mean(strNorms[[2]]))
   strMeanCost <- c(computeSSE(strNormMean[1], 0),
       computeSSE(strNormMean[2], 0))
   rOutput$strMeanCosts <- c(rOutput$strMeanCosts, strMeanCost)

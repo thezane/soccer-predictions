@@ -23,13 +23,14 @@ newGame <- function(T, i, homeTeamName, awayTeamName, tTree, gameDate,
     existsHA=T[[i, "HomeAdvantage"]],
     isQualifier=grepl("-Q", contest),
     isInternational=grepl("(WOC)|(COC)", contest),
+    isPlayOff=grepl("-P", contest),
     isWocG=(contest=="WOC-G"),
     gameNum=0,
     gameRow=i
   )
   
-  game$isRelevant <- !game$isQualifier &&
-        (game$isInternational || grepl(currentContest, game$contest))
+  game$isRelevant <- game$isPlayOff || (!game$isQualifier &&
+        (game$isInternational || grepl(currentContest, game$contest)))
   
   class(game) <- "Game"
   game
