@@ -13,5 +13,5 @@ run <- function() {
       contest.=contest, rData.=rData) {
       forecastRatings(currentDate, contest, rData)})
   stopCluster(cluster)
-  verifyOdmS(2016, "France")
+  verifyOdms(2016, "France")
 }
