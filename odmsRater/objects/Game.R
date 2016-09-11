@@ -19,18 +19,21 @@ newGame <- function(T, i, homeTeamName, awayTeamName, tTree, gameDate,
     strNorm=zeroesMat,
     strNext=zeroesMat,
     strPost=zeroesMat,
+    strAgg=c(0, 0),
+    strAggNext=c(0, 0),
     teamXP=zeroesMat,
     existsHA=T[[i, "HomeAdvantage"]],
     isQualifier=grepl("-Q", contest),
     isInternational=grepl("(WOC)|(COC)", contest),
     isPlayOff=grepl("-P", contest),
+    isSame=grepl(currentContest, contest),
     isWocG=(contest=="WOC-G"),
     gameNum=0,
     gameRow=i
   )
   
   game$isRelevant <- game$isPlayOff || (!game$isQualifier &&
-        (game$isInternational || grepl(currentContest, game$contest)))
+        (game$isInternational || game$isSame))
   
   class(game) <- "Game"
   game
@@ -59,7 +62,10 @@ normalizeGoals <- function(game, meanGoalsMap) {
   game
 }
 
-updateGamePreRate <- function(game, fTree, ks, homeTeam, awayTeam) {
+updateGamePreRate <- function(game, rOptions, homeTeam, awayTeam) {
+  fTree <- rOptions$fTree
+  ks <- rOptions$ks
+  strBetas <- rOptions$model$strBetas
   gameDate <- game$gameDate
   homeTeamStrs <- computeTeamStrs(homeTeam, fTree)
   awayTeamStrs <- computeTeamStrs(awayTeam, fTree)
@@ -67,7 +73,11 @@ updateGamePreRate <- function(game, fTree, ks, homeTeam, awayTeam) {
       awayTeamStrs[["teamStr"]]), 2, 2, TRUE)
   game$strNorm <- matrix(c(homeTeamStrs[["strNorm"]],
       awayTeamStrs[["strNorm"]]), 2, 2, TRUE)
-  
+  strNorm <- game$strNorm
+  strBetas[2] <- -strBetas[2]
+  game$strAgg <- c(strNorm[1, ] %*% strBetas,
+      strNorm[2, ] %*% strBetas)
+
   if (game$isQualifier) {
     k <- ks[1]
   }
@@ -81,11 +91,16 @@ updateGamePreRate <- function(game, fTree, ks, homeTeam, awayTeam) {
 }
 
 
-updateGamePostRate <- function(game, strPost) {
+updateGamePostRate <- function(game, rOptions, strPost) {
+  strBetas <- rOptions$model$strBetas
   game$strPost <- strPost  
   alphas <- 1 / (1 + game$teamXP)
   game$strNext <- alphas * strPost + (1 - alphas) * game$teamStr
   game$strNextNorm <- computeStrNorm(game$strNext)
+  strNextNorm <- game$strNextNorm
+  strBetas[2] <- -strBetas[2]
+  game$strAggNext <- c(strNextNorm[1, ] %*% strBetas,
+      strNextNorm[2, ] %*% strBetas)
   game
 }
 

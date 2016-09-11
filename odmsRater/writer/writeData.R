@@ -10,6 +10,8 @@ writeData <- function(rData, T, dataPath) {
 
 getGamesData <- function(gi, T) {
   colNames = c(
+      "HomeStrAgg", "AwayStrAgg",
+      "HomeStrAggNext", "AwayStrAggNext",
       "HomeAttack", "HomeDefense",
       "AwayAttack", "AwayDefense",
       "HomeAttackNext", "HomeDefenseNext",
@@ -38,9 +40,15 @@ updateGames <- function(T, game) {
   numDecimals <- 4
   i <- game$gameRow
   teamXP <- round(game$teamXP, numDecimals)
+  strAgg <- round(game$strAgg, numDecimals)
+  strAggNext <- round(game$strAggNext, numDecimals)
   strNorm <- round(game$strNorm, numDecimals)
   strNextNorm <- round(game$strNextNorm, numDecimals)
   T[i, "Date"] <- game$gameDateStr
+  T[i, "HomeStrAgg"] <- strAgg[1]
+  T[i, "AwayStrAgg"] <- strAgg[2]
+  T[i, "HomeStrAggNext"] <- strAggNext[1]
+  T[i, "AwayStrAggNext"] <- strAggNext[2]
   T[i, "HomeAttack"] <- strNorm[1, 1]
   T[i, "HomeDefense"] <- strNorm[1, 2]
   T[i, "AwayAttack"] <- strNorm[2, 1]

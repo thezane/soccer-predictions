@@ -1,8 +1,8 @@
-readData <- function(currentDate, dateFormat, dataPath) {
+readData <- function(dateFormat, currentDate, dataPath) {
   matchSrc <- paste(dataPath, "matches.csv", sep="")
   T <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
-  games <- newGames(T, dateFormat)
+  games <- newGames(T, currentDate, dateFormat)
   tTree <- constructTeams(dataPath)
   readsData <- list(games=games, tTree=tTree)
   readsData

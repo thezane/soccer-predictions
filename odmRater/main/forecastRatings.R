@@ -1,4 +1,4 @@
-forecastOdm <- function(currentDate, currentContest="WOC") {
+forecastRatings <- function(currentDate, currentContest="WOC") {
   library(hash)
   library(MASS)
   srcFiles <- list.files("../", ".*\\.R",
@@ -7,8 +7,9 @@ forecastOdm <- function(currentDate, currentContest="WOC") {
   dateFormat <- "%m/%d/%y"
   dataPath <- "../../data/"
   currentDate <- as.Date(currentDate, dateFormat)
-  rOutput <- readData(currentDate, dateFormat, dataPath)
-  rOutput <- computeRatings(rOutput)
-  rOutput
+  rData <- readData(dateFormat, currentDate, dataPath)
+  rData <- computeRatings(rData, currentContest)
+  writeData(rData, dataPath)
+  rData
 }
 

@@ -1,16 +1,21 @@
-newGames <- function(T, dateFormat) {
-  T["Dates"] <- sapply(T[["Dates"]],
+newGames <- function(T, currentDate, dateFormat) {
+  T["Date"] <- sapply(T[["Date"]],
       function(date, dateFormat.=dateFormat) {
-        as.Date(date, dateFormat)})
+        as.character(as.Date(date, dateFormat))})
+  T <- T[T$Date <= currentDate, ]
   colNames = c(
+      "HomeStrAgg", "AwayStrAgg",
+      "HomeStrAggNext", "AwayStrAggNext",
       "HomeAttack", "HomeDefense",
       "AwayAttack", "AwayDefense",
       "HomeAttackNext", "HomeDefenseNext",
-      "AwayAttackNext", "AwayDefenseNext")
+      "AwayAttackNext", "AwayDefenseNext",
+      "IsCorrect")
   T[colNames] <- 0
 
   games <- list(
     T=T,
+    colNames=colNames,
     numGames=nrow(T)
   )
   
@@ -33,7 +38,7 @@ getGameData <- function(games, i, meanGoalsMap) {
   gamesData
 }
 
-updateT <- function(games, i, game) {
+updateGames <- function(games, i, game) {
   games$T[i, ] <- game
   games
 }

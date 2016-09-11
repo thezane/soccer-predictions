@@ -1,4 +1,5 @@
-scaleRating <- function(A, n, tolScale) {
+scaleRating <- function(A, n, c, tolScale) {
+  A <- A + c
   x <- rep(1, n)
   y <- A %*% (1 / x);
   
