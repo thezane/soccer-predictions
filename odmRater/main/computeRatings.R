@@ -3,7 +3,7 @@ computeRatings <- function(rData, currentContest) {
   tTree <- rData[["tTree"]]
   meanGoalsMap <- constructMeanGoalsMap(games$T)
   gameDatePrev <- NULL
-  k <- 1 / (2 * 365)
+  k <- 1 / (1.25 * 365)
   c <- 0.01
   tolScale <- 0.01
   numTeams <- length(tTree)
