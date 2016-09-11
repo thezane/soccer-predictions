@@ -30,7 +30,7 @@ trainRater <- function(rOptions, rOutput) {
   x <- c(model, strFsNorm)
   xLBd <- c(modelLBd, strFsNormLBd)
   n <- length(x)
-  lambdas <- c(100, 1e+03, 100, 100)
+  lambdas <- c(100, 1e+03, 100, 10)
   tol <- 0.01
   fn <- function(x, rOptions.=rOptions, rOutput.=rOutput,
       lambdas.=lambdas) {
