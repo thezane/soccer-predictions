@@ -1,9 +1,12 @@
 forecastRatings <- function(currentDate, currentContest="WOC") {
   library(hash)
   library(MASS)
-  srcFiles <- list.files("../", ".*\\.R",
+  regexRFiles <- ".*\\.R"
+  srcFiles <- list.files("../", regexRFiles,
       full.names=TRUE, recursive=TRUE)
-  sapply(srcFiles, source)
+  utilitiesFiles <- list.files("../../utilities", regexRFiles,
+      full.names=TRUE, recursive=TRUE)
+  sapply(c(srcFiles, utilitiesFiles), source)
   dateFormat <- "%m/%d/%y"
   dataPath <- "../../data/"
   currentDate <- as.Date(currentDate, dateFormat)

@@ -16,7 +16,7 @@ computeRatings <- function(rData, currentContest) {
     gameDate <- as.Date(game[["Date"]])
     A <- constructStrPrereqs(A, gamesData, tTree,
         gameDate, gameDatePrev, k)
-    v <- scaleRating(A, numTeams, c, tolScale)
+    v <- computeStr(A, numTeams, c, tolScale)
     updateStrData <- updateStr(v, gamesData, tTree, currentContest)
     games <- updateGames(games, i, updateStrData[["game"]])
     tTree <- updateStrData[["tTree"]]

@@ -1,6 +1,4 @@
-scaleRating <- function(A, n, c, tolScale) {
-  A <- A + c
-  x <- rep(1, n)
+scaleRating <- function(A, x, tolScale) {
   y <- A %*% (1 / x);
   
   while (TRUE) {
