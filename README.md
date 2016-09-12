@@ -1,19 +1,12 @@
 # soccer-predictions
 
-This is a statistical forecast model for predicting game outcomes in soccer tournaments (Euro Cup, Copa America and World Cup).   We discuss
-how it works.  Its accuracy and technical details are included in this readme.
+This is a statistical forecasting model for predicting game outcomes in soccer tournaments (Euro Cup, Copa America and World Cup).   We discuss how it works.  Its accuracy and technical details are included in this [readme](https://github.com/thezane/soccer-predictions/blob/master/technicalReadme.pdf).
 
 ###How It Works###
 
 #####Step 1: Rate Teams#####
 
-We start by rating teams by attack and defense strengths.  Goals scored are a measure of attack strength and goals conceded are a measure of
-defense strength.  Ratings are computed match-by-match.  Usually, a team’s ratings increases after winning and decreases after losing but
-not always because strength of schedule and home advantage are considered.  When a top-ranked team ekes a 4-3 win against a weak team at
-home, its ratings decrease while its opponent’s ratings increase.  To make the ratings reflective of how teams play with their best players,
-the model only rates teams in matches where those players are likely to show up, such as tournament qualifiers and tournaments themselves.
-It also considers recency of previous matches.  Matches played two days ago have a greater effect on a team’s ratings than those played two
-years ago.
+We start by rating teams by attack and defense strengths.  Goals scored are a measure of attack strength and goals conceded are a measure of defense strength.  Ratings are computed match-by-match.  Usually, a team’s ratings increases after winning and decreases after losing but not always because strength of schedule and home advantage are considered.  When a top-ranked team ekes a 4-3 win against a weak team at home, its ratings decrease while its opponent’s ratings increase.  To make the ratings reflective of how teams play with their best players, the model only rates teams in matches where those players are likely to show up, such as tournament qualifiers and tournaments themselves.  It also considers recency of previous matches.  Matches played two days ago have a greater effect on a team’s ratings than those played two years ago.
 
 #####Step 2: Determine Match Outcome#####
 
