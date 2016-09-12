@@ -63,20 +63,18 @@ normalizeGoals <- function(game, meanGoalsMap) {
 }
 
 updateGamePreRate <- function(game, rOptions, homeTeam, awayTeam) {
-  fTree <- rOptions$fTree
   ks <- rOptions$ks
   strBetas <- rOptions$model$strBetas
   gameDate <- game$gameDate
-  homeTeamStrs <- computeTeamStrs(homeTeam, fTree)
-  awayTeamStrs <- computeTeamStrs(awayTeam, fTree)
+  homeTeamStrs <- computeTeamStrs(homeTeam, rOptions)
+  awayTeamStrs <- computeTeamStrs(awayTeam, rOptions)
   game$teamStr <- matrix(c(homeTeamStrs[["teamStr"]],
       awayTeamStrs[["teamStr"]]), 2, 2, TRUE)
   game$strNorm <- matrix(c(homeTeamStrs[["strNorm"]],
       awayTeamStrs[["strNorm"]]), 2, 2, TRUE)
   strNorm <- game$strNorm
   strBetas[2] <- -strBetas[2]
-  game$strAgg <- c(strNorm[1, ] %*% strBetas,
-      strNorm[2, ] %*% strBetas)
+  game$strAgg <- c(homeTeamStrs[["strAgg"]], awayTeamStrs[["strAgg"]])
 
   if (game$isQualifier) {
     k <- ks[1]

@@ -24,8 +24,12 @@ forecastGame <- function (gameHypo=NULL, model=NULL, game=NULL) {
   if (!isTraining) {
     gamePrediction[["homeAwayGoals"]] <- round(
         gamePrediction[["homeAwayGoals"]], numDecimals)
+    gamePrediction[["gamePs"]] <- round(
+        gamePrediction[["gamePs"]], numDecimals)
     gamePrediction[["goalsExpected"]] <- round(
         gamePrediction[["goalsExpected"]], numDecimals)
+    gamePrediction[["strNorm"]] <- round(strNorm, numDecimals)
+    gamePrediction[["strAgg"]] <- round(game$strAgg, numDecimals)
   }
 
   gamePrediction

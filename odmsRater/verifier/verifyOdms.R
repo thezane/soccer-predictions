@@ -33,7 +33,11 @@ getRelevantMatches <- function (matches, currentYear) {
 }
 
 addPredictions <- function (matches, location, dataPath) {
-  vNames <- c("HomeWin", "Tie", "AwayWin")
+  vNames <- c(
+      "HomeStrAgg", "AwayStrAgg",
+      "HomeAttack", "HomeDefense",
+      "AwayAttack", "AwayDefense",
+      "HomeWin", "Tie", "AwayWin")
   matches[vNames] <- 0
   header = "odms-"
   fileType <- ".RData"
@@ -51,8 +55,14 @@ addPredictions <- function (matches, location, dataPath) {
       load(matchSrc)
     }
     
-    gamePs <- addPrediction(rData, matches[i, ], location)
-    matches[i, vNames] <- gamePs
+    gamePrediction <- addPrediction(rData, matches[i, ], location)
+    strNorm <- gamePrediction[["strNorm"]]
+    matches[i, c("HomeStrAgg", "AwayStrAgg")] <-
+        gamePrediction[["strAgg"]]
+    matches[i, c("HomeAttack", "HomeDefense")] <- strNorm[1, ]
+    matches[i, c("AwayAttack", "AwayDefense")] <- strNorm[2, ]
+    matches[i, c("HomeWin", "Tie", "AwayWin")] <-
+        gamePrediction[["gamePs"]]
     i <- i + 1
   }
   
@@ -82,15 +92,13 @@ getNextMatchSrc <- function(currentDate, dataPath, header, fileType) {
 }
 
 addPrediction <- function(rData, matchesRow, location) {
-  numDecimals <- 4
   homeTeamName <- matchesRow[["HomeTeam"]]
   awayTeamName <- matchesRow[["AwayTeam"]]
   contestType <- getContestType(matchesRow[["Contest"]])
   gameHypo <- newGameHypo(homeTeamName, awayTeamName, contestType,
       location, rData)
   gamePrediction <- forecastGame(gameHypo)
-  gamePs <- round(gamePrediction[["gamePs"]], numDecimals)
-  gamePs
+  gamePrediction
 }
 
 getContestType <- function(contest) {

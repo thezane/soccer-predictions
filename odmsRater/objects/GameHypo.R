@@ -8,8 +8,9 @@ newGameHypo <- function(homeTeamName, awayTeamName, contestType,
   gameHypo <- list(
     rData=rData,
     teamNames=c(homeTeamName, awayTeamName),
-    strNorm=log(matrix(c(homeTeam$teamStr, awayTeam$teamStr),
-        2, 2, TRUE)),
+    strNorm=matrix(c(homeTeam$strNorm, awayTeam$strNorm),
+        2, 2, TRUE),
+    strAgg=c(homeTeam$strAgg, awayTeam$strAgg),
     existsHA=homeTeamName==location,
     isQualifier=grepl("-Q", contestType)
   )

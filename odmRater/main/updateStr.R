@@ -13,8 +13,9 @@ updateStr <- function(v, gamesData, tTree, currentContest) {
   game <- updateGame(game, awayTeam, FALSE)
   goals <- c(game[["HomeGoals"]], game[["AwayGoals"]])
   strAgg <- c(game[["HomeStrAgg"]], game[["AwayStrAgg"]])
-  
+
   if (isRelevant(game, currentContest)) {
+	strAgg[1] <- strAgg[1] * gamesData[["hA"]]
     game[["IsCorrect"]] <-
         (goals[1] < goals[2] && strAgg[1] < strAgg[2]) ||
         (goals[1] > goals[2] && strAgg[1] > strAgg[2])

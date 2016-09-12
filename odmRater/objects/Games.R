@@ -33,8 +33,11 @@ getGameData <- function(games, i, meanGoalsMap) {
     nextGame <- NULL
   }
 
-  goalsNorm <- normalizeGoals(game, meanGoalsMap)
-  gamesData <- list(game=game, nextGame=nextGame, goalsNorm=goalsNorm)
+  goalsNormData <- normalizeGoals(game, meanGoalsMap)
+  goalsNorm <- goalsNormData[["goalsNorm"]]
+  hA <- goalsNormData[["hA"]]
+  gamesData <- list(game=game, nextGame=nextGame, goalsNorm=goalsNorm,
+      hA=hA)
   gamesData
 }
 
@@ -60,5 +63,7 @@ normalizeGoals <- function(T, meanGoalsMap) {
   }
 
   goalsNorm[1] <- goalsNorm[1] * (meanGoals[2] / meanGoals[1])
-  goalsNorm
+  hA <- meanGoals[1] / meanGoals[2]
+  goalsNormData <- list(goalsNorm=goalsNorm, hA=hA)
+  goalsNormData
 }
