@@ -1,6 +1,6 @@
 constructMeanGoalsMap <- function(T, tTree) {
   meanGoalsData <- constructMeanGoalsData(T, tTree)
-  model <- rlm(Goals~GeneralContest, meanGoalsData)
+  model <- rlm(Goals~GeneralContest, meanGoalsData, psi=psi.bisquare)
   meanGoalsMap <- hash()
   modelBetas <- model$coefficients
   beta0 <- modelBetas[["(Intercept)"]]
