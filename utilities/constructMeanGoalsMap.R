@@ -1,10 +1,10 @@
-constructMeanGoalsMap <- function(T) {
-  meanGoalsData <- constructMeanGoalsData(T)
+constructMeanGoalsMap <- function(T, tTree) {
+  meanGoalsData <- constructMeanGoalsData(T, tTree)
   model <- rlm(Goals~GeneralContest, meanGoalsData)
   meanGoalsMap <- hash()
   modelBetas <- model$coefficients
   beta0 <- modelBetas[["(Intercept)"]]
-  meanGoalsMap[["-Q-Away"]] <- beta0
+  meanGoalsMap[["-Q-Away-Africa"]] <- beta0
   contestBetas <- names(modelBetas) 
   n <- length(contestBetas)
   i <- 2
@@ -19,34 +19,42 @@ constructMeanGoalsMap <- function(T) {
   meanGoalsMap
 }
 
-constructMeanGoalsData <- function(T) {
+constructMeanGoalsData <- function(T, tTree) {
   n <- nrow(T)
   meanGoalsData <- data.frame(matrix(nrow=2*n, ncol=0))
+  meanGoalsData[1: n, "Team"] <- T["HomeTeam"]
   meanGoalsData[1: n, "Contest"] <- T["Contest"]
   meanGoalsData[1: n, "Goals"] <- T["HomeGoals"]
   meanGoalsData[1: n, "HomeAdvantage"] <- T["HomeAdvantage"]
+  meanGoalsData[(n + 1): (2 * n), "Team"] <- T["AwayTeam"]
   meanGoalsData[(n + 1): (2 * n), "Contest"] <- T["Contest"]
   meanGoalsData[(n + 1): (2 * n), "Goals"] <- T["AwayGoals"]
   meanGoalsData[(n + 1): (2 * n), "HomeAdvantage"] <- 0
   meanGoalsData[, "GeneralContest"] <- apply(meanGoalsData, 1,
-      getGeneralContest)
+      function (meanGoalsRow, tTree.=tTree) {
+	      getGeneralContest(meanGoalsRow, tTree)
+	  })
   meanGoalsData
 }
 
-getGeneralContest <- function(meanGoalsRow) {
+getGeneralContest <- function(meanGoalsRow, tTree) {
   contest <- meanGoalsRow[["Contest"]]
-  
-  if (grepl("-Q", contest)) {
-    contestSubbed <- "-Q"
+  team <- tTree[[meanGoalsRow[["Team"]]]]
+  isQualifier <- grepl("-Q", contest)
+  isHome <- as.logical(as.numeric(meanGoalsRow[["HomeAdvantage"]]))
+
+  if (isQualifier && isHome) {
+    generalContest <- paste("-Q-Home-", team$fName, sep="")
+  }
+  else if (isQualifier) {
+    generalContest <- paste("-Q-Away-", team$fName, sep="")
+  }
+  else if (isHome) {
+    generalContest <- "-T-Home"
   }
   else {
-    contestSubbed <- "-T"
+    generalContest <- "-T-Away"
   }
-  
-  if (as.logical(as.numeric(meanGoalsRow[["HomeAdvantage"]]))) {
-    paste(contestSubbed, "Home", sep="-")
-  }
-  else {
-    paste(contestSubbed, "Away", sep="-")
-  }
+
+  generalContest
 }

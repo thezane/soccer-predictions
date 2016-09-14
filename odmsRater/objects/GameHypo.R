@@ -15,7 +15,7 @@ newGameHypo <- function(homeTeamName, awayTeamName, contestType,
     isQualifier=grepl("-Q", contestType)
   )
 
-  gameHypo$meanGoals <- computeMeanGoals(gameHypo,
+  gameHypo$meanGoals <- computeHypoGoals(gameHypo, homeTeam, awayTeam,
       rOutput$meanGoalsMap)
 
   class(gameHypo) <- "Game"

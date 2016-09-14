@@ -1,5 +1,5 @@
-newGame <- function(T, i, homeTeamName, awayTeamName, tTree, gameDate,
-    currentContest) {
+newGame <- function(T, i, homeTeamName, awayTeamName,
+    gameDate, currentContest) {
   contest <- T[[i, "Contest"]]
   goals <- c(T[[i, "HomeGoals"]], T[[i, "AwayGoals"]])
   zeroesMat <- matrix(0, 2, 2)
@@ -39,13 +39,16 @@ newGame <- function(T, i, homeTeamName, awayTeamName, tTree, gameDate,
   game
 } 
 
-normalizeGoals <- function(game, meanGoalsMap) {
+normalizeGoals <- function(game, tTree, meanGoalsMap) {
   goals <- game$goals
   goalsNorm <- goals
 
   if (game$isQualifier) {
-    meanGoals <- c(meanGoalsMap[["-Q-Home"]],
-        meanGoalsMap[["-Q-Away"]])
+    homeTeam <- tTree[[game$teamNames[1]]]
+    awayTeam <- tTree[[game$teamNames[2]]]
+    meanGoals <- c(
+        meanGoalsMap[[paste("-Q-Home-", homeTeam$fName, sep="")]],
+        meanGoalsMap[[paste("-Q-Away-", awayTeam$fName, sep="")]])
   }
   else if (game$existsHA) {
     meanGoals <- c(meanGoalsMap[["-T-Home"]],

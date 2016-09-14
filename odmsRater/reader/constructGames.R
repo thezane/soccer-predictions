@@ -14,7 +14,7 @@ constructGames <- function(currentDate, tTree, currentContest,
       homeTeamName <- T[[i, "HomeTeam"]]
       awayTeamName <- T[[i, "AwayTeam"]]
       gameData <- addGame(T, i, gTree, homeTeamName, awayTeamName,
-          tTree, gameDate, currentContest)
+          gameDate, currentContest)
       gTree <- gameData[["gTree"]]
       game <- gameData[["game"]]
       i <- i + 1
@@ -29,9 +29,9 @@ constructGames <- function(currentDate, tTree, currentContest,
   gamesData
 }
 
-addGame <- function(T, i, gTree, homeTeamName, awayTeamName, tTree,
-    gameDate, currentContest) {
-  game <- newGame(T, i, homeTeamName, awayTeamName, tTree, gameDate,
+addGame <- function(T, i, gTree, homeTeamName, awayTeamName,
+      gameDate, currentContest) {
+  game <- newGame(T, i, homeTeamName, awayTeamName, gameDate,
       currentContest)
   gameDateStr <- game$gameDateStr
   
