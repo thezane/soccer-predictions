@@ -1,11 +1,11 @@
-verifyOdms <- function (currentYear, location) {
+verifyOdms <- function (currentYear, currentContest, location) {
   verifyModelSetup()
   dataPathIn <- "../../data/"
   fileName <- "matches.csv"
   matchSrc <- paste(dataPathIn, fileName, sep ="")
   matches <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
-  matches <- getRelevantMatches(matches, currentYear)
+  matches <- getRelevantMatches(matches, currentContest, currentYear)
   matches <- addPredictions(matches, location, dataPathIn)
   dataPathOut <- "../../accuracy/"
   matchDest <- paste(dataPathOut, "verifiedOdms", currentYear, ".csv",
@@ -21,7 +21,7 @@ verifyModelSetup <- function() {
   lapply(srcFiles, source)
 }
 
-getRelevantMatches <- function (matches, currentYear) {
+getRelevantMatches <- function (matches, currentContest, currentYear) {
   matchDateFormat <- "%m/%d/%y"
   matchYearFormat <- "%Y"
   matchDates <- format(as.Date(matches[["Date"]],
@@ -29,6 +29,10 @@ getRelevantMatches <- function (matches, currentYear) {
   matches <- matches[matchDates == currentYear, ]
   matches <- matches[rev(order(as.Date(matches[, "Date"],
       format=matchDateFormat))), ]
+  areRelevantContests <- sapply(matches["Contest"],
+      function(contest, currentContest.=currentContest)
+      {grepl(currentContest, contest)})
+  matches <- matches[areRelevantContests, ]
   matches
 }
 
