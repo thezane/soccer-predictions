@@ -41,12 +41,13 @@ getGeneralContest <- function(meanGoalsRow, tTree) {
   contest <- meanGoalsRow[["Contest"]]
   team <- tTree[[meanGoalsRow[["Team"]]]]
   isQualifier <- grepl("-Q", contest)
+  isPlayOff=grepl("-P", contest)
   isHome <- as.logical(as.numeric(meanGoalsRow[["HomeAdvantage"]]))
 
-  if (isQualifier && isHome) {
+  if (isQualifier && !isPlayOff && isHome) {
     generalContest <- paste("-Q-Home-", team$fName, sep="")
   }
-  else if (isQualifier) {
+  else if (isQualifier && !isPlayOff) {
     generalContest <- paste("-Q-Away-", team$fName, sep="")
   }
   else if (isHome) {

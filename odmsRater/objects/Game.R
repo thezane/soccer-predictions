@@ -43,7 +43,7 @@ normalizeGoals <- function(game, tTree, meanGoalsMap) {
   goals <- game$goals
   goalsNorm <- goals
 
-  if (game$isQualifier) {
+  if (game$isQualifier && !game$isPlayOff) {
     homeTeam <- tTree[[game$teamNames[1]]]
     awayTeam <- tTree[[game$teamNames[2]]]
     meanGoals <- c(
