@@ -33,7 +33,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   )
   
   game$isRelevant <- game$isPlayOff || (!game$isQualifier &&
-        (game$isInternational || game$isSame))
+      (game$isInternational || game$isSame))
   
   class(game) <- "Game"
   game
