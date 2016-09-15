@@ -98,20 +98,9 @@ getNextMatchSrc <- function(currentDate, dataPath, header, fileType) {
 addPrediction <- function(rData, matchesRow, location) {
   homeTeamName <- matchesRow[["HomeTeam"]]
   awayTeamName <- matchesRow[["AwayTeam"]]
-  contestType <- getContestType(matchesRow[["Contest"]])
-  gameHypo <- newGameHypo(homeTeamName, awayTeamName, contestType,
+  contest <- matchesRow[["Contest"]]
+  gameHypo <- newGameHypo(homeTeamName, awayTeamName, contest,
       location, rData)
   gamePrediction <- forecastGame(gameHypo)
   gamePrediction
 }
-
-getContestType <- function(contest) {
-  if (grepl("-Q", contest)) {
-    contestType <- "-Q"
-  }
-  else {
-    contestType <- "-T"
-  }
-  
-  contestType
-} 

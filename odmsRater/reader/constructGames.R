@@ -8,8 +8,8 @@ constructGames <- function(currentDate, tTree, currentContest,
   i <- 1
   
   while (i <= n) {
-    gameDate <- as.Date(T[[i, "Date"]], dateFormat)
-    
+    gameDate <- as.Date(T[[i, "Date"]], dateFormat)  
+
     if (gameDate <= currentDate) {
       homeTeamName <- T[[i, "HomeTeam"]]
       awayTeamName <- T[[i, "AwayTeam"]]

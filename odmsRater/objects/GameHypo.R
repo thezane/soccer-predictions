@@ -1,4 +1,4 @@
-newGameHypo <- function(homeTeamName, awayTeamName, contestType,
+newGameHypo <- function(homeTeamName, awayTeamName, contest,
     location, rData) {
   rOutput <- rData[["rOutput"]]
   tTree <- rOutput$tTree
@@ -12,10 +12,12 @@ newGameHypo <- function(homeTeamName, awayTeamName, contestType,
         2, 2, TRUE),
     strAgg=c(homeTeam$strAgg, awayTeam$strAgg),
     existsHA=homeTeamName==location,
-    isQualifier=grepl("-Q", contestType)
+    isQualifier=grepl("-Q", contest),
+    isPlayOff=grepl("-P", contest)
   )
 
-  gameHypo$meanGoals <- computeHypoGoals(gameHypo, homeTeam, awayTeam,
+  gameHypo$meanGoals <- computeMeanGoals(gameHypo$isQualifier,
+      gameHypo$isPlayOff, gameHypo$existsHA, homeTeam, awayTeam,
       rOutput$meanGoalsMap)
 
   class(gameHypo) <- "Game"

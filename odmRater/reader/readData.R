@@ -26,6 +26,6 @@ constructTeams <- function(dataPath) {
 
 addTeam <- function(T, i, tTree) {
   teamName <- T[[i, "Team"]]
-  tTree[teamName] <- newTeam(teamName, i)
+  tTree[teamName] <- newTeam(teamName, i, T[[i, "Federation"]])
   tTree
 }

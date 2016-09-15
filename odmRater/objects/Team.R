@@ -1,6 +1,7 @@
-newTeam <- function(teamName, i) {
+newTeam <- function(teamName, i, fName) {
   team <- list(
     name=teamName,
+    fName=fName,
     teamStr=c(1, 1),
     strNext=c(1, 1),
     strAgg=1,

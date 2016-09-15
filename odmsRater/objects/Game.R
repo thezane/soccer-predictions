@@ -42,22 +42,10 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
 normalizeGoals <- function(game, tTree, meanGoalsMap) {
   goals <- game$goals
   goalsNorm <- goals
-
-  if (game$isQualifier && !game$isPlayOff) {
-    homeTeam <- tTree[[game$teamNames[1]]]
-    awayTeam <- tTree[[game$teamNames[2]]]
-    meanGoals <- c(
-        meanGoalsMap[[paste("-Q-Home-", homeTeam$fName, sep="")]],
-        meanGoalsMap[[paste("-Q-Away-", awayTeam$fName, sep="")]])
-  }
-  else if (game$existsHA) {
-    meanGoals <- c(meanGoalsMap[["-T-Home"]],
-        meanGoalsMap[["-T-Away"]])
-  }
-  else {
-    meanGoals <- meanGoalsMap[["-T-Away"]] * c(1, 1)
-  }
-
+  homeTeam <- tTree[[game$teamNames[1]]]
+  awayTeam <- tTree[[game$teamNames[2]]]
+  meanGoals <- computeMeanGoals(game$isQualifier, game$isPlayOff,
+     game$existsHA, homeTeam, awayTeam, meanGoalsMap)
   goalsNorm[1] <- goalsNorm[1] * (meanGoals[2] / meanGoals[1])
   game$goalsNorm <- goalsNorm
   game$meanGoals <- meanGoals
