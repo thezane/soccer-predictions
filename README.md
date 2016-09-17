@@ -15,7 +15,7 @@ Once teams are rated, ODM-S calculates the chance that a team wins, draws or los
 
 However, our chosen distribution requires us to estimate the expected goals scored by each team.  This is where attack and defense ratings
 come in.  The more goals that Germany scores in previous games, the higher its attack ratings; the more goals conceded by Ukraine in its
-previous games, the higher its defense ratings.  Thus, the expected goals of Germany is porportional to its attack rating plus Ukraine’s
+previous games, the lower its defense ratings.  Thus, the expected goals of Germany is porportional to its attack rating minus Ukraine’s
 defense rating.  Likewise for the expected goals of Ukraine.
 
 After determining the chance that the game ends with a certain scoreline, ODM-S sums the probabilities of scorelines that end with win, tie or loss for Germany to get the prediction of it winning, drawing or losing against Ukraine.
