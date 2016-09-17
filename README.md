@@ -1,7 +1,7 @@
 # soccer-predictions
 ![alt-tag](https://github.com/thezane/soccer-predictions/blob/master/forecasts/October6.png)
 
-This is a statistical forecasting model for predicting game outcomes in soccer tournaments (World Cup, Euro Cup and Copa America).   The model is named Sequential Offense-Defense (ODM-S) after the fact that it rates teams by attack and defense strengths match-by-match.  It is based on the [original Offense-Defense Model](http://meyer.math.ncsu.edu/Meyer/Talks/OD_RankingCharleston.pdf) by mathematicians Anjela Govan, Amy Langville and Carl Meyer.   We discuss how it works.  Its accuracy and details are included in a [technical readme](https://github.com/thezane/soccer-predictions/blob/master/technicalReadme.pdf).
+This is a statistical forecasting model for predicting game outcomes in soccer tournaments (World Cup, Euro Cup and Copa America).   The model is named Sequential Offense-Defense (ODM-S) after the fact that it rates teams by attack and defense strengths match-by-match.  It is based on the [original Offense-Defense Model](http://meyer.math.ncsu.edu/Meyer/Talks/OD_RankingCharleston.pdf) by mathematicians Anjela Govan, Amy Langville and Carl Meyer.   We discuss how it works and how predictions should be interpreted.  Its accuracy and inner workings are in a [technical readme](https://github.com/thezane/soccer-predictions/blob/master/technicalReadme.pdf).
 
 ###How It Works###
 
@@ -19,3 +19,7 @@ previous games, the lower its defense ratings.  Thus, the expected goals of Germ
 defense rating.  Likewise for the expected goals of Ukraine.
 
 After determining the chance that the game ends with a certain scoreline, ODM-S sums the probabilities of scorelines that end with win, tie or loss for Germany to get the prediction of it winning, drawing or losing against Ukraine.
+
+###How To Interpret Predictions###
+
+ODM-S is a useful model because it performs well against bettings markets and other statistical models and gives a good sense of attack and defense strengths of each team.  However, one should not rely on it too much.  Like all soccer statistical models, it cannot accurately account for missing players and requires teams to play many games over a short period to perform at its best.
