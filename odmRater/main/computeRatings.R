@@ -1,7 +1,7 @@
 computeRatings <- function(rData, currentContest) {
   games <- rData[["games"]]
   tTree <- rData[["tTree"]]
-  meanGoalsMap <- constructMeanGoalsMap(games$T, tTree)
+  meanGoalsMap <- constructMeanGoalsMap(games$T)
   gameDatePrev <- NULL
   k <- 1 / (1.25 * 365)
   c <- 0.01
@@ -11,7 +11,7 @@ computeRatings <- function(rData, currentContest) {
   i <- games$numGames
 
   while (i >= 1) {
-    gamesData <- getGameData(games, i, tTree, meanGoalsMap)
+    gamesData <- getGameData(games, i, meanGoalsMap)
     game <- gamesData[["game"]]
     gameDate <- as.Date(game[["Date"]])
     A <- constructStrPrereqs(A, gamesData, tTree,

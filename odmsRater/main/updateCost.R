@@ -19,7 +19,7 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   strCostData <- computeStrCost(game, gamePrediction)
   sse <- strCostData[["sse"]]
   rOutput <- updateStrCost(rOutput, computeTukeyCost(sse),
-      strCostData[["goalsExpected"]], game$teamXP)
+      strCostData[["goalsExpected"]], game$teamXP, rOptions$xpUBd)
   game <- updateSSE(game, sse)
   costData <- list(rOutput=rOutput, game=game)
   costData

@@ -7,6 +7,7 @@ newGameHypo <- function(homeTeamName, awayTeamName, contest,
 
   gameHypo <- list(
     rData=rData,
+    contest=contest,
     teamNames=c(homeTeamName, awayTeamName),
     strNorm=matrix(c(homeTeam$strNorm, awayTeam$strNorm),
         2, 2, TRUE),
@@ -17,7 +18,7 @@ newGameHypo <- function(homeTeamName, awayTeamName, contest,
   )
 
   gameHypo$meanGoals <- computeMeanGoals(gameHypo$isQualifier,
-      gameHypo$isPlayOff, gameHypo$existsHA, homeTeam, awayTeam,
+      gameHypo$isPlayOff, gameHypo$existsHA, gameHypo$contest,
       rOutput$meanGoalsMap)
 
   class(gameHypo) <- "Game"

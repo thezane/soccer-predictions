@@ -25,7 +25,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     existsHA=T[[i, "HomeAdvantage"]],
     isQualifier=grepl("-Q", contest),
     isInternational=grepl("(WOC)|(COC)", contest),
-    isPlayOff=grepl("-P", contest),
+    isPlayOff=grepl("-PlayOff", contest),
     isSame=grepl(currentContest, contest),
     isWocG=(contest=="WOC-G"),
     gameNum=0,
@@ -39,13 +39,11 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   game
 } 
 
-normalizeGoals <- function(game, tTree, meanGoalsMap) {
+normalizeGoals <- function(game, meanGoalsMap) {
   goals <- game$goals
   goalsNorm <- goals
-  homeTeam <- tTree[[game$teamNames[1]]]
-  awayTeam <- tTree[[game$teamNames[2]]]
   meanGoals <- computeMeanGoals(game$isQualifier, game$isPlayOff,
-     game$existsHA, homeTeam, awayTeam, meanGoalsMap)
+      game$existsHA, game$contest, meanGoalsMap)
   goalsNorm[1] <- goalsNorm[1] * (meanGoals[2] / meanGoals[1])
   game$goalsNorm <- goalsNorm
   game$meanGoals <- meanGoals

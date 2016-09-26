@@ -23,7 +23,7 @@ newGames <- function(T, currentDate, dateFormat) {
   games
 } 
 
-getGameData <- function(games, i, tTree, meanGoalsMap) {
+getGameData <- function(games, i, meanGoalsMap) {
   game <- games$T[i, ]
 
   if (i > 1) {
@@ -33,7 +33,7 @@ getGameData <- function(games, i, tTree, meanGoalsMap) {
     nextGame <- NULL
   }
 
-  goalsNormData <- normalizeGoals(game, tTree, meanGoalsMap)
+  goalsNormData <- normalizeGoals(game, meanGoalsMap)
   goalsNorm <- goalsNormData[["goalsNorm"]]
   hA <- goalsNormData[["hA"]]
   gamesData <- list(game=game, nextGame=nextGame, goalsNorm=goalsNorm,
@@ -46,16 +46,14 @@ updateGames <- function(games, i, game) {
   games
 }
 
-normalizeGoals <- function(T, tTree, meanGoalsMap) {
+normalizeGoals <- function(T, meanGoalsMap) {
   goalsNorm <- c(T[["HomeGoals"]], T[["AwayGoals"]])
   contest <- T[["Contest"]]
   isQualifier <- grepl("-Q", contest)
   isPlayOff <- grepl("-P", contest)
   existsHA <- T[["HomeAdvantage"]]
-  homeTeam <- tTree[[T[["HomeTeam"]]]]
-  awayTeam <- tTree[[T[["AwayTeam"]]]]
   meanGoals <- computeMeanGoals(isQualifier, isPlayOff, existsHA,
-      homeTeam, awayTeam, meanGoalsMap)
+      contest, meanGoalsMap)
   goalsNorm[1] <- goalsNorm[1] * (meanGoals[2] / meanGoals[1])
   hA <- meanGoals[1] / meanGoals[2]
   goalsNormData <- list(goalsNorm=goalsNorm, hA=hA)

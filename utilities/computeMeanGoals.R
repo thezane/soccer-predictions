@@ -1,11 +1,13 @@
 computeMeanGoals <- function(isQualifier, isPlayOff, existsHA,
-    homeTeam, awayTeam, meanGoalsMap) {
+      contest, meanGoalsMap) {
   meanGoals <- c(1, 1)
 
   if (isQualifier && !isPlayOff) {
     meanGoals <- c(
-        meanGoalsMap[[paste("-Q-Home-", homeTeam$fName, sep="")]],
-        meanGoalsMap[[paste("-Q-Away-", awayTeam$fName, sep="")]])
+        meanGoalsMap[[paste("-Q-", getQualifierLocation(contest),
+            "-Home", sep="")]],
+        meanGoalsMap[[paste("-Q-", getQualifierLocation(contest),
+            "-Away", sep="")]])
   }
   else if (existsHA) {
     meanGoals <- c(meanGoalsMap[["-T-Home"]],

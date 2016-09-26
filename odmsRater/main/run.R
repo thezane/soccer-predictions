@@ -9,7 +9,7 @@ run <- function() {
   cores <- detectCores() - 1
   cluster <- makeCluster(cores)
   clusterExport(cluster, ls(envir=.GlobalEnv), envir=.GlobalEnv)
-  parLapply(cluster, dates, function (currentDate,
+  lapply(dates, function (currentDate,
       contest.=contest, rData.=rData) {
       forecastRatings(currentDate, contest, rData)})
   stopCluster(cluster)
