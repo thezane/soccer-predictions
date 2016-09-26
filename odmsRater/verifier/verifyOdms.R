@@ -16,9 +16,12 @@ verifyOdms <- function (currentYear, currentContest, location) {
 
 verifyModelSetup <- function() {
   library(hash)
-  srcFiles <- list.files("../", ".*\\.R",
+  regexRFiles <- ".*\\.R"
+  srcFiles <- list.files("../", regexRFiles,
       full.names=TRUE, recursive=TRUE)
-  lapply(srcFiles, source)
+  utilitiesFiles <- list.files("../../utilities", regexRFiles,
+      full.names=TRUE, recursive=TRUE)
+  lapply(c(srcFiles, utilitiesFiles), source)
 }
 
 getRelevantMatches <- function (matches, currentContest, currentYear) {
