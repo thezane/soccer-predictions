@@ -1,4 +1,9 @@
 "HomeTeam","AwayTeam","Date","Contest","HomeGoals","AwayGoals","HomeAdvantage"
+"Argentina","Paraguay",10/12/16,"WOC-Q-South America",0,1,1
+"Chile","Peru",10/12/16,"WOC-Q-South America",2,1,1
+"Venezuela","Brazil",10/12/16,"WOC-Q-South America",0,2,1
+"Bolivia","Ecuador",10/11/16,"WOC-Q-South America",2,2,1
+"Colombia","Uruguay",10/11/16,"WOC-Q-South America",2,2,1
 "Armenia","Romania",10/08/16,"WOC-Q-Europe",0,5,1
 "Azerbaijan","Norway",10/08/16,"WOC-Q-Europe",1,0,1
 "England","Malta",10/08/16,"WOC-Q-Europe",2,0,1
@@ -9,6 +14,7 @@
 "Scotland","Lithuania",10/08/16,"WOC-Q-Europe",1,1,1
 "Slovenia","Slovakia",10/08/16,"WOC-Q-Europe",1,0,1
 "Belgium","Bosnia-Herzegovina",10/07/16,"WOC-Q-Europe",4,0,1
+"Brazil","Bolivia",10/07/16,"WOC-Q-South America",5,0,1
 "Estonia","Gibraltar",10/07/16,"WOC-Q-Europe",4,0,1
 "France","Bulgaria",10/07/16,"WOC-Q-Europe",4,1,1
 "Greece","Cyprus",10/07/16,"WOC-Q-Europe",2,0,1
@@ -16,8 +22,12 @@
 "Latvia","Faroe Islands",10/07/16,"WOC-Q-Europe",0,2,1
 "Luxembourg","Sweden",10/07/16,"WOC-Q-Europe",0,1,1
 "Netherlands","Belarus",10/07/16,"WOC-Q-Europe",4,1,1
+"Paraguay","Colombia",10/07/16,"WOC-Q-South America",0,1,1
+"Peru","Argentina",10/07/16,"WOC-Q-South America",2,2,1
 "Portugal","Andorra",10/07/16,"WOC-Q-Europe",6,0,1
+"Uruguay","Venezuela",10/07/16,"WOC-Q-South America",3,0,1
 "Austria","Wales",10/06/16,"WOC-Q-Europe",2,2,1
+"Ecuador","Chile",10/06/16,"WOC-Q-South America",3,0,1
 "Iceland","Finland",10/06/16,"WOC-Q-Europe",3,2,1
 "Italy","Spain",10/06/16,"WOC-Q-Europe",1,1,1
 "Kosovo","Croatia",10/06/16,"WOC-Q-Europe",0,6,1
@@ -26,6 +36,11 @@
 "Moldova","Serbia",10/06/16,"WOC-Q-Europe",0,3,1
 "Republic of Ireland","Georgia",10/06/16,"WOC-Q-Europe",1,0,1
 "Turkey","Ukraine",10/06/16,"WOC-Q-Europe",2,2,1
+"Brazil","Colombia",09/07/16,"WOC-Q-South America",2,1,1
+"Chile","Bolivia",09/07/16,"WOC-Q-South America",0,0,1
+"Peru","Ecuador",09/07/16,"WOC-Q-South America",2,1,1
+"Uruguay","Paraguay",09/07/16,"WOC-Q-South America",4,0,1
+"Venezuela","Argentina",09/07/16,"WOC-Q-South America",2,2,1
 "Andorra","Latvia",09/06/16,"WOC-Q-Europe",0,1,1
 "Belarus","France",09/06/16,"WOC-Q-Europe",0,0,1
 "Bosnia-Herzegovina","Estonia",09/06/16,"WOC-Q-Europe",5,0,1
@@ -53,6 +68,11 @@
 "Romania","Montenegro",09/04/16,"WOC-Q-Europe",1,1,1
 "San Marino","Azerbaijan",09/04/16,"WOC-Q-Europe",0,1,1
 "Slovakia","England",09/04/16,"WOC-Q-Europe",0,1,1
+"Argentina","Uruguay",09/02/16,"WOC-Q-South America",1,0,1
+"Paraguay","Chile",09/02/16,"WOC-Q-South America",2,1,1
+"Bolivia","Peru",09/01/16,"WOC-Q-South America",2,0,1
+"Colombia","Venezuela",09/01/16,"WOC-Q-South America",2,0,1
+"Ecuador","Brazil",09/01/16,"WOC-Q-South America",0,3,1
 "France","Portugal",07/10/16,"EUC-K",0,1,1
 "France","Germany",07/07/16,"EUC-K",2,0,1
 "Portugal","Wales",07/06/16,"EUC-K",2,0,0
@@ -136,17 +156,42 @@
 "Jamaica","Venezuela",06/05/16,"COP-G",0,1,0
 "Costa Rica","Paraguay",06/04/16,"COP-G",0,0,0
 "United States","Colombia",06/04/16,"COP-G",0,2,1
+"Argentina","Bolivia",03/30/16,"WOC-Q-South America",2,0,1
+"Paraguay","Brazil",03/30/16,"WOC-Q-South America",2,2,1
+"Uruguay","Peru",03/30/16,"WOC-Q-South America",1,0,1
+"Venezuela","Chile",03/30/16,"WOC-Q-South America",1,4,1
+"Colombia","Ecuador",03/29/16,"WOC-Q-South America",3,1,1
+"Brazil","Uruguay",03/26/16,"WOC-Q-South America",2,2,1
+"Chile","Argentina",03/25/16,"WOC-Q-South America",1,2,1
+"Peru","Venezuela",03/25/16,"WOC-Q-South America",2,2,1
+"Bolivia","Colombia",03/24/16,"WOC-Q-South America",2,3,1
+"Ecuador","Paraguay",03/24/16,"WOC-Q-South America",2,2,1
+"Brazil","Peru",11/18/15,"WOC-Q-South America",3,0,1
+"Paraguay","Bolivia",11/18/15,"WOC-Q-South America",2,1,1
+"Uruguay","Chile",11/18/15,"WOC-Q-South America",3,0,1
+"Colombia","Argentina",11/17/15,"WOC-Q-South America",0,1,1
 "Denmark","Sweden",11/17/15,"EUC-Q",2,2,1
 "Slovenia","Ukraine",11/17/15,"EUC-Q",1,1,1
+"Venezuela","Ecuador",11/17/15,"WOC-Q-South America",1,3,1
 "Republic of Ireland","Bosnia-Herzegovina",11/16/15,"EUC-Q",2,0,1
 "Hungary","Norway",11/15/15,"EUC-Q",2,1,1
+"Argentina","Brazil",11/14/15,"WOC-Q-South America",1,1,1
+"Peru","Paraguay",11/14/15,"WOC-Q-South America",1,0,1
 "Sweden","Denmark",11/14/15,"EUC-Q",2,1,1
 "Ukraine","Slovenia",11/14/15,"EUC-Q",2,0,1
 "Bosnia-Herzegovina","Republic of Ireland",11/13/15,"EUC-Q",1,1,1
+"Chile","Colombia",11/13/15,"WOC-Q-South America",1,1,1
+"Bolivia","Venezuela",11/12/15,"WOC-Q-South America",4,2,1
+"Ecuador","Uruguay",11/12/15,"WOC-Q-South America",2,1,1
 "Norway","Hungary",11/12/15,"EUC-Q",0,1,1
+"Brazil","Venezuela",10/14/15,"WOC-Q-South America",3,1,1
+"Paraguay","Argentina",10/14/15,"WOC-Q-South America",0,0,1
+"Peru","Chile",10/14/15,"WOC-Q-South America",3,4,1
+"Uruguay","Colombia",10/14/15,"WOC-Q-South America",3,0,1
 "Belgium","Israel",10/13/15,"EUC-Q",3,1,1
 "Bulgaria","Azerbaijan",10/13/15,"EUC-Q",2,0,1
 "Cyprus","Bosnia-Herzegovina",10/13/15,"EUC-Q",2,3,1
+"Ecuador","Bolivia",10/13/15,"WOC-Q-South America",2,0,1
 "Italy","Norway",10/13/15,"EUC-Q",2,1,1
 "Latvia","Kazakhstan",10/13/15,"EUC-Q",0,1,1
 "Malta","Croatia",10/13/15,"EUC-Q",0,1,1
@@ -179,6 +224,8 @@
 "Israel","Cyprus",10/10/15,"EUC-Q",1,2,1
 "Kazakhstan","Netherlands",10/10/15,"EUC-Q",1,2,1
 "Norway","Malta",10/10/15,"EUC-Q",2,0,1
+"Argentina","Ecuador",10/09/15,"WOC-Q-South America",0,2,1
+"Chile","Brazil",10/09/15,"WOC-Q-South America",2,0,1
 "England","Estonia",10/09/15,"EUC-Q",2,0,1
 "Liechtenstein","Sweden",10/09/15,"EUC-Q",0,2,1
 "Macedonia","Ukraine",10/09/15,"EUC-Q",0,2,1
@@ -189,6 +236,8 @@
 "Spain","Luxembourg",10/09/15,"EUC-Q",4,0,1
 "Switzerland","San Marino",10/09/15,"EUC-Q",7,0,1
 "Albania","Serbia",10/08/15,"EUC-Q",0,2,1
+"Bolivia","Uruguay",10/08/15,"WOC-Q-South America",0,2,1
+"Colombia","Peru",10/08/15,"WOC-Q-South America",2,0,1
 "Georgia","Gibraltar",10/08/15,"EUC-Q",4,0,1
 "Hungary","Faroe Islands",10/08/15,"EUC-Q",2,1,1
 "Northern Ireland","Greece",10/08/15,"EUC-Q",3,1,1
@@ -196,6 +245,7 @@
 "Republic of Ireland","Germany",10/08/15,"EUC-Q",1,0,1
 "Romania","Finland",10/08/15,"EUC-Q",1,1,1
 "Scotland","Poland",10/08/15,"EUC-Q",2,2,1
+"Venezuela","Paraguay",10/08/15,"WOC-Q-South America",0,1,1
 "Belarus","Luxembourg",09/08/15,"EUC-Q",2,0,1
 "England","Switzerland",09/08/15,"EUC-Q",2,0,1
 "Liechtenstein","Russia",09/08/15,"EUC-Q",0,7,1
