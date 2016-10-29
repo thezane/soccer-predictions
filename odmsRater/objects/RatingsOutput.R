@@ -9,7 +9,6 @@ newRatingsOutput <- function(tTree, gTree, gi, goalsRelevant,
     meanGoalsMap=meanGoalsMap,
     strCost=0,
     strMeanCosts=NULL,
-    xpCost=0,
     y=Inf
   )
   
@@ -17,12 +16,9 @@ newRatingsOutput <- function(tTree, gTree, gi, goalsRelevant,
   rOutput
 }
 
-updateStrCost <- function(rOutput, strCost, goalsExpected, teamXP,
-    xpUBd) {
+updateStrCost <- function(rOutput, strCost, goalsExpected) {
   rOutput$strCost <- rOutput$strCost + strCost
   rOutput$goalsExpected <- rOutput$goalsExpected + sum(goalsExpected)
-  rOutput$xpCost <- rOutput$xpCost + min(0, xpUBd - teamXP[1]) ^ 2 +
-      min(0, 10 - teamXP[2]) ^ 2
   rOutput
 }
 

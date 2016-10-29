@@ -7,7 +7,6 @@ newRatingsOptions <- function(fTree) {
     c=0.3,
     model=newModel(),
     xpDefault=1,
-    xpUBd=11,
     fTree=fTree,
     fNames=fNames,
     numFs=numFs,

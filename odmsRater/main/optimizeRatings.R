@@ -30,7 +30,7 @@ trainRater <- function(rOptions, rOutput) {
   x <- c(model, strFsNorm)
   xLBd <- c(modelLBd, strFsNormLBd)
   n <- length(x)
-  lambdas <- c(100, 1e+03, 100, 10)
+  lambdas <- c(100, 1e+03, 100)
   tol <- 0.01
   fn <- function(x, rOptions.=rOptions, rOutput.=rOutput,
       lambdas.=lambdas) {
@@ -62,14 +62,12 @@ rateTeams <- function(x, rOptions, rOutput, lambdas=rep(1, 4)) {
   goalsCost <- computeGoalsCost(rOutput)
   strMeanCost <- computeStrMeanCost(rOutput)
   strFsNormCost <- norm(matrix(strFsNorm), "f")
-  xpCost <- rOutput$xpCost
   goalsReg <- lambdas[1] * min(0, 1.1 - goalsCost) ^ 2
   strReg <- lambdas[2] * (min(0, 0.05 - strMeanCost[1]) ^ 2 +
       min(0, 0.05 - strMeanCost[1]) ^ 2)
   strFsNormReg <- lambdas[3] * min(0, 1 - strFsNormCost) ^ 2
-  xpReg <- lambdas[4] * xpCost
-  print(c(strCost, goalsReg, strReg, strFsNormReg, xpCost))
-  rOutput$y <- strCost + goalsReg + strReg + strFsNormReg + xpReg
+  print(c(strCost, goalsReg, strReg, strFsNormReg))
+  rOutput$y <- strCost + goalsReg + strReg + strFsNormReg
   rData <- list(rOptions=rOptions, rOutput=rOutput)
   rData
 }
