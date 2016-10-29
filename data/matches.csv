@@ -37,8 +37,14 @@
 "Republic of Ireland","Georgia",10/06/16,"WOC-Q-Europe",1,0,1
 "Turkey","Ukraine",10/06/16,"WOC-Q-Europe",2,2,1
 "Brazil","Colombia",09/07/16,"WOC-Q-South America",2,1,1
+"Canada","El Salvador",09/07/16,"WOC-Q-North America",3,1,1
 "Chile","Bolivia",09/07/16,"WOC-Q-South America",0,0,1
+"Costa Rica","Panama",09/07/16,"WOC-Q-North America",3,1,1
+"Guatemala","Saint Vincent and the Grenadines",09/07/16,"WOC-Q-North America",9,3,1
+"Jamaica","Haiti",09/07/16,"WOC-Q-North America",0,2,1
+"Mexico","Honduras",09/07/16,"WOC-Q-North America",0,0,1
 "Peru","Ecuador",09/07/16,"WOC-Q-South America",2,1,1
+"United States","Trinidad and Tobago",09/07/16,"WOC-Q-North America",4,0,1
 "Uruguay","Paraguay",09/07/16,"WOC-Q-South America",4,0,1
 "Venezuela","Argentina",09/07/16,"WOC-Q-South America",2,2,1
 "Andorra","Latvia",09/06/16,"WOC-Q-Europe",0,1,1
@@ -68,8 +74,14 @@
 "Romania","Montenegro",09/04/16,"WOC-Q-Europe",1,1,1
 "San Marino","Azerbaijan",09/04/16,"WOC-Q-Europe",0,1,1
 "Slovakia","England",09/04/16,"WOC-Q-Europe",0,1,1
+"El Salvador","Mexico",09/03/16,"WOC-Q-North America",1,3,1
+"Haiti","Costa Rica",09/03/16,"WOC-Q-North America",0,1,1
+"Panama","Jamaica",09/03/16,"WOC-Q-North America",2,0,1
+"Trinidad and Tobago","Guatemala",09/03/16,"WOC-Q-North America",2,2,1
 "Argentina","Uruguay",09/02/16,"WOC-Q-South America",1,0,1
+"Honduras","Canada",09/02/16,"WOC-Q-North America",2,1,1
 "Paraguay","Chile",09/02/16,"WOC-Q-South America",2,1,1
+"Saint Vincent and the Grenadines","United States",09/02/16,"WOC-Q-North America",0,6,1
 "Bolivia","Peru",09/01/16,"WOC-Q-South America",2,0,1
 "Colombia","Venezuela",09/01/16,"WOC-Q-South America",2,0,1
 "Ecuador","Brazil",09/01/16,"WOC-Q-South America",0,3,1
@@ -157,28 +169,52 @@
 "Costa Rica","Paraguay",06/04/16,"COP-G",0,0,0
 "United States","Colombia",06/04/16,"COP-G",0,2,1
 "Argentina","Bolivia",03/30/16,"WOC-Q-South America",2,0,1
+"Costa Rica","Jamaica",03/30/16,"WOC-Q-North America",3,0,1
+"Honduras","El Salvador",03/30/16,"WOC-Q-North America",2,0,1
+"Mexico","Canada",03/30/16,"WOC-Q-North America",2,0,1
+"Panama","Haiti",03/30/16,"WOC-Q-North America",1,0,1
 "Paraguay","Brazil",03/30/16,"WOC-Q-South America",2,2,1
+"Trinidad and Tobago","Saint Vincent and the Grenadines",03/30/16,"WOC-Q-North America",6,0,1
+"United States","Guatemala",03/30/16,"WOC-Q-North America",4,0,1
 "Uruguay","Peru",03/30/16,"WOC-Q-South America",1,0,1
 "Venezuela","Chile",03/30/16,"WOC-Q-South America",1,4,1
 "Colombia","Ecuador",03/29/16,"WOC-Q-South America",3,1,1
 "Brazil","Uruguay",03/26/16,"WOC-Q-South America",2,2,1
+"Canada","Mexico",03/26/16,"WOC-Q-North America",0,3,1
+"El Salvador","Honduras",03/26/16,"WOC-Q-North America",2,2,1
+"Guatemala","United States",03/26/16,"WOC-Q-North America",2,0,1
+"Haiti","Panama",03/26/16,"WOC-Q-North America",0,0,1
+"Jamaica","Costa Rica",03/26/16,"WOC-Q-North America",1,1,1
 "Chile","Argentina",03/25/16,"WOC-Q-South America",1,2,1
 "Peru","Venezuela",03/25/16,"WOC-Q-South America",2,2,1
+"Saint Vincent and the Grenadines","Trinidad and Tobago",03/25/16,"WOC-Q-North America",2,3,1
 "Bolivia","Colombia",03/24/16,"WOC-Q-South America",2,3,1
 "Ecuador","Paraguay",03/24/16,"WOC-Q-South America",2,2,1
 "Brazil","Peru",11/18/15,"WOC-Q-South America",3,0,1
+"El Salvador","Canada",11/18/15,"WOC-Q-North America",0,0,1
+"Haiti","Jamaica",11/18/15,"WOC-Q-North America",0,1,1
+"Panama","Costa Rica",11/18/15,"WOC-Q-North America",1,2,1
 "Paraguay","Bolivia",11/18/15,"WOC-Q-South America",2,1,1
+"Trinidad and Tobago","United States",11/18/15,"WOC-Q-North America",0,0,1
 "Uruguay","Chile",11/18/15,"WOC-Q-South America",3,0,1
 "Colombia","Argentina",11/17/15,"WOC-Q-South America",0,1,1
 "Denmark","Sweden",11/17/15,"EUC-Q",2,2,1
+"Honduras","Mexico",11/17/15,"WOC-Q-North America",0,2,1
+"Saint Vincent and the Grenadines","Guatemala",11/17/15,"WOC-Q-North America",0,4,1
 "Slovenia","Ukraine",11/17/15,"EUC-Q",1,1,1
 "Venezuela","Ecuador",11/17/15,"WOC-Q-South America",1,3,1
 "Republic of Ireland","Bosnia-Herzegovina",11/16/15,"EUC-Q",2,0,1
 "Hungary","Norway",11/15/15,"EUC-Q",2,1,1
 "Argentina","Brazil",11/14/15,"WOC-Q-South America",1,1,1
+"Canada","Honduras",11/14/15,"WOC-Q-North America",1,0,1
+"Costa Rica","Haiti",11/14/15,"WOC-Q-North America",1,0,1
+"Guatemala","Trinidad and Tobago",11/14/15,"WOC-Q-North America",1,2,1
+"Jamaica","Panama",11/14/15,"WOC-Q-North America",0,2,1
+"Mexico","El Salvador",11/14/15,"WOC-Q-North America",3,0,1
 "Peru","Paraguay",11/14/15,"WOC-Q-South America",1,0,1
 "Sweden","Denmark",11/14/15,"EUC-Q",2,1,1
 "Ukraine","Slovenia",11/14/15,"EUC-Q",2,0,1
+"United States","Saint Vincent and the Grenadines",11/14/15,"WOC-Q-North America",6,1,1
 "Bosnia-Herzegovina","Republic of Ireland",11/13/15,"EUC-Q",1,1,1
 "Chile","Colombia",11/13/15,"WOC-Q-South America",1,1,1
 "Bolivia","Venezuela",11/12/15,"WOC-Q-South America",4,2,1
@@ -246,6 +282,12 @@
 "Romania","Finland",10/08/15,"EUC-Q",1,1,1
 "Scotland","Poland",10/08/15,"EUC-Q",2,2,1
 "Venezuela","Paraguay",10/08/15,"WOC-Q-South America",0,1,1
+"Aruba","Saint Vincent and the Grenadines",09/09/15,"WOC-Q-North America",2,1,1
+"Belize","Canada",09/09/15,"WOC-Q-North America",1,1,1
+"El Salvador","Curacao",09/09/15,"WOC-Q-North America",1,0,1
+"Guatemala","Antigua and Barbuda",09/09/15,"WOC-Q-North America",2,0,1
+"Haiti","Grenada",09/09/15,"WOC-Q-North America",3,0,1
+"Nicaragua","Jamaica",09/09/15,"WOC-Q-North America",0,2,1
 "Belarus","Luxembourg",09/08/15,"EUC-Q",2,0,1
 "England","Switzerland",09/08/15,"EUC-Q",2,0,1
 "Liechtenstein","Russia",09/08/15,"EUC-Q",0,7,1
@@ -272,8 +314,12 @@
 "Norway","Croatia",09/06/15,"EUC-Q",2,0,1
 "Turkey","Netherlands",09/06/15,"EUC-Q",3,0,1
 "Wales","Israel",09/06/15,"EUC-Q",0,0,1
+"Antigua and Barbuda","Guatemala",09/05/15,"WOC-Q-North America",1,0,1
 "Austria","Moldova",09/05/15,"EUC-Q",1,0,1
+"Canada","Belize",09/05/15,"WOC-Q-North America",3,0,1
+"Curacao","El Salvador",09/05/15,"WOC-Q-North America",0,1,1
 "Estonia","Lithuania",09/05/15,"EUC-Q",1,0,1
+"Jamaica","Nicaragua",09/05/15,"WOC-Q-North America",2,3,1
 "Luxembourg","Macedonia",09/05/15,"EUC-Q",1,0,1
 "Montenegro","Liechtenstein",09/05/15,"EUC-Q",2,0,1
 "Russia","Sweden",09/05/15,"EUC-Q",1,0,1
@@ -287,7 +333,9 @@
 "Germany","Poland",09/04/15,"EUC-Q",3,1,1
 "Gibraltar","Republic of Ireland",09/04/15,"EUC-Q",0,4,1
 "Greece","Finland",09/04/15,"EUC-Q",0,1,1
+"Grenada","Haiti",09/04/15,"WOC-Q-North America",1,3,1
 "Hungary","Romania",09/04/15,"EUC-Q",0,0,1
+"Saint Vincent and the Grenadines","Aruba",09/04/15,"WOC-Q-North America",2,0,1
 "Serbia","Armenia",09/04/15,"EUC-Q",2,0,1
 "Azerbaijan","Croatia",09/03/15,"EUC-Q",0,0,1
 "Belgium","Bosnia-Herzegovina",09/03/15,"EUC-Q",3,1,1
@@ -315,12 +363,22 @@
 "Peru","Venezuela",06/19/15,"COP-G",1,0,0
 "Brazil","Colombia",06/18/15,"COP-G",0,1,0
 "Argentina","Uruguay",06/17/15,"COP-G",1,0,0
+"Canada","Dominica",06/17/15,"WOC-Q-North America",4,0,1
+"El Salvador","Saint Kitts and Nevis",06/17/15,"WOC-Q-North America",4,1,1
+"Bermuda","Guatemala",06/16/15,"WOC-Q-North America",0,1,1
 "Chile","Mexico",06/16/15,"COP-G",3,3,1
+"Grenada","Puerto Rico",06/16/15,"WOC-Q-North America",2,0,1
 "Paraguay","Jamaica",06/16/15,"COP-G",1,0,0
+"Suriname","Nicaragua",06/16/15,"WOC-Q-North America",1,3,1
+"Barbados","Aruba",06/15/15,"WOC-Q-North America",0,3,1
+"Belize","Dominican Republic",06/15/15,"WOC-Q-North America",3,0,1
 "Ecuador","Bolivia",06/15/15,"COP-G",2,3,0
+"Guyana","Saint Vincent and the Grenadines",06/15/15,"WOC-Q-North America",4,4,1
+"Saint Lucia","Antigua and Barbuda",06/15/15,"WOC-Q-North America",1,4,1
 "Belarus","Spain",06/14/15,"EUC-Q",0,1,1
 "Brazil","Peru",06/14/15,"COP-G",2,1,0
 "Colombia","Venezuela",06/14/15,"COP-G",0,1,0
+"Cuba","Curacao",06/14/15,"WOC-Q-North America",1,1,1
 "Estonia","San Marino",06/14/15,"EUC-Q",2,0,1
 "Liechtenstein","Moldova",06/14/15,"EUC-Q",1,1,1
 "Lithuania","Switzerland",06/14/15,"EUC-Q",1,2,1
@@ -335,23 +393,38 @@
 "Faroe Islands","Greece",06/13/15,"EUC-Q",2,1,1
 "Finland","Hungary",06/13/15,"EUC-Q",0,1,1
 "Gibraltar","Germany",06/13/15,"EUC-Q",0,7,1
+"Guatemala","Bermuda",06/13/15,"WOC-Q-North America",0,0,1
 "Mexico","Bolivia",06/13/15,"COP-G",0,0,0
 "Northern Ireland","Romania",06/13/15,"EUC-Q",0,0,1
 "Poland","Georgia",06/13/15,"EUC-Q",4,0,1
+"Puerto Rico","Grenada",06/13/15,"WOC-Q-North America",1,0,1
 "Republic of Ireland","Scotland",06/13/15,"EUC-Q",1,1,1
 "Uruguay","Jamaica",06/13/15,"COP-G",1,0,0
 "Andorra","Cyprus",06/12/15,"EUC-Q",1,3,1
 "Bosnia-Herzegovina","Israel",06/12/15,"EUC-Q",3,1,1
 "Chile","Ecuador",06/12/15,"COP-G",2,0,1
 "Croatia","Italy",06/12/15,"EUC-Q",1,1,1
+"Dominica","Canada",06/12/15,"WOC-Q-North America",0,2,1
 "Iceland","Czech Republic",06/12/15,"EUC-Q",2,1,1
 "Kazakhstan","Turkey",06/12/15,"EUC-Q",0,1,1
 "Latvia","Netherlands",06/12/15,"EUC-Q",0,2,1
 "Malta","Bulgaria",06/12/15,"EUC-Q",0,1,1
 "Norway","Azerbaijan",06/12/15,"EUC-Q",0,0,1
+"Saint Kitts and Nevis","El Salvador",06/12/15,"WOC-Q-North America",2,2,1
 "Wales","Belgium",06/12/15,"EUC-Q",1,0,1
+"Antigua and Barbuda","Saint Lucia",06/11/15,"WOC-Q-North America",1,3,1
+"Aruba","Barbados",06/11/15,"WOC-Q-North America",0,2,1
+"Curacao","Cuba",06/11/15,"WOC-Q-North America",0,0,1
+"Dominican Republic","Belize",06/11/15,"WOC-Q-North America",1,2,1
+"Saint Vincent and the Grenadines","Guyana",06/10/15,"WOC-Q-North America",2,2,1
+"Nicaragua","Suriname",06/08/15,"WOC-Q-North America",1,0,1
+"Montserrat","Curacao",04/01/15,"WOC-Q-North America",2,2,1
 "Israel","Belgium",03/31/15,"EUC-Q",0,1,1
+"Cayman Islands","Belize",03/30/15,"WOC-Q-North America",1,1,1
 "Albania","Armenia",03/29/15,"EUC-Q",2,1,1
+"Anguilla","Nicaragua",03/29/15,"WOC-Q-North America",0,3,1
+"Bermuda","Bahamas",03/29/15,"WOC-Q-North America",3,0,1
+"Dominica","British Virgin Islands",03/29/15,"WOC-Q-North America",0,0,1
 "Georgia","Germany",03/29/15,"EUC-Q",0,2,1
 "Hungary","Greece",03/29/15,"EUC-Q",0,0,1
 "Northern Ireland","Finland",03/29/15,"EUC-Q",2,1,1
@@ -364,10 +437,12 @@
 "Belgium","Cyprus",03/28/15,"EUC-Q",5,0,1
 "Bulgaria","Italy",03/28/15,"EUC-Q",2,2,1
 "Croatia","Norway",03/28/15,"EUC-Q",5,1,1
+"Curacao","Montserrat",03/28/15,"WOC-Q-North America",2,1,1
 "Czech Republic","Latvia",03/28/15,"EUC-Q",1,1,1
 "Israel","Wales",03/28/15,"EUC-Q",0,3,1
 "Kazakhstan","Iceland",03/28/15,"EUC-Q",0,3,1
 "Netherlands","Turkey",03/28/15,"EUC-Q",1,1,1
+"British Virgin Islands","Dominica",03/27/15,"WOC-Q-North America",2,3,1
 "England","Lithuania",03/27/15,"EUC-Q",4,0,1
 "Liechtenstein","Austria",03/27/15,"EUC-Q",0,5,1
 "Macedonia","Belarus",03/27/15,"EUC-Q",1,2,1
@@ -377,6 +452,13 @@
 "Slovenia","San Marino",03/27/15,"EUC-Q",6,0,1
 "Spain","Ukraine",03/27/15,"EUC-Q",1,0,1
 "Switzerland","Estonia",03/27/15,"EUC-Q",3,0,1
+"Turks and Caicos Islands","Saint Kitts and Nevis",03/27/15,"WOC-Q-North America",2,6,1
+"Bahamas","Bermuda",03/26/15,"WOC-Q-North America",0,5,1
+"Belize","Cayman Islands",03/26/15,"WOC-Q-North America",0,0,1
+"United States Virgin Islands","Barbados",03/26/15,"WOC-Q-North America",0,4,1
+"Nicaragua","Anguilla",03/24/15,"WOC-Q-North America",5,0,1
+"Saint Kitts and Nevis","Turks and Caicos Islands",03/24/15,"WOC-Q-North America",6,2,1
+"Barbados","United States Virgin Islands",03/23/15,"WOC-Q-North America",0,1,1
 "Azerbaijan","Norway",11/16/14,"EUC-Q",0,1,1
 "Belgium","Wales",11/16/14,"EUC-Q",0,0,1
 "Bulgaria","Malta",11/16/14,"EUC-Q",1,1,1
