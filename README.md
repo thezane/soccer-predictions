@@ -22,4 +22,4 @@ After determining the chance that the game ends with a certain scoreline, ODM-S 
 
 ###How To Interpret Predictions###
 
-ODM-S is a useful model because it performs well against bettings markets and other statistical models.  Also, it gives a good sense of attack and defense strengths of each team.  However, one should not rely on it too much.  Like all soccer statistical models, it cannot accurately account for missing players and requires teams to play many games over a short period to perform at its best.
+ODM-S is a useful model because it performs well against the Elo Ratings, bettings markets and other statistical models.  Also, it gives a good sense of attack and defense strengths of each team.  However, one should not rely on it too much.  Like all soccer statistical models, it cannot accurately account for missing players and requires teams to play many games over a short period to perform at its best.
