@@ -20,8 +20,7 @@ forecastRatings <- function(currentDate, currentContest="WOC",
   T <- readsData[["T"]]
   gi <- newGameIterator(gTree)
   optPrereqs <- constructOptPrereqs(gTree, gi, tTree, T)
-  rData <- optimizeRatings(tTree, fTree, optPrereqs, relevantGoals,
-      rData)
+  rData <- optimizeRatings(tTree, fTree, optPrereqs, rData)
   writeData(rData, T, dataPath)
   rData
 }

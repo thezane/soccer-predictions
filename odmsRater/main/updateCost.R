@@ -15,28 +15,34 @@ updateCost <- function(rOptions, rOutput, game, gamePrev) {
 } 
 
 updateRatingsCost <- function(rOptions, rOutput, game) {
-  gamePrediction <- forecastGame(model=rOptions$model, game=game)
-  strCostData <- computeStrCost(game, gamePrediction)
-  sse <- strCostData[["sse"]]
-  rOutput <- updateStrCost(rOutput, computeTukeyCost(sse),
-      strCostData[["goalsExpected"]])
+  gamePrediction <- forecastGame(rOptions=rOptions, game=game)
+  
+  # Updating sse of expected result and actual result
+  sse <- computeGameCost(game, gamePrediction)
+  rOutput <- updateStrCost(rOutput, computeTukeyCost(sse))
   game <- updateSSE(game, sse)
+  
+  # Updating sse of expected goals and actual goals
+  goalsExpected <- gamePrediction[["goalsExpected"]]
+  goalsActual <- game$goals
+  rOutput <- updateGoalsCost(rOutput, goalsExpected, goalsActual)
+  
+  # Outputing costs
   costData <- list(rOutput=rOutput, game=game)
   costData
 }
 
-computeStrCost <- function(game, gamePrediction) {
+computeGameCost <- function(game, gamePrediction) {
   goals <- game$goals
   gamePs <- gamePrediction[["gamePs"]]
   expectedResult <- gamePs
   actualResult <- as.numeric(c(goals[1] > goals[2],
       goals[1] == goals[2], goals[1] < goals[2]))
   sse <- computeSSE(actualResult, expectedResult)
-  goalsExpected <- sum(gamePrediction[["goalsExpected"]])
-  strCostData <- list(goalsExpected=goalsExpected, sse=sse)
-  strCostData
+  sse
 }
 
+# Apply the biweight function to 'x'
 computeTukeyCost <- function(x, c=4.685) {
   xAbs <- abs(x)
 

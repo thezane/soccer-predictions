@@ -1,6 +1,6 @@
 scaleRating <- function(A, x, tolScale) {
   y <- A %*% (1 / x);
-  
+ 
   while (TRUE) {
     xPost = t(A) %*% (1 / y);
     yPost = A %*% (1 / x);
@@ -8,7 +8,7 @@ scaleRating <- function(A, x, tolScale) {
     yDel <- yPost - y;
     x <- xPost;
     y <- yPost;
-    
+
     if (norm(xDel) < tolScale && norm(yDel) < tolScale) {
       break;
     }

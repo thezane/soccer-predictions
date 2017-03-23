@@ -1,11 +1,11 @@
-forecastGame <- function (gameHypo=NULL, model=NULL, game=NULL) {
+forecastGame <- function (gameHypo=NULL, rOptions=NULL, game=NULL) {
   maxGoals <- 20
   numDecimals <- 4
-  isTraining <- !is.null(model)
+  isTraining <- !is.null(rOptions)
 
   if (!isTraining) {
     rData <- gameHypo$rData
-    model <- rData[["rOptions"]]$model
+    rOptions <- rData[["rOptions"]]
     game <- gameHypo
   }
 
@@ -15,7 +15,7 @@ forecastGame <- function (gameHypo=NULL, model=NULL, game=NULL) {
   strNorm <- game$strNorm  
   homeStr <- strNorm[1, ]
   awayStr <- strNorm[2, ]
-  lambdas <- computeLambdas(model, homeMeanGoals, awayMeanGoals,
+  lambdas <- computeLambdas(rOptions, homeMeanGoals, awayMeanGoals,
       homeStr, awayStr)
   gamePrediction <- computeGamePrediction(lambdas, maxGoals)
   gamePrediction[["goalsExpected"]] <- c(lambdas[1], lambdas[2]) +
@@ -35,16 +35,16 @@ forecastGame <- function (gameHypo=NULL, model=NULL, game=NULL) {
   gamePrediction
 }
 
-computeLambdas <- function(model, homeMeanGoals, awayMeanGoals,
+computeLambdas <- function(rOptions, homeMeanGoals, awayMeanGoals,
     homeStr, awayStr) {
-  strBetas <- model$strBetas
+  strBetas <- rOptions$strBetas
   lambda1Log <- log(homeMeanGoals) +
       strBetas[2] * awayStr[2] +
       strBetas[1] * homeStr[1]
   lambda2Log <- log(awayMeanGoals) +
       strBetas[2] * homeStr[2] +
       strBetas[1] * awayStr[1]
-  lambda3Log <- model$corrBeta
+  lambda3Log <- rOptions$corrBeta
   lambdas <- exp(c(lambda1Log, lambda2Log, lambda3Log))
   lambdas
 }

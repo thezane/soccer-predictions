@@ -1,11 +1,8 @@
-optimizeRatings <- function(tTree, fTree, optPrereqs, relevantGoals,
-    rData) {
+optimizeRatings <- function(tTree, fTree, optPrereqs, rData) {
   gTree <- optPrereqs[["gTree"]]
   gi <- optPrereqs[["gi"]]
-  goalsRelevant <- optPrereqs[["goalsRelevant"]]
   meanGoalsMap <- optPrereqs[["meanGoalsMap"]]
-  rOutput <- newRatingsOutput(tTree, gTree, gi, goalsRelevant,
-      meanGoalsMap)
+  rOutput <- newRatingsOutput(tTree, gTree, gi, meanGoalsMap)
 
   if (is.null(rData)) {
     rOptions <- newRatingsOptions(fTree)
@@ -22,19 +19,17 @@ optimizeRatings <- function(tTree, fTree, optPrereqs, relevantGoals,
 }
 
 trainRater <- function(rOptions, rOutput) {
-  model <- c(1.5, 1.5, 0.3, 0.5, 0.5, -3)
-  modelLBd <- c(0, 0, 0.01, 0, 0, -Inf)
+  model <- c(1, 0.3, 0.5, 0.5, -1)
+  modelLBd <- c(0, 0.01, 0, 0, -Inf)
   numFs <- rOptions$numFs
   strFsNorm <- c(-0.2, -0.6, 0.2, -0.2, -0.6, 0.6)
   strFsNormLBd <- rep(-Inf, numFs)
   x <- c(model, strFsNorm)
   xLBd <- c(modelLBd, strFsNormLBd)
   n <- length(x)
-  lambdas <- c(100, 1e+03, 100)
   tol <- 0.01
-  fn <- function(x, rOptions.=rOptions, rOutput.=rOutput,
-      lambdas.=lambdas) {
-      rData <- rateTeams(x, rOptions, rOutput, lambdas)
+  fn <- function(x, rOptions.=rOptions, rOutput.=rOutput) {
+      rData <- rateTeams(x, rOptions, rOutput)
       rOutput <- rData[["rOutput"]]
       rOutput$y
   }
@@ -52,23 +47,34 @@ trainRater <- function(rOptions, rOutput) {
   x
 }
 
-rateTeams <- function(x, rOptions, rOutput, lambdas=rep(1, 4)) {
-  print(x)
-  strFsNorm <- x[-c(1: 6)]
-  rOptions <- updateOptions(rOptions, x[c(1, 2)], x[3], x[c(4, 5)],
-      x[6], strFsNorm)
+rateTeams <- function(x, rOptions, rOutput) {
+  # Update model parameters
+  strFsNorm <- x[-c(1: 5)]
+  rOptions <- updateOptions(rOptions, x[1], x[2], x[c(3, 4)],
+      x[5], strFsNorm)
+
+  # Compute ratings with updated model
   rOutput <- computeRatings(rOptions, rOutput)
-  strCost <- rOutput$strCost
-  goalsCost <- computeGoalsCost(rOutput)
-  strMeanCost <- computeStrMeanCost(rOutput)
-  strFsNormCost <- norm(matrix(strFsNorm), "f")
-  goalsReg <- lambdas[1] * min(0, 1.1 - goalsCost) ^ 2
-  strReg <- lambdas[2] * (min(0, 0.05 - strMeanCost[1]) ^ 2 +
-      min(0, 0.05 - strMeanCost[1]) ^ 2)
-  strFsNormReg <- lambdas[3] * min(0, 1 - strFsNormCost) ^ 2
-  print(c(strCost, goalsReg, strReg, strFsNormReg))
-  rOutput$y <- strCost + goalsReg + strReg + strFsNormReg
+
+  # Compute regularization
+  goalsCost <- 0.1 * computeGoalsCost(rOutput)
+  strMeanCost <- 0.1 * computeStrMeanCost(rOutput)
+  fedCost <- 0.1 * norm(matrix(strFsNorm), "f")
+
+  # Compute cost
+  strCost <- computeStrCost(rOutput)
+  rOutput$y <- strCost + goalsCost + strMeanCost + fedCost
   rData <- list(rOptions=rOptions, rOutput=rOutput)
+
+  # Print parameters
+  printModel(rOptions)
+
+  # Print cost
+  print(noquote(sprintf("cost = %f", strCost)))
+  print(noquote(sprintf("goals = %f", goalsCost)))
+  print(noquote(sprintf("str = %f", strMeanCost)))
+  print(noquote(sprintf("fed = %f", fedCost)))
+  cat("\n")
   rData
 }
 

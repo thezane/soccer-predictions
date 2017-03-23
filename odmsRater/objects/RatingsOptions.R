@@ -3,9 +3,10 @@ newRatingsOptions <- function(fTree) {
   numFs <- length(fNames)
 
   rOptions <- list(
-    ks=c(1, 1),
+    k=1,
     c=0.3,
-    model=newModel(),
+    strBetas=c(0.5, 0.5),
+    corrBeta=-1,
     xpDefault=1,
     fTree=fTree,
     fNames=fNames,
@@ -18,11 +19,12 @@ newRatingsOptions <- function(fTree) {
   rOptions
 }
 
-updateOptions <- function(rOptions, ks, c, strBetas, corrBeta,
+updateOptions <- function(rOptions, k, c, strBetas, corrBeta,
       strFsNorm) {
-  rOptions$ks <- ks
+  rOptions$k <- k
   rOptions$c <- c
-  rOptions$model <- updateModel(rOptions$model, strBetas, corrBeta)
+  rOptions$strBetas <- strBetas
+  rOptions$corrBeta <- corrBeta
   strFs <- exp(strFsNorm)
   i <- 1
   
@@ -33,4 +35,19 @@ updateOptions <- function(rOptions, ks, c, strBetas, corrBeta,
   }
 
   rOptions
+}
+
+printModel <- function(rOptions) {
+  print(noquote(sprintf("k = %f", rOptions$k)))
+  print(noquote(sprintf("c = %f", rOptions$c)))
+  print(noquote(sprintf("atk = %f", rOptions$strBetas[1])))
+  print(noquote(sprintf("def = %f", rOptions$strBetas[2])))
+  print(noquote(sprintf("corr = %f", rOptions$corrBeta)))
+  i <- 1
+  
+  while (i <= rOptions$numFs) {
+    print(noquote(sprintf("%s = %f", rOptions$fNames[i],
+        rOptions$fTree[[rOptions$fNames[i]]][1])))
+    i <- i + 1
+  }
 }

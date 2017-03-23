@@ -39,7 +39,7 @@ computeTeamStrs <- function(team, rOptions) {
   if (!team$isUpdated) {
     teamStr <- rOptions$fTree[[team$fName]]
     strNorm=computeStrNorm(teamStr)
-    strBetas <- rOptions$model$strBetas
+    strBetas <- rOptions$strBetas
     strBetas[2] <- -strBetas[2]
     strAgg <- strNorm %*% strBetas
   }
