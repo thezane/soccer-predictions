@@ -17,12 +17,12 @@ updateCost <- function(rOptions, rOutput, game, gamePrev) {
 updateRatingsCost <- function(rOptions, rOutput, game) {
   gamePrediction <- forecastGame(rOptions=rOptions, game=game)
   
-  # Updating sse of expected result and actual result
+  # Update sse of expected and actual game outcome
   sse <- computeGameCost(game, gamePrediction)
-  rOutput <- updateStrCost(rOutput, computeTukeyCost(sse))
+  rOutput <- updateStrCost(rOutput, sse)
   game <- updateSSE(game, sse)
   
-  # Updating sse of expected goals and actual goals
+  # Update sse of expected and actual goals
   goalsExpected <- gamePrediction[["goalsExpected"]]
   goalsActual <- game$goals
   rOutput <- updateGoalsCost(rOutput, goalsExpected, goalsActual)
@@ -32,6 +32,7 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   costData
 }
 
+# Compute sse of expected and actual game outcome
 computeGameCost <- function(game, gamePrediction) {
   goals <- game$goals
   gamePs <- gamePrediction[["gamePs"]]
@@ -40,19 +41,4 @@ computeGameCost <- function(game, gamePrediction) {
       goals[1] == goals[2], goals[1] < goals[2]))
   sse <- computeSSE(actualResult, expectedResult)
   sse
-}
-
-# Apply the biweight function to 'x'
-computeTukeyCost <- function(x, c=4.685) {
-  xAbs <- abs(x)
-
-  if (xAbs <= c) {
-    tukeyCost <- x ^ 6 / (6 * c ^ 4) - (x ^ 4) / (2 * c ^ 2) +
-        x ^ 2 / 2
-  }
-  else {
-    tukeyCost <- c ^ 2 / 6
-  }
-
-  tukeyCost
 }

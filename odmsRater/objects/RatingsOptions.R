@@ -7,6 +7,8 @@ newRatingsOptions <- function(fTree) {
     c=0.3,
     strBetas=c(0.5, 0.5),
     corrBeta=-1,
+    meanGoals=1,
+    hA=0.2,
     xpDefault=1,
     fTree=fTree,
     fNames=fNames,
@@ -20,11 +22,13 @@ newRatingsOptions <- function(fTree) {
 }
 
 updateOptions <- function(rOptions, k, c, strBetas, corrBeta,
-      strFsNorm) {
+      meanGoals, hA, strFsNorm) {
   rOptions$k <- k
   rOptions$c <- c
   rOptions$strBetas <- strBetas
   rOptions$corrBeta <- corrBeta
+  rOptions$meanGoals <- meanGoals
+  rOptions$hA <- hA
   strFs <- exp(strFsNorm)
   i <- 1
   
@@ -43,11 +47,13 @@ printModel <- function(rOptions) {
   print(noquote(sprintf("atk = %f", rOptions$strBetas[1])))
   print(noquote(sprintf("def = %f", rOptions$strBetas[2])))
   print(noquote(sprintf("corr = %f", rOptions$corrBeta)))
+  print(noquote(sprintf("mu = %f", rOptions$meanGoals)))
+  print(noquote(sprintf("ha = %f", rOptions$hA)))
   i <- 1
   
   while (i <= rOptions$numFs) {
     print(noquote(sprintf("%s = %f", rOptions$fNames[i],
-        rOptions$fTree[[rOptions$fNames[i]]][1])))
+        log(rOptions$fTree[[rOptions$fNames[i]]][1]))))
     i <- i + 1
   }
 }

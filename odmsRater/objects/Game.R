@@ -1,5 +1,5 @@
 newGame <- function(T, i, homeTeamName, awayTeamName,
-    gameDate, currentContest) {
+    gameDate) {
   contest <- T[[i, "Contest"]]
   goals <- c(T[[i, "HomeGoals"]], T[[i, "AwayGoals"]])
   zeroesMat <- matrix(0, 2, 2)
@@ -23,27 +23,26 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     strAggNext=c(0, 0),
     teamXP=zeroesMat,
     existsHA=T[[i, "HomeAdvantage"]],
+    isFriendly=contest=="Friendlies",
     isQualifier=grepl("-Q", contest),
-    isInternational=grepl("(WOC)|(COC)", contest),
     isPlayOff=grepl("-PlayOff", contest),
-    isSame=grepl(currentContest, contest),
     isWocG=(contest=="WOC-G"),
     gameNum=0,
     gameRow=i
   )
   
-  game$isRelevant <- game$isPlayOff || (!game$isQualifier &&
-      (game$isInternational || game$isSame))
+  game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
+          game$isPlayOff
   
   class(game) <- "Game"
   game
 } 
 
-normalizeGoals <- function(game, meanGoalsMap) {
+# Adjust goals scored by teams with home advantage.
+normalizeGoals <- function(game, rOptions) {
   goals <- game$goals
   goalsNorm <- goals
-  meanGoals <- computeMeanGoals(game$isQualifier, game$isPlayOff,
-      game$existsHA, game$contest, meanGoalsMap)
+  meanGoals <- computeMeanGoals(game$existsHA, rOptions)
   goalsNorm[1] <- goalsNorm[1] * (meanGoals[2] / meanGoals[1])
   game$goalsNorm <- goalsNorm
   game$meanGoals <- meanGoals
@@ -51,6 +50,7 @@ normalizeGoals <- function(game, meanGoalsMap) {
   game
 }
 
+# Update team experience and construct ratings matrix before game.
 updateGamePreRate <- function(game, rOptions, homeTeam, awayTeam) {
   strBetas <- rOptions$strBetas
   gameDate <- game$gameDate
@@ -68,7 +68,7 @@ updateGamePreRate <- function(game, rOptions, homeTeam, awayTeam) {
   game
 }
 
-
+# Update team ratings after game.
 updateGamePostRate <- function(game, rOptions, strPost) {
   strBetas <- rOptions$strBetas
   game$strPost <- strPost

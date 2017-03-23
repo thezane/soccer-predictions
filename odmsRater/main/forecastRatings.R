@@ -1,5 +1,4 @@
-forecastRatings <- function(currentDate, currentContest="WOC",
-    rData=NULL) {
+forecastRatings <- function(currentDate, rData=NULL) {
   library(hash)
   library(parallel)
   library(MASS)
@@ -12,15 +11,13 @@ forecastRatings <- function(currentDate, currentContest="WOC",
   dateFormat <- "%m/%d/%y"
   dataPath <- "../../data/"
   currentDate <- as.Date(currentDate, dateFormat)
-  readsData <- readData(currentDate, currentContest,
-      dateFormat, dataPath)
+  readsData <- readData(currentDate, dateFormat, dataPath)
   tTree <- readsData[["tTree"]]
   fTree <- readsData[["fTree"]]
   gTree <- readsData[["gTree"]]
   T <- readsData[["T"]]
   gi <- newGameIterator(gTree)
-  optPrereqs <- constructOptPrereqs(gTree, gi, tTree, T)
-  rData <- optimizeRatings(tTree, fTree, optPrereqs, rData)
+  rData <- optimizeRatings(tTree, fTree, gTree, gi, rData)
   writeData(rData, T, dataPath)
   rData
 }

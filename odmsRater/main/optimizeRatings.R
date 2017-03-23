@@ -1,8 +1,5 @@
-optimizeRatings <- function(tTree, fTree, optPrereqs, rData) {
-  gTree <- optPrereqs[["gTree"]]
-  gi <- optPrereqs[["gi"]]
-  meanGoalsMap <- optPrereqs[["meanGoalsMap"]]
-  rOutput <- newRatingsOutput(tTree, gTree, gi, meanGoalsMap)
+optimizeRatings <- function(tTree, fTree, gTree, gi, rData) {
+  rOutput <- newRatingsOutput(tTree, gTree, gi)
 
   if (is.null(rData)) {
     rOptions <- newRatingsOptions(fTree)
@@ -19,15 +16,15 @@ optimizeRatings <- function(tTree, fTree, optPrereqs, rData) {
 }
 
 trainRater <- function(rOptions, rOutput) {
-  model <- c(1, 0.3, 0.5, 0.5, -1)
-  modelLBd <- c(0, 0.01, 0, 0, -Inf)
+  model <- c(1, 0.3, 0.5, 0.5, -1, 1, 0.2)
+  modelLBd <- c(0, 0.01, 0, 0, -Inf, 0, 0)
   numFs <- rOptions$numFs
-  strFsNorm <- c(-0.2, -0.6, 0.2, -0.2, -0.6, 0.6)
+  strFsNorm <- c(-0.2, -0.2, 0.2, -0.2, -0.6, 0.6)
   strFsNormLBd <- rep(-Inf, numFs)
   x <- c(model, strFsNorm)
   xLBd <- c(modelLBd, strFsNormLBd)
   n <- length(x)
-  tol <- 0.01
+  tol <- 0.001
   fn <- function(x, rOptions.=rOptions, rOutput.=rOutput) {
       rData <- rateTeams(x, rOptions, rOutput)
       rOutput <- rData[["rOutput"]]
@@ -40,7 +37,7 @@ trainRater <- function(rOptions, rOutput) {
       computeGradientPar(x, n, fn, e, cluster)
   }
   optimObj <- optim(x, fn, gr, method="L-BFGS-B",
-      lower=xLBd, control=list(trace=3, maxit=4*n,
+      lower=xLBd, control=list(trace=3, maxit=10*n,
       abstol=tol, reltol=tol, pgtol=tol, REPORT=1))
   stopCluster(cluster)
   x <- optimObj$par
@@ -49,17 +46,17 @@ trainRater <- function(rOptions, rOutput) {
 
 rateTeams <- function(x, rOptions, rOutput) {
   # Update model parameters
-  strFsNorm <- x[-c(1: 5)]
+  strFsNorm <- x[-c(1: 7)]
   rOptions <- updateOptions(rOptions, x[1], x[2], x[c(3, 4)],
-      x[5], strFsNorm)
+      x[5], x[6], x[7], strFsNorm)
 
   # Compute ratings with updated model
   rOutput <- computeRatings(rOptions, rOutput)
 
   # Compute regularization
-  goalsCost <- 0.1 * computeGoalsCost(rOutput)
-  strMeanCost <- 0.1 * computeStrMeanCost(rOutput)
-  fedCost <- 0.1 * norm(matrix(strFsNorm), "f")
+  goalsCost <- 0.01 * computeGoalsCost(rOutput)
+  strMeanCost <- computeStrMeanCost(rOutput)
+  fedCost <- 0.01 * norm(matrix(strFsNorm), "f")
 
   # Compute cost
   strCost <- computeStrCost(rOutput)

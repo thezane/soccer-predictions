@@ -11,6 +11,7 @@ computeRatings <- function(rOptions, rOutput) {
     gameData <- nextGame(gi)
     gi <- gameData[["gi"]]
     game <- gameData[["game"]]
+    game <- normalizeGoals(game, rOptions)
     strPrereqs <- constructStrPrereqs(tTree, game, rOptions)
     updateStrData <- updateStr(strPrereqs, rOptions)
     tTree <- updateStrData[["tTree"]]
