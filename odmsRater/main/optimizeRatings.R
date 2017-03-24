@@ -16,7 +16,7 @@ optimizeRatings <- function(tTree, fTree, gTree, gi, rData) {
 }
 
 trainRater <- function(rOptions, rOutput) {
-  model <- c(1, 0.2, 0.5, 0.5, -1, 1, 0.2)
+  model <- c(1, 0.2, 1, 1, -1, 1, 0.2)
   modelLBd <- c(0, 0.01, 0, 0, -Inf, 0, 0)
   numFs <- rOptions$numFs
   strFsNorm <- c(-0.2, -0.2, 0.2, -0.2, -0.6, 0.6)
