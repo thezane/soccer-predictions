@@ -19,7 +19,7 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   
   # Update cost of expected and actual game outcome
   resultExpected <- gamePrediction[["gamePs"]]
-  resultActual <- computeGameCost(game, gamePrediction)
+  resultActual <- computeGameOutcome(game, gamePrediction)
   rOutput <- updateStrCost(rOutput, resultExpected, resultActual)
   game <- updateSSE(game, computeSSE(resultExpected, resultActual))
   
@@ -44,7 +44,7 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
 # Compute actual game outcome
 computeGameOutcome <- function(game) {
   goals <- game$goals
-  actualResult <- as.numeric(c(goals[1] > goals[2],
+  resultActual <- as.numeric(c(goals[1] > goals[2],
       goals[1] == goals[2], goals[1] < goals[2]))
-  actualResult
+  resultActual
 }
