@@ -75,6 +75,7 @@ rateTeams <- function(x, rOptions, rOutput) {
   print(noquote(sprintf("cost = %f", strCost)))
   print(noquote(sprintf("goals = %f", goalsCost)))
   print(noquote(sprintf("adCost = %f", adCost)))
+  print(noquote(sprintf("fedDiff = %f", fedDiffCost)))
   print(noquote(sprintf("str = %f", strMeanCost)))
   print(noquote(sprintf("fed = %f", fedCost)))
   cat("\n")
