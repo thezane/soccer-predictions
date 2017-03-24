@@ -44,7 +44,7 @@ computeStrCost <- function(rOutput) {
     strCost <- 0
   }
   else {
-    strCost <- mean(computeHuberCost(strCosts / sd(strCosts)))
+    strCost <- mean(abs(strCosts))
   }
 
   strCost
@@ -58,7 +58,7 @@ computeGoalsCost <- function(rOutput) {
     goalsCost <- 0
   }
   else {
-    goalsCost <- mean(computeHuberCost(goalsCosts / sd(goalsCosts)))
+    goalsCost <- mean(abs(goalsCosts))
   }
 
   goalsCost
@@ -72,8 +72,7 @@ computeStrMeanCost <- function(rOutput) {
     strMeanCost <- 0
   }
   else {
-	strMeanCost <- mean(computeHuberCost(
-            strMeanCosts / sd(strMeanCosts)))
+	strMeanCost <- mean(abs(strMeanCosts))
   }
 
   strMeanCost
