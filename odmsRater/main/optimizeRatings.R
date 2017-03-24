@@ -62,7 +62,7 @@ rateTeams <- function(x, rOptions, rOutput) {
 
   # Compute cost
   strCost <- computeStrCost(rOutput)
-  rOutput$y <- strCost + goalsCost + adCost + strMeanCost + fedCost
+  rOutput$y <- strCost + adCost + strMeanCost + fedCost
   rData <- list(rOptions=rOptions, rOutput=rOutput)
 
   # Print parameters
