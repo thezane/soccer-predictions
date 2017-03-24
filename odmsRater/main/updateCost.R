@@ -29,8 +29,7 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   rOutput <- updateGoalsCost(rOutput, goalsExpected, goalsActual)
   
   # Outputing costs
-  costData <- list(rOutput=rOutput, game=game)
-
+  rOutput <- updateOceania(rOutput, rOutput$tTree[[game$teamNames[1]]]$fName == "Oceania" || rOutput$tTree[[game$teamNames[2]]]$fName == "Oceania", expectedResult, actualResult)
 
   if (rOutput$tTree[[game$teamNames[1]]]$fName == "Oceania" || rOutput$tTree[[game$teamNames[2]]]$fName == "Oceania") {
     print(game$teamNames)
@@ -38,6 +37,8 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
     print(gamePrediction$goalsExpected)
     print(goalsActual)
   }
+  
+  costData <- list(rOutput=rOutput, game=game)
   costData
 }
 
