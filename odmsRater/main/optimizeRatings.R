@@ -57,12 +57,15 @@ rateTeams <- function(x, rOptions, rOutput) {
   goalsCost <- 0.001 * computeGoalsCost(rOutput)
   adCost <- 100 * min(
       rOptions$strBetas[2] - rOptions$strBetas[1], 0) ^ 2
+  fedDiffCost <- 10 * min(
+      strFsNorm[2] - strFsNorm[5], 0) ^ 2
   strMeanCost <- computeStrMeanCost(rOutput)
   fedCost <- 0.01 * norm(matrix(strFsNorm), "f")
 
   # Compute cost
   strCost <- computeStrCost(rOutput)
-  rOutput$y <- strCost + strMeanCost + fedCost
+  rOutput$y <- strCost + goalsCost + adCost + fedDiffCost +
+      strMeanCost + fedCost
   rData <- list(rOptions=rOptions, rOutput=rOutput)
 
   # Print parameters
