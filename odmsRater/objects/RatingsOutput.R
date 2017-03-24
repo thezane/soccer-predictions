@@ -22,7 +22,7 @@ updateStrCost <- function(rOutput, strCost) {
 # Update distance of expected goals from actual goals.
 updateGoalsCost <- function(rOutput, goalsExpected, goalsActual) {
   rOutput$goalsCosts <- c(rOutput$goalsCosts,
-      computeTukeyCost(computeSSE(goalsExpected, goalsActual)))
+      computeSSE(goalsExpected, goalsActual))
   rOutput
 }
 
