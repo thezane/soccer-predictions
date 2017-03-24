@@ -32,9 +32,6 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   rOutput <- updateOceania(rOutput, rOutput$tTree[[game$teamNames[1]]]$fName == "Oceania" || rOutput$tTree[[game$teamNames[2]]]$fName == "Oceania", resultExpected, resultActual, goalsExpected, goalsActual)
 
   if (rOutput$tTree[[game$teamNames[1]]]$fName == "Oceania" || rOutput$tTree[[game$teamNames[2]]]$fName == "Oceania") {
-    print(game$teamNames)
-    print(goalsExpected)
-    print(goalsActual)
     print(resultExpected)
     print(resultActual)
     print(computeSSE(resultExpected, resultActual))
