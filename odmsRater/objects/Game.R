@@ -25,6 +25,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     existsHA=T[[i, "HomeAdvantage"]],
     isFriendly=contest=="Friendlies",
     isQualifier=grepl("-Q", contest),
+    isGroup=grepl("-G", contest),
     isPlayOff=grepl("-PlayOff", contest),
     isWocG=(contest=="WOC-G"),
     gameNum=0,
@@ -33,10 +34,27 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   
   game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
           game$isPlayOff
-  
+  game$weight <- computeWeight(game)
   class(game) <- "Game"
   game
-} 
+}
+
+# Compute the weight of 'game' in team ratings.
+computeWeight <- function(game) {
+  weight = 2
+
+  if (game$isFriendly) {
+    weight <- 0.25
+  }
+  else if (game$isQualifier || game$isPlayOff) {
+    weight <- 0.5
+  }
+  else if (game$isGroup) {
+    weight <- 1
+  }
+
+  weight
+}
 
 # Adjust goals scored by teams with home advantage.
 normalizeGoals <- function(game, rOptions) {
@@ -72,7 +90,8 @@ updateGamePreRate <- function(game, rOptions, homeTeam, awayTeam) {
 updateGamePostRate <- function(game, rOptions, strPost) {
   strBetas <- rOptions$strBetas
   game$strPost <- strPost
-  alphas <- 1 / (1 + game$teamXP)
+  weight <- game$weight
+  alphas <- weight / (weight + game$teamXP)
   game$strNext <- alphas * strPost + (1 - alphas) * game$teamStr
   game$strNextNorm <- computeStrNorm(game$strNext)
   strNextNorm <- game$strNextNorm

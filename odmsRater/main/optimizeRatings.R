@@ -54,13 +54,15 @@ rateTeams <- function(x, rOptions, rOutput) {
   rOutput <- computeRatings(rOptions, rOutput)
 
   # Compute regularization
-  goalsCost <- 0.01 * computeGoalsCost(rOutput)
+  goalsCost <- 0.001 * computeGoalsCost(rOutput)
+  adCost <- 100 * min(
+      rOptions$strBetas[2] - rOptions$strBetas[1], 0) ^ 2
   strMeanCost <- computeStrMeanCost(rOutput)
   fedCost <- 0.01 * norm(matrix(strFsNorm), "f")
 
   # Compute cost
   strCost <- computeStrCost(rOutput)
-  rOutput$y <- strCost + goalsCost + strMeanCost + fedCost
+  rOutput$y <- strCost + goalsCost + adCost + strMeanCost + fedCost
   rData <- list(rOptions=rOptions, rOutput=rOutput)
 
   # Print parameters
@@ -69,6 +71,7 @@ rateTeams <- function(x, rOptions, rOutput) {
   # Print cost
   print(noquote(sprintf("cost = %f", strCost)))
   print(noquote(sprintf("goals = %f", goalsCost)))
+  print(noquote(sprintf("adCost = %f", adCost)))
   print(noquote(sprintf("str = %f", strMeanCost)))
   print(noquote(sprintf("fed = %f", fedCost)))
   cat("\n")
