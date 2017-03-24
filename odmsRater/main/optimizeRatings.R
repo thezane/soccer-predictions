@@ -54,7 +54,7 @@ rateTeams <- function(x, rOptions, rOutput) {
   rOutput <- computeRatings(rOptions, rOutput)
 
   # Compute regularization
-  goalsCost <- 0.01 * computeGoalsCost(rOutput)
+  goalsCost <- 0.1 * computeGoalsCost(rOutput)
   strMeanCost <- 10 * computeStrMeanCost(rOutput)
   fedCost <- 0.01 * norm(matrix(strFsNorm), "f")
 
