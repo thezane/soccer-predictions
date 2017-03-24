@@ -36,7 +36,6 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
     print(gamePrediction$gamePs)
     print(gamePrediction$goalsExpected)
     print(goalsActual)
-    print(computeSSE(goalsExpected, goalsActual))
   }
   costData
 }
