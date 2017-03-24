@@ -31,7 +31,8 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   # Outputing costs
   costData <- list(rOutput=rOutput, game=game)
 
-  if (game$teamNames[1] == "New Zealand" || game$teamNames[2] == "New Zealand") {
+
+  if (rOutput$tTree[[game$teamNames[1]]]$fName == "Oceania" || rOutput$tTree[[game$teamNames[2]]]$fName == "Oceania") {
     print(game$teamNames)
     print(gamePrediction$gamePs)
     print(gamePrediction$goalsExpected)
