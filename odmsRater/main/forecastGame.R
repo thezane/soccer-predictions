@@ -12,9 +12,9 @@ forecastGame <- function (gameHypo=NULL, rOptions=NULL, game=NULL) {
   meanGoals <- game$meanGoals
   homeMeanGoals <- meanGoals[1]
   awayMeanGoals <- meanGoals[2]
-  teamStr <- game$teamStr
-  homeStr <- teamStr[1, ]
-  awayStr <- teamStr[2, ]
+  strNorm <- game$strNorm  
+  homeStr <- strNorm[1, ]
+  awayStr <- strNorm[2, ]
   lambdas <- computeLambdas(rOptions, homeMeanGoals, awayMeanGoals,
       homeStr, awayStr)
   gamePrediction <- computeGamePrediction(lambdas, maxGoals)
@@ -38,12 +38,12 @@ forecastGame <- function (gameHypo=NULL, rOptions=NULL, game=NULL) {
 computeLambdas <- function(rOptions, homeMeanGoals, awayMeanGoals,
     homeStr, awayStr) {
   strBetas <- rOptions$strBetas
-  lambda1Log <- log(homeMeanGoals +
+  lambda1Log <- homeMeanGoals +
       strBetas[2] * awayStr[2] +
-      strBetas[1] * homeStr[1])
-  lambda2Log <- log(awayMeanGoals +
+      strBetas[1] * homeStr[1]
+  lambda2Log <- awayMeanGoals +
       strBetas[2] * homeStr[2] +
-      strBetas[1] * awayStr[1])
+      strBetas[1] * awayStr[1]
   lambda3Log <- rOptions$corrBeta
   lambdas <- exp(c(lambda1Log, lambda2Log, lambda3Log))
   lambdas
