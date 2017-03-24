@@ -15,15 +15,14 @@ newRatingsOutput <- function(tTree, gTree, gi) {
 
 # Update cost of prediction.
 updateStrCost <- function(rOutput, expectedResult, actualResult) {
-  rOutput$strCosts = c(rOutput$strCosts,
-      computeSSE(expectedResult, actualResult))
+  rOutput$strCosts = c(rOutput$strCosts, expectedResult - actualResult)
   rOutput
 }
 
 # Update distance of expected goals from actual goals.
 updateGoalsCost <- function(rOutput, goalsExpected, goalsActual) {
   rOutput$goalsCosts <- c(rOutput$goalsCosts,
-      computeSSE(goalsExpected, goalsActual))
+      goalsExpected - goalsActual)
   rOutput
 }
 
@@ -32,8 +31,8 @@ updateStrMeanCosts <- function(rOutput) {
   teams <- data.frame(t(values(rOutput$tTree)))
   strNorms <- data.frame(teams[["strNorm"]])
   strNormMean <- c(mean(strNorms[[1]]), mean(strNorms[[2]]))
-  strMeanCost <- computeSSE(strNormMean, c(0, 0))
-  rOutput$strMeanCosts <- c(rOutput$strMeanCosts, strMeanCost)
+  rOutput$strMeanCosts <- c(rOutput$strMeanCosts,
+      strNormMean - c(0, 0))
   rOutput
 }
 
@@ -45,7 +44,7 @@ computeStrCost <- function(rOutput) {
     strCost <- 0
   }
   else {
-    strCost <- mean(strCosts)
+    strCost <- mean(computeHuberCost(strCosts / sd(strCosts)))
   }
 
   strCost
@@ -59,7 +58,7 @@ computeGoalsCost <- function(rOutput) {
     goalsCost <- 0
   }
   else {
-    goalsCost <- mean(goalsCosts)
+    goalsCost <- mean(computeHuberCost(goalsCosts / sd(goalsCosts)))
   }
 
   goalsCost
@@ -73,9 +72,8 @@ computeStrMeanCost <- function(rOutput) {
     strMeanCost <- 0
   }
   else {
-	strMeanCostsMat <- matrix(strMeanCosts, ncol=2, byrow=TRUE)
-    strMeanCost <- sum(mean(strMeanCostsMat[, 1]),
-        mean(strMeanCostsMat[, 2]))
+	strMeanCost <- mean(computeHuberCost(
+            strMeanCosts / sd(strMeanCosts)))
   }
 
   strMeanCost

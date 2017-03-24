@@ -16,8 +16,8 @@ optimizeRatings <- function(tTree, fTree, gTree, gi, rData) {
 }
 
 trainRater <- function(rOptions, rOutput) {
-  model <- c(1, 0.5, 0.5, -1, 1, 0.2)
-  modelLBd <- c(0, 0, 0, -Inf, 0, 0)
+  model <- c(1, 0.2, 0.5, 0.5, -1, 1, 0.2)
+  modelLBd <- c(0, 0.01, 0, 0, -Inf, 0, 0)
   numFs <- rOptions$numFs
   strFsNorm <- c(-0.2, -0.2, 0.2, -0.2, -0.6, 0.6)
   strFsNormLBd <- rep(-Inf, numFs)
@@ -46,16 +46,16 @@ trainRater <- function(rOptions, rOutput) {
 
 rateTeams <- function(x, rOptions, rOutput) {
   # Update model parameters
-  strFsNorm <- x[-c(1: 6)]
-  rOptions <- updateOptions(rOptions, x[1], x[c(2, 3)],
-      x[4], x[5], x[6], strFsNorm)
+  strFsNorm <- x[-c(1: 7)]
+  rOptions <- updateOptions(rOptions, x[1], x[2], x[c(3, 4)],
+      x[5], x[6], x[7], strFsNorm)
 
   # Compute ratings with updated model
   rOutput <- computeRatings(rOptions, rOutput)
 
   # Compute regularization
   goalsCost <- 0.01 * computeGoalsCost(rOutput)
-  strMeanCost <- computeStrMeanCost(rOutput)
+  strMeanCost <- 0.01 * computeStrMeanCost(rOutput)
   fedCost <- 0.01 * norm(matrix(strFsNorm), "f")
 
   # Compute cost
