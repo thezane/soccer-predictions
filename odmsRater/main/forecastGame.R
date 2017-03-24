@@ -38,10 +38,10 @@ forecastGame <- function (gameHypo=NULL, rOptions=NULL, game=NULL) {
 computeLambdas <- function(rOptions, homeMeanGoals, awayMeanGoals,
     homeStr, awayStr) {
   strBetas <- rOptions$strBetas
-  lambda1Log <- homeMeanGoals +
+  lambda1Log <- log(homeMeanGoals) +
       strBetas[2] * awayStr[2] +
       strBetas[1] * homeStr[1]
-  lambda2Log <- awayMeanGoals +
+  lambda2Log <- log(awayMeanGoals) +
       strBetas[2] * homeStr[2] +
       strBetas[1] * awayStr[1]
   lambda3Log <- rOptions$corrBeta
