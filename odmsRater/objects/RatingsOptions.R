@@ -4,7 +4,7 @@ newRatingsOptions <- function(fTree) {
 
   rOptions <- list(
     k=1,
-    c=0.3,
+    c=0.2,
     strBetas=c(0.5, 0.5),
     corrBeta=-1,
     meanGoals=1,
