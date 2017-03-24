@@ -6,7 +6,8 @@ newRatingsOutput <- function(tTree, gTree, gi) {
     strCosts=NULL,
     goalsCosts=NULL,
     strMeanCosts=NULL,
-    oceaniaResults=NULL
+    oceaniaResults=NULL,
+    oceaniaGoals=NULL
   )
   
   class(rOutput) <- "RatingsOutput"
