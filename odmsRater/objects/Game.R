@@ -32,7 +32,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     gameRow=i
   )
   
-  game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
+  game$isRelevant <- (!game$isFriendly && !game$isQualifier && homeTeamName != "New Zealand" && awayTeamName != "New Zealand") ||
           game$isPlayOff
   game$weight <- computeWeight(game)
   class(game) <- "Game"
