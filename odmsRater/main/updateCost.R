@@ -17,12 +17,13 @@ updateCost <- function(rOptions, rOutput, game, gamePrev) {
 updateRatingsCost <- function(rOptions, rOutput, game) {
   gamePrediction <- forecastGame(rOptions=rOptions, game=game)
   
-  # Update sse of expected and actual game outcome
-  sse <- computeGameCost(game, gamePrediction)
-  rOutput <- updateStrCost(rOutput, sse)
-  game <- updateSSE(game, sse)
+  # Update cost of expected and actual game outcome
+  expectedResult <- gamePrediction[["gamePs"]]
+  actualResult <- computeGameCost(game, gamePrediction)
+  rOutput <- updateStrCost(rOutput, expectedResult, actualResult)
+  game <- updateSSE(game, computeSSE(expectedResult, actualResult))
   
-  # Update sse of expected and actual goals
+  # Update cost of expected and actual goals
   goalsExpected <- gamePrediction[["goalsExpected"]]
   goalsActual <- game$goals
   rOutput <- updateGoalsCost(rOutput, goalsExpected, goalsActual)
@@ -35,18 +36,15 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
     print(gamePrediction$gamePs)
     print(gamePrediction$goalsExpected)
     print(goalsActual)
-    print(computeHuberCost(computeSSE(goalsExpected, goalsActual)))
+    print(computeHuberCost(goalsExpected - goalsActual))
   }
   costData
 }
 
-# Compute sse of expected and actual game outcome
-computeGameCost <- function(game, gamePrediction) {
+# Compute actual game outcome
+computeGameOutcome <- function(game) {
   goals <- game$goals
-  gamePs <- gamePrediction[["gamePs"]]
-  expectedResult <- gamePs
   actualResult <- as.numeric(c(goals[1] > goals[2],
       goals[1] == goals[2], goals[1] < goals[2]))
-  sse <- computeSSE(actualResult, expectedResult)
-  sse
+  actualResult
 }

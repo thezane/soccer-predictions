@@ -14,15 +14,16 @@ newRatingsOutput <- function(tTree, gTree, gi) {
 }
 
 # Update cost of prediction.
-updateStrCost <- function(rOutput, strCost) {
-  rOutput$strCosts = c(rOutput$strCosts, computeHuberCost(strCost))
+updateStrCost <- function(rOutput, expectedResult, actualResult) {
+  rOutput$strCosts = c(rOutput$strCosts,
+      sum(computeHuberCost(expectedResult - actualResult)))
   rOutput
 }
 
 # Update distance of expected goals from actual goals.
 updateGoalsCost <- function(rOutput, goalsExpected, goalsActual) {
   rOutput$goalsCosts <- c(rOutput$goalsCosts,
-      computeHuberCost(computeSSE(goalsExpected, goalsActual)))
+      computeHuberCost(goalsExpected - goalsActual))
   rOutput
 }
 
@@ -31,7 +32,7 @@ updateStrMeanCosts <- function(rOutput) {
   teams <- data.frame(t(values(rOutput$tTree)))
   strNorms <- data.frame(teams[["strNorm"]])
   strNormMean <- c(mean(strNorms[[1]]), mean(strNorms[[2]]))
-  strMeanCost <- computeHuberCost(computeSSE(strNormMean, c(0, 0)))
+  strMeanCost <- computeHuberCost(strNormMean - c(0, 0))
   rOutput$strMeanCosts <- c(rOutput$strMeanCosts, strMeanCost)
   rOutput
 }
