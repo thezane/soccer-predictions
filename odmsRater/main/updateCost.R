@@ -29,6 +29,14 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   
   # Outputing costs
   costData <- list(rOutput=rOutput, game=game)
+
+  if (game$teamNames[1] == "New Zealand" || game$teamNames[2] == "New Zealand") {
+    print(game$teamNames)
+    print(gamePrediction$gamePs)
+    print(gamePrediction$goalsExpected)
+    print(goalsActual)
+    print(computeTukeyCost(computeSSE(goalsExpected, goalsActual)))
+  }
   costData
 }
 
