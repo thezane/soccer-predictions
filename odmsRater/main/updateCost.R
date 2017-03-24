@@ -18,10 +18,10 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   gamePrediction <- forecastGame(rOptions=rOptions, game=game)
   
   # Update cost of expected and actual game outcome
-  expectedResult <- gamePrediction[["gamePs"]]
-  actualResult <- computeGameCost(game, gamePrediction)
-  rOutput <- updateStrCost(rOutput, expectedResult, actualResult)
-  game <- updateSSE(game, computeSSE(expectedResult, actualResult))
+  resultExpected <- gamePrediction[["gamePs"]]
+  resultActual <- computeGameCost(game, gamePrediction)
+  rOutput <- updateStrCost(rOutput, resultExpected, resultActual)
+  game <- updateSSE(game, computeSSE(resultExpected, resultActual))
   
   # Update cost of expected and actual goals
   goalsExpected <- gamePrediction[["goalsExpected"]]
@@ -29,7 +29,7 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   rOutput <- updateGoalsCost(rOutput, goalsExpected, goalsActual)
   
   # Outputing costs
-  rOutput <- updateOceania(rOutput, rOutput$tTree[[game$teamNames[1]]]$fName == "Oceania" || rOutput$tTree[[game$teamNames[2]]]$fName == "Oceania", expectedResult, actualResult)
+  rOutput <- updateOceania(rOutput, rOutput$tTree[[game$teamNames[1]]]$fName == "Oceania" || rOutput$tTree[[game$teamNames[2]]]$fName == "Oceania", expectedResult, actualResult, goalsExpected, goalsActual)
 
   if (rOutput$tTree[[game$teamNames[1]]]$fName == "Oceania" || rOutput$tTree[[game$teamNames[2]]]$fName == "Oceania") {
     print(game$teamNames)

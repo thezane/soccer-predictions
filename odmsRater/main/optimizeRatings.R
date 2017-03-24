@@ -52,10 +52,11 @@ rateTeams <- function(x, rOptions, rOutput) {
 
   # Compute ratings with updated model
   rOutput <- computeRatings(rOptions, rOutput)
-  print(noquote(sprintf("Oceania = %f", mean(abs(rOutput$oceania)))))
+  print(noquote(sprintf("OceaniaResults = %f", mean(abs(rOutput$oceaniaResults)))))
+  print(noquote(sprintf("OceaniaGoals = %f", mean(abs(rOutput$oceaniaGoals)))))
 
   # Compute regularization
-  goalsCost <- 0.01 * computeGoalsCost(rOutput)
+  goalsCost <- 0.1 * computeGoalsCost(rOutput)
   strMeanCost <- 0.1 * computeStrMeanCost(rOutput)
   fedCost <- 0.01 * norm(matrix(strFsNorm), "f")
 
