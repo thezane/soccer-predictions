@@ -18,7 +18,7 @@ newRatingsOutput <- function(tTree, gTree, gi) {
 updateOceania <- function(rOutput, t, resultExpected, resultActual, goalsExpected, goalsActual) {
   if (t) {
       rOutput$oceaniaResults = c(rOutput$oceaniaResults, resultExpected - resultActual)
-      rOutput$oceaniaGoals = c(rOutput$oceaniaGoals, goalsExpected, goalsActual)
+      rOutput$oceaniaGoals = c(rOutput$oceaniaGoals, goalsExpected - goalsActual)
   }
 
   rOutput

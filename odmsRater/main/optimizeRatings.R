@@ -52,6 +52,7 @@ rateTeams <- function(x, rOptions, rOutput) {
 
   # Compute ratings with updated model
   rOutput <- computeRatings(rOptions, rOutput)
+  print(rOutput$oceaniaGoals)
   print(noquote(sprintf("OceaniaResults = %f", mean(abs(rOutput$oceaniaResults)))))
   print(noquote(sprintf("OceaniaGoals = %f", mean(abs(rOutput$oceaniaGoals)))))
 
