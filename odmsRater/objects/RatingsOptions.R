@@ -8,7 +8,7 @@ newRatingsOptions <- function(fTree) {
     meanGoals=1,
     corrBeta=-1,
     hA=0.2,
-    strBeta=1,
+    strBeta=0.5,
     kLBd=0,
     cLBd=0.01,
     meanGoalsLBd=0,
