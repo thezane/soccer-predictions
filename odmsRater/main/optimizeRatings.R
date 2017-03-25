@@ -30,7 +30,7 @@ trainRater <- function(rOptions, rOutput) {
   x <- c(model, strFsNorm)
   xLBd <- c(modelLBd, strFsNormLBd)
   n <- length(x)
-  tol <- 0.001
+  tol <- 0.01
   fn <- function(x, rOptions.=rOptions, rOutput.=rOutput) {
       rData <- rateTeams(x, rOptions, rOutput)
       rOutput <- rData[["rOutput"]]
