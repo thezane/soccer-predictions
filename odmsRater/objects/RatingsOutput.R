@@ -43,7 +43,7 @@ computeStrCost <- function(rOutput) {
     strCost <- 0
   }
   else {
-    strCost <- 3 * mean(strCosts ^ 2)
+    strCost <- 3 * mean(computeTukeyCost(strCosts))
   }
 
   strCost
@@ -57,7 +57,7 @@ computeGoalsCost <- function(rOutput) {
     goalsCost <- 0
   }
   else {
-    goalsCost <- mean(goalsCosts ^ 2)
+    goalsCost <- mean(computeTukeyCost(goalsCosts))
   }
 
   goalsCost
@@ -71,7 +71,7 @@ computeStrMeanCost <- function(rOutput) {
     strMeanCost <- 0
   }
   else {
-	strMeanCost <- mean(strMeanCosts ^ 2)
+	strMeanCost <- mean(computeTukeyCost(strMeanCosts))
   }
 
   strMeanCost
