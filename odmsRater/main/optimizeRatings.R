@@ -16,8 +16,14 @@ optimizeRatings <- function(tTree, fTree, gTree, gi, rData) {
 }
 
 trainRater <- function(rOptions, rOutput) {
-  model <- c(1, 0.2, 1, 1, -1, 1, 0.2)
-  modelLBd <- c(0, 0.01, 0, 0, -Inf, 0, 0)
+  model <- c(
+      rOptions$k, rOptions$c,
+      rOptions$meanGoals, rOptions$corrBeta,
+      rOptions$hA, rOptions$strBetas)
+  modelLBd <- c(
+      rOptions$kLBd, rOptions$cLBd,
+      rOptions$meanGoalsLBd, rOptions$corrBetaLBd,
+      rOptions$hALBd, rOptions$strBetasLBd)
   numFs <- rOptions$numFs
   strFsNorm <- c(-0.2, -0.2, 0.2, -0.2, -0.6, 0.6)
   strFsNormLBd <- rep(-Inf, numFs)
@@ -33,7 +39,7 @@ trainRater <- function(rOptions, rOutput) {
   cores <- min(detectCores() - 1, n)
   cluster <- makeCluster(cores)
   clusterExport(cluster, ls(envir=.GlobalEnv), envir=.GlobalEnv)
-  gr <- function(x, n.=n, fn.=fn, e=1e-03, cluster.=cluster) {
+  gr <- function(x, n.=n, fn.=fn, e=1e-06, cluster.=cluster) {
       computeGradientPar(x, n, fn, e, cluster)
   }
   optimObj <- optim(x, fn, gr, method="L-BFGS-B",
@@ -46,24 +52,25 @@ trainRater <- function(rOptions, rOutput) {
 
 rateTeams <- function(x, rOptions, rOutput) {
   # Update model parameters
+  biasBetas <- x[c(3, 4)]
+  featureBetas <- x[c(5, 6, 7)]
   strFsNorm <- x[-c(1: 7)]
-  rOptions <- updateOptions(rOptions, x[1], x[2], x[c(3, 4)],
-      x[5], x[6], x[7], strFsNorm)
+  rOptions <- updateOptions(rOptions, x[1], x[2], biasBetas,
+      featureBetas, strFsNorm)
 
   # Compute ratings with updated model
   rOutput <- computeRatings(rOptions, rOutput)
-  print(noquote(sprintf("OceaniaResults = %f", mean(abs(rOutput$oceaniaResults)))))
-  print(noquote(sprintf("OceaniaGoals = %f", mean(abs(rOutput$oceaniaGoals)))))
 
   # Compute regularization
   goalsCost <- 0.01 * computeGoalsCost(rOutput)
   strMeanCost <- computeStrMeanCost(rOutput)
-  poisCost <- 0.1 * norm((matrix(x[c(3, 4, 7)])), "f")
+  featureCost <- 0.01 * norm((matrix(featureBetas)), "f")
   fedCost <- 0.01 * norm(matrix(strFsNorm), "f")
 
   # Compute cost
   strCost <- computeStrCost(rOutput)
-  rOutput$y <- strCost + goalsCost + poisCost + strMeanCost + fedCost
+  rOutput$y <- strCost + goalsCost + featureCost +
+      strMeanCost + fedCost
   rData <- list(rOptions=rOptions, rOutput=rOutput)
 
   # Print parameters
@@ -72,7 +79,7 @@ rateTeams <- function(x, rOptions, rOutput) {
   # Print cost
   print(noquote(sprintf("cost = %f", strCost)))
   print(noquote(sprintf("goals = %f", goalsCost)))
-  print(noquote(sprintf("pois = %f", poisCost)))
+  print(noquote(sprintf("feature = %f", featureCost)))
   print(noquote(sprintf("str = %f", strMeanCost)))
   print(noquote(sprintf("fed = %f", fedCost)))
   cat("\n")

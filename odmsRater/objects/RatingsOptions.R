@@ -5,10 +5,16 @@ newRatingsOptions <- function(fTree) {
   rOptions <- list(
     k=1,
     c=0.2,
-    strBetas=c(1, 1),
-    corrBeta=-1,
     meanGoals=1,
+    corrBeta=-1,
     hA=0.2,
+    strBetas=c(1, 1),
+    kLBd=0,
+    cLBd=0.01,
+    meanGoalsLBd=0,
+    corrBetaLBd=-Inf,
+    hALBd=0,
+    strBetasLBd=c(0, 0),
     xpDefault=1,
     fTree=fTree,
     fNames=fNames,
@@ -21,14 +27,14 @@ newRatingsOptions <- function(fTree) {
   rOptions
 }
 
-updateOptions <- function(rOptions, k, c, strBetas, corrBeta,
-      meanGoals, hA, strFsNorm) {
+updateOptions <- function(rOptions, k, c, biasBetas, featureBetas,
+    strFsNorm) {
   rOptions$k <- k
   rOptions$c <- c
-  rOptions$strBetas <- strBetas
-  rOptions$corrBeta <- corrBeta
-  rOptions$meanGoals <- meanGoals
-  rOptions$hA <- hA
+  rOptions$meanGoals <- biasBetas[1]
+  rOptions$corrBeta <- biasBetas[2]
+  rOptions$hA <- featureBetas[1]
+  rOptions$strBetas <- featureBetas[c(2, 3)]
   strFs <- exp(strFsNorm)
   i <- 1
   

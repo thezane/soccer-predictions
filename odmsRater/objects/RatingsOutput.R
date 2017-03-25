@@ -5,22 +5,10 @@ newRatingsOutput <- function(tTree, gTree, gi) {
     gi=gi,
     strCosts=NULL,
     goalsCosts=NULL,
-    strMeanCosts=NULL,
-    oceaniaResults=NULL,
-    oceaniaGoals=NULL
+    strMeanCosts=NULL
   )
   
   class(rOutput) <- "RatingsOutput"
-  rOutput
-}
-
-# Update cost of prediction.
-updateOceania <- function(rOutput, t, resultExpected, resultActual, goalsExpected, goalsActual) {
-  if (t) {
-      rOutput$oceaniaResults = c(rOutput$oceaniaResults, resultExpected - resultActual)
-      rOutput$oceaniaGoals = c(rOutput$oceaniaGoals, goalsExpected - goalsActual)
-  }
-
   rOutput
 }
 
