@@ -25,7 +25,7 @@ trainRater <- function(rOptions, rOutput) {
       rOptions$meanGoalsLBd, rOptions$corrBetaLBd,
       rOptions$hALBd, rOptions$strBetaLBd)
   numFs <- rOptions$numFs
-  strFsNorm <- c(-0.2, -0.6, 0.2, -0.2, -0.6, 0.6)
+  strFsNorm <- c(-0.2, -0.2, 0.2, -0.2, -0.6, 0.6)
   strFsNormLBd <- rep(-Inf, numFs)
   x <- c(model, strFsNorm)
   xLBd <- c(modelLBd, strFsNormLBd)

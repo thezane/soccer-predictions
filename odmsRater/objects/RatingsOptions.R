@@ -3,7 +3,7 @@ newRatingsOptions <- function(fTree) {
   numFs <- length(fNames)
 
   rOptions <- list(
-    k=0.8,
+    k=1,
     c=0.2,
     meanGoals=1,
     corrBeta=-1,
