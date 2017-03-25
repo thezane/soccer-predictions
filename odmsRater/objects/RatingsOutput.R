@@ -43,7 +43,7 @@ computeStrCost <- function(rOutput) {
     strCost <- 0
   }
   else {
-    strCost <- mean(strCosts ^ 2)
+    strCost <- 3 * mean(strCosts ^ 2)
   }
 
   strCost

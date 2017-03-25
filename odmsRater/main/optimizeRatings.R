@@ -19,11 +19,11 @@ trainRater <- function(rOptions, rOutput) {
   model <- c(
       rOptions$k, rOptions$c,
       rOptions$meanGoals, rOptions$corrBeta,
-      rOptions$hA, rOptions$strBetas)
+      rOptions$hA, rOptions$strBeta)
   modelLBd <- c(
       rOptions$kLBd, rOptions$cLBd,
       rOptions$meanGoalsLBd, rOptions$corrBetaLBd,
-      rOptions$hALBd, rOptions$strBetasLBd)
+      rOptions$hALBd, rOptions$strBetaLBd)
   numFs <- rOptions$numFs
   strFsNorm <- c(-0.2, -0.2, 0.2, -0.2, -0.6, 0.6)
   strFsNormLBd <- rep(-Inf, numFs)
@@ -53,8 +53,8 @@ trainRater <- function(rOptions, rOutput) {
 rateTeams <- function(x, rOptions, rOutput) {
   # Update model parameters
   biasBetas <- x[c(3, 4)]
-  featureBetas <- x[c(5, 6, 7)]
-  strFsNorm <- x[-c(1: 7)]
+  featureBetas <- x[c(5, 6)]
+  strFsNorm <- x[-c(1: 6)]
   rOptions <- updateOptions(rOptions, x[1], x[2], biasBetas,
       featureBetas, strFsNorm)
 
@@ -80,7 +80,7 @@ rateTeams <- function(x, rOptions, rOutput) {
   print(noquote(sprintf("cost = %f", strCost)))
   print(noquote(sprintf("goals = %f", goalsCost)))
   print(noquote(sprintf("feature = %f", featureCost)))
-  print(noquote(sprintf("str = %f", strMeanCost)))
+  print(noquote(sprintf("strMean = %f", strMeanCost)))
   print(noquote(sprintf("fed = %f", fedCost)))
   cat("\n")
   rData

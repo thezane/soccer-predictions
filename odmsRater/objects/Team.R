@@ -40,7 +40,6 @@ computeTeamStrs <- function(team, rOptions) {
     teamStr <- rOptions$fTree[[team$fName]]
     strNorm=computeStrNorm(teamStr)
     strBetas <- rOptions$strBetas
-    strBetas[2] <- -strBetas[2]
     strAgg <- strNorm %*% strBetas
   }
   else {

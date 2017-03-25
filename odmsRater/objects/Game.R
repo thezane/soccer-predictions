@@ -72,7 +72,6 @@ normalizeGoals <- function(game, rOptions) {
 
 # Update team experience and construct ratings matrix before game.
 updateGamePreRate <- function(game, rOptions, homeTeam, awayTeam) {
-  strBetas <- rOptions$strBetas
   gameDate <- game$gameDate
   homeTeamStrs <- computeTeamStrs(homeTeam, rOptions)
   awayTeamStrs <- computeTeamStrs(awayTeam, rOptions)
@@ -81,7 +80,6 @@ updateGamePreRate <- function(game, rOptions, homeTeam, awayTeam) {
   game$strNorm <- matrix(c(homeTeamStrs[["strNorm"]],
       awayTeamStrs[["strNorm"]]), 2, 2, TRUE)
   strNorm <- game$strNorm
-  strBetas[2] <- -strBetas[2]
   game$strAgg <- c(homeTeamStrs[["strAgg"]], awayTeamStrs[["strAgg"]])  
   game$teamXP <- c(computeXP(homeTeam, gameDate, rOptions$k),
       computeXP(awayTeam, gameDate, rOptions$k))
@@ -90,14 +88,13 @@ updateGamePreRate <- function(game, rOptions, homeTeam, awayTeam) {
 
 # Update team ratings after game.
 updateGamePostRate <- function(game, rOptions, strPost) {
-  strBetas <- rOptions$strBetas
   game$strPost <- strPost
   weight <- game$weight
   alphas <- weight / (weight + game$teamXP)
   game$strNext <- alphas * strPost + (1 - alphas) * game$teamStr
   game$strNextNorm <- computeStrNorm(game$strNext)
   strNextNorm <- game$strNextNorm
-  strBetas[2] <- -strBetas[2]
+  strBetas <- rOptions$strBetas
   game$strAggNext <- c(strNextNorm[1, ] %*% strBetas,
       strNextNorm[2, ] %*% strBetas)
   game
