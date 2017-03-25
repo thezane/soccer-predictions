@@ -17,7 +17,6 @@ verifyPrediction <- function(matchesRow) {
   expectedResult <- as.numeric(
       c(matchesRow[["HomeWin"]], matchesRow[["Tie"]],
       matchesRow[["AwayWin"]]))
-  actualResult <- c(1, 0, 0)
   homeGoals <- matchesRow[["HomeGoals"]]
   awayGoals <- matchesRow[["AwayGoals"]]
   actualResult <- c(homeGoals > awayGoals, homeGoals == awayGoals,

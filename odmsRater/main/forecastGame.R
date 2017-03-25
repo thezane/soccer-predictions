@@ -1,14 +1,6 @@
-forecastGame <- function (gameHypo=NULL, rOptions=NULL, game=NULL) {
+forecastGame <- function (game, rOptions) {
   maxGoals <- 20
   numDecimals <- 4
-  isTraining <- !is.null(rOptions)
-
-  if (!isTraining) {
-    rData <- gameHypo$rData
-    rOptions <- rData[["rOptions"]]
-    game <- gameHypo
-  }
-
   meanGoals <- game$meanGoals
   homeMeanGoals <- meanGoals[1]
   awayMeanGoals <- meanGoals[2]
@@ -20,18 +12,14 @@ forecastGame <- function (gameHypo=NULL, rOptions=NULL, game=NULL) {
   gamePrediction <- computeGamePrediction(lambdas, maxGoals)
   gamePrediction[["goalsExpected"]] <- c(lambdas[1], lambdas[2]) +
       lambdas[3]
-
-  if (!isTraining) {
-    gamePrediction[["homeAwayGoals"]] <- round(
-        gamePrediction[["homeAwayGoals"]], numDecimals)
-    gamePrediction[["gamePs"]] <- round(
-        gamePrediction[["gamePs"]], numDecimals)
-    gamePrediction[["goalsExpected"]] <- round(
-        gamePrediction[["goalsExpected"]], numDecimals)
-    gamePrediction[["strNorm"]] <- round(strNorm, numDecimals)
-    gamePrediction[["strAgg"]] <- round(game$strAgg, numDecimals)
-  }
-
+  gamePrediction[["homeAwayGoals"]] <- round(
+      gamePrediction[["homeAwayGoals"]], numDecimals)
+  gamePrediction[["gamePs"]] <- round(
+      gamePrediction[["gamePs"]], numDecimals)
+  gamePrediction[["goalsExpected"]] <- round(
+      gamePrediction[["goalsExpected"]], numDecimals)
+  gamePrediction[["strNorm"]] <- round(strNorm, numDecimals)
+  gamePrediction[["strAgg"]] <- round(game$strAgg, numDecimals)
   gamePrediction
 }
 

@@ -14,6 +14,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     meanGoals=c(0, 0),
     outcome=as.numeric(c(goals[1] > goals[2],
         goals[1] == goals[2], goals[1] < goals[2])),
+    Ps=c(0, 0, 0),
     sse=0,
     A=zeroesMat,
     teamNames=c(homeTeamName, awayTeamName),
@@ -97,10 +98,5 @@ updateGamePostRate <- function(game, rOptions, strPost) {
   strBetas <- rOptions$strBetas
   game$strAggNext <- c(strNextNorm[1, ] %*% strBetas,
       strNextNorm[2, ] %*% strBetas)
-  game
-}
-
-updateSSE <- function(game, sse) {
-  game$sse <- sse
   game
 }

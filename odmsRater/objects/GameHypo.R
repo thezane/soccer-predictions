@@ -6,7 +6,6 @@ newGameHypo <- function(homeTeamName, awayTeamName, location, rData) {
   awayTeam <- tTree[[awayTeamName]]
 
   gameHypo <- list(
-    rData=rData,
     teamNames=c(homeTeamName, awayTeamName),
     strNorm=matrix(c(homeTeam$strNorm, awayTeam$strNorm),
         2, 2, TRUE),
