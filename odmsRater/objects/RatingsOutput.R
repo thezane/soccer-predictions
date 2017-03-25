@@ -43,7 +43,7 @@ computeStrCost <- function(rOutput) {
     strCost <- 0
   }
   else {
-    strCost <- mean(abs(strCosts))
+    strCost <- mean(strCosts ^ 2)
   }
 
   strCost
@@ -57,7 +57,7 @@ computeGoalsCost <- function(rOutput) {
     goalsCost <- 0
   }
   else {
-    goalsCost <- mean(abs(goalsCosts))
+    goalsCost <- mean(goalsCosts ^ 2)
   }
 
   goalsCost
@@ -71,7 +71,7 @@ computeStrMeanCost <- function(rOutput) {
     strMeanCost <- 0
   }
   else {
-	strMeanCost <- mean(abs(strMeanCosts))
+	strMeanCost <- mean(strMeanCosts ^ 2)
   }
 
   strMeanCost
