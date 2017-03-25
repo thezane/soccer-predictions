@@ -50,11 +50,11 @@ updateOptions <- function(rOptions, k, c, biasBetas, featureBetas,
 printModel <- function(rOptions) {
   print(noquote(sprintf("k = %f", rOptions$k)))
   print(noquote(sprintf("c = %f", rOptions$c)))
+  print(noquote(sprintf("mu = %f", rOptions$meanGoals)))
+  print(noquote(sprintf("corr = %f", rOptions$corrBeta)))
+  print(noquote(sprintf("ha = %f", rOptions$hA)))
   print(noquote(sprintf("atk = %f", rOptions$strBetas[1])))
   print(noquote(sprintf("def = %f", rOptions$strBetas[2])))
-  print(noquote(sprintf("corr = %f", rOptions$corrBeta)))
-  print(noquote(sprintf("mu = %f", rOptions$meanGoals)))
-  print(noquote(sprintf("ha = %f", rOptions$hA)))
   i <- 1
   
   while (i <= rOptions$numFs) {
