@@ -24,7 +24,7 @@ trainRater <- function(rOptions, rOutput) {
   x <- c(model, strFsNorm)
   xLBd <- c(modelLBd, strFsNormLBd)
   n <- length(x)
-  tol <- 0.001
+  tol <- 0.01
   fn <- function(x, rOptions.=rOptions, rOutput.=rOutput) {
       rData <- rateTeams(x, rOptions, rOutput)
       rOutput <- rData[["rOutput"]]
@@ -58,11 +58,12 @@ rateTeams <- function(x, rOptions, rOutput) {
   # Compute regularization
   goalsCost <- 0.01 * computeGoalsCost(rOutput)
   strMeanCost <- computeStrMeanCost(rOutput)
+  poisCost <- 0.1 * norm((matrix(x[c(3, 4, 7)])), "f")
   fedCost <- 0.01 * norm(matrix(strFsNorm), "f")
 
   # Compute cost
   strCost <- computeStrCost(rOutput)
-  rOutput$y <- strCost + goalsCost + strMeanCost + fedCost
+  rOutput$y <- strCost + goalsCost + poisCost + strMeanCost + fedCost
   rData <- list(rOptions=rOptions, rOutput=rOutput)
 
   # Print parameters
@@ -71,6 +72,7 @@ rateTeams <- function(x, rOptions, rOutput) {
   # Print cost
   print(noquote(sprintf("cost = %f", strCost)))
   print(noquote(sprintf("goals = %f", goalsCost)))
+  print(noquote(sprintf("pois = %f", poisCost)))
   print(noquote(sprintf("str = %f", strMeanCost)))
   print(noquote(sprintf("fed = %f", fedCost)))
   cat("\n")
