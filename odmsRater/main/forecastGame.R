@@ -1,5 +1,5 @@
 forecastGame <- function (gameHypo=NULL, rOptions=NULL, game=NULL) {
-  maxGoals <- 20
+  maxGoals <- 40
   numDecimals <- 4
   isTraining <- !is.null(rOptions)
 
