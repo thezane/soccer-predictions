@@ -1,5 +1,5 @@
 # soccer-predictions
-![alt-tag](https://github.com/thezane/soccer-predictions/blob/master/forecasts/November11.png)
+![alt-tag](https://github.com/thezane/soccer-predictions/blob/master/forecasts/March26.png)
 
 This is a statistical forecasting model for predicting game outcomes in soccer tournaments (World Cup, Euro Cup and Copa America).   The model is named Sequential Offense-Defense (ODM-S) after the fact that it rates teams by attack and defense strengths match-by-match.  It is based on the [original Offense-Defense Model](http://meyer.math.ncsu.edu/Meyer/Talks/OD_RankingCharleston.pdf) by mathematicians Anjela Govan, Amy Langville and Carl Meyer.   We discuss how it works and how predictions should be interpreted.  Its accuracy and inner workings are in a [technical readme](https://github.com/thezane/soccer-predictions/blob/master/technicalReadme.pdf).
 
