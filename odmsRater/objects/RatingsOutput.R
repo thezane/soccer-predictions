@@ -4,7 +4,6 @@ newRatingsOutput <- function(tTree, gTree, gi) {
     gTree=gTree,
     gi=gi,
     strCosts=NULL,
-    goalsCosts=NULL,
     strMeanCosts=NULL
   )
   
@@ -14,14 +13,8 @@ newRatingsOutput <- function(tTree, gTree, gi) {
 
 # Update cost of prediction.
 updateStrCost <- function(rOutput, resultExpected, resultActual) {
-  rOutput$strCosts = c(rOutput$strCosts, resultExpected - resultActual)
-  rOutput
-}
-
-# Update distance of expected goals from actual goals.
-updateGoalsCost <- function(rOutput, goalsExpected, goalsActual) {
-  rOutput$goalsCosts <- c(rOutput$goalsCosts,
-      goalsExpected - goalsActual)
+  rOutput$strCosts <- c(rOutput$strCosts,
+      resultExpected %*% resultActual)
   rOutput
 }
 
@@ -43,24 +36,11 @@ computeStrCost <- function(rOutput) {
     strCost <- 0
   }
   else {
-    strCost <- 3 * mean(computeTukeyCost(strCosts))
+    strCost <- mean(-log(strCosts))
   }
 
+  print(strCosts)
   strCost
-}
-
-# Compute distance of expected goals from actual goals.
-computeGoalsCost <- function(rOutput) {
-  goalsCosts <- rOutput$goalsCost
-
-  if (is.null(goalsCosts)) {
-    goalsCost <- 0
-  }
-  else {
-    goalsCost <- mean(computeTukeyCost(goalsCosts))
-  }
-
-  goalsCost
 }
 
 # Compute distance of mean team rating from default rating.
@@ -71,7 +51,7 @@ computeStrMeanCost <- function(rOutput) {
     strMeanCost <- 0
   }
   else {
-	strMeanCost <- mean(computeTukeyCost(strMeanCosts))
+	strMeanCost <- mean(strMeanCosts ^ 2)
   }
 
   strMeanCost

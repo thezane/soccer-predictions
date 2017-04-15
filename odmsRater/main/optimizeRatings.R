@@ -17,20 +17,25 @@ optimizeRatings <- function(tTree, fTree, gTree, gi, rData) {
 
 trainRater <- function(rOptions, rOutput) {
   model <- c(
-      rOptions$k, rOptions$c,
+      rOptions$c,
+      rOptions$k,
       rOptions$meanGoals, rOptions$corrBeta,
       rOptions$hA, rOptions$strBeta)
   modelLBd <- c(
-      rOptions$kLBd, rOptions$cLBd,
+      rOptions$cLBd,
+      rOptions$kLBd,
       rOptions$meanGoalsLBd, rOptions$corrBetaLBd,
       rOptions$hALBd, rOptions$strBetaLBd)
   numFs <- rOptions$numFs
+  
+  # Default federation strengths for Africa, Asia, Europe,
+  # North America, Oceania and South America
   strFsNorm <- c(-0.2, -0.2, 0.2, -0.2, -0.6, 0.6)
   strFsNormLBd <- rep(-Inf, numFs)
   x <- c(model, strFsNorm)
   xLBd <- c(modelLBd, strFsNormLBd)
   n <- length(x)
-  tol <- 0.01
+  tol <- 0.001
   fn <- function(x, rOptions.=rOptions, rOutput.=rOutput) {
       rData <- rateTeams(x, rOptions, rOutput)
       rOutput <- rData[["rOutput"]]
@@ -52,25 +57,23 @@ trainRater <- function(rOptions, rOutput) {
 
 rateTeams <- function(x, rOptions, rOutput) {
   # Update model parameters
+  c <- x[1]
+  k <- x[2]
   biasBetas <- x[c(3, 4)]
   featureBetas <- x[c(5, 6)]
   strFsNorm <- x[-c(1: 6)]
-  rOptions <- updateOptions(rOptions, x[1], x[2], biasBetas,
+  rOptions <- updateOptions(rOptions, c, k, biasBetas,
       featureBetas, strFsNorm)
 
   # Compute ratings with updated model
   rOutput <- computeRatings(rOptions, rOutput)
 
   # Compute regularization
-  goalsCost <- 0.01 * computeGoalsCost(rOutput)
   strMeanCost <- computeStrMeanCost(rOutput)
-  featureCost <- 0.01 * norm((matrix(featureBetas)), "f")
-  fedCost <- 0.01 * norm(matrix(strFsNorm), "f")
 
   # Compute cost
   strCost <- computeStrCost(rOutput)
-  rOutput$y <- strCost + goalsCost + featureCost +
-      strMeanCost + fedCost
+  rOutput$y <- strCost + strMeanCost
   rData <- list(rOptions=rOptions, rOutput=rOutput)
 
   # Print parameters
@@ -78,10 +81,7 @@ rateTeams <- function(x, rOptions, rOutput) {
 
   # Print cost
   print(noquote(sprintf("cost = %f", strCost)))
-  print(noquote(sprintf("goals = %f", goalsCost)))
-  print(noquote(sprintf("feature = %f", featureCost)))
   print(noquote(sprintf("strMean = %f", strMeanCost)))
-  print(noquote(sprintf("fed = %f", fedCost)))
   cat("\n")
   rData
 }

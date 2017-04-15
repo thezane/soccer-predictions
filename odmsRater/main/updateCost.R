@@ -12,7 +12,7 @@ updateCost <- function(rOptions, rOutput, game, gamePrev) {
   }
 
   costData
-} 
+}
 
 updateRatingsCost <- function(rOptions, rOutput, game) {
   gamePrediction <- forecastGame(game, rOptions)
@@ -23,11 +23,6 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   rOutput <- updateStrCost(rOutput, resultExpected, resultActual)
   game$Ps <- gamePrediction[["gamePs"]]
   game$sse <- computeSSE(resultExpected, resultActual)
-  
-  # Update cost of expected and actual goals
-  goalsExpected <- gamePrediction[["goalsExpected"]]
-  goalsActual <- game$goals
-  rOutput <- updateGoalsCost(rOutput, goalsExpected, goalsActual)
   costData <- list(rOutput=rOutput, game=game)
   costData
 }

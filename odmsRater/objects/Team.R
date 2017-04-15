@@ -8,7 +8,7 @@ newTeam <- function(teamName, fName) {
     isUpdated=FALSE,
     updateDate=as.Date("0001-01-01"),
     alpha=0.5,
-    xp=1
+    xp=5
   )
   class(team) <- "Team"
   team
@@ -21,7 +21,7 @@ resetTeam <- function(team) {
   team$isUpdated <- FALSE
   team$updateDate <- as.Date("0001-01-01")
   team$alpha <- 0.5
-  team$xp <- 1
+  team$xp <- 5
   team
 }
 

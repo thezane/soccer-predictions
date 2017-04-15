@@ -35,8 +35,9 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     gameRow=i
   )
   
-  game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
-          game$isPlayOff
+  game$isRelevant <- game$isPlayOff ||
+          (!game$isFriendly && !game$isQualifier && 
+          (grepl("WOC", contest) || grepl("COC", contest)))
   game$weight <- computeWeight(game)
   class(game) <- "Game"
   game
@@ -44,13 +45,13 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
 
 # Compute the weight of 'game' in team ratings.
 computeWeight <- function(game) {
-  weight = 1.25
+  weight = 1.1
 
   if (game$isFriendly) {
-    weight <- 0.5
+    weight <- 0.8
   }
   else if (game$isQualifier || game$isPlayOff) {
-    weight <- 0.75
+    weight <- 0.9
   }
   else if (game$isGroup) {
     weight <- 1
