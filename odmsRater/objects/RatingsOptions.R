@@ -3,6 +3,7 @@ newRatingsOptions <- function(fTree) {
   numFs <- length(fNames)
 
   rOptions <- list(
+    # Optimizable parameters
     c=0.2,
     k=1,
     meanGoals=1,
@@ -16,7 +17,10 @@ newRatingsOptions <- function(fTree) {
     corrBetaLBd=-Inf,
     hALBd=0,
     strBetaLBd=0,
-    xpDefault=1,
+    
+    # Non-optimizable paramters
+    meanRegressConst=1,
+    xpDefault=5,
     fTree=fTree,
     fNames=fNames,
     numFs=numFs,

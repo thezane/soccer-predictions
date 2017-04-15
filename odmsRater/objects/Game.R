@@ -5,18 +5,24 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   zeroesMat <- matrix(0, 2, 2)
   
   game <- list(
-    contest=contest,
+    gameNum=0,
+    gameRow=i,
+
+    # Date
     gameDate=gameDate,
     gameDateStr=as.character(gameDate),
     year=as.numeric(format(gameDate, "%Y")),
+
+    # Result
     goals=goals,
     goalsNorm=c(0, 0),
     meanGoals=c(0, 0),
     outcome=as.numeric(c(goals[1] > goals[2],
         goals[1] == goals[2], goals[1] < goals[2])),
     Ps=c(0, 0, 0),
-    sse=0,
     A=zeroesMat,
+
+    # Ratings
     teamNames=c(homeTeamName, awayTeamName),
     teamStr=zeroesMat,
     strNorm=zeroesMat,
@@ -26,35 +32,48 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     strAggNext=c(0, 0),
     teamXP=zeroesMat,
     existsHA=T[[i, "HomeAdvantage"]],
+    sse=0,
+
+    # Contest
     isFriendly=contest=="Friendlies",
     isQualifier=grepl("-Q", contest),
-    isGroup=grepl("-G", contest),
     isPlayOff=grepl("-PlayOff", contest),
+    isGroup=grepl("-G", contest),
+    isCoc=grepl("COC", contest),
+    isWoc=grepl("WOC", contest),
     isWocG=(contest=="WOC-G"),
-    gameNum=0,
-    gameRow=i
+    isWocK=(contest=="WOC-K")
   )
   
   game$isRelevant <- game$isPlayOff ||
-          (!game$isFriendly && !game$isQualifier && 
-          (grepl("WOC", contest) || grepl("COC", contest)))
+          (!game$isFriendly && !game$isQualifier &&
+          (game$isWoc || game$isCoc))
   game$weight <- computeWeight(game)
   class(game) <- "Game"
   game
 }
 
-# Compute the weight of 'game' in team ratings.
+# Compute weight of 'game' in team ratings.
 computeWeight <- function(game) {
-  weight = 1.1
 
+  # Friendly
   if (game$isFriendly) {
     weight <- 0.8
   }
+
+  # Qualifier
   else if (game$isQualifier || game$isPlayOff) {
     weight <- 0.9
   }
+
+  # Group
   else if (game$isGroup) {
     weight <- 1
+  }
+
+  # Knockout
+  else {
+    weight = 1.1
   }
 
   weight
@@ -75,8 +94,8 @@ normalizeGoals <- function(game, rOptions) {
 # Update team experience and construct ratings matrix before game.
 updateGamePreRate <- function(game, rOptions, homeTeam, awayTeam) {
   gameDate <- game$gameDate
-  homeTeamStrs <- computeTeamStrs(homeTeam, rOptions)
-  awayTeamStrs <- computeTeamStrs(awayTeam, rOptions)
+  homeTeamStrs <- getTeamStrs(homeTeam, rOptions)
+  awayTeamStrs <- getTeamStrs(awayTeam, rOptions)
   game$teamStr <- matrix(c(homeTeamStrs[["teamStr"]],
       awayTeamStrs[["teamStr"]]), 2, 2, TRUE)
   game$strNorm <- matrix(c(homeTeamStrs[["strNorm"]],

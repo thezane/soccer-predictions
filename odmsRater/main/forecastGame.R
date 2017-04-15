@@ -42,9 +42,9 @@ computeGamePrediction <- function(lambdas, maxGoals) {
     while (j <= n) {
       homeGoals <- i - 1
       awayGoals <- j - 1
-      p <- pbivpois(homeGoals, awayGoals, lambdas)      
+      p <- pbivpois(homeGoals, awayGoals, lambdas)
       homeAwayGoals[i, j] <- p
-      gamePs <- updateGamePs(gamePs, homeGoals, awayGoals, p)      
+      gamePs <- updateGamePs(gamePs, homeGoals, awayGoals, p)
       j <- j + 1
     }
     

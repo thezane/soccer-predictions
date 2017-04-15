@@ -6,22 +6,28 @@ newTeam <- function(teamName, fName) {
     strNorm=c(0, 0),
     strAgg=0,
     isUpdated=FALSE,
-    updateDate=as.Date("0001-01-01"),
-    alpha=0.5,
-    xp=5
+    updateDate=as.Date("0001-01-01")
   )
+  
   class(team) <- "Team"
   team
 } 
 
-resetTeam <- function(team) {
+refreshTeam <- function(team, rOptions) {
+  team$strNorm <- rOptions$meanRegressConst * team$strNorm
+  strNorm <- team$strNorm
+  team$teamStr <- exp(strNorm)
+  team$strAgg <- strNorm * rOptions$strBetas
+  team
+}
+
+resetTeam <- function(team, rOptions) {
   team$teamStr <- c(1, 1)
   team$strNorm <- c(0, 0)
   team$strAgg <- 0
   team$isUpdated <- FALSE
   team$updateDate <- as.Date("0001-01-01")
-  team$alpha <- 0.5
-  team$xp <- 5
+  team$xp <- rOptions$xpDefault
   team
 }
 
@@ -35,7 +41,7 @@ updateTeam <- function(team, game, i) {
   team
 }
 
-computeTeamStrs <- function(team, rOptions) {
+getTeamStrs <- function(team, rOptions) {
   if (!team$isUpdated) {
     teamStr <- rOptions$fTree[[team$fName]]
     strNorm=computeStrNorm(teamStr)
