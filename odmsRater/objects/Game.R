@@ -35,6 +35,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     sse=0,
 
     # Contest
+    contest=contest,
     isFriendly=contest=="Friendlies",
     isQualifier=grepl("-Q", contest),
     isPlayOff=grepl("-PlayOff", contest),
@@ -46,8 +47,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   )
   
   game$isRelevant <- game$isPlayOff ||
-          (!game$isFriendly && !game$isQualifier &&
-          (game$isWoc || game$isCoc))
+          (!game$isFriendly && !game$isQualifier)
   game$weight <- computeWeight(game)
   class(game) <- "Game"
   game
@@ -58,12 +58,12 @@ computeWeight <- function(game) {
 
   # Friendly
   if (game$isFriendly) {
-    weight <- 0.8
+    weight <- 0.6
   }
 
   # Qualifier
   else if (game$isQualifier || game$isPlayOff) {
-    weight <- 0.9
+    weight <- 0.8
   }
 
   # Group
@@ -73,7 +73,7 @@ computeWeight <- function(game) {
 
   # Knockout
   else {
-    weight = 1.1
+    weight = 1.2
   }
 
   weight

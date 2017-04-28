@@ -48,10 +48,6 @@ iterTeams <- function(rOptions, tTree, f) {
 }
 
 constructStrPrereqs <- function(rOptions, game, gamePrev, tTree) {
-  if (!is.null(gamePrev) && gamePrev$isWocK && game$isQualifier) {
-    tTree <- iterTeams(rOptions, tTree, refreshTeam)
-  }	
-
   homeTeamName <- game$teamNames[1]
   awayTeamName <- game$teamNames[2]
   homeTeam <- tTree[[homeTeamName]]
@@ -59,21 +55,6 @@ constructStrPrereqs <- function(rOptions, game, gamePrev, tTree) {
   game <- updateGamePreRate(game, rOptions, homeTeam, awayTeam)
   strPrereqs <- list(game=game, tTree=tTree)
   strPrereqs
-}
-
-refreshRatings <- function(rOptions, tTree) {
-  teams <- keys(tTree)
-  n <- length(teams)
-  i <- 1
-  
-  while (i <= n) {
-    teamName <- teams[i]
-    team <- tTree[[teamName]]
-    tTree[teamName] <- refreshTeam(team, rOptions)
-    i <- i + 1
-  }
-  
-  tTree
 }
 
 updateStr <- function(strPrereqs, rOptions) {

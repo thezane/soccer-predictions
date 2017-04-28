@@ -1,6 +1,6 @@
 updateCost <- function(rOptions, rOutput, game, gamePrev) {
 
-  if (!is.null(gamePrev) && gamePrev$isQualifier && game$isWocG) {
+  if (!is.null(gamePrev) && game$isWocG && !gamePrev$isWocG) {
     rOutput <- updateStrMeanCosts(rOutput)
   }
 

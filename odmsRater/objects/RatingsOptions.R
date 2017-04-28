@@ -10,20 +10,29 @@ newRatingsOptions <- function(fTree) {
     corrBeta=-1,
     hA=0.2,
     strBeta=0.8,
-    bLBd=0.01,
+    
+    # Lower bounds for parameters
     cLBd=0.01,
     kLBd=0,
     meanGoalsLBd=0,
     corrBetaLBd=-Inf,
     hALBd=0,
-    strBetaLBd=0,
+    strBetaLBd=0.01,
+    
+    # Upper bounds for parameters
+    cUBd=Inf,
+    kUBd=Inf,
+    meanGoalsUBd=Inf,
+    corrBetaUBd=0,
+    hAUBd=Inf,
+    strBetaUBd=Inf,
     
     # Non-optimizable paramters
-    meanRegressConst=1,
     xpDefault=5,
     fTree=fTree,
     fNames=fNames,
     numFs=numFs,
+    tol=0.1,
     tolRel=0.01,
     tolScale=0.01
   )
@@ -32,8 +41,8 @@ newRatingsOptions <- function(fTree) {
   rOptions
 }
 
-updateOptions <- function(rOptions, c, k, biasBetas,
-    featureBetas, strFsNorm) {
+updateOptions <- function(rOptions, c, k, biasBetas, featureBetas,
+      strFsNorm) {
   rOptions$c <- c
   rOptions$k <- k
   rOptions$meanGoals <- biasBetas[1]

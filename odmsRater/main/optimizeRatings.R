@@ -26,16 +26,23 @@ trainRater <- function(rOptions, rOutput) {
       rOptions$kLBd,
       rOptions$meanGoalsLBd, rOptions$corrBetaLBd,
       rOptions$hALBd, rOptions$strBetaLBd)
+  modelUBd <- c(
+      rOptions$cUBd,
+      rOptions$kUBd,
+      rOptions$meanGoalsUBd, rOptions$corrBetaUBd,
+      rOptions$hAUBd, rOptions$strBetaUBd)
   numFs <- rOptions$numFs
   
   # Default federation strengths for Africa, Asia, Europe,
   # North America, Oceania and South America respectively
-  strFsNorm <- c(-0.2, -0.2, 0.2, -0.2, -0.6, 0.6)
+  strFsNorm <- c(-0.2, -0.2, 0.4, -0.2, -0.8, 0.8)
   strFsNormLBd <- rep(-Inf, numFs)
+  strFsNormUBd <- rep(Inf, numFs)
   x <- c(model, strFsNorm)
   xLBd <- c(modelLBd, strFsNormLBd)
+  xUBd <- c(modelUBd, strFsNormUBd)
   n <- length(x)
-  tol <- 0.001
+  tol <- rOptions$tol
   fn <- function(x, rOptions.=rOptions, rOutput.=rOutput) {
       rData <- rateTeams(x, rOptions, rOutput)
       rOutput <- rData[["rOutput"]]
@@ -48,8 +55,8 @@ trainRater <- function(rOptions, rOutput) {
       computeGradientPar(x, n, fn, e, cluster)
   }
   optimObj <- optim(x, fn, gr, method="L-BFGS-B",
-      lower=xLBd, control=list(trace=3, maxit=10*n,
-      abstol=tol, reltol=tol, pgtol=tol, REPORT=1))
+      lower=xLBd, upper=xUBd, control=list(trace=3, maxit=10*n,
+      reltol=tol, REPORT=1))
   stopCluster(cluster)
   x <- optimObj$par
   x
@@ -62,8 +69,8 @@ rateTeams <- function(x, rOptions, rOutput) {
   biasBetas <- x[c(3, 4)]
   featureBetas <- x[c(5, 6)]
   strFsNorm <- x[-c(1: 6)]
-  rOptions <- updateOptions(rOptions, c, k, biasBetas,
-      featureBetas, strFsNorm)
+  rOptions <- updateOptions(rOptions, c, k, biasBetas, featureBetas,
+      strFsNorm)
 
   # Compute ratings with updated model
   rOutput <- computeRatings(rOptions, rOutput)

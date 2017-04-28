@@ -13,14 +13,6 @@ newTeam <- function(teamName, fName) {
   team
 } 
 
-refreshTeam <- function(team, rOptions) {
-  team$strNorm <- rOptions$meanRegressConst * team$strNorm
-  strNorm <- team$strNorm
-  team$teamStr <- exp(strNorm)
-  team$strAgg <- strNorm * rOptions$strBetas
-  team
-}
-
 resetTeam <- function(team, rOptions) {
   team$teamStr <- c(1, 1)
   team$strNorm <- c(0, 0)
