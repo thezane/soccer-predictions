@@ -35,7 +35,7 @@ trainRater <- function(rOptions, rOutput) {
   
   # Default federation strengths for Africa, Asia, Europe,
   # North America, Oceania and South America respectively
-  strFsNorm <- c(-0.2, -0.2, 0.4, -0.2, -0.8, 0.8)
+  strFsNorm <- c(-0.2, -0.2, 0.2, -0.2, -0.6, 0.6)
   strFsNormLBd <- rep(-Inf, numFs)
   strFsNormUBd <- rep(Inf, numFs)
   x <- c(model, strFsNorm)

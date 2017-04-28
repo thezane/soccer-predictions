@@ -4433,6 +4433,75 @@ Norway,Denmark,09/07/02,EUC-Q,2,2,1
 Belgium,Bulgaria,09/07/02,EUC-Q,0,2,1
 Netherlands,Belarus,09/07/02,EUC-Q,3,0,1
 England,Portugal,09/07/02,Friendlies,1,1,1
+Germany,Brazil,06/30/02,WOC-K,0,2,0
+South Korea,Turkey,06/29/02,WOC-K,2,3,1
+Brazil,Turkey,06/26/02,WOC-K,1,0,0
+South Korea,Germany,06/25/02,WOC-K,0,1,1
+Senegal,Turkey,06/22/02,WOC-K,0,1,0
+South Korea,Spain,06/22/02,WOC-K,0,0,0
+Germany,United States,06/21/02,WOC-K,1,0,0
+England,Brazil,06/21/02,WOC-K,1,2,0
+South Korea,Italy,06/18/02,WOC-K,2,1,1
+Japan,Turkey,06/18/02,WOC-K,0,1,1
+Brazil,Belgium,06/17/02,WOC-K,2,0,0
+Mexico,United States,06/17/02,WOC-K,0,2,0
+Spain,Republic of Ireland,06/16/02,WOC-K,1,1,0
+Sweden,Senegal,06/16/02,WOC-K,1,2,0
+Denmark,England,06/15/02,WOC-K,0,3,0
+Germany,Paraguay,06/15/02,WOC-K,1,0,0
+Belgium,Russia,06/14/02,WOC-G,3,2,0
+Japan,Tunisia,06/14/02,WOC-G,2,0,1
+Poland,United States,06/14/02,WOC-G,3,1,0
+South Korea,Portugal,06/14/02,WOC-G,1,0,1
+Ecuador,Croatia,06/13/02,WOC-G,1,0,0
+Mexico,Italy,06/13/02,WOC-G,1,1,0
+Turkey,China,06/13/02,WOC-G,3,0,0
+Costa Rica,Brazil,06/13/02,WOC-G,2,5,0
+Slovenia,Paraguay,06/12/02,WOC-G,1,3,0
+South Africa,Spain,06/12/02,WOC-G,2,3,0
+Sweden,Argentina,06/12/02,WOC-G,1,1,0
+Nigeria,England,06/12/02,WOC-G,0,0,0
+Saudi Arabia,Republic of Ireland,06/11/02,WOC-G,0,3,0
+Cameroon,Germany,06/11/02,WOC-G,0,2,0
+Denmark,France,06/11/02,WOC-G,2,0,0
+Senegal,Uruguay,06/11/02,WOC-G,3,3,0
+Tunisia,Belgium,06/10/02,WOC-G,1,1,0
+South Korea,United States,06/10/02,WOC-G,1,1,1
+Portugal,Poland,06/10/02,WOC-G,4,0,0
+Mexico,Ecuador,06/09/02,WOC-G,2,1,0
+Japan,Russia,06/09/02,WOC-G,1,0,1
+Costa Rica,Turkey,06/09/02,WOC-G,1,1,0
+Italy,Croatia,06/08/02,WOC-G,1,2,0
+Brazil,China,06/08/02,WOC-G,4,0,0
+South Africa,Slovenia,06/08/02,WOC-G,1,0,0
+Spain,Paraguay,06/07/02,WOC-G,3,1,0
+Sweden,Nigeria,06/07/02,WOC-G,2,1,0
+Argentina,England,06/07/02,WOC-G,0,1,0
+Cameroon,Saudi Arabia,06/06/02,WOC-G,1,0,0
+Denmark,Senegal,06/06/02,WOC-G,1,1,0
+France,Uruguay,06/06/02,WOC-G,0,0,0
+Russia,Tunisia,06/05/02,WOC-G,2,0,0
+Germany,Republic of Ireland,06/05/02,WOC-G,1,1,0
+United States,Portugal,06/05/02,WOC-G,3,2,0
+Japan,Belgium,06/04/02,WOC-G,2,2,1
+China,Costa Rica,06/04/02,WOC-G,0,2,0
+South Korea,Poland,06/04/02,WOC-G,2,0,1
+Croatia,Mexico,06/03/02,WOC-G,0,1,0
+Italy,Ecuador,06/03/02,WOC-G,2,0,0
+Brazil,Turkey,06/03/02,WOC-G,2,1,0
+Paraguay,South Africa,06/02/02,WOC-G,2,2,0
+Spain,Slovenia,06/02/02,WOC-G,3,1,0
+Argentina,Nigeria,06/02/02,WOC-G,1,0,0
+England,Sweden,06/02/02,WOC-G,1,1,0
+Republic of Ireland,Cameroon,06/01/02,WOC-G,1,1,0
+Germany,Saudi Arabia,06/01/02,WOC-G,8,0,0
+Uruguay,Denmark,06/01/02,WOC-G,1,2,0
+France,Senegal,05/31/02,WOC-G,0,1,0
+France,Belgium,05/18/02,Friendlies,1,2,1
+South Korea,China,04/27/02,Friendlies,0,0,1
+France,Russia,04/17/02,Friendlies,0,0,1
+France,Scotland,03/27/02,Friendlies,5,0,1
+France,Romania,02/13/02,Friendlies,2,1,1
 Uruguay,Australia,11/25/01,WOC-Q-PlayOff,3,0,1
 Australia,Uruguay,11/20/01,WOC-Q-PlayOff,1,0,1
 Iran,Republic of Ireland,11/15/01,WOC-Q-PlayOff,1,0,1
@@ -4586,6 +4655,7 @@ Saudi Arabia,Bahrain,08/17/01,WOC-Q-Asia,1,1,1
 United Arab Emirates,Uzbekistan,08/17/01,WOC-Q-Asia,4,1,1
 Qatar,Oman,08/16/01,WOC-Q-Asia,0,0,1
 Colombia,Peru,08/16/01,WOC-Q-South America,0,1,1
+France,Denmark,08/15/01,Friendlies,1,0,1
 Yugoslavia,Faroe Islands,08/15/01,WOC-Q-Europe,2,0,1
 Estonia,Cyprus,08/15/01,WOC-Q-Europe,2,2,1
 Brazil,Paraguay,08/15/01,WOC-Q-South America,2,0,1
@@ -4636,8 +4706,12 @@ New Zealand,Vanuatu,06/13/01,WOC-Q-Oceania,7,0,1
 Tahiti,Solomon Islands,06/13/01,WOC-Q-Oceania,2,0,1
 Solomon Islands,New Zealand,06/11/01,WOC-Q-Oceania,1,5,1
 Cook Islands,Tahiti,06/11/01,WOC-Q-Oceania,0,6,1
+Japan,France,06/10/01,COC-K,0,1,1
+Australia,Brazil,06/09/01,COC-K,1,0,0
 Vanuatu,Solomon Islands,06/08/01,WOC-Q-Oceania,2,7,1
 New Zealand,Cook Islands,06/08/01,WOC-Q-Oceania,2,0,1
+Japan,Australia,06/07/01,COC-K,1,0,1
+France,Brazil,06/07/01,COC-K,2,1,0
 Switzerland,Slovenia,06/06/01,WOC-Q-Europe,0,1,1
 Luxembourg,Russia,06/06/01,WOC-Q-Europe,1,2,1
 Faroe Islands,Yugoslavia,06/06/01,WOC-Q-Europe,0,6,1
@@ -4661,10 +4735,16 @@ Albania,Germany,06/06/01,WOC-Q-Europe,0,2,1
 Greece,England,06/06/01,WOC-Q-Europe,0,2,1
 Tahiti,New Zealand,06/06/01,WOC-Q-Oceania,0,5,1
 Cook Islands,Vanuatu,06/06/01,WOC-Q-Oceania,1,8,1
+Japan,Brazil,06/04/01,COC-G,0,0,1
+Cameroon,Canada,06/04/01,COC-G,2,0,0
 Vanuatu,Tahiti,06/04/01,WOC-Q-Oceania,1,6,1
 Solomon Islands,Cook Islands,06/04/01,WOC-Q-Oceania,9,1,1
+France,Mexico,06/03/01,COC-G,4,0,0
+South Korea,Australia,06/03/01,COC-G,1,0,1
 Argentina,Colombia,06/03/01,WOC-Q-South America,3,0,1
 Bolivia,Venezuela,06/03/01,WOC-Q-South America,5,0,1
+Canada,Brazil,06/02/01,COC-G,0,0,0
+Japan,Cameroon,06/02/01,COC-G,2,0,1
 Russia,Yugoslavia,06/02/01,WOC-Q-Europe,1,1,1
 Slovenia,Luxembourg,06/02/01,WOC-Q-Europe,2,0,1
 Faroe Islands,Switzerland,06/02/01,WOC-Q-Europe,0,1,1
@@ -4689,6 +4769,12 @@ Finland,Germany,06/02/01,WOC-Q-Europe,2,2,1
 Greece,Albania,06/02/01,WOC-Q-Europe,1,0,1
 Paraguay,Chile,06/02/01,WOC-Q-South America,1,0,1
 Peru,Ecuador,06/02/01,WOC-Q-South America,1,2,1
+Australia,France,06/01/01,COC-G,1,0,0
+South Korea,Mexico,06/01/01,COC-G,2,1,1
+Brazil,Cameroon,05/31/01,COC-G,2,0,0
+Japan,Canada,05/31/01,COC-G,3,0,1
+South Korea,France,05/30/01,COC-G,0,5,1
+Mexico,Australia,05/30/01,COC-G,0,2,0
 Sri Lanka,Pakistan,05/30/01,WOC-Q-Asia,3,1,1
 Thailand,Lebanon,05/30/01,WOC-Q-Asia,2,2,1
 Sri Lanka,Lebanon,05/28/01,WOC-Q-Asia,0,5,1
@@ -4747,6 +4833,7 @@ Turkmenistan,Taiwan,04/27/01,WOC-Q-Asia,5,0,1
 Uzbekistan,Jordan,04/27/01,WOC-Q-Asia,2,2,1
 Yemen,Brunei,04/27/01,WOC-Q-Asia,1,0,1
 United Arab Emirates,India,04/26/01,WOC-Q-Asia,1,0,1
+France,Portugal,04/25/01,Friendlies,4,0,1
 Nepal,Macau,04/25/01,WOC-Q-Asia,6,1,1
 Kazakhstan,Iraq,04/25/01,WOC-Q-Asia,1,1,1
 Taiwan,Jordan,04/25/01,WOC-Q-Asia,0,2,1
@@ -4805,6 +4892,7 @@ Brunei,Yemen,04/07/01,WOC-Q-Asia,0,5,1
 Samoa,Tonga,04/07/01,WOC-Q-Oceania,0,1,1
 Fiji,American Samoa,04/07/01,WOC-Q-Oceania,13,0,1
 Maldives,Cambodia,04/01/01,WOC-Q-Asia,6,0,1
+Spain,France,03/28/01,Friendlies,2,1,1
 Switzerland,Luxembourg,03/28/01,WOC-Q-Europe,5,0,1
 Slovenia,Yugoslavia,03/28/01,WOC-Q-Europe,1,1,1
 Russia,Faroe Islands,03/28/01,WOC-Q-Europe,1,0,1
@@ -4881,6 +4969,7 @@ Belgium,San Marino,02/28/01,WOC-Q-Europe,10,1,1
 Jamaica,Trinidad and Tobago,02/28/01,WOC-Q-North America,1,0,1
 United States,Mexico,02/28/01,WOC-Q-North America,2,0,1
 Costa Rica,Honduras,02/28/01,WOC-Q-North America,2,2,1
+France,Germany,02/27/01,Friendlies,1,0,1
 Kyrgyzstan,Singapore,02/27/01,WOC-Q-Asia,1,1,1
 Kuwait,Bahrain,02/27/01,WOC-Q-Asia,0,1,1
 Cameroon,Zambia,02/25/01,WOC-Q-Africa,1,0,1
@@ -4925,9 +5014,11 @@ Nigeria,Sudan,01/27/01,WOC-Q-Africa,3,0,1
 South Africa,Burkina Faso,01/27/01,WOC-Q-Africa,1,0,1
 Algeria,Namibia,01/26/01,WOC-Q-Africa,1,0,1
 Costa Rica,Guatemala,01/06/01,WOC-Q-North America,5,2,1
+Japan,South Korea,12/20/00,Friendlies,1,1,1
 Iran,Tajikistan,11/28/00,WOC-Q-Asia,2,0,1
 Tajikistan,Guam,11/26/00,WOC-Q-Asia,16,0,1
 Iran,Guam,11/24/00,WOC-Q-Asia,19,0,1
+Turkey,France,11/15/00,Friendlies,0,4,1
 Cyprus,Andorra,11/15/00,WOC-Q-Europe,5,0,1
 Trinidad and Tobago,Panama,11/15/00,WOC-Q-North America,1,0,1
 Canada,Mexico,11/15/00,WOC-Q-North America,0,0,1
@@ -5009,6 +5100,7 @@ United States,Guatemala,09/03/00,WOC-Q-North America,1,0,1
 Peru,Argentina,09/03/00,WOC-Q-South America,1,2,1
 Brazil,Bolivia,09/03/00,WOC-Q-South America,5,0,1
 Uruguay,Ecuador,09/03/00,WOC-Q-South America,4,0,1
+France,England,09/02/00,Friendlies,1,1,1
 Switzerland,Russia,09/02/00,WOC-Q-Europe,0,1,1
 Andorra,Cyprus,09/02/00,WOC-Q-Europe,2,3,1
 Netherlands,Republic of Ireland,09/02/00,WOC-Q-Europe,2,2,1
