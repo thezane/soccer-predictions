@@ -18,17 +18,20 @@ optimizeRatings <- function(tTree, fTree, gTree, gi, rData) {
 trainRater <- function(rOptions, rOutput) {
   model <- c(
       rOptions$c,
-      rOptions$k,
+      rOptions$kQ,
+      rOptions$kT,
       rOptions$meanGoals, rOptions$corrBeta,
       rOptions$hA, rOptions$strBeta)
   modelLBd <- c(
       rOptions$cLBd,
-      rOptions$kLBd,
+      rOptions$kQLBd,
+      rOptions$kTLBd,
       rOptions$meanGoalsLBd, rOptions$corrBetaLBd,
       rOptions$hALBd, rOptions$strBetaLBd)
   modelUBd <- c(
       rOptions$cUBd,
-      rOptions$kUBd,
+      rOptions$kQUBd,
+      rOptions$kTUBd,
       rOptions$meanGoalsUBd, rOptions$corrBetaUBd,
       rOptions$hAUBd, rOptions$strBetaUBd)
   numFs <- rOptions$numFs
@@ -65,11 +68,11 @@ trainRater <- function(rOptions, rOutput) {
 rateTeams <- function(x, rOptions, rOutput) {
   # Update model parameters
   c <- x[1]
-  k <- x[2]
-  biasBetas <- x[c(3, 4)]
-  featureBetas <- x[c(5, 6)]
-  strFsNorm <- x[-c(1: 6)]
-  rOptions <- updateOptions(rOptions, c, k, biasBetas, featureBetas,
+  ks <- x[c(2, 3)]
+  biasBetas <- x[c(4, 5)]
+  featureBetas <- x[c(6, 7)]
+  strFsNorm <- x[-c(1: 7)]
+  rOptions <- updateOptions(rOptions, c, ks, biasBetas, featureBetas,
       strFsNorm)
 
   # Print parameters

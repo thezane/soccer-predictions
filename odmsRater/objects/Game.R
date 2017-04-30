@@ -30,7 +30,6 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     strPost=zeroesMat,
     strAgg=c(0, 0),
     strAggNext=c(0, 0),
-    teamXP=zeroesMat,
     existsHA=T[[i, "HomeAdvantage"]],
     sse=0,
 
@@ -64,35 +63,31 @@ normalizeGoals <- function(game, rOptions) {
   game
 }
 
-# Update team experience and construct ratings matrix before game.
+# Construct ratings matrix before game.
 updateGamePreRate <- function(game, rOptions, homeTeam, awayTeam) {
-  gameDate <- game$gameDate
   homeTeamStrs <- getTeamStrs(homeTeam, rOptions)
   awayTeamStrs <- getTeamStrs(awayTeam, rOptions)
   game$teamStr <- matrix(c(homeTeamStrs[["teamStr"]],
       awayTeamStrs[["teamStr"]]), 2, 2, TRUE)
   game$strNorm <- matrix(c(homeTeamStrs[["strNorm"]],
       awayTeamStrs[["strNorm"]]), 2, 2, TRUE)
-  strNorm <- game$strNorm
-  
-  if (game$isFriendly || game$isQualifier) {
-    k <- rOptions$kQ
-  }
-  else {
-    k <- rOptions$kT
-  }
-  
+  strNorm <- game$strNorm  
   game$strAgg <- c(homeTeamStrs[["strAgg"]], awayTeamStrs[["strAgg"]])  
-  game$teamXP <- c(computeXP(homeTeam, gameDate, k),
-      computeXP(awayTeam, gameDate, k))
   game
 }
 
 # Update team ratings after game.
 updateGamePostRate <- function(game, rOptions, strPost) {
   game$strPost <- strPost
-  alphas <- 1 / (1 + game$teamXP)
-  game$strNext <- alphas * strPost + (1 - alphas) * game$teamStr
+  
+  if (game$isFriendly || game$isQualifier) {
+    alpha <- rOptions$kQ
+  }
+  else {
+    alpha <- rOptions$kT
+  }
+  
+  game$strNext <- alpha * strPost + (1 - alpha) * game$teamStr
   game$strNextNorm <- computeStrNorm(game$strNext)
   strNextNorm <- game$strNextNorm
   strBetas <- rOptions$strBetas

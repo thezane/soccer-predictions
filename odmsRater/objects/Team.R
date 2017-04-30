@@ -19,13 +19,11 @@ resetTeam <- function(team, rOptions) {
   team$strAgg <- 0
   team$isUpdated <- FALSE
   team$updateDate <- as.Date("0001-01-01")
-  team$xp <- rOptions$xpDefault
   team
 }
 
 updateTeam <- function(team, game, i) {
   team$updateDate <- game$gameDate
-  team$xp <- game$teamXP[i] + 1
   team$teamStr <- game$strNext[i, ]
   team$strNorm <- game$strNextNorm[i, ]
   team$strAgg <- game$strAggNext[i]
@@ -48,16 +46,4 @@ getTeamStrs <- function(team, rOptions) {
 
   teamStrs <- list(teamStr=teamStr, strNorm=strNorm, strAgg=strAgg)
   teamStrs
-}
-
-computeXP <- function(team, gameDate, k) {
-  if (!team$isUpdated) {
-    xp <- team$xp
-  }
-  else {
-    t <- as.numeric(gameDate - team$updateDate)
-    xp <- computeExpDecay(t, k / 365, team$xp)
-  }
-
-  xp
 }

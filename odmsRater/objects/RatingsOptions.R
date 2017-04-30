@@ -5,7 +5,8 @@ newRatingsOptions <- function(fTree) {
   rOptions <- list(
     # Optimizable parameters
     c=0.1,
-    k=0.5,
+    kQ=0.1,
+    kT=0.2,
     meanGoals=1,
     corrBeta=-1,
     hA=0.2,
@@ -13,7 +14,8 @@ newRatingsOptions <- function(fTree) {
     
     # Lower bounds for parameters
     cLBd=0.01,
-    kLBd=0.01,
+    kQLBd=0.01,
+    kTLBd=0.01,
     meanGoalsLBd=0.01,
     corrBetaLBd=-Inf,
     hALBd=0,
@@ -21,14 +23,14 @@ newRatingsOptions <- function(fTree) {
     
     # Upper bounds for parameters
     cUBd=Inf,
-    kUBd=Inf,
+    kQUBd=1,
+    kTUBd=1,
     meanGoalsUBd=Inf,
     corrBetaUBd=0,
     hAUBd=Inf,
     strBetaUBd=Inf,
     
     # Non-optimizable paramters
-    xpDefault=1,
     fTree=fTree,
     fNames=fNames,
     numFs=numFs,
@@ -41,12 +43,11 @@ newRatingsOptions <- function(fTree) {
   rOptions
 }
 
-updateOptions <- function(rOptions, c, k, biasBetas, featureBetas,
+updateOptions <- function(rOptions, c, ks, biasBetas, featureBetas,
       strFsNorm) {
   rOptions$c <- c
-  rOptions$k <- k
-  rOptions$kQ <- k
-  rOptions$kT <- 2 * k
+  rOptions$kQ <- ks[1]
+  rOptions$kT <- ks[2]
   rOptions$meanGoals <- biasBetas[1]
   rOptions$corrBeta <- biasBetas[2]
   rOptions$hA <- featureBetas[1]
@@ -66,7 +67,8 @@ updateOptions <- function(rOptions, c, k, biasBetas, featureBetas,
 
 printModel <- function(rOptions) {
   print(noquote(sprintf("c = %f", rOptions$c)))
-  print(noquote(sprintf("k = %f", rOptions$k)))
+  print(noquote(sprintf("kQ = %f", rOptions$kQ)))
+  print(noquote(sprintf("kT = %f", rOptions$kT)))
   print(noquote(sprintf("mu = %f", rOptions$meanGoals)))
   print(noquote(sprintf("corr = %f", rOptions$corrBeta)))
   print(noquote(sprintf("ha = %f", rOptions$hA)))

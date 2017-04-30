@@ -16,7 +16,6 @@ getGamesData <- function(gi, T) {
       "AwayAttack", "AwayDefense",
       "HomeAttackNext", "HomeDefenseNext",
       "AwayAttackNext", "AwayDefenseNext",
-      "HomeXP", "AwayXP",
       "HomeWin", "Tie", "AwayWin",
       "SSE")
   T[colNames] <- 0
@@ -44,7 +43,6 @@ updateGames <- function(T, game) {
   strAggNext <- round(game$strAggNext, numDecimals)
   strNorm <- round(game$strNorm, numDecimals)
   strNextNorm <- round(game$strNextNorm, numDecimals)
-  teamXP <- round(game$teamXP, numDecimals)
   ps <- round(game$Ps, numDecimals)
   T[i, "Date"] <- game$gameDateStr
   T[i, "Contest"] <- game$contest
@@ -60,8 +58,6 @@ updateGames <- function(T, game) {
   T[i, "HomeDefenseNext"] <- strNextNorm[1, 2]
   T[i, "AwayAttackNext"] <- strNextNorm[2, 1]
   T[i, "AwayDefenseNext"] <- strNextNorm[2, 2]
-  T[i, "HomeXP"] <- teamXP[1]
-  T[i, "AwayXP"] <- teamXP[2]
   T[i, "HomeWin"] <- ps[1]
   T[i, "Tie"] <- ps[2]
   T[i, "AwayWin"] <- ps[3]
