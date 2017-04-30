@@ -12,9 +12,8 @@ newRatingsOutput <- function(tTree, gTree, gi) {
 }
 
 # Update cost of prediction.
-updateStrCost <- function(rOutput, resultExpected, resultActual) {
-  rOutput$strCosts <- c(rOutput$strCosts,
-      resultExpected %*% resultActual)
+updateStrCost <- function(rOutput, p) {
+  rOutput$strCosts <- c(rOutput$strCosts, p)
   rOutput
 }
 
@@ -39,7 +38,6 @@ computeStrCost <- function(rOutput) {
     strCost <- mean(-log(strCosts))
   }
 
-  print(strCosts)
   strCost
 }
 

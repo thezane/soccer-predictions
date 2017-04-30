@@ -48,35 +48,8 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   
   game$isRelevant <- game$isPlayOff ||
           (!game$isFriendly && !game$isQualifier)
-  game$weight <- computeWeight(game)
   class(game) <- "Game"
   game
-}
-
-# Compute weight of 'game' in team ratings.
-computeWeight <- function(game) {
-
-  # Friendly
-  if (game$isFriendly) {
-    weight <- 0.6
-  }
-
-  # Qualifier
-  else if (game$isQualifier || game$isPlayOff) {
-    weight <- 0.8
-  }
-
-  # Group
-  else if (game$isGroup) {
-    weight <- 1
-  }
-
-  # Knockout
-  else {
-    weight = 1.2
-  }
-
-  weight
 }
 
 # Adjust goals scored by teams with home advantage.
@@ -101,17 +74,24 @@ updateGamePreRate <- function(game, rOptions, homeTeam, awayTeam) {
   game$strNorm <- matrix(c(homeTeamStrs[["strNorm"]],
       awayTeamStrs[["strNorm"]]), 2, 2, TRUE)
   strNorm <- game$strNorm
+  
+  if (game$isFriendly || game$isQualifier) {
+    k <- rOptions$kQ
+  }
+  else {
+    k <- rOptions$kT
+  }
+  
   game$strAgg <- c(homeTeamStrs[["strAgg"]], awayTeamStrs[["strAgg"]])  
-  game$teamXP <- c(computeXP(homeTeam, gameDate, rOptions$k),
-      computeXP(awayTeam, gameDate, rOptions$k))
+  game$teamXP <- c(computeXP(homeTeam, gameDate, k),
+      computeXP(awayTeam, gameDate, k))
   game
 }
 
 # Update team ratings after game.
 updateGamePostRate <- function(game, rOptions, strPost) {
   game$strPost <- strPost
-  weight <- game$weight
-  alphas <- weight / (weight + game$teamXP)
+  alphas <- 1 / (1 + game$teamXP)
   game$strNext <- alphas * strPost + (1 - alphas) * game$teamStr
   game$strNextNorm <- computeStrNorm(game$strNext)
   strNextNorm <- game$strNextNorm

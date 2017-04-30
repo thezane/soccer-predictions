@@ -42,7 +42,7 @@ trainRater <- function(rOptions, rOutput) {
   xLBd <- c(modelLBd, strFsNormLBd)
   xUBd <- c(modelUBd, strFsNormUBd)
   n <- length(x)
-  tol <- rOptions$tol
+  tolOpt <- rOptions$tolOpt
   fn <- function(x, rOptions.=rOptions, rOutput.=rOutput) {
       rData <- rateTeams(x, rOptions, rOutput)
       rOutput <- rData[["rOutput"]]
@@ -56,7 +56,7 @@ trainRater <- function(rOptions, rOutput) {
   }
   optimObj <- optim(x, fn, gr, method="L-BFGS-B",
       lower=xLBd, upper=xUBd, control=list(trace=3, maxit=10*n,
-      reltol=tol, REPORT=1))
+      pgtol=tolOpt, REPORT=1))
   stopCluster(cluster)
   x <- optimObj$par
   x
@@ -72,24 +72,26 @@ rateTeams <- function(x, rOptions, rOutput) {
   rOptions <- updateOptions(rOptions, c, k, biasBetas, featureBetas,
       strFsNorm)
 
+  # Print parameters
+  cat("\n")
+  printModel(rOptions)
+
   # Compute ratings with updated model
   rOutput <- computeRatings(rOptions, rOutput)
 
   # Compute regularization
   strMeanCost <- computeStrMeanCost(rOutput)
+  fedCost <- 0.01 * norm(as.matrix(strFsNorm), "f")
 
   # Compute cost
   strCost <- computeStrCost(rOutput)
-  rOutput$y <- strCost + strMeanCost
+  rOutput$y <- strCost + strMeanCost + fedCost
   rData <- list(rOptions=rOptions, rOutput=rOutput)
-
-  # Print parameters
-  printModel(rOptions)
 
   # Print cost
   print(noquote(sprintf("cost = %f", strCost)))
   print(noquote(sprintf("strMean = %f", strMeanCost)))
-  cat("\n")
+  print(noquote(sprintf("fedCost = %f", fedCost)))
   rData
 }
 
