@@ -1,7 +1,7 @@
-computeStr <- function(A, teamStr, c, tolRel, tolScale) {
+computeStr <- function(A, teamStr, b, c, tolRel, tolScale) {
   a <- teamStr[, 1];
   d <- teamStr[, 2];
-  A <- A + c;
+  A <- b * A + c;
 
   while (TRUE) {
     strPost <- computeAD(A, a, d, tolScale);

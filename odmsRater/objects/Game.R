@@ -77,17 +77,12 @@ updateGamePreRate <- function(game, rOptions, homeTeam, awayTeam) {
 }
 
 # Update team ratings after game.
-updateGamePostRate <- function(game, rOptions, strPost) {
+updateGamePostRate <- function(game, rOptions, homeTeam, awayTeam,
+      strPost) {
   game$strPost <- strPost
-  
-  if (game$isFriendly || game$isQualifier) {
-    alpha <- rOptions$kQ
-  }
-  else {
-    alpha <- rOptions$kT
-  }
-  
-  game$strNext <- alpha * strPost + (1 - alpha) * game$teamStr
+  alphas <- c(computeAlpha(homeTeam, rOptions, game),
+      computeAlpha(awayTeam, rOptions, game))
+  game$strNext <- alphas * strPost + (1 - alphas) * game$teamStr
   game$strNextNorm <- computeStrNorm(game$strNext)
   strNextNorm <- game$strNextNorm
   strBetas <- rOptions$strBetas

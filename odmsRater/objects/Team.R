@@ -5,7 +5,7 @@ newTeam <- function(teamName, fName) {
     teamStr=c(1, 1),
     strNorm=c(0, 0),
     strAgg=0,
-    isUpdated=FALSE,
+    numUpdates=0,
     updateDate=as.Date("0001-01-01")
   )
   
@@ -17,7 +17,7 @@ resetTeam <- function(team, rOptions) {
   team$teamStr <- c(1, 1)
   team$strNorm <- c(0, 0)
   team$strAgg <- 0
-  team$isUpdated <- FALSE
+  team$numUpdates <- 0
   team$updateDate <- as.Date("0001-01-01")
   team
 }
@@ -27,12 +27,21 @@ updateTeam <- function(team, game, i) {
   team$teamStr <- game$strNext[i, ]
   team$strNorm <- game$strNextNorm[i, ]
   team$strAgg <- game$strAggNext[i]
-  team$isUpdated <- TRUE
+  team$numUpdates <- team$numUpdates + 1
   team
 }
 
+computeAlpha <- function(team, rOptions, game) {
+  if (game$isFriendly || game$isQualifier) {
+    alpha <- rOptions$kQ
+  }
+  else {
+    alpha <- rOptions$kT
+  }
+}
+
 getTeamStrs <- function(team, rOptions) {
-  if (!team$isUpdated) {
+  if (team$numUpdates == 0) {
     teamStr <- rOptions$fTree[[team$fName]]
     strNorm=computeStrNorm(teamStr)
     strBetas <- rOptions$strBetas

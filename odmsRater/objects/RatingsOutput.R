@@ -38,7 +38,6 @@ computeStrCost <- function(rOutput) {
     strCost <- mean(-log(strCosts))
   }
 
-  print(strCosts)
   strCost
 }
 

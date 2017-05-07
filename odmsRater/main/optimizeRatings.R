@@ -16,36 +16,10 @@ optimizeRatings <- function(tTree, fTree, gTree, gi, rData) {
 }
 
 trainRater <- function(rOptions, rOutput) {
-  model <- c(
-      rOptions$c,
-      rOptions$kQ,
-      rOptions$kT,
-      rOptions$meanGoals, rOptions$corrBeta,
-      rOptions$hA, rOptions$strBeta)
-  modelLBd <- c(
-      rOptions$cLBd,
-      rOptions$kQLBd,
-      rOptions$kTLBd,
-      rOptions$meanGoalsLBd, rOptions$corrBetaLBd,
-      rOptions$hALBd, rOptions$strBetaLBd)
-  modelUBd <- c(
-      rOptions$cUBd,
-      rOptions$kQUBd,
-      rOptions$kTUBd,
-      rOptions$meanGoalsUBd, rOptions$corrBetaUBd,
-      rOptions$hAUBd, rOptions$strBetaUBd)
-  numFs <- rOptions$numFs
-  
-  # Default federation strengths for Africa, Asia, Europe,
-  # North America, Oceania and South America respectively
-  strFsNorm <- c(-0.2, -0.2, 0.2, -0.2, -0.6, 0.6)
-  strFsNormLBd <- rep(-Inf, numFs)
-  strFsNormUBd <- rep(Inf, numFs)
-  x <- c(model, strFsNorm)
-  xLBd <- c(modelLBd, strFsNormLBd)
-  xUBd <- c(modelUBd, strFsNormUBd)
+  x <- getModel(rOptions)
+  xLBd <- getModelLBd(rOptions)
+  xUBd <- getModelUBd(rOptions)
   n <- length(x)
-  tolOpt <- rOptions$tolOpt
   fn <- function(x, rOptions.=rOptions, rOutput.=rOutput) {
       rData <- rateTeams(x, rOptions, rOutput)
       rOutput <- rData[["rOutput"]]
@@ -59,7 +33,7 @@ trainRater <- function(rOptions, rOutput) {
   }
   optimObj <- optim(x, fn, gr, method="L-BFGS-B",
       lower=xLBd, upper=xUBd, control=list(trace=3, maxit=10*n,
-      pgtol=tolOpt, REPORT=1))
+      lmm=10, factr=rOptions$factr, REPORT=1))
   stopCluster(cluster)
   x <- optimObj$par
   x
@@ -67,15 +41,7 @@ trainRater <- function(rOptions, rOutput) {
 
 rateTeams <- function(x, rOptions, rOutput) {
   # Update model parameters
-  c <- x[1]
-  ks <- x[c(2, 3)]
-  biasBetas <- x[c(4, 5)]
-  featureBetas <- x[c(6, 7)]
-  strFsNorm <- x[-c(1: 7)]
-  rOptions <- updateOptions(rOptions, c, ks, biasBetas, featureBetas,
-      strFsNorm)
-
-  # Print parameters
+  rOptions <- updateOptions(rOptions, x)
   cat("\n")
   printModel(rOptions)
 
@@ -84,17 +50,15 @@ rateTeams <- function(x, rOptions, rOutput) {
 
   # Compute regularization
   strMeanCost <- computeStrMeanCost(rOutput)
-  fedCost <- 0.01 * norm(as.matrix(strFsNorm), "f")
 
   # Compute cost
   strCost <- computeStrCost(rOutput)
-  rOutput$y <- strCost + strMeanCost + fedCost
+  rOutput$y <- strCost + strMeanCost
   rData <- list(rOptions=rOptions, rOutput=rOutput)
 
   # Print cost
   print(noquote(sprintf("cost = %f", strCost)))
   print(noquote(sprintf("strMean = %f", strMeanCost)))
-  print(noquote(sprintf("fedCost = %f", fedCost)))
   rData
 }
 
