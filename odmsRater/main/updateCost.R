@@ -15,7 +15,7 @@ updateCost <- function(rOptions, rOutput, game, gamePrev) {
 }
 
 updateRatingsCost <- function(rOptions, rOutput, game) {
-  gamePrediction <- forecastGame(game, rOptions)
+  gamePrediction <- computeLayerPois(game, rOptions)
   
   # Update cost of expected and actual game outcome
   goals <- game$goals
@@ -25,7 +25,7 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   resultExpected <- gamePrediction[["gamePs"]]
   resultActual <- game$outcome
   game$Ps <- gamePrediction[["gamePs"]]
-  game$sse <- computeSSE(resultExpected, resultActual)
+  game$sse <- (resultExpected - resultActual) ^ 2
   costData <- list(rOutput=rOutput, game=game)
   costData
 }

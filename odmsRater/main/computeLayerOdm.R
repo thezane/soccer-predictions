@@ -1,4 +1,4 @@
-computeStr <- function(A, teamStr, b, c, tolRel, tolScale) {
+computeLayerOdm <- function(A, teamStr, b, c, tolRel, tolScale) {
   a <- teamStr[, 1];
   d <- teamStr[, 2];
   A <- b * A + c;

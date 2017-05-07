@@ -32,8 +32,8 @@ trainRater <- function(rOptions, rOutput) {
       computeGradientPar(x, n, fn, e, cluster)
   }
   optimObj <- optim(x, fn, gr, method="L-BFGS-B",
-      lower=xLBd, upper=xUBd, control=list(trace=3, maxit=10*n,
-      lmm=10, factr=rOptions$factr, REPORT=1))
+      lower=xLBd, upper=xUBd, control=list(trace=3, lmm=rOptions$lmm,
+      factr=rOptions$factr, REPORT=1))
   stopCluster(cluster)
   x <- optimObj$par
   x

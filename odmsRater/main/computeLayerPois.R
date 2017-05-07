@@ -1,4 +1,4 @@
-forecastGame <- function (game, rOptions) {
+computeLayerPois <- function (game, rOptions) {
   maxGoals <- 20
   meanGoals <- game$meanGoals
   homeMeanGoals <- meanGoals[1]
