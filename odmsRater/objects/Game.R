@@ -24,10 +24,8 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
 
     # Ratings
     teamNames=c(homeTeamName, awayTeamName),
-    teamStr=zeroesMat,
     strNorm=zeroesMat,
-    strNext=zeroesMat,
-    strPost=zeroesMat,
+    strNextNorm=zeroesMat,
     strAgg=c(0, 0),
     strAggNext=c(0, 0),
     existsHA=T[[i, "HomeAdvantage"]],
@@ -67,23 +65,16 @@ normalizeGoals <- function(game, rOptions) {
 updateGamePreRate <- function(game, rOptions, homeTeam, awayTeam) {
   homeTeamStrs <- getTeamStrs(homeTeam, rOptions)
   awayTeamStrs <- getTeamStrs(awayTeam, rOptions)
-  game$teamStr <- matrix(c(homeTeamStrs[["teamStr"]],
-      awayTeamStrs[["teamStr"]]), 2, 2, TRUE)
   game$strNorm <- matrix(c(homeTeamStrs[["strNorm"]],
       awayTeamStrs[["strNorm"]]), 2, 2, TRUE)
-  strNorm <- game$strNorm  
   game$strAgg <- c(homeTeamStrs[["strAgg"]], awayTeamStrs[["strAgg"]])  
   game
 }
 
 # Update team ratings after game.
-updateGamePostRate <- function(game, rOptions, strPost, strNext) {
-  game$strPost <- strPost
-  game$strNext <- strNext
-  game$strNextNorm <- computeStrNorm(game$strNext)
-  strNextNorm <- game$strNextNorm
-  strBetas <- rOptions$strBetas
-  game$strAggNext <- c(strNextNorm[1, ] %*% strBetas,
-      strNextNorm[2, ] %*% strBetas)
+updateGamePostRate <- function(game, rOptions, strNextNorm) {
+  game$strNextNorm <- strNextNorm
+  game$strAggNext <- c(game$strNextNorm[1, ] %*% rOptions$strBetas,
+      game$strNextNorm[2, ] %*% rOptions$strBetas)
   game
 }

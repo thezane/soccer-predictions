@@ -93,12 +93,14 @@ updateOptions <- function(rOptions, x) {
   rOptions$strBeta <- x[6]
   rOptions$hA <- x[7]
   rOptions$corrBeta <- x[8]
-  strFs <- exp(x[-c(1: 8)])
+  rOptions$strFsNorm <- x[-c(1: 8)]
+  strFsNorm <- rOptions$strFsNorm
+  rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
   i <- 1
   
   while (i <= rOptions$numFs) {
-    strF <- strFs[i]
-    rOptions$fTree[[rOptions$fNames[i]]] <- c(strF, 1 / strF)
+    strFNorm <- strFsNorm[i]
+    rOptions$fTree[[rOptions$fNames[i]]] <- c(strFNorm, -strFNorm)
     i <- i + 1
   }
 
@@ -118,7 +120,7 @@ printModel <- function(rOptions) {
   
   while (i <= rOptions$numFs) {
     print(noquote(sprintf("%s = %f", rOptions$fNames[i],
-        log(rOptions$fTree[[rOptions$fNames[i]]][1]))))
+        rOptions$fTree[[rOptions$fNames[i]]][1])))
     i <- i + 1
   }
 }

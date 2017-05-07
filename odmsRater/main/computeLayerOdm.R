@@ -1,4 +1,5 @@
-computeLayerOdm <- function(A, teamStr, b, c, tolRel, tolScale) {
+computeLayerOdm <- function(A, strNorm, b, c, tolRel, tolScale) {
+  teamStr <- exp(strNorm)
   a <- teamStr[, 1];
   d <- teamStr[, 2];
   A <- b * A + c;
@@ -17,7 +18,8 @@ computeLayerOdm <- function(A, teamStr, b, c, tolRel, tolScale) {
     }
   }
   
-  strPost
+  strPostNorm <- log(strPost)
+  strPostNorm
 }
 
 computeAD <- function(A, a, d, tolScale) {

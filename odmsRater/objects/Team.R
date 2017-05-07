@@ -2,7 +2,6 @@ newTeam <- function(teamName, fName) {
   team <- list(
     name=teamName,
     fName=fName,
-    teamStr=c(1, 1),
     strNorm=c(0, 0),
     strAgg=0,
     numUpdates=0,
@@ -14,7 +13,6 @@ newTeam <- function(teamName, fName) {
 } 
 
 resetTeam <- function(team, rOptions) {
-  team$teamStr <- c(1, 1)
   team$strNorm <- c(0, 0)
   team$strAgg <- 0
   team$numUpdates <- 0
@@ -24,7 +22,6 @@ resetTeam <- function(team, rOptions) {
 
 updateTeam <- function(team, game, i) {
   team$updateDate <- game$gameDate
-  team$teamStr <- game$strNext[i, ]
   team$strNorm <- game$strNextNorm[i, ]
   team$strAgg <- game$strAggNext[i]
   team$numUpdates <- team$numUpdates + 1
@@ -42,17 +39,15 @@ computeAlpha <- function(team, rOptions, game) {
 
 getTeamStrs <- function(team, rOptions) {
   if (team$numUpdates == 0) {
-    teamStr <- rOptions$fTree[[team$fName]]
-    strNorm=computeStrNorm(teamStr)
+	strNorm=rOptions$fTree[[team$fName]]
     strBetas <- rOptions$strBetas
     strAgg <- strNorm %*% strBetas
   }
   else {
-    teamStr <- team$teamStr
     strNorm <-team$strNorm
     strAgg <- team$strAgg
   }
 
-  teamStrs <- list(teamStr=teamStr, strNorm=strNorm, strAgg=strAgg)
+  teamStrs <- list(strNorm=strNorm, strAgg=strAgg)
   teamStrs
 }
