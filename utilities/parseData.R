@@ -7,6 +7,7 @@ parseData <- function(filename) {
   rowNames <- c("HomeTeam", "AwayTeam", "Date", "Contest",
       "HomeGoals", "AwayGoals", "HomeAdvantage")
   data <- data.frame(row.names = rowNames)
+  date = NA
   lines <- readLines(fp, )
   n <- length(lines)
   i <- 1
@@ -14,19 +15,24 @@ parseData <- function(filename) {
 
   while (i <= n) {
     line <- lines[i]
-    contest <- getContest(line)
-    date <- getDateFormatted(line)
+    #contest <- getContest(line)
+    dateTry <- getDateFormatted(line)
+    
+    if (!is.na(dateTry)) {
+      date <- dateTry
+    }
+    
     goals <- getGoals(line)
     teams <- getTeams(line, h)
 
-    if (!is.na(contest)) {
-      currentContest <- contest
-    }
-    else if (!is.na(date) && !is.na(goals) && !is.na(teams)) {
+    #if (!is.na(contest)) {
+    #  currentContest <- contest
+    #}
+    if (!is.na(date) && !is.na(goals) && !is.na(teams)) {
       data[j, "HomeTeam"] <- teams[1]
       data[j, "AwayTeam"] <- teams[2]
       data[j, "Date"] <- date
-      data[j, "Contest"] <- currentContest
+      data[j, "Contest"] <- "AFC-Q"
       data[j, "HomeGoals"] <- goals[1]
       data[j, "AwayGoals"] <- goals[2]
       data[j, "HomeAdvantage"] <- 1
@@ -73,7 +79,7 @@ getDateFormatted <- function(line) {
 
 getGoals <- function(line) {
   pattern <- "  [A-Z][^\\[]+[A-Za-z\\.] +([0-9]+)-([0-9]+) +[A-Z][^\\[]+[A-Za-z\\.]"
-  matches <- str_match(line, pattern) 
+  matches <- str_match(line, pattern)
 
   if (!is.na(matches)) {
     c(as.numeric(matches[2]), as.numeric(matches[3]))

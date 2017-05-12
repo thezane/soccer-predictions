@@ -78,3 +78,8 @@ updateGamePostRate <- function(game, rOptions, strNextNorm) {
       game$strNextNorm[2, ] %*% rOptions$strBetas)
   game
 }
+
+computeSSE <- function(game, resultExpected, resultActual) {
+  game$sse <- sum((resultExpected - resultActual) ^ 2)
+  game
+}

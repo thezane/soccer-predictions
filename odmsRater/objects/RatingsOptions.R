@@ -49,7 +49,7 @@ newRatingsOptions <- function(fTree) {
     tolScale=0.01,
 
     # L-BFGS-B parameters
-    factr=0.01,
+    factr=1e-04 / .Machine$double.eps,
     lmm=10
   )
   
@@ -82,6 +82,12 @@ getModelUBd <- function(rOptions) {
     rOptions$meanGoalsUBd, rOptions$strBetaUBd, rOptions$hAUBd,
         rOptions$corrBetaUBd,
     rOptions$strFsNormUBd)
+}
+
+getModelSlopes <- function(rOptions) {
+  c(rOptions$b,
+    rOptions$kQ, rOptions$kT,
+    rOptions$strBeta, rOptions$hA)
 }
 
 updateOptions <- function(rOptions, x) {
