@@ -49,18 +49,16 @@ rateTeams <- function(x, rOptions, rOutput) {
   rOutput <- computeRatings(rOptions, rOutput)
 
   # Compute regularization
-  strMeanCost <- computeStrMeanCost(rOutput)
+  strMeanCost <- 0.1 * computeStrMeanCost(rOutput)
 
   # Compute cost
   strCost <- computeStrCost(rOutput)
-  regCost <- 0.05 * norm(as.matrix(getModelSlopes(rOptions)), "f")
-  rOutput$y <- strCost + strMeanCost + regCost
+  rOutput$y <- strCost + strMeanCost
   rData <- list(rOptions=rOptions, rOutput=rOutput)
 
   # Print cost
   print(noquote(sprintf("cost = %f", strCost)))
   print(noquote(sprintf("strMean = %f", strMeanCost)))
-  print(noquote(sprintf("reg = %f", regCost)))
   rData
 }
 

@@ -21,7 +21,10 @@ updateStrCost <- function(rOutput, p) {
 updateStrMeanCosts <- function(rOutput) {
   teams <- data.frame(t(values(rOutput$tTree)))
   strNorms <- data.frame(teams[["strNorm"]])
-  strNormMean <- c(mean(strNorms[[1]]), mean(strNorms[[2]]))
+  aNorms <- unlist(strNorms[1, ])
+  dNorms <- unlist(strNorms[2, ])
+  strNormMean <- c(mean(aNorms), mean(dNorms)) /
+      c(sd(aNorms), sd(dNorms))
   rOutput$strMeanCosts <- c(rOutput$strMeanCosts,
       strNormMean - c(0, 0))
   rOutput
