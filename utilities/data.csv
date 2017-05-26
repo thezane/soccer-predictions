@@ -1,93 +1,27 @@
 HomeTeam,AwayTeam,Date,Contest,HomeGoals,AwayGoals,HomeAdvantage
-Oman,Syria,02/06/13,AFC-Q,1,0,1
-Jordan,Singapore,02/06/13,AFC-Q,4,0,1
-Singapore,Oman,08/14/13,AFC-Q,0,2,1
-Syria,Jordan,08/15/13,AFC-Q,1,1,1
-Singapore,Syria,10/15/13,AFC-Q,2,1,1
-Jordan,Oman,10/15/13,AFC-Q,0,0,1
-Syria,Singapore,11/15/13,AFC-Q,4,0,1
-Syria,Oman,11/19/13,AFC-Q,0,1,1
-Oman,Jordan,01/31/14,AFC-Q,0,0,1
-Singapore,Jordan,02/04/14,AFC-Q,1,3,1
-Oman,Singapore,03/05/14,AFC-Q,3,1,1
-Jordan,Syria,03/05/14,AFC-Q,2,1,1
-Iran,Lebanon,02/06/13,AFC-Q,5,0,1
-Thailand,Kuwait,02/06/13,AFC-Q,1,3,1
-Lebanon,Thailand,03/22/13,AFC-Q,5,2,1
-Kuwait,Iran,03/26/13,AFC-Q,1,1,1
-Lebanon,Kuwait,10/15/13,AFC-Q,1,1,1
-Iran,Thailand,10/15/13,AFC-Q,2,1,1
-Thailand,Iran,11/15/13,AFC-Q,0,3,1
-Kuwait,Lebanon,11/15/13,AFC-Q,0,0,1
-Lebanon,Iran,11/19/13,AFC-Q,1,4,1
-Kuwait,Thailand,11/19/13,AFC-Q,3,1,1
-Iran,Kuwait,03/03/14,AFC-Q,3,2,1
-Thailand,Lebanon,03/05/14,AFC-Q,2,5,1
-Iraq,Indonesia,02/06/13,AFC-Q,1,0,1
-Saudi Arabia,China,02/06/13,AFC-Q,2,1,1
-China,Iraq,03/22/13,AFC-Q,1,0,1
-Indonesia,Saudi Arabia,03/23/13,AFC-Q,1,2,1
-Indonesia,China,10/15/13,AFC-Q,1,1,1
-Iraq,Saudi Arabia,10/15/13,AFC-Q,0,2,1
-China,Indonesia,11/15/13,AFC-Q,1,0,1
-Saudi Arabia,Iraq,11/15/13,AFC-Q,2,1,1
-China,Saudi Arabia,11/19/13,AFC-Q,0,0,1
-Indonesia,Iraq,11/19/13,AFC-Q,0,2,1
-Iraq,China,03/05/14,AFC-Q,3,1,1
-Saudi Arabia,Indonesia,03/05/14,AFC-Q,1,0,1
-Yemen,Bahrain,02/06/13,AFC-Q,0,2,1
-Qatar,Malaysia,02/06/13,AFC-Q,2,0,1
-Malaysia,Yemen,03/22/13,AFC-Q,2,1,1
-Bahrain,Qatar,03/22/13,AFC-Q,1,0,1
-Qatar,Yemen,10/13/13,AFC-Q,6,0,1
-Malaysia,Bahrain,10/15/13,AFC-Q,1,1,1
-Yemen,Qatar,11/15/13,AFC-Q,1,4,1
-Bahrain,Malaysia,11/15/13,AFC-Q,1,0,1
-Malaysia,Qatar,11/19/13,AFC-Q,0,1,1
-Bahrain,Yemen,11/19/13,AFC-Q,2,0,1
-Yemen,Malaysia,03/05/14,AFC-Q,1,2,1
-Qatar,Bahrain,03/05/14,AFC-Q,0,0,1
-Uzbekistan,Hong Kong,02/06/13,AFC-Q,0,0,1
-Vietnam,United Arab Emirates,02/06/13,AFC-Q,1,2,1
-Hong Kong,Vietnam,03/22/13,AFC-Q,1,0,1
-United Arab Emirates,Uzbekistan,03/22/13,AFC-Q,2,1,1
-Hong Kong,United Arab Emirates,10/15/13,AFC-Q,0,4,1
-Uzbekistan,Vietnam,10/15/13,AFC-Q,3,1,1
-Vietnam,Uzbekistan,11/15/13,AFC-Q,0,3,1
-United Arab Emirates,Hong Kong,11/15/13,AFC-Q,4,0,1
-Hong Kong,Uzbekistan,11/19/13,AFC-Q,0,2,1
-United Arab Emirates,Vietnam,11/19/13,AFC-Q,5,0,1
-Uzbekistan,United Arab Emirates,03/05/14,AFC-Q,1,1,1
-Vietnam,Hong Kong,03/05/14,AFC-Q,3,1,1
-Australia,Kuwait,01/09/15,AFC-G,4,1,1
-South Korea,Oman,01/10/15,AFC-G,1,0,0
-Kuwait,South Korea,01/13/15,AFC-G,0,1,0
-Australia,Oman,01/13/15,AFC-G,4,0,1
-Australia,South Korea,01/17/15,AFC-G,0,1,1
-Oman,Kuwait,01/17/15,AFC-G,1,0,0
-Uzbekistan,North Korea,01/10/15,AFC-G,1,0,0
-Saudi Arabia,China,01/10/15,AFC-G,0,1,0
-North Korea,Saudi Arabia,01/14/15,AFC-G,1,4,0
-China,Uzbekistan,01/14/15,AFC-G,2,1,0
-China,North Korea,01/18/15,AFC-G,2,1,0
-Uzbekistan,Saudi Arabia,01/18/15,AFC-G,3,1,0
-United Arab Emirates,Qatar,01/11/15,AFC-G,4,1,0
-Iran,Bahrain,01/11/15,AFC-G,2,0,0
-Bahrain,United Arab Emirates,01/15/15,AFC-G,1,2,0
-Qatar,Iran,01/15/15,AFC-G,0,1,0
-Iran,United Arab Emirates,01/19/15,AFC-G,1,0,0
-Qatar,Bahrain,01/19/15,AFC-G,1,2,0
-Japan,Palestine,01/12/15,AFC-G,4,0,0
-Jordan,Iraq,01/12/15,AFC-G,0,1,0
-Palestine,Jordan,01/16/15,AFC-G,1,5,0
-Iraq,Japan,01/16/15,AFC-G,0,1,0
-Iraq,Palestine,01/20/15,AFC-K,2,0,0
-Japan,Jordan,01/20/15,AFC-K,2,0,0
-South Korea,Uzbekistan,01/22/15,AFC-K,2,0,0
-Australia,China,01/22/15,AFC-K,2,0,1
-Iran,Iraq,01/23/15,AFC-K,3,3,0
-Japan,United Arab Emirates,01/23/15,AFC-K,1,1,0
-South Korea,Iraq,01/26/15,AFC-K,2,0,0
-Australia,United Arab Emirates,01/27/15,AFC-K,2,0,1
-Iraq,United Arab Emirates,01/30/15,AFC-K,2,3,0
-Australia,South Korea,01/31/15,AFC-K,2,1,1
+Panama,Haiti,07/07/15,CON-G,1,1,0
+United States,Honduras,07/07/15,CON-G,2,1,1
+Honduras,Panama,07/10/15,CON-G,1,1,0
+United States,Haiti,07/10/15,CON-G,1,0,1
+Haiti,Honduras,07/13/15,CON-G,1,0,0
+United States,Panama,07/13/15,CON-G,1,1,1
+Costa Rica,Jamaica,07/08/15,CON-G,2,2,0
+Canada,El Salvador,07/08/15,CON-G,0,0,1
+Canada,Jamaica,07/11/15,CON-G,0,1,1
+Costa Rica,El Salvador,07/11/15,CON-G,1,1,0
+Jamaica,El Salvador,07/14/15,CON-G,1,0,0
+Canada,Costa Rica,07/14/15,CON-G,0,0,1
+Trinidad and Tobago,Guatemala,07/09/15,CON-G,3,1,0
+Mexico,Cuba,07/09/15,CON-G,6,0,0
+Trinidad and Tobago,Cuba,07/12/15,CON-G,2,0,0
+Guatemala,Mexico,07/12/15,CON-G,0,0,0
+Cuba,Guatemala,07/15/15,CON-G,1,0,0
+Mexico,Trinidad and Tobago,07/15/15,CON-G,4,4,0
+United States,Cuba,07/18/15,CON-K,6,0,1
+Haiti,Jamaica,07/18/15,CON-K,0,1,0
+Trinidad and Tobago,Panama,07/19/15,CON-K,1,1,0
+Mexico,Costa Rica,07/19/15,CON-K,1,0,0
+United States,Jamaica,07/22/15,CON-K,1,2,1
+Panama,Mexico,07/22/15,CON-K,1,2,0
+United States,Panama,07/25/15,CON-K,1,1,1
+Jamaica,Mexico,07/26/15,CON-K,1,3,0
