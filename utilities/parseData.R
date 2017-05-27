@@ -105,6 +105,7 @@ constructTeamHash <- function() {
   h["Bosnia-H."] <- "Bosnia-Herzegovina"
   h["Bosnia-Hercegovina"] <- "Bosnia-Herzegovina"
   h["Central Afr. Rep."] <- "Central African Republic"
+  h["Congo"] <- "Republic of the Congo"
   h["Congo-Brazzaville"] <- "Republic of the Congo"
   h["Congo-Kinshasa"] <- "Democratic Republic of the Congo"
   h["Czech Rep."] <- "Czech Republic"
