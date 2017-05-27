@@ -50,8 +50,6 @@ iterTeams <- function(rOptions, tTree, f) {
 constructStrPrereqs <- function(rOptions, game, gamePrev, tTree) {
   homeTeamName <- game$teamNames[1]
   awayTeamName <- game$teamNames[2]
-  print(homeTeamName)
-  print(awayTeamName)
   homeTeam <- tTree[[homeTeamName]]
   awayTeam <- tTree[[awayTeamName]]
   game <- updateGamePreRate(game, rOptions, homeTeam, awayTeam)
