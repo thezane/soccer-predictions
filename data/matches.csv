@@ -6156,8 +6156,8 @@ Benin,Angola,08/02/98,CAF-Q,2,1,1
 Angola,Benin,08/16/98,CAF-Q,2,0,1
 Mali,Cape Verde,08/02/98,CAF-Q,3,0,1
 Cape Verde,Mali,08/16/98,CAF-Q,0,0,1
-Chad,Republic of Congo,08/02/98,CAF-Q,1,1,1
-Republic of Congo,Chad,08/16/98,CAF-Q,0,0,1
+Chad,Republic of the Congo,08/02/98,CAF-Q,1,1,1
+Republic of the Congo,Chad,08/16/98,CAF-Q,0,0,1
 Equatorial Guinea,Gabon,08/02/98,CAF-Q,0,2,1
 Gabon,Equatorial Guinea,08/16/98,CAF-Q,3,0,1
 Djibouti,Kenya,07/31/98,CAF-Q,0,3,1
@@ -6188,18 +6188,18 @@ Togo,Morocco,02/28/99,CAF-Q,2,3,1
 Morocco,Togo,04/11/99,CAF-Q,1,1,1
 Morocco,Guinea,06/06/99,CAF-Q,1,0,1
 Guinea,Togo,06/20/99,CAF-Q,2,1,1
-Namibia,Republic of Congo,10/03/98,CAF-Q,0,1,1
+Namibia,Republic of the Congo,10/03/98,CAF-Q,0,1,1
 Mali,Ivory Coast,10/04/98,CAF-Q,0,1,1
 Ivory Coast,Namibia,01/24/99,CAF-Q,3,0,1
-Republic of Congo,Mali,01/24/99,CAF-Q,0,0,1
-Republic of Congo,Ivory Coast,02/28/99,CAF-Q,1,0,1
+Republic of the Congo,Mali,01/24/99,CAF-Q,0,0,1
+Republic of the Congo,Ivory Coast,02/28/99,CAF-Q,1,0,1
 Mali,Namibia,04/11/99,CAF-Q,2,1,1
-Ivory Coast,Republic of Congo,04/11/99,CAF-Q,2,0,1
+Ivory Coast,Republic of the Congo,04/11/99,CAF-Q,2,0,1
 Namibia,Mali,05/08/99,CAF-Q,0,0,1
 Namibia,Ivory Coast,06/05/99,CAF-Q,1,1,1
-Mali,Republic of Congo,06/06/99,CAF-Q,3,1,1
+Mali,Republic of the Congo,06/06/99,CAF-Q,3,1,1
 Ivory Coast,Mali,06/20/99,CAF-Q,0,0,1
-Republic of Congo,Namibia,06/20/99,CAF-Q,3,0,1
+Republic of the Congo,Namibia,06/20/99,CAF-Q,3,0,1
 South Africa,Angola,10/03/98,CAF-Q,1,0,1
 Gabon,Mauritius,10/04/98,CAF-Q,2,0,1
 Mauritius,South Africa,01/23/99,CAF-Q,1,1,1
@@ -6219,16 +6219,16 @@ Burkina Faso,Burundi,04/11/99,CAF-Q,3,1,1
 Burkina Faso,Senegal,06/06/99,CAF-Q,2,2,1
 Senegal,Burundi,06/19/99,CAF-Q,1,0,1
 Kenya,Madagascar,10/03/98,CAF-Q,1,1,1
-Zambia,Democratic Republic of Congo,10/04/98,CAF-Q,1,1,1
+Zambia,Democratic Republic of the Congo,10/04/98,CAF-Q,1,1,1
 Madagascar,Zambia,01/24/99,CAF-Q,1,2,1
-Democratic Republic of Congo,Kenya,01/24/99,CAF-Q,2,1,1
+Democratic Republic of the Congo,Kenya,01/24/99,CAF-Q,2,1,1
 Kenya,Zambia,02/28/99,CAF-Q,0,1,1
-Madagascar,Democratic Republic of Congo,02/28/99,CAF-Q,3,1,1
+Madagascar,Democratic Republic of the Congo,02/28/99,CAF-Q,3,1,1
 Zambia,Kenya,04/10/99,CAF-Q,1,0,1
-Democratic Republic of Congo,Madagascar,04/11/99,CAF-Q,2,0,1
-Kenya,Democratic Republic of Congo,06/06/99,CAF-Q,0,1,1
+Democratic Republic of the Congo,Madagascar,04/11/99,CAF-Q,2,0,1
+Kenya,Democratic Republic of the Congo,06/06/99,CAF-Q,0,1,1
 Zambia,Madagascar,06/06/99,CAF-Q,3,0,1
-Democratic Republic of Congo,Zambia,06/20/99,CAF-Q,0,1,1
+Democratic Republic of the Congo,Zambia,06/20/99,CAF-Q,0,1,1
 Madagascar,Kenya,06/20/99,CAF-Q,1,1,1
 Uganda,Algeria,10/02/98,CAF-Q,2,1,1
 Tunisia,Liberia,10/04/98,CAF-Q,2,1,1
@@ -6262,12 +6262,12 @@ Cape Verde,Liberia,07/03/00,CAF-Q,1,0,1
 Liberia,Cape Verde,07/16/00,CAF-Q,3,0,1
 Sierra Leone,Togo,08/20/00,CAF-Q,2,0,1
 Togo,Sierra Leone,09/03/00,CAF-Q,2,0,1
-Central African Republic,Democratic Republic of Congo,07/02/00,CAF-Q,1,1,1
-Democratic Republic of Congo,Central African Republic,07/16/00,CAF-Q,2,0,1
+Central African Republic,Democratic Republic of the Congo,07/02/00,CAF-Q,1,1,1
+Democratic Republic of the Congo,Central African Republic,07/16/00,CAF-Q,2,0,1
 Sudan,Eritrea,07/02/00,CAF-Q,5,1,1
 Eritrea,Sudan,07/15/00,CAF-Q,2,1,1
-Rwanda,Republic of Congo,07/02/00,CAF-Q,2,1,1
-Republic of Congo,Rwanda,07/16/00,CAF-Q,5,1,1
+Rwanda,Republic of the Congo,07/02/00,CAF-Q,2,1,1
+Republic of the Congo,Rwanda,07/16/00,CAF-Q,5,1,1
 Djibouti,Burundi,06/30/00,CAF-Q,1,3,1
 Burundi,Djibouti,07/15/00,CAF-Q,1,0,1
 Botswana,Madagascar,07/01/00,CAF-Q,1,0,1
@@ -6299,17 +6299,17 @@ Nigeria,Madagascar,06/02/01,CAF-Q,1,0,1
 Namibia,Nigeria,06/16/01,CAF-Q,0,2,1
 Madagascar,Zambia,06/16/01,CAF-Q,0,1,1
 Liberia,Mauritius,09/03/00,CAF-Q,4,0,1
-Republic of Congo,South Africa,09/03/00,CAF-Q,1,2,1
-Mauritius,Republic of Congo,10/08/00,CAF-Q,1,2,1
+Republic of the Congo,South Africa,09/03/00,CAF-Q,1,2,1
+Mauritius,Republic of the Congo,10/08/00,CAF-Q,1,2,1
 South Africa,Liberia,12/16/00,CAF-Q,2,1,1
 Mauritius,South Africa,01/13/01,CAF-Q,1,1,1
-Liberia,Republic of Congo,01/14/01,CAF-Q,5,1,1
+Liberia,Republic of the Congo,01/14/01,CAF-Q,5,1,1
 South Africa,Mauritius,03/24/01,CAF-Q,3,0,1
-Republic of Congo,Liberia,03/25/01,CAF-Q,0,1,1
-Republic of Congo,Mauritius,06/03/01,CAF-Q,0,0,1
+Republic of the Congo,Liberia,03/25/01,CAF-Q,0,1,1
+Republic of the Congo,Mauritius,06/03/01,CAF-Q,0,0,1
 Liberia,South Africa,06/03/01,CAF-Q,1,1,1
 Mauritius,Liberia,06/16/01,CAF-Q,0,2,1
-South Africa,Republic of Congo,06/17/01,CAF-Q,0,0,1
+South Africa,Republic of the Congo,06/17/01,CAF-Q,0,0,1
 Gabon,Morocco,09/02/00,CAF-Q,2,0,1
 Kenya,Tunisia,09/03/00,CAF-Q,0,0,1
 Tunisia,Gabon,10/07/00,CAF-Q,4,2,1
@@ -6340,17 +6340,17 @@ Uganda,Senegal,01/13/01,CAF-Q,1,1,1
 Senegal,Uganda,03/24/01,CAF-Q,3,0,1
 Uganda,Togo,06/02/01,CAF-Q,0,3,1
 Togo,Senegal,06/17/01,CAF-Q,1,0,1
-Zimbabwe,Democratic Republic of Congo,09/03/00,CAF-Q,3,2,1
+Zimbabwe,Democratic Republic of the Congo,09/03/00,CAF-Q,3,2,1
 Lesotho,Ghana,09/03/00,CAF-Q,3,3,1
 Ghana,Zimbabwe,10/08/00,CAF-Q,4,1,1
-Democratic Republic of Congo,Lesotho,10/10/00,CAF-Q,1,1,1
+Democratic Republic of the Congo,Lesotho,10/10/00,CAF-Q,1,1,1
 Zimbabwe,Lesotho,01/14/01,CAF-Q,1,2,1
-Democratic Republic of Congo,Ghana,01/14/01,CAF-Q,2,1,1
+Democratic Republic of the Congo,Ghana,01/14/01,CAF-Q,2,1,1
 Lesotho,Zimbabwe,03/24/01,CAF-Q,0,1,1
-Ghana,Democratic Republic of Congo,03/25/01,CAF-Q,3,0,1
-Lesotho,Democratic Republic of Congo,06/03/01,CAF-Q,0,0,1
+Ghana,Democratic Republic of the Congo,03/25/01,CAF-Q,3,0,1
+Lesotho,Democratic Republic of the Congo,06/03/01,CAF-Q,0,0,1
 Zimbabwe,Ghana,06/03/01,CAF-Q,1,2,1
-Democratic Republic of Congo,Zimbabwe,06/17/01,CAF-Q,2,1,1
+Democratic Republic of the Congo,Zimbabwe,06/17/01,CAF-Q,2,1,1
 Ghana,Lesotho,06/17/01,CAF-Q,3,1,1
 Egypt,Ivory Coast,09/02/00,CAF-Q,1,0,1
 Libya,Sudan,09/10/00,CAF-Q,1,0,1
@@ -6393,18 +6393,18 @@ Benin,Sudan,06/08/03,CAF-Q,3,0,1
 Zambia,Sudan,06/21/03,CAF-Q,1,1,1
 Tanzania,Benin,06/22/03,CAF-Q,0,1,1
 Benin,Zambia,07/06/03,CAF-Q,3,0,1
-Republic of Congo,Burkina Faso,09/08/02,CAF-Q,0,0,1
+Republic of the Congo,Burkina Faso,09/08/02,CAF-Q,0,0,1
 Central African Republic,Mozambique,09/09/02,CAF-Q,1,1,1
 Burkina Faso,Central African Republic,10/13/02,CAF-Q,2,1,1
-Mozambique,Republic of Congo,10/13/02,CAF-Q,0,3,1
+Mozambique,Republic of the Congo,10/13/02,CAF-Q,0,3,1
 Mozambique,Burkina Faso,03/30/03,CAF-Q,1,0,1
-Republic of Congo,Central African Republic,05/04/03,CAF-Q,2,1,1
+Republic of the Congo,Central African Republic,05/04/03,CAF-Q,2,1,1
 Burkina Faso,Mozambique,06/07/03,CAF-Q,4,0,1
-Central African Republic,Republic of Congo,06/08/03,CAF-Q,0,0,1
-Burkina Faso,Republic of Congo,06/21/03,CAF-Q,3,0,1
+Central African Republic,Republic of the Congo,06/08/03,CAF-Q,0,0,1
+Burkina Faso,Republic of the Congo,06/21/03,CAF-Q,3,0,1
 Mozambique,Central African Republic,06/22/03,CAF-Q,1,0,1
 Central African Republic,Burkina Faso,07/06/03,CAF-Q,0,3,1
-Republic of Congo,Mozambique,07/06/03,CAF-Q,0,0,1
+Republic of the Congo,Mozambique,07/06/03,CAF-Q,0,0,1
 Mauritania,Cape Verde,09/06/02,CAF-Q,0,2,1
 Kenya,Togo,09/07/02,CAF-Q,3,0,1
 Cape Verde,Kenya,10/12/02,CAF-Q,0,1,1
@@ -6448,17 +6448,17 @@ Senegal,The Gambia,06/07/03,CAF-Q,3,1,1
 Senegal,Lesotho,06/14/03,CAF-Q,3,0,1
 Lesotho,The Gambia,07/06/03,CAF-Q,1,0,1
 Botswana,Swaziland,09/07/02,CAF-Q,0,0,1
-Libya,Democratic Republic of Congo,09/08/02,CAF-Q,3,2,1
-Democratic Republic of Congo,Botswana,10/13/02,CAF-Q,2,0,1
+Libya,Democratic Republic of the Congo,09/08/02,CAF-Q,3,2,1
+Democratic Republic of the Congo,Botswana,10/13/02,CAF-Q,2,0,1
 Swaziland,Libya,10/13/02,CAF-Q,2,1,1
 Libya,Botswana,03/30/03,CAF-Q,0,0,1
-Swaziland,Democratic Republic of Congo,03/30/03,CAF-Q,1,1,1
+Swaziland,Democratic Republic of the Congo,03/30/03,CAF-Q,1,1,1
 Botswana,Libya,06/07/03,CAF-Q,0,1,1
-Democratic Republic of Congo,Swaziland,06/08/03,CAF-Q,2,0,1
-Democratic Republic of Congo,Libya,06/22/03,CAF-Q,2,1,1
+Democratic Republic of the Congo,Swaziland,06/08/03,CAF-Q,2,0,1
+Democratic Republic of the Congo,Libya,06/22/03,CAF-Q,2,1,1
 Swaziland,Botswana,06/22/03,CAF-Q,3,2,1
 Libya,Swaziland,07/05/03,CAF-Q,6,2,1
-Botswana,Democratic Republic of Congo,07/05/03,CAF-Q,0,0,1
+Botswana,Democratic Republic of the Congo,07/05/03,CAF-Q,0,0,1
 Madagascar,Egypt,09/07/02,CAF-Q,1,0,1
 Mauritius,Madagascar,10/12/02,CAF-Q,0,1,1
 Mauritius,Egypt,03/29/03,CAF-Q,0,1,1
@@ -6586,28 +6586,28 @@ Mali,Sierra Leone,06/17/07,CAF-Q,6,0,1
 Sierra Leone,Benin,10/12/07,CAF-Q,0,2,1
 Togo,Mali,10/12/07,CAF-Q,0,2,1
 Ethiopia,Libya,09/03/06,CAF-Q,1,0,1
-Democratic Republic of Congo,Namibia,09/03/06,CAF-Q,3,2,1
+Democratic Republic of the Congo,Namibia,09/03/06,CAF-Q,3,2,1
 Namibia,Ethiopia,10/07/06,CAF-Q,1,0,1
-Libya,Democratic Republic of Congo,10/08/06,CAF-Q,1,1,1
+Libya,Democratic Republic of the Congo,10/08/06,CAF-Q,1,1,1
 Libya,Namibia,03/25/07,CAF-Q,2,1,1
-Democratic Republic of Congo,Ethiopia,04/29/07,CAF-Q,2,0,1
-Ethiopia,Democratic Republic of Congo,06/01/07,CAF-Q,1,0,1
+Democratic Republic of the Congo,Ethiopia,04/29/07,CAF-Q,2,0,1
+Ethiopia,Democratic Republic of the Congo,06/01/07,CAF-Q,1,0,1
 Namibia,Libya,06/02/07,CAF-Q,1,0,1
-Namibia,Democratic Republic of Congo,06/16/07,CAF-Q,1,1,1
+Namibia,Democratic Republic of the Congo,06/16/07,CAF-Q,1,1,1
 Libya,Ethiopia,06/17/07,CAF-Q,3,1,1
-Democratic Republic of Congo,Libya,09/08/07,CAF-Q,1,1,1
+Democratic Republic of the Congo,Libya,09/08/07,CAF-Q,1,1,1
 Ethiopia,Namibia,09/08/07,CAF-Q,2,3,1
-South Africa,Republic of Congo,09/02/06,CAF-Q,0,0,1
+South Africa,Republic of the Congo,09/02/06,CAF-Q,0,0,1
 Chad,Zambia,09/03/06,CAF-Q,0,2,1
-Republic of Congo,Chad,10/08/06,CAF-Q,3,1,1
+Republic of the Congo,Chad,10/08/06,CAF-Q,3,1,1
 Zambia,South Africa,10/08/06,CAF-Q,0,1,1
 Chad,South Africa,03/24/07,CAF-Q,0,3,1
-Republic of Congo,Zambia,03/25/07,CAF-Q,0,0,1
+Republic of the Congo,Zambia,03/25/07,CAF-Q,0,0,1
 South Africa,Chad,06/02/07,CAF-Q,4,0,1
-Zambia,Republic of Congo,06/02/07,CAF-Q,3,0,1
+Zambia,Republic of the Congo,06/02/07,CAF-Q,3,0,1
 Zambia,Chad,06/16/07,CAF-Q,1,1,1
-Republic of Congo,South Africa,06/17/07,CAF-Q,1,1,1
-Chad,Republic of Congo,09/09/07,CAF-Q,1,1,1
+Republic of the Congo,South Africa,06/17/07,CAF-Q,1,1,1
+Chad,Republic of the Congo,09/09/07,CAF-Q,1,1,1
 South Africa,Zambia,09/09/07,CAF-Q,1,3,1
 Morocco,Malawi,09/02/06,CAF-Q,2,0,1
 Malawi,Zimbabwe,10/07/06,CAF-Q,1,0,1
@@ -6664,16 +6664,16 @@ Central African Republic,Morocco,09/04/11,CAF-Q,0,0,1
 Morocco,Tanzania,10/09/11,CAF-Q,3,1,1
 Algeria,Central African Republic,10/09/11,CAF-Q,2,0,1
 Mauritius,Cameroon,09/04/10,CAF-Q,1,3,1
-Democratic Republic of Congo,Senegal,09/05/10,CAF-Q,2,4,1
-Cameroon,Democratic Republic of Congo,10/09/10,CAF-Q,1,1,1
+Democratic Republic of the Congo,Senegal,09/05/10,CAF-Q,2,4,1
+Cameroon,Democratic Republic of the Congo,10/09/10,CAF-Q,1,1,1
 Senegal,Mauritius,10/09/10,CAF-Q,7,0,1
 Senegal,Cameroon,03/26/11,CAF-Q,1,0,1
-Democratic Republic of Congo,Mauritius,03/27/11,CAF-Q,3,0,1
+Democratic Republic of the Congo,Mauritius,03/27/11,CAF-Q,3,0,1
 Cameroon,Senegal,06/04/11,CAF-Q,0,0,1
-Mauritius,Democratic Republic of Congo,06/05/11,CAF-Q,1,2,1
+Mauritius,Democratic Republic of the Congo,06/05/11,CAF-Q,1,2,1
 Cameroon,Mauritius,09/03/11,CAF-Q,5,0,1
-Senegal,Democratic Republic of Congo,09/03/11,CAF-Q,2,0,1
-Democratic Republic of Congo,Cameroon,10/07/11,CAF-Q,2,3,1
+Senegal,Democratic Republic of the Congo,09/03/11,CAF-Q,2,0,1
+Democratic Republic of the Congo,Cameroon,10/07/11,CAF-Q,2,3,1
 Mauritius,Senegal,10/09/11,CAF-Q,0,2,1
 The Gambia,Namibia,09/04/10,CAF-Q,3,1,1
 Burkina Faso,The Gambia,10/09/10,CAF-Q,3,1,1
@@ -6705,17 +6705,17 @@ Rwanda,Ivory Coast,09/03/11,CAF-Q,0,5,1
 Burundi,Benin,09/04/11,CAF-Q,1,1,1
 Benin,Rwanda,10/09/11,CAF-Q,0,1,1
 Ivory Coast,Burundi,10/09/11,CAF-Q,2,1,1
-Sudan,Republic of Congo,09/04/10,CAF-Q,2,0,1
+Sudan,Republic of the Congo,09/04/10,CAF-Q,2,0,1
 Swaziland,Ghana,09/05/10,CAF-Q,0,3,1
-Republic of Congo,Swaziland,10/10/10,CAF-Q,3,1,1
+Republic of the Congo,Swaziland,10/10/10,CAF-Q,3,1,1
 Ghana,Sudan,10/10/10,CAF-Q,0,0,1
-Republic of Congo,Ghana,03/27/11,CAF-Q,0,3,1
+Republic of the Congo,Ghana,03/27/11,CAF-Q,0,3,1
 Sudan,Swaziland,03/27/11,CAF-Q,3,0,1
-Ghana,Republic of Congo,06/03/11,CAF-Q,3,1,1
+Ghana,Republic of the Congo,06/03/11,CAF-Q,3,1,1
 Swaziland,Sudan,06/05/11,CAF-Q,1,2,1
 Ghana,Swaziland,09/02/11,CAF-Q,2,0,1
-Republic of Congo,Sudan,09/04/11,CAF-Q,0,1,1
-Swaziland,Republic of Congo,10/08/11,CAF-Q,0,1,1
+Republic of the Congo,Sudan,09/04/11,CAF-Q,0,1,1
+Swaziland,Republic of the Congo,10/08/11,CAF-Q,0,1,1
 Sudan,Ghana,10/08/11,CAF-Q,0,2,1
 Uganda,Angola,09/04/10,CAF-Q,3,0,1
 Kenya,Uganda,10/09/10,CAF-Q,0,0,1
@@ -6747,8 +6747,8 @@ Ethiopia,Benin,02/29/12,CAF-Q,0,0,1
 Benin,Ethiopia,06/17/12,CAF-Q,1,1,1
 Rwanda,Nigeria,02/29/12,CAF-Q,0,0,1
 Nigeria,Rwanda,06/16/12,CAF-Q,2,0,1
-Republic of Congo,Uganda,02/29/12,CAF-Q,3,1,1
-Uganda,Republic of Congo,06/16/12,CAF-Q,4,0,1
+Republic of the Congo,Uganda,02/29/12,CAF-Q,3,1,1
+Uganda,Republic of the Congo,06/16/12,CAF-Q,4,0,1
 Burundi,Zimbabwe,02/29/12,CAF-Q,2,1,1
 Zimbabwe,Burundi,06/17/12,CAF-Q,1,0,1
 The Gambia,Algeria,02/29/12,CAF-Q,1,2,1
@@ -6757,8 +6757,8 @@ Kenya,Togo,02/29/12,CAF-Q,2,1,1
 Togo,Kenya,06/17/12,CAF-Q,1,0,1
 Chad,Malawi,02/29/12,CAF-Q,3,2,1
 Malawi,Chad,06/16/12,CAF-Q,2,0,1
-Seychelles,Democratic Republic of Congo,02/29/12,CAF-Q,0,4,1
-Democratic Republic of Congo,Seychelles,06/17/12,CAF-Q,3,0,1
+Seychelles,Democratic Republic of the Congo,02/29/12,CAF-Q,0,4,1
+Democratic Republic of the Congo,Seychelles,06/17/12,CAF-Q,3,0,1
 Tanzania,Mozambique,02/29/12,CAF-Q,1,1,1
 Mozambique,Tanzania,06/17/12,CAF-Q,1,1,1
 Egypt,Central African Republic,06/15/12,CAF-Q,2,3,1
@@ -6790,8 +6790,8 @@ Ethiopia,Sudan,10/14/12,CAF-Q,2,0,1
 Libya,Algeria,09/09/12,CAF-Q,0,1,1
 Algeria,Libya,10/14/12,CAF-Q,2,0,1
 Ivory Coast,Senegal,09/08/12,CAF-Q,4,2,1
-Democratic Republic of Congo,Equatorial Guinea,09/09/12,CAF-Q,4,0,1
-Equatorial Guinea,Democratic Republic of Congo,10/14/12,CAF-Q,2,1,1
+Democratic Republic of the Congo,Equatorial Guinea,09/09/12,CAF-Q,4,0,1
+Equatorial Guinea,Democratic Republic of the Congo,10/14/12,CAF-Q,2,1,1
 Gabon,Togo,09/08/12,CAF-Q,1,1,1
 Togo,Gabon,10/14/12,CAF-Q,2,1,1
 Central African Republic,Burkina Faso,09/08/12,CAF-Q,1,0,1
@@ -6806,8 +6806,8 @@ Madagascar,Uganda,05/18/14,CAF-Q,2,1,1
 Uganda,Madagascar,05/31/14,CAF-Q,1,0,1
 Mauritania,Equatorial Guinea,05/17/14,CAF-Q,1,0,1
 Equatorial Guinea,Mauritania,06/01/14,CAF-Q,3,0,1
-Namibia,Republic of Congo,05/17/14,CAF-Q,1,0,1
-Republic of Congo,Namibia,06/01/14,CAF-Q,3,0,1
+Namibia,Republic of the Congo,05/17/14,CAF-Q,1,0,1
+Republic of the Congo,Namibia,06/01/14,CAF-Q,3,0,1
 Libya,Rwanda,05/18/14,CAF-Q,0,0,1
 Rwanda,Libya,05/31/14,CAF-Q,3,0,1
 Burundi,Botswana,05/18/14,CAF-Q,0,0,1
@@ -6824,8 +6824,8 @@ Lesotho,Kenya,07/20/14,CAF-Q,1,0,1
 Kenya,Lesotho,08/03/14,CAF-Q,0,0,1
 Uganda,Mauritania,07/19/14,CAF-Q,2,0,1
 Mauritania,Uganda,08/03/14,CAF-Q,0,1,1
-Republic of Congo,Rwanda,07/20/14,CAF-Q,2,0,1
-Rwanda,Republic of Congo,08/02/14,CAF-Q,2,0,1
+Republic of the Congo,Rwanda,07/20/14,CAF-Q,2,0,1
+Rwanda,Republic of the Congo,08/02/14,CAF-Q,2,0,1
 Sierra Leone,Seychelles,07/19/14,CAF-Q,2,0,1
 Benin,Malawi,07/20/14,CAF-Q,1,0,1
 Malawi,Benin,08/02/14,CAF-Q,1,0,1
@@ -6850,11 +6850,11 @@ Zambia,Burkina Faso,01/29/00,CAF-G,1,1,0
 Egypt,Burkina Faso,02/02/00,CAF-G,4,2,0
 Zambia,Senegal,02/02/00,CAF-G,2,2,0
 Nigeria,Tunisia,01/23/00,CAF-G,4,2,1
-Morocco,Republic of Congo,01/25/00,CAF-G,1,0,0
-Nigeria,Republic of Congo,01/28/00,CAF-G,0,0,1
+Morocco,Republic of the Congo,01/25/00,CAF-G,1,0,0
+Nigeria,Republic of the Congo,01/28/00,CAF-G,0,0,1
 Tunisia,Morocco,01/29/00,CAF-G,0,0,0
 Nigeria,Morocco,02/03/00,CAF-G,2,0,1
-Tunisia,Republic of Congo,02/03/00,CAF-G,1,0,0
+Tunisia,Republic of the Congo,02/03/00,CAF-G,1,0,0
 Cameroon,Algeria,02/06/00,CAF-K,2,1,0
 Ghana,South Africa,02/06/00,CAF-K,0,1,1
 Egypt,Tunisia,02/07/00,CAF-K,0,1,0
@@ -7084,12 +7084,12 @@ Mali,Nigeria,02/06/13,CAF-K,1,4,0
 Burkina Faso,Ghana,02/06/13,CAF-K,1,1,0
 Mali,Ghana,02/09/13,CAF-K,3,1,0
 Nigeria,Burkina Faso,02/10/13,CAF-K,1,0,0
-Equatorial Guinea,Republic of Congo,01/17/15,CAF-G,1,1,1
+Equatorial Guinea,Republic of the Congo,01/17/15,CAF-G,1,1,1
 Burkina Faso,Gabon,01/17/15,CAF-G,0,2,0
 Equatorial Guinea,Burkina Faso,01/21/15,CAF-G,0,0,1
-Gabon,Republic of Congo,01/21/15,CAF-G,0,1,0
+Gabon,Republic of the Congo,01/21/15,CAF-G,0,1,0
 Equatorial Guinea,Gabon,01/25/15,CAF-G,2,0,1
-Republic of Congo,Burkina Faso,01/25/15,CAF-G,2,1,0
+Republic of the Congo,Burkina Faso,01/25/15,CAF-G,2,1,0
 Zambia,Democratic Republic of the Congo,01/18/15,CAF-G,1,1,0
 Tunisia,Cape Verde,01/18/15,CAF-G,1,1,0
 Zambia,Tunisia,01/22/15,CAF-G,1,2,0
@@ -7108,7 +7108,7 @@ Ivory Coast,Mali,01/24/15,CAF-G,1,1,0
 Cameroon,Guinea,01/24/15,CAF-G,1,1,0
 Cameroon,Ivory Coast,01/28/15,CAF-G,0,1,0
 Guinea,Mali,01/28/15,CAF-G,1,1,0
-Republic of Congo,Democratic Republic of the Congo,01/31/15,CAF-K,2,4,0
+Republic of the Congo,Democratic Republic of the Congo,01/31/15,CAF-K,2,4,0
 Equatorial Guinea,Tunisia,01/31/15,CAF-K,2,1,1
 Ghana,Guinea,02/01/15,CAF-K,3,0,0
 Ivory Coast,Algeria,02/01/15,CAF-K,3,1,0
