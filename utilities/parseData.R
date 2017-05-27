@@ -33,10 +33,10 @@ parseData <- function(filename) {
       data[j, "HomeTeam"] <- teams[1]
       data[j, "AwayTeam"] <- teams[2]
       data[j, "Date"] <- date
-      data[j, "Contest"] <- "CON-G"
+      data[j, "Contest"] <- "EUC-Q"
       data[j, "HomeGoals"] <- goals[1]
       data[j, "AwayGoals"] <- goals[2]
-      data[j, "HomeAdvantage"] <- 0
+      data[j, "HomeAdvantage"] <- 1
       j <- j + 1
     }
 
@@ -73,7 +73,7 @@ getDateFormatted <- function(line) {
 }
 
 getGoals <- function(line) {
-  pattern <- "[A-Za-z ]+  ([0-9]+)-([0-9]+)  [A-Za-z ]+"
+  pattern <- "[A-Za-z. ]+[a-z]  ([0-9]+)-([0-9]+)  [A-Za-z. ]+[a-z]"
   matches <- str_match(line, pattern)
 
   if (!is.na(matches)) {
@@ -85,7 +85,7 @@ getGoals <- function(line) {
 }
 
 getTeams <- function(line, h) {
-  pattern <- "([A-Za-z ]+)  [0-9]+-[0-9]+  ([A-Za-z ]+)"
+  pattern <- "([A-Za-z. ]+[a-z])  [0-9]+-[0-9]+  ([A-Za-z. ]+[a-z])"
   matches <- str_match(line, pattern)
 
   if (!is.na(matches)) {
@@ -101,6 +101,7 @@ constructTeamHash <- function() {
   h["Afr. Rep."] <- "Central African Republic"
   h["Antigua/Barbuda"] <- "Antigua and Barbuda"
   h["Br. Virgin Islands"] <- "British Virgin Islands"
+  h["Bosnia and Herzegovina"] <- "Bosnia-Herzegovina"
   h["Bosnia-H."] <- "Bosnia-Herzegovina"
   h["Bosnia-Hercegovina"] <- "Bosnia-Herzegovina"
   h["Central Afr. Rep."] <- "Central African Republic"
@@ -109,6 +110,7 @@ constructTeamHash <- function() {
   h["Czech Rep."] <- "Czech Republic"
   h["Dutch Antilles"] <- "Netherlands Antilles"
   h["Faroe Isl."] <- "Faroe Islands"
+  h["FR Yugoslavia"] <- "Yugoslavia"
   h["Gambia"] <- "The Gambia"
   h["Guinea Bissau"] <- "Guinea-Bissau"
   h["Ireland"] <- "Republic of Ireland"
@@ -128,6 +130,7 @@ constructTeamHash <- function() {
   h["Turks and Caicos Island"] <- "Turks and Caicos Islands"
   h["UAE"] <- "United Arab Emirates"
   h["US Virgin Islands"] <- "United States Virgin Islands"
+  h["U.S. Virgin Islands"] <- "United States Virgin Islands"
   h["USA"] <- "United States"
   h["Virgin Islands"] <- "British Virgin Islands"
   h
