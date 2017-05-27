@@ -1,25 +1,33 @@
-"HomeTeam","AwayTeam","Date","Contest","HomeGoals","AwayGoals","HomeAdvantage"
-"Canada","Cuba","10/06/99","CON-G",0,0,0
-"El Salvador","Haiti","10/06/99","CON-G",1,1,0
-"Cuba","Haiti","10/08/99","CON-G",0,1,0
-"Canada","El Salvador","10/08/99","CON-G",2,1,0
-"Canada","Haiti","10/10/99","CON-G",2,1,0
-"Cuba","El Salvador","10/10/99","CON-G",3,1,0
-"Colombia","Jamaica","02/12/00","CON-G",1,0,0
-"Jamaica","Honduras","02/14/00","CON-G",0,2,0
-"Honduras","Colombia","02/16/00","CON-G",2,0,0
-"United States","Haiti","02/12/00","CON-G",3,0,0
-"Haiti","Peru","02/14/00","CON-G",1,1,0
-"Peru","United States","02/16/00","CON-G",0,1,0
-"Mexico","Trinidad and Tobago","02/13/00","CON-G",4,0,0
-"Trinidad and Tobago","Guatemala","02/15/00","CON-G",4,2,0
-"Costa Rica","Canada","02/13/00","CON-G",2,2,0
-"Canada","South Korea","02/15/00","CON-G",0,0,0
-"South Korea","Costa Rica","02/17/00","CON-G",2,2,0
-"United States","Colombia","02/19/00","CON-G",2,2,0
-"Honduras","Peru","02/19/00","CON-G",3,5,0
-"Costa Rica","Trinidad and Tobago","02/20/00","CON-G",1,2,0
-"Mexico","Canada","02/20/00","CON-G",1,2,0
-"Colombia","Peru","02/23/00","CON-G",2,1,0
-"Trinidad and Tobago","Canada","02/24/00","CON-G",0,1,0
-"Canada","Colombia","02/27/00","CON-G",2,0,0
+HomeTeam,AwayTeam,Date,Contest,HomeGoals,AwayGoals,HomeAdvantage
+Equatorial Guinea,Congo,01/17/15,CAF-G,1,1,1
+Burkina Faso,Gabon,01/17/15,CAF-G,0,2,0
+Equatorial Guinea,Burkina Faso,01/21/15,CAF-G,0,0,1
+Gabon,Congo,01/21/15,CAF-G,0,1,0
+Equatorial Guinea,Gabon,01/25/15,CAF-G,2,0,1
+Congo,Burkina Faso,01/25/15,CAF-G,2,1,0
+Zambia,Democratic Republic of the Congo,01/18/15,CAF-G,1,1,0
+Tunisia,Cape Verde,01/18/15,CAF-G,1,1,0
+Zambia,Tunisia,01/22/15,CAF-G,1,2,0
+Cape Verde,Democratic Republic of the Congo,01/22/15,CAF-G,0,0,0
+Cape Verde,Zambia,01/26/15,CAF-G,0,0,0
+Democratic Republic of the Congo,Tunisia,01/26/15,CAF-G,1,1,0
+Ghana,Senegal,01/19/15,CAF-G,1,2,0
+Algeria,South Africa,01/19/15,CAF-G,3,1,0
+Ghana,Algeria,01/23/15,CAF-G,1,0,0
+South Africa,Senegal,01/23/15,CAF-G,1,1,0
+South Africa,Ghana,01/27/15,CAF-G,1,2,0
+Senegal,Algeria,01/27/15,CAF-G,0,2,0
+Ivory Coast,Guinea,01/20/15,CAF-G,1,1,0
+Mali,Cameroon,01/20/15,CAF-G,1,1,0
+Ivory Coast,Mali,01/24/15,CAF-G,1,1,0
+Cameroon,Guinea,01/24/15,CAF-G,1,1,0
+Cameroon,Ivory Coast,01/28/15,CAF-G,0,1,0
+Guinea,Mali,01/28/15,CAF-G,1,1,0
+Congo,Democratic Republic of the Congo,01/31/15,CAF-K,2,4,0
+Equatorial Guinea,Tunisia,01/31/15,CAF-K,2,1,1
+Ghana,Guinea,02/01/15,CAF-K,3,0,0
+Ivory Coast,Algeria,02/01/15,CAF-K,3,1,0
+Democratic Republic of the Congo,Ivory Coast,02/04/15,CAF-K,1,3,0
+Equatorial Guinea,Ghana,02/05/15,CAF-K,0,3,1
+Equatorial Guinea,Democratic Republic of the Congo,02/07/15,CAF-K,0,0,1
+Ivory Coast,Ghana,02/08/15,CAF-K,0,0,0

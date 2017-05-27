@@ -33,7 +33,7 @@ parseData <- function(filename) {
       data[j, "HomeTeam"] <- teams[1]
       data[j, "AwayTeam"] <- teams[2]
       data[j, "Date"] <- date
-      data[j, "Contest"] <- "CON-G"
+      data[j, "Contest"] <- "CAF-G"
       data[j, "HomeGoals"] <- goals[1]
       data[j, "AwayGoals"] <- goals[2]
       data[j, "HomeAdvantage"] <- 0
@@ -65,15 +65,15 @@ getContest <- function(line) {
 }
 
 getDateFormatted <- function(line) {
-  pattern <- "[A-Za-z]+ [0-9]+, [0-9]+"
+  pattern <- "[0-9]+ [A-Za-z]+ [0-9]+"
   match <- str_match(line, pattern)
-  date <- as.Date(match, "%B %d, %Y")
+  date <- as.Date(match, "%d %B %Y")
   dateFormatted <- format(date, "%m/%d/%y")
   dateFormatted
 }
 
 getGoals <- function(line) {
-  pattern <- "[A-Za-z. ]+[a-z]  ([0-9]+)-([0-9]+)  [A-Za-z. ]+[a-z]"
+  pattern <- "^[A-Za-z. ]+[a-z]  ([0-9]+)-([0-9]+)  [A-Za-z. ]+[a-z]$"
   matches <- str_match(line, pattern)
 
   if (!is.na(matches)) {
@@ -85,7 +85,7 @@ getGoals <- function(line) {
 }
 
 getTeams <- function(line, h) {
-  pattern <- "([A-Za-z. ]+[a-z])  [0-9]+-[0-9]+  ([A-Za-z. ]+[a-z])"
+  pattern <- "^([A-Za-z. ]+[a-z])  [0-9]+-[0-9]+  ([A-Za-z. ]+[a-z])$"
   matches <- str_match(line, pattern)
 
   if (!is.na(matches)) {
@@ -108,6 +108,7 @@ constructTeamHash <- function() {
   h["Congo-Brazzaville"] <- "Republic of the Congo"
   h["Congo-Kinshasa"] <- "Democratic Republic of the Congo"
   h["Czech Rep."] <- "Czech Republic"
+  h["DR Congo"] <- "Democratic Republic of the Congo"
   h["Dutch Antilles"] <- "Netherlands Antilles"
   h["Faroe Isl."] <- "Faroe Islands"
   h["FR Yugoslavia"] <- "Yugoslavia"
