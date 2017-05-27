@@ -8,8 +8,8 @@ newRatingsOptions <- function(fTree) {
     c=0.4,
 
     # Lin layer
-    kQ=0.1,
-    kT=0.15,
+    kQ=0.12,
+    kT=0.16,
 
     # Poisson layer
     meanGoals=1,
