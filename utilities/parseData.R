@@ -33,10 +33,10 @@ parseData <- function(filename) {
       data[j, "HomeTeam"] <- teams[1]
       data[j, "AwayTeam"] <- teams[2]
       data[j, "Date"] <- date
-      data[j, "Contest"] <- "COP-G"
+      data[j, "Contest"] <- "CON-G"
       data[j, "HomeGoals"] <- goals[1]
       data[j, "AwayGoals"] <- goals[2]
-      data[j, "HomeAdvantage"] <- 1
+      data[j, "HomeAdvantage"] <- 0
       j <- j + 1
     }
 
@@ -65,9 +65,9 @@ getContest <- function(line) {
 }
 
 getDateFormatted <- function(line) {
-  pattern <- "[0-9]+ [A-Za-z]+ [0-9]+"
+  pattern <- "[A-Za-z]+ [0-9]+, [0-9]+"
   match <- str_match(line, pattern)
-  date <- as.Date(match, "%d %B %Y")
+  date <- as.Date(match, "%B %d, %Y")
   dateFormatted <- format(date, "%m/%d/%y")
   dateFormatted
 }

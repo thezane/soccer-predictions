@@ -1,17 +1,25 @@
-HomeTeam,AwayTeam,Date,Contest,HomeGoals,AwayGoals,HomeAdvantage
-Bolivia,Egypt,07/25/99,COC-G,2,2,0
-Mexico,Saudi Arabia,07/25/99,COC-G,5,1,1
-Saudi Arabia,Bolivia,07/27/99,COC-G,0,0,0
-Mexico,Egypt,07/27/99,COC-G,2,2,1
-Egypt,Saudi Arabia,07/29/99,COC-G,1,5,0
-Mexico,Bolivia,07/29/99,COC-G,1,0,1
-Brazil,Germany,07/24/99,COC-G,4,0,0
-New Zealand,United States,07/24/99,COC-G,1,2,0
-Germany,New Zealand,07/28/99,COC-G,2,0,0
-Brazil,United States,07/28/99,COC-G,1,0,0
-United States,Germany,07/30/99,COC-G,2,0,0
-New Zealand,Brazil,07/30/99,COC-G,0,2,0
-Mexico,United States,08/01/99,COC-K,1,0,1
-Brazil,Saudi Arabia,08/01/99,COC-K,8,2,0
-United States,Saudi Arabia,08/03/99,COC-K,2,0,0
-Mexico,Brazil,08/04/99,COC-K,4,3,1
+"HomeTeam","AwayTeam","Date","Contest","HomeGoals","AwayGoals","HomeAdvantage"
+"Canada","Cuba","10/06/99","CON-G",0,0,0
+"El Salvador","Haiti","10/06/99","CON-G",1,1,0
+"Cuba","Haiti","10/08/99","CON-G",0,1,0
+"Canada","El Salvador","10/08/99","CON-G",2,1,0
+"Canada","Haiti","10/10/99","CON-G",2,1,0
+"Cuba","El Salvador","10/10/99","CON-G",3,1,0
+"Colombia","Jamaica","02/12/00","CON-G",1,0,0
+"Jamaica","Honduras","02/14/00","CON-G",0,2,0
+"Honduras","Colombia","02/16/00","CON-G",2,0,0
+"United States","Haiti","02/12/00","CON-G",3,0,0
+"Haiti","Peru","02/14/00","CON-G",1,1,0
+"Peru","United States","02/16/00","CON-G",0,1,0
+"Mexico","Trinidad and Tobago","02/13/00","CON-G",4,0,0
+"Trinidad and Tobago","Guatemala","02/15/00","CON-G",4,2,0
+"Costa Rica","Canada","02/13/00","CON-G",2,2,0
+"Canada","South Korea","02/15/00","CON-G",0,0,0
+"South Korea","Costa Rica","02/17/00","CON-G",2,2,0
+"United States","Colombia","02/19/00","CON-G",2,2,0
+"Honduras","Peru","02/19/00","CON-G",3,5,0
+"Costa Rica","Trinidad and Tobago","02/20/00","CON-G",1,2,0
+"Mexico","Canada","02/20/00","CON-G",1,2,0
+"Colombia","Peru","02/23/00","CON-G",2,1,0
+"Trinidad and Tobago","Canada","02/24/00","CON-G",0,1,0
+"Canada","Colombia","02/27/00","CON-G",2,0,0

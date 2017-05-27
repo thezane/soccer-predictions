@@ -6095,3 +6095,58 @@ Mexico,United States,08/01/99,COC-K,1,0,1
 Brazil,Saudi Arabia,08/01/99,COC-K,8,2,0
 United States,Saudi Arabia,08/03/99,COC-K,2,0,0
 Mexico,Brazil,08/04/99,COC-K,4,3,1
+Paraguay,Bolivia,06/29/99,COP-G,0,0,1
+Peru,Japan,06/29/99,COP-G,3,2,0
+Paraguay,Japan,07/02/99,COP-G,4,0,1
+Peru,Bolivia,07/02/99,COP-G,1,0,0
+Bolivia,Japan,07/05/99,COP-G,1,1,0
+Paraguay,Peru,07/05/99,COP-G,1,0,1
+Brazil,Venezuela,06/30/99,COP-G,7,0,0
+Chile,Mexico,06/30/99,COP-G,0,1,0
+Brazil,Mexico,07/03/99,COP-G,2,1,0
+Chile,Venezuela,07/03/99,COP-G,3,0,0
+Brazil,Chile,07/06/99,COP-G,1,0,0
+Mexico,Venezuela,07/06/99,COP-G,3,1,0
+Argentina,Ecuador,07/01/99,COP-G,3,1,0
+Uruguay,Colombia,07/01/99,COP-G,0,1,0
+Argentina,Colombia,07/04/99,COP-G,0,3,0
+Uruguay,Ecuador,07/04/99,COP-G,2,1,0
+Uruguay,Argentina,07/07/99,COP-G,0,2,0
+Colombia,Ecuador,07/07/99,COP-G,2,1,0
+Mexico,Peru,07/10/99,COP-K,3,3,0
+Paraguay,Uruguay,07/10/99,COP-K,1,1,1
+Chile,Colombia,07/11/99,COP-K,3,2,0
+Brazil,Argentina,07/11/99,COP-K,2,1,0
+Uruguay,Chile,07/13/99,COP-K,1,1,0
+Brazil,Mexico,07/14/99,COP-K,2,0,0
+Chile,Mexico,07/17/99,COP-K,1,2,0
+Brazil,Uruguay,07/18/99,COP-K,3,0,0
+Canada,Cuba,10/06/99,CON-Q,0,0,0
+El Salvador,Haiti,10/06/99,CON-Q,1,1,0
+Cuba,Haiti,10/08/99,CON-Q,0,1,0
+Canada,El Salvador,10/08/99,CON-Q,2,1,0
+Canada,Haiti,10/10/99,CON-Q,2,1,0
+Cuba,El Salvador,10/10/99,CON-Q,3,1,0
+Colombia,Jamaica,02/12/00,CON-G,1,0,0
+Jamaica,Honduras,02/14/00,CON-G,0,2,0
+Honduras,Colombia,02/16/00,CON-G,2,0,0
+United States,Haiti,02/12/00,CON-G,3,0,1
+Haiti,Peru,02/14/00,CON-G,1,1,0
+United States,Peru,02/16/00,CON-G,1,0,1
+Mexico,Trinidad and Tobago,02/13/00,CON-G,4,0,0
+Trinidad and Tobago,Guatemala,02/15/00,CON-G,4,2,0
+Costa Rica,Canada,02/13/00,CON-G,2,2,0
+Canada,South Korea,02/15/00,CON-G,0,0,0
+South Korea,Costa Rica,02/17/00,CON-G,2,2,0
+United States,Colombia,02/19/00,CON-K,2,2,1
+Honduras,Peru,02/19/00,CON-K,3,5,0
+Costa Rica,Trinidad and Tobago,02/20/00,CON-K,1,2,0
+Mexico,Canada,02/20/00,CON-K,1,2,0
+Colombia,Peru,02/23/00,CON-K,2,1,0
+Trinidad and Tobago,Canada,02/24/00,CON-K,0,1,0
+Canada,Colombia,02/27/00,CON-K,2,0,0
+Panama,Cuba,07/29/01,CON-Q,0,0,1
+Cuba,Panama,08/05/01,CON-Q,1,0,1
+Martinique,Trinidad and Tobago,04/23/03,CON-Q,3,2,1
+Trinidad and Tobago,Honduras,04/25/03,CON-Q,0,2,0
+Martinique,Honduras,04/27/03,CON-Q,2,4,1
