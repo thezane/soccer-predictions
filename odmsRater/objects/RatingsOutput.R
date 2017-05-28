@@ -13,7 +13,7 @@ newRatingsOutput <- function(tTree, gTree, gi) {
 }
 
 updateOutcomeCost <- function(rOutput, resultExpected, resultActual) {
-  p <- resultExpected * resultActual
+  p <- resultExpected %*% resultActual
   rOutput$outcomeCosts <- c(rOutput$outcomeCosts, p)
   rOutput
 }
