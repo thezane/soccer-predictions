@@ -48,19 +48,17 @@ rateTeams <- function(x, rOptions, rOutput) {
   # Compute ratings with updated model
   rOutput <- computeRatings(rOptions, rOutput)
 
-  # Compute regularization
-  strMeanCost <- 0.1 * computeStrMeanCost(rOutput)
-
   # Compute cost
   outcomeCost <- computePredictionCost(rOutput, rOutput$outcomeCosts)
   goalsCost <- computePredictionCost(rOutput, rOutput$goalsCosts)
-  rOutput$y <- goalsCost + strMeanCost
+  strMeanCost <- 0.1 * computeStrMeanCost(rOutput)
+  rOutput$y <- outcomeCost + strMeanCost
   rData <- list(rOptions=rOptions, rOutput=rOutput)
 
   # Print cost
   print(noquote(sprintf("outcomeCost = %f", outcomeCost)))
   print(noquote(sprintf("goalscost = %f", goalsCost)))
-  print(noquote(sprintf("strMean = %f", strMeanCost)))
+  print(noquote(sprintf("strMeanCost = %f", strMeanCost)))
   rData
 }
 
