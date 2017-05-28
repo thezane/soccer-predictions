@@ -1,5 +1,5 @@
 computeLayerPois <- function (game, rOptions) {
-  maxGoals <- 20
+  maxGoals <- 40
   meanGoals <- game$meanGoals
   homeMeanGoals <- meanGoals[1]
   awayMeanGoals <- meanGoals[2]

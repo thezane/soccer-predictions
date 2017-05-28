@@ -17,15 +17,18 @@ updateCost <- function(rOptions, rOutput, game, gamePrev) {
 updateRatingsCost <- function(rOptions, rOutput, game) {
   gamePrediction <- computeLayerPois(game, rOptions)
   
-  # Update cost of expected and actual game outcome
+  # Update cost of outcome
+  resultExpected <- gamePrediction[["gamePs"]]
+  resultActual <- game$outcome
+  rOutput <- updateOutcomeCost(rOutput, resultExpected, resultActual)
+  game <- computeSSE(game, resultExpected, resultActual)
+  game$Ps <- gamePrediction[["gamePs"]]
+  
+  # Update cost of goals
   goals <- game$goals
   homeAwayGoals <- gamePrediction[["homeAwayGoals"]]
   p <- homeAwayGoals[goals[1] + 1, goals[2] + 1]
-  rOutput <- updateStrCost(rOutput, p)
-  resultExpected <- gamePrediction[["gamePs"]]
-  resultActual <- game$outcome
-  game <- computeSSE(game, resultExpected, resultActual)
-  game$Ps <- gamePrediction[["gamePs"]]
+  rOutput <- updateGoalsCost(rOutput, p)
   costData <- list(rOutput=rOutput, game=game)
   costData
 }

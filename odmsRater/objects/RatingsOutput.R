@@ -3,7 +3,8 @@ newRatingsOutput <- function(tTree, gTree, gi) {
     tTree=tTree,
     gTree=gTree,
     gi=gi,
-    strCosts=NULL,
+    outcomeCosts=NULL,
+    goalsCosts=NULL,
     strMeanCosts=NULL
   )
   
@@ -11,9 +12,15 @@ newRatingsOutput <- function(tTree, gTree, gi) {
   rOutput
 }
 
-# Update cost of prediction.
-updateStrCost <- function(rOutput, p) {
-  rOutput$strCosts <- c(rOutput$strCosts, p)
+updateOutcomeCost <- function(rOutput, resultExpected, resultActual) {
+  p <- resultExpected * resultActual
+  rOutput$outcomeCosts <- c(rOutput$outcomeCosts, p)
+  rOutput
+}
+
+# Update cost of prediction for goals.
+updateGoalsCost <- function(rOutput, p) {
+  rOutput$goalsCosts <- c(rOutput$goalsCosts, p)
   rOutput
 }
 
@@ -31,17 +38,15 @@ updateStrMeanCosts <- function(rOutput) {
 }
 
 # Compute cost of prediction.
-computeStrCost <- function(rOutput) {
-  strCosts <- rOutput$strCosts
-
-  if (is.null(strCosts)) {
-    strCost <- 0
+computePredictionCost <- function(rOutput, ps) {
+  if (is.null(ps)) {
+    cost <- 0
   }
   else {
-    strCost <- mean(-log(strCosts))
+    cost <- mean(-log(ps))
   }
 
-  strCost
+  cost
 }
 
 # Compute distance of mean team rating from default rating.

@@ -52,12 +52,14 @@ rateTeams <- function(x, rOptions, rOutput) {
   strMeanCost <- 0.1 * computeStrMeanCost(rOutput)
 
   # Compute cost
-  strCost <- computeStrCost(rOutput)
-  rOutput$y <- strCost + strMeanCost
+  outcomeCost <- computePredictionCost(rOutput, rOutput$outcomeCosts)
+  goalsCost <- computePredictionCost(rOutput, rOutput$goalsCosts)
+  rOutput$y <- goalsCost + strMeanCost
   rData <- list(rOptions=rOptions, rOutput=rOutput)
 
   # Print cost
-  print(noquote(sprintf("cost = %f", strCost)))
+  print(noquote(sprintf("outcomeCost = %f")), outcomeCost)
+  print(noquote(sprintf("goalscost = %f", goalsCost)))
   print(noquote(sprintf("strMean = %f", strMeanCost)))
   rData
 }
