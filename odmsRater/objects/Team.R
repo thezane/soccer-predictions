@@ -28,15 +28,6 @@ updateTeam <- function(team, game, i) {
   team
 }
 
-computeAlpha <- function(team, rOptions, game) {
-  if (game$isFriendly || game$isQualifier) {
-    alpha <- rOptions$kQ
-  }
-  else {
-    alpha <- rOptions$kT
-  }
-}
-
 getTeamStrs <- function(team, rOptions) {
   if (team$numUpdates == 0) {
 	strNorm=rOptions$fTree[[team$fName]]

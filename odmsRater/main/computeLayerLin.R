@@ -1,7 +1,6 @@
 computeLayerLin <- function(game, rOptions, homeTeam, awayTeam,
     strPostNorm) {
-  alphas <- c(computeAlpha(homeTeam, rOptions, game),
-      computeAlpha(awayTeam, rOptions, game))
+  alphas <- game$weight * rOptions$k * c(1, 1)
   strNextNorm <- alphas * strPostNorm + (1 - alphas) * game$strNorm
   strNextNorm
 }
