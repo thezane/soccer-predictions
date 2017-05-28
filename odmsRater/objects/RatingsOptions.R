@@ -23,7 +23,7 @@ newRatingsOptions <- function(fTree) {
     # Lower bounds for optimizable parameters
     bLBd=0.01,
     cLBd=0.01,
-    k=0,
+    kLBd=0,
     meanGoalsLBd=0.01,
     strBetaLBd=0.01,
     hALBd=0,
@@ -32,7 +32,7 @@ newRatingsOptions <- function(fTree) {
     # Upper bounds for optimizable parameters
     bUBd=Inf,
     cUBd=Inf,
-    k=1,
+    kUBd=1,
     meanGoalsUBd=Inf,
     strBetaUBd=Inf,
     hAUBd=Inf,
