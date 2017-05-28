@@ -58,7 +58,7 @@ rateTeams <- function(x, rOptions, rOutput) {
   rData <- list(rOptions=rOptions, rOutput=rOutput)
 
   # Print cost
-  print(noquote(sprintf("outcomeCost = %f")), outcomeCost)
+  print(noquote(sprintf("outcomeCost = %f", outcomeCost)))
   print(noquote(sprintf("goalscost = %f", goalsCost)))
   print(noquote(sprintf("strMean = %f", strMeanCost)))
   rData
