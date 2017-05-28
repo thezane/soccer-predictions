@@ -1,8 +1,8 @@
-verifyModel <- function(model, currentYear) {
+verifyModel <- function(model, currentContest, currentYear) {
   library(nnet)
   dataPath <- "../../accuracy/"
-  fileName <- paste(dataPath, "verified", model, currentYear, ".csv",
-      sep ="")
+  fileName <- paste(dataPath, "verified", model,
+      currentContest, currentYear, ".csv", sep ="")
   model <- read.csv(fileName, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
   verifiedPredictions <- do.call(rbind.data.frame,

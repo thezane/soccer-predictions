@@ -5,10 +5,10 @@ verifyOdms <- function (matchesSrc, currentYear, currentContest,
       stringsAsFactors=FALSE)
   matches <- getRelevantMatches(matches, currentContest, currentYear)
   dataPathOut <- "../../accuracy/"
-  matchDest <- paste(dataPathOut, "verifiedOdms", currentYear, ".csv",
-      sep="")
+  matchDest <- paste(dataPathOut, "verifiedOdms",
+      currentContest, currentYear, ".csv", sep="")
   write.csv(matches, matchDest, row.names=FALSE)
-  verifyModel("Odms", currentYear)
+  verifyModel("Odms", currentContest, currentYear)
 }
 
 verifyModelSetup <- function() {

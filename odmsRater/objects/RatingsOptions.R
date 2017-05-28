@@ -4,7 +4,7 @@ newRatingsOptions <- function(fTree) {
 
   rOptions <- list(
     # ODM layer
-    b=0.2,
+    b=0.3,
     c=0.4,
 
     # Lin layer
@@ -19,7 +19,7 @@ newRatingsOptions <- function(fTree) {
 
     # Default federation strengths for Africa, Asia, Europe,
     # North America, Oceania and South America respectively
-    strFsNorm=c(-0.2, -0.2, 0.2, -0.2, -0.6, 0.6),    
+    strFsNorm=c(0, 0, 0.2, 0, -0.6, 0.4),    
 
     # Lower bounds for optimizable parameters
     bLBd=0.01,
