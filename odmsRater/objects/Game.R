@@ -40,11 +40,17 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     isCoc=grepl("COC", contest),
     isWoc=grepl("WOC", contest),
     isWocG=(contest=="WOC-G"),
-    isWocK=(contest=="WOC-K")
+    isWocK=(contest=="WOC-K"),
+    weight=0.8
   )
   
   game$isRelevant <- game$isPlayOff ||
           (!game$isFriendly && !game$isQualifier)
+  
+  if (game$isWocG || game$isWocK) {
+    game$weight = 1
+  }
+  
   class(game) <- "Game"
   game
 }

@@ -3,8 +3,8 @@ newRatingsOutput <- function(tTree, gTree, gi) {
     tTree=tTree,
     gTree=gTree,
     gi=gi,
-    outcomeCosts=NULL,
     goalsCosts=NULL,
+    goalsWeights=NULL,
     strMeanCosts=NULL
   )
   
@@ -12,15 +12,10 @@ newRatingsOutput <- function(tTree, gTree, gi) {
   rOutput
 }
 
-updateOutcomeCost <- function(rOutput, resultExpected, resultActual) {
-  p <- resultExpected %*% resultActual
-  rOutput$outcomeCosts <- c(rOutput$outcomeCosts, p)
-  rOutput
-}
-
 # Update cost of prediction for goals.
-updateGoalsCost <- function(rOutput, p) {
+updateGoalsCost <- function(rOutput, p, w) {
   rOutput$goalsCosts <- c(rOutput$goalsCosts, p)
+  rOutput$goalsWeights <- c(rOutput$goalsWeights, w)
   rOutput
 }
 
@@ -37,13 +32,16 @@ updateStrMeanCosts <- function(rOutput) {
   rOutput
 }
 
-# Compute cost of prediction.
-computePredictionCost <- function(rOutput, ps) {
+# Compute cost of prediction for goals.
+computeGoalsCost <- function(rOutput) {
+  ps <- rOutput$goalsCosts
+  ws <- rOutput$goalsWeights
+
   if (is.null(ps)) {
     cost <- 0
   }
   else {
-    cost <- mean(-log(ps))
+    cost <- -log(ps) %*% ws / sum(ws)
   }
 
   cost
