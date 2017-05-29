@@ -41,11 +41,10 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     isWoc=grepl("WOC", contest),
     isWocG=(contest=="WOC-G"),
     isWocK=(contest=="WOC-K"),
+    isRelevant=FALSE,
     weight=0
   )
   
-  game$isRelevant <- game$isPlayOff ||
-          (!game$isFriendly && !game$isQualifier)
   class(game) <- "Game"
   game
 }
@@ -69,8 +68,20 @@ updateGamePreRate <- function(game, rOptions, homeTeam, awayTeam) {
   game$strNorm <- matrix(c(homeTeamStrs[["strNorm"]],
       awayTeamStrs[["strNorm"]]), 2, 2, TRUE)
   game$strAgg <- c(homeTeamStrs[["strAgg"]], awayTeamStrs[["strAgg"]])
+  game$isRelevant <- computeRelevance(game, rOptions,
+      homeTeam, awayTeam)
   game$weight <- computeWeight(game)
   game
+}
+
+computeRelevance <- function(game, rOptions, homeTeam, awayTeam) {
+  minUpdates <- rOptions$minUpdates
+  gameIsPrestigious <- game$isPlayOff ||
+      (!game$isFriendly && !game$isQualifier)
+  isRelevant <- gameIsPrestigious &&
+      homeTeam$numUpdates >= minUpdates &&
+      awayTeam$numUpdates >= minUpdates
+  isRelevant
 }
 
 computeWeight <- function(game) {
