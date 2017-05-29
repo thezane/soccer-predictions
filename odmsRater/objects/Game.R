@@ -89,10 +89,10 @@ computeWeight <- function(game) {
     weight = 1
   }
   else if (!game$isFriendly && !game$isQualifier) {
-    weight = 5 / 6
+    weight = 0.9
   }
   else {
-    weight = 4 / 6
+    weight = 0.8
   }
 
   weight
