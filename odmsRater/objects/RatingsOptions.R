@@ -41,7 +41,7 @@ newRatingsOptions <- function(fTree) {
     # Non-optimizable paramters
     fTree=fTree,
     fNames=fNames,
-    minUpdates=10,
+    minUpdates=20,
     numFs=numFs,
     tolRel=0.01,
     tolScale=0.01,
