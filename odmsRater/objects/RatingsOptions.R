@@ -4,7 +4,7 @@ newRatingsOptions <- function(fTree) {
 
   rOptions <- list(
     # ODM layer
-    b=0.3,
+    b=0.4,
     c=0.4,
 
     # Lin layer
@@ -13,7 +13,7 @@ newRatingsOptions <- function(fTree) {
     # Poisson layer
     meanGoals=1,
     strBeta=2,
-    hA=0.2,
+    hA=0.3,
     corrBeta=-1,
 
     # Default federation strengths for Africa, Asia, Europe,
@@ -41,7 +41,7 @@ newRatingsOptions <- function(fTree) {
     # Non-optimizable paramters
     fTree=fTree,
     fNames=fNames,
-    minUpdates=15,
+    minUpdates=5,
     numFs=numFs,
     tolRel=0.01,
     tolScale=0.01,
