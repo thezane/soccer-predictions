@@ -6757,7 +6757,7 @@ Maldives,Bahrain,04/09/00,AFC-Q,0,1,1
 Iran,Syria,04/09/00,AFC-Q,1,1,1
 Laos,Mongolia,04/09/00,AFC-Q,2,1,1
 South Korea,Myanmar,04/09/00,AFC-Q,4,0,1
-North Korea,Chinese Taipei,04/09/00,AFC-Q,1,0,1
+North Korea,Taiwan,04/09/00,AFC-Q,1,0,1
 Thailand,Malaysia,04/09/00,AFC-Q,3,2,1
 Benin,Senegal,04/09/00,WOC-Q-Africa,1,1,1
 Cape Verde,Algeria,04/09/00,WOC-Q-Africa,0,0,1
@@ -6791,14 +6791,14 @@ Mauritania,Tunisia,04/07/00,WOC-Q-Africa,1,2,1
 Kazakhstan,Palestine,04/06/00,AFC-Q,2,0,1
 Pakistan,Jordan,04/06/00,AFC-Q,0,5,1
 North Korea,Malaysia,04/06/00,AFC-Q,4,1,1
-Thailand,Chinese Taipei,04/06/00,AFC-Q,1,0,1
+Thailand,Taiwan,04/06/00,AFC-Q,1,0,1
 Myanmar,Mongolia,04/05/00,AFC-Q,2,0,1
 South Korea,Laos,04/05/00,AFC-Q,9,0,1
 Bahrain,Iran,04/04/00,AFC-Q,1,0,1
 Syria,Maldives,04/04/00,AFC-Q,6,0,1
 Palestine,Jordan,04/04/00,AFC-Q,1,5,1
 Qatar,Pakistan,04/04/00,AFC-Q,5,0,1
-Chinese Taipei,Malaysia,04/04/00,AFC-Q,3,2,1
+Taiwan,Malaysia,04/04/00,AFC-Q,3,2,1
 Thailand,North Korea,04/04/00,AFC-Q,5,3,1
 Bahrain,Maldives,04/02/00,AFC-Q,4,1,1
 Syria,Iran,04/02/00,AFC-Q,0,1,1
@@ -6814,17 +6814,17 @@ Maldives,Iran,03/31/00,AFC-Q,0,8,1
 Syria,Bahrain,03/31/00,AFC-Q,1,0,1
 Qatar,Palestine,03/31/00,AFC-Q,1,0,1
 Jordan,Kazakhstan,03/31/00,AFC-Q,0,1,1
-Chinese Taipei,North Korea,03/29/00,AFC-Q,0,2,1
+Taiwan,North Korea,03/29/00,AFC-Q,0,2,1
 Malaysia,Thailand,03/29/00,AFC-Q,3,2,1
 Argentina,Chile,03/29/00,WOC-Q-South America,4,1,1
 Ecuador,Venezuela,03/29/00,WOC-Q-South America,2,0,1
 Peru,Paraguay,03/29/00,WOC-Q-South America,2,0,1
 Uruguay,Bolivia,03/29/00,WOC-Q-South America,1,0,1
 Colombia,Brazil,03/28/00,WOC-Q-South America,0,0,1
-Chinese Taipei,Thailand,03/27/00,AFC-Q,0,2,1
+Taiwan,Thailand,03/27/00,AFC-Q,0,2,1
 Malaysia,North Korea,03/27/00,AFC-Q,1,1,1
 North Korea,Thailand,03/25/00,AFC-Q,0,0,1
-Malaysia,Chinese Taipei,03/25/00,AFC-Q,3,0,1
+Malaysia,Taiwan,03/25/00,AFC-Q,3,0,1
 Turks and Caicos Islands,Saint Kitts and Nevis,03/21/00,WOC-Q-North America,0,6,1
 Bahamas,Anguilla,03/19/00,WOC-Q-North America,2,1,1
 Belize,Guatemala,03/19/00,WOC-Q-North America,1,2,1
@@ -6861,7 +6861,7 @@ Mexico,Canada,02/20/00,CON-K,1,2,0
 United States,Colombia,02/19/00,CON-K,2,2,1
 Honduras,Peru,02/19/00,CON-K,3,5,0
 Yemen,Bhutan,02/18/00,AFC-Q,11,2,1
-Kuwait,  Nepal,02/18/00,AFC-Q,5,0,1
+Kuwait,Nepal,02/18/00,AFC-Q,5,0,1
 South Korea,Costa Rica,02/17/00,CON-G,2,2,0
 Kuwait,Yemen,02/16/00,AFC-Q,2,0,1
 Bhutan,Turkmenistan,02/16/00,AFC-Q,0,8,1
@@ -6872,7 +6872,7 @@ United States,Peru,02/16/00,CON-G,1,0,1
 Trinidad and Tobago,Guatemala,02/15/00,CON-G,4,2,0
 Canada,South Korea,02/15/00,CON-G,0,0,0
 Kuwait,Bhutan,02/14/00,AFC-Q,20,0,1
-Turkmenistan,  Nepal,02/14/00,AFC-Q,5,0,1
+Turkmenistan,Nepal,02/14/00,AFC-Q,5,0,1
 Jamaica,Honduras,02/14/00,CON-G,0,2,0
 Haiti,Peru,02/14/00,CON-G,1,1,0
 Macau,Brunei,02/13/00,AFC-Q,1,0,1
@@ -6881,11 +6881,12 @@ Nigeria,Cameroon,02/13/00,CAF-K,2,2,1
 Mexico,Trinidad and Tobago,02/13/00,CON-G,4,0,0
 Costa Rica,Canada,02/13/00,CON-G,2,2,0
 Yemen,Turkmenistan,02/12/00,AFC-Q,0,1,1
-Bhutan,  Nepal,02/12/00,AFC-Q,0,3,1
+Bhutan,Nepal,02/12/00,AFC-Q,0,3,1
 South Africa,Tunisia,02/12/00,CAF-K,2,2,0
 Colombia,Jamaica,02/12/00,CON-G,1,0,0
 United States,Haiti,02/12/00,CON-G,3,0,1
 Kuwait,Turkmenistan,02/10/00,AFC-Q,6,1,1
+Nepal,Yemen,02/10/00,AFC-Q,0,3,1
 Nigeria,South Africa,02/10/00,CAF-K,2,0,1
 Cameroon,Tunisia,02/10/00,CAF-K,3,0,0
 Egypt,Tunisia,02/07/00,CAF-K,0,1,0
