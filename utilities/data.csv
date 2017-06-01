@@ -1,33 +1,27 @@
 HomeTeam,AwayTeam,Date,Contest,HomeGoals,AwayGoals,HomeAdvantage
-Equatorial Guinea,Congo,01/17/15,CAF-G,1,1,1
-Burkina Faso,Gabon,01/17/15,CAF-G,0,2,0
-Equatorial Guinea,Burkina Faso,01/21/15,CAF-G,0,0,1
-Gabon,Congo,01/21/15,CAF-G,0,1,0
-Equatorial Guinea,Gabon,01/25/15,CAF-G,2,0,1
-Congo,Burkina Faso,01/25/15,CAF-G,2,1,0
-Zambia,Democratic Republic of the Congo,01/18/15,CAF-G,1,1,0
-Tunisia,Cape Verde,01/18/15,CAF-G,1,1,0
-Zambia,Tunisia,01/22/15,CAF-G,1,2,0
-Cape Verde,Democratic Republic of the Congo,01/22/15,CAF-G,0,0,0
-Cape Verde,Zambia,01/26/15,CAF-G,0,0,0
-Democratic Republic of the Congo,Tunisia,01/26/15,CAF-G,1,1,0
-Ghana,Senegal,01/19/15,CAF-G,1,2,0
-Algeria,South Africa,01/19/15,CAF-G,3,1,0
-Ghana,Algeria,01/23/15,CAF-G,1,0,0
-South Africa,Senegal,01/23/15,CAF-G,1,1,0
-South Africa,Ghana,01/27/15,CAF-G,1,2,0
-Senegal,Algeria,01/27/15,CAF-G,0,2,0
-Ivory Coast,Guinea,01/20/15,CAF-G,1,1,0
-Mali,Cameroon,01/20/15,CAF-G,1,1,0
-Ivory Coast,Mali,01/24/15,CAF-G,1,1,0
-Cameroon,Guinea,01/24/15,CAF-G,1,1,0
-Cameroon,Ivory Coast,01/28/15,CAF-G,0,1,0
-Guinea,Mali,01/28/15,CAF-G,1,1,0
-Congo,Democratic Republic of the Congo,01/31/15,CAF-K,2,4,0
-Equatorial Guinea,Tunisia,01/31/15,CAF-K,2,1,1
-Ghana,Guinea,02/01/15,CAF-K,3,0,0
-Ivory Coast,Algeria,02/01/15,CAF-K,3,1,0
-Democratic Republic of the Congo,Ivory Coast,02/04/15,CAF-K,1,3,0
-Equatorial Guinea,Ghana,02/05/15,CAF-K,0,3,1
-Equatorial Guinea,Democratic Republic of the Congo,02/07/15,CAF-K,0,0,1
-Ivory Coast,Ghana,02/08/15,CAF-K,0,0,0
+Iraq,Thailand,10/12/00,AFC-G,2,0,0
+Lebanon,Iran,10/12/00,AFC-G,0,4,1
+Iran,Thailand,10/15/00,AFC-G,1,1,0
+Lebanon,Iraq,10/15/00,AFC-G,2,2,1
+Iran,Iraq,10/18/00,AFC-G,1,0,0
+Lebanon,Thailand,10/18/00,AFC-G,1,1,1
+South Korea,China,10/13/00,AFC-G,2,2,0
+Kuwait,Indonesia,10/13/00,AFC-G,0,0,0
+China,Indonesia,10/16/00,AFC-G,4,0,0
+South Korea,Kuwait,10/16/00,AFC-G,0,1,0
+China,Kuwait,10/19/00,AFC-G,0,0,0
+South Korea,Indonesia,10/19/00,AFC-G,3,0,0
+Saudi Arabia,Japan,10/14/00,AFC-G,1,4,0
+Qatar,Uzbekistan,10/14/00,AFC-G,1,1,0
+Japan,Uzbekistan,10/17/00,AFC-G,8,1,0
+Saudi Arabia,Qatar,10/17/00,AFC-G,0,0,0
+Saudi Arabia,Uzbekistan,10/20/00,AFC-G,5,0,0
+Japan,Qatar,10/20/00,AFC-G,1,1,0
+Iran,South Korea,10/23/00,AFC-K,1,2,0
+China,Qatar,10/23/00,AFC-K,3,1,0
+Japan,Iraq,10/24/00,AFC-K,4,1,0
+Kuwait,Saudi Arabia,10/24/00,AFC-K,2,3,0
+South Korea,Saudi Arabia,10/26/00,AFC-K,1,2,0
+China,Japan,10/26/00,AFC-K,2,3,0
+South Korea,China,10/29/00,AFC-K,1,0,0
+Japan,Saudi Arabia,10/29/00,AFC-K,1,0,0
