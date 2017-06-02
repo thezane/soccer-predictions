@@ -85,11 +85,8 @@ computeRelevance <- function(game, rOptions, homeTeam, awayTeam) {
 }
 
 computeWeight <- function(game) {
-  if (game$isWocG || game$isWocK) {
+  if (!game$isFriendly && !game$isQualifier) {
     weight = 1
-  }
-  else if (!game$isFriendly && !game$isQualifier) {
-    weight = 0.9
   }
   else {
     weight = 0.8

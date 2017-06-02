@@ -15,7 +15,7 @@ newRatingsOutput <- function(tTree, gTree, gi) {
 # Update cost of prediction for goals.
 updateGoalsCost <- function(rOutput, p, w) {
   rOutput$goalsCosts <- c(rOutput$goalsCosts, p)
-  rOutput$goalsWeights <- c(rOutput$goalsWeights, 1)
+  rOutput$goalsWeights <- c(rOutput$goalsWeights, w)
   rOutput
 }
 
