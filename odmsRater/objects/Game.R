@@ -45,6 +45,8 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     weight=0
   )
   
+  game$isRelevant <- game$isPlayOff ||
+      (!game$isFriendly && !game$isQualifier)
   class(game) <- "Game"
   game
 }
@@ -68,25 +70,16 @@ updateGamePreRate <- function(game, rOptions, homeTeam, awayTeam) {
   game$strNorm <- matrix(c(homeTeamStrs[["strNorm"]],
       awayTeamStrs[["strNorm"]]), 2, 2, TRUE)
   game$strAgg <- c(homeTeamStrs[["strAgg"]], awayTeamStrs[["strAgg"]])
-  game$isRelevant <- computeRelevance(game, rOptions,
-      homeTeam, awayTeam)
   game$weight <- computeWeight(game)
   game
-}
-
-computeRelevance <- function(game, rOptions, homeTeam, awayTeam) {
-  minUpdates <- rOptions$minUpdates
-  gameIsPrestigious <- game$isPlayOff ||
-      (!game$isFriendly && !game$isQualifier)
-  isRelevant <- gameIsPrestigious &&
-      homeTeam$numUpdates >= minUpdates &&
-      awayTeam$numUpdates >= minUpdates
-  isRelevant
 }
 
 computeWeight <- function(game) {
   if (game$isWocG || game$isWocK) {
     weight = 1
+  }
+  else if (!game$isFriendly && !game$isQualifier) {
+	weight = 0.9
   }
   else {
     weight = 0.8
