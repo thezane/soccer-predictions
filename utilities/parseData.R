@@ -115,6 +115,7 @@ constructTeamHash <- function() {
   h["U.S. Virgin Islands"] <- "United States Virgin Islands"
   h["USA"] <- "United States"
   h["Virgin Islands"] <- "British Virgin Islands"
+  h["Zaire"] <- "Democratic Republic of the Congo"
   h
 }
 

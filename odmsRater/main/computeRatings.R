@@ -52,6 +52,14 @@ constructStrPrereqs <- function(rOptions, game, gamePrev, tTree) {
   awayTeamName <- game$teamNames[2]
   homeTeam <- tTree[[homeTeamName]]
   awayTeam <- tTree[[awayTeamName]]
+
+  if (is.null(homeTeam)) {
+    print(homeTeamName)
+  }
+  else if (is.null(awayTeam)) {
+    print(awayTeamName)
+  }
+
   game <- updateGamePreRate(game, rOptions, homeTeam, awayTeam)
   strPrereqs <- list(game=game, tTree=tTree)
   strPrereqs
@@ -63,7 +71,7 @@ updateStr <- function(strPrereqs, rOptions) {
       rOptions$b, rOptions$c, rOptions$tolRel, rOptions$tolScale)
   tTree <- strPrereqs[["tTree"]]
   homeTeamName <- game$teamNames[1]
-  awayTeamName <- game$teamNames[2]
+  awayTeamName <- game$teamNames[2]  
   homeTeam <- tTree[[homeTeamName]]
   awayTeam <- tTree[[awayTeamName]]
   strNextNorm <- computeLayerLin(game, rOptions, homeTeam, awayTeam,
