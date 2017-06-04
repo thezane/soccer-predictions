@@ -78,9 +78,6 @@ computeWeight <- function(game) {
   if (game$isWocG || game$isWocK) {
     weight = 1
   }
-  else if (!game$isFriendly && !game$isQualifier) {
-	weight = 0.9
-  }
   else {
     weight = 0.8
   }
