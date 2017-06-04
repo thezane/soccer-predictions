@@ -1,7 +1,8 @@
 forecastRatings <- function(currentDate, rData=NULL) {
+  library(MASS)
   library(hash)
   library(parallel)
-  library(MASS)
+  library(sigmoid)
   regexRFiles <- ".*\\.R"
   srcFiles <- list.files("../", regexRFiles,
       full.names=TRUE, recursive=TRUE)

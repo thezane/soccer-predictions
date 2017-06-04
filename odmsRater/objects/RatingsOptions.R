@@ -3,6 +3,10 @@ newRatingsOptions <- function(fTree) {
   numFs <- length(fNames)
 
   rOptions <- list(
+    # Goals layer
+    s=1,
+    m=0,
+  
     # ODM layer
     b=0.3,
     c=0.3,
@@ -21,6 +25,8 @@ newRatingsOptions <- function(fTree) {
     strFsNorm=c(0, 0, 0.2, 0, -0.6, 0.4),    
 
     # Lower bounds for optimizable parameters
+    sLBd=-Inf,
+    mLBd=-Inf,
     bLBd=0.01,
     cLBd=0.01,
     kLBd=0,
@@ -30,6 +36,8 @@ newRatingsOptions <- function(fTree) {
     corrBetaLBd=-Inf,
     
     # Upper bounds for optimizable parameters
+    sUBd=Inf,
+    mUBd=Inf,
     bUBd=Inf,
     cUBd=Inf,
     kUBd=1,
@@ -59,7 +67,8 @@ newRatingsOptions <- function(fTree) {
 }
 
 getModel <- function(rOptions) {
-  c(rOptions$b, rOptions$c,
+  c(rOptions$s, rOptions$m,
+    rOptions$b, rOptions$c,
     rOptions$k,
     rOptions$meanGoals, rOptions$strBeta, rOptions$hA,
         rOptions$corrBeta,
@@ -67,7 +76,8 @@ getModel <- function(rOptions) {
 }
 
 getModelLBd <- function(rOptions) {
-  c(rOptions$bLBd, rOptions$cLBd,
+  c(rOptions$sLBd, rOptions$mLBd,
+    rOptions$bLBd, rOptions$cLBd,
     rOptions$kLBd,
     rOptions$meanGoalsLBd, rOptions$strBetaLBd, rOptions$hALBd,
         rOptions$corrBetaLBd,
@@ -75,7 +85,8 @@ getModelLBd <- function(rOptions) {
 }
 
 getModelUBd <- function(rOptions) {
-  c(rOptions$bUBd, rOptions$cUBd,
+  c(rOptions$sUBd, rOptions$mUBd,
+    rOptions$bUBd, rOptions$cUBd,
     rOptions$kUBd,
     rOptions$meanGoalsUBd, rOptions$strBetaUBd, rOptions$hAUBd,
         rOptions$corrBetaUBd,
@@ -83,20 +94,23 @@ getModelUBd <- function(rOptions) {
 }
 
 getModelSlopes <- function(rOptions) {
-  c(rOptions$b,
+  c(rOptions$s,
+    rOptions$b,
     rOptions$k,
     rOptions$strBeta, rOptions$hA)
 }
 
 updateOptions <- function(rOptions, x) {
-  rOptions$b <- x[1]
-  rOptions$c <- x[2]
-  rOptions$k <- x[3]
-  rOptions$meanGoals <- x[4]
-  rOptions$strBeta <- x[5]
-  rOptions$hA <- x[6]
-  rOptions$corrBeta <- x[7]
-  rOptions$strFsNorm <- x[-c(1: 7)]
+  rOptions$s <- x[1]
+  rOptions$m <- x[2]
+  rOptions$b <- x[3]
+  rOptions$c <- x[4]
+  rOptions$k <- x[5]
+  rOptions$meanGoals <- x[6]
+  rOptions$strBeta <- x[7]
+  rOptions$hA <- x[8]
+  rOptions$corrBeta <- x[9]
+  rOptions$strFsNorm <- x[-c(1: 9)]
   strFsNorm <- rOptions$strFsNorm
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
   i <- 1
@@ -111,6 +125,8 @@ updateOptions <- function(rOptions, x) {
 }
 
 printModel <- function(rOptions) {
+  print(noquote(sprintf("s = %f", rOptions$s)))
+  print(noquote(sprintf("m = %f", rOptions$m)))
   print(noquote(sprintf("b = %f", rOptions$b)))
   print(noquote(sprintf("c = %f", rOptions$c)))
   print(noquote(sprintf("k = %f", rOptions$k)))

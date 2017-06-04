@@ -67,7 +67,8 @@ constructStrPrereqs <- function(rOptions, game, gamePrev, tTree) {
 
 updateStr <- function(strPrereqs, rOptions) {
   game <- strPrereqs[["game"]]
-  strPostNorm <- computeLayerOdm(game$A, game$strNorm,
+  A <- computeLayerGoals(game$A, rOptions$s, rOptions$m)
+  strPostNorm <- computeLayerOdm(A, game$strNorm,
       rOptions$b, rOptions$c, rOptions$tolRel, rOptions$tolScale)
   tTree <- strPrereqs[["tTree"]]
   homeTeamName <- game$teamNames[1]
