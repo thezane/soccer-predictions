@@ -8273,3 +8273,395 @@ Brazil,Czech Republic,12/19/97,COC-K,2,0,0
 Uruguay,Australia,12/19/97,COC-K,0,1,0
 Czech Republic,Uruguay,12/21/97,COC-K,1,0,0
 Brazil,Australia,12/21/97,COC-K,6,0,0
+El Salvador,Guatemala,02/01/98,CON-G,0,0,0
+Brazil,Jamaica,02/03/98,CON-G,0,0,0
+Brazil,Guatemala,02/05/98,CON-G,1,1,0
+El Salvador,Brazil,02/08/98,CON-G,0,4,0
+Guatemala,Jamaica,02/08/98,CON-G,2,3,0
+Jamaica,El Salvador,02/09/98,CON-G,2,0,0
+Honduras,Trinidad and Tobago,02/01/98,CON-G,1,3,0
+Mexico,Trinidad and Tobago,02/04/98,CON-G,4,2,0
+Mexico,Honduras,02/07/98,CON-G,2,0,0
+United States,Cuba,02/01/98,CON-G,3,0,1
+Costa Rica,Cuba,02/04/98,CON-G,7,2,0
+United States,Costa Rica,02/07/98,CON-G,2,1,1
+United States,Brazil,02/10/98,CON-K,1,0,1
+Mexico,Jamaica,02/12/98,CON-K,1,0,0
+Brazil,Jamaica,02/15/98,CON-K,1,0,0
+United States,Mexico,02/15/98,CON-K,0,1,1
+Ecuador,Argentina,06/11/97,COP-G,0,0,0
+Paraguay,Chile,06/11/97,COP-G,1,0,0
+Argentina,Chile,06/14/97,COP-G,2,0,0
+Paraguay,Ecuador,06/14/97,COP-G,0,2,0
+Ecuador,Chile,06/17/97,COP-G,2,1,0
+Paraguay,Argentina,06/17/97,COP-G,1,1,0
+Bolivia,Venezuela,06/12/97,COP-G,1,0,1
+Peru,Uruguay,06/12/97,COP-G,1,0,0
+Uruguay,Venezuela,06/15/97,COP-G,2,0,0
+Bolivia,Peru,06/15/97,COP-G,2,0,1
+Peru,Venezuela,06/18/97,COP-G,2,0,0
+Bolivia,Uruguay,06/18/97,COP-G,1,0,1
+Brazil,Costa Rica,06/13/97,COP-G,5,0,0
+Colombia,Mexico,06/13/97,COP-G,1,2,0
+Brazil,Mexico,06/16/97,COP-G,3,2,0
+Colombia,Costa Rica,06/16/97,COP-G,4,1,0
+Brazil,Colombia,06/19/97,COP-G,2,0,0
+Mexico,Costa Rica,06/19/97,COP-G,1,1,0
+Peru,Argentina,06/21/97,COP-K,2,1,0
+Bolivia,Colombia,06/21/97,COP-K,2,1,1
+Mexico,Ecuador,06/22/97,COP-K,1,1,0
+Brazil,Paraguay,06/22/97,COP-K,2,0,0
+Bolivia,Mexico,06/25/97,COP-K,3,1,1
+Peru,Brazil,06/26/97,COP-K,0,7,0
+Mexico,Peru,06/28/97,COP-K,1,0,0
+Bolivia,Brazil,06/29/97,COP-K,1,3,1
+United Arab Emirates,South Korea,12/04/96,AFC-G,1,1,1
+Indonesia,Kuwait,12/04/96,AFC-G,2,2,0
+United Arab Emirates,Kuwait,12/07/96,AFC-G,3,2,1
+South Korea,Indonesia,12/07/96,AFC-G,4,2,0
+United Arab Emirates,Indonesia,12/10/96,AFC-G,2,0,1
+Kuwait,South Korea,12/10/96,AFC-G,2,0,0
+Saudi Arabia,Thailand,12/05/96,AFC-G,6,0,0
+Iran,Iraq,12/05/96,AFC-G,1,2,0
+Saudi Arabia,Iraq,12/08/96,AFC-G,1,0,0
+Thailand,Iran,12/08/96,AFC-G,1,3,0
+Saudi Arabia,Iran,12/11/96,AFC-G,0,3,0
+Iraq,Thailand,12/11/96,AFC-G,4,1,0
+Japan,Syria,12/06/96,AFC-G,2,1,0
+China,Uzbekistan,12/06/96,AFC-G,0,2,0
+Japan,Uzbekistan,12/09/96,AFC-G,4,0,0
+Syria,China,12/09/96,AFC-G,0,3,0
+Japan,China,12/12/96,AFC-G,1,0,0
+Uzbekistan,Syria,12/12/96,AFC-G,1,2,0
+United Arab Emirates,Iraq,12/15/96,AFC-K,1,0,1
+Kuwait,Japan,12/15/96,AFC-K,2,0,0
+South Korea,Iran,12/16/96,AFC-K,2,6,0
+Saudi Arabia,China,12/16/96,AFC-K,4,3,0
+United Arab Emirates,Kuwait,12/19/96,AFC-K,1,0,1
+Iran,Saudi Arabia,12/19/96,AFC-K,0,0,0
+Iran,Kuwait,12/21/96,AFC-K,1,1,0
+United Arab Emirates,Saudi Arabia,12/21/96,AFC-K,0,0,1
+Vietnam,Taiwan,08/04/96,AFC-Q,4,1,1
+South Korea,Guam,08/05/96,AFC-Q,9,0,1
+Vietnam,Guam,08/07/96,AFC-Q,9,0,1
+South Korea,Taiwan,08/08/96,AFC-Q,4,0,1
+Guam,Taiwan,08/10/96,AFC-Q,2,9,1
+Vietnam,South Korea,08/11/96,AFC-Q,0,4,1
+Hong Kong,Philippines,01/30/96,AFC-Q,8,0,1
+Hong Kong,Macau,02/01/96,AFC-Q,4,1,1
+Macau,Philippines,02/04/96,AFC-Q,5,1,1
+Thailand,Maldives,06/27/96,AFC-Q,8,0,1
+Myanmar,Singapore,06/27/96,AFC-Q,0,4,1
+Thailand,Myanmar,06/29/96,AFC-Q,5,1,1
+Maldives,Singapore,06/29/96,AFC-Q,0,2,1
+Thailand,Singapore,07/01/96,AFC-Q,1,1,1
+Myanmar,Maldives,07/01/96,AFC-Q,3,1,1
+Maldives,Thailand,07/04/96,AFC-Q,0,8,1
+Singapore,Myanmar,07/04/96,AFC-Q,2,2,1
+Myanmar,Thailand,07/07/96,AFC-Q,1,7,1
+Singapore,Maldives,07/07/96,AFC-Q,5,2,1
+Maldives,Myanmar,07/09/96,AFC-Q,1,4,1
+Singapore,Thailand,07/09/96,AFC-Q,2,2,1
+Malaysia,Indonesia,03/02/96,AFC-Q,0,0,1
+Indonesia,India,03/04/96,AFC-Q,7,1,1
+Malaysia,India,03/06/96,AFC-Q,5,2,1
+Oman,Sri Lanka,06/10/96,AFC-Q,3,0,1
+Iran,Nepal,06/10/96,AFC-Q,8,0,1
+Oman,Nepal,06/12/96,AFC-Q,7,0,1
+Iran,Sri Lanka,06/12/96,AFC-Q,7,0,1
+Sri Lanka,Nepal,06/14/96,AFC-Q,3,1,1
+Iran,Oman,06/14/96,AFC-Q,2,0,1
+Iran,Sri Lanka,06/17/96,AFC-Q,4,0,1
+Oman,Nepal,06/17/96,AFC-Q,2,1,1
+Iran,Nepal,06/19/96,AFC-Q,4,0,1
+Oman,Sri Lanka,06/19/96,AFC-Q,10,0,1
+Nepal,Sri Lanka,06/21/96,AFC-Q,0,2,1
+Oman,Iran,06/21/96,AFC-Q,1,2,1
+Jordan,Pakistan,08/09/96,AFC-Q,4,0,1
+Jordan,Iraq,08/11/96,AFC-Q,0,1,1
+Pakistan,Iraq,08/13/96,AFC-Q,0,3,1
+Kazakhstan,Qatar,06/14/96,AFC-Q,1,0,1
+Syria,Kazakhstan,06/21/96,AFC-Q,2,0,1
+Qatar,Syria,06/28/96,AFC-Q,1,0,1
+Qatar,Kazakhstan,07/05/96,AFC-Q,3,0,1
+Kazakhstan,Syria,07/12/96,AFC-Q,0,1,1
+Syria,Qatar,07/19/96,AFC-Q,3,1,1
+Tajikistan,Uzbekistan,05/08/96,AFC-Q,4,0,1
+Saudi Arabia,Kyrgyzstan,01/24/96,AFC-Q,3,0,1
+Yemen,Kyrgyzstan,01/26/96,AFC-Q,1,0,1
+Saudi Arabia,Yemen,01/28/96,AFC-Q,4,0,1
+Kyrgyzstan,Saudi Arabia,01/31/96,AFC-Q,0,2,1
+Kyrgyzstan,Yemen,02/02/96,AFC-Q,3,1,1
+Yemen,Saudi Arabia,02/04/96,AFC-Q,0,1,1
+Turkmenistan,Kuwait,03/10/96,AFC-Q,2,2,1
+Kuwait,Turkmenistan,03/22/96,AFC-Q,2,0,1
+Lebanon,Turkmenistan,05/12/96,AFC-Q,3,1,1
+Turkmenistan,Lebanon,05/26/96,AFC-Q,0,1,1
+Lebanon,Kuwait,06/09/96,AFC-Q,3,5,1
+Kuwait,Lebanon,06/20/96,AFC-Q,0,0,1
+Malawi,Zimbabwe,10/15/94,CAF-Q,3,1,1
+Cameroon,Democratic Republic of the Congo,10/16/94,CAF-Q,1,0,1
+Zimbabwe,Democratic Republic of the Congo,11/13/94,CAF-Q,2,1,1
+Cameroon,Malawi,01/08/95,CAF-Q,0,0,1
+Zimbabwe,Cameroon,01/22/95,CAF-Q,4,1,1
+Malawi,Democratic Republic of the Congo,04/09/95,CAF-Q,0,1,1
+Democratic Republic of the Congo,Cameroon,04/23/95,CAF-Q,2,1,1
+Zimbabwe,Malawi,04/23/95,CAF-Q,1,1,1
+Democratic Republic of the Congo,Zimbabwe,06/04/95,CAF-Q,5,0,1
+Malawi,Cameroon,07/16/95,CAF-Q,1,3,1
+Cameroon,Zimbabwe,07/30/95,CAF-Q,1,0,1
+Senegal,Mauritania,09/03/94,CAF-Q,0,0,1
+Liberia,Togo,09/04/94,CAF-Q,1,0,1
+Togo,Senegal,10/16/94,CAF-Q,2,0,1
+Mauritania,Liberia,11/11/94,CAF-Q,1,1,1
+Tunisia,Togo,11/13/94,CAF-Q,1,1,1
+Senegal,Tunisia,01/07/95,CAF-Q,0,0,1
+Togo,Mauritania,01/08/95,CAF-Q,0,0,1
+Liberia,Senegal,01/22/95,CAF-Q,1,1,1
+Tunisia,Mauritania,01/29/95,CAF-Q,1,0,1
+Tunisia,Liberia,02/10/95,CAF-Q,0,0,1
+Mauritania,Senegal,04/07/95,CAF-Q,0,1,1
+Togo,Liberia,04/09/95,CAF-Q,0,0,1
+Senegal,Togo,04/22/95,CAF-Q,5,1,1
+Liberia,Tunisia,04/23/95,CAF-Q,1,0,1
+Liberia,Mauritania,06/04/95,CAF-Q,2,0,1
+Togo,Tunisia,06/04/95,CAF-Q,0,1,1
+Mauritania,Togo,07/14/95,CAF-Q,2,1,1
+Tunisia,Senegal,07/15/95,CAF-Q,4,0,1
+Mauritania,Tunisia,07/30/95,CAF-Q,0,0,1
+Senegal,Liberia,07/30/95,CAF-Q,3,0,1
+Ghana,Sierra Leone,09/04/94,CAF-Q,4,1,1
+Sierra Leone,Republic of the Congo,10/16/94,CAF-Q,3,2,1
+Ghana,Republic of the Congo,01/22/95,CAF-Q,3,1,1
+Sierra Leone,Ghana,04/08/95,CAF-Q,1,0,1
+Republic of the Congo,Sierra Leone,04/22/95,CAF-Q,0,2,1
+Republic of the Congo,Ghana,07/30/95,CAF-Q,0,2,1
+Tanzania,Uganda,09/03/94,CAF-Q,4,0,1
+Ethiopia,Algeria,09/04/94,CAF-Q,0,0,1
+Sudan,Egypt,09/04/94,CAF-Q,0,0,1
+Algeria,Sudan,10/14/94,CAF-Q,1,1,1
+Egypt,Tanzania,10/14/94,CAF-Q,5,1,1
+Uganda,Ethiopia,10/15/94,CAF-Q,4,1,1
+Egypt,Ethiopia,11/11/94,CAF-Q,5,0,1
+Tanzania,Sudan,11/12/94,CAF-Q,2,0,1
+Uganda,Algeria,11/12/94,CAF-Q,1,1,1
+Algeria,Egypt,01/08/95,CAF-Q,1,0,1
+Ethiopia,Tanzania,01/08/95,CAF-Q,1,0,1
+Sudan,Uganda,01/08/95,CAF-Q,3,1,1
+Tanzania,Algeria,01/21/95,CAF-Q,2,1,1
+Uganda,Egypt,01/21/95,CAF-Q,0,0,1
+Ethiopia,Sudan,01/22/95,CAF-Q,2,0,1
+Algeria,Ethiopia,04/07/95,CAF-Q,2,0,1
+Egypt,Sudan,04/07/95,CAF-Q,3,1,1
+Uganda,Tanzania,04/08/95,CAF-Q,2,0,1
+Tanzania,Egypt,04/22/95,CAF-Q,1,2,1
+Ethiopia,Uganda,04/23/95,CAF-Q,0,0,1
+Sudan,Algeria,04/24/95,CAF-Q,0,21,1
+Algeria,Uganda,06/02/95,CAF-Q,1,1,1
+Sudan,Tanzania,06/03/95,CAF-Q,2,1,1
+Ethiopia,Egypt,06/04/95,CAF-Q,0,2,1
+Egypt,Algeria,07/14/95,CAF-Q,1,1,1
+Tanzania,Ethiopia,07/15/95,CAF-Q,2,0,1
+Uganda,Sudan,07/15/95,CAF-Q,2,0,1
+Algeria,Tanzania,07/30/95,CAF-Q,2,1,1
+Egypt,Uganda,07/30/95,CAF-Q,6,0,1
+Sudan,Ethiopia,07/30/95,CAF-Q,3,0,1
+Gabon,Mauritius,11/13/94,CAF-Q,3,0,1
+Gabon,Zambia,11/20/94,CAF-Q,2,1,1
+Mauritius,Zambia,01/09/95,CAF-Q,0,3,1
+Zambia,Gabon,04/08/95,CAF-Q,1,0,1
+Mauritius,Gabon,06/04/95,CAF-Q,0,3,1
+Zambia,Mauritius,07/15/95,CAF-Q,2,0,1
+Angola,Namibia,09/04/94,CAF-Q,2,0,1
+Botswana,Guinea,09/04/94,CAF-Q,0,1,1
+Mali,Mozambique,09/04/94,CAF-Q,2,1,1
+Namibia,Mali,10/15/94,CAF-Q,2,1,1
+Guinea,Angola,10/16/94,CAF-Q,3,1,1
+Mozambique,Botswana,10/16/94,CAF-Q,3,1,1
+Mali,Guinea,10/30/94,CAF-Q,2,0,1
+Mali,Angola,11/13/94,CAF-Q,0,0,1
+Mozambique,Guinea,11/13/94,CAF-Q,2,1,1
+Namibia,Botswana,11/13/94,CAF-Q,1,1,1
+Botswana,Mali,01/07/95,CAF-Q,1,3,1
+Angola,Mozambique,01/08/95,CAF-Q,1,0,1
+Guinea,Namibia,01/08/95,CAF-Q,3,0,1
+Botswana,Angola,01/22/95,CAF-Q,1,2,1
+Mozambique,Namibia,01/22/95,CAF-Q,4,2,1
+Namibia,Angola,04/09/95,CAF-Q,2,2,1
+Guinea,Botswana,04/09/95,CAF-Q,5,0,1
+Mozambique,Mali,04/09/95,CAF-Q,1,0,1
+Angola,Guinea,04/23/95,CAF-Q,3,0,1
+Botswana,Mozambique,04/23/95,CAF-Q,0,3,1
+Mali,Namibia,04/23/95,CAF-Q,2,0,1
+Angola,Mali,06/04/95,CAF-Q,1,0,1
+Botswana,Namibia,06/04/95,CAF-Q,1,1,1
+Guinea,Mozambique,06/04/95,CAF-Q,0,0,1
+Mali,Botswana,07/16/95,CAF-Q,4,0,1
+Mozambique,Angola,07/16/95,CAF-Q,2,1,1
+Namibia,Guinea,07/16/95,CAF-Q,0,0,1
+Angola,Botswana,07/30/95,CAF-Q,4,0,1
+Guinea,Mali,07/30/95,CAF-Q,4,1,1
+Namibia,Mozambique,07/30/95,CAF-Q,0,0,1
+Burkina Faso,Morocco,09/04/94,CAF-Q,2,1,1
+Morocco,Ivory Coast,11/13/94,CAF-Q,1,0,1
+Ivory Coast,Burkina Faso,01/22/95,CAF-Q,2,2,1
+Morocco,Burkina Faso,04/09/95,CAF-Q,0,0,1
+Ivory Coast,Morocco,06/04/95,CAF-Q,2,0,1
+Burkina Faso,Ivory Coast,07/30/95,CAF-Q,1,1,1
+Mauritius,Seychelles,08/11/96,CAF-Q,1,0,1
+Seychelles,Mauritius,08/24/96,CAF-Q,1,1,1
+Republic of the Congo,Togo,08/11/96,CAF-Q,0,0,1
+Togo,Republic of the Congo,08/25/96,CAF-Q,1,0,1
+Botswana,Namibia,08/11/96,CAF-Q,0,0,1
+Namibia,Botswana,08/25/96,CAF-Q,6,0,1
+Benin,Mauritania,08/08/96,CAF-Q,4,1,1
+Mauritania,Benin,08/30/96,CAF-Q,0,0,1
+Uganda,Ethiopia,08/11/96,CAF-Q,1,1,1
+Ethiopia,Uganda,08/25/96,CAF-Q,1,1,1
+Ghana,Angola,10/06/96,CAF-Q,2,1,1
+Zimbabwe,Ghana,01/26/97,CAF-Q,0,0,1
+Zimbabwe,Angola,02/23/97,CAF-Q,1,0,1
+Angola,Ghana,06/22/97,CAF-Q,1,0,1
+Ghana,Zimbabwe,07/13/97,CAF-Q,2,1,1
+Angola,Zimbabwe,07/27/97,CAF-Q,2,1,1
+Algeria,Ivory Coast,10/06/96,CAF-Q,4,1,1
+Benin,Mali,10/06/96,CAF-Q,1,2,1
+Ivory Coast,Benin,01/26/97,CAF-Q,1,0,1
+Mali,Algeria,01/26/97,CAF-Q,1,0,1
+Benin,Algeria,02/23/97,CAF-Q,1,1,1
+Mali,Ivory Coast,02/23/97,CAF-Q,1,2,1
+Ivory Coast,Algeria,06/22/97,CAF-Q,2,1,1
+Mali,Benin,06/22/97,CAF-Q,3,1,1
+Algeria,Mali,07/13/97,CAF-Q,1,0,1
+Benin,Ivory Coast,07/13/97,CAF-Q,0,0,1
+Algeria,Benin,07/27/97,CAF-Q,2,0,1
+Ivory Coast,Mali,07/27/97,CAF-Q,4,2,1
+Egypt,Morocco,10/04/96,CAF-Q,1,1,1
+Ethiopia,Senegal,10/06/96,CAF-Q,1,2,1
+Senegal,Egypt,01/25/97,CAF-Q,0,0,1
+Senegal,Morocco,02/22/97,CAF-Q,0,0,1
+Ethiopia,Egypt,02/23/97,CAF-Q,1,1,1
+Morocco,Ethiopia,05/31/97,CAF-Q,4,0,1
+Morocco,Egypt,06/21/97,CAF-Q,1,0,1
+Senegal,Ethiopia,06/22/97,CAF-Q,3,0,1
+Egypt,Senegal,07/13/97,CAF-Q,2,0,1
+Ethiopia,Morocco,07/13/97,CAF-Q,0,1,1
+Egypt,Ethiopia,07/27/97,CAF-Q,8,1,1
+Morocco,Senegal,07/27/97,CAF-Q,3,0,1
+Tunisia,Sierra Leone,10/06/96,CAF-Q,2,0,1
+Guinea,Tunisia,01/26/97,CAF-Q,1,0,1
+Guinea,Sierra Leone,02/23/97,CAF-Q,1,0,1
+Tunisia,Guinea,07/13/97,CAF-Q,1,0,1
+Namibia,Kenya,10/06/96,CAF-Q,1,0,1
+Gabon,Cameroon,10/06/96,CAF-Q,0,0,1
+Kenya,Gabon,01/25/97,CAF-Q,1,0,1
+Cameroon,Namibia,01/26/97,CAF-Q,4,0,1
+Kenya,Cameroon,02/22/97,CAF-Q,0,0,1
+Namibia,Gabon,02/22/97,CAF-Q,1,1,1
+Kenya,Namibia,06/21/97,CAF-Q,0,1,1
+Cameroon,Gabon,06/22/97,CAF-Q,2,2,1
+Namibia,Cameroon,07/12/97,CAF-Q,0,1,1
+Gabon,Kenya,07/13/97,CAF-Q,1,0,1
+Cameroon,Kenya,07/27/97,CAF-Q,1,1,1
+Gabon,Namibia,07/27/97,CAF-Q,1,1,1
+Togo,Tanzania,10/05/96,CAF-Q,2,1,1
+Democratic Republic of the Congo,Liberia,10/06/96,CAF-Q,0,0,1
+Tanzania,Democratic Republic of the Congo,01/26/97,CAF-Q,1,2,1
+Liberia,Togo,01/26/97,CAF-Q,1,2,1
+Tanzania,Liberia,02/23/97,CAF-Q,1,1,1
+Togo,Democratic Republic of the Congo,02/23/97,CAF-Q,1,1,1
+Tanzania,Togo,06/22/97,CAF-Q,1,0,1
+Liberia,Democratic Republic of the Congo,06/22/97,CAF-Q,2,1,1
+Togo,Liberia,07/13/97,CAF-Q,4,0,1
+Democratic Republic of the Congo,Tanzania,07/13/97,CAF-Q,1,1,1
+Liberia,Tanzania,07/27/97,CAF-Q,1,0,1
+Democratic Republic of the Congo,Togo,07/27/97,CAF-Q,1,0,1
+Mauritius,Malawi,10/06/96,CAF-Q,1,2,1
+Zambia,Mozambique,10/06/96,CAF-Q,1,0,1
+Malawi,Zambia,01/25/97,CAF-Q,0,2,1
+Mozambique,Mauritius,01/26/97,CAF-Q,3,0,1
+Malawi,Mozambique,02/22/97,CAF-Q,2,0,1
+Mauritius,Zambia,02/23/97,CAF-Q,0,0,1
+Malawi,Mauritius,06/21/97,CAF-Q,3,2,1
+Mozambique,Zambia,06/22/97,CAF-Q,2,2,1
+Zambia,Malawi,07/12/97,CAF-Q,3,1,1
+Mauritius,Mozambique,07/13/97,CAF-Q,1,3,1
+Mozambique,Malawi,07/27/97,CAF-Q,2,1,1
+Zambia,Mauritius,07/27/97,CAF-Q,1,0,1
+South Africa,Cameroon,01/13/96,CAF-G,3,0,1
+Egypt,Angola,01/15/96,CAF-G,2,1,0
+Cameroon,Egypt,01/18/96,CAF-G,2,1,0
+South Africa,Angola,01/20/96,CAF-G,1,0,1
+South Africa,Egypt,01/24/96,CAF-G,0,1,1
+Angola,Cameroon,01/24/96,CAF-G,3,3,0
+Zambia,Algeria,01/14/96,CAF-G,0,0,0
+Sierra Leone,Burkina Faso,01/15/96,CAF-G,2,1,0
+Algeria,Sierra Leone,01/18/96,CAF-G,2,0,0
+Zambia,Burkina Faso,01/20/96,CAF-G,5,1,0
+Algeria,Burkina Faso,01/24/96,CAF-G,2,1,0
+Zambia,Sierra Leone,01/24/96,CAF-G,4,0,0
+Gabon,Liberia,01/16/96,CAF-G,1,2,0
+Gabon,Democratic Republic of the Congo,01/19/96,CAF-G,2,0,0
+Democratic Republic of the Congo,Liberia,01/25/96,CAF-G,2,0,0
+Ghana,Ivory Coast,01/14/96,CAF-G,2,0,0
+Tunisia,Mozambique,01/16/96,CAF-G,1,1,0
+Ghana,Tunisia,01/19/96,CAF-G,2,1,0
+Ivory Coast,Mozambique,01/21/96,CAF-G,1,0,0
+Tunisia,Ivory Coast,01/25/96,CAF-G,3,1,0
+Ghana,Mozambique,01/25/96,CAF-G,2,0,0
+South Africa,Algeria,01/27/96,CAF-K,2,1,1
+Zambia,Egypt,01/27/96,CAF-K,3,1,0
+Gabon,Tunisia,01/28/96,CAF-K,1,1,0
+Ghana,Democratic Republic of the Congo,01/28/96,CAF-K,1,0,0
+South Africa,Ghana,01/31/96,CAF-K,3,0,1
+Zambia,Tunisia,01/31/96,CAF-K,2,4,0
+Ghana,Zambia,02/03/96,CAF-K,0,1,0
+South Africa,Tunisia,02/03/96,CAF-K,2,0,1
+Burkina Faso,Cameroon,02/07/98,CAF-G,0,1,1
+Algeria,Guinea,02/08/98,CAF-G,0,1,0
+Cameroon,Guinea,02/11/98,CAF-G,2,2,0
+Burkina Faso,Algeria,02/11/98,CAF-G,2,1,1
+Burkina Faso,Guinea,02/15/98,CAF-G,1,0,1
+Cameroon,Algeria,02/15/98,CAF-G,2,1,0
+Democratic Republic of the Congo,Togo,02/09/98,CAF-G,2,1,0
+Ghana,Tunisia,02/09/98,CAF-G,2,0,0
+Tunisia,Democratic Republic of the Congo,02/12/98,CAF-G,2,1,0
+Togo,Ghana,02/12/98,CAF-G,2,1,0
+Democratic Republic of the Congo,Ghana,02/16/98,CAF-G,1,0,0
+Tunisia,Togo,02/16/98,CAF-G,3,1,0
+South Africa,Angola,02/08/98,CAF-G,0,0,0
+Ivory Coast,Namibia,02/08/98,CAF-G,4,3,0
+Ivory Coast,South Africa,02/11/98,CAF-G,1,1,0
+Angola,Namibia,02/12/98,CAF-G,3,3,0
+Ivory Coast,Angola,02/16/98,CAF-G,5,2,0
+South Africa,Namibia,02/16/98,CAF-G,4,1,0
+Morocco,Zambia,02/09/98,CAF-G,1,1,0
+Egypt,Mozambique,02/10/98,CAF-G,2,0,0
+Egypt,Zambia,02/13/98,CAF-G,4,0,0
+Morocco,Mozambique,02/13/98,CAF-G,3,0,0
+Zambia,Mozambique,02/17/98,CAF-G,3,1,0
+Morocco,Egypt,02/17/98,CAF-G,1,0,0
+Cameroon,Democratic Republic of the Congo,02/20/98,CAF-K,0,1,0
+Burkina Faso,Tunisia,02/21/98,CAF-K,1,1,1
+Ivory Coast,Egypt,02/21/98,CAF-K,0,0,0
+South Africa,Morocco,02/22/98,CAF-K,2,1,0
+South Africa,Democratic Republic of the Congo,02/25/98,CAF-K,2,1,0
+Burkina Faso,Egypt,02/25/98,CAF-K,0,2,1
+Burkina Faso,Democratic Republic of the Congo,02/27/98,CAF-K,4,4,1
+South Africa,Egypt,02/27/98,CAF-K,0,2,0
+New Zealand,Australia,11/10/95,OFC-G,0,0,1
+Australia,New Zealand,11/15/95,OFC-G,3,0,1
+Solomon Islands,Tahiti,11/17/95,OFC-G,0,1,1
+Tahiti,Solomon Islands,05/11/96,OFC-G,2,1,1
+Tahiti,Australia,10/27/96,OFC-G,0,6,1
+Australia,Tahiti,11/01/96,OFC-G,5,0,1
+New Zealand,Tahiti,09/25/98,OFC-G,1,0,0
+New Zealand,Vanuatu,09/28/98,OFC-G,8,1,0
+Tahiti,Vanuatu,09/30/98,OFC-G,5,1,0
+Australia,Fiji,09/25/98,OFC-G,3,1,1
+Australia,Cook Islands,09/28/98,OFC-G,16,0,1
+Fiji,Cook Islands,09/30/98,OFC-G,3,0,0
+New Zealand,Fiji,10/02/98,OFC-K,1,0,0
+Australia,Tahiti,10/02/98,OFC-K,4,1,1
+Fiji,Tahiti,10/04/98,OFC-K,4,2,0
+Australia,New Zealand,10/04/98,OFC-K,0,1,1

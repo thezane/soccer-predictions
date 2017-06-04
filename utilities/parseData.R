@@ -28,7 +28,7 @@ parseData <- function(filename) {
       data[j, "HomeTeam"] <- teams[1]
       data[j, "AwayTeam"] <- teams[2]
       data[j, "Date"] <- date
-      data[j, "Contest"] <- "COC-G"
+      data[j, "Contest"] <- "OFC-G"
       data[j, "HomeGoals"] <- goals[1]
       data[j, "AwayGoals"] <- goals[2]
       data[j, "HomeAdvantage"] <- 0
@@ -84,6 +84,7 @@ constructTeamHash <- function() {
   h["Bosnia-H."] <- "Bosnia-Herzegovina"
   h["Bosnia-Hercegovina"] <- "Bosnia-Herzegovina"
   h["Central Afr. Rep."] <- "Central African Republic"
+  h["China PR"] <- "China"
   h["Chinese Taipei"] <- "Taiwan"
   h["Congo"] <- "Republic of the Congo"
   h["Congo-Brazzaville"] <- "Republic of the Congo"
