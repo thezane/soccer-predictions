@@ -4,12 +4,12 @@ newRatingsOptions <- function(fTree) {
 
   rOptions <- list(
     # Goals layer
-    s=1,
-    m=0,
+    s=0.5,
+    m=1,
   
     # ODM layer
-    b=0.3,
-    c=0.3,
+    b=0.5,
+    c=0.5,
 
     # Lin layer
     k=0.16,
@@ -28,7 +28,7 @@ newRatingsOptions <- function(fTree) {
     sLBd=-Inf,
     mLBd=-Inf,
     bLBd=0.01,
-    cLBd=0.01,
+    cLBd=0,
     kLBd=0,
     meanGoalsLBd=0.01,
     strBetaLBd=0.01,
