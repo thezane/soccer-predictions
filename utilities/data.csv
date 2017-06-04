@@ -1,17 +1,14 @@
-"HomeTeam","AwayTeam","Date","Contest","HomeGoals","AwayGoals","HomeAdvantage"
-"New Zealand","Australia","11/10/95","OFC-G",0,0,0
-"Australia","New Zealand","11/15/95","OFC-G",3,0,0
-"Solomon Islands","Tahiti","11/17/95","OFC-G",0,1,0
-"Tahiti","Solomon Islands","05/11/96","OFC-G",2,1,0
-"Tahiti","Australia","10/27/96","OFC-G",0,6,0
-"Australia","Tahiti","11/01/96","OFC-G",5,0,0
-"New Zealand","Tahiti","09/25/98","OFC-G",1,0,0
-"New Zealand","Vanuatu","09/28/98","OFC-G",8,1,0
-"Tahiti","Vanuatu","09/30/98","OFC-G",5,1,0
-"Australia","Fiji","09/25/98","OFC-G",3,1,0
-"Australia","Cook Islands","09/28/98","OFC-G",16,0,0
-"Fiji","Cook Islands","09/30/98","OFC-G",3,0,0
-"New Zealand","Fiji","10/02/98","OFC-G",1,0,0
-"Australia","Tahiti","10/02/98","OFC-G",4,1,0
-"Fiji","Tahiti","10/04/98","OFC-G",4,2,0
-"New Zealand","Australia","10/04/98","OFC-G",1,0,0
+HomeTeam,AwayTeam,Date,Contest,HomeGoals,AwayGoals,HomeAdvantage
+Mexico,Saint Vincent and the Grenadines,01/11/96,CON-G,5,0,0
+Mexico,Guatemala,01/14/96,CON-G,1,0,0
+Saint Vincent and the Grenadines,Guatemala,01/16/96,CON-G,0,3,0
+Canada,Honduras,01/10/96,CON-G,3,1,0
+Brazil,Canada,01/12/96,CON-G,4,1,0
+Brazil,Honduras,01/14/96,CON-G,5,0,0
+Trinidad and Tobago,El Salvador,01/10/96,CON-G,2,3,0
+United States,Trinidad and Tobago,01/13/96,CON-G,3,2,1
+United States,El Salvador,01/16/96,CON-G,2,0,1
+United States,Brazil,01/18/96,CON-K,0,1,1
+Mexico,Guatemala,01/19/96,CON-K,1,0,0
+United States,Guatemala,01/21/96,CON-K,3,0,1
+Brazil,Mexico,01/21/96,CON-K,0,2,0
