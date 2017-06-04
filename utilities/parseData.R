@@ -15,7 +15,6 @@ parseData <- function(filename) {
 
   while (i <= n) {
     line <- lines[i]
-    #contest <- getContest(line)
     dateTry <- getDateFormatted(line)
     
     if (!is.na(dateTry)) {
@@ -25,15 +24,11 @@ parseData <- function(filename) {
     goals <- getGoals(line)
     teams <- getTeams(line, h)
 
-    #if (!is.na(contest)) {
-    #  currentContest <- contest
-    #}
-
     if (!is.na(date) && !is.na(goals) && !is.na(teams)) {
       data[j, "HomeTeam"] <- teams[1]
       data[j, "AwayTeam"] <- teams[2]
       data[j, "Date"] <- date
-      data[j, "Contest"] <- "AFC-G"
+      data[j, "Contest"] <- "COC-G"
       data[j, "HomeGoals"] <- goals[1]
       data[j, "AwayGoals"] <- goals[2]
       data[j, "HomeAdvantage"] <- 0
@@ -48,22 +43,6 @@ parseData <- function(filename) {
   h
 }
 
-getContest <- function(line) {
-  fs <- c("Africa", "Asia", "Europe", "North America",
-      "Oceania", "South America")
-
-  if (line == "North and Central America") {
-    line = "North America"
-  }
-
-  if (line %in% fs) {
-    paste("WOC-Q-", line, sep="")
-  }
-  else {
-    NA
-  }
-}
-
 getDateFormatted <- function(line) {
   pattern <- "[0-9]+ [A-Za-z]+ [0-9]+"
   match <- str_match(line, pattern)
@@ -73,7 +52,7 @@ getDateFormatted <- function(line) {
 }
 
 getGoals <- function(line) {
-  pattern <- "^[A-Za-z. ]+[a-z]  ([0-9]+)-([0-9]+)  [A-Za-z. ]+[a-z]$"
+  pattern <- "^[A-Z][A-Za-z-. ]+[a-z] +([0-9]+)-([0-9]+) +[A-Z][A-Za-z-. ]+[a-z]$"
   matches <- str_match(line, pattern)
 
   if (!is.na(matches)) {
@@ -85,7 +64,7 @@ getGoals <- function(line) {
 }
 
 getTeams <- function(line, h) {
-  pattern <- "^([A-Za-z. ]+[a-z])  [0-9]+-[0-9]+  ([A-Za-z. ]+[a-z])$"
+  pattern <- "^([A-Z][A-Za-z-. ]+[a-z]) +[0-9]+-[0-9]+ +([A-Z][A-Za-z-. ]+[a-z])$"
   matches <- str_match(line, pattern)
 
   if (!is.na(matches)) {
@@ -105,6 +84,7 @@ constructTeamHash <- function() {
   h["Bosnia-H."] <- "Bosnia-Herzegovina"
   h["Bosnia-Hercegovina"] <- "Bosnia-Herzegovina"
   h["Central Afr. Rep."] <- "Central African Republic"
+  h["Chinese Taipei"] <- "Taiwan"
   h["Congo"] <- "Republic of the Congo"
   h["Congo-Brazzaville"] <- "Republic of the Congo"
   h["Congo-Kinshasa"] <- "Democratic Republic of the Congo"

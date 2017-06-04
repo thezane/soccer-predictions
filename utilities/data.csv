@@ -1,27 +1,17 @@
-HomeTeam,AwayTeam,Date,Contest,HomeGoals,AwayGoals,HomeAdvantage
-Iraq,Thailand,10/12/00,AFC-G,2,0,0
-Lebanon,Iran,10/12/00,AFC-G,0,4,1
-Iran,Thailand,10/15/00,AFC-G,1,1,0
-Lebanon,Iraq,10/15/00,AFC-G,2,2,1
-Iran,Iraq,10/18/00,AFC-G,1,0,0
-Lebanon,Thailand,10/18/00,AFC-G,1,1,1
-South Korea,China,10/13/00,AFC-G,2,2,0
-Kuwait,Indonesia,10/13/00,AFC-G,0,0,0
-China,Indonesia,10/16/00,AFC-G,4,0,0
-South Korea,Kuwait,10/16/00,AFC-G,0,1,0
-China,Kuwait,10/19/00,AFC-G,0,0,0
-South Korea,Indonesia,10/19/00,AFC-G,3,0,0
-Saudi Arabia,Japan,10/14/00,AFC-G,1,4,0
-Qatar,Uzbekistan,10/14/00,AFC-G,1,1,0
-Japan,Uzbekistan,10/17/00,AFC-G,8,1,0
-Saudi Arabia,Qatar,10/17/00,AFC-G,0,0,0
-Saudi Arabia,Uzbekistan,10/20/00,AFC-G,5,0,0
-Japan,Qatar,10/20/00,AFC-G,1,1,0
-Iran,South Korea,10/23/00,AFC-K,1,2,0
-China,Qatar,10/23/00,AFC-K,3,1,0
-Japan,Iraq,10/24/00,AFC-K,4,1,0
-Kuwait,Saudi Arabia,10/24/00,AFC-K,2,3,0
-South Korea,Saudi Arabia,10/26/00,AFC-K,1,2,0
-China,Japan,10/26/00,AFC-K,2,3,0
-South Korea,China,10/29/00,AFC-K,1,0,0
-Japan,Saudi Arabia,10/29/00,AFC-K,1,0,0
+"HomeTeam","AwayTeam","Date","Contest","HomeGoals","AwayGoals","HomeAdvantage"
+"Saudi Arabia","Brazil","12/12/97","COC-G",0,3,0
+"Mexico","Australia","12/12/97","COC-G",1,3,0
+"Saudi Arabia","Mexico","12/14/97","COC-G",0,5,0
+"Australia","Brazil","12/14/97","COC-G",0,0,0
+"Saudi Arabia","Australia","12/16/97","COC-G",1,0,0
+"Brazil","Mexico","12/16/97","COC-G",3,2,0
+"United Arab Emirates","Uruguay","12/13/97","COC-G",0,2,0
+"South Africa","Czech Republic","12/13/97","COC-G",2,2,0
+"United Arab Emirates","South Africa","12/15/97","COC-G",1,0,0
+"Czech Republic","Uruguay","12/15/97","COC-G",1,2,0
+"United Arab Emirates","Czech Republic","12/17/97","COC-G",1,6,0
+"Uruguay","South Africa","12/17/97","COC-G",4,3,0
+"Brazil","Czech Republic","12/19/97","COC-G",2,0,0
+"Uruguay","Australia","12/19/97","COC-G",0,1,0
+"Czech Republic","Uruguay","12/21/97","COC-G",1,0,0
+"Brazil","Australia","12/21/97","COC-G",6,0,0
