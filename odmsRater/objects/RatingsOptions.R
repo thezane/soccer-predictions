@@ -9,8 +9,8 @@ newRatingsOptions <- function(fTree) {
     m=0.5,
   
     # ODM layer
-    b=0.5,
-    c=0.5,
+    b=2,
+    c=0.1,
 
     # Lin layer
     k=0.16,
