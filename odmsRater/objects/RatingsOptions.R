@@ -4,7 +4,7 @@ newRatingsOptions <- function(fTree) {
 
   rOptions <- list(
     # Goals layer
-    s=0.5,
+    s=1,
     m=1,
   
     # ODM layer

@@ -1,3 +1,3 @@
 computeLayerGoals <- function(A, s, m) {
-  logistic(A, s, m)
+  Gompertz(A, 1, s, m)
 }
