@@ -1,17 +1,17 @@
-HomeTeam,AwayTeam,Date,Contest,HomeGoals,AwayGoals,HomeAdvantage
-New Zealand,Australia,11/10/95,OFC-G,0,0,1
-Australia,New Zealand,11/15/95,OFC-G,3,0,1
-Solomon Islands,Tahiti,11/17/95,OFC-G,0,1,1
-Tahiti,Solomon Islands,05/11/96,OFC-G,2,1,1
-Tahiti,Australia,10/27/96,OFC-G,0,6,1
-Australia,Tahiti,11/01/96,OFC-G,5,0,1
-New Zealand,Tahiti,09/25/98,OFC-G,1,0,0
-New Zealand,Vanuatu,09/28/98,OFC-G,8,1,0
-Tahiti,Vanuatu,09/30/98,OFC-G,5,1,0
-Australia,Fiji,09/25/98,OFC-G,3,1,1
-Australia,Cook Islands,09/28/98,OFC-G,16,0,1
-Fiji,Cook Islands,09/30/98,OFC-G,3,0,0
-New Zealand,Fiji,10/02/98,OFC-K,1,0,0
-Australia,Tahiti,10/02/98,OFC-K,4,1,1
-Fiji,Tahiti,10/04/98,OFC-K,4,2,0
-Australia,New Zealand,10/04/98,OFC-K,0,1,1
+"HomeTeam","AwayTeam","Date","Contest","HomeGoals","AwayGoals","HomeAdvantage"
+"New Zealand","Australia","11/10/95","OFC-G",0,0,0
+"Australia","New Zealand","11/15/95","OFC-G",3,0,0
+"Solomon Islands","Tahiti","11/17/95","OFC-G",0,1,0
+"Tahiti","Solomon Islands","05/11/96","OFC-G",2,1,0
+"Tahiti","Australia","10/27/96","OFC-G",0,6,0
+"Australia","Tahiti","11/01/96","OFC-G",5,0,0
+"New Zealand","Tahiti","09/25/98","OFC-G",1,0,0
+"New Zealand","Vanuatu","09/28/98","OFC-G",8,1,0
+"Tahiti","Vanuatu","09/30/98","OFC-G",5,1,0
+"Australia","Fiji","09/25/98","OFC-G",3,1,0
+"Australia","Cook Islands","09/28/98","OFC-G",16,0,0
+"Fiji","Cook Islands","09/30/98","OFC-G",3,0,0
+"New Zealand","Fiji","10/02/98","OFC-G",1,0,0
+"Australia","Tahiti","10/02/98","OFC-G",4,1,0
+"Fiji","Tahiti","10/04/98","OFC-G",4,2,0
+"New Zealand","Australia","10/04/98","OFC-G",1,0,0
