@@ -1,3 +1,3 @@
-computeLayerGoals <- function(A, s, m) {
-  Gompertz(A, 1, s, m)
+computeLayerGoals <- function(A, a, s, m) {
+  Gompertz(A, a, s, m)
 }
