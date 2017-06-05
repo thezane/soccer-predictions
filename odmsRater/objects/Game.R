@@ -36,7 +36,8 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     isFriendly=contest=="Friendlies",
     isQualifier=grepl("-Q", contest),
     isPlayOff=grepl("-PlayOff", contest),
-    isWoc=grepl("WOC", contest),
+    isWocG=grepl("WOC-G", contest),
+    isWocK=grepl("WOC-K", contest),
     isRelevant=FALSE,
     weight=0
   )
@@ -44,7 +45,10 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   game$isRelevant <- ((!game$isFriendly && !game$isQualifier) ||
       game$isPlayOff)
       
-  if (game$isWoc) {
+  if (game$isWocK) {
+    game$weight = 1.1
+  }
+  else if (game$isWocG) {
     game$weight = 1
   }
   else if (!game$isFriendly && !game$isQualifier) {
