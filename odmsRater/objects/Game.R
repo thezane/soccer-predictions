@@ -38,7 +38,6 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     isPlayOff=grepl("-PlayOff", contest),
     isWoc=grepl("WOC", contest),
     isRelevant=FALSE,
-    isYouth=T[[i, "Youth"]],
     weight=0
   )
   
@@ -53,10 +52,6 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   }
   else {
     game$weight = 0.8
-  }
-
-  if (game$isYouth) {
-    game$weight <- 0.5 * game$weight
   }
       
   class(game) <- "Game"

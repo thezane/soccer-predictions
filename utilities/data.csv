@@ -1,14 +1,27 @@
 HomeTeam,AwayTeam,Date,Contest,HomeGoals,AwayGoals,HomeAdvantage
-Mexico,Saint Vincent and the Grenadines,01/11/96,CON-G,5,0,0
-Mexico,Guatemala,01/14/96,CON-G,1,0,0
-Saint Vincent and the Grenadines,Guatemala,01/16/96,CON-G,0,3,0
-Canada,Honduras,01/10/96,CON-G,3,1,0
-Brazil,Canada,01/12/96,CON-G,4,1,0
-Brazil,Honduras,01/14/96,CON-G,5,0,0
-Trinidad and Tobago,El Salvador,01/10/96,CON-G,2,3,0
-United States,Trinidad and Tobago,01/13/96,CON-G,3,2,1
-United States,El Salvador,01/16/96,CON-G,2,0,1
-United States,Brazil,01/18/96,CON-K,0,1,1
-Mexico,Guatemala,01/19/96,CON-K,1,0,0
-United States,Guatemala,01/21/96,CON-K,3,0,1
-Brazil,Mexico,01/21/96,CON-K,0,2,0
+Uruguay,Venezuela,07/05/95,COP-G,4,1,1
+Paraguay,Mexico,07/06/95,COP-G,2,1,0
+Uruguay,Paraguay,07/09/95,COP-G,1,0,1
+Mexico,Venezuela,07/09/95,COP-G,3,1,0
+Paraguay,Venezuela,07/12/95,COP-G,3,2,0
+Uruguay,Mexico,07/13/95,COP-G,1,1,1
+Colombia,Peru,07/07/95,COP-G,1,1,0
+Brazil,Ecuador,07/07/95,COP-G,1,0,0
+Colombia,Ecuador,07/10/95,COP-G,1,0,0
+Brazil,Peru,07/10/95,COP-G,2,0,0
+Ecuador,Peru,07/13/95,COP-G,2,1,0
+Brazil,Colombia,07/13/95,COP-G,3,0,0
+United States,Chile,07/08/95,COP-G,2,1,0
+Argentina,Bolivia,07/08/95,COP-G,2,1,0
+Bolivia,United States,07/11/95,COP-G,1,0,0
+Argentina,Chile,07/11/95,COP-G,4,0,0
+Bolivia,Chile,07/14/95,COP-G,2,2,0
+United States,Argentina,07/14/95,COP-G,3,0,0
+Colombia,Paraguay,07/16/95,COP-K,1,1,0
+Uruguay,Bolivia,07/16/95,COP-K,2,1,1
+United States,Mexico,07/17/95,COP-K,0,0,0
+Brazil,Argentina,07/17/95,COP-K,2,2,0
+Uruguay,Colombia,07/19/95,COP-K,2,0,1
+Brazil,United States,07/20/95,COP-K,1,0,0
+Colombia,United States,07/22/95,COP-K,4,1,0
+Uruguay,Brazil,07/23/95,COP-K,1,1,1
