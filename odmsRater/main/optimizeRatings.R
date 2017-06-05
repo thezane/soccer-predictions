@@ -28,7 +28,6 @@ trainRater <- function(rOptions, rOutput) {
   cores <- min(detectCores() - 1, n)
   cluster <- makeCluster(cores)
   clusterExport(cluster, ls(envir=.GlobalEnv), envir=.GlobalEnv)
-  clusterEvalQ(cluster, library("sigmoid"))
   gr <- function(x, n.=n, fn.=fn, e=1e-06, cluster.=cluster) {
       computeGradientPar(x, n, fn, e, cluster)
   }
