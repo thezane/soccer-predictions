@@ -54,8 +54,11 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   else if (!game$isFriendly && !game$isQualifier) {
     game$weight = 0.9
   }
-  else {
+  else if (!game$isFriendly) {
     game$weight = 0.8
+  }
+  else {
+    game$weight = 0.2
   }
       
   class(game) <- "Game"
