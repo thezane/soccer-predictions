@@ -1,27 +1,116 @@
 HomeTeam,AwayTeam,Date,Contest,HomeGoals,AwayGoals,HomeAdvantage
-Uruguay,Venezuela,07/05/95,COP-G,4,1,1
-Paraguay,Mexico,07/06/95,COP-G,2,1,0
-Uruguay,Paraguay,07/09/95,COP-G,1,0,1
-Mexico,Venezuela,07/09/95,COP-G,3,1,0
-Paraguay,Venezuela,07/12/95,COP-G,3,2,0
-Uruguay,Mexico,07/13/95,COP-G,1,1,1
-Colombia,Peru,07/07/95,COP-G,1,1,0
-Brazil,Ecuador,07/07/95,COP-G,1,0,0
-Colombia,Ecuador,07/10/95,COP-G,1,0,0
-Brazil,Peru,07/10/95,COP-G,2,0,0
-Ecuador,Peru,07/13/95,COP-G,2,1,0
-Brazil,Colombia,07/13/95,COP-G,3,0,0
-United States,Chile,07/08/95,COP-G,2,1,0
-Argentina,Bolivia,07/08/95,COP-G,2,1,0
-Bolivia,United States,07/11/95,COP-G,1,0,0
-Argentina,Chile,07/11/95,COP-G,4,0,0
-Bolivia,Chile,07/14/95,COP-G,2,2,0
-United States,Argentina,07/14/95,COP-G,3,0,0
-Colombia,Paraguay,07/16/95,COP-K,1,1,0
-Uruguay,Bolivia,07/16/95,COP-K,2,1,1
-United States,Mexico,07/17/95,COP-K,0,0,0
-Brazil,Argentina,07/17/95,COP-K,2,2,0
-Uruguay,Colombia,07/19/95,COP-K,2,0,1
-Brazil,United States,07/20/95,COP-K,1,0,0
-Colombia,United States,07/22/95,COP-K,4,1,0
-Uruguay,Brazil,07/23/95,COP-K,1,1,1
+Jordan,Yemen,05/22/93,WOC-Q-Asia,1,1,1
+Pakistan,China,05/22/93,WOC-Q-Asia,0,5,1
+Jordan,Iraq,05/24/93,WOC-Q-Asia,1,1,1
+Yemen,Pakistan,05/24/93,WOC-Q-Asia,5,1,1
+Jordan,China,05/26/93,WOC-Q-Asia,0,3,1
+Yemen,Iraq,05/26/93,WOC-Q-Asia,1,6,1
+Pakistan,Iraq,05/28/93,WOC-Q-Asia,0,8,1
+Yemen,China,05/28/93,WOC-Q-Asia,1,0,1
+Jordan,Pakistan,05/30/93,WOC-Q-Asia,3,1,1
+Iraq,China,05/30/93,WOC-Q-Asia,1,0,1
+Yemen,Jordan,06/12/93,WOC-Q-Asia,1,1,1
+Iraq,Jordan,06/14/93,WOC-Q-Asia,4,0,1
+Pakistan,Yemen,06/14/93,WOC-Q-Asia,0,3,1
+Iraq,Yemen,06/16/93,WOC-Q-Asia,3,0,1
+Iraq,Pakistan,06/18/93,WOC-Q-Asia,4,0,1
+Pakistan,Jordan,06/20/93,WOC-Q-Asia,0,5,1
+Iran,Oman,06/23/93,WOC-Q-Asia,0,0,1
+Taiwan,Syria,06/23/93,WOC-Q-Asia,0,2,1
+Oman,Syria,06/25/93,WOC-Q-Asia,0,0,1
+Iran,Taiwan,06/25/93,WOC-Q-Asia,6,0,1
+Oman,Taiwan,06/27/93,WOC-Q-Asia,2,1,1
+Iran,Syria,06/27/93,WOC-Q-Asia,1,1,1
+Oman,Iran,07/02/93,WOC-Q-Asia,0,1,1
+Syria,Taiwan,07/02/93,WOC-Q-Asia,8,1,1
+Syria,Oman,07/04/93,WOC-Q-Asia,2,1,1
+Taiwan,Iran,07/04/93,WOC-Q-Asia,0,6,1
+Taiwan,Oman,07/07/93,WOC-Q-Asia,1,7,1
+Syria,Iran,07/07/93,WOC-Q-Asia,1,1,1
+Qatar,Indonesia,04/09/93,WOC-Q-Asia,3,1,1
+North Korea,Vietnam,04/09/93,WOC-Q-Asia,3,0,1
+North Korea,Singapore,04/11/93,WOC-Q-Asia,2,1,1
+Qatar,Vietnam,04/11/93,WOC-Q-Asia,4,0,1
+North Korea,Indonesia,04/13/93,WOC-Q-Asia,4,0,1
+Vietnam,Singapore,04/13/93,WOC-Q-Asia,2,3,1
+Qatar,Singapore,04/16/93,WOC-Q-Asia,4,1,1
+Vietnam,Indonesia,04/16/93,WOC-Q-Asia,1,0,1
+Indonesia,Singapore,04/18/93,WOC-Q-Asia,0,2,1
+Qatar,North Korea,04/18/93,WOC-Q-Asia,1,2,1
+Indonesia,Qatar,04/24/93,WOC-Q-Asia,1,4,1
+Vietnam,North Korea,04/24/93,WOC-Q-Asia,0,1,1
+Singapore,North Korea,04/26/93,WOC-Q-Asia,1,3,1
+Vietnam,Qatar,04/26/93,WOC-Q-Asia,0,4,1
+Indonesia,North Korea,04/28/93,WOC-Q-Asia,1,2,1
+Singapore,Vietnam,04/28/93,WOC-Q-Asia,1,0,1
+Singapore,Qatar,04/30/93,WOC-Q-Asia,1,0,1
+Indonesia,Vietnam,04/30/93,WOC-Q-Asia,2,1,1
+Singapore,Indonesia,05/02/93,WOC-Q-Asia,2,1,1
+North Korea,Qatar,05/02/93,WOC-Q-Asia,2,2,1
+Lebanon,India,05/07/93,WOC-Q-Asia,2,2,1
+Hong Kong,Bahrain,05/07/93,WOC-Q-Asia,2,1,1
+Bahrain,South Korea,05/09/93,WOC-Q-Asia,0,0,1
+Lebanon,Hong Kong,05/09/93,WOC-Q-Asia,2,2,1
+India,Hong Kong,05/11/93,WOC-Q-Asia,1,2,1
+Lebanon,South Korea,05/11/93,WOC-Q-Asia,0,1,1
+Lebanon,Bahrain,05/13/93,WOC-Q-Asia,0,0,1
+India,South Korea,05/13/93,WOC-Q-Asia,0,3,1
+Hong Kong,South Korea,05/15/93,WOC-Q-Asia,0,3,1
+Bahrain,India,05/15/93,WOC-Q-Asia,2,1,1
+South Korea,Hong Kong,06/05/93,WOC-Q-Asia,4,1,1
+Bahrain,Lebanon,06/05/93,WOC-Q-Asia,0,0,1
+India,Bahrain,06/07/93,WOC-Q-Asia,0,3,1
+South Korea,Lebanon,06/07/93,WOC-Q-Asia,2,0,1
+Hong Kong,Lebanon,06/09/93,WOC-Q-Asia,1,2,1
+South Korea,India,06/09/93,WOC-Q-Asia,7,0,1
+India,Lebanon,06/11/93,WOC-Q-Asia,1,2,1
+Bahrain,Hong Kong,06/11/93,WOC-Q-Asia,3,0,1
+South Korea,Bahrain,06/13/93,WOC-Q-Asia,3,0,1
+Hong Kong,India,06/13/93,WOC-Q-Asia,1,3,1
+Macau,Saudi Arabia,05/01/93,WOC-Q-Asia,0,6,1
+Malaysia,Kuwait,05/01/93,WOC-Q-Asia,1,1,1
+Macau,Kuwait,05/03/93,WOC-Q-Asia,1,10,1
+Malaysia,Saudi Arabia,05/03/93,WOC-Q-Asia,1,1,1
+Kuwait,Saudi Arabia,05/05/93,WOC-Q-Asia,0,0,1
+Malaysia,Macau,05/05/93,WOC-Q-Asia,9,0,1
+Kuwait,Malaysia,05/14/93,WOC-Q-Asia,2,0,1
+Saudi Arabia,Macau,05/14/93,WOC-Q-Asia,8,0,1
+Kuwait,Macau,05/16/93,WOC-Q-Asia,8,0,1
+Saudi Arabia,Malaysia,05/16/93,WOC-Q-Asia,3,0,1
+Macau,Malaysia,05/18/93,WOC-Q-Asia,0,5,1
+Saudi Arabia,Kuwait,05/18/93,WOC-Q-Asia,2,0,1
+Japan,Thailand,04/08/93,WOC-Q-Asia,1,0,1
+Sri Lanka,United Arab Emirates,04/08/93,WOC-Q-Asia,0,4,1
+Japan,Bangladesh,04/11/93,WOC-Q-Asia,8,0,1
+Thailand,Sri Lanka,04/11/93,WOC-Q-Asia,1,0,1
+Sri Lanka,Bangladesh,04/13/93,WOC-Q-Asia,0,1,1
+Thailand,United Arab Emirates,04/13/93,WOC-Q-Asia,0,1,1
+Japan,Sri Lanka,04/15/93,WOC-Q-Asia,5,0,1
+Bangladesh,United Arab Emirates,04/15/93,WOC-Q-Asia,0,1,1
+Japan,United Arab Emirates,04/18/93,WOC-Q-Asia,2,0,1
+Thailand,Bangladesh,04/18/93,WOC-Q-Asia,4,1,1
+Thailand,Japan,04/28/93,WOC-Q-Asia,0,1,1
+United Arab Emirates,Sri Lanka,04/28/93,WOC-Q-Asia,3,0,1
+Bangladesh,Japan,04/30/93,WOC-Q-Asia,1,4,1
+United Arab Emirates,Thailand,04/30/93,WOC-Q-Asia,2,1,1
+United Arab Emirates,Bangladesh,05/03/93,WOC-Q-Asia,7,0,1
+Sri Lanka,Thailand,05/03/93,WOC-Q-Asia,0,3,1
+Bangladesh,Thailand,05/05/93,WOC-Q-Asia,1,4,1
+Sri Lanka,Japan,05/05/93,WOC-Q-Asia,0,6,1
+Bangladesh,Sri Lanka,05/07/93,WOC-Q-Asia,3,0,1
+United Arab Emirates,Japan,05/07/93,WOC-Q-Asia,1,1,1
+North Korea,Iraq,05/07/93,WOC-Q-Asia,3,2,1
+Saudi Arabia,Japan,05/07/93,WOC-Q-Asia,0,0,1
+Iran,South Korea,05/07/93,WOC-Q-Asia,0,3,1
+North Korea,Saudi Arabia,05/07/93,WOC-Q-Asia,1,2,1
+Japan,Iran,05/07/93,WOC-Q-Asia,1,2,1
+Iraq,South Korea,05/07/93,WOC-Q-Asia,2,2,1
+North Korea,Japan,05/07/93,WOC-Q-Asia,0,3,1
+Iraq,Iran,05/07/93,WOC-Q-Asia,2,1,1
+South Korea,Saudi Arabia,05/07/93,WOC-Q-Asia,1,1,1
+Iraq,Saudi Arabia,05/07/93,WOC-Q-Asia,1,1,1
+Japan,South Korea,05/07/93,WOC-Q-Asia,1,0,1
+Iran,North Korea,05/07/93,WOC-Q-Asia,2,1,1
+South Korea,North Korea,05/07/93,WOC-Q-Asia,3,0,1
+Saudi Arabia,Iran,05/07/93,WOC-Q-Asia,4,3,1
+Iraq,Japan,05/07/93,WOC-Q-Asia,2,2,1
