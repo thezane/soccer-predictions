@@ -4,15 +4,15 @@ newRatingsOptions <- function(fTree) {
 
   rOptions <- list(
     # ODM layer
-    b=0.3,
-    c=0.3,
+    b=0.4,
+    c=0.4,
 
     # Lin layer
     k=0.16,
 
     # Poisson layer
     meanGoals=1,
-    strBeta=2,
+    strBeta=1.6,
     hA=0.3,
     corrBeta=-1,
 
@@ -84,7 +84,6 @@ getModelUBd <- function(rOptions) {
 
 getModelSlopes <- function(rOptions) {
   c(rOptions$b,
-    rOptions$k,
     rOptions$strBeta, rOptions$hA)
 }
 
