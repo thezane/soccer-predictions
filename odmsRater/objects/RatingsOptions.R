@@ -8,12 +8,12 @@ newRatingsOptions <- function(fTree) {
     c=0.4,
 
     # Lin layer
-    k=0.16,
+    k=0.15,
 
     # Poisson layer
     meanGoals=1,
     strBeta=1.6,
-    hA=0.3,
+    hA=0.4,
     corrBeta=-1,
 
     # Default federation strengths for Africa, Asia, Europe,
