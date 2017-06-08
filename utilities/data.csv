@@ -1,17 +1,42 @@
 HomeTeam,AwayTeam,Date,Contest,HomeGoals,AwayGoals,HomeAdvantage
-Honduras,Panama,07/10/93,CON-G,5,1,0
-United States,Jamaica,07/10/93,CON-G,1,0,1
-Jamaica,Honduras,07/14/93,CON-G,3,1,0
-United States,Panama,07/14/93,CON-G,2,1,1
-Jamaica,Panama,07/17/93,CON-G,1,1,0
-United States,Honduras,07/17/93,CON-G,1,0,1
-Canada,Costa Rica,07/11/93,CON-G,1,1,0
-Mexico,Martinique,07/11/93,CON-G,9,0,1
-Canada,Martinique,07/15/93,CON-G,2,2,0
-Mexico,Costa Rica,07/15/93,CON-G,1,1,1
-Costa Rica,Martinique,07/18/93,CON-G,3,1,0
-Mexico,Canada,07/18/93,CON-G,8,0,1
-United States,Costa Rica,07/22/93,CON-K,1,0,1
-Mexico,Jamaica,07/22/93,CON-K,6,1,1
-Costa Rica,Jamaica,07/25/93,CON-K,1,1,0
-Mexico,United States,07/25/93,CON-K,4,0,1
+Grenada,Saint Martin,07/06/02,CON-Q,8,3,1
+Saint Martin,Grenada,08/04/02,CON-Q,1,7,1
+Guadeloupe,Puerto Rico,07/07/02,CON-Q,4,0,1
+Puerto Rico,Guadeloupe,07/21/02,CON-Q,0,2,1
+British Virgin Islands,Saint Lucia,07/14/02,CON-Q,1,3,1
+Saint Lucia,British Virgin Islands,07/28/02,CON-Q,8,1,1
+Guyana,Netherlands Antilles,07/28/02,CON-Q,2,1,1
+Aruba,Suriname,07/28/02,CON-Q,0,2,1
+Suriname,Aruba,08/11/02,CON-Q,6,0,1
+Saint Lucia,Saint Kitts and Nevis,11/13/02,CON-Q,1,2,1
+Saint Kitts and Nevis,Trinidad and Tobago,11/15/02,CON-Q,0,2,1
+Trinidad and Tobago,Saint Lucia,11/17/02,CON-Q,0,1,1
+Dominican Republic,Martinique,11/27/02,CON-Q,0,4,1
+Cayman Islands,Cuba,11/27/02,CON-Q,0,5,1
+Dominican Republic,Cayman Islands,11/29/02,CON-Q,0,1,1
+Cuba,Martinique,11/29/02,CON-Q,2,1,1
+Cuba,Dominican Republic,12/01/02,CON-Q,2,1,1
+Cayman Islands,Martinique,12/01/02,CON-Q,0,3,1
+Jamaica,Barbados,11/09/02,CON-Q,1,1,1
+Guadeloupe,Grenada,11/09/02,CON-Q,5,4,1
+Grenada,Barbados,11/11/02,CON-Q,0,2,1
+Guadeloupe,Barbados,11/13/02,CON-Q,1,0,1
+Jamaica,Grenada,11/13/02,CON-Q,4,1,1
+Haiti,Antigua and Barbuda,11/18/02,CON-Q,1,0,1
+Netherlands Antilles,Antigua and Barbuda,11/20/02,CON-Q,1,1,1
+Haiti,Netherlands Antilles,11/22/02,CON-Q,3,0,1
+Haiti,Martinique,03/26/03,CON-Q,2,1,1
+Jamaica,Saint Lucia,03/26/03,CON-Q,5,0,1
+Haiti,Saint Lucia,03/28/03,CON-Q,1,2,1
+Jamaica,Martinique,03/28/03,CON-Q,2,2,1
+Saint Lucia,Martinique,03/30/03,CON-Q,4,5,1
+Haiti,Jamaica,03/30/03,CON-Q,0,3,1
+Guadeloupe,Cuba,03/26/03,CON-Q,2,3,1
+Trinidad and Tobago,Antigua and Barbuda,03/26/03,CON-Q,2,0,1
+Antigua and Barbuda,Cuba,03/28/03,CON-Q,0,2,1
+Guadeloupe,Trinidad and Tobago,03/28/03,CON-Q,0,1,1
+Guadeloupe,Antigua and Barbuda,03/30/03,CON-Q,2,0,1
+Trinidad and Tobago,Cuba,03/30/03,CON-Q,1,3,1
+Martinique,Trinidad and Tobago,04/23/03,CON-Q,3,2,1
+Trinidad and Tobago,Honduras,04/25/03,CON-Q,0,2,1
+Honduras,Martinique,04/27/03,CON-Q,4,2,1
