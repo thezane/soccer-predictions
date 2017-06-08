@@ -689,6 +689,8 @@ Saudi Arabia,China,01/10/15,AFC-G,0,1,0
 South Korea,Oman,01/10/15,AFC-G,1,0,0
 Uzbekistan,North Korea,01/10/15,AFC-G,1,0,0
 Australia,Kuwait,01/09/15,AFC-G,4,1,1
+South Korea,Saudi Arabia,01/04/15,Friendlies,2,0,0
+Iran,South Korea,11/18/14,Friendlies,1,0,1
 Japan,Australia,11/18/14,Friendlies,2,1,1
 Azerbaijan,Norway,11/16/14,EUC-Q,0,1,1
 Belgium,Wales,11/16/14,EUC-Q,0,0,1
@@ -716,6 +718,7 @@ Portugal,Armenia,11/14/14,EUC-Q,1,0,1
 Romania,Northern Ireland,11/14/14,EUC-Q,2,0,1
 Scotland,Republic of Ireland,11/14/14,EUC-Q,1,0,1
 Serbia,Denmark,11/14/14,EUC-Q,1,3,1
+Jordan,South Korea,11/14/14,Friendlies,0,1,1
 Japan,Honduras,11/14/14,Friendlies,6,0,1
 France,Albania,11/14/14,Friendlies,1,1,1
 Japan,Australia,11/14/14,Friendlies,2,1,1
@@ -731,6 +734,7 @@ San Marino,Switzerland,10/14/14,EUC-Q,0,4,1
 Serbia,Albania,10/14/14,EUC-Q,0,0,1
 Qatar,Australia,10/14/14,Friendlies,1,0,1
 Brazil,Japan,10/14/14,Friendlies,4,0,0
+South Korea,Costa Rica,10/14/14,Friendlies,1,3,1
 Andorra,Israel,10/13/14,EUC-Q,1,4,1
 Bosnia-Herzegovina,Belgium,10/13/14,EUC-Q,1,1,1
 Croatia,Azerbaijan,10/13/14,EUC-Q,6,0,1
@@ -768,6 +772,7 @@ Turkey,Czech Republic,10/10/14,EUC-Q,1,2,1
 Wales,Bosnia-Herzegovina,10/10/14,EUC-Q,0,0,1
 United Arab Emirates,Australia,10/10/14,Friendlies,0,0,1
 Japan,Jamaica,10/10/14,Friendlies,1,0,1
+South Korea,Paraguay,10/10/14,Friendlies,2,0,1
 Belarus,Ukraine,10/09/14,EUC-Q,0,2,1
 England,San Marino,10/09/14,EUC-Q,5,0,1
 Liechtenstein,Montenegro,10/09/14,EUC-Q,0,0,1
@@ -796,6 +801,7 @@ Spain,Macedonia,09/08/14,EUC-Q,5,1,1
 Switzerland,England,09/08/14,EUC-Q,0,2,1
 Ukraine,Slovakia,09/08/14,EUC-Q,0,1,1
 Australia,Saudi Arabia,09/08/14,Friendlies,3,2,0
+South Korea,Uruguay,09/08/14,Friendlies,0,1,1
 Denmark,Armenia,09/07/14,EUC-Q,2,1,1
 Faroe Islands,Finland,09/07/14,EUC-Q,1,3,1
 Georgia,Republic of Ireland,09/07/14,EUC-Q,1,2,1
@@ -805,6 +811,7 @@ Greece,Romania,09/07/14,EUC-Q,0,1,1
 Hungary,Northern Ireland,09/07/14,EUC-Q,1,2,1
 Portugal,Albania,09/07/14,EUC-Q,0,1,1
 Serbia,France,09/07/14,Friendlies,1,1,1
+South Korea,Venezuela,09/05/14,Friendlies,3,1,1
 Japan,Uruguay,09/05/14,Friendlies,0,2,1
 Belgium,Australia,09/04/14,Friendlies,2,0,1
 Kenya,Lesotho,08/03/14,CAF-Q,0,0,1
@@ -882,6 +889,7 @@ Uruguay,Costa Rica,06/14/14,WOC-G,1,3,0
 Mexico,Cameroon,06/13/14,WOC-G,1,0,0
 Spain,Netherlands,06/13/14,WOC-G,1,5,0
 Brazil,Croatia,06/12/14,WOC-G,3,1,1
+Ghana,South Korea,06/09/14,Friendlies,4,0,0
 Japan,Zambia,06/06/14,Friendlies,4,3,0
 Brazil,Serbia,06/06/14,Friendlies,1,0,1
 Croatia,Australia,06/06/14,Friendlies,1,0,0
@@ -898,6 +906,7 @@ Sierra Leone,Swaziland,05/31/14,CAF-Q,1,0,1
 Chad,Malawi,05/31/14,CAF-Q,3,1,1
 Comoros,Kenya,05/30/14,CAF-Q,1,1,1
 South Sudan,Mozambique,05/30/14,CAF-Q,0,0,1
+South Korea,Tunisia,05/28/14,Friendlies,0,1,1
 Japan,Cyprus,05/27/14,Friendlies,1,0,1
 Australia,South Africa,05/26/14,Friendlies,1,1,1
 Liberia,Lesotho,05/18/14,CAF-Q,1,0,1
@@ -922,13 +931,17 @@ Thailand,Lebanon,03/05/14,AFC-Q,2,5,1
 Uzbekistan,United Arab Emirates,03/05/14,AFC-Q,1,1,1
 Vietnam,Hong Kong,03/05/14,AFC-Q,3,1,1
 Yemen,Malaysia,03/05/14,AFC-Q,1,2,1
+Greece,South Korea,03/05/14,Friendlies,0,2,1
 Japan,New Zealand,03/05/14,Friendlies,4,2,1
 Ecuador,Australia,03/05/14,Friendlies,4,3,0
 South Africa,Brazil,03/05/14,Friendlies,0,5,1
 Japan,New Zealand,03/05/14,Friendlies,4,2,1
 Iran,Kuwait,03/03/14,AFC-Q,3,2,1
 Singapore,Jordan,02/04/14,AFC-Q,1,3,1
+United States,South Korea,02/01/14,Friendlies,2,0,1
 Oman,Jordan,01/31/14,AFC-Q,0,0,1
+Mexico,South Korea,11/29/14,Friendlies,4,0,0
+South Korea,Costa Rica,11/25/13,Friendlies,1,0,0
 New Zealand,Mexico,11/20/13,WOC-Q-PlayOff,2,4,1
 Uruguay,Jordan,11/20/13,WOC-Q-PlayOff,0,0,1
 Bahrain,Yemen,11/19/13,AFC-Q,2,0,1
@@ -943,6 +956,7 @@ United Arab Emirates,Vietnam,11/19/13,AFC-Q,5,0,1
 Belgium,Japan,11/19/13,Friendlies,2,3,1
 Australia,Costa Rica,11/19/13,Friendlies,1,0,1
 Brazil,Chile,11/19/13,Friendlies,2,1,0
+Russia,South Korea,11/19/13,Friendlies,2,1,0
 Algeria,Burkina Faso,11/19/13,WOC-Q-Africa,1,0,1
 Egypt,Ghana,11/19/13,WOC-Q-Africa,2,1,1
 Cameroon,Tunisia,11/17/13,WOC-Q-Africa,4,1,1
@@ -950,6 +964,7 @@ Japan,Netherlands,11/16/13,Friendlies,2,2,0
 Brazil,Honduras,11/16/13,Friendlies,5,0,0
 Nigeria,Ethiopia,11/16/13,WOC-Q-Africa,2,0,1
 Senegal,Ivory Coast,11/16/13,WOC-Q-Africa,1,1,1
+South Korea,Switzerland,11/15/13,Friendlies,2,1,1
 Bahrain,Malaysia,11/15/13,AFC-Q,1,0,1
 China,Indonesia,11/15/13,AFC-Q,1,0,1
 Kuwait,Lebanon,11/15/13,AFC-Q,0,0,1
@@ -980,6 +995,7 @@ Uzbekistan,Vietnam,10/15/13,AFC-Q,3,1,1
 Australia,Canada,10/15/13,Friendlies,3,0,0
 Brazil,Zambia,10/15/13,Friendlies,2,0,0
 Belarus,Japan,10/15/13,Friendlies,1,0,1
+South Korea,Mali,10/15/13,Friendlies,3,1,1
 Ghana,Egypt,10/15/13,WOC-Q-Africa,6,1,1
 Azerbaijan,Russia,10/15/13,WOC-Q-Europe,1,1,1
 Belgium,Wales,10/15/13,WOC-Q-Europe,1,1,1
@@ -1052,6 +1068,7 @@ United States,Mexico,09/11/13,WOC-Q-North America,2,0,1
 Paraguay,Argentina,09/11/13,WOC-Q-South America,2,5,1
 Uruguay,Colombia,09/11/13,WOC-Q-South America,2,0,1
 Venezuela,Peru,09/11/13,WOC-Q-South America,3,2,1
+South Korea,Croatia,09/10/13,Friendlies,1,2,1
 Brazil,Portugal,09/10/13,Friendlies,3,1,1
 Japan,Ghana,09/10/13,Friendlies,3,1,1
 Algeria,Mali,09/10/13,WOC-Q-Africa,1,0,1
@@ -1107,6 +1124,7 @@ Chile,Venezuela,09/07/13,WOC-Q-South America,3,0,1
 Colombia,Ecuador,09/07/13,WOC-Q-South America,1,0,1
 Paraguay,Bolivia,09/07/13,WOC-Q-South America,4,0,1
 Peru,Uruguay,09/07/13,WOC-Q-South America,1,2,1
+South Korea,Haiti,09/06/13,Friendlies,4,1,1
 Japan,Guatemala,09/06/13,Friendlies,3,0,1
 Ghana,Zambia,09/06/13,WOC-Q-Africa,2,1,1
 Jordan,Uzbekistan,09/06/13,WOC-Q-Asia,1,1,1
@@ -1138,6 +1156,7 @@ Ukraine,San Marino,09/06/13,WOC-Q-Europe,9,0,1
 Syria,Jordan,08/15/13,AFC-Q,1,1,1
 Singapore,Oman,08/14/13,AFC-Q,0,2,1
 Japan,Uruguay,08/14/13,Friendlies,2,4,1
+South Korea,Peru,08/14/13,Friendlies,0,0,1
 Switzerland,Brazil,08/14/13,Friendlies,1,0,1
 Northern Ireland,Russia,08/14/13,WOC-Q-Europe,1,0,1
 United States,Panama,07/28/13,CON-K,1,0,1
