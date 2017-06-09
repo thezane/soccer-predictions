@@ -51,7 +51,7 @@ rateTeams <- function(x, rOptions, rOutput) {
   # Compute cost
   goalsCost <- computeGoalsCost(rOutput)
   strMeanCost <- 0.1 * computeStrMeanCost(rOutput)
-  slopeCost <- 0.01 * norm(getModelSlopes(rOptions), "f")
+  slopeCost <- 0.05 * norm(getModelSlopes(rOptions), "f")
   rOutput$y <- goalsCost + strMeanCost + slopeCost
   rData <- list(rOptions=rOptions, rOutput=rOutput)
 

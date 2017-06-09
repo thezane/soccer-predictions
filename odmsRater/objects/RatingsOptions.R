@@ -84,7 +84,7 @@ getModelUBd <- function(rOptions) {
 
 getModelSlopes <- function(rOptions) {
   matrix(c(rOptions$b,
-    rOptions$strBeta, rOptions$hA))
+      rOptions$strBeta, rOptions$hA))
 }
 
 updateOptions <- function(rOptions, x) {
