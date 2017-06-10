@@ -1,4 +1,4 @@
-computeRatings <- function(rOptions, rOutput) {
+computeRNN <- function(rOptions, rOutput) {
   tTree <- rOutput$tTree
   gTree <- rOutput$gTree
   gi <- rOutput$gi
