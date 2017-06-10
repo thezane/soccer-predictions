@@ -12,7 +12,7 @@ newRatingsOptions <- function(fTree) {
 
     # Poisson layer
     meanGoals=1,
-    strBeta=1.8,
+    strBeta=1.6,
     hA=0.4,
     corrBeta=-1,
 
