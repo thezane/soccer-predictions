@@ -1,27 +1,27 @@
-optimizeRatings <- function(tTree, fTree, gTree, gi, rData) {
+optimizeRNN <- function(tTree, fTree, gTree, gi, rData) {
   rOutput <- newRatingsOutput(tTree, gTree, gi)
 
   if (is.null(rData)) {
     rOptions <- newRatingsOptions(fTree)
-    x <- trainRater(rOptions, rOutput)
-    rData <- rateTeams(x, rOptions, rOutput)
+    x <- trainRNN(rOptions, rOutput)
+    rData <- updateRNN(x, rOptions, rOutput)
   }
   else {
     rOptions <- rData[["rOptions"]]
-    rOutput <- computeRatings(rOptions, rOutput)
+    rOutput <- computeRNN(rOptions, rOutput)
     rData <- list(rOptions=rOptions, rOutput=rOutput)
   }
 
   rData
 }
 
-trainRater <- function(rOptions, rOutput) {
+trainRNN <- function(rOptions, rOutput) {
   x <- getModel(rOptions)
   xLBd <- getModelLBd(rOptions)
   xUBd <- getModelUBd(rOptions)
   n <- length(x)
   fn <- function(x, rOptions.=rOptions, rOutput.=rOutput) {
-      rData <- rateTeams(x, rOptions, rOutput)
+      rData <- updateRNN(x, rOptions, rOutput)
       rOutput <- rData[["rOutput"]]
       rOutput$y
   }
@@ -39,14 +39,14 @@ trainRater <- function(rOptions, rOutput) {
   x
 }
 
-rateTeams <- function(x, rOptions, rOutput) {
+updateRNN <- function(x, rOptions, rOutput) {
   # Update model parameters
   rOptions <- updateOptions(rOptions, x)
   cat("\n")
   printModel(rOptions)
 
-  # Compute ratings with updated model
-  rOutput <- computeRatings(rOptions, rOutput)
+  # Compute RNN with updated parameters
+  rOutput <- computeRNN(rOptions, rOutput)
 
   # Compute cost
   goalsCost <- computeGoalsCost(rOutput)

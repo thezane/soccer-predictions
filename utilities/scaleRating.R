@@ -1,17 +1,15 @@
-scaleRating <- function(A, x, tolScale) {
+scaleRating <- function(A, x, odmIter) {
   y <- A %*% (1 / x);
+  i <- 1
  
-  while (TRUE) {
-    xPost = t(A) %*% (1 / y);
-    yPost = A %*% (1 / x);
+  while (i <= odmIter) {
+    xPost <- t(A) %*% (1 / y);
+    yPost <- A %*% (1 / x);
     xDel <- xPost - x;
     yDel <- yPost - y;
     x <- xPost;
     y <- yPost;
-
-    if (norm(xDel) < tolScale && norm(yDel) < tolScale) {
-      break;
-    }
+    i <- i + 1
   }
   
   v <- list(x=x, y=y)

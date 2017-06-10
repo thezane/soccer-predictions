@@ -17,7 +17,7 @@ forecastRatings <- function(currentDate, rData=NULL) {
   gTree <- readsData[["gTree"]]
   T <- readsData[["T"]]
   gi <- newGameIterator(gTree)
-  rData <- optimizeRatings(tTree, fTree, gTree, gi, rData)
+  rData <- optimizeRNN(tTree, fTree, gTree, gi, rData)
   writeData(rData, T, dataPath)
   rData
 }

@@ -1,21 +1,19 @@
-computeLayerOdm <- function(A, strNorm, b, c, tolRel, tolScale) {
+computeLayerOdm <- function(A, strNorm, b, c, odmIter) {
   teamStr <- exp(strNorm)
   a <- teamStr[, 1];
   d <- teamStr[, 2];
   A <- b * A + c;
+  i <- 1
 
-  while (TRUE) {
-    strPost <- computeAD(A, a, d, tolScale);
+  while (i <= odmIter) {
+    strPost <- computeAD(A, a, d, odmIter);
     aPost <- strPost[, 1]
     dPost <- strPost[, 2]
-    aDel <- matrix(aPost - a);
-    dDel <- matrix(dPost - d);
-    a <- aPost;
-    d <- dPost;
-    
-    if (norm(aDel) < tolRel && norm(dDel) < tolRel) {
-      break;
-    }
+    aDel <- matrix(aPost - a)
+    dDel <- matrix(dPost - d)
+    a <- aPost
+    d <- dPost
+    i <- i + 1
   }
   
   strPostNorm <- log(strPost)

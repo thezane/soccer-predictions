@@ -43,8 +43,7 @@ newRatingsOptions <- function(fTree) {
     fNames=fNames,
     minUpdates=0,
     numFs=numFs,
-    tolRel=0.01,
-    tolScale=0.01,
+    odmIter=10,
 
     # L-BFGS-B parameters
     factr=1e-06 / .Machine$double.eps,
