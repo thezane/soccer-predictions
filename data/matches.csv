@@ -7760,6 +7760,7 @@ Australia,New Zealand,10/04/98,OFC-K,0,1,1
 Fiji,Tahiti,10/04/98,OFC-K,4,2,0
 Kenya,Madagascar,10/03/98,CAF-Q,1,1,1
 Namibia,Republic of the Congo,10/03/98,CAF-Q,0,1,1
+Morocco,Sierra Leone,10/03/98,CAF-Q,0,3,1
 South Africa,Angola,10/03/98,CAF-Q,1,0,1
 Uganda,Algeria,10/02/98,CAF-Q,2,1,1
 Australia,Tahiti,10/02/98,OFC-K,4,1,1
@@ -8589,6 +8590,7 @@ Gabon,Cameroon,10/06/96,CAF-Q,0,0,1
 Ghana,Angola,10/06/96,CAF-Q,2,1,1
 Mauritius,Malawi,10/06/96,CAF-Q,1,2,1
 Namibia,Kenya,10/06/96,CAF-Q,1,0,1
+Sudan,Zimbabwe,10/06/96,CAF-Q,0,3,1
 Tunisia,Sierra Leone,10/06/96,CAF-Q,2,0,1
 Zambia,Mozambique,10/06/96,CAF-Q,1,0,1
 Faroe Islands,Yugoslavia,10/06/96,WOC-Q-Europe,1,8,1
@@ -8890,6 +8892,7 @@ Brazil,Canada,01/12/96,CON-G,4,1,0
 Mexico,Saint Vincent and the Grenadines,01/11/96,CON-G,5,0,0
 Canada,Honduras,01/10/96,CON-G,3,1,0
 Trinidad and Tobago,El Salvador,01/10/96,CON-G,2,3,0
+South Africa,Germany,12/15/95,Friendlies,0,0,1
 Solomon Islands,Tahiti,11/17/95,OFC-G,0,1,1
 Albania,Wales,11/15/95,EUC-Q,1,1,1
 Azerbaijan,Poland,11/15/95,EUC-Q,0,0,1
@@ -8938,6 +8941,7 @@ Germany,Moldova,10/08/95,EUC-Q,6,1,1
 Armenia,Belgium,10/07/95,EUC-Q,0,2,1
 Belarus,Czech Republic,10/07/95,EUC-Q,0,2,1
 Bulgaria,Albania,10/07/95,EUC-Q,3,0,1
+South Africa,Mozambique,09/30/95,Friendlies,3,2,1
 Albania,Bulgaria,09/06/95,EUC-Q,1,1,1
 Austria,Republic of Ireland,09/06/95,EUC-Q,3,1,1
 Belgium,Denmark,09/06/95,EUC-Q,1,3,1
@@ -9040,6 +9044,7 @@ Spain,Armenia,06/07/95,EUC-Q,1,0,1
 Wales,Georgia,06/07/95,EUC-Q,0,1,1
 Angola,Mali,06/04/95,CAF-Q,1,0,1
 Botswana,Namibia,06/04/95,CAF-Q,1,1,1
+Cameroon,Lesotho,06/04/95,CAF-Q,4,1,1
 Democratic Republic of the Congo,Zimbabwe,06/04/95,CAF-Q,5,0,1
 Ethiopia,Egypt,06/04/95,CAF-Q,0,2,1
 Guinea,Mozambique,06/04/95,CAF-Q,0,0,1
@@ -9047,12 +9052,14 @@ Ivory Coast,Morocco,06/04/95,CAF-Q,2,0,1
 Liberia,Mauritania,06/04/95,CAF-Q,2,0,1
 Mauritius,Gabon,06/04/95,CAF-Q,0,3,1
 Togo,Tunisia,06/04/95,CAF-Q,0,1,1
+Sierra Leone,Niger,06/03/95,CAF-Q,5,1,1
 Sudan,Tanzania,06/03/95,CAF-Q,2,1,1
 Liechtenstein,Republic of Ireland,06/03/95,EUC-Q,0,0,1
 Portugal,Latvia,06/03/95,EUC-Q,3,2,1
 Algeria,Uganda,06/02/95,CAF-Q,1,1,1
 Sweden,Iceland,06/01/95,EUC-Q,1,1,1
 Faroe Islands,San Marino,05/25/95,EUC-Q,3,0,1
+South Africa,Argentina,05/13/95,Friendlies,1,1,1
 Armenia,Macedonia,05/10/95,EUC-Q,2,2,1
 Russia,Faroe Islands,05/06/95,EUC-Q,3,0,1
 Armenia,Spain,04/26/95,EUC-Q,0,2,1
@@ -9077,10 +9084,12 @@ Norway,Luxembourg,04/26/95,EUC-Q,5,0,1
 Republic of Ireland,Portugal,04/26/95,EUC-Q,1,0,1
 San Marino,Scotland,04/26/95,EUC-Q,0,2,1
 Switzerland,Turkey,04/26/95,EUC-Q,1,2,1
+Lesotho,South Africa,04/26/95,Friendlies,1,3,1
 Poland,Israel,04/25/95,EUC-Q,4,3,1
 Sudan,Algeria,04/24/95,CAF-Q,0,21,1
 Angola,Guinea,04/23/95,CAF-Q,3,0,1
 Botswana,Mozambique,04/23/95,CAF-Q,0,3,1
+Ghana,Niger,04/23/95,CAF-Q,1,0,1
 Democratic Republic of the Congo,Cameroon,04/23/95,CAF-Q,2,1,1
 Ethiopia,Uganda,04/23/95,CAF-Q,0,0,1
 Liberia,Tunisia,04/23/95,CAF-Q,1,0,1
@@ -9090,10 +9099,12 @@ Republic of the Congo,Sierra Leone,04/22/95,CAF-Q,0,2,1
 Senegal,Togo,04/22/95,CAF-Q,5,1,1
 Tanzania,Egypt,04/22/95,CAF-Q,1,2,1
 Guinea,Botswana,04/09/95,CAF-Q,5,0,1
+Lesotho,Zimbabwe,04/09/95,CAF-Q,0,2,1
 Malawi,Democratic Republic of the Congo,04/09/95,CAF-Q,0,1,1
 Morocco,Burkina Faso,04/09/95,CAF-Q,0,0,1
 Mozambique,Mali,04/09/95,CAF-Q,1,0,1
 Namibia,Angola,04/09/95,CAF-Q,2,2,1
+The Gambia,Republic of the Congo,04/09/95,CAF-Q,1,1,1
 Togo,Liberia,04/09/95,CAF-Q,0,0,1
 Sierra Leone,Ghana,04/08/95,CAF-Q,1,0,1
 Uganda,Tanzania,04/08/95,CAF-Q,2,0,1
@@ -9130,8 +9141,10 @@ Botswana,Angola,01/22/95,CAF-Q,1,2,1
 Ethiopia,Sudan,01/22/95,CAF-Q,2,0,1
 Ghana,Republic of the Congo,01/22/95,CAF-Q,3,1,1
 Ivory Coast,Burkina Faso,01/22/95,CAF-Q,2,2,1
+Lesotho,Malawi,01/22/95,CAF-Q,0,2,1
 Liberia,Senegal,01/22/95,CAF-Q,1,1,1
 Mozambique,Namibia,01/22/95,CAF-Q,4,2,1
+Niger,The Gambia,01/22/95,CAF-Q,1,1,1
 Zimbabwe,Cameroon,01/22/95,CAF-Q,4,1,1
 Tanzania,Algeria,01/21/95,CAF-Q,2,1,1
 Uganda,Egypt,01/21/95,CAF-Q,0,0,1
@@ -9139,12 +9152,15 @@ Mauritius,Zambia,01/09/95,CAF-Q,0,3,1
 Algeria,Egypt,01/08/95,CAF-Q,1,0,1
 Angola,Mozambique,01/08/95,CAF-Q,1,0,1
 Cameroon,Malawi,01/08/95,CAF-Q,0,0,1
+Republic of the Congo,Niger,01/08/95,CAF-Q,3,1,1
+Democratic Republic of the Congo,Lesotho,01/08/95,CAF-Q,3,0,1
 Ethiopia,Tanzania,01/08/95,CAF-Q,1,0,1
 Guinea,Namibia,01/08/95,CAF-Q,3,0,1
 Sudan,Uganda,01/08/95,CAF-Q,3,1,1
 Togo,Mauritania,01/08/95,CAF-Q,0,0,1
 Botswana,Mali,01/07/95,CAF-Q,1,3,1
 Senegal,Tunisia,01/07/95,CAF-Q,0,0,1
+Sierra Leone,The Gambia,01/07/95,CAF-Q,2,0,1
 Germany,Albania,12/18/94,EUC-Q,2,1,1
 Greece,Scotland,12/18/94,EUC-Q,1,0,1
 Portugal,Liechtenstein,12/18/94,EUC-Q,8,0,1
@@ -9160,6 +9176,7 @@ Turkey,Switzerland,12/14/94,EUC-Q,1,2,1
 Wales,Bulgaria,12/14/94,EUC-Q,0,3,1
 Azerbaijan,France,12/13/94,EUC-Q,0,2,1
 Gabon,Zambia,11/20/94,CAF-Q,2,1,1
+Guinea-Bissau,Senegal,11/18/94,CAF-Q,2,1,1
 Albania,Germany,11/16/94,EUC-Q,1,2,1
 Azerbaijan,Israel,11/16/94,EUC-Q,0,2,1
 Belarus,Norway,11/16/94,EUC-Q,0,4,1
@@ -9180,16 +9197,21 @@ Sweden,Hungary,11/16/94,EUC-Q,2,0,1
 Switzerland,Iceland,11/16/94,EUC-Q,1,0,1
 Liechtenstein,Latvia,11/15/94,EUC-Q,0,1,1
 Gabon,Mauritius,11/13/94,CAF-Q,3,0,1
+Guinea-Bissau,Senegal,11/13/94,CAF-Q,1,4,1
+Lesotho,Cameroon,11/13/94,CAF-Q,2,0,1
 Mali,Angola,11/13/94,CAF-Q,0,0,1
 Morocco,Ivory Coast,11/13/94,CAF-Q,1,0,1
 Mozambique,Guinea,11/13/94,CAF-Q,2,1,1
 Namibia,Botswana,11/13/94,CAF-Q,1,1,1
+Niger,Sierra Leone,11/13/94,CAF-Q,4,2,1
 Tunisia,Togo,11/13/94,CAF-Q,1,1,1
 Zimbabwe,Democratic Republic of the Congo,11/13/94,CAF-Q,2,1,1
 Portugal,Austria,11/13/94,EUC-Q,1,0,1
 Ukraine,Estonia,11/13/94,EUC-Q,3,0,1
+Zambia,South Africa,11/13/94,EUC-Q,1,1,1
 Tanzania,Sudan,11/12/94,CAF-Q,2,0,1
 Uganda,Algeria,11/12/94,CAF-Q,1,1,1
+The Gambia,Ghana,11/12/94,CAF-Q,1,2,1
 Romania,Slovakia,11/12/94,EUC-Q,3,2,1
 Egypt,Ethiopia,11/11/94,CAF-Q,5,0,1
 Mauritania,Liberia,11/11/94,CAF-Q,1,1,1
@@ -9197,13 +9219,16 @@ Mali,Guinea,10/30/94,CAF-Q,2,0,1
 Cameroon,Democratic Republic of the Congo,10/16/94,CAF-Q,1,0,1
 Guinea,Angola,10/16/94,CAF-Q,3,1,1
 Mozambique,Botswana,10/16/94,CAF-Q,3,1,1
+Niger,Ghana,10/16/94,CAF-Q,1,5,1
 Sierra Leone,Republic of the Congo,10/16/94,CAF-Q,3,2,1
 Togo,Senegal,10/16/94,CAF-Q,2,0,1
 Malawi,Zimbabwe,10/15/94,CAF-Q,3,1,1
 Namibia,Mali,10/15/94,CAF-Q,2,1,1
+South Africa,Mauritius,10/15/94,CAF-Q,1,0,1
 Uganda,Ethiopia,10/15/94,CAF-Q,4,1,1
 Algeria,Sudan,10/14/94,CAF-Q,1,1,1
 Egypt,Tanzania,10/14/94,CAF-Q,5,1,1
+Mauritania,Guinea-Bissau,10/14/94,CAF-Q,1,1,1
 Austria,Northern Ireland,10/12/94,EUC-Q,1,2,1
 Belarus,Luxembourg,10/12/94,EUC-Q,2,0,1
 Bulgaria,Georgia,10/12/94,EUC-Q,2,0,1
@@ -9248,11 +9273,15 @@ Czech Republic,Malta,09/06/94,EUC-Q,6,1,1
 Angola,Namibia,09/04/94,CAF-Q,2,0,1
 Botswana,Guinea,09/04/94,CAF-Q,0,1,1
 Burkina Faso,Morocco,09/04/94,CAF-Q,2,1,1
+Republic of the Congo,The Gambia,09/04/94,CAF-Q,1,1,1
 Ethiopia,Algeria,09/04/94,CAF-Q,0,0,1
 Ghana,Sierra Leone,09/04/94,CAF-Q,4,1,1
+Guinea-Bissau,Tunisia,09/04/94,CAF-Q,1,3,1
 Liberia,Togo,09/04/94,CAF-Q,1,0,1
 Mali,Mozambique,09/04/94,CAF-Q,2,1,1
+Madagascar,South Africa,09/04/94,CAF-Q,0,1,1
 Sudan,Egypt,09/04/94,CAF-Q,0,0,1
+Zimbabwe,Lesotho,09/04/94,CAF-Q,5,0,1
 Estonia,Croatia,09/04/94,EUC-Q,0,2,1
 Israel,Poland,09/04/94,EUC-Q,2,1,1
 Senegal,Mauritania,09/03/94,CAF-Q,0,0,1
