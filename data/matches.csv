@@ -7938,7 +7938,13 @@ Brazil,Jamaica,02/03/98,CON-G,0,0,0
 El Salvador,Guatemala,02/01/98,CON-G,0,0,0
 Honduras,Trinidad and Tobago,02/01/98,CON-G,1,3,0
 United States,Cuba,02/01/98,CON-G,3,0,1
+Burkina Faso,Namibia,02/01/98,Friendlies,3,1,0
 France,Spain,01/28/98,Friendlies,1,0,1
+Liberia,Burkina Faso,01/27/98,Friendlies,1,2,1
+Burkina Faso,Mali,01/11/98,Friendlies,0,0,1
+Burkina Faso,Mozambique,01/07/98,Friendlies,4,2,1
+Burkina Faso,Mozambique,01/04/98,Friendlies,1,0,1
+Burkina Faso,Ivory Coast,12/27/97,Friendlies,2,0,1
 Brazil,Australia,12/21/97,COC-K,6,0,0
 Czech Republic,Uruguay,12/21/97,COC-K,1,0,0
 Brazil,Czech Republic,12/19/97,COC-K,2,0,0
@@ -7955,6 +7961,8 @@ South Africa,Czech Republic,12/13/97,COC-G,2,2,0
 United Arab Emirates,Uruguay,12/13/97,COC-G,0,2,0
 Mexico,Australia,12/12/97,COC-G,1,3,0
 Saudi Arabia,Brazil,12/12/97,COC-G,0,3,1
+Zambia,Burkina Faso,12/12/97,Friendlies,2,0,1
+South Africa,Brazil,12/07/97,Friendlies,1,2,1
 Australia,Iran,11/29/97,WOC-Q-PlayOff,2,2,1
 Iran,Australia,11/22/97,WOC-Q-PlayOff,1,1,1
 Iran,Japan,11/16/97,WOC-Q-Asia,2,3,1
@@ -7962,6 +7970,7 @@ Argentina,Colombia,11/16/97,WOC-Q-South America,1,1,1
 Chile,Bolivia,11/16/97,WOC-Q-South America,3,0,1
 Peru,Paraguay,11/16/97,WOC-Q-South America,1,0,1
 Uruguay,Ecuador,11/16/97,WOC-Q-South America,5,3,1
+Germany,South Africa,11/15/97,Friendlies,3,0,1
 Belgium,Republic of Ireland,11/15/97,WOC-Q-Europe,2,1,1
 Italy,Russia,11/15/97,WOC-Q-Europe,1,0,1
 Ukraine,Croatia,11/15/97,WOC-Q-Europe,1,1,1
@@ -7973,6 +7982,7 @@ United Arab Emirates,South Korea,11/09/97,WOC-Q-Asia,1,3,1
 Japan,Kazakhstan,11/08/97,WOC-Q-Asia,5,1,1
 Qatar,Iran,11/07/97,WOC-Q-Asia,2,0,1
 Saudi Arabia,China,11/06/97,WOC-Q-Asia,1,1,1
+Ivory Coast,Burkina Faso,11/02/97,Friendlies,0,0,1
 United Arab Emirates,Uzbekistan,11/02/97,WOC-Q-Asia,0,0,1
 South Korea,Japan,11/01/97,WOC-Q-Asia,0,2,1
 China,Qatar,10/31/97,WOC-Q-Asia,2,3,1
@@ -8247,6 +8257,8 @@ Iraq,Kazakhstan,06/06/97,WOC-Q-Asia,1,2,1
 Kyrgyzstan,Maldives,06/06/97,WOC-Q-Asia,3,0,1
 Syria,Iran,06/06/97,WOC-Q-Asia,0,1,1
 Kuwait,Singapore,06/05/97,WOC-Q-Asia,4,0,1
+South Africa,Netherlands,06/04/97,Friendlies,0,2,1
+Togo,Burkina Faso,06/04/97,Friendlies,0,0,1
 Kyrgyzstan,Iran,06/04/97,WOC-Q-Asia,0,7,1
 Syria,Maldives,06/04/97,WOC-Q-Asia,12,0,1
 France,Brazil,06/03/97,Friendlies,1,1,1
@@ -8256,12 +8268,14 @@ Indonesia,Uzbekistan,06/01/97,WOC-Q-Asia,1,1,1
 South Korea,Thailand,06/01/97,WOC-Q-Asia,0,0,1
 Vietnam,Tajikistan,06/01/97,WOC-Q-Asia,0,4,1
 Morocco,Ethiopia,05/31/97,CAF-Q,4,0,1
+Burkina Faso,Mali,05/31/97,Friendlies,2,0,1
 Poland,England,05/31/97,WOC-Q-Europe,0,2,1
 Papua New Guinea,New Zealand,05/31/97,WOC-Q-Oceania,1,0,1
 South Korea,Hong Kong,05/28/97,WOC-Q-Asia,4,0,1
 Turkmenistan,Tajikistan,05/25/97,WOC-Q-Asia,1,2,1
 Uzbekistan,Cambodia,05/25/97,WOC-Q-Asia,6,0,1
 Vietnam,China,05/25/97,WOC-Q-Asia,1,3,1
+England,South Africa,05/24/97,Friendlies,2,1,1
 Singapore,Lebanon,05/24/97,WOC-Q-Asia,1,2,1
 Pakistan,Iraq,05/23/97,WOC-Q-Asia,2,6,1
 Republic of Ireland,Liechtenstein,05/21/97,WOC-Q-Europe,5,0,1
@@ -8428,10 +8442,14 @@ Venezuela,Paraguay,01/12/97,WOC-Q-South America,0,2,1
 Namibia,Liberia,01/11/97,WOC-Q-Africa,0,0,1
 Sierra Leone,Gabon,01/11/97,WOC-Q-Africa,1,0,1
 Zambia,South Africa,01/11/97,WOC-Q-Africa,0,0,1
+Benin,Burkina Faso,12/27/96,Friendlies,0,0,1
+Benin,Burkina Faso,12/25/96,Friendlies,1,1,1
+Burkina Faso,Gabon,12/22/96,Friendlies,2,1,0
 Iran,Kuwait,12/21/96,AFC-K,1,1,0
 United Arab Emirates,Saudi Arabia,12/21/96,AFC-K,0,0,1
 Costa Rica,Trinidad and Tobago,12/21/96,WOC-Q-North America,2,1,1
 Guatemala,United States,12/21/96,WOC-Q-North America,2,2,1
+Burkina Faso,Gabon,12/20/96,Friendlies,1,1,0
 Iran,Saudi Arabia,12/19/96,AFC-K,0,0,0
 United Arab Emirates,Kuwait,12/19/96,AFC-K,1,0,1
 Malta,Spain,12/18/96,WOC-Q-Europe,0,3,1
@@ -8477,6 +8495,7 @@ Costa Rica,United States,12/01/96,WOC-Q-North America,2,1,1
 El Salvador,Cuba,12/01/96,WOC-Q-North America,3,0,1
 United Arab Emirates,Syria,11/28/96,Friendlies,1,0,1
 United Arab Emirates,Syria,11/26/96,Friendlies,1,1,1
+Mali,Burkina Faso,11/24/96,Friendlies,2,0,1
 Guatemala,Costa Rica,11/24/96,WOC-Q-North America,1,0,1
 Trinidad and Tobago,United States,11/24/96,WOC-Q-North America,0,1,1
 United Arab Emirates,Uzbekistan,11/22/96,Friendlies,2,0,1
@@ -8535,6 +8554,7 @@ Tahiti,Australia,10/27/96,OFC-G,0,6,1
 Honduras,Jamaica,10/27/96,WOC-Q-North America,0,0,1
 Panama,Canada,10/27/96,WOC-Q-North America,0,0,1
 Slovakia,Faroe Islands,10/23/96,WOC-Q-Europe,3,0,1
+Gabon,Burkina Faso,10/19/96,Friendlies,2,0,1
 Mexico,Jamaica,10/16/96,WOC-Q-North America,2,1,1
 Japan,Tunisia,10/13/96,Friendlies,1,0,1
 Cuba,Canada,10/13/96,WOC-Q-North America,0,2,1
