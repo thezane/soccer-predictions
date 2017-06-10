@@ -689,6 +689,7 @@ Saudi Arabia,China,01/10/15,AFC-G,0,1,0
 South Korea,Oman,01/10/15,AFC-G,1,0,0
 Uzbekistan,North Korea,01/10/15,AFC-G,1,0,0
 Australia,Kuwait,01/09/15,AFC-G,4,1,1
+Cape Verde,Equatorial Guinea,01/07/15,Friendlies,1,1,0
 South Korea,Saudi Arabia,01/04/15,Friendlies,2,0,0
 Mexico,South Korea,11/29/14,Friendlies,4,0,0
 China,Palestine,12/21/14,Friendlies,0,0,1
@@ -3653,6 +3654,7 @@ Spain,Northern Ireland,11/21/07,EUC-Q,1,0,1
 Sweden,Latvia,11/21/07,EUC-Q,2,1,1
 Turkey,Bosnia-Herzegovina,11/21/07,EUC-Q,1,0,1
 Ukraine,France,11/21/07,EUC-Q,2,2,1
+Ghana,Benin,11/21/07,Friendlies,4,2,1
 New Caledonia,Fiji,11/21/07,OFC-G,4,0,1
 New Zealand,Vanuatu,11/21/07,OFC-G,4,1,1
 New Caledonia,Fiji,11/21/07,WOC-Q-Oceania,4,0,1
@@ -3660,6 +3662,7 @@ New Zealand,Vanuatu,11/21/07,WOC-Q-Oceania,4,1,1
 Colombia,Argentina,11/21/07,WOC-Q-South America,2,1,1
 Ecuador,Peru,11/21/07,WOC-Q-South America,5,1,1
 Venezuela,Bolivia,11/20/07,WOC-Q-South America,5,3,1
+Ghana,Togo,11/18/07,Friendlies,2,0,1
 Syria,Indonesia,11/18/07,WOC-Q-Asia,7,0,1
 Tajikistan,Singapore,11/18/07,WOC-Q-Asia,1,1,1
 Thailand,Yemen,11/18/07,WOC-Q-Asia,1,0,1
@@ -3815,6 +3818,7 @@ Slovenia,Belarus,09/12/07,EUC-Q,1,0,1
 Spain,Latvia,09/12/07,EUC-Q,2,0,1
 Turkey,Hungary,09/12/07,EUC-Q,3,0,1
 Ukraine,Italy,09/12/07,EUC-Q,1,2,1
+Saudi Arabia,Ghana,09/11/07,Friendlies,5,0,1
 Burundi,Egypt,09/09/07,CAF-Q,0,0,1
 Chad,Republic of the Congo,09/09/07,CAF-Q,1,1,1
 Equatorial Guinea,Cameroon,09/09/07,CAF-Q,1,0,1
@@ -3854,6 +3858,7 @@ Serbia,Finland,09/08/07,EUC-Q,0,0,1
 Slovakia,Republic of Ireland,09/08/07,EUC-Q,2,2,1
 Sweden,Denmark,09/08/07,EUC-Q,0,0,1
 Wales,Germany,09/08/07,EUC-Q,0,2,1
+Ghana,Morocco,09/08/07,Friendlies,2,0,0
 New Caledonia,Fiji,09/07/07,WOC-Q-Oceania,1,0,1
 Solomon Islands,Vanuatu,09/07/07,WOC-Q-Oceania,0,2,1
 Fiji,Vanuatu,09/05/07,WOC-Q-Oceania,3,0,1
@@ -3885,6 +3890,7 @@ Finland,Kazakhstan,08/22/07,EUC-Q,2,1,1
 Northern Ireland,Liechtenstein,08/22/07,EUC-Q,3,1,1
 San Marino,Cyprus,08/22/07,EUC-Q,0,1,1
 Austria,Czech Republic,08/22/07,Friendlies,1,1,1
+Ghana,Senegal,08/21/07,Friendlies,1,1,0
 Iraq,Saudi Arabia,07/29/07,AFC-K,1,0,0
 South Korea,Japan,07/28/07,AFC-K,0,0,0
 Iraq,South Korea,07/25/07,AFC-K,0,0,0
@@ -4083,6 +4089,7 @@ Turkey,Norway,03/28/07,EUC-Q,2,2,1
 Ukraine,Lithuania,03/28/07,EUC-Q,1,0,1
 Wales,San Marino,03/28/07,EUC-Q,3,0,1
 France,Austria,03/28/07,Friendlies,1,0,1
+Brazil,Ghana,03/27/07,Friendlies,1,0,0
 Sri Lanka,Malaysia,03/26/07,Friendlies,2,1,1
 Angola,Eritrea,03/25/07,CAF-Q,6,1,1
 Botswana,Burundi,03/25/07,CAF-Q,1,0,1
@@ -4125,9 +4132,11 @@ Portugal,Belgium,03/24/07,EUC-Q,4,0,1
 Republic of Ireland,Wales,03/24/07,EUC-Q,1,0,1
 Scotland,Georgia,03/24/07,EUC-Q,2,1,1
 Spain,Denmark,03/24/07,EUC-Q,2,1,1
+Austria,Ghana,03/24/07,Friendlies,1,1,1
 Sri Lanka,Malaysia,03/24/07,Friendlies,1,4,1
 San Marino,Republic of Ireland,02/07/07,EUC-Q,1,2,1
 Malta,Austria,02/07/07,Friendlies,1,1,1
+Ghana,Nigeria,02/06/07,Friendlies,4,1,0
 Bahrain,Kuwait,11/15/06,AFC-Q,2,1,1
 China,Iraq,11/15/06,AFC-Q,1,1,1
 Hong Kong,Bangladesh,11/15/06,AFC-Q,2,0,1
@@ -4145,6 +4154,7 @@ Israel,Croatia,11/15/06,EUC-Q,3,4,1
 Macedonia,Russia,11/15/06,EUC-Q,0,2,1
 Portugal,Kazakhstan,11/15/06,EUC-Q,3,0,1
 Republic of Ireland,San Marino,11/15/06,EUC-Q,5,0,1
+Australia,Ghana,11/14/06,Friendlies,1,1,0
 Singapore,Indonesia,11/11/06,Friendlies,1,2,1
 Australia,Bahrain,10/11/06,AFC-Q,2,0,1
 Bangladesh,Uzbekistan,10/11/06,AFC-Q,0,4,1
@@ -4224,7 +4234,9 @@ Serbia,Belgium,10/07/06,EUC-Q,1,0,1
 Slovenia,Luxembourg,10/07/06,EUC-Q,2,0,1
 Sweden,Spain,10/07/06,EUC-Q,2,0,1
 Wales,Slovakia,10/07/06,EUC-Q,1,5,1
+South Korea,Ghana,10/08/06,Friendlies,1,3,1
 Liechtenstein,Austria,10/06/06,Friendlies,1,2,1
+Japan,Ghana,10/04/06,Friendlies,0,1,1
 Hong Kong,Uzbekistan,09/06/06,AFC-Q,0,0,1
 Iraq,Palestine,09/06/06,AFC-Q,2,2,1
 Kuwait,Australia,09/06/06,AFC-Q,2,0,1
