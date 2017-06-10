@@ -7392,7 +7392,10 @@ Egypt,Zambia,01/23/00,CAF-G,2,0,0
 Nigeria,Tunisia,01/23/00,CAF-G,4,2,1
 South Africa,Gabon,01/23/00,CAF-G,3,1,0
 Ghana,Cameroon,01/22/00,CAF-G,1,1,1
+Ghana,Tunisia,01/18/00,Friendlies,2,0,1
+Tunisia,Ghana,12/22/99,Friendlies,2,0,1
 Malta,Lebanon,12/15/99,Friendlies,1,0,1
+Greece,Ghana,12/14/99,Friendlies,1,1,1
 India,Bangladesh,11/28/99,AFC-Q,2,2,1
 United Arab Emirates,Sri Lanka,11/28/99,AFC-Q,6,0,1
 Sri Lanka,India,11/26/99,AFC-Q,1,3,1
@@ -7402,6 +7405,7 @@ Sri Lanka,Bangladesh,11/24/99,AFC-Q,1,3,1
 Lebanon,Malta,11/24/99,Friendlies,0,0,1
 Sri Lanka,Uzbekistan,11/22/99,AFC-Q,0,6,1
 United Arab Emirates,Bangladesh,11/22/99,AFC-Q,3,0,1
+Gabon,Nigeria,11/21/99,Friendlies,0,2,1
 Bangladesh,Uzbekistan,11/20/99,AFC-Q,0,6,1
 Indonesia,Cambodia,11/20/99,AFC-Q,9,2,1
 United Arab Emirates,India,11/20/99,AFC-Q,3,1,1
@@ -7414,6 +7418,8 @@ Israel,Denmark,11/13/99,EUC-Q,0,5,1
 Republic of Ireland,Turkey,11/13/99,EUC-Q,1,1,1
 Scotland,England,11/13/99,EUC-Q,0,2,1
 Slovenia,Ukraine,11/13/99,EUC-Q,2,1,1
+Greece,Nigeria,11/13/99,Friendlies,2,0,1
+Egypt,Ghana,11/12/99,Friendlies,1,2,1
 Cambodia,Hong Kong,11/07/99,AFC-Q,0,1,1
 Cambodia,Indonesia,10/30/99,AFC-Q,1,5,1
 Hong Kong,Indonesia,10/24/99,AFC-Q,1,1,1
@@ -7497,14 +7503,17 @@ Slovenia,Georgia,09/04/99,EUC-Q,2,1,1
 Sweden,Bulgaria,09/04/99,EUC-Q,1,0,1
 Ukraine,France,09/04/99,EUC-Q,0,0,1
 Republic of Ireland,Yugoslavia,09/01/99,EUC-Q,2,1,1
+Nigeria,Ghana,08/28/99,Friendlies,0,0,1
 Eritrea,Senegal,08/21/99,CAF-Q,0,2,1
 Croatia,Malta,08/21/99,EUC-Q,2,1,1
 Slovenia,Albania,08/18/99,EUC-Q,2,0,1
 Yugoslavia,Croatia,08/18/99,EUC-Q,0,0,1
+Mozambique,Nigeria,08/17/99,Friendlies,0,1,1
 Zimbabwe,Eritrea,08/15/99,CAF-Q,4,0,1
 Senegal,Zimbabwe,08/08/99,CAF-Q,2,0,1
 Iraq,Kyrgyzstan,08/07/99,AFC-Q,5,1,1
 Tajikistan,Oman,08/07/99,AFC-Q,2,1,1
+Ghana,Jamaica,08/07/99,Friendlies,2,1,1
 Iraq,Oman,08/05/99,AFC-Q,2,0,1
 Kyrgyzstan,Tajikistan,08/05/99,AFC-Q,2,3,1
 Mexico,Brazil,08/04/99,COC-K,4,3,1
@@ -7667,10 +7676,12 @@ Portugal,Azerbaijan,03/26/99,EUC-Q,7,0,1
 Angola,Mauritius,02/28/99,CAF-Q,0,2,1
 Burundi,Burkina Faso,02/28/99,CAF-Q,1,2,1
 Cameroon,Mozambique,02/28/99,CAF-Q,1,0,1
+Ghana,Eritrea,02/28/99,CAF-Q,5,0,1
 Kenya,Zambia,02/28/99,CAF-Q,0,1,1
 Liberia,Algeria,02/28/99,CAF-Q,1,1,1
 Madagascar,Democratic Republic of the Congo,02/28/99,CAF-Q,3,1,1
 Republic of the Congo,Ivory Coast,02/28/99,CAF-Q,1,0,1
+Senegal,Nigeria,02/28/99,CAF-Q,1,1,1
 Togo,Morocco,02/28/99,CAF-Q,2,3,1
 South Africa,Gabon,02/27/99,CAF-Q,4,1,1
 Tunisia,Uganda,02/27/99,CAF-Q,6,0,1
@@ -7679,11 +7690,13 @@ Malta,Yugoslavia,02/10/99,EUC-Q,0,3,1
 Algeria,Tunisia,01/24/99,CAF-Q,0,1,1
 Angola,Gabon,01/24/99,CAF-Q,3,1,1
 Democratic Republic of the Congo,Kenya,01/24/99,CAF-Q,2,1,1
+Ghana,Mozambique,01/24/99,CAF-Q,1,0,1
 Guinea,Morocco,01/24/99,CAF-Q,1,1,1
 Ivory Coast,Namibia,01/24/99,CAF-Q,3,0,1
 Liberia,Uganda,01/24/99,CAF-Q,2,0,1
 Madagascar,Zambia,01/24/99,CAF-Q,1,2,1
 Republic of the Congo,Mali,01/24/99,CAF-Q,0,0,1
+Nigeria,Burundi,01/23/99,CAF-Q,2,0,1
 Eritrea,Cameroon,01/23/99,CAF-Q,0,0,1
 Mauritius,South Africa,01/23/99,CAF-Q,1,1,1
 Senegal,Burkina Faso,01/23/99,CAF-Q,1,1,1
@@ -7735,6 +7748,8 @@ San Marino,Israel,10/10/98,EUC-Q,0,5,1
 Scotland,Estonia,10/10/98,EUC-Q,3,2,1
 Slovenia,Norway,10/10/98,EUC-Q,1,2,1
 Turkey,Germany,10/10/98,EUC-Q,1,0,1
+Burkina Faso,Nigeria,10/04/98,CAF-Q,0,0,1
+Cameroon,Ghana,10/04/98,CAF-Q,1,3,1
 Gabon,Mauritius,10/04/98,CAF-Q,2,0,1
 Mali,Ivory Coast,10/04/98,CAF-Q,0,1,1
 Mozambique,Eritrea,10/04/98,CAF-Q,3,1,1
