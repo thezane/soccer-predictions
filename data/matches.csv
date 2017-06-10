@@ -6893,6 +6893,7 @@ Venezuela,Brazil,10/08/00,WOC-Q-South America,0,6,1
 Burkina Faso,Burundi,10/07/00,CAF-Q,1,0,1
 Madagascar,Nigeria,10/07/00,CAF-Q,0,0,1
 Tunisia,Gabon,10/07/00,CAF-Q,4,2,1
+Saudi Arabia,Kazakhstan,10/07/00,Friendlies,1,0,0
 South Africa,France,10/07/00,Friendlies,0,0,1
 Andorra,Estonia,10/07/00,WOC-Q-Europe,1,2,1
 Armenia,Ukraine,10/07/00,WOC-Q-Europe,2,3,1
@@ -6917,9 +6918,16 @@ Switzerland,Faroe Islands,10/07/00,WOC-Q-Europe,5,1,1
 Wales,Norway,10/07/00,WOC-Q-Europe,1,1,1
 Colombia,Paraguay,10/07/00,WOC-Q-South America,0,2,1
 Macedonia,Azerbaijan,10/06/00,WOC-Q-Europe,3,0,1
+Saudi Arabia,China,10/05/00,Friendlies,2,0,0
 France,Cameroon,10/04/00,Friendlies,1,1,1
+Jordan,Saudi Arabia,10/02/00,Friendlies,1,0,1
+Saudi Arabia,United Arab Emirates,09/28/00,Friendlies,6,1,1
+Saudi Arabia,Syria,09/26/00,Friendlies,3,0,1
+Saudi Arabia,Syria,09/24/00,Friendlies,2,1,1
 Senegal,Togo,09/24/00,CAF-Q,0,0,1
 Libya,Sudan,09/10/00,CAF-Q,1,0,1
+Lebanon,United Arab Emirates,09/10/00,Friendlies,2,2,1
+Lebanon,United Arab Emirates,09/07/00,Friendlies,0,1,1
 Algeria,Burkina Faso,09/03/00,CAF-Q,1,1,1
 Burundi,Angola,09/03/00,CAF-Q,0,0,1
 Kenya,Tunisia,09/03/00,CAF-Q,0,0,1
@@ -6980,6 +6988,8 @@ Costa Rica,Guatemala,08/15/00,WOC-Q-North America,2,1,1
 Mexico,Canada,08/15/00,WOC-Q-North America,2,0,1
 Chile,Brazil,08/15/00,WOC-Q-South America,3,0,1
 Colombia,Uruguay,08/15/00,WOC-Q-South America,1,0,1
+Lebanon,Oman,08/13/00,Friendlies,1,2,1
+Lebanon,Oman,08/05/00,Friendlies,3,1,1
 Bolivia,Paraguay,07/27/00,WOC-Q-South America,0,0,1
 Brazil,Argentina,07/26/00,WOC-Q-South America,3,1,1
 Uruguay,Peru,07/26/00,WOC-Q-South America,0,0,1
@@ -7061,6 +7071,7 @@ Netherlands,Yugoslavia,06/25/00,EUC-K,6,1,1
 Spain,France,06/25/00,EUC-K,1,2,0
 Australia,Vanuatu,06/25/00,OFC-K,1,0,0
 New Zealand,Solomon Islands,06/25/00,OFC-K,2,0,0
+Lebanon,Kuwait,06/25/00,Friendlies,3,1,1
 Italy,Romania,06/24/00,EUC-K,2,0,0
 Turkey,Portugal,06/24/00,EUC-K,0,2,0
 Australia,Solomon Islands,06/23/00,OFC-G,6,0,0
@@ -7111,14 +7122,19 @@ Cuba,Canada,06/04/00,WOC-Q-North America,0,1,1
 Argentina,Bolivia,06/04/00,WOC-Q-South America,1,0,1
 Colombia,Venezuela,06/04/00,WOC-Q-South America,3,0,1
 Peru,Brazil,06/04/00,WOC-Q-South America,0,1,1
+Slovenia,Saudi Arabia,06/03/00,Friendlies,2,0,1
 Honduras,Haiti,06/03/00,WOC-Q-North America,4,0,1
 Paraguay,Ecuador,06/03/00,WOC-Q-South America,3,1,1
 Uruguay,Chile,06/03/00,WOC-Q-South America,2,1,1
+Hungary,Saudi Arabia,05/31/00,Friendlies,2,2,1
+Slovakia,Saudi Arabia,05/24/00,Friendlies,1,1,1
+Lebanon,Saudi Arabia,05/21/00,Friendlies,0,0,1
 Barbados,Cuba,05/21/00,WOC-Q-North America,1,1,1
 Haiti,Trinidad and Tobago,05/21/00,WOC-Q-North America,1,1,1
 Panama,Nicaragua,05/21/00,WOC-Q-North America,4,0,1
 Saint Vincent and the Grenadines,Antigua and Barbuda,05/21/00,WOC-Q-North America,4,0,1
 Guatemala,Belize,05/19/00,WOC-Q-North America,0,0,1
+Jordan,Lebanon,05/13/00,Friendlies,1,1,0
 Antigua and Barbuda,Saint Vincent and the Grenadines,05/07/00,WOC-Q-North America,2,1,1
 Cuba,Barbados,05/07/00,WOC-Q-North America,1,1,1
 El Salvador,Guatemala,05/07/00,WOC-Q-North America,1,1,1
@@ -7255,6 +7271,7 @@ Netherlands Antilles,Trinidad and Tobago,03/18/00,WOC-Q-North America,1,1,1
 Saint Kitts and Nevis,Turks and Caicos Islands,03/18/00,WOC-Q-North America,8,0,1
 Aruba,Puerto Rico,03/11/00,WOC-Q-North America,4,2,1
 Haiti,Dominica,03/11/00,WOC-Q-North America,4,0,1
+Jordan,Lebanon,03/08/00,Friendlies,1,1,1
 Anguilla,Bahamas,03/05/00,WOC-Q-North America,1,3,1
 Barbados,Grenada,03/05/00,WOC-Q-North America,2,2,1
 British Virgin Islands,Bermuda,03/05/00,WOC-Q-North America,1,5,1
@@ -7268,6 +7285,7 @@ Trinidad and Tobago,Netherlands Antilles,03/04/00,WOC-Q-North America,5,0,1
 Canada,Colombia,02/27/00,CON-K,2,0,0
 Trinidad and Tobago,Canada,02/24/00,CON-K,0,1,0
 Colombia,Peru,02/23/00,CON-K,2,1,0
+Lebanon,Jordan,02/23/00,Friendlies,1,1,1
 Macau,Japan,02/20/00,AFC-Q,0,3,1
 Singapore,Brunei,02/20/00,AFC-Q,1,0,1
 Costa Rica,Trinidad and Tobago,02/20/00,CON-K,1,2,0
@@ -7283,6 +7301,7 @@ Kuwait,Yemen,02/16/00,AFC-Q,2,0,1
 Macau,Singapore,02/16/00,AFC-Q,0,1,1
 Honduras,Colombia,02/16/00,CON-G,2,0,0
 United States,Peru,02/16/00,CON-G,1,0,1
+Lebanon,North Korea,02/16/00,Friendlies,1,0,1
 Canada,South Korea,02/15/00,CON-G,0,0,0
 Trinidad and Tobago,Guatemala,02/15/00,CON-G,4,2,0
 Kuwait,Bhutan,02/14/00,AFC-Q,20,0,1
@@ -7334,12 +7353,14 @@ Egypt,Zambia,01/23/00,CAF-G,2,0,0
 Nigeria,Tunisia,01/23/00,CAF-G,4,2,1
 South Africa,Gabon,01/23/00,CAF-G,3,1,0
 Ghana,Cameroon,01/22/00,CAF-G,1,1,1
+Malta,Lebanon,12/15/99,Friendlies,1,0,1
 India,Bangladesh,11/28/99,AFC-Q,2,2,1
 United Arab Emirates,Sri Lanka,11/28/99,AFC-Q,6,0,1
 Sri Lanka,India,11/26/99,AFC-Q,1,3,1
 United Arab Emirates,Uzbekistan,11/26/99,AFC-Q,0,1,1
 India,Uzbekistan,11/24/99,AFC-Q,2,3,1
 Sri Lanka,Bangladesh,11/24/99,AFC-Q,1,3,1
+Lebanon,Malta,11/24/99,Friendlies,0,0,1
 Sri Lanka,Uzbekistan,11/22/99,AFC-Q,0,6,1
 United Arab Emirates,Bangladesh,11/22/99,AFC-Q,3,0,1
 Bangladesh,Uzbekistan,11/20/99,AFC-Q,0,6,1
@@ -7391,6 +7412,7 @@ Canada,Cuba,10/06/99,CON-Q,0,0,0
 El Salvador,Haiti,10/06/99,CON-Q,1,1,0
 Greece,Albania,10/06/99,EUC-Q,2,0,1
 Scotland,Bosnia-Herzegovina,10/05/99,EUC-Q,1,0,1
+Saudi Arabia,Zambia,09/11/99,Friendlies,2,1,0
 Andorra,Russia,09/08/99,EUC-Q,1,2,1
 Armenia,France,09/08/99,EUC-Q,2,3,1
 Czech Republic,Bosnia-Herzegovina,09/08/99,EUC-Q,3,0,1
@@ -7412,6 +7434,7 @@ Romania,Portugal,09/08/99,EUC-Q,1,1,1
 Slovakia,Liechtenstein,09/08/99,EUC-Q,2,0,1
 Spain,Cyprus,09/08/99,EUC-Q,8,0,1
 Switzerland,Belarus,09/08/99,EUC-Q,2,0,1
+Saudi Arabia,Zambia,09/08/99,Friendlies,0,0,0
 Cyprus,Israel,09/05/99,EUC-Q,3,2,1
 Yugoslavia,Macedonia,09/05/99,EUC-Q,3,1,1
 Albania,Latvia,09/04/99,EUC-Q,3,3,1
