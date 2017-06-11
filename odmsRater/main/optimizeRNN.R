@@ -70,6 +70,7 @@ updateRNN <- function(x, rData) {
   print(noquote(sprintf("slopeCost = %f", slopeCost)))
   rData[["rOptions"]] <- rOptions
   rData[["rOutput"]] <- rOutput
+  write.table(x=x, file="B.txt", append=TRUE, sep=",", col.names=FALSE, row.names=FALSE)
   rData
 }
 

@@ -1,4 +1,4 @@
-writeData <- function(rData, T, dataPath) {
+writeGames <- function(rData, T, dataPath) {
   rOutput <- rData[["rOutput"]]
   gamesData <- getGamesData(rOutput$gi, T)
   endDate <- gamesData[["endDate"]]
