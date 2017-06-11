@@ -4,8 +4,7 @@ optimizeRNN <- function(tTree, fTree, gTree, gi, rData) {
   if (is.null(rData)) {
     rOptions <- newRatingsOptions(fTree)
     rData <- list(rOptions=rOptions, rOutput=rOutput)
-    rData <- trainRNN(rData)
-    print(printModel(rOptions))
+    x <- trainRNN(rData)
   }
   else {
     rOptions <- rData[["rOptions"]]
@@ -38,7 +37,8 @@ trainRNN <- function(rData) {
       lower=xLBd, upper=xUBd, control=list(trace=3, lmm=rOptions$lmm,
       factr=rOptions$factr, REPORT=1, maxit=1))
   stopCluster(cluster)
-  rData
+  x <- optimObj$par
+  x
 }
 
 updateRNN <- function(x, rData) {
