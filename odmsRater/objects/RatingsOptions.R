@@ -4,15 +4,15 @@ newRatingsOptions <- function(fTree) {
 
   rOptions <- list(
     # ODM layer
-    b=0.3,
-    c=0.3,
+    b=0.4,
+    c=0.4,
 
     # Lin layer
     k=0.16,
 
     # Poisson layer
     meanGoals=1,
-    strBeta=1.6,
+    strBeta=1.2,
     hA=0.4,
     corrBeta=-1,
 
