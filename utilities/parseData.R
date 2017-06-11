@@ -28,7 +28,7 @@ parseData <- function(filename) {
       data[j, "HomeTeam"] <- teams[1]
       data[j, "AwayTeam"] <- teams[2]
       data[j, "Date"] <- date
-      data[j, "Contest"] <- "CAF-Q"
+      data[j, "Contest"] <- "WOC-Q-Africa"
       data[j, "HomeGoals"] <- goals[1]
       data[j, "AwayGoals"] <- goals[2]
       data[j, "HomeAdvantage"] <- 1

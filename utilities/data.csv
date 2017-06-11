@@ -1,85 +1,82 @@
 "HomeTeam","AwayTeam","Date","Contest","HomeGoals","AwayGoals","HomeAdvantage"
-"Lesotho","Botswana","06/14/92","CAF-Q",0,0,1
-"Botswana","Lesotho","06/28/92","CAF-Q",0,4,1
-"Guinea-Bissau","Cape Verde","06/14/92","CAF-Q",3,1,1
-"Cape Verde","Guinea-Bissau","06/28/92","CAF-Q",0,1,1
-"Gabon","Cameroon","08/16/92","CAF-Q",0,0,1
-"Benin","Niger","08/16/92","CAF-Q",1,2,1
-"Cameroon","Benin","08/30/92","CAF-Q",2,0,1
-"Niger","Gabon","08/30/92","CAF-Q",1,3,1
-"Gabon","Benin","04/11/93","CAF-Q",2,0,1
-"Niger","Cameroon","04/11/93","CAF-Q",0,0,1
-"Niger","Benin","04/25/93","CAF-Q",4,1,1
-"Cameroon","Gabon","04/25/93","CAF-Q",0,0,1
-"Benin","Cameroon","07/11/93","CAF-Q",0,3,1
-"Gabon","Niger","07/11/93","CAF-Q",3,0,1
-"Benin","Gabon","07/25/93","CAF-Q",1,2,1
-"Cameroon","Niger","07/25/93","CAF-Q",2,0,1
-"Uganda","Ethiopia","08/15/92","CAF-Q",3,1,1
-"Sudan","Nigeria","08/16/92","CAF-Q",0,0,1
-"Nigeria","Uganda","08/29/92","CAF-Q",2,0,1
-"Ethiopia","Sudan","08/30/92","CAF-Q",3,0,1
-"Sudan","Uganda","04/11/93","CAF-Q",1,1,1
-"Ethiopia","Nigeria","04/11/93","CAF-Q",1,0,1
-"Nigeria","Sudan","04/24/93","CAF-Q",4,0,1
-"Ethiopia","Uganda","04/25/93","CAF-Q",2,2,1
-"Sudan","Ethiopia","07/10/93","CAF-Q",1,0,1
-"Uganda","Nigeria","07/17/93","CAF-Q",0,0,1
-"Uganda","Sudan","07/24/93","CAF-Q",1,0,1
-"Nigeria","Ethiopia","07/24/93","CAF-Q",6,0,1
-"Algeria","Guinea-Bissau","08/14/92","CAF-Q",3,1,1
-"Sierra Leone","Algeria","08/29/92","CAF-Q",1,0,1
-"Senegal","Guinea-Bissau","08/30/92","CAF-Q",3,0,1
-"Guinea-Bissau","Sierra Leone","10/04/92","CAF-Q",0,3,1
-"Sierra Leone","Senegal","11/08/92","CAF-Q",2,0,1
-"Senegal","Algeria","01/10/93","CAF-Q",1,2,1
-"Guinea-Bissau","Algeria","01/24/93","CAF-Q",1,4,1
-"Algeria","Sierra Leone","04/09/93","CAF-Q",0,0,1
-"Guinea-Bissau","Senegal","04/11/93","CAF-Q",0,3,1
-"Sierra Leone","Guinea-Bissau","04/24/93","CAF-Q",2,0,1
-"Senegal","Sierra Leone","07/11/93","CAF-Q",1,1,1
-"Algeria","Senegal","07/25/93","CAF-Q",4,0,1
-"Democratic Republic of the Congo","Mozambique","08/16/92","CAF-Q",2,0,1
-"Lesotho","Kenya","08/16/92","CAF-Q",2,2,1
-"Kenya","Democratic Republic of the Congo","08/29/92","CAF-Q",1,3,1
-"Mozambique","Lesotho","08/30/92","CAF-Q",3,0,1
-"Mozambique","Kenya","04/11/93","CAF-Q",0,0,1
-"Lesotho","Democratic Republic of the Congo","04/11/93","CAF-Q",1,1,1
-"Kenya","Lesotho","04/24/93","CAF-Q",3,0,1
-"Mozambique","Democratic Republic of the Congo","04/25/93","CAF-Q",0,0,1
-"Democratic Republic of the Congo","Kenya","07/11/93","CAF-Q",0,1,1
-"Lesotho","Mozambique","07/11/93","CAF-Q",1,1,1
-"Kenya","Mozambique","07/24/93","CAF-Q",4,1,1
-"Democratic Republic of the Congo","Lesotho","07/25/93","CAF-Q",7,0,1
-"Zambia","Mauritius","08/16/92","CAF-Q",2,1,1
-"Zimbabwe","South Africa","08/16/92","CAF-Q",4,1,1
-"Mauritius","Zimbabwe","08/30/92","CAF-Q",0,1,1
-"South Africa","Zambia","08/30/92","CAF-Q",0,1,1
-"South Africa","Mauritius","04/10/93","CAF-Q",0,0,1
-"Zambia","Zimbabwe","04/11/93","CAF-Q",0,0,1
-"South Africa","Zimbabwe","04/24/93","CAF-Q",1,1,1
-"Mauritius","Zambia","04/25/93","CAF-Q",0,3,1
-"Zimbabwe","Mauritius","07/11/93","CAF-Q",2,0,1
-"Zambia","South Africa","07/11/93","CAF-Q",3,0,1
-"Zimbabwe","Zambia","07/25/93","CAF-Q",1,1,1
-"Mauritius","South Africa","07/25/93","CAF-Q",1,3,1
-"Burundi","Republic of the Congo","08/16/92","CAF-Q",1,0,1
-"Guinea","Burundi","08/30/92","CAF-Q",2,2,1
-"Guinea","Republic of the Congo","04/11/93","CAF-Q",1,0,1
-"Republic of the Congo","Burundi","04/25/93","CAF-Q",0,0,1
-"Burundi","Guinea","07/11/93","CAF-Q",2,2,1
-"Republic of the Congo","Guinea","08/15/93","CAF-Q",0,0,1
-"Ghana","Liberia","04/11/93","CAF-Q",1,0,1
-"Liberia","Ghana","07/25/93","CAF-Q",0,2,1
-"Malawi","Egypt","08/15/92","CAF-Q",1,0,1
-"Malawi","Mali","08/29/92","CAF-Q",1,1,1
-"Mali","Morocco","10/04/92","CAF-Q",2,1,1
-"Morocco","Egypt","11/08/92","CAF-Q",0,0,1
-"Egypt","Mali","04/09/93","CAF-Q",2,1,1
-"Morocco","Malawi","04/11/93","CAF-Q",0,1,1
-"Egypt","Malawi","04/23/93","CAF-Q",2,0,1
-"Morocco","Mali","04/25/93","CAF-Q",1,0,1
-"Egypt","Morocco","07/11/93","CAF-Q",1,1,1
-"Mali","Malawi","07/11/93","CAF-Q",2,1,1
-"Malawi","Morocco","07/25/93","CAF-Q",0,2,1
-"Mali","Egypt","07/25/93","CAF-Q",2,1,1
+"Somalia","Niger","10/09/15","WOC-Q-Africa",0,2,1
+"Niger","Somalia","10/13/15","WOC-Q-Africa",4,0,1
+"Mauritania","South Sudan","10/13/15","WOC-Q-Africa",4,0,1
+"The Gambia","Namibia","10/09/15","WOC-Q-Africa",1,1,1
+"Namibia","The Gambia","10/13/15","WOC-Q-Africa",2,1,1
+"Chad","Sierra Leone","10/10/15","WOC-Q-Africa",1,0,1
+"Sierra Leone","Chad","10/13/15","WOC-Q-Africa",2,1,1
+"Comoros","Lesotho","10/07/15","WOC-Q-Africa",0,0,1
+"Lesotho","Comoros","10/13/15","WOC-Q-Africa",1,1,1
+"Djibouti","Swaziland","10/09/15","WOC-Q-Africa",0,6,1
+"Swaziland","Djibouti","10/17/15","WOC-Q-Africa",2,1,1
+"Eritrea","Botswana","10/10/15","WOC-Q-Africa",0,2,1
+"Botswana","Eritrea","10/13/15","WOC-Q-Africa",3,1,1
+"Seychelles","Burundi","10/07/15","WOC-Q-Africa",0,1,1
+"Burundi","Seychelles","10/13/15","WOC-Q-Africa",2,0,1
+"Liberia","Guinea-Bissau","10/08/15","WOC-Q-Africa",1,1,1
+"Guinea-Bissau","Liberia","10/13/15","WOC-Q-Africa",1,3,1
+"Central African Republic","Madagascar","10/10/15","WOC-Q-Africa",0,3,1
+"Madagascar","Central African Republic","10/13/15","WOC-Q-Africa",2,2,1
+"Mauritius","Kenya","10/07/15","WOC-Q-Africa",2,5,1
+"Kenya","Mauritius","10/11/15","WOC-Q-Africa",0,0,1
+"Tanzania","Malawi","10/07/15","WOC-Q-Africa",2,0,1
+"Malawi","Tanzania","10/11/15","WOC-Q-Africa",1,0,1
+"Niger","Cameroon","11/13/15","WOC-Q-Africa",0,3,1
+"Cameroon","Niger","11/17/15","WOC-Q-Africa",0,0,1
+"Mauritania","Tunisia","11/13/15","WOC-Q-Africa",1,2,1
+"Tunisia","Mauritania","11/17/15","WOC-Q-Africa",2,1,1
+"Namibia","Guinea","11/12/15","WOC-Q-Africa",0,1,1
+"Guinea","Namibia","11/15/15","WOC-Q-Africa",2,0,1
+"Ethiopia","Republic of the Congo","11/14/15","WOC-Q-Africa",3,4,1
+"Republic of the Congo","Ethiopia","11/17/15","WOC-Q-Africa",2,1,1
+"Chad","Egypt","11/14/15","WOC-Q-Africa",1,0,1
+"Egypt","Chad","11/17/15","WOC-Q-Africa",4,0,1
+"Comoros","Ghana","11/13/15","WOC-Q-Africa",0,0,1
+"Ghana","Comoros","11/17/15","WOC-Q-Africa",2,0,1
+"Swaziland","Nigeria","11/13/15","WOC-Q-Africa",0,0,1
+"Nigeria","Swaziland","11/17/15","WOC-Q-Africa",2,0,1
+"Botswana","Mali","11/14/15","WOC-Q-Africa",2,1,1
+"Mali","Botswana","11/17/15","WOC-Q-Africa",2,0,1
+"Burundi","Democratic Republic of the Congo","11/12/15","WOC-Q-Africa",2,3,1
+"Liberia","Ivory Coast","11/13/15","WOC-Q-Africa",0,1,1
+"Ivory Coast","Liberia","11/17/15","WOC-Q-Africa",3,0,1
+"Madagascar","Senegal","11/13/15","WOC-Q-Africa",2,2,1
+"Senegal","Madagascar","11/17/15","WOC-Q-Africa",3,0,1
+"Kenya","Cape Verde","11/13/15","WOC-Q-Africa",1,0,1
+"Cape Verde","Kenya","11/17/15","WOC-Q-Africa",2,0,1
+"Tanzania","Algeria","11/14/15","WOC-Q-Africa",2,2,1
+"Algeria","Tanzania","11/17/15","WOC-Q-Africa",7,0,1
+"Sudan","Zambia","11/11/15","WOC-Q-Africa",0,1,1
+"Zambia","Sudan","11/15/15","WOC-Q-Africa",2,0,1
+"Libya","Rwanda","11/13/15","WOC-Q-Africa",1,0,1
+"Rwanda","Libya","11/17/15","WOC-Q-Africa",1,3,1
+"Morocco","Equatorial Guinea","11/12/15","WOC-Q-Africa",2,0,1
+"Equatorial Guinea","Morocco","11/15/15","WOC-Q-Africa",1,0,1
+"Mozambique","Gabon","11/11/15","WOC-Q-Africa",1,0,1
+"Benin","Burkina Faso","11/12/15","WOC-Q-Africa",2,1,1
+"Burkina Faso","Benin","11/17/15","WOC-Q-Africa",2,0,1
+"Togo","Uganda","11/12/15","WOC-Q-Africa",0,1,1
+"Uganda","Togo","11/15/15","WOC-Q-Africa",3,0,1
+"Angola","South Africa","11/13/15","WOC-Q-Africa",1,3,1
+"South Africa","Angola","11/17/15","WOC-Q-Africa",1,0,1
+"Democratic Republic of the Congo","Libya","10/08/16","WOC-Q-Africa",4,0,1
+"Tunisia","Guinea","10/09/16","WOC-Q-Africa",2,0,1
+"Libya","Tunisia","11/11/16","WOC-Q-Africa",0,1,1
+"Guinea","Democratic Republic of the Congo","11/13/16","WOC-Q-Africa",1,2,1
+"Zambia","Nigeria","10/09/16","WOC-Q-Africa",1,2,1
+"Algeria","Cameroon","10/09/16","WOC-Q-Africa",1,1,1
+"Cameroon","Zambia","11/12/16","WOC-Q-Africa",1,1,1
+"Nigeria","Algeria","11/12/16","WOC-Q-Africa",3,1,1
+"Gabon","Morocco","10/08/16","WOC-Q-Africa",0,0,1
+"Ivory Coast","Mali","10/08/16","WOC-Q-Africa",3,1,1
+"Mali","Gabon","11/12/16","WOC-Q-Africa",0,0,1
+"Morocco","Ivory Coast","11/12/16","WOC-Q-Africa",0,0,1
+"Burkina Faso","South Africa","10/08/16","WOC-Q-Africa",1,1,1
+"Senegal","Cape Verde","10/08/16","WOC-Q-Africa",2,0,1
+"South Africa","Senegal","11/12/16","WOC-Q-Africa",2,1,1
+"Cape Verde","Burkina Faso","11/12/16","WOC-Q-Africa",0,2,1
+"Ghana","Uganda","10/07/16","WOC-Q-Africa",0,0,1
+"Republic of the Congo","Egypt","10/09/16","WOC-Q-Africa",1,2,1
+"Uganda","Republic of the Congo","11/12/16","WOC-Q-Africa",1,0,1
+"Egypt","Ghana","11/13/16","WOC-Q-Africa",2,0,1

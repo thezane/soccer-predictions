@@ -43,6 +43,39 @@ Colombia,Bolivia,03/23/17,WOC-Q-South America,1,0,1
 Paraguay,Ecuador,03/23/17,WOC-Q-South America,2,1,1
 Uruguay,Brazil,03/23/17,WOC-Q-South America,1,4,1
 Venezuela,Peru,03/23/17,WOC-Q-South America,2,2,1
+Egypt,Cameroon,02/05/17,CAF-K,1,2,0
+Burkina Faso,Ghana,02/04/17,CAF-K,1,0,0
+Cameroon,Ghana,02/02/17,CAF-K,2,0,0
+Burkina Faso,Egypt,02/01/17,CAF-K,1,1,0
+Democratic Republic of the Congo,Ghana,01/29/17,CAF-K,1,2,0
+Egypt,Morocco,01/29/17,CAF-K,1,0,0
+Burkina Faso,Tunisia,01/28/17,CAF-K,2,0,0
+Senegal,Cameroon,01/28/17,CAF-K,0,0,0
+Egypt,Ghana,01/25/17,CAF-G,1,0,0
+Uganda,Mali,01/25/17,CAF-G,1,1,0
+Morocco,Ivory Coast,01/24/17,CAF-G,1,0,0
+Togo,Democratic Republic of the Congo,01/24/17,CAF-G,1,3,0
+Senegal,Algeria,01/23/17,CAF-G,2,2,0
+Zimbabwe,Tunisia,01/23/17,CAF-G,2,4,0
+Gabon,Cameroon,01/22/17,CAF-G,0,0,1
+Guinea-Bissau,Burkina Faso,01/22/17,CAF-G,0,2,0
+Egypt,Uganda,01/21/17,CAF-G,1,0,0
+Ghana,Mali,01/21/17,CAF-G,1,0,0
+Ivory Coast,Democratic Republic of the Congo,01/20/17,CAF-G,2,2,0
+Morocco,Togo,01/20/17,CAF-G,3,1,0
+Algeria,Tunisia,01/19/17,CAF-G,1,2,0
+Senegal,Zimbabwe,01/19/17,CAF-G,2,0,0
+Cameroon,Guinea-Bissau,01/18/17,CAF-G,2,1,0
+Gabon,Burkina Faso,01/18/17,CAF-G,1,1,1
+Ghana,Uganda,01/17/17,CAF-G,1,0,0
+Mali,Egypt,01/17/17,CAF-G,0,0,0
+Democratic Republic of the Congo,Morocco,01/16/17,CAF-G,1,0,0
+Ivory Coast,Togo,01/16/17,CAF-G,0,0,0
+Algeria,Zimbabwe,01/15/17,CAF-G,2,2,0
+Tunisia,Senegal,01/15/17,CAF-G,0,2,0
+Burkina Faso,Cameroon,01/14/17,CAF-G,1,1,0
+Gabon,Guinea-Bissau,01/14/17,CAF-G,1,1,1
+Comoros,Gabon,11/15/16,Friendlies,1,1,0
 Russia,Romania,11/15/16,Friendlies,1,0,1
 Costa Rica,United States,11/15/16,WOC-Q-North America,4,0,1
 Honduras,Trinidad and Tobago,11/15/16,WOC-Q-North America,3,1,1
@@ -52,6 +85,8 @@ Bolivia,Paraguay,11/15/16,WOC-Q-South America,1,0,1
 Chile,Uruguay,11/15/16,WOC-Q-South America,3,1,1
 Ecuador,Venezuela,11/15/16,WOC-Q-South America,3,0,1
 Peru,Brazil,11/15/16,WOC-Q-South America,0,2,1
+Egypt,Ghana,11/13/16,WOC-Q-Africa,2,0,1
+Guinea,Democratic Republic of the Congo,11/13/16,WOC-Q-Africa,1,2,1
 Belgium,Estonia,11/13/16,WOC-Q-Europe,8,1,1
 Cyprus,Gibraltar,11/13/16,WOC-Q-Europe,3,1,1
 Greece,Bosnia-Herzegovina,11/13/16,WOC-Q-Europe,1,1,1
@@ -59,6 +94,13 @@ Hungary,Andorra,11/13/16,WOC-Q-Europe,4,0,1
 Luxembourg,Netherlands,11/13/16,WOC-Q-Europe,1,3,1
 Portugal,Latvia,11/13/16,WOC-Q-Europe,4,1,1
 Switzerland,Faroe Islands,11/13/16,WOC-Q-Europe,2,0,1
+Cameroon,Zambia,11/12/16,WOC-Q-Africa,1,1,1
+Cape Verde,Burkina Faso,11/12/16,WOC-Q-Africa,0,2,1
+Mali,Gabon,11/12/16,WOC-Q-Africa,0,0,1
+Morocco,Ivory Coast,11/12/16,WOC-Q-Africa,0,0,1
+Nigeria,Algeria,11/12/16,WOC-Q-Africa,3,1,1
+South Africa,Senegal,11/12/16,WOC-Q-Africa,2,1,1
+Uganda,Republic of the Congo,11/12/16,WOC-Q-Africa,1,0,1
 Albania,Israel,11/12/16,WOC-Q-Europe,0,3,1
 Austria,Republic of Ireland,11/12/16,WOC-Q-Europe,0,1,1
 Croatia,Iceland,11/12/16,WOC-Q-Europe,2,0,1
@@ -68,6 +110,7 @@ Spain,Macedonia,11/12/16,WOC-Q-Europe,4,0,1
 Turkey,Kosovo,11/12/16,WOC-Q-Europe,2,0,1
 Ukraine,Finland,11/12/16,WOC-Q-Europe,1,0,1
 Wales,Serbia,11/12/16,WOC-Q-Europe,1,1,1
+Libya,Tunisia,11/11/16,WOC-Q-Africa,0,1,1
 Armenia,Montenegro,11/11/16,WOC-Q-Europe,3,2,1
 Czech Republic,Norway,11/11/16,WOC-Q-Europe,2,1,1
 Denmark,Kazakhstan,11/11/16,WOC-Q-Europe,4,1,1
@@ -109,6 +152,10 @@ Gibraltar,Belgium,10/10/16,WOC-Q-Europe,0,6,1
 Latvia,Hungary,10/10/16,WOC-Q-Europe,0,2,1
 Netherlands,France,10/10/16,WOC-Q-Europe,0,1,1
 Sweden,Bulgaria,10/10/16,WOC-Q-Europe,3,0,1
+Algeria,Cameroon,10/09/16,WOC-Q-Africa,1,1,1
+Republic of the Congo,Egypt,10/09/16,WOC-Q-Africa,1,2,1
+Tunisia,Guinea,10/09/16,WOC-Q-Africa,2,0,1
+Zambia,Nigeria,10/09/16,WOC-Q-Africa,1,2,1
 Albania,Spain,10/09/16,WOC-Q-Europe,0,2,1
 Finland,Croatia,10/09/16,WOC-Q-Europe,0,1,1
 Iceland,Turkey,10/09/16,WOC-Q-Europe,2,0,1
@@ -118,6 +165,11 @@ Moldova,Republic of Ireland,10/09/16,WOC-Q-Europe,1,3,1
 Serbia,Austria,10/09/16,WOC-Q-Europe,3,2,1
 Ukraine,Kosovo,10/09/16,WOC-Q-Europe,3,0,1
 Wales,Georgia,10/09/16,WOC-Q-Europe,1,1,1
+Burkina Faso,South Africa,10/08/16,WOC-Q-Africa,1,1,1
+Democratic Republic of the Congo,Libya,10/08/16,WOC-Q-Africa,4,0,1
+Gabon,Morocco,10/08/16,WOC-Q-Africa,0,0,1
+Ivory Coast,Mali,10/08/16,WOC-Q-Africa,3,1,1
+Senegal,Cape Verde,10/08/16,WOC-Q-Africa,2,0,1
 Armenia,Romania,10/08/16,WOC-Q-Europe,0,5,1
 Azerbaijan,Norway,10/08/16,WOC-Q-Europe,1,0,1
 England,Malta,10/08/16,WOC-Q-Europe,2,0,1
@@ -127,6 +179,7 @@ Northern Ireland,San Marino,10/08/16,WOC-Q-Europe,4,0,1
 Poland,Denmark,10/08/16,WOC-Q-Europe,3,2,1
 Scotland,Lithuania,10/08/16,WOC-Q-Europe,1,1,1
 Slovenia,Slovakia,10/08/16,WOC-Q-Europe,1,0,1
+Ghana,Uganda,10/07/16,WOC-Q-Africa,0,0,1
 Belgium,Bosnia-Herzegovina,10/07/16,WOC-Q-Europe,4,0,1
 Estonia,Gibraltar,10/07/16,WOC-Q-Europe,4,0,1
 France,Bulgaria,10/07/16,WOC-Q-Europe,4,1,1
@@ -161,6 +214,7 @@ Chile,Bolivia,09/07/16,WOC-Q-South America,0,0,1
 Peru,Ecuador,09/07/16,WOC-Q-South America,2,1,1
 Uruguay,Paraguay,09/07/16,WOC-Q-South America,4,0,1
 Venezuela,Argentina,09/07/16,WOC-Q-South America,2,2,1
+Cameroon,Gabon,09/06/16,Friendlies,2,1,1
 Andorra,Latvia,09/06/16,WOC-Q-Europe,0,1,1
 Belarus,France,09/06/16,WOC-Q-Europe,0,0,1
 Bosnia-Herzegovina,Estonia,09/06/16,WOC-Q-Europe,5,0,1
@@ -179,6 +233,19 @@ Serbia,Republic of Ireland,09/05/16,WOC-Q-Europe,2,2,1
 Spain,Liechtenstein,09/05/16,WOC-Q-Europe,8,0,1
 Ukraine,Iceland,09/05/16,WOC-Q-Europe,1,1,1
 Wales,Moldova,09/05/16,WOC-Q-Europe,4,0,1
+Algeria,Lesotho,09/04/16,CAF-Q,6,0,1
+Burkina Faso,Botswana,09/04/16,CAF-Q,2,1,1
+Democratic Republic of the Congo,Central African Republic,09/04/16,CAF-Q,4,1,1
+Equatorial Guinea,South Sudan,09/04/16,CAF-Q,4,0,1
+Guinea,Zimbabwe,09/04/16,CAF-Q,1,0,1
+Malawi,Swaziland,09/04/16,CAF-Q,1,0,1
+Mali,Benin,09/04/16,CAF-Q,5,2,1
+Niger,Burundi,09/04/16,CAF-Q,3,1,1
+Republic of the Congo,Guinea-Bissau,09/04/16,CAF-Q,1,0,1
+Togo,Djibouti,09/04/16,CAF-Q,5,0,1
+Tunisia,Liberia,09/04/16,CAF-Q,4,1,1
+Uganda,Comoros,09/04/16,CAF-Q,1,0,1
+Zambia,Kenya,09/04/16,CAF-Q,1,1,1
 Czech Republic,Northern Ireland,09/04/16,WOC-Q-Europe,0,0,1
 Denmark,Armenia,09/04/16,WOC-Q-Europe,1,0,1
 Kazakhstan,Poland,09/04/16,WOC-Q-Europe,2,2,1
@@ -188,10 +255,22 @@ Norway,Germany,09/04/16,WOC-Q-Europe,0,3,1
 Romania,Montenegro,09/04/16,WOC-Q-Europe,1,1,1
 San Marino,Azerbaijan,09/04/16,WOC-Q-Europe,0,1,1
 Slovakia,England,09/04/16,WOC-Q-Europe,0,1,1
+Angola,Madagascar,09/03/16,CAF-Q,1,1,1
+Cameroon,The Gambia,09/03/16,CAF-Q,2,0,1
+Cape Verde,Libya,09/03/16,CAF-Q,0,1,1
+Ethiopia,Seychelles,09/03/16,CAF-Q,2,1,1
+Ghana,Rwanda,09/03/16,CAF-Q,1,1,1
+Ivory Coast,Sierra Leone,09/03/16,CAF-Q,1,1,1
+Mozambique,Mauritius,09/03/16,CAF-Q,1,0,1
+Nigeria,Tanzania,09/03/16,CAF-Q,1,0,1
+Senegal,Namibia,09/03/16,CAF-Q,2,0,1
 El Salvador,Mexico,09/03/16,WOC-Q-North America,1,3,1
 Haiti,Costa Rica,09/03/16,WOC-Q-North America,0,1,1
 Panama,Jamaica,09/03/16,WOC-Q-North America,2,0,1
 Trinidad and Tobago,Guatemala,09/03/16,WOC-Q-North America,2,2,1
+South Africa,Mauritania,09/02/16,CAF-Q,1,1,1
+Sudan,Gabon,09/02/16,CAF-Q,1,2,1
+Sudan,Gabon,09/02/16,Friendlies,1,2,1
 Honduras,Canada,09/02/16,WOC-Q-North America,2,1,1
 Saint Vincent and the Grenadines,United States,09/02/16,WOC-Q-North America,0,6,1
 Argentina,Uruguay,09/02/16,WOC-Q-South America,1,0,1
@@ -257,6 +336,7 @@ Ecuador,Haiti,06/13/16,COP-G,4,0,0
 Belgium,Italy,06/13/16,EUC-G,0,2,0
 Republic of Ireland,Sweden,06/13/16,EUC-G,1,1,0
 Spain,Czech Republic,06/13/16,EUC-G,1,0,0
+Benin,Equatorial Guinea,06/12/16,CAF-Q,2,1,1
 Colombia,Costa Rica,06/12/16,COP-G,2,3,0
 United States,Paraguay,06/12/16,COP-G,1,0,1
 Germany,Ukraine,06/12/16,EUC-G,2,0,0
@@ -280,22 +360,47 @@ Papua New Guinea,Solomon Islands,06/08/16,OFC-K,2,1,1
 Argentina,Chile,06/07/16,COP-G,2,1,0
 Panama,Bolivia,06/07/16,COP-G,2,1,0
 Mexico,Uruguay,06/06/16,COP-G,3,1,0
+Central African Republic,Angola,06/05/16,CAF-Q,3,1,1
+Comoros,Burkina Faso,06/05/16,CAF-Q,0,1,1
+Kenya,Republic of the Congo,06/05/16,CAF-Q,2,1,1
+Lesotho,Ethiopia,06/05/16,CAF-Q,1,2,1
+Liberia,Togo,06/05/16,CAF-Q,2,2,1
+Madagascar,Democratic Republic of the Congo,06/05/16,CAF-Q,1,6,1
+Mauritius,Ghana,06/05/16,CAF-Q,0,2,1
+Swaziland,Guinea,06/05/16,CAF-Q,1,0,1
+Zimbabwe,Malawi,06/05/16,CAF-Q,3,0,1
 Brazil,Ecuador,06/05/16,COP-G,0,0,0
 Haiti,Peru,06/05/16,COP-G,0,1,0
 Jamaica,Venezuela,06/05/16,COP-G,0,1,0
 Papua New Guinea,Samoa,06/05/16,OFC-G,8,0,1
 Tahiti,New Caledonia,06/05/16,OFC-G,1,1,0
+Botswana,Uganda,06/04/16,CAF-Q,1,2,1
+Burundi,Senegal,06/04/16,CAF-Q,0,2,1
+Guinea-Bissau,Zambia,06/04/16,CAF-Q,3,2,1
+Ivory Coast,Gabon,06/04/16,CAF-Q,2,1,1
+Namibia,Niger,06/04/16,CAF-Q,1,0,1
+Rwanda,Mozambique,06/04/16,CAF-Q,2,3,1
+Sierra Leone,Sudan,06/04/16,CAF-Q,1,0,1
+South Sudan,Mali,06/04/16,CAF-Q,0,3,1
+Tanzania,Egypt,06/04/16,CAF-Q,0,2,1
+The Gambia,South Africa,06/04/16,CAF-Q,0,4,1
 Costa Rica,Paraguay,06/04/16,COP-G,0,0,0
 United States,Colombia,06/04/16,COP-G,0,2,1
 France,Scotland,06/04/16,Friendlies,3,0,1
+Ivory Coast,Gabon,06/04/16,Friendlies,2,1,1
 Fiji,Vanuatu,06/04/16,OFC-G,2,3,0
 New Zealand,Solomon Islands,06/04/16,OFC-K,1,0,0
+Djibouti,Tunisia,06/03/16,CAF-Q,0,3,1
+Libya,Morocco,06/03/16,CAF-Q,1,1,1
+Mauritania,Cameroon,06/03/16,CAF-Q,0,1,1
+Seychelles,Algeria,06/02/16,CAF-Q,0,2,1
 New Caledonia,Samoa,06/01/16,OFC-G,7,0,0
 Papua New Guinea,Tahiti,06/01/16,OFC-G,2,2,1
 Solomon Islands,Fiji,05/31/16,OFC-G,0,1,0
 Vanuatu,New Zealand,05/31/16,OFC-G,0,5,0
 Papua New Guinea,New Caledonia,05/29/16,OFC-G,1,1,1
 Tahiti,Samoa,05/29/16,OFC-G,4,0,0
+Mauritania,Gabon,05/28/16,Friendlies,2,0,0
 New Zealand,Fiji,05/28/16,OFC-G,3,1,0
 Vanuatu,Solomon Islands,05/28/16,OFC-G,0,1,0
 Costa Rica,Jamaica,03/30/16,WOC-Q-North America,3,0,1
@@ -308,20 +413,71 @@ Argentina,Bolivia,03/30/16,WOC-Q-South America,2,0,1
 Paraguay,Brazil,03/30/16,WOC-Q-South America,2,2,1
 Uruguay,Peru,03/30/16,WOC-Q-South America,1,0,1
 Venezuela,Chile,03/30/16,WOC-Q-South America,1,4,1
+Angola,Democratic Republic of the Congo,03/29/16,CAF-Q,0,2,1
+Egypt,Nigeria,03/29/16,CAF-Q,1,0,1
+Ethiopia,Algeria,03/29/16,CAF-Q,3,3,1
+Lesotho,Seychelles,03/29/16,CAF-Q,2,1,1
+Liberia,Djibouti,03/29/16,CAF-Q,5,0,1
+Malawi,Guinea,03/29/16,CAF-Q,1,2,1
+Morocco,Cape Verde,03/29/16,CAF-Q,2,0,1
+Namibia,Burundi,03/29/16,CAF-Q,1,3,1
+Niger,Senegal,03/29/16,CAF-Q,1,2,1
+Rwanda,Mauritius,03/29/16,CAF-Q,5,0,1
+South Africa,Cameroon,03/29/16,CAF-Q,0,0,1
+Sudan,Ivory Coast,03/29/16,CAF-Q,1,1,1
+The Gambia,Mauritania,03/29/16,CAF-Q,0,0,1
+Togo,Tunisia,03/29/16,CAF-Q,0,0,1
+Uganda,Burkina Faso,03/29/16,CAF-Q,0,0,1
 France,Russia,03/29/16,Friendlies,4,2,1
 Colombia,Ecuador,03/29/16,WOC-Q-South America,3,1,1
+Central African Republic,Madagascar,03/28/16,CAF-Q,2,1,1
+Equatorial Guinea,Mali,03/28/16,CAF-Q,0,1,1
+Sierra Leone,Gabon,03/28/16,CAF-Q,1,0,1
+Zimbabwe,Swaziland,03/28/16,CAF-Q,4,0,1
+Sierra Leone,Gabon,03/28/16,Friendlies,1,0,1
+Benin,South Sudan,03/27/16,CAF-Q,4,1,1
+Botswana,Comoros,03/27/16,CAF-Q,2,1,1
+Kenya,Guinea-Bissau,03/27/16,CAF-Q,0,1,1
+Mozambique,Ghana,03/27/16,CAF-Q,0,0,1
+Republic of the Congo,Zambia,03/27/16,CAF-Q,1,1,1
+Burkina Faso,Uganda,03/26/16,CAF-Q,1,0,1
+Burundi,Namibia,03/26/16,CAF-Q,1,3,1
+Cameroon,South Africa,03/26/16,CAF-Q,2,2,1
+Cape Verde,Morocco,03/26/16,CAF-Q,0,1,1
+Democratic Republic of the Congo,Angola,03/26/16,CAF-Q,2,1,1
+Mauritius,Rwanda,03/26/16,CAF-Q,1,0,1
+Senegal,Niger,03/26/16,CAF-Q,2,0,1
+Seychelles,Lesotho,03/26/16,CAF-Q,2,0,1
 Canada,Mexico,03/26/16,WOC-Q-North America,0,3,1
 El Salvador,Honduras,03/26/16,WOC-Q-North America,2,2,1
 Guatemala,United States,03/26/16,WOC-Q-North America,2,0,1
 Haiti,Panama,03/26/16,WOC-Q-North America,0,0,1
 Jamaica,Costa Rica,03/26/16,WOC-Q-North America,1,1,1
 Brazil,Uruguay,03/26/16,WOC-Q-South America,2,2,1
+Algeria,Ethiopia,03/25/16,CAF-Q,7,1,1
+Gabon,Sierra Leone,03/25/16,CAF-Q,2,1,1
+Guinea,Malawi,03/25/16,CAF-Q,0,0,1
+Ivory Coast,Sudan,03/25/16,CAF-Q,1,0,1
+Mali,Equatorial Guinea,03/25/16,CAF-Q,1,0,1
+Mauritania,The Gambia,03/25/16,CAF-Q,2,1,1
+Nigeria,Egypt,03/25/16,CAF-Q,1,1,1
+Swaziland,Zimbabwe,03/25/16,CAF-Q,1,1,1
+Tunisia,Togo,03/25/16,CAF-Q,1,0,1
+Gabon,Sierra Leone,03/25/16,Friendlies,2,1,1
 Netherlands,France,03/25/16,Friendlies,2,3,1
 Saint Vincent and the Grenadines,Trinidad and Tobago,03/25/16,WOC-Q-North America,2,3,1
 Chile,Argentina,03/25/16,WOC-Q-South America,1,2,1
 Peru,Venezuela,03/25/16,WOC-Q-South America,2,2,1
+Comoros,Botswana,03/24/16,CAF-Q,1,0,1
+Djibouti,Liberia,03/24/16,CAF-Q,0,1,1
+Ghana,Mozambique,03/24/16,CAF-Q,3,1,1
+Madagascar,Central African Republic,03/24/16,CAF-Q,1,1,1
 Bolivia,Colombia,03/24/16,WOC-Q-South America,2,3,1
 Ecuador,Paraguay,03/24/16,WOC-Q-South America,2,2,1
+Chad,Tanzania,03/23/16,CAF-Q,0,1,1
+Guinea-Bissau,Kenya,03/23/16,CAF-Q,1,0,1
+South Sudan,Benin,03/23/16,CAF-Q,1,2,1
+Zambia,Republic of the Congo,03/23/16,CAF-Q,1,1,1
 El Salvador,Canada,11/18/15,WOC-Q-North America,0,0,1
 Haiti,Jamaica,11/18/15,WOC-Q-North America,0,1,1
 Panama,Costa Rica,11/18/15,WOC-Q-North America,1,2,1
@@ -332,14 +488,36 @@ Uruguay,Chile,11/18/15,WOC-Q-South America,3,0,1
 Denmark,Sweden,11/17/15,EUC-Q,2,2,1
 Slovenia,Ukraine,11/17/15,EUC-Q,1,1,1
 England,France,11/17/15,Friendlies,2,0,1
+Algeria,Tanzania,11/17/15,WOC-Q-Africa,7,0,1
+Burkina Faso,Benin,11/17/15,WOC-Q-Africa,2,0,1
+Cameroon,Niger,11/17/15,WOC-Q-Africa,0,0,1
+Cape Verde,Kenya,11/17/15,WOC-Q-Africa,2,0,1
+Egypt,Chad,11/17/15,WOC-Q-Africa,4,0,1
+Ghana,Comoros,11/17/15,WOC-Q-Africa,2,0,1
+Ivory Coast,Liberia,11/17/15,WOC-Q-Africa,3,0,1
+Mali,Botswana,11/17/15,WOC-Q-Africa,2,0,1
+Nigeria,Swaziland,11/17/15,WOC-Q-Africa,2,0,1
+Republic of the Congo,Ethiopia,11/17/15,WOC-Q-Africa,2,1,1
+Rwanda,Libya,11/17/15,WOC-Q-Africa,1,3,1
+Senegal,Madagascar,11/17/15,WOC-Q-Africa,3,0,1
+South Africa,Angola,11/17/15,WOC-Q-Africa,1,0,1
+Tunisia,Mauritania,11/17/15,WOC-Q-Africa,2,1,1
 Honduras,Mexico,11/17/15,WOC-Q-North America,0,2,1
 Saint Vincent and the Grenadines,Guatemala,11/17/15,WOC-Q-North America,0,4,1
 Colombia,Argentina,11/17/15,WOC-Q-South America,0,1,1
 Venezuela,Ecuador,11/17/15,WOC-Q-South America,1,3,1
 Republic of Ireland,Bosnia-Herzegovina,11/16/15,EUC-Q,2,0,1
 Hungary,Norway,11/15/15,EUC-Q,2,1,1
+Equatorial Guinea,Morocco,11/15/15,WOC-Q-Africa,1,0,1
+Guinea,Namibia,11/15/15,WOC-Q-Africa,2,0,1
+Uganda,Togo,11/15/15,WOC-Q-Africa,3,0,1
+Zambia,Sudan,11/15/15,WOC-Q-Africa,2,0,1
 Sweden,Denmark,11/14/15,EUC-Q,2,1,1
 Ukraine,Slovenia,11/14/15,EUC-Q,2,0,1
+Botswana,Mali,11/14/15,WOC-Q-Africa,2,1,1
+Chad,Egypt,11/14/15,WOC-Q-Africa,1,0,1
+Ethiopia,Republic of the Congo,11/14/15,WOC-Q-Africa,3,4,1
+Tanzania,Algeria,11/14/15,WOC-Q-Africa,2,2,1
 Canada,Honduras,11/14/15,WOC-Q-North America,1,0,1
 Costa Rica,Haiti,11/14/15,WOC-Q-North America,1,0,1
 Guatemala,Trinidad and Tobago,11/14/15,WOC-Q-North America,1,2,1
@@ -350,10 +528,27 @@ Argentina,Brazil,11/14/15,WOC-Q-South America,1,1,1
 Peru,Paraguay,11/14/15,WOC-Q-South America,1,0,1
 Bosnia-Herzegovina,Republic of Ireland,11/13/15,EUC-Q,1,1,1
 France,Germany,11/13/15,Friendlies,2,0,1
+Angola,South Africa,11/13/15,WOC-Q-Africa,1,3,1
+Comoros,Ghana,11/13/15,WOC-Q-Africa,0,0,1
+Kenya,Cape Verde,11/13/15,WOC-Q-Africa,1,0,1
+Liberia,Ivory Coast,11/13/15,WOC-Q-Africa,0,1,1
+Libya,Rwanda,11/13/15,WOC-Q-Africa,1,0,1
+Madagascar,Senegal,11/13/15,WOC-Q-Africa,2,2,1
+Mauritania,Tunisia,11/13/15,WOC-Q-Africa,1,2,1
+Niger,Cameroon,11/13/15,WOC-Q-Africa,0,3,1
+Swaziland,Nigeria,11/13/15,WOC-Q-Africa,0,0,1
 Chile,Colombia,11/13/15,WOC-Q-South America,1,1,1
 Norway,Hungary,11/12/15,EUC-Q,0,1,1
+Benin,Burkina Faso,11/12/15,WOC-Q-Africa,2,1,1
+Burundi,Democratic Republic of the Congo,11/12/15,WOC-Q-Africa,2,3,1
+Morocco,Equatorial Guinea,11/12/15,WOC-Q-Africa,2,0,1
+Namibia,Guinea,11/12/15,WOC-Q-Africa,0,1,1
+Togo,Uganda,11/12/15,WOC-Q-Africa,0,1,1
 Bolivia,Venezuela,11/12/15,WOC-Q-South America,4,2,1
 Ecuador,Uruguay,11/12/15,WOC-Q-South America,2,1,1
+Mozambique,Gabon,11/11/15,WOC-Q-Africa,1,0,1
+Sudan,Zambia,11/11/15,WOC-Q-Africa,0,1,1
+Swaziland,Djibouti,10/17/15,WOC-Q-Africa,2,1,1
 Brazil,Venezuela,10/14/15,WOC-Q-South America,3,1,1
 Paraguay,Argentina,10/14/15,WOC-Q-South America,0,0,1
 Peru,Chile,10/14/15,WOC-Q-South America,3,4,1
@@ -367,6 +562,15 @@ Malta,Croatia,10/13/15,EUC-Q,0,1,1
 Netherlands,Czech Republic,10/13/15,EUC-Q,2,3,1
 Turkey,Iceland,10/13/15,EUC-Q,1,0,1
 Wales,Andorra,10/13/15,EUC-Q,2,0,1
+Botswana,Eritrea,10/13/15,WOC-Q-Africa,3,1,1
+Burundi,Seychelles,10/13/15,WOC-Q-Africa,2,0,1
+Guinea-Bissau,Liberia,10/13/15,WOC-Q-Africa,1,3,1
+Lesotho,Comoros,10/13/15,WOC-Q-Africa,1,1,1
+Madagascar,Central African Republic,10/13/15,WOC-Q-Africa,2,2,1
+Mauritania,South Sudan,10/13/15,WOC-Q-Africa,4,0,1
+Namibia,The Gambia,10/13/15,WOC-Q-Africa,2,1,1
+Niger,Somalia,10/13/15,WOC-Q-Africa,4,0,1
+Sierra Leone,Chad,10/13/15,WOC-Q-Africa,2,1,1
 Ecuador,Bolivia,10/13/15,WOC-Q-South America,2,0,1
 Austria,Liechtenstein,10/12/15,EUC-Q,3,0,1
 Belarus,Macedonia,10/12/15,EUC-Q,0,0,1
@@ -377,6 +581,7 @@ Russia,Montenegro,10/12/15,EUC-Q,2,0,1
 San Marino,Slovenia,10/12/15,EUC-Q,0,2,1
 Sweden,Moldova,10/12/15,EUC-Q,2,0,1
 Ukraine,Spain,10/12/15,EUC-Q,0,1,1
+Democratic Republic of the Congo,Gabon,10/12/15,Friendlies,2,1,0
 Armenia,Albania,10/11/15,EUC-Q,0,3,1
 Faroe Islands,Romania,10/11/15,EUC-Q,0,3,1
 Finland,Northern Ireland,10/11/15,EUC-Q,1,1,1
@@ -386,6 +591,8 @@ Greece,Hungary,10/11/15,EUC-Q,4,3,1
 Poland,Republic of Ireland,10/11/15,EUC-Q,2,1,1
 Serbia,Portugal,10/11/15,EUC-Q,1,2,1
 Denmark,France,10/11/15,Friendlies,1,2,1
+Kenya,Mauritius,10/11/15,WOC-Q-Africa,0,0,1
+Malawi,Tanzania,10/11/15,WOC-Q-Africa,1,0,1
 Andorra,Belgium,10/10/15,EUC-Q,1,4,1
 Azerbaijan,Italy,10/10/15,EUC-Q,1,3,1
 Bosnia-Herzegovina,Wales,10/10/15,EUC-Q,2,0,1
@@ -395,6 +602,9 @@ Iceland,Latvia,10/10/15,EUC-Q,2,2,1
 Israel,Cyprus,10/10/15,EUC-Q,1,2,1
 Kazakhstan,Netherlands,10/10/15,EUC-Q,1,2,1
 Norway,Malta,10/10/15,EUC-Q,2,0,1
+Central African Republic,Madagascar,10/10/15,WOC-Q-Africa,0,3,1
+Chad,Sierra Leone,10/10/15,WOC-Q-Africa,1,0,1
+Eritrea,Botswana,10/10/15,WOC-Q-Africa,0,2,1
 England,Estonia,10/09/15,EUC-Q,2,0,1
 Liechtenstein,Sweden,10/09/15,EUC-Q,0,2,1
 Macedonia,Ukraine,10/09/15,EUC-Q,0,2,1
@@ -404,6 +614,10 @@ Slovakia,Belarus,10/09/15,EUC-Q,0,1,1
 Slovenia,Lithuania,10/09/15,EUC-Q,1,1,1
 Spain,Luxembourg,10/09/15,EUC-Q,4,0,1
 Switzerland,San Marino,10/09/15,EUC-Q,7,0,1
+Tunisia,Gabon,10/09/15,Friendlies,3,3,1
+Djibouti,Swaziland,10/09/15,WOC-Q-Africa,0,6,1
+Somalia,Niger,10/09/15,WOC-Q-Africa,0,2,1
+The Gambia,Namibia,10/09/15,WOC-Q-Africa,1,1,1
 Argentina,Ecuador,10/09/15,WOC-Q-South America,0,2,1
 Chile,Brazil,10/09/15,WOC-Q-South America,2,0,1
 Albania,Serbia,10/08/15,EUC-Q,0,2,1
@@ -415,9 +629,15 @@ Republic of Ireland,Germany,10/08/15,EUC-Q,1,0,1
 Romania,Finland,10/08/15,EUC-Q,1,1,1
 Scotland,Poland,10/08/15,EUC-Q,2,2,1
 France,Armenia,10/08/15,Friendlies,4,0,1
+Liberia,Guinea-Bissau,10/08/15,WOC-Q-Africa,1,1,1
 Bolivia,Uruguay,10/08/15,WOC-Q-South America,0,2,1
 Colombia,Peru,10/08/15,WOC-Q-South America,2,0,1
 Venezuela,Paraguay,10/08/15,WOC-Q-South America,0,1,1
+Comoros,Lesotho,10/07/15,WOC-Q-Africa,0,0,1
+Mauritius,Kenya,10/07/15,WOC-Q-Africa,2,5,1
+Seychelles,Burundi,10/07/15,WOC-Q-Africa,0,1,1
+Tanzania,Malawi,10/07/15,WOC-Q-Africa,2,0,1
+Rwanda,Gabon,09/12/15,Friendlies,0,1,1
 Aruba,Saint Vincent and the Grenadines,09/09/15,WOC-Q-North America,2,1,1
 Belize,Canada,09/09/15,WOC-Q-North America,1,1,1
 El Salvador,Curacao,09/09/15,WOC-Q-North America,1,0,1
@@ -433,6 +653,7 @@ Moldova,Montenegro,09/08/15,EUC-Q,0,2,1
 Slovakia,Ukraine,09/08/15,EUC-Q,0,0,1
 Slovenia,Estonia,09/08/15,EUC-Q,1,0,1
 Sweden,Austria,09/08/15,EUC-Q,1,4,1
+Zambia,Gabon,09/08/15,Friendlies,1,1,1
 Albania,Portugal,09/07/15,EUC-Q,0,1,1
 Armenia,Denmark,09/07/15,EUC-Q,0,0,1
 Finland,Faroe Islands,09/07/15,EUC-Q,1,0,1
@@ -442,6 +663,18 @@ Republic of Ireland,Georgia,09/07/15,EUC-Q,1,0,1
 Romania,Greece,09/07/15,EUC-Q,0,0,1
 Scotland,Germany,09/07/15,EUC-Q,2,3,1
 France,Serbia,09/07/15,Friendlies,2,1,1
+Benin,Mali,09/06/15,CAF-Q,1,1,1
+Central African Republic,Democratic Republic of the Congo,09/06/15,CAF-Q,2,0,1
+Chad,Egypt,09/06/15,CAF-Q,1,5,1
+Kenya,Zambia,09/06/15,CAF-Q,1,2,1
+Lesotho,Algeria,09/06/15,CAF-Q,1,3,1
+Libya,Cape Verde,09/06/15,CAF-Q,1,2,1
+Madagascar,Angola,09/06/15,CAF-Q,0,0,1
+Mauritius,Mozambique,09/06/15,CAF-Q,1,0,1
+Sierra Leone,Ivory Coast,09/06/15,CAF-Q,0,0,1
+Swaziland,Malawi,09/06/15,CAF-Q,2,2,1
+The Gambia,Cameroon,09/06/15,CAF-Q,0,1,1
+Zimbabwe,Guinea,09/06/15,CAF-Q,1,1,1
 Bosnia-Herzegovina,Andorra,09/06/15,EUC-Q,3,0,1
 Cyprus,Belgium,09/06/15,EUC-Q,0,1,1
 Iceland,Kazakhstan,09/06/15,EUC-Q,0,0,1
@@ -451,6 +684,18 @@ Malta,Azerbaijan,09/06/15,EUC-Q,2,2,1
 Norway,Croatia,09/06/15,EUC-Q,2,0,1
 Turkey,Netherlands,09/06/15,EUC-Q,3,0,1
 Wales,Israel,09/06/15,EUC-Q,0,0,1
+Botswana,Burkina Faso,09/05/15,CAF-Q,1,0,1
+Burundi,Niger,09/05/15,CAF-Q,2,0,1
+Comoros,Uganda,09/05/15,CAF-Q,0,1,1
+Gabon,Sudan,09/05/15,CAF-Q,4,0,1
+Guinea-Bissau,Republic of the Congo,09/05/15,CAF-Q,2,4,1
+Liberia,Tunisia,09/05/15,CAF-Q,1,0,1
+Mauritania,South Africa,09/05/15,CAF-Q,3,1,1
+Namibia,Senegal,09/05/15,CAF-Q,0,2,1
+Rwanda,Ghana,09/05/15,CAF-Q,0,1,1
+Seychelles,Ethiopia,09/05/15,CAF-Q,1,1,1
+South Sudan,Equatorial Guinea,09/05/15,CAF-Q,1,0,1
+Tanzania,Nigeria,09/05/15,CAF-Q,0,0,1
 Austria,Moldova,09/05/15,EUC-Q,1,0,1
 Estonia,Lithuania,09/05/15,EUC-Q,1,0,1
 Luxembourg,Macedonia,09/05/15,EUC-Q,1,0,1
@@ -460,10 +705,12 @@ San Marino,England,09/05/15,EUC-Q,0,6,1
 Spain,Slovakia,09/05/15,EUC-Q,2,0,1
 Switzerland,Slovenia,09/05/15,EUC-Q,3,2,1
 Ukraine,Belarus,09/05/15,EUC-Q,3,1,1
+Gabon,Sudan,09/05/15,Friendlies,4,0,1
 Antigua and Barbuda,Guatemala,09/05/15,WOC-Q-North America,1,0,1
 Canada,Belize,09/05/15,WOC-Q-North America,3,0,1
 Curacao,El Salvador,09/05/15,WOC-Q-North America,0,1,1
 Jamaica,Nicaragua,09/05/15,WOC-Q-North America,2,3,1
+Djibouti,Togo,09/04/15,CAF-Q,0,2,1
 Denmark,Albania,09/04/15,EUC-Q,0,0,1
 Faroe Islands,Northern Ireland,09/04/15,EUC-Q,1,3,1
 Georgia,Scotland,09/04/15,EUC-Q,1,0,1
@@ -539,6 +786,18 @@ Barbados,Aruba,06/15/15,WOC-Q-North America,1,0,1
 Belize,Dominican Republic,06/15/15,WOC-Q-North America,3,0,1
 Guyana,Saint Vincent and the Grenadines,06/15/15,WOC-Q-North America,4,4,1
 Saint Lucia,Antigua and Barbuda,06/15/15,WOC-Q-North America,1,4,1
+Cameroon,Mauritania,06/14/15,CAF-Q,1,0,1
+Democratic Republic of the Congo,Madagascar,06/14/15,CAF-Q,2,1,1
+Egypt,Tanzania,06/14/15,CAF-Q,3,0,1
+Equatorial Guinea,Benin,06/14/15,CAF-Q,1,1,1
+Ethiopia,Lesotho,06/14/15,CAF-Q,2,1,1
+Gabon,Ivory Coast,06/14/15,CAF-Q,0,0,1
+Ghana,Mauritius,06/14/15,CAF-Q,7,1,1
+Mozambique,Rwanda,06/14/15,CAF-Q,0,1,1
+Niger,Namibia,06/14/15,CAF-Q,1,0,1
+Republic of the Congo,Kenya,06/14/15,CAF-Q,1,1,1
+Sudan,Sierra Leone,06/14/15,CAF-Q,1,0,1
+Togo,Liberia,06/14/15,CAF-Q,2,1,1
 Brazil,Peru,06/14/15,COP-G,2,1,0
 Colombia,Venezuela,06/14/15,COP-G,0,1,0
 Belarus,Spain,06/14/15,EUC-Q,0,1,1
@@ -550,7 +809,18 @@ Slovakia,Macedonia,06/14/15,EUC-Q,2,1,1
 Slovenia,England,06/14/15,EUC-Q,2,3,1
 Sweden,Montenegro,06/14/15,EUC-Q,3,1,1
 Ukraine,Luxembourg,06/14/15,EUC-Q,3,0,1
+Gabon,Ivory Coast,06/14/15,Friendlies,0,0,1
 Cuba,Curacao,06/14/15,WOC-Q-North America,1,1,1
+Algeria,Seychelles,06/13/15,CAF-Q,4,0,1
+Angola,Central African Republic,06/13/15,CAF-Q,4,0,1
+Burkina Faso,Comoros,06/13/15,CAF-Q,2,0,1
+Malawi,Zimbabwe,06/13/15,CAF-Q,1,2,1
+Mali,South Sudan,06/13/15,CAF-Q,2,0,1
+Nigeria,Chad,06/13/15,CAF-Q,2,0,1
+Senegal,Burundi,06/13/15,CAF-Q,3,1,1
+South Africa,The Gambia,06/13/15,CAF-Q,0,0,1
+Uganda,Botswana,06/13/15,CAF-Q,2,0,1
+Zambia,Guinea-Bissau,06/13/15,CAF-Q,0,0,1
 Argentina,Paraguay,06/13/15,COP-G,2,2,0
 Mexico,Bolivia,06/13/15,COP-G,0,0,0
 Uruguay,Jamaica,06/13/15,COP-G,1,0,0
@@ -565,6 +835,9 @@ Republic of Ireland,Scotland,06/13/15,EUC-Q,1,1,1
 Albania,France,06/13/15,Friendlies,1,0,1
 Guatemala,Bermuda,06/13/15,WOC-Q-North America,0,0,1
 Puerto Rico,Grenada,06/13/15,WOC-Q-North America,1,0,1
+Guinea,Swaziland,06/12/15,CAF-Q,1,2,1
+Morocco,Libya,06/12/15,CAF-Q,1,0,1
+Tunisia,Djibouti,06/12/15,CAF-Q,8,1,1
 Chile,Ecuador,06/12/15,COP-G,2,0,1
 Andorra,Cyprus,06/12/15,EUC-Q,1,3,1
 Bosnia-Herzegovina,Israel,06/12/15,EUC-Q,3,1,1
@@ -4930,8 +5203,8 @@ United States,Panama,10/13/04,WOC-Q-North America,6,0,1
 Brazil,Colombia,10/13/04,WOC-Q-South America,0,0,1
 Chile,Argentina,10/13/04,WOC-Q-South America,0,0,1
 Paraguay,Peru,10/13/04,WOC-Q-South America,1,1,1
-Australia,Solomon Islands,10/12/04,WOC-Q-Oceania,6,0,1
 Indonesia,Saudi Arabia,10/12/04,WOC-Q-Asia,1,3,1
+Australia,Solomon Islands,10/12/04,WOC-Q-Oceania,6,0,1
 Bolivia,Uruguay,10/12/04,WOC-Q-South America,0,0,1
 Benin,Ivory Coast,10/10/04,WOC-Q-Africa,0,1,1
 Ghana,Democratic Republic of the Congo,10/10/04,WOC-Q-Africa,0,0,1
@@ -4944,7 +5217,6 @@ Saint Vincent and the Grenadines,Mexico,10/10/04,WOC-Q-North America,0,1,1
 Trinidad and Tobago,Saint Kitts and Nevis,10/10/04,WOC-Q-North America,5,1,1
 Ecuador,Chile,10/10/04,WOC-Q-South America,1,0,1
 Iran,Germany,10/09/04,Friendlies,0,2,1
-Solomon Islands,Australia,10/09/04,WOC-Q-Oceania,1,5,1
 Angola,Zimbabwe,10/09/04,WOC-Q-Africa,1,0,1
 Botswana,Kenya,10/09/04,WOC-Q-Africa,2,1,1
 Cape Verde,Burkina Faso,10/09/04,WOC-Q-Africa,1,0,1
@@ -4977,6 +5249,7 @@ Costa Rica,Guatemala,10/09/04,WOC-Q-North America,5,0,1
 El Salvador,United States,10/09/04,WOC-Q-North America,0,2,1
 Honduras,Canada,10/09/04,WOC-Q-North America,1,1,1
 Panama,Jamaica,10/09/04,WOC-Q-North America,1,1,1
+Solomon Islands,Australia,10/09/04,WOC-Q-Oceania,1,5,1
 Argentina,Uruguay,10/09/04,WOC-Q-South America,4,2,1
 Bolivia,Peru,10/09/04,WOC-Q-South America,1,0,1
 Colombia,Paraguay,10/09/04,WOC-Q-South America,1,1,1
@@ -9385,11 +9658,11 @@ Algeria,Nigeria,10/08/93,WOC-Q-Africa,1,1,1
 Zambia,Senegal,09/26/93,WOC-Q-Africa,4,0,1
 Zimbabwe,Guinea,09/26/93,WOC-Q-Africa,1,0,1
 Nigeria,Ivory Coast,09/25/93,WOC-Q-Africa,4,1,1
+Tunisia,Germany,09/22/93,Friendlies,1,1,1
 Albania,Spain,09/22/93,WOC-Q-Europe,1,5,1
 Estonia,Italy,09/22/93,WOC-Q-Europe,0,3,1
 Norway,Poland,09/22/93,WOC-Q-Europe,1,0,1
 San Marino,Netherlands,09/22/93,WOC-Q-Europe,0,7,1
-Tunisia,Germany,09/22/93,Friendlies,1,1,1
 Brazil,Uruguay,09/19/93,WOC-Q-South America,2,0,1
 Ecuador,Bolivia,09/19/93,WOC-Q-South America,1,1,1
 Uruguay,Bolivia,09/12/93,WOC-Q-South America,2,1,1
