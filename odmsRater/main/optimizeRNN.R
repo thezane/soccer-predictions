@@ -17,7 +17,7 @@ optimizeRNN <- function(tTree, fTree, gTree, gi, rData) {
 
 trainRNN <- function(rData) {
   rOptions <- rData[["rOptions"]]
-  rOutput <- rData[["rOutput"]
+  rOutput <- rData[["rOutput"]]
   x <- getModel(rOptions)
   xLBd <- getModelLBd(rOptions)
   xUBd <- getModelUBd(rOptions)
