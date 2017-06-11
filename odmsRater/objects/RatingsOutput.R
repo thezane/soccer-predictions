@@ -32,17 +32,19 @@ updateStrMeanCosts.RatingsOutput <- function(rOutput, isTraining) {
 }
 
 # Compute cost of prediction for goals.
-computeGoalsCost.RatingsOutput <- function(rOutput, isTraining) {
-  dataset <- getDataset(rOutput, isTraining)
-  rCosts <- rOutput$costs[[dataset]]
-  computeGoalsCost(rCosts)
+computeGoalsCost.RatingsOutput <- function(rOutput) {
+  rCostsTraining <- rOutput$costs[[getDataset(rOutput, 1)]]
+  rCostsValidation <- rOutput$costs[[getDataset(rOutput, 0)]]
+  c(computeGoalsCost(rCostsTraining),
+      computeGoalsCost(rCostsValidation))
 }
 
 # Compute distance of mean team rating from default rating.
-computeStrMeanCost.RatingsOutput <- function(rOutput, isTraining) {
-  dataset <- getDataset(rOutput, isTraining)
-  rCosts <- rOutput$costs[[dataset]]
-  computeStrMeanCost(rCosts)
+computeStrMeanCost.RatingsOutput <- function(rOutput) {
+  rCostsTraining <- rOutput$costs[[getDataset(rOutput, 1)]]
+  rCostsValidation <- rOutput$costs[[getDataset(rOutput, 0)]]
+  c(computeStrMeanCost(rCostsTraining),
+      computeStrMeanCost(rCostsValidation))
 }
 
 getDataset <- function(rOutput, isTraining) {

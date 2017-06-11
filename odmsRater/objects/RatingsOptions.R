@@ -44,6 +44,10 @@ newRatingsOptions <- function(fTree) {
     minUpdates=0,
     numFs=numFs,
     odmIter=10,
+    
+    # Regularization
+    strMeanCostReg=0.1,
+    slopeCostReg=0.001,
 
     # L-BFGS-B parameters
     factr=1e-06 / .Machine$double.eps,
