@@ -1717,8 +1717,6 @@ Mali,Algeria,06/10/12,WOC-Q-Africa,2,1,1
 Mozambique,Zimbabwe,06/10/12,WOC-Q-Africa,0,0,1
 Rwanda,Benin,06/10/12,WOC-Q-Africa,1,1,1
 Tanzania,The Gambia,06/10/12,WOC-Q-Africa,2,1,1
-Solomon Islands,New Zealand,06/10/12,WOC-Q-Oceania,3,4,1
-Tahiti,New Caledonia,06/10/12,WOC-Q-Oceania,1,0,1
 Ecuador,Colombia,06/10/12,WOC-Q-South America,1,0,1
 Uruguay,Peru,06/10/12,WOC-Q-South America,4,2,1
 Venezuela,Chile,06/10/12,WOC-Q-South America,0,2,1
@@ -1750,21 +1748,13 @@ Lebanon,Uzbekistan,06/08/12,WOC-Q-Asia,1,1,1
 Oman,Australia,06/08/12,WOC-Q-Asia,0,0,1
 Qatar,South Korea,06/08/12,WOC-Q-Asia,1,4,1
 Cuba,Canada,06/08/12,WOC-Q-North America,0,1,1
-New Zealand,New Caledonia,06/08/12,WOC-Q-Oceania,0,2,1
-Tahiti,Solomon Islands,06/08/12,WOC-Q-Oceania,1,0,1
 Papua New Guinea,Fiji,06/06/12,OFC-G,1,1,0
 Solomon Islands,New Zealand,06/06/12,OFC-G,1,1,1
-New Zealand,Solomon Islands,06/06/12,WOC-Q-Oceania,1,1,1
-Papua New Guinea,Fiji,06/06/12,WOC-Q-Oceania,1,1,1
 Turkey,Ukraine,06/05/12,Friendlies,2,0,1
 New Caledonia,Samoa,06/05/12,OFC-G,9,0,0
 Tahiti,Vanuatu,06/05/12,OFC-G,4,1,0
-New Caledonia,Samoa,06/05/12,WOC-Q-Oceania,9,0,1
-Tahiti,Vanuatu,06/05/12,WOC-Q-Oceania,4,1,1
 Papua New Guinea,New Zealand,06/04/12,OFC-G,1,2,0
 Solomon Islands,Fiji,06/04/12,OFC-G,0,0,1
-Fiji,Solomon Islands,06/04/12,WOC-Q-Oceania,0,0,1
-Papua New Guinea,New Zealand,06/04/12,WOC-Q-Oceania,1,2,1
 Peru,Colombia,06/04/12,WOC-Q-South America,0,1,1
 Mexico,Brazil,06/03/12,Friendlies,2,0,0
 Tahiti,New Caledonia,06/03/12,OFC-G,4,3,0
@@ -1780,8 +1770,6 @@ Japan,Oman,06/03/12,WOC-Q-Asia,3,0,1
 Jordan,Iraq,06/03/12,WOC-Q-Asia,1,1,1
 Lebanon,Qatar,06/03/12,WOC-Q-Asia,0,1,1
 Uzbekistan,Iran,06/03/12,WOC-Q-Asia,0,1,1
-Tahiti,New Caledonia,06/03/12,WOC-Q-Oceania,4,3,1
-Vanuatu,Samoa,06/03/12,WOC-Q-Oceania,5,0,1
 Argentina,Ecuador,06/03/12,WOC-Q-South America,4,0,1
 Poland,Andorra,06/02/12,Friendlies,4,0,1
 Fiji,New Zealand,06/02/12,OFC-G,0,1,0
@@ -1797,8 +1785,6 @@ Sierra Leone,Cape Verde,06/02/12,WOC-Q-Africa,2,1,1
 Sudan,Zambia,06/02/12,WOC-Q-Africa,2,0,1
 The Gambia,Morocco,06/02/12,WOC-Q-Africa,1,1,1
 Tunisia,Equatorial Guinea,06/02/12,WOC-Q-Africa,3,1,1
-Fiji,New Zealand,06/02/12,WOC-Q-Oceania,0,1,1
-Solomon Islands,Papua New Guinea,06/02/12,WOC-Q-Oceania,1,0,1
 Bolivia,Chile,06/02/12,WOC-Q-South America,0,2,1
 Uruguay,Venezuela,06/02/12,WOC-Q-South America,1,1,1
 Austria,Ukraine,06/01/12,Friendlies,3,2,1
@@ -1806,8 +1792,6 @@ Samoa,Tahiti,06/01/12,OFC-G,1,10,0
 Vanuatu,New Caledonia,06/01/12,OFC-G,2,5,0
 Egypt,Mozambique,06/01/12,WOC-Q-Africa,2,0,1
 Ghana,Lesotho,06/01/12,WOC-Q-Africa,7,0,1
-Samoa,Tahiti,06/01/12,WOC-Q-Oceania,1,10,1
-Vanuatu,New Caledonia,06/01/12,WOC-Q-Oceania,2,5,1
 United States,Brazil,05/30/12,Friendlies,1,4,1
 Ukraine,Estonia,05/28/12,Friendlies,4,0,1
 Brazil,Denmark,05/26/12,Friendlies,3,1,0
