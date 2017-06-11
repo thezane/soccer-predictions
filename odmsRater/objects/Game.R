@@ -38,9 +38,15 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     isPlayOff=grepl("-PlayOff", contest),
     isWocT=grepl("WOC-G|K", contest),
     isRelevant=FALSE,
-    isTraining=gameDate<=currentDate,
     weight=0
   )
+  
+  if (gameDate <= currentDate) {
+    game$dataset <- "training"
+  }
+  else {
+    game$dataset <- "validation"
+  }
   
   game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
       game$isPlayOff
