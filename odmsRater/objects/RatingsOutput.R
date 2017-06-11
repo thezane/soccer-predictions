@@ -6,10 +6,13 @@ newRatingsOutput <- function(tTree, gTree, gi) {
     costs=hash()
   )
   
+  class(rOutput) <- "RatingsOutput"
+  rOutput
+}
+
+resetRatingsOutput <- function(rOutput) {
   rOutput$costs["training"] <- newRatingsCosts("training")
   rOutput$costs["validation"] <- newRatingsCosts("validation")
-  
-  class(rOutput) <- "RatingsOutput"
   rOutput
 }
 

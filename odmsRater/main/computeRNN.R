@@ -1,4 +1,5 @@
 computeRNN <- function(rOptions, rOutput) {
+  rOutput <- resetRatingsOutput(rOutput)
   tTree <- rOutput$tTree
   gTree <- rOutput$gTree
   gi <- rOutput$gi
@@ -56,7 +57,8 @@ constructStrPrereqs <- function(rOptions, game, gamePrev, tTree) {
   if (is.null(homeTeam)) {
     print(homeTeamName)
   }
-  else if (is.null(awayTeam)) {
+  
+  if (is.null(awayTeam)) {
     print(awayTeamName)
   }
 
