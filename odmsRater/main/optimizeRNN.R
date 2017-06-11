@@ -5,6 +5,7 @@ optimizeRNN <- function(tTree, fTree, gTree, gi, rData) {
     rOptions <- newRatingsOptions(fTree)
     rData <- list(rOptions=rOptions, rOutput=rOutput)
     x <- trainRNN(rData)
+    rData <- updateRNN(x, rData)
   }
   else {
     rOptions <- rData[["rOptions"]]
