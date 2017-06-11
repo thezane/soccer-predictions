@@ -1,42 +1,85 @@
-HomeTeam,AwayTeam,Date,Contest,HomeGoals,AwayGoals,HomeAdvantage
-Grenada,Saint Martin,07/06/02,CON-Q,8,3,1
-Saint Martin,Grenada,08/04/02,CON-Q,1,7,1
-Guadeloupe,Puerto Rico,07/07/02,CON-Q,4,0,1
-Puerto Rico,Guadeloupe,07/21/02,CON-Q,0,2,1
-British Virgin Islands,Saint Lucia,07/14/02,CON-Q,1,3,1
-Saint Lucia,British Virgin Islands,07/28/02,CON-Q,8,1,1
-Guyana,Netherlands Antilles,07/28/02,CON-Q,2,1,1
-Aruba,Suriname,07/28/02,CON-Q,0,2,1
-Suriname,Aruba,08/11/02,CON-Q,6,0,1
-Saint Lucia,Saint Kitts and Nevis,11/13/02,CON-Q,1,2,1
-Saint Kitts and Nevis,Trinidad and Tobago,11/15/02,CON-Q,0,2,1
-Trinidad and Tobago,Saint Lucia,11/17/02,CON-Q,0,1,1
-Dominican Republic,Martinique,11/27/02,CON-Q,0,4,1
-Cayman Islands,Cuba,11/27/02,CON-Q,0,5,1
-Dominican Republic,Cayman Islands,11/29/02,CON-Q,0,1,1
-Cuba,Martinique,11/29/02,CON-Q,2,1,1
-Cuba,Dominican Republic,12/01/02,CON-Q,2,1,1
-Cayman Islands,Martinique,12/01/02,CON-Q,0,3,1
-Jamaica,Barbados,11/09/02,CON-Q,1,1,1
-Guadeloupe,Grenada,11/09/02,CON-Q,5,4,1
-Grenada,Barbados,11/11/02,CON-Q,0,2,1
-Guadeloupe,Barbados,11/13/02,CON-Q,1,0,1
-Jamaica,Grenada,11/13/02,CON-Q,4,1,1
-Haiti,Antigua and Barbuda,11/18/02,CON-Q,1,0,1
-Netherlands Antilles,Antigua and Barbuda,11/20/02,CON-Q,1,1,1
-Haiti,Netherlands Antilles,11/22/02,CON-Q,3,0,1
-Haiti,Martinique,03/26/03,CON-Q,2,1,1
-Jamaica,Saint Lucia,03/26/03,CON-Q,5,0,1
-Haiti,Saint Lucia,03/28/03,CON-Q,1,2,1
-Jamaica,Martinique,03/28/03,CON-Q,2,2,1
-Saint Lucia,Martinique,03/30/03,CON-Q,4,5,1
-Haiti,Jamaica,03/30/03,CON-Q,0,3,1
-Guadeloupe,Cuba,03/26/03,CON-Q,2,3,1
-Trinidad and Tobago,Antigua and Barbuda,03/26/03,CON-Q,2,0,1
-Antigua and Barbuda,Cuba,03/28/03,CON-Q,0,2,1
-Guadeloupe,Trinidad and Tobago,03/28/03,CON-Q,0,1,1
-Guadeloupe,Antigua and Barbuda,03/30/03,CON-Q,2,0,1
-Trinidad and Tobago,Cuba,03/30/03,CON-Q,1,3,1
-Martinique,Trinidad and Tobago,04/23/03,CON-Q,3,2,1
-Trinidad and Tobago,Honduras,04/25/03,CON-Q,0,2,1
-Honduras,Martinique,04/27/03,CON-Q,4,2,1
+"HomeTeam","AwayTeam","Date","Contest","HomeGoals","AwayGoals","HomeAdvantage"
+"Lesotho","Botswana","06/14/92","CAF-Q",0,0,1
+"Botswana","Lesotho","06/28/92","CAF-Q",0,4,1
+"Guinea-Bissau","Cape Verde","06/14/92","CAF-Q",3,1,1
+"Cape Verde","Guinea-Bissau","06/28/92","CAF-Q",0,1,1
+"Gabon","Cameroon","08/16/92","CAF-Q",0,0,1
+"Benin","Niger","08/16/92","CAF-Q",1,2,1
+"Cameroon","Benin","08/30/92","CAF-Q",2,0,1
+"Niger","Gabon","08/30/92","CAF-Q",1,3,1
+"Gabon","Benin","04/11/93","CAF-Q",2,0,1
+"Niger","Cameroon","04/11/93","CAF-Q",0,0,1
+"Niger","Benin","04/25/93","CAF-Q",4,1,1
+"Cameroon","Gabon","04/25/93","CAF-Q",0,0,1
+"Benin","Cameroon","07/11/93","CAF-Q",0,3,1
+"Gabon","Niger","07/11/93","CAF-Q",3,0,1
+"Benin","Gabon","07/25/93","CAF-Q",1,2,1
+"Cameroon","Niger","07/25/93","CAF-Q",2,0,1
+"Uganda","Ethiopia","08/15/92","CAF-Q",3,1,1
+"Sudan","Nigeria","08/16/92","CAF-Q",0,0,1
+"Nigeria","Uganda","08/29/92","CAF-Q",2,0,1
+"Ethiopia","Sudan","08/30/92","CAF-Q",3,0,1
+"Sudan","Uganda","04/11/93","CAF-Q",1,1,1
+"Ethiopia","Nigeria","04/11/93","CAF-Q",1,0,1
+"Nigeria","Sudan","04/24/93","CAF-Q",4,0,1
+"Ethiopia","Uganda","04/25/93","CAF-Q",2,2,1
+"Sudan","Ethiopia","07/10/93","CAF-Q",1,0,1
+"Uganda","Nigeria","07/17/93","CAF-Q",0,0,1
+"Uganda","Sudan","07/24/93","CAF-Q",1,0,1
+"Nigeria","Ethiopia","07/24/93","CAF-Q",6,0,1
+"Algeria","Guinea-Bissau","08/14/92","CAF-Q",3,1,1
+"Sierra Leone","Algeria","08/29/92","CAF-Q",1,0,1
+"Senegal","Guinea-Bissau","08/30/92","CAF-Q",3,0,1
+"Guinea-Bissau","Sierra Leone","10/04/92","CAF-Q",0,3,1
+"Sierra Leone","Senegal","11/08/92","CAF-Q",2,0,1
+"Senegal","Algeria","01/10/93","CAF-Q",1,2,1
+"Guinea-Bissau","Algeria","01/24/93","CAF-Q",1,4,1
+"Algeria","Sierra Leone","04/09/93","CAF-Q",0,0,1
+"Guinea-Bissau","Senegal","04/11/93","CAF-Q",0,3,1
+"Sierra Leone","Guinea-Bissau","04/24/93","CAF-Q",2,0,1
+"Senegal","Sierra Leone","07/11/93","CAF-Q",1,1,1
+"Algeria","Senegal","07/25/93","CAF-Q",4,0,1
+"Democratic Republic of the Congo","Mozambique","08/16/92","CAF-Q",2,0,1
+"Lesotho","Kenya","08/16/92","CAF-Q",2,2,1
+"Kenya","Democratic Republic of the Congo","08/29/92","CAF-Q",1,3,1
+"Mozambique","Lesotho","08/30/92","CAF-Q",3,0,1
+"Mozambique","Kenya","04/11/93","CAF-Q",0,0,1
+"Lesotho","Democratic Republic of the Congo","04/11/93","CAF-Q",1,1,1
+"Kenya","Lesotho","04/24/93","CAF-Q",3,0,1
+"Mozambique","Democratic Republic of the Congo","04/25/93","CAF-Q",0,0,1
+"Democratic Republic of the Congo","Kenya","07/11/93","CAF-Q",0,1,1
+"Lesotho","Mozambique","07/11/93","CAF-Q",1,1,1
+"Kenya","Mozambique","07/24/93","CAF-Q",4,1,1
+"Democratic Republic of the Congo","Lesotho","07/25/93","CAF-Q",7,0,1
+"Zambia","Mauritius","08/16/92","CAF-Q",2,1,1
+"Zimbabwe","South Africa","08/16/92","CAF-Q",4,1,1
+"Mauritius","Zimbabwe","08/30/92","CAF-Q",0,1,1
+"South Africa","Zambia","08/30/92","CAF-Q",0,1,1
+"South Africa","Mauritius","04/10/93","CAF-Q",0,0,1
+"Zambia","Zimbabwe","04/11/93","CAF-Q",0,0,1
+"South Africa","Zimbabwe","04/24/93","CAF-Q",1,1,1
+"Mauritius","Zambia","04/25/93","CAF-Q",0,3,1
+"Zimbabwe","Mauritius","07/11/93","CAF-Q",2,0,1
+"Zambia","South Africa","07/11/93","CAF-Q",3,0,1
+"Zimbabwe","Zambia","07/25/93","CAF-Q",1,1,1
+"Mauritius","South Africa","07/25/93","CAF-Q",1,3,1
+"Burundi","Republic of the Congo","08/16/92","CAF-Q",1,0,1
+"Guinea","Burundi","08/30/92","CAF-Q",2,2,1
+"Guinea","Republic of the Congo","04/11/93","CAF-Q",1,0,1
+"Republic of the Congo","Burundi","04/25/93","CAF-Q",0,0,1
+"Burundi","Guinea","07/11/93","CAF-Q",2,2,1
+"Republic of the Congo","Guinea","08/15/93","CAF-Q",0,0,1
+"Ghana","Liberia","04/11/93","CAF-Q",1,0,1
+"Liberia","Ghana","07/25/93","CAF-Q",0,2,1
+"Malawi","Egypt","08/15/92","CAF-Q",1,0,1
+"Malawi","Mali","08/29/92","CAF-Q",1,1,1
+"Mali","Morocco","10/04/92","CAF-Q",2,1,1
+"Morocco","Egypt","11/08/92","CAF-Q",0,0,1
+"Egypt","Mali","04/09/93","CAF-Q",2,1,1
+"Morocco","Malawi","04/11/93","CAF-Q",0,1,1
+"Egypt","Malawi","04/23/93","CAF-Q",2,0,1
+"Morocco","Mali","04/25/93","CAF-Q",1,0,1
+"Egypt","Morocco","07/11/93","CAF-Q",1,1,1
+"Mali","Malawi","07/11/93","CAF-Q",2,1,1
+"Malawi","Morocco","07/25/93","CAF-Q",0,2,1
+"Mali","Egypt","07/25/93","CAF-Q",2,1,1
