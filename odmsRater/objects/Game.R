@@ -41,8 +41,8 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     weight=0
   )
   
-  game$isRelevant <- ((!game$isFriendly && !game$isQualifier) ||
-      game$isPlayOff)
+  game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
+      game$isPlayOff
       
   if (game$isWocT) {
     game$weight = 1
@@ -66,7 +66,7 @@ normalizeGoals <- function(game, rOptions) {
   goals <- game$goals
   goalsNorm <- goals
   meanGoals <- computeMeanGoals(game$existsHA, rOptions)
-  goalsNorm[1] <- goalsNorm[1] * (meanGoals[2] / meanGoals[1])
+  goalsNorm[1] <- (meanGoals[2] / meanGoals[1]) * goalsNorm[1]
   game$goalsNorm <- goalsNorm
   game$meanGoals <- meanGoals
   game$A <- matrix(c(0, goalsNorm[2], goalsNorm[1], 0), 2, 2, TRUE)

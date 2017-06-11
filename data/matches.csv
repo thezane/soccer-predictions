@@ -3146,14 +3146,13 @@ Honduras,Mexico,11/20/08,WOC-Q-North America,1,0,1
 Jamaica,Canada,11/20/08,WOC-Q-North America,3,0,1
 Trinidad and Tobago,Cuba,11/20/08,WOC-Q-North America,3,0,1
 United States,Guatemala,11/20/08,WOC-Q-North America,2,0,1
-Fiji,New Zealand,11/19/08,OFC-G,2,0,1
 Bahrain,Australia,11/19/08,WOC-Q-Asia,0,1,1
 Qatar,Japan,11/19/08,WOC-Q-Asia,0,3,1
 Saudi Arabia,South Korea,11/19/08,WOC-Q-Asia,0,2,1
 United Arab Emirates,Iran,11/19/08,WOC-Q-Asia,1,1,1
 San Marino,Czech Republic,11/19/08,WOC-Q-Europe,0,3,1
 Suriname,Haiti,11/19/08,WOC-Q-North America,1,1,1
-New Zealand,Fiji,11/19/08,WOC-Q-Oceania,0,2,1
+Fiji,New Zealand,11/19/08,WOC-Q-Oceania,2,0,1
 Canada,Mexico,10/16/08,WOC-Q-North America,2,2,1
 Costa Rica,Haiti,10/16/08,WOC-Q-North America,2,0,1
 Cuba,Guatemala,10/16/08,WOC-Q-North America,2,1,1
@@ -3254,8 +3253,6 @@ United States,Trinidad and Tobago,09/11/08,WOC-Q-North America,3,0,1
 Brazil,Bolivia,09/11/08,WOC-Q-South America,0,0,1
 Chile,Colombia,09/11/08,WOC-Q-South America,4,0,1
 Peru,Argentina,09/11/08,WOC-Q-South America,1,1,1
-New Zealand,New Caledonia,09/10/08,OFC-G,3,0,1
-Vanuatu,Fiji,09/10/08,OFC-G,2,1,1
 Chad,Sudan,09/10/08,WOC-Q-Africa,1,3,1
 Zambia,Togo,09/10/08,WOC-Q-Africa,1,0,1
 North Korea,South Korea,09/10/08,WOC-Q-Asia,1,1,1
@@ -3307,8 +3304,6 @@ El Salvador,Haiti,09/07/08,WOC-Q-North America,5,0,1
 Mexico,Jamaica,09/07/08,WOC-Q-North America,3,0,1
 Colombia,Uruguay,09/07/08,WOC-Q-South America,0,1,1
 Peru,Venezuela,09/07/08,WOC-Q-South America,1,0,1
-Fiji,Vanuatu,09/06/08,OFC-G,2,0,1
-New Caledonia,New Zealand,09/06/08,OFC-G,1,3,1
 Burkina Faso,Tunisia,09/06/08,WOC-Q-Africa,0,0,1
 Cape Verde,Cameroon,09/06/08,WOC-Q-Africa,1,2,1
 Kenya,Namibia,09/06/08,WOC-Q-Africa,1,0,1
@@ -3397,7 +3392,6 @@ Guyana,Suriname,06/22/08,WOC-Q-North America,1,2,1
 Mexico,Belize,06/22/08,WOC-Q-North America,7,0,1
 Saint Lucia,Guatemala,06/22/08,WOC-Q-North America,1,3,1
 Netherlands,Russia,06/21/08,EUC-K,1,3,0
-New Caledonia,Vanuatu,06/21/08,OFC-G,3,0,1
 Burkina Faso,Seychelles,06/21/08,WOC-Q-Africa,4,1,1
 Cameroon,Tanzania,06/21/08,WOC-Q-Africa,2,1,1
 Morocco,Rwanda,06/21/08,WOC-Q-Africa,2,0,1
@@ -3447,7 +3441,6 @@ Paraguay,Brazil,06/15/08,WOC-Q-South America,2,0,1
 Peru,Colombia,06/15/08,WOC-Q-South America,1,1,1
 Greece,Russia,06/14/08,EUC-G,0,1,0
 Sweden,Spain,06/14/08,EUC-G,1,2,0
-Vanuatu,New Caledonia,06/14/08,OFC-G,1,1,1
 Botswana,Ivory Coast,06/14/08,WOC-Q-Africa,1,1,1
 Chad,Republic of the Congo,06/14/08,WOC-Q-Africa,2,1,1
 Kenya,Zimbabwe,06/14/08,WOC-Q-Africa,2,0,1
@@ -3655,8 +3648,6 @@ Sweden,Latvia,11/21/07,EUC-Q,2,1,1
 Turkey,Bosnia-Herzegovina,11/21/07,EUC-Q,1,0,1
 Ukraine,France,11/21/07,EUC-Q,2,2,1
 Ghana,Benin,11/21/07,Friendlies,4,2,1
-New Caledonia,Fiji,11/21/07,OFC-G,4,0,1
-New Zealand,Vanuatu,11/21/07,OFC-G,4,1,1
 New Caledonia,Fiji,11/21/07,WOC-Q-Oceania,4,0,1
 New Zealand,Vanuatu,11/21/07,WOC-Q-Oceania,4,1,1
 Colombia,Argentina,11/21/07,WOC-Q-South America,2,1,1
@@ -3690,8 +3681,6 @@ Portugal,Armenia,11/17/07,EUC-Q,1,0,1
 Scotland,Italy,11/17/07,EUC-Q,1,2,1
 Spain,Sweden,11/17/07,EUC-Q,3,0,1
 Wales,Republic of Ireland,11/17/07,EUC-Q,2,2,1
-Fiji,New Caledonia,11/17/07,OFC-G,3,3,1
-Vanuatu,New Zealand,11/17/07,OFC-G,1,2,1
 Comoros,Madagascar,11/17/07,WOC-Q-Africa,0,4,1
 Guinea-Bissau,Sierra Leone,11/17/07,WOC-Q-Africa,0,0,1
 Fiji,New Caledonia,11/17/07,WOC-Q-Oceania,3,3,1
@@ -3749,7 +3738,6 @@ San Marino,Wales,10/17/07,EUC-Q,1,2,1
 Sweden,Northern Ireland,10/17/07,EUC-Q,1,1,1
 Turkey,Greece,10/17/07,EUC-Q,0,1,1
 Ukraine,Faroe Islands,10/17/07,EUC-Q,5,0,1
-Fiji,New Zealand,10/17/07,OFC-G,0,2,1
 Sierra Leone,Guinea-Bissau,10/17/07,WOC-Q-Africa,1,0,1
 Fiji,New Zealand,10/17/07,WOC-Q-Oceania,0,2,1
 Bolivia,Colombia,10/17/07,WOC-Q-South America,0,0,1
@@ -4958,7 +4946,7 @@ United States,Panama,10/13/04,WOC-Q-North America,6,0,1
 Brazil,Colombia,10/13/04,WOC-Q-South America,0,0,1
 Chile,Argentina,10/13/04,WOC-Q-South America,0,0,1
 Paraguay,Peru,10/13/04,WOC-Q-South America,1,1,1
-Australia,Solomon Islands,10/12/04,OFC-K,6,0,1
+Australia,Solomon Islands,10/12/04,WOC-Q-Oceania,6,0,1
 Indonesia,Saudi Arabia,10/12/04,WOC-Q-Asia,1,3,1
 Bolivia,Uruguay,10/12/04,WOC-Q-South America,0,0,1
 Benin,Ivory Coast,10/10/04,WOC-Q-Africa,0,1,1
@@ -4972,7 +4960,7 @@ Saint Vincent and the Grenadines,Mexico,10/10/04,WOC-Q-North America,0,1,1
 Trinidad and Tobago,Saint Kitts and Nevis,10/10/04,WOC-Q-North America,5,1,1
 Ecuador,Chile,10/10/04,WOC-Q-South America,1,0,1
 Iran,Germany,10/09/04,Friendlies,0,2,1
-Solomon Islands,Australia,10/09/04,OFC-K,1,5,1
+Solomon Islands,Australia,10/09/04,WOC-Q-Oceania,1,5,1
 Angola,Zimbabwe,10/09/04,WOC-Q-Africa,1,0,1
 Botswana,Kenya,10/09/04,WOC-Q-Africa,2,1,1
 Cape Verde,Burkina Faso,10/09/04,WOC-Q-Africa,1,0,1
@@ -5273,9 +5261,6 @@ Syria,Tajikistan,06/09/04,WOC-Q-Asia,2,1,1
 Thailand,North Korea,06/09/04,WOC-Q-Asia,1,4,1
 United Arab Emirates,Yemen,06/09/04,WOC-Q-Asia,3,0,1
 Uzbekistan,Palestine,06/09/04,WOC-Q-Asia,3,0,1
-Australia,Solomon Islands,06/06/04,OFC-G,2,2,1
-Fiji,New Zealand,06/06/04,OFC-G,0,2,0
-Tahiti,Vanuatu,06/06/04,OFC-G,2,1,0
 Cameroon,Benin,06/06/04,WOC-Q-Africa,2,1,1
 Ivory Coast,Libya,06/06/04,WOC-Q-Africa,2,0,1
 Sudan,Egypt,06/06/04,WOC-Q-Africa,0,3,1
@@ -5299,16 +5284,10 @@ South Africa,Cape Verde,06/05/04,WOC-Q-Africa,2,1,1
 Tunisia,Botswana,06/05/04,WOC-Q-Africa,4,1,1
 Zambia,Togo,06/05/04,WOC-Q-Africa,1,0,1
 Ecuador,Bolivia,06/05/04,WOC-Q-South America,3,2,1
-Australia,Vanuatu,06/04/04,OFC-G,3,0,1
-Fiji,Solomon Islands,06/04/04,OFC-G,1,2,0
-New Zealand,Tahiti,06/04/04,OFC-G,10,0,0
 Australia,Vanuatu,06/04/04,WOC-Q-Oceania,3,0,1
 New Zealand,Tahiti,06/04/04,WOC-Q-Oceania,10,0,1
 Solomon Islands,Fiji,06/04/04,WOC-Q-Oceania,2,1,1
 Brazil,Argentina,06/03/04,WOC-Q-South America,3,1,1
-Australia,Fiji,06/02/04,OFC-G,6,1,1
-Tahiti,Solomon Islands,06/02/04,OFC-G,0,4,0
-Vanuatu,New Zealand,06/02/04,OFC-G,4,2,0
 Australia,Fiji,06/02/04,WOC-Q-Oceania,6,1,1
 Tahiti,Solomon Islands,06/02/04,WOC-Q-Oceania,0,4,1
 Vanuatu,New Zealand,06/02/04,WOC-Q-Oceania,4,2,1
@@ -5318,17 +5297,11 @@ England,Japan,06/01/04,Friendlies,1,1,1
 Bolivia,Paraguay,06/01/04,WOC-Q-South America,2,1,1
 Uruguay,Peru,06/01/04,WOC-Q-South America,1,3,1
 Venezuela,Chile,06/01/04,WOC-Q-South America,0,1,1
-Australia,Tahiti,05/31/04,OFC-G,9,0,1
-Fiji,Vanuatu,05/31/04,OFC-G,1,0,0
-New Zealand,Solomon Islands,05/31/04,OFC-G,3,0,0
 Australia,Tahiti,05/31/04,WOC-Q-Oceania,9,0,1
 Fiji,Vanuatu,05/31/04,WOC-Q-Oceania,1,0,1
 New Zealand,Solomon Islands,05/31/04,WOC-Q-Oceania,3,0,1
 Japan,Iceland,05/30/04,Friendlies,3,2,0
 Portugal,Luxembourg,05/29/04,Friendlies,3,0,1
-Australia,New Zealand,05/29/04,OFC-G,1,0,1
-Tahiti,Fiji,05/29/04,OFC-G,0,0,0
-Vanuatu,Solomon Islands,05/29/04,OFC-G,0,1,0
 Australia,New Zealand,05/29/04,WOC-Q-Oceania,1,0,1
 Tahiti,Fiji,05/29/04,WOC-Q-Oceania,0,0,1
 Vanuatu,Solomon Islands,05/29/04,WOC-Q-Oceania,0,1,1
