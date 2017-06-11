@@ -1,4 +1,5 @@
 computeRNN <- function(rOptions, rOutput) {
+  rOutput <- resetRatingsOutput(rOutput)
   tTree <- rOutput$tTree
   gTree <- rOutput$gTree
   gi <- rOutput$gi
