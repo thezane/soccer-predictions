@@ -59,7 +59,6 @@ updateRNN <- function(x, rData) {
   strMeanCost <- strMeanCostReg * computeStrMeanCost(rOutput)
   slopeCost <- slopeCostReg * norm(getModelSlopes(rOptions), "f")
   rOutput$y <- goalsCost[1] + strMeanCost[1] + slopeCost
-  rData <- list(rOptions=rOptions, rOutput=rOutput)
 
   # Print cost
   print(noquote(sprintf("goalsCostT = %f", goalsCost[1])))
@@ -67,6 +66,8 @@ updateRNN <- function(x, rData) {
   print(noquote(sprintf("goalsCostV = %f", goalsCost[2])))
   print(noquote(sprintf("strCostV = %f", strMeanCost[2])))
   print(noquote(sprintf("slopeCost = %f", slopeCost)))
+  rData[["rOptions"]] <- rOptions
+  rData[["rOutput"]] <- rOutput
   rData
 }
 
