@@ -58,9 +58,9 @@ updateRNN <- function(x, rOptions, rOutput) {
   rData <- list(rOptions=rOptions, rOutput=rOutput)
 
   # Print cost
-  print(noquote(sprintf("goalscostTraining = %f", goalsCost[0])))
+  print(noquote(sprintf("goalsCostTraining = %f", goalsCost[0])))
   print(noquote(sprintf("strMeanCostTraining = %f", strMeanCost[0])))
-  print(noquote(sprintf("goalscostValidation = %f", goalsCost[1])))
+  print(noquote(sprintf("goalsCostValidation = %f", goalsCost[1])))
   print(noquote(sprintf("strMeanCostValidation = %f", strMeanCost[1])))
   print(noquote(sprintf("slopeCost = %f", slopeCost)))
   rData
