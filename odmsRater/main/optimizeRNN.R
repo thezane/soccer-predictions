@@ -39,6 +39,7 @@ trainRNN <- function(rData) {
 
 updateRNN <- function(x, rData) {
   rOptions <- rData[["rOptions"]]
+  print(rData[["rOutput"]]$y)
 
   # Update model parameters
   rOptions <- updateOptions(rOptions, x)
