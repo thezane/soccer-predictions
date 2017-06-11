@@ -22,7 +22,9 @@ trainRNN <- function(rData) {
   xLBd <- getModelLBd(rOptions)
   xUBd <- getModelUBd(rOptions)
   n <- length(x)
-  fn <- function(x, rOptions.=rOptions, rOutput.=rOutput) {
+  fn <- function(x, rData.=rData) {
+      rOptions <- rData[["rOptions"]]
+      rOutput <- rData[["rOutput"]]
       rData <- updateRNN(x, rOptions, rOutput)
       rOutput <- rData[["rOutput"]]
       rOutput$y
