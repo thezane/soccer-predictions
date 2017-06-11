@@ -8,10 +8,10 @@ updateStrMeanCosts <- function(obj, x)
     UseMethod("updateStrMeanCosts", obj)
 
 computeGoalsCost <- function(obj)
-    UseMethod("computeGoalsCosts", obj)
+    UseMethod("computeGoalsCost", obj)
 
 computeGoalsCost <- function(obj, x)
-    UseMethod("computeGoalsCosts", obj)
+    UseMethod("computeGoalsCost", obj)
 
 computeStrMeanCost <- function(obj)
     UseMethod("computeStrMeanCost", obj)
