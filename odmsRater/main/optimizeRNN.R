@@ -3,24 +3,25 @@ optimizeRNN <- function(tTree, fTree, gTree, gi, rData) {
 
   if (is.null(rData)) {
     rOptions <- newRatingsOptions(fTree)
-	rData <- list(rOptions=rOptions, rOutput=rOutput)
-    rData <- trainRNN(rData)
+    x <- trainRNN(rOptions, rOutput)
+    rData <- updateRNN(x, rOptions, rOutput)
   }
   else {
-    rData <- computeRNN(rData)
+    rOptions <- rData[["rOptions"]]
+    rOutput <- computeRNN(rOptions, rOutput)
+    rData <- list(rOptions=rOptions, rOutput=rOutput)
   }
 
   rData
 }
 
-trainRNN <- function(rData) {
-  rOptions <- rData[["rOptions"]]
+trainRNN <- function(rOptions, rOutput) {
   x <- getModel(rOptions)
   xLBd <- getModelLBd(rOptions)
   xUBd <- getModelUBd(rOptions)
   n <- length(x)
-  fn <- function(x, rData.=rData) {
-      rData <- updateRNN(x, rData)
+  fn <- function(x, rOptions.=rOptions, rOutput.=rOutput) {
+      rData <- updateRNN(x, rOptions, rOutput)
       rOutput <- rData[["rOutput"]]
       rOutput$y
   }
@@ -34,21 +35,18 @@ trainRNN <- function(rData) {
       lower=xLBd, upper=xUBd, control=list(trace=3, lmm=rOptions$lmm,
       factr=rOptions$factr, REPORT=1))
   stopCluster(cluster)
-  rData
+  x <- optimObj$par
+  x
 }
 
-updateRNN <- function(x, rData) {
-  rOptions <- rData[["rOptions"]]
-  print(rData[["rOutput"]]$y)
-
+updateRNN <- function(x, rOptions, rOutput) {
   # Update model parameters
   rOptions <- updateOptions(rOptions, x)
   cat("\n")
   printModel(rOptions)
 
   # Compute RNN with updated parameters
-  rData <- computeRNN(rData)
-  rOutput <- rData[["rOutput"]]
+  rOutput <- computeRNN(rOptions, rOutput)
 
   # Compute cost
   strMeanCostReg <- rOptions$strMeanCostReg
@@ -57,7 +55,7 @@ updateRNN <- function(x, rData) {
   strMeanCost <- strMeanCostReg * computeStrMeanCost(rOutput)
   slopeCost <- slopeCostReg * norm(getModelSlopes(rOptions), "f")
   rOutput$y <- goalsCost[1] + strMeanCost[1] + slopeCost
-  rData[["rOutput"]] <- rOutput
+  rData <- list(rOptions=rOptions, rOutput=rOutput)
 
   # Print cost
   print(noquote(sprintf("goalsCostT = %f", goalsCost[1])))

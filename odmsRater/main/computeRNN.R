@@ -1,7 +1,4 @@
-computeRNN <- function(rData) {
-  rOptions <- rData[["rOptions"]]
-  rOutput <- rData[["rOutput"]]
-  rOutput <- resetRatingsOutput(rOutput)
+computeRNN <- function(rOptions, rOutput) {
   tTree <- rOutput$tTree
   gTree <- rOutput$gTree
   gi <- rOutput$gi
@@ -32,8 +29,7 @@ computeRNN <- function(rData) {
   rOutput$tTree <- tTree
   rOutput$gTree <- gTree
   rOutput$gi <- gi
-  rData[["rOutput"]] <- rOutput
-  rData
+  rOutput
 }
 
 iterTeams <- function(rOptions, tTree, f) {
