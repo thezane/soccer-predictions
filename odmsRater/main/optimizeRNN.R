@@ -49,9 +49,9 @@ updateRNN <- function(x, rOptions, rOutput) {
   rOutput <- computeRNN(rOptions, rOutput)
 
   # Compute cost
-  goalsCost <- computeGoalsCost(rOutput)
+  goalsCost <- computeGoalsCost(rOutput, 1)
   slopeCost <- 0.001 * norm(getModelSlopes(rOptions), "f")
-  strMeanCost <- 0.1 * computeStrMeanCost(rOutput)
+  strMeanCost <- 0.1 * computeStrMeanCost(rOutput, 1)
   rOutput$y <- goalsCost + slopeCost + strMeanCost
   rData <- list(rOptions=rOptions, rOutput=rOutput)
 

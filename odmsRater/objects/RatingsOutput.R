@@ -3,60 +3,53 @@ newRatingsOutput <- function(tTree, gTree, gi) {
     tTree=tTree,
     gTree=gTree,
     gi=gi,
-    goalsCosts=NULL,
-    goalsWeights=NULL,
-    strMeanCosts=NULL
+    costs=hash()
   )
+  
+  rOutput$costs["training"] <- newRatingsCosts("training")
+  rOutput$costs["validation"] <- newRatingsCosts("validation")
   
   class(rOutput) <- "RatingsOutput"
   rOutput
 }
 
 # Update cost of prediction for goals.
-updateGoalsCost <- function(rOutput, p, w) {
-  rOutput$goalsCosts <- c(rOutput$goalsCosts, p)
-  rOutput$goalsWeights <- c(rOutput$goalsWeights, w)
+updateGoalsCost.RatingsOutput <- function(rOutput, p, w, isTraining) {
+  dataset <- getDataset(rOutput, isTraining)
+  rCosts <- rOutput$costs[[dataset]]
+  rCosts <- updateGoalsCost(rCosts, p, w)
+  rOutput$costs[dataset] <- rCosts
   rOutput
 }
 
 # Update distance of mean team rating from default rating.
-updateStrMeanCosts <- function(rOutput) {
-  teams <- data.frame(t(values(rOutput$tTree)))
-  strNorms <- data.frame(teams[["strNorm"]])
-  aNorms <- unlist(strNorms[1, ])
-  dNorms <- unlist(strNorms[2, ])
-  strNormMean <- c(mean(aNorms), mean(dNorms)) /
-      c(sd(aNorms), sd(dNorms))
-  rOutput$strMeanCosts <- c(rOutput$strMeanCosts,
-      strNormMean - c(0, 0))
+updateStrMeanCosts.RatingsOutput <- function(rOutput, isTraining) {
+  dataset <- getDataset(rOutput, isTraining)
+  rCosts <- rOutput$costs[[dataset]]
+  rCosts <- updateStrMeanCosts(rCosts, rOutput$tTree)
+  rOutput$costs[dataset] <- rCosts
   rOutput
 }
 
 # Compute cost of prediction for goals.
-computeGoalsCost <- function(rOutput) {
-  ps <- rOutput$goalsCosts
-  ws <- rOutput$goalsWeights
-
-  if (is.null(ps)) {
-    cost <- 0
-  }
-  else {
-    cost <- -log(ps) %*% ws / sum(ws)
-  }
-
-  cost
+computeGoalsCost.RatingsOutput <- function(rOutput, isTraining) {
+  dataset <- getDataset(rOutput, isTraining)
+  rCosts <- rOutput$costs[[dataset]]
+  computeGoalsCost(rCosts)
 }
 
 # Compute distance of mean team rating from default rating.
-computeStrMeanCost <- function(rOutput) {
-  strMeanCosts <- rOutput$strMeanCosts
+computeStrMeanCost.RatingsOutput <- function(rOutput, isTraining) {
+  dataset <- getDataset(rOutput, isTraining)
+  rCosts <- rOutput$costs[[dataset]]
+  computeStrMeanCost(rCosts)
+}
 
-  if (is.null(strMeanCosts)) {
-    strMeanCost <- 0
+getDataset <- function(rOutput, isTraining) {
+  if (isTraining) {
+    "training"
   }
   else {
-	strMeanCost <- mean(strMeanCosts ^ 2)
+    "validation"
   }
-
-  strMeanCost
 }

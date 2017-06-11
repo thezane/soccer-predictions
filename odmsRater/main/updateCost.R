@@ -1,7 +1,7 @@
 updateCost <- function(rOptions, rOutput, game, gamePrev) {
 
   if (!is.null(gamePrev) && gamePrev$year < game$year) {
-    rOutput <- updateStrMeanCosts(rOutput)
+    rOutput <- updateStrMeanCosts(rOutput, game$isTraining)
   }
 
   if (game$isRelevant) {
@@ -27,7 +27,7 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   goals <- game$goals
   homeAwayGoals <- gamePrediction[["homeAwayGoals"]]
   p <- homeAwayGoals[goals[1] + 1, goals[2] + 1]
-  rOutput <- updateGoalsCost(rOutput, p, game$weight)
+  rOutput <- updateGoalsCost(rOutput, p, game$weight, game$isTraining)
   costData <- list(rOutput=rOutput, game=game)
   costData
 }

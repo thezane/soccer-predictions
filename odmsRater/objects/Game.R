@@ -1,5 +1,5 @@
 newGame <- function(T, i, homeTeamName, awayTeamName,
-    gameDate) {
+    currentDate, gameDate) {
   contest <- T[[i, "Contest"]]
   goals <- c(T[[i, "HomeGoals"]], T[[i, "AwayGoals"]])
   zeroesMat <- matrix(0, 2, 2)
@@ -38,6 +38,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     isPlayOff=grepl("-PlayOff", contest),
     isWocT=grepl("WOC-G|K", contest),
     isRelevant=FALSE,
+    isTraining=gameDate<=currentDate,
     weight=0
   )
   
