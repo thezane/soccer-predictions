@@ -1,6 +1,5 @@
-writeIter <- function(y, x, dataPath) {
+writeIter <- function(y, x, iterFile) {
   iterData <- matrix(c(y, x), nrow=1)
-  outFile <- paste(dataPath, "odms-iters", sep="")
-  write.table(iterData, paste(outFile, ".csv", sep=""), append=TRUE,
+  write.table(iterData, iterFile, append=TRUE,
       col.names=FALSE, row.names=FALSE, sep=",")
 }

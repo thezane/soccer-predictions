@@ -23,8 +23,14 @@ trainRNN <- function(rData, dataPath) {
   xLBd <- getModelLBd(rOptions)
   xUBd <- getModelUBd(rOptions)
   n <- length(x)
-  fn <- function(x, rData.=rData, dataPath.=dataPath) {
-      rData <- updateRNN(x, rData, dataPath)
+  iterFile <- paste(dataPath, "odms-iters.csv", sep="")
+  
+  if (file.exists(iterFile)) {
+    file.remove(iterFile)
+  }
+
+  fn <- function(x, rData.=rData, iterFile.=iterFile) {
+      rData <- updateRNN(x, rData, iterFile)
       rOutput <- rData[["rOutput"]]
       rOutput$y
   }
@@ -42,7 +48,7 @@ trainRNN <- function(rData, dataPath) {
   x
 }
 
-updateRNN <- function(x, rData, dataPath) {
+updateRNN <- function(x, rData, iterFile) {
   rOptions <- rData[["rOptions"]]
   rOutput <- rData[["rOutput"]]
 
@@ -69,7 +75,7 @@ updateRNN <- function(x, rData, dataPath) {
   print(noquote(sprintf("slopeCost = %f", slopeCost)))
   rData[["rOptions"]] <- rOptions
   rData[["rOutput"]] <- rOutput
-  writeIter(totalCosts[2], x, dataPath)
+  writeIter(totalCosts[2], x, iterFile)
   rData
 }
 

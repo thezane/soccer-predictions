@@ -1,2 +1,2 @@
-readIter <- function(dataPath) {
+readIter <- function(iterFile) {
 }
