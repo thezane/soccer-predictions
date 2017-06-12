@@ -1,7 +1,7 @@
 updateCost <- function(rOptions, rOutput, game, gamePrev) {
 
   if (!is.null(gamePrev) && gamePrev$year < game$year) {
-    rOutput <- updateStrMeanCosts(rOutput, game$dataset)
+    rOutput <- updateStrMeanCost(rOutput, game$dataset)
   }
 
   if (game$isRelevant) {

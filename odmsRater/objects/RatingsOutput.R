@@ -34,7 +34,6 @@ updateStrMeanCosts.RatingsOutput <- function(rOutput, dataset) {
 }
 
 updateTotalCosts <- function(rOutput, rOptions) {
-  browser()
   rOutput$costs["training"] <- updateTotalCost(
       rOutput$costs[["training"]], rOptions)
   rOutput$costs["validation"] <- updateTotalCost(
