@@ -6,6 +6,3 @@ updateGoalsCost <- function(obj, x1, x2, x3)
 
 updateStrMeanCosts <- function(obj, x)
     UseMethod("updateStrMeanCosts", obj)
-
-updateFinalCosts <- function(obj, x)
-    UseMethod("updateFinalCosts", obj)

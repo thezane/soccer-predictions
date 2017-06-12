@@ -63,7 +63,7 @@ computeStrMeanCost <- function(rCosts) {
   strMeanCost
 }
 
-updateFinalCosts.RatingsCosts <- function(rCosts, rOptions) {
+updateTotalCost.RatingsCosts <- function(rCosts, rOptions) {
   rCosts$goalsCost <- computeGoalsCost(rCosts)
   rCosts$strMeanCost <- rOptions$strMeanCostReg *
       computeStrMeanCost(rCosts)
