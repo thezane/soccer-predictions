@@ -69,8 +69,6 @@ updateTotalCost <- function(rCosts, rOptions) {
       computeStrMeanCost(rCosts)
   rCosts$totalCost <- rCosts$goalsCost + rCosts$strMeanCost +
       rOptions$slopeCost
-  print(rCosts$goalsCost)
-  print(rCosts$strMeanCost)
-  print(rOptions$slopeCost)
+  print(rCosts)
   rCosts
 }
