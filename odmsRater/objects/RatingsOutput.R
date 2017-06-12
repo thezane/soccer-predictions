@@ -30,7 +30,6 @@ updateStrMeanCosts.RatingsOutput <- function(rOutput, dataset) {
   rCosts <- rOutput$costs[[dataset]]
   rCosts <- updateStrMeanCosts(rCosts, rOutput$tTree)
   rOutput$costs[dataset] <- rCosts
-  print(rOutput$costs[dataset]$strMeanCosts)
   rOutput
 }
 

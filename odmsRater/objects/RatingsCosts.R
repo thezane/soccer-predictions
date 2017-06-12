@@ -28,8 +28,10 @@ updateStrMeanCosts.RatingsCosts <- function(rCosts, tTree) {
   dNorms <- unlist(strNorms[2, ])
   strNormMean <- c(mean(aNorms), mean(dNorms)) /
       c(sd(aNorms), sd(dNorms))
+  print(strNormMean)
   rCosts$strMeanCosts <- c(rCosts$strMeanCosts,
       strNormMean - c(0, 0))
+  print(rCosts$strMeanCosts)
   rCosts
 }
 
