@@ -51,6 +51,7 @@ computeGoalsCost <- function(rCosts) {
 # Compute distance of mean team rating from default rating.
 computeStrMeanCost <- function(rCosts) {
   strMeanCosts <- rCosts$strMeanCosts
+  print(strMeanCosts)
 
   if (is.null(strMeanCosts)) {
     strMeanCost <- 0
@@ -59,6 +60,7 @@ computeStrMeanCost <- function(rCosts) {
 	strMeanCost <- mean(strMeanCosts ^ 2)
   }
 
+  print(strMeanCost)
   strMeanCost
 }
 
@@ -68,6 +70,5 @@ updateTotalCost <- function(rCosts, rOptions) {
       computeStrMeanCost(rCosts)
   rCosts$totalCost <- rCosts$goalsCost + rCosts$strMeanCost +
       rOptions$slopeCost
-  print(computeStrMeanCost(rCosts))
   rCosts
 }
