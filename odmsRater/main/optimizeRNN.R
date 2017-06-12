@@ -69,7 +69,7 @@ updateRNN <- function(x, rData, dataPath) {
   print(noquote(sprintf("slopeCost = %f", slopeCost)))
   rData[["rOptions"]] <- rOptions
   rData[["rOutput"]] <- rOutput
-  writeIter(totalCossts[2], x, dataPath)
+  writeIter(totalCosts[2], x, dataPath)
   rData
 }
 
