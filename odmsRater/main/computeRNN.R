@@ -27,6 +27,7 @@ computeRNN <- function(rOptions, rOutput) {
     i <- i + 1
   }
   
+  rOutput <- updateFinalCosts(rOutput, rOptions$strMeanReg)
   rOutput$tTree <- tTree
   rOutput$gTree <- gTree
   rOutput$gi <- gi

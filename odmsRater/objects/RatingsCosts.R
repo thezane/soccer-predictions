@@ -3,7 +3,11 @@ newRatingsCosts <- function(dataset) {
       dataset=dataset,
       goalsCosts=NULL,
       goalsWeights=NULL,
-      strMeanCosts=NULL
+      strMeanCosts=NULL,
+      goalsCost=0,
+      strMeanCost=0,
+      slopeCost=0,
+      totalCost=0
     )
 
     class(rCosts) <- "RatingsCosts"
@@ -31,7 +35,7 @@ updateStrMeanCosts.RatingsCosts <- function(rCosts, tTree) {
 }
 
 # Compute cost of prediction for goals.
-computeGoalsCost.RatingsCosts <- function(rCosts) {
+computeGoalsCost <- function(rCosts) {
   ps <- rCosts$goalsCosts
   ws <- rCosts$goalsWeights
 
@@ -46,7 +50,7 @@ computeGoalsCost.RatingsCosts <- function(rCosts) {
 }
 
 # Compute distance of mean team rating from default rating.
-computeStrMeanCost.RatingsCosts <- function(rCosts) {
+computeStrMeanCost <- function(rCosts) {
   strMeanCosts <- rCosts$strMeanCosts
 
   if (is.null(strMeanCosts)) {
@@ -57,4 +61,13 @@ computeStrMeanCost.RatingsCosts <- function(rCosts) {
   }
 
   strMeanCost
+}
+
+updateFinalCosts.RatingsCosts <- function(rCosts, rOptions) {
+  rCosts$goalsCost <- computeGoalsCost(rCosts)
+  rCosts$strMeanCost <- rOptions$strMeanCostReg *
+      computeStrMeanCost(rCosts)
+  rCosts$totalCost <- rCosts$goalsCost + rCosts$strMeanCost +
+      rOptions$slopeCost
+  rCosts
 }

@@ -3,7 +3,8 @@ newRatingsOutput <- function(tTree, gTree, gi) {
     tTree=tTree,
     gTree=gTree,
     gi=gi,
-    costs=hash()
+    costs=hash(),
+    y=0
   )
   
   class(rOutput) <- "RatingsOutput"
@@ -32,14 +33,25 @@ updateStrMeanCosts.RatingsOutput <- function(rOutput, dataset) {
   rOutput
 }
 
-# Compute cost of prediction for goals.
-computeGoalsCost.RatingsOutput <- function(rOutput) {
-  c(computeGoalsCost(rOutput$costs[["training"]]),
-      computeGoalsCost(rOutput$costs[["validation"]]))
+updateFinalCosts.RatingsOutput <- function(rOutput, rOptions) {
+  rOutput$costs["training"] <- updateFinalCosts(
+      costs[["training"]], rOptions)
+  rOutput$costs["validation"] <- updateFinalCosts(
+      costs[["validation"]], rOptions)
+  rOutput
 }
 
-# Compute distance of mean team rating from default rating.
-computeStrMeanCost.RatingsOutput <- function(rOutput) {
-  c(computeStrMeanCost(rOutput$costs[["training"]]),
-      computeStrMeanCost(rOutput$costs[["validation"]]))
+computeGoalsCosts <- function(rOutput) {
+  c(rOutput$costs[["training"]]$goalsCost,
+      rOutput$costs[["validation"]]$goalsCost)
+}
+
+computeStrMeanCosts <- function(rOutput) {
+  c(rOutput$costs[["training"]]$strMeanCost,
+      rOutput$costs[["validation"]]$strMeanCost)
+}
+
+computeTotalCosts <- function(rOutput) {
+  c(rOutput$costs[["training"]]$strTotalCost,
+      rOutput$costs[["validation"]]$strTotalCost)
 }

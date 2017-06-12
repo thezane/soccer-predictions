@@ -55,22 +55,20 @@ updateRNN <- function(x, rData) {
   rOutput <- computeRNN(rOptions, rOutput)
 
   # Compute cost
-  strMeanCostReg <- rOptions$strMeanCostReg
-  slopeCostReg <- rOptions$slopeCostReg
-  goalsCost <- computeGoalsCost(rOutput)
-  strMeanCost <- strMeanCostReg * computeStrMeanCost(rOutput)
-  slopeCost <- slopeCostReg * norm(getModelSlopes(rOptions), "f")
-  rOutput$y <- goalsCost[1] + strMeanCost[1] + slopeCost
+  goalsCosts <- computeGoalsCosts(rOutput)
+  strMeanCosts <- computeStrMeanCosts(rOutput)
+  totalCosts <- computeTotalCosts(rOutput)
+  slopeCost <- rOptions$slopeCost
+  rOutput$y <- totalCosts[1]
 
   # Print cost
-  print(noquote(sprintf("goalsCostT = %f", goalsCost[1])))
-  print(noquote(sprintf("strCostT = %f", strMeanCost[1])))
-  print(noquote(sprintf("goalsCostV = %f", goalsCost[2])))
-  print(noquote(sprintf("strCostV = %f", strMeanCost[2])))
+  print(noquote(sprintf("goalsCostT = %f", goalsCosts[1])))
+  print(noquote(sprintf("strCostT = %f", strMeanCosts[1])))
+  print(noquote(sprintf("goalsCostV = %f", goalsCosts[2])))
+  print(noquote(sprintf("strCostV = %f", strMeanCosts[2])))
   print(noquote(sprintf("slopeCost = %f", slopeCost)))
   rData[["rOptions"]] <- rOptions
   rData[["rOutput"]] <- rOutput
-  write.table(x=x, file="B.txt", append=TRUE, sep=",", col.names=FALSE, row.names=FALSE)
   rData
 }
 

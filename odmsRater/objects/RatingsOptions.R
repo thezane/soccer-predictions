@@ -46,6 +46,7 @@ newRatingsOptions <- function(fTree) {
     odmIter=1,
     
     # Regularization
+    slopeCost=0,
     strMeanCostReg=0.1,
     slopeCostReg=0.001,
 
@@ -85,11 +86,6 @@ getModelUBd <- function(rOptions) {
     rOptions$strFsNormUBd)
 }
 
-getModelSlopes <- function(rOptions) {
-  matrix(c(rOptions$b,
-      rOptions$strBeta, rOptions$hA))
-}
-
 updateOptions <- function(rOptions, x) {
   rOptions$b <- x[1]
   rOptions$c <- x[2]
@@ -109,6 +105,8 @@ updateOptions <- function(rOptions, x) {
     i <- i + 1
   }
 
+  rOptions$slopeCost <- rOptions$slopeCostReg *
+      norm(matrix(c(rOptions$b, rOptions$strBeta, rOptions$hA)), "f")
   rOptions
 }
 
