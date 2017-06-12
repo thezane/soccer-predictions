@@ -60,7 +60,6 @@ computeStrMeanCost <- function(rCosts) {
 	strMeanCost <- mean(strMeanCosts ^ 2)
   }
 
-  print(strMeanCost)
   strMeanCost
 }
 

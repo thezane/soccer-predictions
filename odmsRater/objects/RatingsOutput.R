@@ -34,10 +34,12 @@ updateStrMeanCosts.RatingsOutput <- function(rOutput, dataset) {
 }
 
 updateTotalCosts <- function(rOutput, rOptions) {
+  print(rOutput$costs)
   rOutput$costs["training"] <- updateTotalCost(
       rOutput$costs[["training"]], rOptions)
   rOutput$costs["validation"] <- updateTotalCost(
       rOutput$costs[["validation"]], rOptions)
+  print(rOutput$costs)
   rOutput
 }
 
