@@ -6,7 +6,6 @@ newRatingsCosts <- function(dataset) {
       strMeanCosts=NULL,
       goalsCost=0,
       strMeanCost=0,
-      slopeCost=0,
       totalCost=0
     )
 
@@ -69,6 +68,6 @@ updateTotalCost <- function(rCosts, rOptions) {
       computeStrMeanCost(rCosts)
   rCosts$totalCost <- rCosts$goalsCost + rCosts$strMeanCost +
       rOptions$slopeCost
-  print(rCosts)
+  print(computeStrMeanCost(rCosts))
   rCosts
 }
