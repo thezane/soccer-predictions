@@ -17,7 +17,6 @@ resetRatingsOutput <- function(rOutput) {
   rOutput
 }
 
-# Update cost of prediction for goals.
 updateGoalsCost.RatingsOutput <- function(rOutput, p, w, dataset) {
   rCosts <- rOutput$costs[[dataset]]
   rCosts <- updateGoalsCost(rCosts, p, w)
@@ -25,7 +24,6 @@ updateGoalsCost.RatingsOutput <- function(rOutput, p, w, dataset) {
   rOutput
 }
 
-# Update distance of mean team rating from default rating.
 updateStrMeanCosts.RatingsOutput <- function(rOutput, dataset) {
   rCosts <- rOutput$costs[[dataset]]
   rCosts <- updateStrMeanCosts(rCosts, rOutput$tTree)
