@@ -52,6 +52,6 @@ computeStrMeanCosts <- function(rOutput) {
 }
 
 computeTotalCosts <- function(rOutput) {
-  c(rOutput$costs[["training"]]$strTotalCost,
-      rOutput$costs[["validation"]]$strTotalCost)
+  c(rOutput$costs[["training"]]$totalCost,
+      rOutput$costs[["validation"]]$totalCost)
 }
