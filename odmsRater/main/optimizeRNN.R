@@ -1,10 +1,10 @@
-optimizeRNN <- function(tTree, fTree, gTree, gi, rData) {
+optimizeRNN <- function(tTree, fTree, gTree, gi, rData, dataPath) {
   rOutput <- newRatingsOutput(tTree, gTree, gi)
 
   if (is.null(rData)) {
     rOptions <- newRatingsOptions(fTree)
     rData <- list(rOptions=rOptions, rOutput=rOutput)
-    x <- trainRNN(rData)
+    x <- trainRNN(rData, dataPath)
     rData <- updateRNN(x, rData)
   }
   else {
@@ -16,15 +16,15 @@ optimizeRNN <- function(tTree, fTree, gTree, gi, rData) {
   rData
 }
 
-trainRNN <- function(rData) {
+trainRNN <- function(rData, dataPath) {
   rOptions <- rData[["rOptions"]]
   rOutput <- rData[["rOutput"]]
   x <- getModel(rOptions)
   xLBd <- getModelLBd(rOptions)
   xUBd <- getModelUBd(rOptions)
   n <- length(x)
-  fn <- function(x, rData.=rData) {
-      rData <- updateRNN(x, rData)
+  fn <- function(x, rData.=rData, dataPath.=dataPath) {
+      rData <- updateRNN(x, rData, dataPath)
       rOutput <- rData[["rOutput"]]
       rOutput$y
   }
@@ -42,7 +42,7 @@ trainRNN <- function(rData) {
   x
 }
 
-updateRNN <- function(x, rData) {
+updateRNN <- function(x, rData, dataPath) {
   rOptions <- rData[["rOptions"]]
   rOutput <- rData[["rOutput"]]
 
@@ -69,6 +69,7 @@ updateRNN <- function(x, rData) {
   print(noquote(sprintf("slopeCost = %f", slopeCost)))
   rData[["rOptions"]] <- rOptions
   rData[["rOutput"]] <- rOutput
+  writerIter(totalCossts[2], x, dataPath)
   rData
 }
 

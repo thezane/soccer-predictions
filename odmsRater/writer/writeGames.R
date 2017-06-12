@@ -1,9 +1,7 @@
 writeGames <- function(rData, T, dataPath) {
   rOutput <- rData[["rOutput"]]
-  gamesData <- getGamesData(rOutput$gi, T)
-  endDate <- gamesData[["endDate"]]
-  T <- gamesData[["T"]]
-  outFile <- paste(dataPath, "odms-", endDate, sep="")
+  T <- getGamesData(rOutput$gi, T)
+  outFile <- paste(dataPath, "odms-matches", sep="")
   save(rData, file=paste(outFile, ".RData", sep=""))
   write.csv(T, paste(outFile, ".csv", sep=""), row.names=FALSE)
 }
@@ -31,9 +29,7 @@ getGamesData <- function(gi, T) {
   }
   
   T <- T[order(as.Date(T[, "Date"]), decreasing=TRUE), ]
-  endDate <- gsub("/", "-", endDate)
-  gamesData <- list(T=T, endDate=endDate)
-  gamesData
+  T
 }
 
 updateGames <- function(T, game) {
