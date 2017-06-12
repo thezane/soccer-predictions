@@ -44,7 +44,7 @@ trainRNN <- function(rData, dataPath) {
       lower=xLBd, upper=xUBd, control=list(trace=3, lmm=rOptions$lmm,
       factr=rOptions$factr, REPORT=1))
   stopCluster(cluster)
-  x <- optimObj$par
+  x <- readIter(iterFile)
   x
 }
 
