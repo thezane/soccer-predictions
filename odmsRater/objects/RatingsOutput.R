@@ -29,8 +29,8 @@ updateGoalsCost.RatingsOutput <- function(rOutput, p, w, dataset) {
 updateStrMeanCosts.RatingsOutput <- function(rOutput, dataset) {
   rCosts <- rOutput$costs[[dataset]]
   rCosts <- updateStrMeanCosts(rCosts, rOutput$tTree)
-  print(rCosts$strMeanCosts)
   rOutput$costs[dataset] <- rCosts
+  print(rOutput[[dataset]]$strMeanCosts)
   rOutput
 }
 
