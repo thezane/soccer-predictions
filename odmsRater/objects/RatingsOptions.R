@@ -43,7 +43,7 @@ newRatingsOptions <- function(fTree) {
     fNames=fNames,
     minUpdates=0,
     numFs=numFs,
-    odmIter=10,
+    odmIter=1,
     
     # Regularization
     slopeCost=0,
