@@ -30,9 +30,11 @@ trainRNN <- function(rData, dataPath) {
   }
 
   fn <- function(x, rData.=rData, iterFile.=iterFile) {
-      rData <- updateRNN(x, rData, iterFile)
+      rData <- updateRNN(x, rData)
       rOutput <- rData[["rOutput"]]
-      rOutput$y
+      totalCosts <- computeTotalCosts(rOutput)
+      writeIter(totalCosts[2], x, iterFile)
+      totalCosts[1]
   }
   cores <- min(detectCores() - 1, n)
   cluster <- makeCluster(cores)
@@ -42,13 +44,13 @@ trainRNN <- function(rData, dataPath) {
   }
   optimObj <- optim(x, fn, gr, method="L-BFGS-B",
       lower=xLBd, upper=xUBd, control=list(trace=3, lmm=rOptions$lmm,
-      factr=rOptions$factr, REPORT=1, maxit=1))
+      factr=rOptions$factr, REPORT=1, maxit=0))
   stopCluster(cluster)
   x <- readIter(iterFile)
   x
 }
 
-updateRNN <- function(x, rData, iterFile) {
+updateRNN <- function(x, rData) {
   rOptions <- rData[["rOptions"]]
   rOutput <- rData[["rOutput"]]
 
@@ -63,9 +65,7 @@ updateRNN <- function(x, rData, iterFile) {
   # Compute cost
   goalsCosts <- computeGoalsCosts(rOutput)
   strMeanCosts <- computeStrMeanCosts(rOutput)
-  totalCosts <- computeTotalCosts(rOutput)
   slopeCost <- rOptions$slopeCost
-  rOutput$y <- totalCosts[1]
 
   # Print cost
   print(noquote(sprintf("goalsCostT = %f", goalsCosts[1])))
@@ -75,7 +75,6 @@ updateRNN <- function(x, rData, iterFile) {
   print(noquote(sprintf("slopeCost = %f", slopeCost)))
   rData[["rOptions"]] <- rOptions
   rData[["rOutput"]] <- rOutput
-  writeIter(totalCosts[2], x, iterFile)
   rData
 }
 
