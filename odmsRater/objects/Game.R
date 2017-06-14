@@ -61,7 +61,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     game$weight = 0.8
   }
   else {
-    game$weight = 0.2
+    game$weight = 0.3
   }
       
   class(game) <- "Game"
