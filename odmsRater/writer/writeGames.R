@@ -42,6 +42,7 @@ updateGames <- function(T, game) {
   ps <- round(game$Ps, numDecimals)
   T[i, "Date"] <- game$gameDateStr
   T[i, "Contest"] <- game$contest
+  T[i, "Type"] <- game$type
   T[i, "HomeStrAgg"] <- strAgg[1]
   T[i, "AwayStrAgg"] <- strAgg[2]
   T[i, "HomeStrAggNext"] <- strAggNext[1]
