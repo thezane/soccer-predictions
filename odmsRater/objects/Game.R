@@ -1,6 +1,7 @@
 newGame <- function(T, i, homeTeamName, awayTeamName,
     currentDate, gameDate) {
   contest <- T[[i, "Contest"]]
+  type <- T[[i, "Type"]]
   goals <- c(T[[i, "HomeGoals"]], T[[i, "AwayGoals"]])
   zeroesMat <- matrix(0, 2, 2)
   
@@ -33,10 +34,11 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
 
     # Contest
     contest=contest,
-    isFriendly=contest=="Friendlies",
-    isQualifier=grepl("-Q", contest),
-    isPlayOff=grepl("-PlayOff", contest),
-    isWocT=grepl("WOC-G|K", contest),
+    type=type,
+    isFriendly=type=="Friendlies",
+    isQualifier=grepl("-Qualifiers", type),
+    isPlayoff=grepl("-Playoff", type),
+    isWorldCup=grepl("World Cup", contest),
     isRelevant=FALSE,
     weight=0
   )
@@ -49,9 +51,9 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   }
   
   game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
-      game$isPlayOff
+      game$isPlayoff
       
-  if (game$isWocT) {
+  if (game$isWorldCup && !game$isFriendly && !game$isQualifier) {
     game$weight = 1
   }
   else if (!game$isFriendly && !game$isQualifier) {
