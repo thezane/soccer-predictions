@@ -207,7 +207,7 @@ Brazil,Colombia,09/07/16,World Cup,Qualifiers-South America,2,1,1
 Canada,El Salvador,09/07/16,World Cup,Qualifiers-North America,3,1,1
 Chile,Bolivia,09/07/16,World Cup,Qualifiers-South America,0,0,1
 Costa Rica,Panama,09/07/16,World Cup,Qualifiers-North America,3,1,1
-Guatemala,Grouprenadines,09/07/16,World Cup,Qualifiers-North America,9,3,1
+Guatemala,Saint Vincent and the Grenadines,09/07/16,World Cup,Qualifiers-North America,9,3,1
 Jamaica,Haiti,09/07/16,World Cup,Qualifiers-North America,0,2,1
 Mexico,Honduras,09/07/16,World Cup,Qualifiers-North America,0,0,1
 Peru,Ecuador,09/07/16,World Cup,Qualifiers-South America,2,1,1
@@ -271,7 +271,7 @@ Trinidad and Tobago,Guatemala,09/03/16,World Cup,Qualifiers-North America,2,2,1
 South Africa,Mauritania,09/02/16,Africa Cup of Nations,Qualifiers,1,1,1
 Sudan,Gabon,09/02/16,Africa Cup of Nations,Friendlies,1,2,1
 Argentina,Uruguay,09/02/16,World Cup,Qualifiers-South America,1,0,1
-Grouprenadines,United States,09/02/16,World Cup,Qualifiers-North America,0,6,1
+Saint Vincent and the Grenadines,United States,09/02/16,World Cup,Qualifiers-North America,0,6,1
 Honduras,Canada,09/02/16,World Cup,Qualifiers-North America,2,1,1
 Paraguay,Chile,09/02/16,World Cup,Qualifiers-South America,2,1,1
 Bolivia,Peru,09/01/16,World Cup,Qualifiers-South America,2,0,1
@@ -408,7 +408,7 @@ Honduras,El Salvador,03/30/16,World Cup,Qualifiers-North America,2,0,1
 Mexico,Canada,03/30/16,World Cup,Qualifiers-North America,2,0,1
 Panama,Haiti,03/30/16,World Cup,Qualifiers-North America,1,0,1
 Paraguay,Brazil,03/30/16,World Cup,Qualifiers-South America,2,2,1
-Trinidad and Tobago,Grouprenadines,03/30/16,World Cup,Qualifiers-North America,6,0,1
+Trinidad and Tobago,Saint Vincent and the Grenadines,03/30/16,World Cup,Qualifiers-North America,6,0,1
 United States,Guatemala,03/30/16,World Cup,Qualifiers-North America,4,0,1
 Uruguay,Peru,03/30/16,World Cup,Qualifiers-South America,1,0,1
 Venezuela,Chile,03/30/16,World Cup,Qualifiers-South America,1,4,1
@@ -465,7 +465,7 @@ Tunisia,Togo,03/25/16,Africa Cup of Nations,Qualifiers,1,0,1
 Gabon,Sierra Leone,03/25/16,Africa Cup of Nations,Friendlies,2,1,1
 Netherlands,France,03/25/16,European Championship,Friendlies,2,3,1
 Chile,Argentina,03/25/16,World Cup,Qualifiers-South America,1,2,1
-Grouprenadines,Trinidad and Tobago,03/25/16,World Cup,Qualifiers-North America,2,3,1
+Saint Vincent and the Grenadines,Trinidad and Tobago,03/25/16,World Cup,Qualifiers-North America,2,3,1
 Peru,Venezuela,03/25/16,World Cup,Qualifiers-South America,2,2,1
 Comoros,Botswana,03/24/16,Africa Cup of Nations,Qualifiers,1,0,1
 Djibouti,Liberia,03/24/16,Africa Cup of Nations,Qualifiers,0,1,1
@@ -494,7 +494,7 @@ Cape Verde,Kenya,11/17/15,World Cup,Qualifiers-Africa,2,0,1
 Colombia,Argentina,11/17/15,World Cup,Qualifiers-South America,0,1,1
 Egypt,Chad,11/17/15,World Cup,Qualifiers-Africa,4,0,1
 Ghana,Comoros,11/17/15,World Cup,Qualifiers-Africa,2,0,1
-Grouprenadines,Guatemala,11/17/15,World Cup,Qualifiers-North America,0,4,1
+Saint Vincent and the Grenadines,Guatemala,11/17/15,World Cup,Qualifiers-North America,0,4,1
 Honduras,Mexico,11/17/15,World Cup,Qualifiers-North America,0,2,1
 Ivory Coast,Liberia,11/17/15,World Cup,Qualifiers-Africa,3,0,1
 Mali,Botswana,11/17/15,World Cup,Qualifiers-Africa,2,0,1
@@ -524,7 +524,7 @@ Jamaica,Panama,11/14/15,World Cup,Qualifiers-North America,0,2,1
 Mexico,El Salvador,11/14/15,World Cup,Qualifiers-North America,3,0,1
 Peru,Paraguay,11/14/15,World Cup,Qualifiers-South America,1,0,1
 Tanzania,Algeria,11/14/15,World Cup,Qualifiers-Africa,2,2,1
-United States,Grouprenadines,11/14/15,World Cup,Qualifiers-North America,6,1,1
+United States,Saint Vincent and the Grenadines,11/14/15,World Cup,Qualifiers-North America,6,1,1
 Bosnia-Herzegovina,Republic of Ireland,11/13/15,European Championship,Qualifiers,1,1,1
 France,Germany,11/13/15,European Championship,Friendlies,2,0,1
 Angola,South Africa,11/13/15,World Cup,Qualifiers-Africa,1,3,1
@@ -637,7 +637,7 @@ Mauritius,Kenya,10/07/15,World Cup,Qualifiers-Africa,2,5,1
 Seychelles,Burundi,10/07/15,World Cup,Qualifiers-Africa,0,1,1
 Tanzania,Malawi,10/07/15,World Cup,Qualifiers-Africa,2,0,1
 Rwanda,Gabon,09/12/15,Africa Cup of Nations,Friendlies,0,1,1
-Aruba,Grouprenadines,09/09/15,World Cup,Qualifiers-North America,2,1,1
+Aruba,Saint Vincent and the Grenadines,09/09/15,World Cup,Qualifiers-North America,2,1,1
 Belize,Canada,09/09/15,World Cup,Qualifiers-North America,1,1,1
 El Salvador,Curacao,09/09/15,World Cup,Qualifiers-North America,1,0,1
 Guatemala,Antigua and Barbuda,09/09/15,World Cup,Qualifiers-North America,2,0,1
@@ -720,7 +720,7 @@ Hungary,Romania,09/04/15,European Championship,Qualifiers,0,0,1
 Serbia,Armenia,09/04/15,European Championship,Qualifiers,2,0,1
 Portugal,France,09/04/15,European Championship,Friendlies,0,1,1
 Grenada,Haiti,09/04/15,World Cup,Qualifiers-North America,1,3,1
-Grouprenadines,Aruba,09/04/15,World Cup,Qualifiers-North America,2,0,1
+Saint Vincent and the Grenadines,Aruba,09/04/15,World Cup,Qualifiers-North America,2,0,1
 Azerbaijan,Croatia,09/03/15,European Championship,Qualifiers,0,0,1
 Belgium,Bosnia-Herzegovina,09/03/15,European Championship,Qualifiers,3,1,1
 Bulgaria,Norway,09/03/15,European Championship,Qualifiers,0,1,1
@@ -783,7 +783,7 @@ Suriname,Nicaragua,06/16/15,World Cup,Qualifiers-North America,1,3,1
 Ecuador,Bolivia,06/15/15,Copa America,Group,2,3,0
 Barbados,Aruba,06/15/15,World Cup,Qualifiers-North America,1,0,1
 Belize,Dominican Republic,06/15/15,World Cup,Qualifiers-North America,3,0,1
-Guyana,Grouprenadines,06/15/15,World Cup,Qualifiers-North America,4,4,1
+Guyana,Saint Vincent and the Grenadines,06/15/15,World Cup,Qualifiers-North America,4,4,1
 Saint Lucia,Antigua and Barbuda,06/15/15,World Cup,Qualifiers-North America,1,4,1
 Cameroon,Mauritania,06/14/15,Africa Cup of Nations,Qualifiers,1,0,1
 Democratic Republic of the Congo,Madagascar,06/14/15,Africa Cup of Nations,Qualifiers,2,1,1
@@ -853,7 +853,7 @@ Antigua and Barbuda,Saint Lucia,06/11/15,World Cup,Qualifiers-North America,1,3,
 Aruba,Barbados,06/11/15,World Cup,Qualifiers-North America,0,2,1
 Curacao,Cuba,06/11/15,World Cup,Qualifiers-North America,0,0,1
 Dominican Republic,Belize,06/11/15,World Cup,Qualifiers-North America,1,2,1
-Grouprenadines,Guyana,06/10/15,World Cup,Qualifiers-North America,2,2,1
+Saint Vincent and the Grenadines,Guyana,06/10/15,World Cup,Qualifiers-North America,2,2,1
 Nicaragua,Suriname,06/08/15,World Cup,Qualifiers-North America,1,0,1
 Montserrat,Curacao,04/01/15,World Cup,Qualifiers-North America,2,2,1
 Israel,Belgium,03/31/15,European Championship,Qualifiers,0,1,1
@@ -2149,7 +2149,7 @@ Cayman Islands,Dominican Republic,11/15/11,World Cup,Qualifiers-North America,1,
 Colombia,Argentina,11/15/11,World Cup,Qualifiers-South America,1,2,1
 Ecuador,Peru,11/15/11,World Cup,Qualifiers-South America,2,0,1
 Grenada,Guatemala,11/15/11,World Cup,Qualifiers-North America,1,4,1
-Grouprenadines,Belize,11/15/11,World Cup,Qualifiers-North America,0,2,1
+Saint Vincent and the Grenadines,Belize,11/15/11,World Cup,Qualifiers-North America,0,2,1
 Haiti,Antigua and Barbuda,11/15/11,World Cup,Qualifiers-North America,2,1,1
 Indonesia,Iran,11/15/11,World Cup,Qualifiers-Asia,1,4,1
 Jordan,Iraq,11/15/11,World Cup,Qualifiers-Asia,1,3,1
@@ -2189,7 +2189,7 @@ Poland,Italy,11/11/11,European Championship,Friendlies,0,2,1
 Ukraine,Germany,11/11/11,European Championship,Friendlies,3,3,1
 Argentina,Bolivia,11/11/11,World Cup,Qualifiers-South America,1,1,1
 Bahrain,Iran,11/11/11,World Cup,Qualifiers-Asia,1,1,1
-Belize,Grouprenadines,11/11/11,World Cup,Qualifiers-North America,1,1,1
+Belize,Saint Vincent and the Grenadines,11/11/11,World Cup,Qualifiers-North America,1,1,1
 Bermuda,Barbados,11/11/11,World Cup,Qualifiers-North America,2,1,1
 Chad,Tanzania,11/11/11,World Cup,Qualifiers-Africa,1,2,1
 Comoros,Mozambique,11/11/11,World Cup,Qualifiers-Africa,0,1,1
@@ -2212,7 +2212,7 @@ United States Virgin Islands,Curacao,11/11/11,World Cup,Qualifiers-North America
 Uruguay,Chile,11/11/11,World Cup,Qualifiers-South America,4,0,1
 Uzbekistan,South Korea,11/11/11,World Cup,Qualifiers-Asia,1,0,1
 Gabon,Brazil,11/10/11,World Cup,Friendlies,0,2,1
-Grenada,Grouprenadines,10/15/11,World Cup,Qualifiers-North America,1,1,1
+Grenada,Saint Vincent and the Grenadines,10/15/11,World Cup,Qualifiers-North America,1,1,1
 Antigua and Barbuda,United States Virgin Islands,10/12/11,World Cup,Qualifiers-North America,10,0,1
 Bermuda,Guyana,10/12/11,World Cup,Qualifiers-North America,1,1,1
 Canada,Puerto Rico,10/12/11,World Cup,Qualifiers-North America,0,0,1
@@ -2316,10 +2316,10 @@ Barbados,Guyana,10/07/11,World Cup,Qualifiers-North America,0,2,1
 Belize,Grenada,10/07/11,World Cup,Qualifiers-North America,1,4,1
 Dominican Republic,El Salvador,10/07/11,World Cup,Qualifiers-North America,1,2,1
 Ecuador,Venezuela,10/07/11,World Cup,Qualifiers-South America,2,0,1
-Grouprenadines,Guatemala,10/07/11,World Cup,Qualifiers-North America,0,3,1
+Saint Vincent and the Grenadines,Guatemala,10/07/11,World Cup,Qualifiers-North America,0,3,1
 United States Virgin Islands,Haiti,10/07/11,World Cup,Qualifiers-North America,0,7,1
 Uruguay,Bolivia,10/07/11,World Cup,Qualifiers-South America,4,2,1
-Grouprenadines,Grenada,09/18/11,World Cup,Qualifiers-North America,2,1,1
+Saint Vincent and the Grenadines,Grenada,09/18/11,World Cup,Qualifiers-North America,2,1,1
 Belize,Guatemala,09/07/11,World Cup,Qualifiers-North America,1,2,1
 Cayman Islands,El Salvador,09/07/11,World Cup,Qualifiers-North America,1,4,1
 Curacao,Haiti,09/07/11,World Cup,Qualifiers-North America,2,4,1
@@ -2389,7 +2389,7 @@ Antigua and Barbuda,Curacao,09/03/11,World Cup,Qualifiers-North America,5,2,1
 Canada,Saint Lucia,09/03/11,World Cup,Qualifiers-North America,4,1,1
 Dominica,Nicaragua,09/03/11,World Cup,Qualifiers-North America,0,2,1
 El Salvador,Dominican Republic,09/03/11,World Cup,Qualifiers-North America,3,2,1
-Guatemala,Grouprenadines,09/03/11,World Cup,Qualifiers-North America,4,0,1
+Guatemala,Saint Vincent and the Grenadines,09/03/11,World Cup,Qualifiers-North America,4,0,1
 Guyana,Barbados,09/03/11,World Cup,Qualifiers-North America,2,0,1
 Knockoutitts and Nevis,Puerto Rico,09/03/11,World Cup,Qualifiers-North America,0,0,1
 Ghana,Swaziland,09/02/11,Africa Cup of Nations,Qualifiers,2,0,1
@@ -3649,7 +3649,7 @@ Zimbabwe,Kenya,06/22/08,World Cup,Qualifiers-Africa,0,0,1
 Netherlands,Russia,06/21/08,European Championship,Knockout,1,3,0
 Burkina Faso,Seychelles,06/21/08,World Cup,Qualifiers-Africa,4,1,1
 Cameroon,Tanzania,06/21/08,World Cup,Qualifiers-Africa,2,1,1
-Canada,Grouprenadines,06/21/08,World Cup,Qualifiers-North America,4,1,1
+Canada,Saint Vincent and the Grenadines,06/21/08,World Cup,Qualifiers-North America,4,1,1
 Morocco,Rwanda,06/21/08,World Cup,Qualifiers-Africa,2,0,1
 New Caledonia,Vanuatu,06/21/08,World Cup,Qualifiers-Oceania,3,0,1
 Nigeria,Equatorial Guinea,06/21/08,World Cup,Qualifiers-Africa,2,0,1
@@ -3680,7 +3680,7 @@ Turkey,Czech Republic,06/15/08,European Championship,Group,3,2,0
 Argentina,Ecuador,06/15/08,World Cup,Qualifiers-South America,1,1,1
 Belize,Mexico,06/15/08,World Cup,Qualifiers-North America,0,2,1
 Burundi,Tunisia,06/15/08,World Cup,Qualifiers-Africa,0,1,1
-Grouprenadines,Canada,06/15/08,World Cup,Qualifiers-North America,0,3,1
+Saint Vincent and the Grenadines,Canada,06/15/08,World Cup,Qualifiers-North America,0,3,1
 Equatorial Guinea,Nigeria,06/15/08,World Cup,Qualifiers-Africa,0,1,1
 Guatemala,Saint Lucia,06/15/08,World Cup,Qualifiers-North America,6,0,1
 Haiti,Netherlands Antilles,06/15/08,World Cup,Qualifiers-North America,0,0,1
@@ -5145,7 +5145,7 @@ Saudi Arabia,Sri Lanka,11/17/04,World Cup,Qualifiers-Asia,3,0,1
 South Korea,Maldives,11/17/04,World Cup,Qualifiers-Asia,2,0,1
 Syria,Kyrgyzstan,11/17/04,World Cup,Qualifiers-Asia,0,1,1
 Thailand,Yemen,11/17/04,World Cup,Qualifiers-Asia,1,1,1
-Trinidad and Tobago,Grouprenadines,11/17/04,World Cup,Qualifiers-North America,2,1,1
+Trinidad and Tobago,Saint Vincent and the Grenadines,11/17/04,World Cup,Qualifiers-North America,2,1,1
 Turkey,Ukraine,11/17/04,World Cup,Qualifiers-Europe,0,3,1
 United Arab Emirates,South Korea,11/17/04,World Cup,Qualifiers-Asia,1,0,1
 United States,Jamaica,11/17/04,World Cup,Qualifiers-North America,1,1,1
@@ -5171,7 +5171,7 @@ Iraq,Uzbekistan,10/13/04,World Cup,Qualifiers-Asia,1,2,1
 Italy,Belarus,10/13/04,World Cup,Qualifiers-Europe,4,3,1
 Jamaica,El Salvador,10/13/04,World Cup,Qualifiers-North America,0,0,1
 Kazakhstan,Albania,10/13/04,World Cup,Qualifiers-Europe,0,1,1
-Knockoutitts and Nevis,Grouprenadines,10/13/04,World Cup,Qualifiers-North America,0,3,1
+Knockoutitts and Nevis,Saint Vincent and the Grenadines,10/13/04,World Cup,Qualifiers-North America,0,3,1
 Kuwait,China,10/13/04,World Cup,Qualifiers-Asia,1,0,1
 Laos,Jordan,10/13/04,World Cup,Qualifiers-Asia,2,3,1
 Latvia,Estonia,10/13/04,World Cup,Qualifiers-Europe,2,2,1
@@ -5204,7 +5204,7 @@ Indonesia,Saudi Arabia,10/12/04,World Cup,Qualifiers-Asia,1,3,1
 Benin,Ivory Coast,10/10/04,World Cup,Qualifiers-Africa,0,1,1
 Ecuador,Chile,10/10/04,World Cup,Qualifiers-South America,1,0,1
 Ghana,Democratic Republic of the Congo,10/10/04,World Cup,Qualifiers-Africa,0,0,1
-Grouprenadines,Mexico,10/10/04,World Cup,Qualifiers-North America,0,1,1
+Saint Vincent and the Grenadines,Mexico,10/10/04,World Cup,Qualifiers-North America,0,1,1
 Guinea,Morocco,10/10/04,World Cup,Qualifiers-Africa,1,1,1
 Liberia,Senegal,10/10/04,World Cup,Qualifiers-Africa,0,3,1
 Republic of the Congo,Zambia,10/10/04,World Cup,Qualifiers-Africa,2,3,1
@@ -5250,8 +5250,8 @@ Turkey,Kazakhstan,10/09/04,World Cup,Qualifiers-Europe,4,0,1
 Ukraine,Greece,10/09/04,World Cup,Qualifiers-Europe,1,1,1
 Venezuela,Brazil,10/09/04,World Cup,Qualifiers-South America,2,5,1
 Libya,Egypt,10/08/04,World Cup,Qualifiers-Africa,2,1,1
-Mexico,Grouprenadines,10/06/04,World Cup,Qualifiers-North America,7,0,1
-Grouprenadines,Knockoutitts and Nevis,09/10/04,World Cup,Qualifiers-North America,1,0,1
+Mexico,Saint Vincent and the Grenadines,10/06/04,World Cup,Qualifiers-North America,7,0,1
+Saint Vincent and the Grenadines,Knockoutitts and Nevis,09/10/04,World Cup,Qualifiers-North America,1,0,1
 Liechtenstein,Portugal,09/10/04,World Cup,Qualifiers-Europe,2,2,1
 Luxembourg,Russia,09/10/04,World Cup,Qualifiers-Europe,0,4,1
 Slovakia,Latvia,09/10/04,World Cup,Qualifiers-Europe,4,1,1
@@ -5348,7 +5348,7 @@ Austria,Germany,08/18/04,World Cup,Friendlies,1,3,1
 Canada,Guatemala,08/18/04,World Cup,Qualifiers-North America,0,2,1
 Costa Rica,Honduras,08/18/04,World Cup,Qualifiers-North America,2,5,1
 El Salvador,Panama,08/18/04,World Cup,Qualifiers-North America,2,1,1
-Grouprenadines,Trinidad and Tobago,08/18/04,World Cup,Qualifiers-North America,0,2,1
+Saint Vincent and the Grenadines,Trinidad and Tobago,08/18/04,World Cup,Qualifiers-North America,0,2,1
 Jamaica,United States,08/18/04,World Cup,Qualifiers-North America,1,1,1
 Liechtenstein,Estonia,08/18/04,World Cup,Qualifiers-Europe,1,2,1
 Macedonia,Armenia,08/18/04,World Cup,Qualifiers-Europe,3,0,1
@@ -5452,7 +5452,7 @@ Democratic Republic of the Congo,Burkina Faso,06/20/04,World Cup,Qualifiers-Afri
 Egypt,Ivory Coast,06/20/04,World Cup,Qualifiers-Africa,1,2,1
 Ghana,South Africa,06/20/04,World Cup,Qualifiers-Africa,3,0,1
 Grenada,United States,06/20/04,World Cup,Qualifiers-North America,2,3,1
-Grouprenadines,Nicaragua,06/20/04,World Cup,Qualifiers-North America,4,1,1
+Saint Vincent and the Grenadines,Nicaragua,06/20/04,World Cup,Qualifiers-North America,4,1,1
 Guatemala,Suriname,06/20/04,World Cup,Qualifiers-North America,3,1,1
 Guinea,Tunisia,06/20/04,World Cup,Qualifiers-Africa,2,1,1
 Jamaica,Haiti,06/20/04,World Cup,Qualifiers-North America,3,0,1
@@ -5488,7 +5488,7 @@ Barbados,Knockoutitts and Nevis,06/13/04,World Cup,Qualifiers-North America,0,2,
 Canada,Belize,06/13/04,World Cup,Qualifiers-North America,4,0,1
 Dominican Republic,Trinidad and Tobago,06/13/04,World Cup,Qualifiers-North America,0,2,1
 El Salvador,Bermuda,06/13/04,World Cup,Qualifiers-North America,2,1,1
-Nicaragua,Grouprenadines,06/13/04,World Cup,Qualifiers-North America,2,2,1
+Nicaragua,Saint Vincent and the Grenadines,06/13/04,World Cup,Qualifiers-North America,2,2,1
 Panama,Saint Lucia,06/13/04,World Cup,Qualifiers-North America,4,0,1
 United States,Grenada,06/13/04,World Cup,Qualifiers-North America,3,0,1
 Portugal,Greece,06/12/04,European Championship,Group,2,1,1
@@ -7083,7 +7083,7 @@ Canada,Mexico,11/15/00,World Cup,Qualifiers-North America,0,0,1
 Chile,Argentina,11/15/00,World Cup,Qualifiers-South America,0,2,1
 Cyprus,Andorra,11/15/00,World Cup,Qualifiers-Europe,5,0,1
 El Salvador,Jamaica,11/15/00,World Cup,Qualifiers-North America,2,0,1
-Grouprenadines,Honduras,11/15/00,World Cup,Qualifiers-North America,0,7,1
+Saint Vincent and the Grenadines,Honduras,11/15/00,World Cup,Qualifiers-North America,0,7,1
 Guatemala,Costa Rica,11/15/00,World Cup,Qualifiers-North America,2,1,1
 Paraguay,Peru,11/15/00,World Cup,Qualifiers-South America,5,1,1
 Trinidad and Tobago,Panama,11/15/00,World Cup,Qualifiers-North America,1,0,1
@@ -7150,7 +7150,7 @@ Argentina,Uruguay,10/08/00,World Cup,Qualifiers-South America,2,1,1
 Barbados,Guatemala,10/08/00,World Cup,Qualifiers-North America,1,3,1
 Bolivia,Peru,10/08/00,World Cup,Qualifiers-South America,1,0,1
 Ecuador,Chile,10/08/00,World Cup,Qualifiers-South America,1,0,1
-Grouprenadines,El Salvador,10/08/00,World Cup,Qualifiers-North America,1,2,1
+Saint Vincent and the Grenadines,El Salvador,10/08/00,World Cup,Qualifiers-North America,1,2,1
 Honduras,Jamaica,10/08/00,World Cup,Qualifiers-North America,1,0,1
 Mexico,Trinidad and Tobago,10/08/00,World Cup,Qualifiers-North America,7,0,1
 Venezuela,Brazil,10/08/00,World Cup,Qualifiers-South America,0,6,1
@@ -7206,7 +7206,7 @@ Estonia,Portugal,09/03/00,World Cup,Qualifiers-Europe,1,3,1
 Faroe Islands,Slovenia,09/03/00,World Cup,Qualifiers-Europe,2,2,1
 Hungary,Italy,09/03/00,World Cup,Qualifiers-Europe,2,2,1
 Israel,Liechtenstein,09/03/00,World Cup,Qualifiers-Europe,2,0,1
-Jamaica,Grouprenadines,09/03/00,World Cup,Qualifiers-North America,2,0,1
+Jamaica,Saint Vincent and the Grenadines,09/03/00,World Cup,Qualifiers-North America,2,0,1
 Luxembourg,Serbia and Montenegro,09/03/00,World Cup,Qualifiers-Europe,0,2,1
 Mexico,Panama,09/03/00,World Cup,Qualifiers-North America,7,1,1
 Peru,Argentina,09/03/00,World Cup,Qualifiers-South America,1,2,1
@@ -7243,7 +7243,7 @@ Sierra Leone,Togo,08/20/00,Africa Cup of Nations,Qualifiers,2,0,1
 Argentina,Paraguay,08/16/00,World Cup,Qualifiers-South America,1,1,1
 Ecuador,Bolivia,08/16/00,World Cup,Qualifiers-South America,2,0,1
 Estonia,Andorra,08/16/00,World Cup,Qualifiers-Europe,1,0,1
-Honduras,Grouprenadines,08/16/00,World Cup,Qualifiers-North America,6,0,1
+Honduras,Saint Vincent and the Grenadines,08/16/00,World Cup,Qualifiers-North America,6,0,1
 Jamaica,El Salvador,08/16/00,World Cup,Qualifiers-North America,1,0,1
 Peru,Venezuela,08/16/00,World Cup,Qualifiers-South America,1,0,1
 Trinidad and Tobago,Panama,08/16/00,World Cup,Qualifiers-North America,6,0,1
@@ -7260,7 +7260,7 @@ Uruguay,Peru,07/26/00,World Cup,Qualifiers-South America,0,0,1
 Ecuador,Colombia,07/25/00,World Cup,Qualifiers-South America,0,0,1
 Venezuela,Chile,07/25/00,World Cup,Qualifiers-South America,0,2,1
 Costa Rica,United States,07/23/00,World Cup,Qualifiers-North America,2,1,1
-El Salvador,Grouprenadines,07/23/00,World Cup,Qualifiers-North America,7,1,1
+El Salvador,Saint Vincent and the Grenadines,07/23/00,World Cup,Qualifiers-North America,7,1,1
 Jamaica,Honduras,07/23/00,World Cup,Qualifiers-North America,3,1,1
 Panama,Canada,07/23/00,World Cup,Qualifiers-North America,0,0,1
 Trinidad and Tobago,Mexico,07/23/00,World Cup,Qualifiers-North America,1,0,1
@@ -7283,7 +7283,7 @@ Zimbabwe,Seychelles,07/16/00,Africa Cup of Nations,Qualifiers,5,0,1
 Barbados,Costa Rica,07/16/00,World Cup,Qualifiers-North America,2,1,1
 Canada,Trinidad and Tobago,07/16/00,World Cup,Qualifiers-North America,0,2,1
 El Salvador,Honduras,07/16/00,World Cup,Qualifiers-North America,2,5,1
-Grouprenadines,Jamaica,07/16/00,World Cup,Qualifiers-North America,0,1,1
+Saint Vincent and the Grenadines,Jamaica,07/16/00,World Cup,Qualifiers-North America,0,1,1
 Guatemala,United States,07/16/00,World Cup,Qualifiers-North America,1,1,1
 Panama,Mexico,07/16/00,World Cup,Qualifiers-North America,0,1,1
 Burundi,Djibouti,07/15/00,Africa Cup of Nations,Qualifiers,1,0,1
@@ -7394,12 +7394,12 @@ Hungary,Saudi Arabia,05/31/00,Asian Cup,Friendlies,2,2,1
 Slovakia,Saudi Arabia,05/24/00,Asian Cup,Friendlies,1,1,1
 Lebanon,Saudi Arabia,05/21/00,Asian Cup,Friendlies,0,0,1
 Barbados,Cuba,05/21/00,World Cup,Qualifiers-North America,1,1,1
-Grouprenadines,Antigua and Barbuda,05/21/00,World Cup,Qualifiers-North America,4,0,1
+Saint Vincent and the Grenadines,Antigua and Barbuda,05/21/00,World Cup,Qualifiers-North America,4,0,1
 Haiti,Trinidad and Tobago,05/21/00,World Cup,Qualifiers-North America,1,1,1
 Panama,Nicaragua,05/21/00,World Cup,Qualifiers-North America,4,0,1
 Guatemala,Belize,05/19/00,World Cup,Qualifiers-North America,0,0,1
 Jordan,Lebanon,05/13/00,Asian Cup,Friendlies,1,1,0
-Antigua and Barbuda,Grouprenadines,05/07/00,World Cup,Qualifiers-North America,2,1,1
+Antigua and Barbuda,Saint Vincent and the Grenadines,05/07/00,World Cup,Qualifiers-North America,2,1,1
 Cuba,Barbados,05/07/00,World Cup,Qualifiers-North America,1,1,1
 El Salvador,Guatemala,05/07/00,World Cup,Qualifiers-North America,1,1,1
 Honduras,Panama,05/07/00,World Cup,Qualifiers-North America,3,1,1
@@ -7426,7 +7426,7 @@ Senegal,Benin,04/23/00,World Cup,Qualifiers-Africa,1,0,1
 Togo,Guinea-Bissau,04/23/00,World Cup,Qualifiers-Africa,3,0,1
 Zimbabwe,Central African Republic,04/23/00,World Cup,Qualifiers-Africa,3,1,1
 Gabon,Madagascar,04/22/00,World Cup,Qualifiers-Africa,1,0,1
-Knockoutitts and Nevis,Grouprenadines,04/22/00,World Cup,Qualifiers-North America,1,2,1
+Knockoutitts and Nevis,Saint Vincent and the Grenadines,04/22/00,World Cup,Qualifiers-North America,1,2,1
 Morocco,Groupambia,04/22/00,World Cup,Qualifiers-Africa,2,0,1
 Namibia,Seychelles,04/22/00,World Cup,Qualifiers-Africa,3,0,1
 Nigeria,Eritrea,04/22/00,World Cup,Qualifiers-Africa,4,0,1
@@ -7442,7 +7442,7 @@ Bahamas,Haiti,04/16/00,World Cup,Qualifiers-North America,0,4,1
 Barbados,Aruba,04/16/00,World Cup,Qualifiers-North America,4,0,1
 Belize,El Salvador,04/16/00,World Cup,Qualifiers-North America,1,3,1
 Dominican Republic,Trinidad and Tobago,04/16/00,World Cup,Qualifiers-North America,0,1,1
-Grouprenadines,Knockoutitts and Nevis,04/16/00,World Cup,Qualifiers-North America,1,0,1
+Saint Vincent and the Grenadines,Knockoutitts and Nevis,04/16/00,World Cup,Qualifiers-North America,1,0,1
 Nicaragua,Honduras,04/16/00,World Cup,Qualifiers-North America,0,1,1
 Suriname,Cuba,04/16/00,World Cup,Qualifiers-North America,0,0,1
 Bahrain,Syria,04/11/00,Asian Cup,Qualifiers,0,1,1
@@ -7529,7 +7529,7 @@ Montserrat,Dominican Republic,03/19/00,World Cup,Qualifiers-North America,1,3,1
 Nicaragua,Panama,03/19/00,World Cup,Qualifiers-North America,0,2,1
 Puerto Rico,Aruba,03/19/00,World Cup,Qualifiers-North America,2,2,1
 Suriname,Saint Lucia,03/19/00,World Cup,Qualifiers-North America,1,0,1
-United States Virgin Islands,Grouprenadines,03/19/00,World Cup,Qualifiers-North America,1,5,1
+United States Virgin Islands,Saint Vincent and the Grenadines,03/19/00,World Cup,Qualifiers-North America,1,5,1
 Grenada,Barbados,03/18/00,World Cup,Qualifiers-North America,2,3,1
 Knockoutitts and Nevis,Turks and Caicos Islands,03/18/00,World Cup,Qualifiers-North America,8,0,1
 Netherlands Antilles,Trinidad and Tobago,03/18/00,World Cup,Qualifiers-North America,1,1,1
@@ -7542,7 +7542,7 @@ British Virgin Islands,Bermuda,03/05/00,World Cup,Qualifiers-North America,1,5,1
 Cuba,Cayman Islands,03/05/00,World Cup,Qualifiers-North America,4,0,1
 Dominican Republic,Montserrat,03/05/00,World Cup,Qualifiers-North America,3,0,1
 El Salvador,Belize,03/05/00,World Cup,Qualifiers-North America,5,0,1
-Grouprenadines,United States Virgin Islands,03/05/00,World Cup,Qualifiers-North America,9,0,1
+Saint Vincent and the Grenadines,United States Virgin Islands,03/05/00,World Cup,Qualifiers-North America,9,0,1
 Saint Lucia,Suriname,03/05/00,World Cup,Qualifiers-North America,1,0,1
 Honduras,Nicaragua,03/04/00,World Cup,Qualifiers-North America,3,0,1
 Trinidad and Tobago,Netherlands Antilles,03/04/00,World Cup,Qualifiers-North America,5,0,1
@@ -8726,7 +8726,7 @@ Guatemala,Costa Rica,11/24/96,World Cup,Qualifiers-North America,1,0,1
 Trinidad and Tobago,United States,11/24/96,World Cup,Qualifiers-North America,0,1,1
 United Arab Emirates,Uzbekistan,11/22/96,Asian Cup,Friendlies,2,0,1
 United Arab Emirates,Uzbekistan,11/19/96,Asian Cup,Friendlies,4,2,1
-Honduras,Grouprenadines,11/17/96,World Cup,Qualifiers-North America,11,3,1
+Honduras,Saint Vincent and the Grenadines,11/17/96,World Cup,Qualifiers-North America,11,3,1
 Jamaica,Mexico,11/17/96,World Cup,Qualifiers-North America,1,0,1
 United Arab Emirates,Malta,11/15/96,Friendlies,Friendlies,0,0,1
 Tonga,Samoa,11/15/96,World Cup,Qualifiers-Oceania,1,0,1
@@ -8744,7 +8744,7 @@ Cyprus,Israel,11/10/96,World Cup,Qualifiers-Europe,2,0,1
 El Salvador,Panama,11/10/96,World Cup,Qualifiers-North America,3,2,1
 Gabon,Ghana,11/10/96,World Cup,Qualifiers-Africa,1,1,1
 Guinea,Kenya,11/10/96,World Cup,Qualifiers-Africa,3,1,1
-Jamaica,Grouprenadines,11/10/96,World Cup,Qualifiers-North America,5,0,1
+Jamaica,Saint Vincent and the Grenadines,11/10/96,World Cup,Qualifiers-North America,5,0,1
 Liberia,Tunisia,11/10/96,World Cup,Qualifiers-Africa,0,1,1
 Luxembourg,Russia,11/10/96,World Cup,Qualifiers-Europe,0,4,1
 Paraguay,Ecuador,11/10/96,World Cup,Qualifiers-South America,1,0,1
@@ -8775,7 +8775,7 @@ Mexico,Honduras,11/06/96,World Cup,Qualifiers-North America,3,1,1
 Canada,El Salvador,11/03/96,World Cup,Qualifiers-North America,1,0,1
 United States,Guatemala,11/03/96,World Cup,Qualifiers-North America,2,0,1
 Australia,Tahiti,11/01/96,OFC Nations Cup,Group,5,0,1
-Mexico,Grouprenadines,10/30/96,World Cup,Qualifiers-North America,5,1,1
+Mexico,Saint Vincent and the Grenadines,10/30/96,World Cup,Qualifiers-North America,5,1,1
 Tahiti,Australia,10/27/96,OFC Nations Cup,Group,0,6,1
 Honduras,Jamaica,10/27/96,World Cup,Qualifiers-North America,0,0,1
 Panama,Canada,10/27/96,World Cup,Qualifiers-North America,0,0,1
@@ -8784,7 +8784,7 @@ Gabon,Burkina Faso,10/19/96,Africa Cup of Nations,Friendlies,2,0,1
 Mexico,Jamaica,10/16/96,World Cup,Qualifiers-North America,2,1,1
 Japan,Tunisia,10/13/96,Asian Cup,Friendlies,1,0,1
 Cuba,Canada,10/13/96,World Cup,Qualifiers-North America,0,2,1
-Grouprenadines,Honduras,10/13/96,World Cup,Qualifiers-North America,1,4,1
+Saint Vincent and the Grenadines,Honduras,10/13/96,World Cup,Qualifiers-North America,1,4,1
 Canada,Cuba,10/10/96,World Cup,Qualifiers-North America,2,0,1
 Albania,Portugal,10/09/96,World Cup,Qualifiers-Europe,0,3,1
 Armenia,Germany,10/09/96,World Cup,Qualifiers-Europe,1,5,1
@@ -8834,7 +8834,7 @@ Qatar,India,09/27/96,World Cup,Qualifiers-Asia,6,0,1
 Philippines,Sri Lanka,09/26/96,World Cup,Qualifiers-Asia,0,3,1
 Poland,United Arab Emirates,09/25/96,Asian Cup,Friendlies,1,0,1
 Sri Lanka,India,09/24/96,World Cup,Qualifiers-Asia,1,1,1
-Grouprenadines,Jamaica,09/23/96,World Cup,Qualifiers-North America,1,2,1
+Saint Vincent and the Grenadines,Jamaica,09/23/96,World Cup,Qualifiers-North America,1,2,1
 Qatar,Philippines,09/23/96,World Cup,Qualifiers-Asia,5,0,1
 Cuba,Panama,09/22/96,World Cup,Qualifiers-North America,3,1,1
 Slovakia,Malta,09/22/96,World Cup,Qualifiers-Europe,6,0,1
@@ -8846,7 +8846,7 @@ Romania,United Arab Emirates,09/18/96,Asian Cup,Friendlies,1,2,1
 Czech Republic,Malta,09/18/96,World Cup,Qualifiers-Europe,6,0,1
 Solomon Islands,Vanuatu,09/18/96,World Cup,Qualifiers-Oceania,1,1,1
 Equatorial Guinea,Solomon Islands,09/16/96,World Cup,Qualifiers-Oceania,1,1,1
-Grouprenadines,Mexico,09/15/96,World Cup,Qualifiers-North America,0,3,1
+Saint Vincent and the Grenadines,Mexico,09/15/96,World Cup,Qualifiers-North America,0,3,1
 Jamaica,Honduras,09/15/96,World Cup,Qualifiers-North America,3,0,1
 Japan,Uzbekistan,09/11/96,Asian Cup,Friendlies,1,0,1
 Cuba,El Salvador,09/08/96,World Cup,Qualifiers-North America,0,5,1
@@ -8914,7 +8914,7 @@ Singapore,Myanmar,07/04/96,Asian Cup,Qualifiers,2,2,1
 Myanmar,Maldives,07/01/96,Asian Cup,Qualifiers,3,1,1
 Thailand,Singapore,07/01/96,Asian Cup,Qualifiers,1,1,1
 Czech Republic,Germany,06/30/96,European Championship,Knockout,1,2,0
-Grouprenadines,Knockoutitts and Nevis,06/30/96,World Cup,Qualifiers-North America,0,0,1
+Saint Vincent and the Grenadines,Knockoutitts and Nevis,06/30/96,World Cup,Qualifiers-North America,0,0,1
 Haiti,Cuba,06/30/96,World Cup,Qualifiers-North America,1,1,1
 Jamaica,Barbados,06/30/96,World Cup,Qualifiers-North America,2,0,1
 Maldives,Singapore,06/29/96,Asian Cup,Qualifiers,0,2,1
@@ -8928,7 +8928,7 @@ Czech Republic,Portugal,06/23/96,European Championship,Knockout,1,0,0
 Germany,Croatia,06/23/96,European Championship,Knockout,2,1,0
 Barbados,Jamaica,06/23/96,World Cup,Qualifiers-North America,0,1,1
 Cuba,Haiti,06/23/96,World Cup,Qualifiers-North America,6,1,1
-Knockoutitts and Nevis,Grouprenadines,06/23/96,World Cup,Qualifiers-North America,2,2,1
+Knockoutitts and Nevis,Saint Vincent and the Grenadines,06/23/96,World Cup,Qualifiers-North America,2,2,1
 Liberia,Groupambia,06/23/96,World Cup,Qualifiers-Africa,4,0,1
 Trinidad and Tobago,Dominican Republic,06/23/96,World Cup,Qualifiers-North America,8,0,1
 England,Spain,06/22/96,European Championship,Knockout,0,0,1
@@ -9029,7 +9029,7 @@ Cuba,Cayman Islands,05/14/96,World Cup,Qualifiers-North America,5,0,1
 Dominica,Barbados,05/14/96,World Cup,Qualifiers-North America,0,1,1
 Lebanon,Turkmenistan,05/12/96,Asian Cup,Qualifiers,3,1,1
 Cayman Islands,Cuba,05/12/96,World Cup,Qualifiers-North America,0,1,1
-Grouprenadines,Puerto Rico,05/12/96,World Cup,Qualifiers-North America,7,0,1
+Saint Vincent and the Grenadines,Puerto Rico,05/12/96,World Cup,Qualifiers-North America,7,0,1
 Haiti,Grenada,05/12/96,World Cup,Qualifiers-North America,6,1,1
 Tahiti,Solomon Islands,05/11/96,OFC Nations Cup,Qualifiers,2,1,1
 Netherlands Antilles,Dominican Republic,05/11/96,World Cup,Qualifiers-North America,0,0,1
@@ -9038,7 +9038,7 @@ Tajikistan,Uzbekistan,05/08/96,Asian Cup,Qualifiers,4,0,1
 Knockoutitts and Nevis,Saint Lucia,05/05/96,World Cup,Qualifiers-North America,5,1,1
 Nicaragua,Guatemala,05/05/96,World Cup,Qualifiers-North America,0,1,1
 Dominican Republic,Netherlands Antilles,05/04/96,World Cup,Qualifiers-North America,2,1,1
-Puerto Rico,Grouprenadines,05/04/96,World Cup,Qualifiers-North America,1,2,1
+Puerto Rico,Saint Vincent and the Grenadines,05/04/96,World Cup,Qualifiers-North America,1,2,1
 Argentina,Bolivia,04/24/96,World Cup,Qualifiers-South America,3,1,1
 Colombia,Paraguay,04/24/96,World Cup,Qualifiers-South America,1,0,1
 Ecuador,Peru,04/24/96,World Cup,Qualifiers-South America,4,1,1
@@ -9103,7 +9103,7 @@ Cameroon,Egypt,01/18/96,Africa Cup of Nations,Group,2,1,0
 United States,Brazil,01/18/96,CONCACAF Gold Cup,Knockout,0,1,1
 Gabon,Liberia,01/16/96,Africa Cup of Nations,Group,1,2,0
 Tunisia,Mozambique,01/16/96,Africa Cup of Nations,Group,1,1,0
-Grouprenadines,Guatemala,01/16/96,CONCACAF Gold Cup,Group,0,3,0
+Saint Vincent and the Grenadines,Guatemala,01/16/96,CONCACAF Gold Cup,Group,0,3,0
 United States,El Salvador,01/16/96,CONCACAF Gold Cup,Group,2,0,1
 Egypt,Angola,01/15/96,Africa Cup of Nations,Group,2,1,0
 Sierra Leone,Burkina Faso,01/15/96,Africa Cup of Nations,Group,2,1,0
@@ -9114,7 +9114,7 @@ Mexico,Guatemala,01/14/96,CONCACAF Gold Cup,Group,1,0,0
 South Africa,Cameroon,01/13/96,Africa Cup of Nations,Group,3,0,1
 United States,Trinidad and Tobago,01/13/96,CONCACAF Gold Cup,Group,3,2,1
 Brazil,Canada,01/12/96,CONCACAF Gold Cup,Group,4,1,0
-Mexico,Grouprenadines,01/11/96,CONCACAF Gold Cup,Group,5,0,0
+Mexico,Saint Vincent and the Grenadines,01/11/96,CONCACAF Gold Cup,Group,5,0,0
 Canada,Honduras,01/10/96,CONCACAF Gold Cup,Group,3,1,0
 Trinidad and Tobago,El Salvador,01/10/96,CONCACAF Gold Cup,Group,2,3,0
 South Africa,Germany,12/15/95,Africa Cup of Nations,Friendlies,0,0,1
@@ -10062,17 +10062,17 @@ Gabon,Senegal,12/19/92,World Cup,Qualifiers-Africa,3,2,1
 Malta,Italy,12/19/92,World Cup,Qualifiers-Europe,1,2,1
 Spain,Latvia,12/16/92,World Cup,Qualifiers-Europe,5,0,1
 Turkey,Netherlands,12/16/92,World Cup,Qualifiers-Europe,1,3,1
-Costa Rica,Grouprenadines,12/13/92,World Cup,Qualifiers-North America,5,0,1
+Costa Rica,Saint Vincent and the Grenadines,12/13/92,World Cup,Qualifiers-North America,5,0,1
 Honduras,Mexico,12/13/92,World Cup,Qualifiers-North America,1,1,1
 Bermuda,Canada,12/06/92,World Cup,Qualifiers-North America,0,0,1
 El Salvador,Jamaica,12/06/92,World Cup,Qualifiers-North America,2,1,1
-Mexico,Grouprenadines,12/06/92,World Cup,Qualifiers-North America,11,0,1
+Mexico,Saint Vincent and the Grenadines,12/06/92,World Cup,Qualifiers-North America,11,0,1
 Honduras,Costa Rica,12/05/92,World Cup,Qualifiers-North America,2,1,1
 Israel,Bulgaria,12/02/92,World Cup,Qualifiers-Europe,0,2,1
 Costa Rica,Mexico,11/29/92,World Cup,Qualifiers-North America,2,0,1
 Cyprus,Romania,11/29/92,World Cup,Qualifiers-Europe,1,4,1
-Honduras,Grouprenadines,11/28/92,World Cup,Qualifiers-North America,4,0,1
-Grouprenadines,Honduras,11/22/92,World Cup,Qualifiers-North America,0,4,1
+Honduras,Saint Vincent and the Grenadines,11/28/92,World Cup,Qualifiers-North America,4,0,1
+Saint Vincent and the Grenadines,Honduras,11/22/92,World Cup,Qualifiers-North America,0,4,1
 Jamaica,El Salvador,11/22/92,World Cup,Qualifiers-North America,0,2,1
 Mexico,Costa Rica,11/22/92,World Cup,Qualifiers-North America,4,0,1
 Belgium,Wales,11/18/92,World Cup,Qualifiers-Europe,2,0,1
@@ -10082,7 +10082,7 @@ Scotland,Italy,11/18/92,World Cup,Qualifiers-Europe,0,0,1
 Spain,Republic of Ireland,11/18/92,World Cup,Qualifiers-Europe,0,0,1
 Switzerland,Malta,11/18/92,World Cup,Qualifiers-Europe,3,0,1
 Canada,Bermuda,11/15/92,World Cup,Qualifiers-North America,4,2,1
-Grouprenadines,Costa Rica,11/15/92,World Cup,Qualifiers-North America,0,1,1
+Saint Vincent and the Grenadines,Costa Rica,11/15/92,World Cup,Qualifiers-North America,0,1,1
 Mexico,Honduras,11/15/92,World Cup,Qualifiers-North America,2,0,1
 France,Finland,11/14/92,World Cup,Qualifiers-Europe,2,1,1
 Romania,Czechoslovakia,11/14/92,World Cup,Qualifiers-Europe,1,1,1
@@ -10092,7 +10092,7 @@ Morocco,Egypt,11/08/92,Africa Cup of Nations,Qualifiers,0,0,1
 Sierra Leone,Senegal,11/08/92,Africa Cup of Nations,Qualifiers,2,0,1
 Canada,El Salvador,11/08/92,World Cup,Qualifiers-North America,2,3,1
 Costa Rica,Honduras,11/08/92,World Cup,Qualifiers-North America,2,3,1
-Grouprenadines,Mexico,11/08/92,World Cup,Qualifiers-North America,0,4,1
+Saint Vincent and the Grenadines,Mexico,11/08/92,World Cup,Qualifiers-North America,0,4,1
 Jamaica,Bermuda,11/08/92,World Cup,Qualifiers-North America,3,2,1
 Tunisia,Finland,11/07/92,Africa Cup of Nations,Friendlies,1,1,1
 Canada,Jamaica,11/01/92,World Cup,Qualifiers-North America,1,0,1
@@ -10168,7 +10168,7 @@ Mozambique,Lesotho,08/30/92,Africa Cup of Nations,Qualifiers,3,0,1
 Niger,Gabon,08/30/92,Africa Cup of Nations,Qualifiers,1,3,1
 Senegal,Guinea-Bissau,08/30/92,Africa Cup of Nations,Qualifiers,3,0,1
 South Africa,Zambia,08/30/92,Africa Cup of Nations,Qualifiers,0,1,1
-Grouprenadines,Suriname,08/30/92,World Cup,Qualifiers-North America,2,1,1
+Saint Vincent and the Grenadines,Suriname,08/30/92,World Cup,Qualifiers-North America,2,1,1
 Kenya,Democratic Republic of the Congo,08/29/92,Africa Cup of Nations,Qualifiers,1,3,1
 Malawi,Mali,08/29/92,Africa Cup of Nations,Qualifiers,1,1,1
 Nigeria,Uganda,08/29/92,Africa Cup of Nations,Qualifiers,2,0,1
@@ -10190,7 +10190,7 @@ Malawi,Egypt,08/15/92,Africa Cup of Nations,Qualifiers,1,0,1
 Uganda,Ethiopia,08/15/92,Africa Cup of Nations,Qualifiers,3,1,1
 Algeria,Guinea-Bissau,08/14/92,Africa Cup of Nations,Qualifiers,3,1,1
 Latvia,Lithuania,08/12/92,World Cup,Qualifiers-Europe,1,2,1
-Suriname,Grouprenadines,08/02/92,World Cup,Qualifiers-North America,0,0,1
+Suriname,Saint Vincent and the Grenadines,08/02/92,World Cup,Qualifiers-North America,0,0,1
 United States,Brazil,08/02/92,World Cup,Friendlies,0,1,1
 United States,Colombia,07/31/92,World Cup,Friendlies,0,1,1
 Ivory Coast,Egypt,07/28/92,Africa Cup of Nations,Friendlies,2,2,1
@@ -10235,7 +10235,7 @@ Spain,Albania,04/22/92,World Cup,Qualifiers-Europe,3,0,1
 Barbados,Trinidad and Tobago,04/19/92,World Cup,Qualifiers-North America,1,2,1
 Netherlands Antilles,Antigua and Barbuda,04/19/92,World Cup,Qualifiers-North America,1,1,1
 United States,China,04/04/92,World Cup,Friendlies,5,0,1
-Grouprenadines,Saint Lucia,03/29/92,World Cup,Qualifiers-North America,3,1,1
+Saint Vincent and the Grenadines,Saint Lucia,03/29/92,World Cup,Qualifiers-North America,3,1,1
 Puerto Rico,Dominican Republic,03/29/92,World Cup,Qualifiers-North America,1,1,1
-Saint Lucia,Grouprenadines,03/22/92,World Cup,Qualifiers-North America,1,0,1
+Saint Lucia,Saint Vincent and the Grenadines,03/22/92,World Cup,Qualifiers-North America,1,0,1
 Dominican Republic,Puerto Rico,03/21/92,World Cup,Qualifiers-North America,1,2,1
