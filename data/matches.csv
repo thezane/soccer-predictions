@@ -1,4 +1,4 @@
-HomeTeam,AwayTeam,Date,Contest,Type,Groupoals,Groupoals,HomeAdvantage
+HomeTeam,AwayTeam,Date,Contest,Type,HomeGoals,AwayGoals,HomeAdvantage
 Russia,Belgium,03/28/17,World Cup,Friendlies,3,3,1
 Bolivia,Argentina,03/28/17,World Cup,Qualifiers-South America,2,0,1
 Brazil,Paraguay,03/28/17,World Cup,Qualifiers-South America,3,0,1
@@ -256,7 +256,7 @@ Romania,Montenegro,09/04/16,World Cup,Qualifiers-Europe,1,1,1
 San Marino,Azerbaijan,09/04/16,World Cup,Qualifiers-Europe,0,1,1
 Slovakia,England,09/04/16,World Cup,Qualifiers-Europe,0,1,1
 Angola,Madagascar,09/03/16,Africa Cup of Nations,Qualifiers,1,1,1
-Cameroon,Groupambia,09/03/16,Africa Cup of Nations,Qualifiers,2,0,1
+Cameroon,Gambia,09/03/16,Africa Cup of Nations,Qualifiers,2,0,1
 Cape Verde,Libya,09/03/16,Africa Cup of Nations,Qualifiers,0,1,1
 Ethiopia,Seychelles,09/03/16,Africa Cup of Nations,Qualifiers,2,1,1
 Ghana,Rwanda,09/03/16,Africa Cup of Nations,Qualifiers,1,1,1
@@ -375,7 +375,7 @@ Equatorial Guinea,Samoa,06/05/16,OFC Nations Cup,Group,8,0,1
 Tahiti,New Caledonia,06/05/16,OFC Nations Cup,Group,1,1,0
 Botswana,Uganda,06/04/16,Africa Cup of Nations,Qualifiers,1,2,1
 Burundi,Senegal,06/04/16,Africa Cup of Nations,Qualifiers,0,2,1
-Groupambia,South Africa,06/04/16,Africa Cup of Nations,Qualifiers,0,4,1
+Gambia,South Africa,06/04/16,Africa Cup of Nations,Qualifiers,0,4,1
 Guinea-Bissau,Zambia,06/04/16,Africa Cup of Nations,Qualifiers,3,2,1
 Ivory Coast,Gabon,06/04/16,Africa Cup of Nations,Qualifiers,2,1,1
 Namibia,Niger,06/04/16,Africa Cup of Nations,Qualifiers,1,0,1
@@ -415,7 +415,7 @@ Venezuela,Chile,03/30/16,World Cup,Qualifiers-South America,1,4,1
 Angola,Democratic Republic of the Congo,03/29/16,Africa Cup of Nations,Qualifiers,0,2,1
 Egypt,Nigeria,03/29/16,Africa Cup of Nations,Qualifiers,1,0,1
 Ethiopia,Algeria,03/29/16,Africa Cup of Nations,Qualifiers,3,3,1
-Groupambia,Mauritania,03/29/16,Africa Cup of Nations,Qualifiers,0,0,1
+Gambia,Mauritania,03/29/16,Africa Cup of Nations,Qualifiers,0,0,1
 Lesotho,Seychelles,03/29/16,Africa Cup of Nations,Qualifiers,2,1,1
 Liberia,Djibouti,03/29/16,Africa Cup of Nations,Qualifiers,5,0,1
 Malawi,Guinea,03/29/16,Africa Cup of Nations,Qualifiers,1,2,1
@@ -458,7 +458,7 @@ Gabon,Sierra Leone,03/25/16,Africa Cup of Nations,Qualifiers,2,1,1
 Guinea,Malawi,03/25/16,Africa Cup of Nations,Qualifiers,0,0,1
 Ivory Coast,Sudan,03/25/16,Africa Cup of Nations,Qualifiers,1,0,1
 Mali,Equatorial Guinea,03/25/16,Africa Cup of Nations,Qualifiers,1,0,1
-Mauritania,Groupambia,03/25/16,Africa Cup of Nations,Qualifiers,2,1,1
+Mauritania,Gambia,03/25/16,Africa Cup of Nations,Qualifiers,2,1,1
 Nigeria,Egypt,03/25/16,Africa Cup of Nations,Qualifiers,1,1,1
 Swaziland,Zimbabwe,03/25/16,Africa Cup of Nations,Qualifiers,1,1,1
 Tunisia,Togo,03/25/16,Africa Cup of Nations,Qualifiers,1,0,1
@@ -568,7 +568,7 @@ Guinea-Bissau,Liberia,10/13/15,World Cup,Qualifiers-Africa,1,3,1
 Lesotho,Comoros,10/13/15,World Cup,Qualifiers-Africa,1,1,1
 Madagascar,Central African Republic,10/13/15,World Cup,Qualifiers-Africa,2,2,1
 Mauritania,South Sudan,10/13/15,World Cup,Qualifiers-Africa,4,0,1
-Namibia,Groupambia,10/13/15,World Cup,Qualifiers-Africa,2,1,1
+Namibia,Gambia,10/13/15,World Cup,Qualifiers-Africa,2,1,1
 Niger,Somalia,10/13/15,World Cup,Qualifiers-Africa,4,0,1
 Sierra Leone,Chad,10/13/15,World Cup,Qualifiers-Africa,2,1,1
 Austria,Liechtenstein,10/12/15,European Championship,Qualifiers,3,0,1
@@ -617,7 +617,7 @@ Tunisia,Gabon,10/09/15,Africa Cup of Nations,Friendlies,3,3,1
 Argentina,Ecuador,10/09/15,World Cup,Qualifiers-South America,0,2,1
 Chile,Brazil,10/09/15,World Cup,Qualifiers-South America,2,0,1
 Djibouti,Swaziland,10/09/15,World Cup,Qualifiers-Africa,0,6,1
-Groupambia,Namibia,10/09/15,World Cup,Qualifiers-Africa,1,1,1
+Gambia,Namibia,10/09/15,World Cup,Qualifiers-Africa,1,1,1
 Somalia,Niger,10/09/15,World Cup,Qualifiers-Africa,0,2,1
 Albania,Serbia,10/08/15,European Championship,Qualifiers,0,2,1
 Georgia,Gibraltar,10/08/15,European Championship,Qualifiers,4,0,1
@@ -665,7 +665,7 @@ France,Serbia,09/07/15,European Championship,Friendlies,2,1,1
 Benin,Mali,09/06/15,Africa Cup of Nations,Qualifiers,1,1,1
 Central African Republic,Democratic Republic of the Congo,09/06/15,Africa Cup of Nations,Qualifiers,2,0,1
 Chad,Egypt,09/06/15,Africa Cup of Nations,Qualifiers,1,5,1
-Groupambia,Cameroon,09/06/15,Africa Cup of Nations,Qualifiers,0,1,1
+Gambia,Cameroon,09/06/15,Africa Cup of Nations,Qualifiers,0,1,1
 Kenya,Zambia,09/06/15,Africa Cup of Nations,Qualifiers,1,2,1
 Lesotho,Algeria,09/06/15,Africa Cup of Nations,Qualifiers,1,3,1
 Libya,Cape Verde,09/06/15,Africa Cup of Nations,Qualifiers,1,2,1
@@ -817,7 +817,7 @@ Malawi,Zimbabwe,06/13/15,Africa Cup of Nations,Qualifiers,1,2,1
 Mali,South Sudan,06/13/15,Africa Cup of Nations,Qualifiers,2,0,1
 Nigeria,Chad,06/13/15,Africa Cup of Nations,Qualifiers,2,0,1
 Senegal,Burundi,06/13/15,Africa Cup of Nations,Qualifiers,3,1,1
-South Africa,Groupambia,06/13/15,Africa Cup of Nations,Qualifiers,0,0,1
+South Africa,Gambia,06/13/15,Africa Cup of Nations,Qualifiers,0,0,1
 Uganda,Botswana,06/13/15,Africa Cup of Nations,Qualifiers,2,0,1
 Zambia,Guinea-Bissau,06/13/15,Africa Cup of Nations,Qualifiers,0,0,1
 Argentina,Paraguay,06/13/15,Copa America,Group,2,2,0
@@ -1396,7 +1396,7 @@ Central African Republic,Ethiopia,09/07/13,World Cup,Qualifiers-Africa,1,2,1
 Chile,Venezuela,09/07/13,World Cup,Qualifiers-South America,3,0,1
 Colombia,Ecuador,09/07/13,World Cup,Qualifiers-South America,1,0,1
 Costa Rica,United States,09/07/13,World Cup,Qualifiers-North America,3,1,1
-Groupambia,Tanzania,09/07/13,World Cup,Qualifiers-Africa,2,0,1
+Gambia,Tanzania,09/07/13,World Cup,Qualifiers-Africa,2,0,1
 Israel,Azerbaijan,09/07/13,World Cup,Qualifiers-Europe,1,1,1
 Ivory Coast,Morocco,09/07/13,World Cup,Qualifiers-Africa,1,1,1
 Mexico,Honduras,09/07/13,World Cup,Qualifiers-North America,1,2,1
@@ -1506,7 +1506,7 @@ Brazil,Japan,06/15/13,Confederations Cup,Group,3,0,1
 Botswana,Central African Republic,06/15/13,World Cup,Qualifiers-Africa,3,2,1
 Cape Verde,Sierra Leone,06/15/13,World Cup,Qualifiers-Africa,1,0,1
 Gabon,Niger,06/15/13,World Cup,Qualifiers-Africa,4,1,1
-Morocco,Groupambia,06/15/13,World Cup,Qualifiers-Africa,2,0,1
+Morocco,Gambia,06/15/13,World Cup,Qualifiers-Africa,2,0,1
 Republic of the Congo,Burkina Faso,06/15/13,World Cup,Qualifiers-Africa,0,1,1
 Uganda,Angola,06/15/13,World Cup,Qualifiers-Africa,2,1,1
 Zambia,Sudan,06/15/13,World Cup,Qualifiers-Africa,1,1,1
@@ -1542,7 +1542,7 @@ Cape Verde,Equatorial Guinea,06/08/13,World Cup,Qualifiers-Africa,2,1,1
 Central African Republic,South Africa,06/08/13,World Cup,Qualifiers-Africa,0,3,1
 Costa Rica,Honduras,06/08/13,World Cup,Qualifiers-North America,1,0,1
 Gabon,Republic of the Congo,06/08/13,World Cup,Qualifiers-Africa,0,0,1
-Groupambia,Ivory Coast,06/08/13,World Cup,Qualifiers-Africa,0,3,1
+Gambia,Ivory Coast,06/08/13,World Cup,Qualifiers-Africa,0,3,1
 Jamaica,United States,06/08/13,World Cup,Qualifiers-North America,1,2,1
 Morocco,Tanzania,06/08/13,World Cup,Qualifiers-Africa,2,1,1
 Panama,Mexico,06/08/13,World Cup,Qualifiers-North America,0,0,1
@@ -1631,7 +1631,7 @@ Argentina,Venezuela,03/23/13,World Cup,Qualifiers-South America,3,0,1
 Burkina Faso,Niger,03/23/13,World Cup,Qualifiers-Africa,4,0,1
 Cameroon,Togo,03/23/13,World Cup,Qualifiers-Africa,2,1,1
 Cyprus,Switzerland,03/23/13,World Cup,Qualifiers-Europe,0,0,1
-Ivory Coast,Groupambia,03/23/13,World Cup,Qualifiers-Africa,3,0,1
+Ivory Coast,Gambia,03/23/13,World Cup,Qualifiers-Africa,3,0,1
 Jamaica,Panama,03/23/13,World Cup,Qualifiers-North America,1,1,1
 Namibia,Malawi,03/23/13,World Cup,Qualifiers-Africa,0,1,1
 Nigeria,Kenya,03/23/13,World Cup,Qualifiers-Africa,1,1,1
@@ -1952,7 +1952,7 @@ Nigeria,Rwanda,06/16/12,Africa Cup of Nations,Qualifiers,2,0,1
 Uganda,Republic of the Congo,06/16/12,Africa Cup of Nations,Qualifiers,4,0,1
 Greece,Russia,06/16/12,European Championship,Group,1,0,0
 Poland,Czech Republic,06/16/12,European Championship,Group,0,1,1
-Algeria,Groupambia,06/15/12,Africa Cup of Nations,Qualifiers,4,1,1
+Algeria,Gambia,06/15/12,Africa Cup of Nations,Qualifiers,4,1,1
 Egypt,Central African Republic,06/15/12,Africa Cup of Nations,Qualifiers,2,3,1
 Sweden,England,06/15/12,European Championship,Group,2,3,0
 Ukraine,France,06/15/12,European Championship,Group,0,2,1
@@ -1988,7 +1988,7 @@ Libya,Cameroon,06/10/12,World Cup,Qualifiers-Africa,2,1,1
 Mali,Algeria,06/10/12,World Cup,Qualifiers-Africa,2,1,1
 Mozambique,Zimbabwe,06/10/12,World Cup,Qualifiers-Africa,0,0,1
 Rwanda,Benin,06/10/12,World Cup,Qualifiers-Africa,1,1,1
-Tanzania,Groupambia,06/10/12,World Cup,Qualifiers-Africa,2,1,1
+Tanzania,Gambia,06/10/12,World Cup,Qualifiers-Africa,2,1,1
 Uruguay,Peru,06/10/12,World Cup,Qualifiers-South America,4,2,1
 Venezuela,Chile,06/10/12,World Cup,Qualifiers-South America,0,2,1
 Germany,Portugal,06/09/12,European Championship,Group,1,0,0
@@ -2050,7 +2050,7 @@ Bolivia,Chile,06/02/12,World Cup,Qualifiers-South America,0,2,1
 Burkina Faso,Republic of the Congo,06/02/12,World Cup,Qualifiers-Africa,0,0,1
 Cameroon,Democratic Republic of the Congo,06/02/12,World Cup,Qualifiers-Africa,1,0,1
 Central African Republic,Botswana,06/02/12,World Cup,Qualifiers-Africa,2,0,1
-Groupambia,Morocco,06/02/12,World Cup,Qualifiers-Africa,1,1,1
+Gambia,Morocco,06/02/12,World Cup,Qualifiers-Africa,1,1,1
 Ivory Coast,Tanzania,06/02/12,World Cup,Qualifiers-Africa,2,0,1
 Kenya,Malawi,06/02/12,World Cup,Qualifiers-Africa,0,0,1
 Senegal,Liberia,06/02/12,World Cup,Qualifiers-Africa,3,1,1
@@ -2071,7 +2071,7 @@ Poland,Latvia,05/22/12,Friendlies,Friendlies,1,0,1
 Burundi,Zimbabwe,02/29/12,Africa Cup of Nations,Qualifiers,2,1,1
 Chad,Malawi,02/29/12,Africa Cup of Nations,Qualifiers,3,2,1
 Ethiopia,Benin,02/29/12,Africa Cup of Nations,Qualifiers,0,0,1
-Groupambia,Algeria,02/29/12,Africa Cup of Nations,Qualifiers,1,2,1
+Gambia,Algeria,02/29/12,Africa Cup of Nations,Qualifiers,1,2,1
 Kenya,Togo,02/29/12,Africa Cup of Nations,Qualifiers,2,1,1
 Liberia,Namibia,02/29/12,Africa Cup of Nations,Qualifiers,1,0,1
 Madagascar,Cape Verde,02/29/12,Africa Cup of Nations,Qualifiers,0,4,1
@@ -2271,7 +2271,7 @@ Cape Verde,Zimbabwe,10/08/11,Africa Cup of Nations,Qualifiers,2,1,1
 Chad,Malawi,10/08/11,Africa Cup of Nations,Qualifiers,2,2,1
 Egypt,Niger,10/08/11,Africa Cup of Nations,Qualifiers,3,0,1
 Ethiopia,Madagascar,10/08/11,Africa Cup of Nations,Qualifiers,4,2,1
-Groupambia,Burkina Faso,10/08/11,Africa Cup of Nations,Qualifiers,1,1,1
+Gambia,Burkina Faso,10/08/11,Africa Cup of Nations,Qualifiers,1,1,1
 Liberia,Mali,10/08/11,Africa Cup of Nations,Qualifiers,2,2,1
 Mozambique,Comoros,10/08/11,Africa Cup of Nations,Qualifiers,3,0,1
 Nigeria,Guinea,10/08/11,Africa Cup of Nations,Qualifiers,2,2,1
@@ -2379,7 +2379,7 @@ Cameroon,Mauritius,09/03/11,Africa Cup of Nations,Qualifiers,5,0,1
 Libya,Mozambique,09/03/11,Africa Cup of Nations,Qualifiers,1,0,1
 Malawi,Tunisia,09/03/11,Africa Cup of Nations,Qualifiers,0,0,1
 Mali,Cape Verde,09/03/11,Africa Cup of Nations,Qualifiers,3,0,1
-Namibia,Groupambia,09/03/11,Africa Cup of Nations,Qualifiers,1,0,1
+Namibia,Gambia,09/03/11,Africa Cup of Nations,Qualifiers,1,0,1
 Rwanda,Ivory Coast,09/03/11,Africa Cup of Nations,Qualifiers,0,5,1
 Senegal,Democratic Republic of the Congo,09/03/11,Africa Cup of Nations,Qualifiers,2,0,1
 Sierra Leone,Egypt,09/03/11,Africa Cup of Nations,Qualifiers,2,1,1
@@ -2734,7 +2734,7 @@ Republic of the Congo,Swaziland,10/10/10,Africa Cup of Nations,Qualifiers,3,1,1
 Sierra Leone,South Africa,10/10/10,Africa Cup of Nations,Qualifiers,0,0,1
 Togo,Tunisia,10/10/10,Africa Cup of Nations,Qualifiers,1,2,1
 Zimbabwe,Cape Verde,10/10/10,Africa Cup of Nations,Qualifiers,0,0,1
-Burkina Faso,Groupambia,10/09/10,Africa Cup of Nations,Qualifiers,3,1,1
+Burkina Faso,Gambia,10/09/10,Africa Cup of Nations,Qualifiers,3,1,1
 Burundi,Ivory Coast,10/09/10,Africa Cup of Nations,Qualifiers,0,1,1
 Cameroon,Democratic Republic of the Congo,10/09/10,Africa Cup of Nations,Qualifiers,1,1,1
 Comoros,Mozambique,10/09/10,Africa Cup of Nations,Qualifiers,0,1,1
@@ -2807,7 +2807,7 @@ Swaziland,Ghana,09/05/10,Africa Cup of Nations,Qualifiers,0,3,1
 Zambia,Comoros,09/05/10,Africa Cup of Nations,Qualifiers,4,0,1
 Botswana,Togo,09/04/10,Africa Cup of Nations,Qualifiers,2,1,1
 Cape Verde,Mali,09/04/10,Africa Cup of Nations,Qualifiers,1,0,1
-Groupambia,Namibia,09/04/10,Africa Cup of Nations,Qualifiers,3,1,1
+Gambia,Namibia,09/04/10,Africa Cup of Nations,Qualifiers,3,1,1
 Ivory Coast,Rwanda,09/04/10,Africa Cup of Nations,Qualifiers,3,0,1
 Mauritius,Cameroon,09/04/10,Africa Cup of Nations,Qualifiers,1,3,1
 Morocco,Central African Republic,09/04/10,Africa Cup of Nations,Qualifiers,0,0,1
@@ -3487,7 +3487,7 @@ Poland,Czech Republic,10/11/08,World Cup,Qualifiers-Europe,2,1,1
 Romania,France,10/11/08,World Cup,Qualifiers-Europe,2,2,1
 San Marino,Slovakia,10/11/08,World Cup,Qualifiers-Europe,1,3,1
 Scotland,Norway,10/11/08,World Cup,Qualifiers-Europe,0,0,1
-Senegal,Groupambia,10/11/08,World Cup,Qualifiers-Africa,1,1,1
+Senegal,Gambia,10/11/08,World Cup,Qualifiers-Africa,1,1,1
 Serbia,Lithuania,10/11/08,World Cup,Qualifiers-Europe,3,0,1
 Slovenia,Northern Ireland,10/11/08,World Cup,Qualifiers-Europe,2,0,1
 Sudan,Republic of the Congo,10/11/08,World Cup,Qualifiers-Africa,2,0,1
@@ -3573,7 +3573,7 @@ Cyprus,Italy,09/06/08,World Cup,Qualifiers-Europe,1,2,1
 Ecuador,Bolivia,09/06/08,World Cup,Qualifiers-South America,3,1,1
 Fiji,Vanuatu,09/06/08,World Cup,Qualifiers-Oceania,2,0,1
 Georgia,Republic of Ireland,09/06/08,World Cup,Qualifiers-Europe,1,2,1
-Groupambia,Liberia,09/06/08,World Cup,Qualifiers-Africa,3,0,1
+Gambia,Liberia,09/06/08,World Cup,Qualifiers-Africa,3,0,1
 Hungary,Denmark,09/06/08,World Cup,Qualifiers-Europe,0,0,1
 Israel,Switzerland,09/06/08,World Cup,Qualifiers-Europe,2,2,1
 Kenya,Namibia,09/06/08,World Cup,Qualifiers-Africa,1,0,1
@@ -3658,7 +3658,7 @@ South Africa,Sierra Leone,06/21/08,World Cup,Qualifiers-Africa,0,0,1
 Tunisia,Burundi,06/21/08,World Cup,Qualifiers-Africa,2,1,1
 Zambia,Swaziland,06/21/08,World Cup,Qualifiers-Africa,1,0,1
 Croatia,Turkey,06/20/08,European Championship,Knockout,0,0,0
-Algeria,Groupambia,06/20/08,World Cup,Qualifiers-Africa,1,0,1
+Algeria,Gambia,06/20/08,World Cup,Qualifiers-Africa,1,0,1
 Venezuela,Chile,06/20/08,World Cup,Qualifiers-South America,2,3,1
 Portugal,Germany,06/19/08,European Championship,Knockout,2,3,0
 Brazil,Argentina,06/19/08,World Cup,Qualifiers-South America,0,0,1
@@ -3701,7 +3701,7 @@ Botswana,Ivory Coast,06/14/08,World Cup,Qualifiers-Africa,1,1,1
 Chad,Republic of the Congo,06/14/08,World Cup,Qualifiers-Africa,2,1,1
 China,Iraq,06/14/08,World Cup,Qualifiers-Asia,1,2,1
 Grenada,Costa Rica,06/14/08,World Cup,Qualifiers-North America,2,2,1
-Groupambia,Algeria,06/14/08,World Cup,Qualifiers-Africa,1,0,1
+Gambia,Algeria,06/14/08,World Cup,Qualifiers-Africa,1,0,1
 Kenya,Zimbabwe,06/14/08,World Cup,Qualifiers-Africa,2,0,1
 Kuwait,United Arab Emirates,06/14/08,World Cup,Qualifiers-Asia,2,3,1
 Malawi,Egypt,06/14/08,World Cup,Qualifiers-Africa,1,0,1
@@ -3740,7 +3740,7 @@ Germany,Poland,06/08/08,European Championship,Group,2,0,0
 Benin,Uganda,06/08/08,World Cup,Qualifiers-Africa,4,1,1
 Democratic Republic of the Congo,Malawi,06/08/08,World Cup,Qualifiers-Africa,1,0,1
 Ethiopia,Rwanda,06/08/08,World Cup,Qualifiers-Africa,1,2,1
-Groupambia,Senegal,06/08/08,World Cup,Qualifiers-Africa,0,0,1
+Gambia,Senegal,06/08/08,World Cup,Qualifiers-Africa,0,0,1
 Kuwait,Syria,06/08/08,World Cup,Qualifiers-Asia,4,2,1
 Madagascar,Ivory Coast,06/08/08,World Cup,Qualifiers-Africa,0,0,1
 Mauritius,Cameroon,06/08/08,World Cup,Qualifiers-Africa,0,3,1
@@ -3785,7 +3785,7 @@ Egypt,Democratic Republic of the Congo,06/01/08,World Cup,Qualifiers-Africa,2,1,
 Equatorial Guinea,Sierra Leone,06/01/08,World Cup,Qualifiers-Africa,2,0,1
 Guinea,Zimbabwe,06/01/08,World Cup,Qualifiers-Africa,0,0,1
 Ivory Coast,Mozambique,06/01/08,World Cup,Qualifiers-Africa,1,0,1
-Liberia,Groupambia,06/01/08,World Cup,Qualifiers-Africa,1,1,1
+Liberia,Gambia,06/01/08,World Cup,Qualifiers-Africa,1,1,1
 Mali,Republic of the Congo,06/01/08,World Cup,Qualifiers-Africa,4,2,1
 Nigeria,South Africa,06/01/08,World Cup,Qualifiers-Africa,2,0,1
 Qatar,China,06/01/08,World Cup,Qualifiers-Asia,0,0,1
@@ -4064,7 +4064,7 @@ Ukraine,Italy,09/12/07,European Championship,Qualifiers,1,2,1
 Saudi Arabia,Ghana,09/11/07,Africa Cup of Nations,Friendlies,5,0,1
 Burundi,Egypt,09/09/07,Africa Cup of Nations,Qualifiers,0,0,1
 Chad,Republic of the Congo,09/09/07,Africa Cup of Nations,Qualifiers,1,1,1
-Groupambia,Algeria,09/09/07,Africa Cup of Nations,Qualifiers,2,1,1
+Gambia,Algeria,09/09/07,Africa Cup of Nations,Qualifiers,2,1,1
 Equatorial Guinea,Cameroon,09/09/07,Africa Cup of Nations,Qualifiers,1,0,1
 Guinea,Cape Verde,09/09/07,Africa Cup of Nations,Qualifiers,4,0,1
 Mauritius,Seychelles,09/09/07,Africa Cup of Nations,Qualifiers,1,1,1
@@ -4218,7 +4218,7 @@ Mexico,Costa Rica,06/17/07,CONCACAF Gold Cup,Knockout,1,0,0
 Algeria,Guinea,06/16/07,Africa Cup of Nations,Qualifiers,0,2,1
 Botswana,Mauritania,06/16/07,Africa Cup of Nations,Qualifiers,2,1,1
 Burkina Faso,Tanzania,06/16/07,Africa Cup of Nations,Qualifiers,0,1,1
-Cape Verde,Groupambia,06/16/07,Africa Cup of Nations,Qualifiers,0,0,1
+Cape Verde,Gambia,06/16/07,Africa Cup of Nations,Qualifiers,0,0,1
 Eritrea,Kenya,06/16/07,Africa Cup of Nations,Qualifiers,1,0,1
 Malawi,Morocco,06/16/07,Africa Cup of Nations,Qualifiers,0,1,1
 Namibia,Democratic Republic of the Congo,06/16/07,Africa Cup of Nations,Qualifiers,1,1,1
@@ -4267,7 +4267,7 @@ Sweden,Iceland,06/06/07,European Championship,Qualifiers,5,0,1
 Thailand,Netherlands,06/06/07,Asian Cup,Friendlies,1,3,1
 Benin,Mali,06/03/07,Africa Cup of Nations,Qualifiers,0,0,1
 Burundi,Botswana,06/03/07,Africa Cup of Nations,Qualifiers,1,0,1
-Guinea,Groupambia,06/03/07,Africa Cup of Nations,Qualifiers,2,2,1
+Guinea,Gambia,06/03/07,Africa Cup of Nations,Qualifiers,2,2,1
 Ivory Coast,Madagascar,06/03/07,Africa Cup of Nations,Qualifiers,5,0,1
 Liberia,Cameroon,06/03/07,Africa Cup of Nations,Qualifiers,1,2,1
 Mauritania,Egypt,06/03/07,Africa Cup of Nations,Qualifiers,1,1,1
@@ -4351,7 +4351,7 @@ Algeria,Cape Verde,03/24/07,Africa Cup of Nations,Qualifiers,2,0,1
 Burkina Faso,Mozambique,03/24/07,Africa Cup of Nations,Qualifiers,1,1,1
 Cameroon,Liberia,03/24/07,Africa Cup of Nations,Qualifiers,3,1,1
 Chad,South Africa,03/24/07,Africa Cup of Nations,Qualifiers,0,3,1
-Groupambia,Guinea,03/24/07,Africa Cup of Nations,Qualifiers,0,2,1
+Gambia,Guinea,03/24/07,Africa Cup of Nations,Qualifiers,0,2,1
 Nigeria,Uganda,03/24/07,Africa Cup of Nations,Qualifiers,1,0,1
 Senegal,Tanzania,03/24/07,Africa Cup of Nations,Qualifiers,4,0,1
 Seychelles,Tunisia,03/24/07,Africa Cup of Nations,Qualifiers,0,3,1
@@ -4447,7 +4447,7 @@ Niger,Uganda,10/08/06,Africa Cup of Nations,Qualifiers,0,0,1
 Republic of the Congo,Chad,10/08/06,Africa Cup of Nations,Qualifiers,3,1,1
 Zambia,South Africa,10/08/06,Africa Cup of Nations,Qualifiers,0,1,1
 South Korea,Ghana,10/08/06,Africa Cup of Nations,Friendlies,1,3,1
-Algeria,Groupambia,10/07/06,Africa Cup of Nations,Qualifiers,1,0,1
+Algeria,Gambia,10/07/06,Africa Cup of Nations,Qualifiers,1,0,1
 Botswana,Egypt,10/07/06,Africa Cup of Nations,Qualifiers,0,0,1
 Burkina Faso,Senegal,10/07/06,Africa Cup of Nations,Qualifiers,1,0,1
 Cameroon,Equatorial Guinea,10/07/06,Africa Cup of Nations,Qualifiers,3,0,1
@@ -4516,7 +4516,7 @@ Ukraine,Georgia,09/06/06,European Championship,Qualifiers,3,2,1
 Chad,Zambia,09/03/06,Africa Cup of Nations,Qualifiers,0,2,1
 Democratic Republic of the Congo,Namibia,09/03/06,Africa Cup of Nations,Qualifiers,3,2,1
 Ethiopia,Libya,09/03/06,Africa Cup of Nations,Qualifiers,1,0,1
-Groupambia,Cape Verde,09/03/06,Africa Cup of Nations,Qualifiers,2,0,1
+Gambia,Cape Verde,09/03/06,Africa Cup of Nations,Qualifiers,2,0,1
 Equatorial Guinea,Liberia,09/03/06,Africa Cup of Nations,Qualifiers,2,1,1
 Guinea,Algeria,09/03/06,Africa Cup of Nations,Qualifiers,0,0,1
 Mauritius,Tunisia,09/03/06,Africa Cup of Nations,Qualifiers,0,0,1
@@ -5721,7 +5721,7 @@ Hong Kong,Thailand,11/17/03,Asian Cup,Qualifiers,0,4,1
 Uzbekistan,Tajikistan,11/17/03,Asian Cup,Qualifiers,4,1,1
 Benin,Madagascar,11/16/03,World Cup,Qualifiers-Africa,3,2,1
 Lesotho,Botswana,11/16/03,World Cup,Qualifiers-Africa,0,0,1
-Liberia,Groupambia,11/16/03,World Cup,Qualifiers-Africa,3,0,1
+Liberia,Gambia,11/16/03,World Cup,Qualifiers-Africa,3,0,1
 Libya,Sao Tome and Principe,11/16/03,World Cup,Qualifiers-Africa,8,0,1
 Peru,Brazil,11/16/03,World Cup,Qualifiers-South America,1,1,1
 Sierra Leone,Republic of the Congo,11/16/03,World Cup,Qualifiers-Africa,1,1,1
@@ -5784,7 +5784,7 @@ Burundi,Gabon,10/12/03,World Cup,Qualifiers-Africa,0,0,1
 Chad,Angola,10/12/03,World Cup,Qualifiers-Africa,3,1,1
 Chad,Angola,10/12/03,World Cup,Qualifiers-Africa,3,1,1
 Ethiopia,Malawi,10/12/03,World Cup,Qualifiers-Africa,1,3,1
-Groupambia,Liberia,10/12/03,World Cup,Qualifiers-Africa,2,0,1
+Gambia,Liberia,10/12/03,World Cup,Qualifiers-Africa,2,0,1
 Guinea,Mozambique,10/12/03,World Cup,Qualifiers-Africa,1,0,1
 Guinea,Mozambique,10/12/03,World Cup,Qualifiers-Africa,1,0,1
 Republic of the Congo,Sierra Leone,10/12/03,World Cup,Qualifiers-Africa,1,0,1
@@ -5938,7 +5938,7 @@ Chad,Algeria,07/06/03,Africa Cup of Nations,Qualifiers,0,0,1
 Gabon,Sierra Leone,07/06/03,Africa Cup of Nations,Qualifiers,2,0,1
 Equatorial Guinea,Morocco,07/06/03,Africa Cup of Nations,Qualifiers,0,1,1
 Guinea,Ethiopia,07/06/03,Africa Cup of Nations,Qualifiers,3,0,1
-Lesotho,Groupambia,07/06/03,Africa Cup of Nations,Qualifiers,1,0,1
+Lesotho,Gambia,07/06/03,Africa Cup of Nations,Qualifiers,1,0,1
 Madagascar,Mauritius,07/06/03,Africa Cup of Nations,Qualifiers,0,2,1
 Republic of the Congo,Mozambique,07/06/03,Africa Cup of Nations,Qualifiers,0,0,1
 Rwanda,Ghana,07/06/03,Africa Cup of Nations,Qualifiers,1,0,1
@@ -6018,7 +6018,7 @@ Mali,Eritrea,06/07/03,Africa Cup of Nations,Qualifiers,1,0,1
 Namibia,Chad,06/07/03,Africa Cup of Nations,Qualifiers,2,1,1
 Niger,Guinea,06/07/03,Africa Cup of Nations,Qualifiers,1,0,1
 Nigeria,Malawi,06/07/03,Africa Cup of Nations,Qualifiers,4,1,1
-Senegal,Groupambia,06/07/03,Africa Cup of Nations,Qualifiers,3,1,1
+Senegal,Gambia,06/07/03,Africa Cup of Nations,Qualifiers,3,1,1
 Seychelles,Zimbabwe,06/07/03,Africa Cup of Nations,Qualifiers,2,1,1
 Uganda,Rwanda,06/07/03,Africa Cup of Nations,Qualifiers,0,1,1
 Zambia,Tanzania,06/07/03,Africa Cup of Nations,Qualifiers,2,0,1
@@ -6081,7 +6081,7 @@ Burundi,Ivory Coast,03/30/03,Africa Cup of Nations,Qualifiers,0,1,1
 Chad,Namibia,03/30/03,Africa Cup of Nations,Qualifiers,2,0,1
 Eritrea,Mali,03/30/03,Africa Cup of Nations,Qualifiers,0,2,1
 Ethiopia,Liberia,03/30/03,Africa Cup of Nations,Qualifiers,1,0,1
-Groupambia,Senegal,03/30/03,Africa Cup of Nations,Qualifiers,0,0,1
+Gambia,Senegal,03/30/03,Africa Cup of Nations,Qualifiers,0,0,1
 Guinea,Niger,03/30/03,Africa Cup of Nations,Qualifiers,2,0,1
 Libya,Botswana,03/30/03,Africa Cup of Nations,Qualifiers,0,0,1
 Mozambique,Burkina Faso,03/30/03,Africa Cup of Nations,Qualifiers,1,0,1
@@ -6193,7 +6193,7 @@ Burkina Faso,Central African Republic,10/13/02,Africa Cup of Nations,Qualifiers,
 Democratic Republic of the Congo,Botswana,10/13/02,Africa Cup of Nations,Qualifiers,2,0,1
 Ethiopia,Guinea,10/13/02,Africa Cup of Nations,Qualifiers,1,0,1
 Ghana,Rwanda,10/13/02,Africa Cup of Nations,Qualifiers,4,2,1
-Groupambia,Lesotho,10/13/02,Africa Cup of Nations,Qualifiers,6,0,1
+Gambia,Lesotho,10/13/02,Africa Cup of Nations,Qualifiers,6,0,1
 Mali,Seychelles,10/13/02,Africa Cup of Nations,Qualifiers,3,0,1
 Morocco,Equatorial Guinea,10/13/02,Africa Cup of Nations,Qualifiers,5,0,1
 Mozambique,Republic of the Congo,10/13/02,Africa Cup of Nations,Qualifiers,0,3,1
@@ -7273,7 +7273,7 @@ Uruguay,Venezuela,07/18/00,World Cup,Qualifiers-South America,3,1,1
 Angola,Equatorial Guinea,07/16/00,Africa Cup of Nations,Qualifiers,4,1,1
 Burkina Faso,Mauritania,07/16/00,Africa Cup of Nations,Qualifiers,3,0,1
 Democratic Republic of the Congo,Central African Republic,07/16/00,Africa Cup of Nations,Qualifiers,2,0,1
-Guinea,Groupambia,07/16/00,Africa Cup of Nations,Qualifiers,2,0,1
+Guinea,Gambia,07/16/00,Africa Cup of Nations,Qualifiers,2,0,1
 Ivory Coast,Niger,07/16/00,Africa Cup of Nations,Qualifiers,6,0,1
 Liberia,Cape Verde,07/16/00,Africa Cup of Nations,Qualifiers,3,0,1
 Mauritius,Tanzania,07/16/00,Africa Cup of Nations,Qualifiers,3,2,1
@@ -7315,7 +7315,7 @@ Sudan,Eritrea,07/02/00,Africa Cup of Nations,Qualifiers,5,1,1
 Swaziland,Kenya,07/02/00,Africa Cup of Nations,Qualifiers,3,2,1
 France,Italy,07/02/00,European Championship,Knockout,2,1,0
 Botswana,Madagascar,07/01/00,Africa Cup of Nations,Qualifiers,1,0,1
-Groupambia,Guinea,07/01/00,Africa Cup of Nations,Qualifiers,2,2,1
+Gambia,Guinea,07/01/00,Africa Cup of Nations,Qualifiers,2,2,1
 Seychelles,Zimbabwe,07/01/00,Africa Cup of Nations,Qualifiers,0,1,1
 Tanzania,Mauritius,07/01/00,Africa Cup of Nations,Qualifiers,0,1,1
 Uganda,Malawi,07/01/00,Africa Cup of Nations,Qualifiers,3,1,1
@@ -7427,7 +7427,7 @@ Togo,Guinea-Bissau,04/23/00,World Cup,Qualifiers-Africa,3,0,1
 Zimbabwe,Central African Republic,04/23/00,World Cup,Qualifiers-Africa,3,1,1
 Gabon,Madagascar,04/22/00,World Cup,Qualifiers-Africa,1,0,1
 Knockoutitts and Nevis,Saint Vincent and the Grenadines,04/22/00,World Cup,Qualifiers-North America,1,2,1
-Morocco,Groupambia,04/22/00,World Cup,Qualifiers-Africa,2,0,1
+Morocco,Gambia,04/22/00,World Cup,Qualifiers-Africa,2,0,1
 Namibia,Seychelles,04/22/00,World Cup,Qualifiers-Africa,3,0,1
 Nigeria,Eritrea,04/22/00,World Cup,Qualifiers-Africa,4,0,1
 Sierra Leone,Sao Tome and Principe,04/22/00,World Cup,Qualifiers-Africa,4,0,1
@@ -7459,7 +7459,7 @@ Central African Republic,Zimbabwe,04/09/00,World Cup,Qualifiers-Africa,0,1,1
 Chad,Liberia,04/09/00,World Cup,Qualifiers-Africa,0,1,1
 Eritrea,Nigeria,04/09/00,World Cup,Qualifiers-Africa,0,0,1
 Ethiopia,Burkina Faso,04/09/00,World Cup,Qualifiers-Africa,2,1,1
-Groupambia,Morocco,04/09/00,World Cup,Qualifiers-Africa,0,1,1
+Gambia,Morocco,04/09/00,World Cup,Qualifiers-Africa,0,1,1
 Equatorial Guinea,Republic of the Congo,04/09/00,World Cup,Qualifiers-Africa,1,3,1
 Lesotho,South Africa,04/09/00,World Cup,Qualifiers-Africa,0,2,1
 Libya,Mali,04/09/00,World Cup,Qualifiers-Africa,3,0,1
@@ -8929,7 +8929,7 @@ Germany,Croatia,06/23/96,European Championship,Knockout,2,1,0
 Barbados,Jamaica,06/23/96,World Cup,Qualifiers-North America,0,1,1
 Cuba,Haiti,06/23/96,World Cup,Qualifiers-North America,6,1,1
 Knockoutitts and Nevis,Saint Vincent and the Grenadines,06/23/96,World Cup,Qualifiers-North America,2,2,1
-Liberia,Groupambia,06/23/96,World Cup,Qualifiers-Africa,4,0,1
+Liberia,Gambia,06/23/96,World Cup,Qualifiers-Africa,4,0,1
 Trinidad and Tobago,Dominican Republic,06/23/96,World Cup,Qualifiers-North America,8,0,1
 England,Spain,06/22/96,European Championship,Knockout,0,0,1
 France,Netherlands,06/22/96,European Championship,Knockout,0,0,0
@@ -9008,7 +9008,7 @@ Serbia and Montenegro,Malta,06/02/96,World Cup,Qualifiers-Europe,6,0,1
 Swaziland,Gabon,06/02/96,World Cup,Qualifiers-Africa,0,1,1
 Togo,Senegal,06/02/96,World Cup,Qualifiers-Africa,2,1,1
 Uruguay,Paraguay,06/02/96,World Cup,Qualifiers-South America,0,2,1
-Groupambia,Liberia,06/01/96,World Cup,Qualifiers-Africa,2,1,1
+Gambia,Liberia,06/01/96,World Cup,Qualifiers-Africa,2,1,1
 Guinea-Bissau,Guinea,06/01/96,World Cup,Qualifiers-Africa,3,2,1
 Iceland,Macedonia,06/01/96,World Cup,Qualifiers-Europe,1,1,1
 Malawi,South Africa,06/01/96,World Cup,Qualifiers-Africa,0,1,1
@@ -9323,7 +9323,7 @@ Zimbabwe,Malawi,04/23/95,Africa Cup of Nations,Qualifiers,1,1,1
 Republic of the Congo,Sierra Leone,04/22/95,Africa Cup of Nations,Qualifiers,0,2,1
 Senegal,Togo,04/22/95,Africa Cup of Nations,Qualifiers,5,1,1
 Tanzania,Egypt,04/22/95,Africa Cup of Nations,Qualifiers,1,2,1
-Groupambia,Republic of the Congo,04/09/95,Africa Cup of Nations,Qualifiers,1,1,1
+Gambia,Republic of the Congo,04/09/95,Africa Cup of Nations,Qualifiers,1,1,1
 Guinea,Botswana,04/09/95,Africa Cup of Nations,Qualifiers,5,0,1
 Lesotho,Zimbabwe,04/09/95,Africa Cup of Nations,Qualifiers,0,2,1
 Malawi,Democratic Republic of the Congo,04/09/95,Africa Cup of Nations,Qualifiers,0,1,1
@@ -9369,7 +9369,7 @@ Ivory Coast,Burkina Faso,01/22/95,Africa Cup of Nations,Qualifiers,2,2,1
 Lesotho,Malawi,01/22/95,Africa Cup of Nations,Qualifiers,0,2,1
 Liberia,Senegal,01/22/95,Africa Cup of Nations,Qualifiers,1,1,1
 Mozambique,Namibia,01/22/95,Africa Cup of Nations,Qualifiers,4,2,1
-Niger,Groupambia,01/22/95,Africa Cup of Nations,Qualifiers,1,1,1
+Niger,Gambia,01/22/95,Africa Cup of Nations,Qualifiers,1,1,1
 Zimbabwe,Cameroon,01/22/95,Africa Cup of Nations,Qualifiers,4,1,1
 Tanzania,Algeria,01/21/95,Africa Cup of Nations,Qualifiers,2,1,1
 Uganda,Egypt,01/21/95,Africa Cup of Nations,Qualifiers,0,0,1
@@ -9385,7 +9385,7 @@ Sudan,Uganda,01/08/95,Africa Cup of Nations,Qualifiers,3,1,1
 Togo,Mauritania,01/08/95,Africa Cup of Nations,Qualifiers,0,0,1
 Botswana,Mali,01/07/95,Africa Cup of Nations,Qualifiers,1,3,1
 Senegal,Tunisia,01/07/95,Africa Cup of Nations,Qualifiers,0,0,1
-Sierra Leone,Groupambia,01/07/95,Africa Cup of Nations,Qualifiers,2,0,1
+Sierra Leone,Gambia,01/07/95,Africa Cup of Nations,Qualifiers,2,0,1
 Germany,Albania,12/18/94,European Championship,Qualifiers,2,1,1
 Greece,Scotland,12/18/94,European Championship,Qualifiers,1,0,1
 Portugal,Liechtenstein,12/18/94,European Championship,Qualifiers,8,0,1
@@ -9434,7 +9434,7 @@ Zimbabwe,Democratic Republic of the Congo,11/13/94,Africa Cup of Nations,Qualifi
 Portugal,Austria,11/13/94,European Championship,Qualifiers,1,0,1
 Ukraine,Estonia,11/13/94,European Championship,Qualifiers,3,0,1
 Zambia,South Africa,11/13/94,European Championship,Qualifiers,1,1,1
-Groupambia,Ghana,11/12/94,Africa Cup of Nations,Qualifiers,1,2,1
+Gambia,Ghana,11/12/94,Africa Cup of Nations,Qualifiers,1,2,1
 Tanzania,Sudan,11/12/94,Africa Cup of Nations,Qualifiers,2,0,1
 Uganda,Algeria,11/12/94,Africa Cup of Nations,Qualifiers,1,1,1
 Romania,Slovakia,11/12/94,European Championship,Qualifiers,3,2,1
@@ -9504,7 +9504,7 @@ Guinea-Bissau,Tunisia,09/04/94,Africa Cup of Nations,Qualifiers,1,3,1
 Liberia,Togo,09/04/94,Africa Cup of Nations,Qualifiers,1,0,1
 Madagascar,South Africa,09/04/94,Africa Cup of Nations,Qualifiers,0,1,1
 Mali,Mozambique,09/04/94,Africa Cup of Nations,Qualifiers,2,1,1
-Republic of the Congo,Groupambia,09/04/94,Africa Cup of Nations,Qualifiers,1,1,1
+Republic of the Congo,Gambia,09/04/94,Africa Cup of Nations,Qualifiers,1,1,1
 Sudan,Egypt,09/04/94,Africa Cup of Nations,Qualifiers,0,0,1
 Zimbabwe,Lesotho,09/04/94,Africa Cup of Nations,Qualifiers,5,0,1
 Estonia,Croatia,09/04/94,European Championship,Qualifiers,0,2,1
