@@ -5,6 +5,7 @@ updateCost <- function(rOptions, rOutput, game, gamePrev) {
   }
 
   if (game$isRelevant) {
+	print(game$teamNames)
     costData <- updateRatingsCost(rOptions, rOutput, game)
   }
   else {
