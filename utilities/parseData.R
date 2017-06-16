@@ -4,7 +4,7 @@ parseData <- function(filename) {
   fp <- file(filename, "r")
   currentContest = NULL
   h <- constructTeamHash()
-  rowNames <- c("HomeTeam", "AwayTeam", "Date", "Contest",
+  rowNames <- c("HomeTeam", "AwayTeam", "Date", "Contest", "Type",
       "HomeGoals", "AwayGoals", "HomeAdvantage")
   data <- data.frame(row.names = rowNames)
   date = NA
@@ -28,10 +28,11 @@ parseData <- function(filename) {
       data[j, "HomeTeam"] <- teams[1]
       data[j, "AwayTeam"] <- teams[2]
       data[j, "Date"] <- date
-      data[j, "Contest"] <- "WOC-Q-Africa"
+      data[j, "Contest"] <- "Copa Centroamericana"
+      data[j, "Type"] <- "Group"
       data[j, "HomeGoals"] <- goals[1]
       data[j, "AwayGoals"] <- goals[2]
-      data[j, "HomeAdvantage"] <- 1
+      data[j, "HomeAdvantage"] <- 0
       j <- j + 1
     }
 

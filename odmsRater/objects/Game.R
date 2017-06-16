@@ -50,13 +50,14 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     game$dataset <- "validation"
   }
   
+  game$isMajor <- contest != "Copa Centroamericana"
   game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
       game$isPlayoff
       
-  if (game$isWorldCup && !game$isFriendly && !game$isQualifier) {
+  if (game$isWorldCup && !game$isQualifier && !game$isFriendly) {
     game$weight = 1
   }
-  else if (!game$isFriendly && !game$isQualifier) {
+  else if (game$isMajor && !game$isQualifier && !game$isFriendly) {
     game$weight = 0.9
   }
   else if (!game$isFriendly) {

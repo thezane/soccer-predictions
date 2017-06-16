@@ -1,82 +1,16 @@
-"HomeTeam","AwayTeam","Date","Contest","HomeGoals","AwayGoals","HomeAdvantage"
-"Somalia","Niger","10/09/15","WOC-Q-Africa",0,2,1
-"Niger","Somalia","10/13/15","WOC-Q-Africa",4,0,1
-"Mauritania","South Sudan","10/13/15","WOC-Q-Africa",4,0,1
-"The Gambia","Namibia","10/09/15","WOC-Q-Africa",1,1,1
-"Namibia","The Gambia","10/13/15","WOC-Q-Africa",2,1,1
-"Chad","Sierra Leone","10/10/15","WOC-Q-Africa",1,0,1
-"Sierra Leone","Chad","10/13/15","WOC-Q-Africa",2,1,1
-"Comoros","Lesotho","10/07/15","WOC-Q-Africa",0,0,1
-"Lesotho","Comoros","10/13/15","WOC-Q-Africa",1,1,1
-"Djibouti","Swaziland","10/09/15","WOC-Q-Africa",0,6,1
-"Swaziland","Djibouti","10/17/15","WOC-Q-Africa",2,1,1
-"Eritrea","Botswana","10/10/15","WOC-Q-Africa",0,2,1
-"Botswana","Eritrea","10/13/15","WOC-Q-Africa",3,1,1
-"Seychelles","Burundi","10/07/15","WOC-Q-Africa",0,1,1
-"Burundi","Seychelles","10/13/15","WOC-Q-Africa",2,0,1
-"Liberia","Guinea-Bissau","10/08/15","WOC-Q-Africa",1,1,1
-"Guinea-Bissau","Liberia","10/13/15","WOC-Q-Africa",1,3,1
-"Central African Republic","Madagascar","10/10/15","WOC-Q-Africa",0,3,1
-"Madagascar","Central African Republic","10/13/15","WOC-Q-Africa",2,2,1
-"Mauritius","Kenya","10/07/15","WOC-Q-Africa",2,5,1
-"Kenya","Mauritius","10/11/15","WOC-Q-Africa",0,0,1
-"Tanzania","Malawi","10/07/15","WOC-Q-Africa",2,0,1
-"Malawi","Tanzania","10/11/15","WOC-Q-Africa",1,0,1
-"Niger","Cameroon","11/13/15","WOC-Q-Africa",0,3,1
-"Cameroon","Niger","11/17/15","WOC-Q-Africa",0,0,1
-"Mauritania","Tunisia","11/13/15","WOC-Q-Africa",1,2,1
-"Tunisia","Mauritania","11/17/15","WOC-Q-Africa",2,1,1
-"Namibia","Guinea","11/12/15","WOC-Q-Africa",0,1,1
-"Guinea","Namibia","11/15/15","WOC-Q-Africa",2,0,1
-"Ethiopia","Republic of the Congo","11/14/15","WOC-Q-Africa",3,4,1
-"Republic of the Congo","Ethiopia","11/17/15","WOC-Q-Africa",2,1,1
-"Chad","Egypt","11/14/15","WOC-Q-Africa",1,0,1
-"Egypt","Chad","11/17/15","WOC-Q-Africa",4,0,1
-"Comoros","Ghana","11/13/15","WOC-Q-Africa",0,0,1
-"Ghana","Comoros","11/17/15","WOC-Q-Africa",2,0,1
-"Swaziland","Nigeria","11/13/15","WOC-Q-Africa",0,0,1
-"Nigeria","Swaziland","11/17/15","WOC-Q-Africa",2,0,1
-"Botswana","Mali","11/14/15","WOC-Q-Africa",2,1,1
-"Mali","Botswana","11/17/15","WOC-Q-Africa",2,0,1
-"Burundi","Democratic Republic of the Congo","11/12/15","WOC-Q-Africa",2,3,1
-"Liberia","Ivory Coast","11/13/15","WOC-Q-Africa",0,1,1
-"Ivory Coast","Liberia","11/17/15","WOC-Q-Africa",3,0,1
-"Madagascar","Senegal","11/13/15","WOC-Q-Africa",2,2,1
-"Senegal","Madagascar","11/17/15","WOC-Q-Africa",3,0,1
-"Kenya","Cape Verde","11/13/15","WOC-Q-Africa",1,0,1
-"Cape Verde","Kenya","11/17/15","WOC-Q-Africa",2,0,1
-"Tanzania","Algeria","11/14/15","WOC-Q-Africa",2,2,1
-"Algeria","Tanzania","11/17/15","WOC-Q-Africa",7,0,1
-"Sudan","Zambia","11/11/15","WOC-Q-Africa",0,1,1
-"Zambia","Sudan","11/15/15","WOC-Q-Africa",2,0,1
-"Libya","Rwanda","11/13/15","WOC-Q-Africa",1,0,1
-"Rwanda","Libya","11/17/15","WOC-Q-Africa",1,3,1
-"Morocco","Equatorial Guinea","11/12/15","WOC-Q-Africa",2,0,1
-"Equatorial Guinea","Morocco","11/15/15","WOC-Q-Africa",1,0,1
-"Mozambique","Gabon","11/11/15","WOC-Q-Africa",1,0,1
-"Benin","Burkina Faso","11/12/15","WOC-Q-Africa",2,1,1
-"Burkina Faso","Benin","11/17/15","WOC-Q-Africa",2,0,1
-"Togo","Uganda","11/12/15","WOC-Q-Africa",0,1,1
-"Uganda","Togo","11/15/15","WOC-Q-Africa",3,0,1
-"Angola","South Africa","11/13/15","WOC-Q-Africa",1,3,1
-"South Africa","Angola","11/17/15","WOC-Q-Africa",1,0,1
-"Democratic Republic of the Congo","Libya","10/08/16","WOC-Q-Africa",4,0,1
-"Tunisia","Guinea","10/09/16","WOC-Q-Africa",2,0,1
-"Libya","Tunisia","11/11/16","WOC-Q-Africa",0,1,1
-"Guinea","Democratic Republic of the Congo","11/13/16","WOC-Q-Africa",1,2,1
-"Zambia","Nigeria","10/09/16","WOC-Q-Africa",1,2,1
-"Algeria","Cameroon","10/09/16","WOC-Q-Africa",1,1,1
-"Cameroon","Zambia","11/12/16","WOC-Q-Africa",1,1,1
-"Nigeria","Algeria","11/12/16","WOC-Q-Africa",3,1,1
-"Gabon","Morocco","10/08/16","WOC-Q-Africa",0,0,1
-"Ivory Coast","Mali","10/08/16","WOC-Q-Africa",3,1,1
-"Mali","Gabon","11/12/16","WOC-Q-Africa",0,0,1
-"Morocco","Ivory Coast","11/12/16","WOC-Q-Africa",0,0,1
-"Burkina Faso","South Africa","10/08/16","WOC-Q-Africa",1,1,1
-"Senegal","Cape Verde","10/08/16","WOC-Q-Africa",2,0,1
-"South Africa","Senegal","11/12/16","WOC-Q-Africa",2,1,1
-"Cape Verde","Burkina Faso","11/12/16","WOC-Q-Africa",0,2,1
-"Ghana","Uganda","10/07/16","WOC-Q-Africa",0,0,1
-"Republic of the Congo","Egypt","10/09/16","WOC-Q-Africa",1,2,1
-"Uganda","Republic of the Congo","11/12/16","WOC-Q-Africa",1,0,1
-"Egypt","Ghana","11/13/16","WOC-Q-Africa",2,0,1
+HomeTeam,AwayTeam,Date,Contest,Type,HomeGoals,AwayGoals,HomeAdvantage
+Honduras,Nicaragua,01/13/17,Copa Centroamericana,Group,2,1,0
+Costa Rica,El Salvador,01/13/17,Copa Centroamericana,Group,0,0,0
+Panama,Belize,01/13/17,Copa Centroamericana,Group,0,0,1
+Belize,Costa Rica,01/15/17,Copa Centroamericana,Group,0,3,0
+El Salvador,Honduras,01/15/17,Copa Centroamericana,Group,1,2,0
+Panama,Nicaragua,01/15/17,Copa Centroamericana,Group,2,1,1
+El Salvador,Belize,01/17/17,Copa Centroamericana,Group,3,1,0
+Costa Rica,Nicaragua,01/17/17,Copa Centroamericana,Group,0,0,0
+Panama,Honduras,01/17/17,Copa Centroamericana,Group,0,1,1
+Nicaragua,Belize,01/20/17,Copa Centroamericana,Group,3,1,0
+Honduras,Costa Rica,01/20/17,Copa Centroamericana,Group,1,1,0
+Panama,El Salvador,01/20/17,Copa Centroamericana,Group,1,0,1
+Belize,Honduras,01/22/17,Copa Centroamericana,Group,0,1,0
+El Salvador,Nicaragua,01/22/17,Copa Centroamericana,Group,1,0,0
+Panama,Costa Rica,01/22/17,Copa Centroamericana,Group,1,0,1

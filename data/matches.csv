@@ -592,6 +592,7 @@ Serbia,Portugal,10/11/15,European Championship,Qualifiers,1,2,1
 Denmark,France,10/11/15,Friendlies,Friendlies,1,2,1
 Kenya,Mauritius,10/11/15,World Cup,Qualifiers-Africa,0,0,1
 Malawi,Tanzania,10/11/15,World Cup,Qualifiers-Africa,1,0,1
+United States,Mexico,10/10/15,Confederations Cup,Qualifiers,2,3,1
 Andorra,Belgium,10/10/15,European Championship,Qualifiers,1,4,1
 Azerbaijan,Italy,10/10/15,European Championship,Qualifiers,1,3,1
 Bosnia-Herzegovina,Wales,10/10/15,European Championship,Qualifiers,2,0,1
@@ -2923,6 +2924,8 @@ Nigeria,Saudi Arabia,05/25/10,Asian Cup,Friendlies,0,0,0
 Japan,South Korea,05/24/10,Asian Cup,Friendlies,0,2,1
 Saudi Arabia,Democratic Republic of the Congo,05/21/10,Asian Cup,Friendlies,2,0,0
 South Korea,Ecuador,05/16/10,Asian Cup,Friendlies,2,0,1
+Honduras,French Guiana,03/25/16,CONCACAF Gold Cup,Qualifiers,3,0,1
+French Guiana,Honduras,03/25/16,CONCACAF Gold Cup,Qualifiers,3,1,1
 Slovenia,Qatar,03/10/10,Asian Cup,Friendlies,4,1,1
 Australia,Indonesia,03/03/10,Asian Cup,Qualifiers,1,0,1
 Hong Kong,Yemen,03/03/10,Asian Cup,Qualifiers,0,0,1
@@ -10239,3 +10242,175 @@ Saint Vincent and the Grenadines,Saint Lucia,03/29/92,World Cup,Qualifiers-North
 Puerto Rico,Dominican Republic,03/29/92,World Cup,Qualifiers-North America,1,1,1
 Saint Lucia,Saint Vincent and the Grenadines,03/22/92,World Cup,Qualifiers-North America,1,0,1
 Dominican Republic,Puerto Rico,03/21/92,World Cup,Qualifiers-North America,1,2,1
+Costa Rica,Nicaragua,02/16/93,Copa Centroamericana,Qualifiers,6,0,1
+Nicaragua,Costa Rica,02/19/93,Copa Centroamericana,Qualifiers,0,2,1
+Costa Rica,El Salvador,03/05/93,Copa Centroamericana,Group,1,0,0
+Honduras,Panama,03/05/93,Copa Centroamericana,Group,2,0,1
+El Salvador,Panama,03/07/93,Copa Centroamericana,Group,1,1,0
+Honduras,Costa Rica,03/07/93,Copa Centroamericana,Group,2,0,1
+Costa Rica,Panama,03/09/93,Copa Centroamericana,Group,2,0,0
+Honduras,El Salvador,03/09/93,Copa Centroamericana,Group,3,0,1
+Panama,Nicaragua,10/22/95,Copa Centroamericana,Qualifiers,2,0,1
+Nicaragua,Panama,10/29/95,Copa Centroamericana,Qualifiers,0,5,1
+El Salvador,Belize,11/29/95,Copa Centroamericana,Group,3,0,1
+Costa Rica,Belize,12/01/95,Copa Centroamericana,Group,2,1,0
+El Salvador,Costa Rica,12/03/95,Copa Centroamericana,Group,2,1,1
+Honduras,Panama,11/29/95,Copa Centroamericana,Group,2,0,0
+Guatemala,Panama,12/01/95,Copa Centroamericana,Group,1,0,0
+Honduras,Guatemala,12/03/95,Copa Centroamericana,Group,2,0,0
+Honduras,Costa Rica,12/07/95,Copa Centroamericana,Knockout,1,1,0
+El Salvador,Guatemala,12/07/95,Copa Centroamericana,Knockout,0,1,1
+El Salvador,Costa Rica,12/10/95,Copa Centroamericana,Knockout,2,1,1
+Guatemala,Honduras,12/10/95,Copa Centroamericana,Knockout,0,3,0
+Panama,Belize,04/27/97,Copa Centroamericana,Qualifiers,1,1,0
+Belize,Panama,04/27/97,Copa Centroamericana,Qualifiers,0,1,0
+Guatemala,Costa Rica,04/16/97,Copa Centroamericana,Group,1,1,1
+Costa Rica,Nicaragua,04/18/97,Copa Centroamericana,Group,5,1,0
+Guatemala,Nicaragua,04/20/97,Copa Centroamericana,Group,6,1,1
+Honduras,Panama,04/16/97,Copa Centroamericana,Group,5,0,0
+Honduras,El Salvador,04/18/97,Copa Centroamericana,Group,3,0,0
+El Salvador,Panama,04/20/97,Copa Centroamericana,Group,2,0,0
+Honduras,Costa Rica,04/23/97,Copa Centroamericana,Group,0,4,0
+Guatemala,El Salvador,04/23/97,Copa Centroamericana,Group,1,0,1
+Guatemala,Honduras,04/25/97,Copa Centroamericana,Group,1,0,1
+Costa Rica,El Salvador,04/25/97,Copa Centroamericana,Group,1,0,0
+Honduras,El Salvador,04/27/97,Copa Centroamericana,Group,0,0,0
+Guatemala,Costa Rica,04/27/97,Copa Centroamericana,Group,1,1,1
+Costa Rica,Belize,03/17/99,Copa Centroamericana,Group,7,0,1
+Honduras,Belize,03/19/99,Copa Centroamericana,Group,5,1,0
+Costa Rica,Honduras,03/21/99,Copa Centroamericana,Group,0,1,1
+Guatemala,Nicaragua,03/17/99,Copa Centroamericana,Group,1,0,0
+Guatemala,El Salvador,03/19/99,Copa Centroamericana,Group,1,1,0
+El Salvador,Nicaragua,03/21/99,Copa Centroamericana,Group,1,0,0
+Costa Rica,Guatemala,03/24/99,Copa Centroamericana,Group,1,0,1
+Honduras,El Salvador,03/24/99,Copa Centroamericana,Group,3,1,0
+Guatemala,El Salvador,03/26/99,Copa Centroamericana,Group,1,0,0
+Costa Rica,Honduras,03/26/99,Copa Centroamericana,Group,1,2,1
+Costa Rica,El Salvador,03/28/99,Copa Centroamericana,Group,4,0,1
+Honduras,Guatemala,03/28/99,Copa Centroamericana,Group,0,2,0
+El Salvador,Nicaragua,05/23/01,Copa Centroamericana,Group,3,0,0
+Honduras,Panama,05/23/01,Copa Centroamericana,Group,1,2,1
+El Salvador,Panama,05/25/01,Copa Centroamericana,Group,2,1,0
+Honduras,Nicaragua,05/25/01,Copa Centroamericana,Group,10,2,1
+Nicaragua,Panama,05/27/01,Copa Centroamericana,Group,0,6,0
+Honduras,El Salvador,05/27/01,Copa Centroamericana,Group,1,1,1
+Belize,Costa Rica,05/23/01,Copa Centroamericana,Group,0,4,0
+Belize,Guatemala,05/25/01,Copa Centroamericana,Group,3,3,0
+Costa Rica,Guatemala,05/27/01,Copa Centroamericana,Group,1,1,0
+El Salvador,Guatemala,05/30/01,Copa Centroamericana,Group,0,0,0
+Costa Rica,Panama,05/30/01,Copa Centroamericana,Group,2,1,0
+El Salvador,Panama,06/01/01,Copa Centroamericana,Group,1,1,0
+Costa Rica,Guatemala,06/01/01,Copa Centroamericana,Group,0,2,0
+Costa Rica,El Salvador,06/03/01,Copa Centroamericana,Group,1,1,0
+Guatemala,Panama,06/03/01,Copa Centroamericana,Group,3,1,0
+Panama,El Salvador,02/09/03,Copa Centroamericana,Group,1,2,1
+Costa Rica,El Salvador,02/11/03,Copa Centroamericana,Group,1,0,0
+Honduras,Nicaragua,02/11/03,Copa Centroamericana,Group,2,0,0
+Costa Rica,Guatemala,02/13/03,Copa Centroamericana,Group,1,1,0
+El Salvador,Nicaragua,02/13/03,Copa Centroamericana,Group,3,0,0
+Costa Rica,Nicaragua,02/15/03,Copa Centroamericana,Group,1,0,0
+Honduras,El Salvador,02/15/03,Copa Centroamericana,Group,0,1,0
+Panama,Guatemala,02/16/03,Copa Centroamericana,Group,2,0,1
+Guatemala,Nicaragua,02/18/03,Copa Centroamericana,Group,5,0,0
+Panama,Honduras,02/18/03,Copa Centroamericana,Group,1,1,1
+Costa Rica,Honduras,02/20/03,Copa Centroamericana,Group,1,0,0
+El Salvador,Guatemala,02/20/03,Copa Centroamericana,Group,0,2,0
+Panama,Nicaragua,02/21/03,Copa Centroamericana,Group,0,1,1
+Honduras,Guatemala,02/23/03,Copa Centroamericana,Group,1,2,0
+Panama,Costa Rica,02/23/03,Copa Centroamericana,Group,0,1,1
+Honduras,Nicaragua,02/19/05,Copa Centroamericana,Group,5,1,0
+Guatemala,Belize,02/19/05,Copa Centroamericana,Group,2,0,1
+Belize,Honduras,02/21/05,Copa Centroamericana,Group,0,4,0
+Guatemala,Nicaragua,02/21/05,Copa Centroamericana,Group,4,0,1
+Belize,Nicaragua,02/23/05,Copa Centroamericana,Group,0,1,0
+Guatemala,Honduras,02/23/05,Copa Centroamericana,Group,1,1,1
+El Salvador,Panama,02/19/05,Copa Centroamericana,Group,0,1,0
+Costa Rica,El Salvador,02/21/05,Copa Centroamericana,Group,2,1,0
+Costa Rica,Panama,02/23/05,Copa Centroamericana,Group,1,0,0
+Honduras,Panama,02/25/05,Copa Centroamericana,Knockout,1,0,0
+Guatemala,Costa Rica,02/25/05,Copa Centroamericana,Knockout,0,4,1
+Guatemala,Panama,02/27/05,Copa Centroamericana,Knockout,3,0,1
+Costa Rica,Honduras,02/27/05,Copa Centroamericana,Knockout,1,1,0
+Guatemala,Nicaragua,02/08/07,Copa Centroamericana,Group,1,0,0
+El Salvador,Belize,02/08/07,Copa Centroamericana,Group,2,1,1
+Belize,Guatemala,02/10/07,Copa Centroamericana,Group,0,1,0
+El Salvador,Nicaragua,02/10/07,Copa Centroamericana,Group,2,1,1
+Nicaragua,Belize,02/12/07,Copa Centroamericana,Group,4,2,0
+El Salvador,Guatemala,02/12/07,Copa Centroamericana,Group,0,0,1
+Costa Rica,Honduras,02/09/07,Copa Centroamericana,Group,3,1,0
+Honduras,Panama,02/11/07,Copa Centroamericana,Group,1,1,0
+Panama,Costa Rica,02/13/07,Copa Centroamericana,Group,1,0,0
+Nicaragua,Honduras,02/15/07,Copa Centroamericana,Knockout,1,9,0
+Panama,Guatemala,02/16/07,Copa Centroamericana,Knockout,2,0,0
+El Salvador,Costa Rica,02/16/07,Copa Centroamericana,Knockout,0,2,1
+El Salvador,Guatemala,02/18/07,Copa Centroamericana,Knockout,0,1,1
+Panama,Costa Rica,02/18/07,Copa Centroamericana,Knockout,1,1,0
+El Salvador,Nicaragua,01/22/09,Copa Centroamericana,Group,1,1,0
+Honduras,Belize,01/22/09,Copa Centroamericana,Group,2,1,1
+Belize,El Salvador,01/24/09,Copa Centroamericana,Group,1,4,0
+Honduras,Nicaragua,01/24/09,Copa Centroamericana,Group,4,1,1
+Nicaragua,Belize,01/26/09,Copa Centroamericana,Group,1,1,0
+Honduras,El Salvador,01/26/09,Copa Centroamericana,Group,2,0,1
+Costa Rica,Panama,01/23/09,Copa Centroamericana,Group,3,0,0
+Guatemala,Costa Rica,01/25/09,Copa Centroamericana,Group,1,3,0
+Panama,Guatemala,01/27/09,Copa Centroamericana,Group,1,0,0
+Nicaragua,Guatemala,01/29/09,Copa Centroamericana,Knockout,2,0,0
+Costa Rica,El Salvador,01/30/09,Copa Centroamericana,Knockout,1,0,0
+Honduras,Panama,01/30/09,Copa Centroamericana,Knockout,0,1,1
+Honduras,El Salvador,02/01/09,Copa Centroamericana,Knockout,1,0,1
+Panama,Costa Rica,02/01/09,Copa Centroamericana,Knockout,0,0,0
+El Salvador,Nicaragua,01/14/11,Copa Centroamericana,Group,2,0,0
+Panama,Belize,01/14/11,Copa Centroamericana,Group,2,0,1
+Belize,El Salvador,01/16/11,Copa Centroamericana,Group,2,5,0
+Panama,Nicaragua,01/16/11,Copa Centroamericana,Group,2,0,1
+Nicaragua,Belize,01/18/11,Copa Centroamericana,Group,1,1,0
+Panama,El Salvador,01/18/11,Copa Centroamericana,Group,2,0,1
+Costa Rica,Honduras,01/14/11,Copa Centroamericana,Group,1,1,0
+Guatemala,Costa Rica,01/16/11,Copa Centroamericana,Group,0,2,0
+Honduras,Guatemala,01/18/11,Copa Centroamericana,Group,3,1,0
+Nicaragua,Guatemala,01/21/11,Copa Centroamericana,Knockout,1,2,0
+Honduras,El Salvador,01/21/11,Copa Centroamericana,Knockout,2,0,0
+Panama,Costa Rica,01/21/11,Copa Centroamericana,Knockout,1,1,1
+Panama,El Salvador,01/23/11,Copa Centroamericana,Knockout,0,0,1
+Honduras,Costa Rica,01/23/11,Copa Centroamericana,Knockout,2,1,0
+Guatemala,Nicaragua,01/18/13,Copa Centroamericana,Group,1,1,0
+Costa Rica,Belize,01/18/13,Copa Centroamericana,Group,1,0,1
+Belize,Guatemala,01/20/13,Copa Centroamericana,Group,0,0,0
+Costa Rica,Nicaragua,01/20/13,Copa Centroamericana,Group,2,0,1
+Nicaragua,Belize,01/22/13,Copa Centroamericana,Group,1,2,0
+Costa Rica,Guatemala,01/22/13,Copa Centroamericana,Group,1,1,1
+Honduras,El Salvador,01/18/13,Copa Centroamericana,Group,1,1,0
+El Salvador,Panama,01/20/13,Copa Centroamericana,Group,0,0,0
+Panama,Honduras,01/22/13,Copa Centroamericana,Group,1,1,0
+Guatemala,Panama,01/25/13,Copa Centroamericana,Knockout,1,3,0
+Honduras,Belize,01/25/13,Copa Centroamericana,Knockout,1,0,0
+Costa Rica,El Salvador,01/25/13,Copa Centroamericana,Knockout,1,0,1
+El Salvador,Belize,01/27/13,Copa Centroamericana,Knockout,1,0,0
+Costa Rica,Honduras,01/27/13,Copa Centroamericana,Knockout,1,0,1
+Honduras,Belize,09/03/14,Copa Centroamericana,Group,2,0,0
+El Salvador,Guatemala,09/03/14,Copa Centroamericana,Group,1,2,0
+Guatemala,Belize,09/07/14,Copa Centroamericana,Group,2,1,0
+Honduras,El Salvador,09/07/14,Copa Centroamericana,Group,0,1,0
+El Salvador,Belize,09/10/14,Copa Centroamericana,Group,2,0,0
+Honduras,Guatemala,09/10/14,Copa Centroamericana,Group,0,2,0
+Costa Rica,Nicaragua,09/03/14,Copa Centroamericana,Group,3,0,0
+Costa Rica,Panama,09/07/14,Copa Centroamericana,Knockout,2,2,0
+Panama,Nicaragua,09/10/14,Copa Centroamericana,Knockout,2,0,0
+Honduras,Nicaragua,09/13/14,Copa Centroamericana,Knockout,1,0,0
+El Salvador,Panama,09/13/14,Copa Centroamericana,Knockout,0,1,0
+Guatemala,Costa Rica,09/13/14,Copa Centroamericana,Knockout,1,2,0
+Honduras,Nicaragua,01/13/17,Copa Centroamericana,Group,2,1,0
+Costa Rica,El Salvador,01/13/17,Copa Centroamericana,Group,0,0,0
+Panama,Belize,01/13/17,Copa Centroamericana,Group,0,0,1
+Belize,Costa Rica,01/15/17,Copa Centroamericana,Group,0,3,0
+El Salvador,Honduras,01/15/17,Copa Centroamericana,Group,1,2,0
+Panama,Nicaragua,01/15/17,Copa Centroamericana,Group,2,1,1
+El Salvador,Belize,01/17/17,Copa Centroamericana,Group,3,1,0
+Costa Rica,Nicaragua,01/17/17,Copa Centroamericana,Group,0,0,0
+Panama,Honduras,01/17/17,Copa Centroamericana,Group,0,1,1
+Nicaragua,Belize,01/20/17,Copa Centroamericana,Group,3,1,0
+Honduras,Costa Rica,01/20/17,Copa Centroamericana,Group,1,1,0
+Panama,El Salvador,01/20/17,Copa Centroamericana,Group,1,0,1
+Belize,Honduras,01/22/17,Copa Centroamericana,Group,0,1,0
+El Salvador,Nicaragua,01/22/17,Copa Centroamericana,Group,1,0,0
+Panama,Costa Rica,01/22/17,Copa Centroamericana,Group,1,0,1
