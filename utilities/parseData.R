@@ -28,11 +28,11 @@ parseData <- function(filename) {
       data[j, "HomeTeam"] <- teams[1]
       data[j, "AwayTeam"] <- teams[2]
       data[j, "Date"] <- date
-      data[j, "Contest"] <- "Caribbean Cup"
-      data[j, "Type"] <- "Group"
+      data[j, "Contest"] <- "World Cup"
+      data[j, "Type"] <- "Qualifiers-Asia"
       data[j, "HomeGoals"] <- goals[1]
       data[j, "AwayGoals"] <- goals[2]
-      data[j, "HomeAdvantage"] <- 0
+      data[j, "HomeAdvantage"] <- 1
       j <- j + 1
     }
 

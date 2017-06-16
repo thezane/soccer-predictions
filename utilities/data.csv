@@ -1,31 +1,116 @@
 HomeTeam,AwayTeam,Date,Contest,Type,HomeGoals,AwayGoals,HomeAdvantage
-Haiti,Trinidad and Tobago,12/07/12,Caribbean Cup,Group,0,0,0
-Antigua and Barbuda,Dominican Republic,12/07/12,Caribbean Cup,Group,1,2,1
-Dominican Republic,Haiti,12/09/12,Caribbean Cup,Group,1,2,0
-Antigua and Barbuda,Trinidad and Tobago,12/09/12,Caribbean Cup,Group,2,0,1
-Trinidad and Tobago,Dominican Republic,12/11/12,Caribbean Cup,Group,2,1,0
-Antigua and Barbuda,Haiti,12/11/12,Caribbean Cup,Group,0,1,1
-Martinique,Cuba,12/08/12,Caribbean Cup,Group,1,0,0
-Jamaica,French Guiana,12/08/12,Caribbean Cup,Group,1,2,0
-Cuba,French Guiana,12/10/12,Caribbean Cup,Group,2,1,0
-Jamaica,Martinique,12/10/12,Caribbean Cup,Group,0,0,0
-French Guiana,Martinique,12/12/12,Caribbean Cup,Group,1,3,0
-Jamaica,Cuba,12/12/12,Caribbean Cup,Group,0,1,0
-Martinique,Trinidad and Tobago,12/14/12,Caribbean Cup,Knockout,1,1,0
-Haiti,Cuba,12/14/12,Caribbean Cup,Knockout,0,1,0
-Haiti,Martinique,12/16/12,Caribbean Cup,Knockout,1,0,0
-Cuba,Trinidad and Tobago,12/16/12,Caribbean Cup,Knockout,1,0,0
-Curacao,Trinidad and Tobago,11/11/14,Caribbean Cup,Group,2,3,0
-Cuba,French Guiana,11/11/14,Caribbean Cup,Group,1,1,0
-Trinidad and Tobago,French Guiana,11/13/14,Caribbean Cup,Group,4,2,0
-Curacao,Cuba,11/13/14,Caribbean Cup,Group,2,3,0
-French Guiana,Curacao,11/15/14,Caribbean Cup,Group,4,1,0
-Cuba,Trinidad and Tobago,11/15/14,Caribbean Cup,Group,0,0,0
-Haiti,Antigua and Barbuda,11/12/14,Caribbean Cup,Group,2,2,0
-Jamaica,Martinique,11/12/14,Caribbean Cup,Group,1,1,1
-Martinique,Haiti,11/14/14,Caribbean Cup,Group,0,3,0
-Jamaica,Antigua and Barbuda,11/14/14,Caribbean Cup,Group,3,0,1
-Antigua and Barbuda,Martinique,11/16/14,Caribbean Cup,Group,0,2,0
-Jamaica,Haiti,11/16/14,Caribbean Cup,Group,2,0,1
-Cuba,Haiti,11/18/14,Caribbean Cup,Knockout,1,2,0
-Jamaica,Trinidad and Tobago,11/18/14,Caribbean Cup,Knockout,0,0,1
+Jordan,Yemen,05/22/93,World Cup,Qualifiers-Asia,1,1,1
+Pakistan,China,05/22/93,World Cup,Qualifiers-Asia,0,5,1
+Jordan,Iraq,05/24/93,World Cup,Qualifiers-Asia,1,1,1
+Yemen,Pakistan,05/24/93,World Cup,Qualifiers-Asia,5,1,1
+Jordan,China,05/26/93,World Cup,Qualifiers-Asia,0,3,1
+Yemen,Iraq,05/26/93,World Cup,Qualifiers-Asia,1,6,1
+Pakistan,Iraq,05/28/93,World Cup,Qualifiers-Asia,0,8,1
+Yemen,China,05/28/93,World Cup,Qualifiers-Asia,1,0,1
+Jordan,Pakistan,05/30/93,World Cup,Qualifiers-Asia,3,1,1
+Iraq,China,05/30/93,World Cup,Qualifiers-Asia,1,0,1
+Yemen,Jordan,06/12/93,World Cup,Qualifiers-Asia,1,1,1
+Iraq,Jordan,06/14/93,World Cup,Qualifiers-Asia,4,0,1
+Pakistan,Yemen,06/14/93,World Cup,Qualifiers-Asia,0,3,1
+Iraq,Yemen,06/16/93,World Cup,Qualifiers-Asia,3,0,1
+Iraq,Pakistan,06/18/93,World Cup,Qualifiers-Asia,4,0,1
+Pakistan,Jordan,06/20/93,World Cup,Qualifiers-Asia,0,5,1
+Iran,Oman,06/23/93,World Cup,Qualifiers-Asia,0,0,1
+Taiwan,Syria,06/23/93,World Cup,Qualifiers-Asia,0,2,1
+Oman,Syria,06/25/93,World Cup,Qualifiers-Asia,0,0,1
+Iran,Taiwan,06/25/93,World Cup,Qualifiers-Asia,6,0,1
+Oman,Taiwan,06/27/93,World Cup,Qualifiers-Asia,2,1,1
+Iran,Syria,06/27/93,World Cup,Qualifiers-Asia,1,1,1
+Oman,Iran,07/02/93,World Cup,Qualifiers-Asia,0,1,1
+Syria,Taiwan,07/02/93,World Cup,Qualifiers-Asia,8,1,1
+Syria,Oman,07/04/93,World Cup,Qualifiers-Asia,2,1,1
+Taiwan,Iran,07/04/93,World Cup,Qualifiers-Asia,0,6,1
+Taiwan,Oman,07/07/93,World Cup,Qualifiers-Asia,1,7,1
+Syria,Iran,07/07/93,World Cup,Qualifiers-Asia,1,1,1
+Qatar,Indonesia,04/09/93,World Cup,Qualifiers-Asia,3,1,1
+North Korea,Vietnam,04/09/93,World Cup,Qualifiers-Asia,3,0,1
+North Korea,Singapore,04/11/93,World Cup,Qualifiers-Asia,2,1,1
+Qatar,Vietnam,04/11/93,World Cup,Qualifiers-Asia,4,0,1
+North Korea,Indonesia,04/13/93,World Cup,Qualifiers-Asia,4,0,1
+Vietnam,Singapore,04/13/93,World Cup,Qualifiers-Asia,2,3,1
+Qatar,Singapore,04/16/93,World Cup,Qualifiers-Asia,4,1,1
+Vietnam,Indonesia,04/16/93,World Cup,Qualifiers-Asia,1,0,1
+Indonesia,Singapore,04/18/93,World Cup,Qualifiers-Asia,0,2,1
+Qatar,North Korea,04/18/93,World Cup,Qualifiers-Asia,1,2,1
+Indonesia,Qatar,04/24/93,World Cup,Qualifiers-Asia,1,4,1
+Vietnam,North Korea,04/24/93,World Cup,Qualifiers-Asia,0,1,1
+Singapore,North Korea,04/26/93,World Cup,Qualifiers-Asia,1,3,1
+Vietnam,Qatar,04/26/93,World Cup,Qualifiers-Asia,0,4,1
+Indonesia,North Korea,04/28/93,World Cup,Qualifiers-Asia,1,2,1
+Singapore,Vietnam,04/28/93,World Cup,Qualifiers-Asia,1,0,1
+Singapore,Qatar,04/30/93,World Cup,Qualifiers-Asia,1,0,1
+Indonesia,Vietnam,04/30/93,World Cup,Qualifiers-Asia,2,1,1
+Singapore,Indonesia,05/02/93,World Cup,Qualifiers-Asia,2,1,1
+North Korea,Qatar,05/02/93,World Cup,Qualifiers-Asia,2,2,1
+Lebanon,India,05/07/93,World Cup,Qualifiers-Asia,2,2,1
+Hong Kong,Bahrain,05/07/93,World Cup,Qualifiers-Asia,2,1,1
+Bahrain,South Korea,05/09/93,World Cup,Qualifiers-Asia,0,0,1
+Lebanon,Hong Kong,05/09/93,World Cup,Qualifiers-Asia,2,2,1
+India,Hong Kong,05/11/93,World Cup,Qualifiers-Asia,1,2,1
+Lebanon,South Korea,05/11/93,World Cup,Qualifiers-Asia,0,1,1
+Lebanon,Bahrain,05/13/93,World Cup,Qualifiers-Asia,0,0,1
+India,South Korea,05/13/93,World Cup,Qualifiers-Asia,0,3,1
+Hong Kong,South Korea,05/15/93,World Cup,Qualifiers-Asia,0,3,1
+Bahrain,India,05/15/93,World Cup,Qualifiers-Asia,2,1,1
+South Korea,Hong Kong,06/05/93,World Cup,Qualifiers-Asia,4,1,1
+Bahrain,Lebanon,06/05/93,World Cup,Qualifiers-Asia,0,0,1
+India,Bahrain,06/07/93,World Cup,Qualifiers-Asia,0,3,1
+South Korea,Lebanon,06/07/93,World Cup,Qualifiers-Asia,2,0,1
+Hong Kong,Lebanon,06/09/93,World Cup,Qualifiers-Asia,1,2,1
+South Korea,India,06/09/93,World Cup,Qualifiers-Asia,7,0,1
+India,Lebanon,06/11/93,World Cup,Qualifiers-Asia,1,2,1
+Bahrain,Hong Kong,06/11/93,World Cup,Qualifiers-Asia,3,0,1
+South Korea,Bahrain,06/13/93,World Cup,Qualifiers-Asia,3,0,1
+Hong Kong,India,06/13/93,World Cup,Qualifiers-Asia,1,3,1
+Macau,Saudi Arabia,05/01/93,World Cup,Qualifiers-Asia,0,6,1
+Malaysia,Kuwait,05/01/93,World Cup,Qualifiers-Asia,1,1,1
+Macau,Kuwait,05/03/93,World Cup,Qualifiers-Asia,1,10,1
+Malaysia,Saudi Arabia,05/03/93,World Cup,Qualifiers-Asia,1,1,1
+Kuwait,Saudi Arabia,05/05/93,World Cup,Qualifiers-Asia,0,0,1
+Malaysia,Macau,05/05/93,World Cup,Qualifiers-Asia,9,0,1
+Kuwait,Malaysia,05/14/93,World Cup,Qualifiers-Asia,2,0,1
+Saudi Arabia,Macau,05/14/93,World Cup,Qualifiers-Asia,8,0,1
+Kuwait,Macau,05/16/93,World Cup,Qualifiers-Asia,8,0,1
+Saudi Arabia,Malaysia,05/16/93,World Cup,Qualifiers-Asia,3,0,1
+Macau,Malaysia,05/18/93,World Cup,Qualifiers-Asia,0,5,1
+Saudi Arabia,Kuwait,05/18/93,World Cup,Qualifiers-Asia,2,0,1
+Japan,Thailand,04/08/93,World Cup,Qualifiers-Asia,1,0,1
+Sri Lanka,United Arab Emirates,04/08/93,World Cup,Qualifiers-Asia,0,4,1
+Japan,Bangladesh,04/11/93,World Cup,Qualifiers-Asia,8,0,1
+Thailand,Sri Lanka,04/11/93,World Cup,Qualifiers-Asia,1,0,1
+Sri Lanka,Bangladesh,04/13/93,World Cup,Qualifiers-Asia,0,1,1
+Thailand,United Arab Emirates,04/13/93,World Cup,Qualifiers-Asia,0,1,1
+Japan,Sri Lanka,04/15/93,World Cup,Qualifiers-Asia,5,0,1
+Bangladesh,United Arab Emirates,04/15/93,World Cup,Qualifiers-Asia,0,1,1
+Japan,United Arab Emirates,04/18/93,World Cup,Qualifiers-Asia,2,0,1
+Thailand,Bangladesh,04/18/93,World Cup,Qualifiers-Asia,4,1,1
+Thailand,Japan,04/28/93,World Cup,Qualifiers-Asia,0,1,1
+United Arab Emirates,Sri Lanka,04/28/93,World Cup,Qualifiers-Asia,3,0,1
+Bangladesh,Japan,04/30/93,World Cup,Qualifiers-Asia,1,4,1
+United Arab Emirates,Thailand,04/30/93,World Cup,Qualifiers-Asia,2,1,1
+United Arab Emirates,Bangladesh,05/03/93,World Cup,Qualifiers-Asia,7,0,1
+Sri Lanka,Thailand,05/03/93,World Cup,Qualifiers-Asia,0,3,1
+Bangladesh,Thailand,05/05/93,World Cup,Qualifiers-Asia,1,4,1
+Sri Lanka,Japan,05/05/93,World Cup,Qualifiers-Asia,0,6,1
+Bangladesh,Sri Lanka,05/07/93,World Cup,Qualifiers-Asia,3,0,1
+United Arab Emirates,Japan,05/07/93,World Cup,Qualifiers-Asia,1,1,1
+North Korea,Iraq,10/15/93,World Cup,Qualifiers-Asia,3,2,1
+Saudi Arabia,Japan,10/15/93,World Cup,Qualifiers-Asia,0,0,1
+Iran,South Korea,10/16/93,World Cup,Qualifiers-Asia,0,3,1
+North Korea,Saudi Arabia,10/18/93,World Cup,Qualifiers-Asia,1,2,1
+Japan,Iran,10/18/93,World Cup,Qualifiers-Asia,1,2,1
+Iraq,South Korea,10/19/93,World Cup,Qualifiers-Asia,2,2,1
+North Korea,Japan,10/21/93,World Cup,Qualifiers-Asia,0,3,1
+Iraq,Iran,10/22/93,World Cup,Qualifiers-Asia,2,1,1
+South Korea,Saudi Arabia,10/22/93,World Cup,Qualifiers-Asia,1,1,1
+Iraq,Saudi Arabia,10/24/93,World Cup,Qualifiers-Asia,1,1,1
+Japan,South Korea,10/25/93,World Cup,Qualifiers-Asia,1,0,1
+Iran,North Korea,10/25/93,World Cup,Qualifiers-Asia,2,1,1
+South Korea,North Korea,10/28/93,World Cup,Qualifiers-Asia,3,0,1
+Saudi Arabia,Iran,10/28/93,World Cup,Qualifiers-Asia,4,3,1
+Iraq,Japan,10/28/93,World Cup,Qualifiers-Asia,2,2,1
