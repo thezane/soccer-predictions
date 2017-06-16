@@ -1,16 +1,31 @@
 HomeTeam,AwayTeam,Date,Contest,Type,HomeGoals,AwayGoals,HomeAdvantage
-Honduras,Nicaragua,01/13/17,Copa Centroamericana,Group,2,1,0
-Costa Rica,El Salvador,01/13/17,Copa Centroamericana,Group,0,0,0
-Panama,Belize,01/13/17,Copa Centroamericana,Group,0,0,1
-Belize,Costa Rica,01/15/17,Copa Centroamericana,Group,0,3,0
-El Salvador,Honduras,01/15/17,Copa Centroamericana,Group,1,2,0
-Panama,Nicaragua,01/15/17,Copa Centroamericana,Group,2,1,1
-El Salvador,Belize,01/17/17,Copa Centroamericana,Group,3,1,0
-Costa Rica,Nicaragua,01/17/17,Copa Centroamericana,Group,0,0,0
-Panama,Honduras,01/17/17,Copa Centroamericana,Group,0,1,1
-Nicaragua,Belize,01/20/17,Copa Centroamericana,Group,3,1,0
-Honduras,Costa Rica,01/20/17,Copa Centroamericana,Group,1,1,0
-Panama,El Salvador,01/20/17,Copa Centroamericana,Group,1,0,1
-Belize,Honduras,01/22/17,Copa Centroamericana,Group,0,1,0
-El Salvador,Nicaragua,01/22/17,Copa Centroamericana,Group,1,0,0
-Panama,Costa Rica,01/22/17,Copa Centroamericana,Group,1,0,1
+Haiti,Trinidad and Tobago,12/07/12,Caribbean Cup,Group,0,0,0
+Antigua and Barbuda,Dominican Republic,12/07/12,Caribbean Cup,Group,1,2,1
+Dominican Republic,Haiti,12/09/12,Caribbean Cup,Group,1,2,0
+Antigua and Barbuda,Trinidad and Tobago,12/09/12,Caribbean Cup,Group,2,0,1
+Trinidad and Tobago,Dominican Republic,12/11/12,Caribbean Cup,Group,2,1,0
+Antigua and Barbuda,Haiti,12/11/12,Caribbean Cup,Group,0,1,1
+Martinique,Cuba,12/08/12,Caribbean Cup,Group,1,0,0
+Jamaica,French Guiana,12/08/12,Caribbean Cup,Group,1,2,0
+Cuba,French Guiana,12/10/12,Caribbean Cup,Group,2,1,0
+Jamaica,Martinique,12/10/12,Caribbean Cup,Group,0,0,0
+French Guiana,Martinique,12/12/12,Caribbean Cup,Group,1,3,0
+Jamaica,Cuba,12/12/12,Caribbean Cup,Group,0,1,0
+Martinique,Trinidad and Tobago,12/14/12,Caribbean Cup,Knockout,1,1,0
+Haiti,Cuba,12/14/12,Caribbean Cup,Knockout,0,1,0
+Haiti,Martinique,12/16/12,Caribbean Cup,Knockout,1,0,0
+Cuba,Trinidad and Tobago,12/16/12,Caribbean Cup,Knockout,1,0,0
+Curacao,Trinidad and Tobago,11/11/14,Caribbean Cup,Group,2,3,0
+Cuba,French Guiana,11/11/14,Caribbean Cup,Group,1,1,0
+Trinidad and Tobago,French Guiana,11/13/14,Caribbean Cup,Group,4,2,0
+Curacao,Cuba,11/13/14,Caribbean Cup,Group,2,3,0
+French Guiana,Curacao,11/15/14,Caribbean Cup,Group,4,1,0
+Cuba,Trinidad and Tobago,11/15/14,Caribbean Cup,Group,0,0,0
+Haiti,Antigua and Barbuda,11/12/14,Caribbean Cup,Group,2,2,0
+Jamaica,Martinique,11/12/14,Caribbean Cup,Group,1,1,1
+Martinique,Haiti,11/14/14,Caribbean Cup,Group,0,3,0
+Jamaica,Antigua and Barbuda,11/14/14,Caribbean Cup,Group,3,0,1
+Antigua and Barbuda,Martinique,11/16/14,Caribbean Cup,Group,0,2,0
+Jamaica,Haiti,11/16/14,Caribbean Cup,Group,2,0,1
+Cuba,Haiti,11/18/14,Caribbean Cup,Knockout,1,2,0
+Jamaica,Trinidad and Tobago,11/18/14,Caribbean Cup,Knockout,0,0,1

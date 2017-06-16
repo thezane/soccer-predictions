@@ -28,7 +28,7 @@ parseData <- function(filename) {
       data[j, "HomeTeam"] <- teams[1]
       data[j, "AwayTeam"] <- teams[2]
       data[j, "Date"] <- date
-      data[j, "Contest"] <- "Copa Centroamericana"
+      data[j, "Contest"] <- "Caribbean Cup"
       data[j, "Type"] <- "Group"
       data[j, "HomeGoals"] <- goals[1]
       data[j, "AwayGoals"] <- goals[2]
@@ -102,11 +102,13 @@ constructTeamHash <- function() {
   h["Liechtenst."] <- "Liechtenstein"
   h["Macao"] <- "Macau"
   h["N. Ireland"] <- "Northern Ireland"
+  h["Saint-Martin"] <- "Saint Martin"
   h["Sierre Leone"] <- "Sierra Leone"
   h["Saint Vincent"] <- "Saint Vincent and the Grenadines"
   h["So Tom e Prncipe"] <- "Sao Tome and Principe"
   h["So Tom/Prncipe"] <- "Sao Tome and Principe"
   h["St Kitts and Nevis"] <- "Saint Kitts and Nevis"
+  h["St. Vincent & Grenadines"] <- "Saint Vincent and the Grenadines"
   h["St. Kitts/Nevis"] <- "Saint Kitts and Nevis"
   h["Surinam"] <- "Suriname'"
   h["Trinidad/Tobago"] <- "Trinidad and Tobago"
