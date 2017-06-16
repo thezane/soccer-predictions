@@ -650,6 +650,7 @@ Russia,Montenegro,10/12/15,European Championship,Qualifiers,2,0,1
 San Marino,Slovenia,10/12/15,European Championship,Qualifiers,0,2,1
 Sweden,Moldova,10/12/15,European Championship,Qualifiers,2,0,1
 Ukraine,Spain,10/12/15,European Championship,Qualifiers,0,1,1
+Denmark,France,10/11/15,European Championship,Friendlies,1,2,1
 Armenia,Albania,10/11/15,European Championship,Qualifiers,0,3,1
 Faroe Islands,Romania,10/11/15,European Championship,Qualifiers,0,3,1
 Finland,Northern Ireland,10/11/15,European Championship,Qualifiers,1,1,1
@@ -658,7 +659,6 @@ Gibraltar,Scotland,10/11/15,European Championship,Qualifiers,0,6,1
 Greece,Hungary,10/11/15,European Championship,Qualifiers,4,3,1
 Poland,Republic of Ireland,10/11/15,European Championship,Qualifiers,2,1,1
 Serbia,Portugal,10/11/15,European Championship,Qualifiers,1,2,1
-Denmark,France,10/11/15,Friendlies,Friendlies,1,2,1
 Kenya,Mauritius,10/11/15,World Cup,Qualifiers-Africa,0,0,1
 Malawi,Tanzania,10/11/15,World Cup,Qualifiers-Africa,1,0,1
 United States,Mexico,10/10/15,Confederations Cup,Qualifiers,2,3,1
@@ -1376,6 +1376,7 @@ Oman,Jordan,01/31/14,Asian Cup,Qualifiers,0,0,1
 South Korea,Costa Rica,11/25/13,Asian Cup,Friendlies,1,0,0
 New Zealand,Mexico,11/20/13,World Cup,Qualifiers-Playoffs,2,4,1
 Uruguay,Jordan,11/20/13,World Cup,Qualifiers-Playoffs,0,0,1
+Australia,Costa Rica,11/19/13,Asian Cup,Friendlies,1,0,1
 Belgium,Japan,11/19/13,Asian Cup,Friendlies,2,3,1
 Russia,South Korea,11/19/13,Asian Cup,Friendlies,2,1,0
 Bahrain,Yemen,11/19/13,Asian Cup,Qualifiers,2,0,1
@@ -1387,7 +1388,6 @@ Lebanon,Iran,11/19/13,Asian Cup,Qualifiers,1,4,1
 Malaysia,Qatar,11/19/13,Asian Cup,Qualifiers,0,1,1
 Syria,Oman,11/19/13,Asian Cup,Qualifiers,0,1,1
 United Arab Emirates,Vietnam,11/19/13,Asian Cup,Qualifiers,5,0,1
-Australia,Costa Rica,11/19/13,Friendlies,Friendlies,1,0,1
 Brazil,Chile,11/19/13,World Cup,Friendlies,2,1,0
 Algeria,Burkina Faso,11/19/13,World Cup,Qualifiers-Africa,1,0,1
 Egypt,Ghana,11/19/13,World Cup,Qualifiers-Africa,2,1,1
@@ -2240,11 +2240,11 @@ Samoa,Tahiti,06/01/12,OFC Nations Cup,Group,1,10,0
 Vanuatu,New Caledonia,06/01/12,OFC Nations Cup,Group,2,5,0
 Egypt,Mozambique,06/01/12,World Cup,Qualifiers-Africa,2,0,1
 Ghana,Lesotho,06/01/12,World Cup,Qualifiers-Africa,7,0,1
-United States,Brazil,05/30/12,Friendlies,Friendlies,1,4,1
-Ukraine,Estonia,05/28/12,Friendlies,Friendlies,4,0,1
-Brazil,Denmark,05/26/12,Friendlies,Friendlies,3,1,0
-Poland,Slovakia,05/26/12,Friendlies,Friendlies,1,0,1
-Poland,Latvia,05/22/12,Friendlies,Friendlies,1,0,1
+United States,Brazil,05/30/12,World Cup,Friendlies,1,4,1
+Ukraine,Estonia,05/28/12,European Championship,Friendlies,4,0,1
+Poland,Slovakia,05/26/12,European Championship,Friendlies,1,0,1
+Brazil,Denmark,05/26/12,World Cup,Friendlies,3,1,0
+Poland,Latvia,05/22/12,European Championship,Friendlies,1,0,1
 Burundi,Zimbabwe,02/29/12,Africa Cup of Nations,Qualifiers,2,1,1
 Chad,Malawi,02/29/12,Africa Cup of Nations,Qualifiers,3,2,1
 Ethiopia,Benin,02/29/12,Africa Cup of Nations,Qualifiers,0,0,1
@@ -6503,13 +6503,13 @@ Switzerland,Russia,06/07/03,European Championship,Qualifiers,2,2,1
 Ukraine,Armenia,06/07/03,European Championship,Qualifiers,4,3,1
 Mauritania,Kenya,06/06/03,Africa Cup of Nations,Qualifiers,0,0,1
 Republic of the Congo,Central African Republic,05/04/03,Africa Cup of Nations,Qualifiers,2,1,1
+Tunisia,Senegal,04/30/03,Africa Cup of Nations,Friendlies,1,0,1
+Netherlands,Portugal,04/30/03,European Championship,Friendlies,1,1,1
 Andorra,Estonia,04/30/03,European Championship,Qualifiers,0,2,1
 Georgia,Russia,04/30/03,European Championship,Qualifiers,1,0,1
 Israel,Cyprus,04/30/03,European Championship,Qualifiers,2,0,1
 Latvia,San Marino,04/30/03,European Championship,Qualifiers,3,0,1
 Malta,Slovenia,04/30/03,European Championship,Qualifiers,1,3,1
-Netherlands,Portugal,04/30/03,Friendlies,Friendlies,1,1,1
-Tunisia,Senegal,04/30/03,Friendlies,Friendlies,1,0,1
 Bhutan,Mongolia,04/27/03,Asian Cup,Qualifiers,0,0,1
 Honduras,Martinique,04/27/03,CONCACAF Gold Cup,Qualifiers,4,2,1
 Martinique,Honduras,04/27/03,CONCACAF Gold Cup,Qualifiers,2,4,1
@@ -7726,7 +7726,7 @@ Jordan,Saudi Arabia,10/02/00,Asian Cup,Friendlies,1,0,1
 Saudi Arabia,United Arab Emirates,09/28/00,Asian Cup,Friendlies,6,1,1
 Saudi Arabia,Syria,09/26/00,Asian Cup,Friendlies,3,0,1
 Senegal,Togo,09/24/00,Africa Cup of Nations,Qualifiers,0,0,1
-Saudi Arabia,Syria,09/24/00,Friendlies,Friendlies,2,1,1
+Saudi Arabia,Syria,09/24/00,Asian Cup,Friendlies,2,1,1
 Libya,Sudan,09/10/00,Africa Cup of Nations,Qualifiers,1,0,1
 Lebanon,United Arab Emirates,09/10/00,Asian Cup,Friendlies,2,2,1
 Lebanon,United Arab Emirates,09/07/00,Asian Cup,Friendlies,0,1,1
@@ -7869,9 +7869,9 @@ Australia,New Zealand,06/28/00,OFC Nations Cup,Knockout,2,0,0
 Solomon Islands,Vanuatu,06/28/00,OFC Nations Cup,Knockout,2,1,0
 Brazil,Uruguay,06/28/00,World Cup,Qualifiers-South America,1,1,1
 Venezuela,Bolivia,06/28/00,World Cup,Qualifiers-South America,4,2,1
+Lebanon,Kuwait,06/25/00,Asian Cup,Friendlies,3,1,1
 Netherlands,Serbia and Montenegro,06/25/00,European Championship,Knockout,6,1,1
 Spain,France,06/25/00,European Championship,Knockout,1,2,0
-Lebanon,Kuwait,06/25/00,Friendlies,Friendlies,3,1,1
 Australia,Vanuatu,06/25/00,OFC Nations Cup,Knockout,1,0,0
 New Zealand,Solomon Islands,06/25/00,OFC Nations Cup,Knockout,2,0,0
 Italy,Romania,06/24/00,European Championship,Knockout,2,0,0
@@ -9368,7 +9368,7 @@ United Arab Emirates,Uzbekistan,11/22/96,Asian Cup,Friendlies,2,0,1
 United Arab Emirates,Uzbekistan,11/19/96,Asian Cup,Friendlies,4,2,1
 Honduras,Saint Vincent and the Grenadines,11/17/96,World Cup,Qualifiers-North America,11,3,1
 Jamaica,Mexico,11/17/96,World Cup,Qualifiers-North America,1,0,1
-United Arab Emirates,Malta,11/15/96,Friendlies,Friendlies,0,0,1
+United Arab Emirates,Malta,11/15/96,Asian Cup,Friendlies,0,0,1
 Tonga,Samoa,11/15/96,World Cup,Qualifiers-Oceania,1,0,1
 United Arab Emirates,Malta,11/13/96,Asian Cup,Friendlies,1,1,1
 Spain,Slovakia,11/13/96,World Cup,Qualifiers-Europe,4,1,1
@@ -9522,7 +9522,7 @@ Namibia,Botswana,08/25/96,Africa Cup of Nations,Qualifiers,6,0,1
 Togo,Republic of the Congo,08/25/96,Africa Cup of Nations,Qualifiers,1,0,1
 Japan,Uruguay,08/25/96,Asian Cup,Friendlies,5,3,1
 Seychelles,Mauritius,08/24/96,Africa Cup of Nations,Qualifiers,1,1,1
-United Arab Emirates,Belarus,08/20/96,Friendlies,Friendlies,1,0,0
+United Arab Emirates,Belarus,08/20/96,Asian Cup,Friendlies,1,0,0
 Hungary,United Arab Emirates,08/14/96,Asian Cup,Friendlies,3,1,1
 Pakistan,Iraq,08/13/96,Asian Cup,Qualifiers,0,3,1
 Botswana,Namibia,08/11/96,Africa Cup of Nations,Qualifiers,0,0,1
@@ -9702,10 +9702,10 @@ Dominica,Antigua and Barbuda,03/10/96,World Cup,Qualifiers-North America,3,3,1
 Malaysia,India,03/06/96,Asian Cup,Qualifiers,5,2,1
 Indonesia,India,03/04/96,Asian Cup,Qualifiers,7,1,1
 Malaysia,Indonesia,03/02/96,Asian Cup,Qualifiers,0,0,1
-Japan,Sweden,02/22/96,Friendlies,Friendlies,2,2,0
-Japan,Poland,02/19/96,Friendlies,Friendlies,5,0,0
-Australia,Japan,02/14/96,Friendlies,Friendlies,3,0,1
-Australia,Japan,02/10/96,Friendlies,Friendlies,1,4,1
+Japan,Sweden,02/22/96,Asian Cup,Friendlies,2,2,0
+Japan,Poland,02/19/96,Asian Cup,Friendlies,5,0,0
+Australia,Japan,02/14/96,Asian Cup,Friendlies,3,0,1
+Australia,Japan,02/10/96,Asian Cup,Friendlies,1,4,1
 Macau,Philippines,02/04/96,Asian Cup,Qualifiers,5,1,1
 Yemen,Saudi Arabia,02/04/96,Asian Cup,Qualifiers,0,1,1
 Ghana,Zambia,02/03/96,Africa Cup of Nations,Knockout,0,1,0
@@ -10293,21 +10293,21 @@ Nigeria,Gabon,03/26/94,Africa Cup of Nations,Group,3,0,0
 Tunisia,Mali,03/26/94,Africa Cup of Nations,Group,0,2,1
 United States,Bolivia,03/26/94,World Cup,Friendlies,2,2,1
 Tunisia,Niger,03/17/94,Africa Cup of Nations,Friendlies,4,2,1
-United States,South Korea,03/12/94,Friendlies,Friendlies,1,1,1
-United States,Sweden,02/20/94,Friendlies,Friendlies,1,3,1
-United States,Bolivia,02/18/94,Friendlies,Friendlies,1,1,1
-Romania,United States,02/13/94,Friendlies,Friendlies,2,1,0
-Georgia,Tunisia,02/12/94,Friendlies,Friendlies,2,0,0
-Slovenia,Tunisia,02/10/94,Friendlies,Friendlies,2,2,0
-Malta,Tunisia,02/08/94,Friendlies,Friendlies,1,1,1
-United States,Russia,01/29/94,Friendlies,Friendlies,1,1,1
-United States,Switzerland,01/22/94,Friendlies,Friendlies,1,1,1
-Tunisia,Netherlands,01/19/94,Friendlies,Friendlies,2,2,1
-Guinea,Ivory Coast,01/18/94,Friendlies,Friendlies,3,0,1
-United States,Norway,01/15/94,Friendlies,Friendlies,2,1,1
-Ghana,Tunisia,12/31/93,Friendlies,Friendlies,1,1,1
-Mali,Ivory Coast,12/19/93,Friendlies,Friendlies,0,1,1
-United States,Germany,12/18/93,Friendlies,Friendlies,0,3,1
+United States,South Korea,03/12/94,World Cup,Friendlies,1,1,1
+United States,Sweden,02/20/94,World Cup,Friendlies,1,3,1
+United States,Bolivia,02/18/94,World Cup,Friendlies,1,1,1
+Romania,United States,02/13/94,World Cup,Friendlies,2,1,0
+Georgia,Tunisia,02/12/94,Africa Cup of Nations,Friendlies,2,0,0
+Slovenia,Tunisia,02/10/94,Africa Cup of Nations,Friendlies,2,2,0
+Malta,Tunisia,02/08/94,Africa Cup of Nations,Friendlies,1,1,1
+United States,Russia,01/29/94,World Cup,Friendlies,1,1,1
+United States,Switzerland,01/22/94,World Cup,Friendlies,1,1,1
+Tunisia,Netherlands,01/19/94,Africa Cup of Nations,Friendlies,2,2,1
+Guinea,Ivory Coast,01/18/94,Africa Cup of Nations,Friendlies,3,0,1
+United States,Norway,01/15/94,World Cup,Friendlies,2,1,1
+Ghana,Tunisia,12/31/93,Africa Cup of Nations,Friendlies,1,1,1
+Mali,Ivory Coast,12/19/93,Africa Cup of Nations,Friendlies,0,1,1
+United States,Germany,12/18/93,World Cup,Friendlies,0,3,1
 France,Bulgaria,11/17/93,World Cup,Qualifiers-Europe,1,2,1
 Italy,Portugal,11/17/93,World Cup,Qualifiers-Europe,1,0,1
 Malta,Scotland,11/17/93,World Cup,Qualifiers-Europe,0,2,1
@@ -10449,7 +10449,7 @@ Mexico,Martinique,07/11/93,CONCACAF Gold Cup,Group,9,0,1
 Sudan,Ethiopia,07/10/93,Africa Cup of Nations,Qualifiers,1,0,1
 Honduras,Panama,07/10/93,CONCACAF Gold Cup,Group,5,1,0
 United States,Jamaica,07/10/93,CONCACAF Gold Cup,Group,1,0,1
-Ivory Coast,Niger,07/07/93,Friendlies,Friendlies,3,2,1
+Ivory Coast,Niger,07/07/93,Africa Cup of Nations,Friendlies,3,2,1
 Syria,Iran,07/07/93,World Cup,Qualifiers-Asia,1,1,1
 Taiwan,Oman,07/07/93,World Cup,Qualifiers-Asia,1,7,1
 Argentina,Mexico,07/04/93,Copa America,Knockout,2,1,0
