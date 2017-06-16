@@ -1009,7 +1009,7 @@ Iran,United Arab Emirates,01/19/15,Asian Cup,Group,1,0,0
 Qatar,Bahrain,01/19/15,Asian Cup,Group,1,2,0
 Tunisia,Cape Verde,01/18/15,Africa Cup of Nations,Group,1,1,0
 Zambia,Democratic Republic of the Congo,01/18/15,Africa Cup of Nations,Group,1,1,0
-China,South Korea,01/18/15,Asian Cup,Group,2,1,0
+China,North Korea,01/18/15,Asian Cup,Group,2,1,0
 Uzbekistan,Saudi Arabia,01/18/15,Asian Cup,Group,3,1,0
 Burkina Faso,Gabon,01/17/15,Africa Cup of Nations,Group,0,2,0
 Equatorial Guinea,Republic of the Congo,01/17/15,Africa Cup of Nations,Group,1,1,1
@@ -1020,7 +1020,7 @@ Palestine,Jordan,01/16/15,Asian Cup,Group,1,5,0
 Bahrain,United Arab Emirates,01/15/15,Asian Cup,Group,1,2,0
 Qatar,Iran,01/15/15,Asian Cup,Group,0,1,0
 China,Uzbekistan,01/14/15,Asian Cup,Group,2,1,0
-South Korea,Saudi Arabia,01/14/15,Asian Cup,Group,1,4,0
+North Korea,Saudi Arabia,01/14/15,Asian Cup,Group,1,4,0
 Australia,Oman,01/13/15,Asian Cup,Group,4,0,1
 Kuwait,South Korea,01/13/15,Asian Cup,Group,0,1,0
 Japan,Palestine,01/12/15,Asian Cup,Group,4,0,0
@@ -1029,13 +1029,13 @@ Iran,Bahrain,01/11/15,Asian Cup,Group,2,0,0
 United Arab Emirates,Qatar,01/11/15,Asian Cup,Group,4,1,0
 Saudi Arabia,China,01/10/15,Asian Cup,Group,0,1,0
 South Korea,Oman,01/10/15,Asian Cup,Group,1,0,0
-Uzbekistan,South Korea,01/10/15,Asian Cup,Group,1,0,0
+Uzbekistan,North Korea,01/10/15,Asian Cup,Group,1,0,0
 Australia,Kuwait,01/09/15,Asian Cup,Group,4,1,1
 Cape Verde,Equatorial Guinea,01/07/15,Africa Cup of Nations,Friendlies,1,1,0
 South Korea,Saudi Arabia,01/04/15,Asian Cup,Friendlies,2,0,0
 China,Palestine,12/21/14,Asian Cup,Friendlies,0,0,1
 Uzbekistan,Palestine,12/13/14,Asian Cup,Friendlies,1,0,0
-Mexico,South Korea,11/29/14,Asian Cup,Friendlies,4,0,0
+Mexico,North Korea,11/29/14,Asian Cup,Friendlies,4,0,0
 Iran,South Korea,11/18/14,Asian Cup,Friendlies,1,0,1
 Japan,Australia,11/18/14,Asian Cup,Friendlies,2,1,1
 Cuba,Haiti,11/18/14,Caribbean Cup,Knockout,1,2,0
@@ -1084,10 +1084,10 @@ Cuba,French Guiana,11/11/14,Caribbean Cup,Group,1,1,0
 Curacao,Trinidad and Tobago,11/11/14,Caribbean Cup,Group,2,3,0
 Armenia,France,11/11/14,European Championship,Friendlies,0,3,1
 Vietnam,Palestine,11/09/14,Asian Cup,Friendlies,1,3,1
-Qatar,South Korea,11/06/14,Asian Cup,Friendlies,3,1,1
+Qatar,North Korea,11/06/14,Asian Cup,Friendlies,3,1,1
 Saudi Arabia,Palestine,11/06/14,Asian Cup,Friendlies,2,0,1
-Bahrain,South Korea,11/02/14,Asian Cup,Friendlies,2,2,1
-Kuwait,South Korea,10/31/14,Asian Cup,Friendlies,1,0,1
+Bahrain,North Korea,11/02/14,Asian Cup,Friendlies,2,2,1
+Kuwait,North Korea,10/31/14,Asian Cup,Friendlies,1,0,1
 Brazil,Japan,10/14/14,Asian Cup,Friendlies,4,0,0
 Qatar,Australia,10/14/14,Asian Cup,Friendlies,1,0,1
 South Korea,Costa Rica,10/14/14,Asian Cup,Friendlies,1,3,1
@@ -1369,11 +1369,11 @@ Vietnam,Hong Kong,03/05/14,Asian Cup,Qualifiers,3,1,1
 Yemen,Malaysia,03/05/14,Asian Cup,Qualifiers,1,2,1
 South Africa,Brazil,03/05/14,World Cup,Friendlies,0,5,1
 Iran,Kuwait,03/03/14,Asian Cup,Qualifiers,3,2,1
-Iraq,South Korea,02/21/14,Asian Cup,Friendlies,2,0,0
+Iraq,North Korea,02/21/14,Asian Cup,Friendlies,2,0,0
 Singapore,Jordan,02/04/14,Asian Cup,Qualifiers,1,3,1
 United States,South Korea,02/01/14,Asian Cup,Friendlies,2,0,1
 Oman,Jordan,01/31/14,Asian Cup,Qualifiers,0,0,1
-South Korea,Costa Rica,11/25/13,Asian Cup,Friendlies,1,0,0
+South Korea,Costa Rica,01/25/14,Asian Cup,Friendlies,1,0,0
 New Zealand,Mexico,11/20/13,World Cup,Qualifiers-Playoffs,2,4,1
 Uruguay,Jordan,11/20/13,World Cup,Qualifiers-Playoffs,0,0,1
 Australia,Costa Rica,11/19/13,Asian Cup,Friendlies,1,0,1
@@ -1665,7 +1665,7 @@ Mexico,Costa Rica,06/12/13,World Cup,Qualifiers-North America,0,0,1
 United States,Panama,06/12/13,World Cup,Qualifiers-North America,2,0,1
 Chile,Bolivia,06/12/13,World Cup,Qualifiers-South America,3,1,1
 Venezuela,Uruguay,06/12/13,World Cup,Qualifiers-South America,0,1,1
-Qatar,South Korea,06/11/13,Asian Cup,Friendlies,0,0,1
+Qatar,North Korea,06/11/13,Asian Cup,Friendlies,0,0,1
 Australia,Jordan,06/11/13,World Cup,Qualifiers-Asia,4,0,1
 Iran,Lebanon,06/11/13,World Cup,Qualifiers-Asia,4,0,1
 Iraq,Japan,06/11/13,World Cup,Qualifiers-Asia,0,1,1
@@ -1833,7 +1833,7 @@ India,Palestine,02/06/13,Africa Cup of Nations,Friendlies,2,4,1
 Japan,Latvia,02/06/13,Africa Cup of Nations,Friendlies,3,0,1
 Romania,Australia,02/06/13,Africa Cup of Nations,Friendlies,3,2,0
 Romania,Australia,02/06/13,Africa Cup of Nations,Friendlies,3,2,1
-South Korea,Laos,02/06/13,Africa Cup of Nations,Friendlies,1,0,0
+North Korea,Laos,02/06/13,Asian Cup,Friendlies,1,0,0
 Burkina Faso,Ghana,02/06/13,Africa Cup of Nations,Knockout,1,1,0
 Mali,Nigeria,02/06/13,Africa Cup of Nations,Knockout,1,4,0
 Iran,Lebanon,02/06/13,Asian Cup,Qualifiers,5,0,1
@@ -2265,7 +2265,7 @@ Iraq,Singapore,02/29/12,World Cup,Qualifiers-Asia,7,1,1
 Japan,Uzbekistan,02/29/12,World Cup,Qualifiers-Asia,0,1,1
 Oman,Thailand,02/29/12,World Cup,Qualifiers-Asia,2,0,1
 South Korea,Kuwait,02/29/12,World Cup,Qualifiers-Asia,2,0,1
-Tajikistan,South Korea,02/29/12,World Cup,Qualifiers-Asia,1,1,1
+Tajikistan,North Korea,02/29/12,World Cup,Qualifiers-Asia,1,1,1
 United Arab Emirates,Lebanon,02/29/12,World Cup,Qualifiers-Asia,4,2,1
 Brazil,Bosnia-Herzegovina,02/28/12,World Cup,Friendlies,2,1,0
 Zambia,Ivory Coast,02/12/12,Africa Cup of Nations,Knockout,0,0,0
@@ -2336,7 +2336,7 @@ Lebanon,South Korea,11/15/11,World Cup,Qualifiers-Asia,2,1,1
 Qatar,Bahrain,11/15/11,World Cup,Qualifiers-Asia,0,0,1
 Saudi Arabia,Oman,11/15/11,World Cup,Qualifiers-Asia,0,0,1
 Singapore,China,11/15/11,World Cup,Qualifiers-Asia,0,4,1
-South Korea,Japan,11/15/11,World Cup,Qualifiers-Asia,1,0,1
+North Korea,Japan,11/15/11,World Cup,Qualifiers-Asia,1,0,1
 Thailand,Australia,11/15/11,World Cup,Qualifiers-Asia,0,1,1
 Uzbekistan,Tajikistan,11/15/11,World Cup,Qualifiers-Asia,3,0,1
 Barbados,Bermuda,11/15/11,World Cup,Qualifiers-North America,1,2,1
@@ -2381,7 +2381,7 @@ Qatar,Indonesia,11/11/11,World Cup,Qualifiers-Asia,4,0,1
 Saudi Arabia,Thailand,11/11/11,World Cup,Qualifiers-Asia,3,0,1
 Tajikistan,Japan,11/11/11,World Cup,Qualifiers-Asia,0,4,1
 United Arab Emirates,South Korea,11/11/11,World Cup,Qualifiers-Asia,0,2,1
-Uzbekistan,South Korea,11/11/11,World Cup,Qualifiers-Asia,1,0,1
+Uzbekistan,North Korea,11/11/11,World Cup,Qualifiers-Asia,1,0,1
 Belize,Saint Vincent and the Grenadines,11/11/11,World Cup,Qualifiers-North America,1,1,1
 Bermuda,Barbados,11/11/11,World Cup,Qualifiers-North America,2,1,1
 Dominican Republic,Cayman Islands,11/11/11,World Cup,Qualifiers-North America,4,0,1
@@ -2536,7 +2536,7 @@ Lebanon,United Arab Emirates,09/06/11,World Cup,Qualifiers-Asia,3,1,1
 Qatar,Iran,09/06/11,World Cup,Qualifiers-Asia,1,1,1
 Saudi Arabia,Australia,09/06/11,World Cup,Qualifiers-Asia,1,3,1
 Singapore,Iraq,09/06/11,World Cup,Qualifiers-Asia,0,2,1
-South Korea,Tajikistan,09/06/11,World Cup,Qualifiers-Asia,1,0,1
+North Korea,Tajikistan,09/06/11,World Cup,Qualifiers-Asia,1,0,1
 Thailand,Oman,09/06/11,World Cup,Qualifiers-Asia,3,0,1
 Uzbekistan,Japan,09/06/11,World Cup,Qualifiers-Asia,1,1,1
 Barbados,Trinidad and Tobago,09/06/11,World Cup,Qualifiers-North America,0,2,1
@@ -2598,7 +2598,7 @@ Bahrain,Qatar,09/02/11,World Cup,Qualifiers-Asia,0,0,1
 China,Singapore,09/02/11,World Cup,Qualifiers-Asia,2,1,1
 Iran,Indonesia,09/02/11,World Cup,Qualifiers-Asia,3,0,1
 Iraq,Jordan,09/02/11,World Cup,Qualifiers-Asia,0,2,1
-Japan,South Korea,09/02/11,World Cup,Qualifiers-Asia,1,0,1
+Japan,North Korea,09/02/11,World Cup,Qualifiers-Asia,1,0,1
 Oman,Saudi Arabia,09/02/11,World Cup,Qualifiers-Asia,0,0,1
 South Korea,Lebanon,09/02/11,World Cup,Qualifiers-Asia,6,0,1
 Tajikistan,Uzbekistan,09/02/11,World Cup,Qualifiers-Asia,0,1,1
@@ -2836,7 +2836,7 @@ Honduras,El Salvador,01/21/11,Copa Centroamericana,Knockout,2,0,0
 Nicaragua,Guatemala,01/21/11,Copa Centroamericana,Knockout,1,2,0
 Panama,Costa Rica,01/21/11,Copa Centroamericana,Knockout,1,1,1
 Australia,Bahrain,01/18/11,Asian Cup,Group,1,0,0
-Iraq,South Korea,01/18/11,Asian Cup,Group,1,0,0
+Iraq,North Korea,01/18/11,Asian Cup,Group,1,0,0
 South Korea,India,01/18/11,Asian Cup,Group,4,1,0
 United Arab Emirates,Iran,01/18/11,Asian Cup,Group,0,3,0
 Honduras,Guatemala,01/18/11,Copa Centroamericana,Group,3,1,0
@@ -2849,7 +2849,7 @@ Qatar,Kuwait,01/16/11,Asian Cup,Group,3,0,1
 Belize,El Salvador,01/16/11,Copa Centroamericana,Group,2,5,0
 Guatemala,Costa Rica,01/16/11,Copa Centroamericana,Group,0,2,0
 Panama,Nicaragua,01/16/11,Copa Centroamericana,Group,2,0,1
-Iran,South Korea,01/15/11,Asian Cup,Group,1,0,0
+Iran,North Korea,01/15/11,Asian Cup,Group,1,0,0
 United Arab Emirates,Iraq,01/15/11,Asian Cup,Group,0,1,0
 Australia,South Korea,01/14/11,Asian Cup,Group,1,1,0
 Bahrain,India,01/14/11,Asian Cup,Group,5,2,0
@@ -2861,7 +2861,7 @@ Syria,Japan,01/13/11,Asian Cup,Group,1,2,0
 Qatar,China,01/12/11,Asian Cup,Group,2,0,1
 Uzbekistan,Kuwait,01/12/11,Asian Cup,Group,2,1,0
 Iraq,Iran,01/11/11,Asian Cup,Group,1,2,0
-South Korea,United Arab Emirates,01/11/11,Asian Cup,Group,0,0,0
+North Korea,United Arab Emirates,01/11/11,Asian Cup,Group,0,0,0
 India,Australia,01/10/11,Asian Cup,Group,0,4,0
 South Korea,Bahrain,01/10/11,Asian Cup,Group,2,1,0
 Japan,Jordan,01/09/11,Asian Cup,Group,1,1,0
@@ -2871,7 +2871,7 @@ Qatar,Uzbekistan,01/07/11,Asian Cup,Group,0,2,1
 Saudi Arabia,Angola,01/04/11,Asian Cup,Friendlies,0,0,1
 China,Iraq,01/02/11,Asian Cup,Friendlies,3,2,0
 Bahrain,Saudi Arabia,12/31/10,Asian Cup,Friendlies,0,1,1
-Qatar,South Korea,12/31/10,Asian Cup,Friendlies,0,1,1
+Qatar,North Korea,12/31/10,Asian Cup,Friendlies,0,1,1
 South Korea,United Arab Emirates,12/30/10,Asian Cup,Friendlies,1,0,0
 Qatar,Iran,12/28/10,Asian Cup,Friendlies,0,0,1
 Saudi Arabia,Iraq,12/28/10,Asian Cup,Friendlies,0,1,1
@@ -3116,7 +3116,7 @@ United States,Ghana,06/26/10,World Cup,Knockout,1,2,0
 Uruguay,South Korea,06/26/10,World Cup,Knockout,2,1,0
 Chile,Spain,06/25/10,World Cup,Group,1,2,0
 Portugal,Brazil,06/25/10,World Cup,Group,0,0,0
-South Korea,Ivory Coast,06/25/10,World Cup,Group,0,3,0
+North Korea,Ivory Coast,06/25/10,World Cup,Group,0,3,0
 Switzerland,Honduras,06/25/10,World Cup,Group,0,0,0
 Cameroon,Netherlands,06/24/10,World Cup,Group,1,2,0
 Denmark,Japan,06/24/10,World Cup,Group,1,3,0
@@ -3131,7 +3131,7 @@ Mexico,Uruguay,06/22/10,World Cup,Group,0,1,0
 Nigeria,South Korea,06/22/10,World Cup,Group,2,2,0
 South Africa,France,06/22/10,World Cup,Group,2,1,1
 Chile,Switzerland,06/21/10,World Cup,Group,1,0,0
-Portugal,South Korea,06/21/10,World Cup,Group,7,0,0
+Portugal,North Korea,06/21/10,World Cup,Group,7,0,0
 Spain,Honduras,06/21/10,World Cup,Group,2,0,0
 Brazil,Ivory Coast,06/20/10,World Cup,Group,3,1,0
 Italy,New Zealand,06/20/10,World Cup,Group,1,1,0
@@ -3148,7 +3148,7 @@ Greece,Nigeria,06/17/10,World Cup,Group,2,1,0
 Honduras,Chile,06/16/10,World Cup,Group,0,1,0
 South Africa,Uruguay,06/16/10,World Cup,Group,0,3,1
 Spain,Switzerland,06/16/10,World Cup,Group,0,1,0
-Brazil,South Korea,06/15/10,World Cup,Group,2,1,0
+Brazil,North Korea,06/15/10,World Cup,Group,2,1,0
 Ivory Coast,Portugal,06/15/10,World Cup,Group,0,0,0
 New Zealand,Slovakia,06/15/10,World Cup,Group,1,1,0
 Italy,Paraguay,06/14/10,World Cup,Group,1,1,0
@@ -3223,7 +3223,7 @@ Thailand,Jordan,01/06/10,Asian Cup,Qualifiers,0,0,1
 United Arab Emirates,Malaysia,01/06/10,Asian Cup,Qualifiers,1,0,1
 Yemen,Japan,01/06/10,Asian Cup,Qualifiers,2,3,1
 Qatar,Mali,01/02/10,Asian Cup,Friendlies,0,0,1
-Qatar,South Korea,12/30/09,Asian Cup,Friendlies,0,1,1
+Qatar,North Korea,12/30/09,Asian Cup,Friendlies,0,1,1
 Qatar,Iran,12/28/09,Asian Cup,Friendlies,3,2,1
 China,Lebanon,11/22/09,Asian Cup,Qualifiers,1,0,1
 Jordan,Iran,11/22/09,Asian Cup,Qualifiers,1,0,1
@@ -3468,7 +3468,7 @@ South Africa,New Zealand,06/17/09,Confederations Cup,Group,2,0,1
 Spain,Iraq,06/17/09,Confederations Cup,Group,1,0,0
 Australia,Japan,06/17/09,World Cup,Qualifiers-Asia,2,1,1
 Bahrain,Uzbekistan,06/17/09,World Cup,Qualifiers-Asia,1,0,1
-Saudi Arabia,South Korea,06/17/09,World Cup,Qualifiers-Asia,0,0,1
+Saudi Arabia,North Korea,06/17/09,World Cup,Qualifiers-Asia,0,0,1
 South Korea,Iran,06/17/09,World Cup,Qualifiers-Asia,1,1,1
 Brazil,Egypt,06/15/09,Confederations Cup,Group,4,3,0
 United States,Italy,06/15/09,Confederations Cup,Group,1,3,0
@@ -3507,7 +3507,7 @@ Gabon,Togo,06/06/09,World Cup,Qualifiers-Africa,3,0,1
 Tunisia,Mozambique,06/06/09,World Cup,Qualifiers-Africa,2,0,1
 Zambia,Rwanda,06/06/09,World Cup,Qualifiers-Africa,1,0,1
 Qatar,Australia,06/06/09,World Cup,Qualifiers-Asia,0,0,1
-South Korea,Iran,06/06/09,World Cup,Qualifiers-Asia,0,0,1
+North Korea,Iran,06/06/09,World Cup,Qualifiers-Asia,0,0,1
 United Arab Emirates,South Korea,06/06/09,World Cup,Qualifiers-Asia,0,2,1
 Uzbekistan,Japan,06/06/09,World Cup,Qualifiers-Asia,0,1,1
 Albania,Portugal,06/06/09,World Cup,Qualifiers-Europe,1,2,1
@@ -3541,7 +3541,7 @@ Chile,Uruguay,04/02/09,World Cup,Qualifiers-South America,0,0,1
 Australia,Uzbekistan,04/01/09,World Cup,Qualifiers-Asia,2,0,1
 Bahrain,Qatar,04/01/09,World Cup,Qualifiers-Asia,1,0,1
 Saudi Arabia,United Arab Emirates,04/01/09,World Cup,Qualifiers-Asia,3,2,1
-South Korea,South Korea,04/01/09,World Cup,Qualifiers-Asia,1,0,1
+South Korea,North Korea,04/01/09,World Cup,Qualifiers-Asia,1,0,1
 Andorra,Croatia,04/01/09,World Cup,Qualifiers-Europe,0,2,1
 Austria,Romania,04/01/09,World Cup,Qualifiers-Europe,2,1,1
 Bosnia-Herzegovina,Belgium,04/01/09,World Cup,Qualifiers-Europe,2,1,1
@@ -3585,7 +3585,7 @@ Sudan,Mali,03/28/09,World Cup,Qualifiers-Africa,1,1,1
 Togo,Cameroon,03/28/09,World Cup,Qualifiers-Africa,1,0,1
 Iran,Saudi Arabia,03/28/09,World Cup,Qualifiers-Asia,1,2,1
 Japan,Bahrain,03/28/09,World Cup,Qualifiers-Asia,1,0,1
-South Korea,United Arab Emirates,03/28/09,World Cup,Qualifiers-Asia,2,0,1
+North Korea,United Arab Emirates,03/28/09,World Cup,Qualifiers-Asia,2,0,1
 Uzbekistan,Qatar,03/28/09,World Cup,Qualifiers-Asia,4,0,1
 Albania,Hungary,03/28/09,World Cup,Qualifiers-Europe,0,1,1
 Armenia,Estonia,03/28/09,World Cup,Qualifiers-Europe,2,2,1
@@ -3617,7 +3617,7 @@ El Salvador,Trinidad and Tobago,02/12/09,World Cup,Qualifiers-North America,2,2,
 United States,Mexico,02/12/09,World Cup,Qualifiers-North America,2,0,1
 Iran,South Korea,02/11/09,World Cup,Qualifiers-Asia,1,1,1
 Japan,Australia,02/11/09,World Cup,Qualifiers-Asia,0,0,1
-South Korea,Saudi Arabia,02/11/09,World Cup,Qualifiers-Asia,1,0,1
+North Korea,Saudi Arabia,02/11/09,World Cup,Qualifiers-Asia,1,0,1
 Uzbekistan,Bahrain,02/11/09,World Cup,Qualifiers-Asia,0,1,1
 Malta,Albania,02/11/09,World Cup,Qualifiers-Europe,0,0,1
 Republic of Ireland,Georgia,02/11/09,World Cup,Qualifiers-Europe,2,1,1
@@ -3708,7 +3708,7 @@ Venezuela,Ecuador,10/16/08,World Cup,Qualifiers-South America,3,1,1
 Grenada,Cayman Islands,10/15/08,Caribbean Cup,Qualifiers,4,2,1
 Guadeloupe,Martinique,10/15/08,Caribbean Cup,Qualifiers,3,1,1
 Australia,Qatar,10/15/08,World Cup,Qualifiers-Asia,4,0,1
-Iran,South Korea,10/15/08,World Cup,Qualifiers-Asia,2,1,1
+Iran,North Korea,10/15/08,World Cup,Qualifiers-Asia,2,1,1
 Japan,Uzbekistan,10/15/08,World Cup,Qualifiers-Asia,1,1,1
 South Korea,United Arab Emirates,10/15/08,World Cup,Qualifiers-Asia,4,1,1
 Austria,Serbia,10/15/08,World Cup,Qualifiers-Europe,1,3,1
@@ -3811,7 +3811,7 @@ Peru,Argentina,09/11/08,World Cup,Qualifiers-South America,1,1,1
 Chad,Sudan,09/10/08,World Cup,Qualifiers-Africa,1,3,1
 Zambia,Togo,09/10/08,World Cup,Qualifiers-Africa,1,0,1
 Qatar,Bahrain,09/10/08,World Cup,Qualifiers-Asia,1,1,1
-South Korea,South Korea,09/10/08,World Cup,Qualifiers-Asia,1,1,1
+North Korea,South Korea,09/10/08,World Cup,Qualifiers-Asia,1,1,1
 United Arab Emirates,Saudi Arabia,09/10/08,World Cup,Qualifiers-Asia,1,2,1
 Uzbekistan,Australia,09/10/08,World Cup,Qualifiers-Asia,0,1,1
 Albania,Malta,09/10/08,World Cup,Qualifiers-Europe,3,0,1
@@ -3872,7 +3872,7 @@ The Gambia,Liberia,09/06/08,World Cup,Qualifiers-Africa,3,0,1
 Bahrain,Japan,09/06/08,World Cup,Qualifiers-Asia,2,3,1
 Qatar,Uzbekistan,09/06/08,World Cup,Qualifiers-Asia,3,0,1
 Saudi Arabia,Iran,09/06/08,World Cup,Qualifiers-Asia,1,1,1
-United Arab Emirates,South Korea,09/06/08,World Cup,Qualifiers-Asia,1,2,1
+United Arab Emirates,North Korea,09/06/08,World Cup,Qualifiers-Asia,1,2,1
 Albania,Sweden,09/06/08,World Cup,Qualifiers-Europe,0,0,1
 Andorra,England,09/06/08,World Cup,Qualifiers-Europe,0,2,1
 Armenia,Turkey,09/06/08,World Cup,Qualifiers-Europe,0,2,1
@@ -3950,7 +3950,7 @@ Jordan,Turkmenistan,06/22/08,World Cup,Qualifiers-Asia,2,0,1
 Lebanon,Singapore,06/22/08,World Cup,Qualifiers-Asia,1,2,1
 Oman,Thailand,06/22/08,World Cup,Qualifiers-Asia,2,1,1
 Saudi Arabia,Uzbekistan,06/22/08,World Cup,Qualifiers-Asia,4,0,1
-South Korea,South Korea,06/22/08,World Cup,Qualifiers-Asia,0,0,1
+South Korea,North Korea,06/22/08,World Cup,Qualifiers-Asia,0,0,1
 United Arab Emirates,Syria,06/22/08,World Cup,Qualifiers-Asia,1,3,1
 Barbados,United States,06/22/08,World Cup,Qualifiers-North America,0,1,1
 Costa Rica,Grenada,06/22/08,World Cup,Qualifiers-North America,3,0,1
@@ -4026,10 +4026,10 @@ China,Iraq,06/14/08,World Cup,Qualifiers-Asia,1,2,1
 Kuwait,United Arab Emirates,06/14/08,World Cup,Qualifiers-Asia,2,3,1
 Qatar,Australia,06/14/08,World Cup,Qualifiers-Asia,1,3,1
 Singapore,Saudi Arabia,06/14/08,World Cup,Qualifiers-Asia,0,2,1
-South Korea,Jordan,06/14/08,World Cup,Qualifiers-Asia,2,0,1
+North Korea,Jordan,06/14/08,World Cup,Qualifiers-Asia,2,0,1
 Syria,Iran,06/14/08,World Cup,Qualifiers-Asia,0,2,1
 Thailand,Japan,06/14/08,World Cup,Qualifiers-Asia,0,3,1
-Turkmenistan,South Korea,06/14/08,World Cup,Qualifiers-Asia,1,3,1
+Turkmenistan,North Korea,06/14/08,World Cup,Qualifiers-Asia,1,3,1
 Uzbekistan,Lebanon,06/14/08,World Cup,Qualifiers-Asia,3,0,1
 Grenada,Costa Rica,06/14/08,World Cup,Qualifiers-North America,2,2,1
 Suriname,Guyana,06/14/08,World Cup,Qualifiers-North America,1,0,1
@@ -4077,7 +4077,7 @@ Iraq,Australia,06/07/08,World Cup,Qualifiers-Asia,1,0,1
 Jordan,South Korea,06/07/08,World Cup,Qualifiers-Asia,0,1,1
 Lebanon,Saudi Arabia,06/07/08,World Cup,Qualifiers-Asia,1,2,1
 Oman,Japan,06/07/08,World Cup,Qualifiers-Asia,1,1,1
-South Korea,Turkmenistan,06/07/08,World Cup,Qualifiers-Asia,0,0,1
+North Korea,Turkmenistan,06/07/08,World Cup,Qualifiers-Asia,0,0,1
 United Arab Emirates,Iran,06/07/08,World Cup,Qualifiers-Asia,0,1,1
 Uzbekistan,Singapore,06/07/08,World Cup,Qualifiers-Asia,1,0,1
 Algeria,Liberia,06/06/08,World Cup,Qualifiers-Africa,3,0,1
@@ -4089,7 +4089,7 @@ Saudi Arabia,Lebanon,06/02/08,World Cup,Qualifiers-Asia,4,1,1
 Singapore,Uzbekistan,06/02/08,World Cup,Qualifiers-Asia,3,7,1
 Syria,Kuwait,06/02/08,World Cup,Qualifiers-Asia,1,0,1
 Thailand,Bahrain,06/02/08,World Cup,Qualifiers-Asia,2,3,1
-Turkmenistan,South Korea,06/02/08,World Cup,Qualifiers-Asia,0,0,1
+Turkmenistan,North Korea,06/02/08,World Cup,Qualifiers-Asia,0,0,1
 Angola,Benin,06/01/08,World Cup,Qualifiers-Africa,3,0,1
 Burundi,Seychelles,06/01/08,World Cup,Qualifiers-Africa,1,0,1
 Egypt,Democratic Republic of the Congo,06/01/08,World Cup,Qualifiers-Africa,2,1,1
@@ -4128,7 +4128,7 @@ China,Australia,03/26/08,World Cup,Qualifiers-Asia,0,0,1
 Kuwait,Iran,03/26/08,World Cup,Qualifiers-Asia,2,2,1
 Qatar,Iraq,03/26/08,World Cup,Qualifiers-Asia,2,0,1
 Singapore,Lebanon,03/26/08,World Cup,Qualifiers-Asia,2,0,1
-South Korea,South Korea,03/26/08,World Cup,Qualifiers-Asia,0,0,1
+North Korea,South Korea,03/26/08,World Cup,Qualifiers-Asia,0,0,1
 Syria,United Arab Emirates,03/26/08,World Cup,Qualifiers-Asia,1,1,1
 Thailand,Oman,03/26/08,World Cup,Qualifiers-Asia,0,1,1
 Turkmenistan,Jordan,03/26/08,World Cup,Qualifiers-Asia,0,2,1
@@ -4152,7 +4152,7 @@ Australia,Qatar,02/06/08,World Cup,Qualifiers-Asia,3,0,1
 Iran,Syria,02/06/08,World Cup,Qualifiers-Asia,0,0,1
 Iraq,China,02/06/08,World Cup,Qualifiers-Asia,1,1,1
 Japan,Thailand,02/06/08,World Cup,Qualifiers-Asia,4,1,1
-Jordan,South Korea,02/06/08,World Cup,Qualifiers-Asia,0,1,1
+Jordan,North Korea,02/06/08,World Cup,Qualifiers-Asia,0,1,1
 Lebanon,Uzbekistan,02/06/08,World Cup,Qualifiers-Asia,0,1,1
 Oman,Bahrain,02/06/08,World Cup,Qualifiers-Asia,0,1,1
 Saudi Arabia,Singapore,02/06/08,World Cup,Qualifiers-Asia,2,0,1
@@ -4269,7 +4269,7 @@ Maldives,Yemen,10/28/07,World Cup,Qualifiers-Asia,2,0,1
 Myanmar,China,10/28/07,World Cup,Qualifiers-Asia,0,4,1
 Nepal,Oman,10/28/07,World Cup,Qualifiers-Asia,0,2,1
 Qatar,Sri Lanka,10/28/07,World Cup,Qualifiers-Asia,5,0,1
-South Korea,Mongolia,10/28/07,World Cup,Qualifiers-Asia,5,1,1
+North Korea,Mongolia,10/28/07,World Cup,Qualifiers-Asia,5,1,1
 Taiwan,Uzbekistan,10/28/07,World Cup,Qualifiers-Asia,0,2,1
 Tajikistan,Bangladesh,10/28/07,World Cup,Qualifiers-Asia,5,0,1
 Turkmenistan,Cambodia,10/28/07,World Cup,Qualifiers-Asia,4,1,1
@@ -4279,7 +4279,7 @@ Pakistan,Iraq,10/22/07,World Cup,Qualifiers-Asia,0,7,1
 Bahrain,Malaysia,10/21/07,World Cup,Qualifiers-Asia,4,1,1
 China,Myanmar,10/21/07,World Cup,Qualifiers-Asia,7,0,1
 East Timor,Hong Kong,10/21/07,World Cup,Qualifiers-Asia,2,3,1
-Mongolia,South Korea,10/21/07,World Cup,Qualifiers-Asia,1,4,1
+Mongolia,North Korea,10/21/07,World Cup,Qualifiers-Asia,1,4,1
 Sri Lanka,Qatar,10/21/07,World Cup,Qualifiers-Asia,0,1,1
 Kyrgyzstan,Jordan,10/18/07,World Cup,Qualifiers-Asia,2,0,1
 Brazil,Ecuador,10/18/07,World Cup,Qualifiers-South America,5,0,1
@@ -5268,7 +5268,7 @@ Libya,Sudan,09/02/05,World Cup,Qualifiers-Africa,0,0,1
 Netherlands,Germany,08/17/05,World Cup,Friendlies,2,2,1
 Sudan,Benin,08/17/05,World Cup,Qualifiers-Africa,1,0,1
 Tunisia,Kenya,08/17/05,World Cup,Qualifiers-Africa,1,0,1
-Bahrain,South Korea,08/17/05,World Cup,Qualifiers-Asia,2,3,1
+Bahrain,North Korea,08/17/05,World Cup,Qualifiers-Asia,2,3,1
 Japan,Iran,08/17/05,World Cup,Qualifiers-Asia,2,1,1
 South Korea,Saudi Arabia,08/17/05,World Cup,Qualifiers-Asia,0,1,1
 Uzbekistan,Kuwait,08/17/05,World Cup,Qualifiers-Asia,3,2,1
@@ -5340,7 +5340,7 @@ Germany,Russia,06/08/05,World Cup,Friendlies,2,2,1
 Iran,Bahrain,06/08/05,World Cup,Qualifiers-Asia,1,0,1
 Kuwait,South Korea,06/08/05,World Cup,Qualifiers-Asia,0,4,1
 Saudi Arabia,Uzbekistan,06/08/05,World Cup,Qualifiers-Asia,3,0,1
-South Korea,Japan,06/08/05,World Cup,Qualifiers-Asia,0,2,1
+Northern Ireland,Japan,06/08/05,World Cup,Qualifiers-Asia,0,2,1
 Belarus,Scotland,06/08/05,World Cup,Qualifiers-Europe,0,0,1
 Czech Republic,Macedonia,06/08/05,World Cup,Qualifiers-Europe,6,1,1
 Denmark,Albania,06/08/05,World Cup,Qualifiers-Europe,3,1,1
@@ -5408,12 +5408,12 @@ Ecuador,Argentina,06/04/05,World Cup,Qualifiers-South America,2,0,1
 Venezuela,Uruguay,06/04/05,World Cup,Qualifiers-South America,1,1,1
 Libya,Ivory Coast,06/03/05,World Cup,Qualifiers-Africa,0,0,1
 Bahrain,Japan,06/03/05,World Cup,Qualifiers-Asia,0,1,1
-Iran,South Korea,06/03/05,World Cup,Qualifiers-Asia,1,0,1
+Iran,North Korea,06/03/05,World Cup,Qualifiers-Asia,1,0,1
 Saudi Arabia,Kuwait,06/03/05,World Cup,Qualifiers-Asia,3,0,1
 Uzbekistan,South Korea,06/03/05,World Cup,Qualifiers-Asia,1,1,1
 Japan,Bahrain,03/30/05,World Cup,Qualifiers-Asia,1,0,1
 Kuwait,Saudi Arabia,03/30/05,World Cup,Qualifiers-Asia,0,0,1
-South Korea,Iran,03/30/05,World Cup,Qualifiers-Asia,0,2,1
+North Korea,Iran,03/30/05,World Cup,Qualifiers-Asia,0,2,1
 South Korea,Uzbekistan,03/30/05,World Cup,Qualifiers-Asia,2,1,1
 Andorra,Czech Republic,03/30/05,World Cup,Qualifiers-Europe,0,4,1
 Austria,Wales,03/30/05,World Cup,Qualifiers-Europe,1,0,1
@@ -5488,7 +5488,7 @@ Venezuela,Colombia,03/26/05,World Cup,Qualifiers-South America,0,0,1
 Iran,Japan,03/25/05,World Cup,Qualifiers-Asia,2,1,1
 Kuwait,Uzbekistan,03/25/05,World Cup,Qualifiers-Asia,2,1,1
 Saudi Arabia,South Korea,03/25/05,World Cup,Qualifiers-Asia,2,0,1
-South Korea,Bahrain,03/25/05,World Cup,Qualifiers-Asia,1,2,1
+North Korea,Bahrain,03/25/05,World Cup,Qualifiers-Asia,1,2,1
 Costa Rica,Honduras,02/27/05,Copa Centroamericana,Knockout,1,1,0
 Guatemala,Panama,02/27/05,Copa Centroamericana,Knockout,3,0,1
 Guatemala,Costa Rica,02/25/05,Copa Centroamericana,Knockout,0,4,1
@@ -5511,8 +5511,8 @@ Honduras,Nicaragua,02/19/05,Copa Centroamericana,Group,5,1,0
 Germany,Argentina,02/09/05,World Cup,Friendlies,2,2,1
 Morocco,Kenya,02/09/05,World Cup,Qualifiers-Africa,5,1,1
 Bahrain,Iran,02/09/05,World Cup,Qualifiers-Asia,0,0,1
-Japan,South Korea,02/09/05,World Cup,Qualifiers-Asia,2,1,1
-South Korea,Kuwait,02/09/05,World Cup,Qualifiers-Asia,2,0,1
+Japan,North Korea,02/09/05,World Cup,Qualifiers-Asia,2,1,1
+North Korea,Kuwait,02/09/05,World Cup,Qualifiers-Asia,2,0,1
 Uzbekistan,Saudi Arabia,02/09/05,World Cup,Qualifiers-Asia,1,1,1
 Albania,Ukraine,02/09/05,World Cup,Qualifiers-Europe,0,2,1
 Greece,Denmark,02/09/05,World Cup,Qualifiers-Europe,2,1,1
