@@ -1,17 +1,19 @@
 HomeTeam,AwayTeam,Date,Contest,Type,HomeGoals,AwayGoals,HomeAdvantage
-Palestine,Kyrgyzstan,05/19/14,AFC Challenge Cup,Group,1,0,0
-Maldives,Myanmar,05/19/14,AFC Challenge Cup,Group,2,3,1
-Myanmar,Palestine,05/21/14,AFC Challenge Cup,Group,0,2,0
-Maldives,Kyrgyzstan,05/21/14,AFC Challenge Cup,Group,2,0,1
-Maldives,Palestine,05/23/14,AFC Challenge Cup,Group,0,0,1
-Kyrgyzstan,Myanmar,05/23/14,AFC Challenge Cup,Group,1,0,0
-Turkmenistan,Laos,05/20/14,AFC Challenge Cup,Group,5,1,0
-Philippines,Afghanistan,05/20/14,AFC Challenge Cup,Group,0,0,0
-Laos,Philippines,05/22/14,AFC Challenge Cup,Group,0,2,0
-Afghanistan,Turkmenistan,05/22/14,AFC Challenge Cup,Group,3,1,0
-Turkmenistan,Philippines,05/24/14,AFC Challenge Cup,Group,0,2,0
-Afghanistan,Laos,05/24/14,AFC Challenge Cup,Group,0,0,0
-Palestine,Afghanistan,05/27/14,AFC Challenge Cup,Knockout,2,0,0
-Philippines,Maldives,05/27/14,AFC Challenge Cup,Knockout,3,2,0
-Afghanistan,Maldives,05/29/14,AFC Challenge Cup,Knockout,1,1,0
-Palestine,Philippines,05/30/14,AFC Challenge Cup,Knockout,1,0,0
+Tonga,Cook Islands,08/31/15,World Cup,Qualifiers-Oceania,0,3,1
+Samoa,American Samoa,08/31/15,World Cup,Qualifiers-Oceania,3,2,1
+Cook Islands,Samoa,09/02/15,World Cup,Qualifiers-Oceania,1,0,1
+Tonga,American Samoa,09/02/15,World Cup,Qualifiers-Oceania,1,2,1
+Tonga,Samoa,09/04/15,World Cup,Qualifiers-Oceania,0,3,1
+American Samoa,Cook Islands,09/04/15,World Cup,Qualifiers-Oceania,2,0,1
+Tahiti,Solomon Islands,11/07/16,World Cup,Qualifiers-Oceania,1,0,1
+New Zealand,New Caledonia,11/12/16,World Cup,Qualifiers-Oceania,2,0,1
+New Caledonia,New Zealand,11/15/16,World Cup,Qualifiers-Oceania,0,0,1
+Fiji,New Zealand,03/25/17,World Cup,Qualifiers-Oceania,0,2,1
+New Zealand,Fiji,03/28/17,World Cup,Qualifiers-Oceania,2,0,1
+Fiji,New Caledonia,06/07/17,World Cup,Qualifiers-Oceania,2,2,1
+New Caledonia,Fiji,06/11/17,World Cup,Qualifiers-Oceania,2,1,1
+Solomon Islands,Tahiti,11/13/16,World Cup,Qualifiers-Oceania,1,0,1
+Papua New Guinea,Tahiti,03/23/17,World Cup,Qualifiers-Oceania,1,3,1
+Tahiti,Papua New Guinea,03/28/17,World Cup,Qualifiers-Oceania,1,2,1
+Solomon Islands,Papua New Guinea,06/09/17,World Cup,Qualifiers-Oceania,3,2,1
+Papua New Guinea,Solomon Islands,06/13/17,World Cup,Qualifiers-Oceania,1,2,1
