@@ -10,7 +10,7 @@ newGameHypo <- function(homeTeamName, awayTeamName, location, rData) {
     strNorm=matrix(c(homeTeam$strNorm, awayTeam$strNorm),
         2, 2, TRUE),
     strAgg=c(homeTeam$strAgg, awayTeam$strAgg),
-    existsHA=homeTeamName==location
+    existsHA=homeTeamName %in% location
   )
 
   gameHypo$meanGoals <- computeMeanGoals(gameHypo$existsHA, rOptions)

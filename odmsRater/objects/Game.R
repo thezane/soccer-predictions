@@ -52,8 +52,8 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   
   game$isContinental <- contest != "AFC Challenge Cup" &&
       contest != "Copa Centroamericana" && contest != "Caribbean Cup"
-  game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
-      game$isPlayoff
+  game$isRelevant <- game$isContinental &&
+      ((!game$isFriendly && !game$isQualifier) || game$isPlayoff)
       
   if (game$isWorldCup && !game$isQualifier && !game$isFriendly) {
     game$weight = 1
