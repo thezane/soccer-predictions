@@ -1,6 +1,7 @@
 HomeTeam,AwayTeam,Date,Contest,Type,HomeGoals,AwayGoals,HomeAdvantage
 Iraq,Japan,06/13/17,World Cup,Qualifiers-Asia,1,1,1
 Qatar,South Korea,06/13/17,World Cup,Qualifiers-Asia,3,2,1
+Syria,China,06/13/17,World Cup,Qualifiers-Asia,2,2,1
 Thailand,United Arab Emirates,06/13/17,World Cup,Qualifiers-Asia,1,1,1
 Papua New Guinea,Solomon Islands,06/13/17,World Cup,Qualifiers-Oceania,1,2,1
 Iran,Uzbekistan,06/12/17,World Cup,Qualifiers-Asia,2,0,1
@@ -46,6 +47,7 @@ Fiji,New Caledonia,06/07/17,World Cup,Qualifiers-Oceania,2,2,1
 Hungary,Russia,06/05/17,World Cup,Friendlies,0,3,1
 Russia,Belgium,03/28/17,World Cup,Friendlies,3,3,1
 Australia,United Arab Emirates,03/28/17,World Cup,Qualifiers-Asia,2,0,1
+Iran,China,03/28/17,World Cup,Qualifiers-Asia,1,0,1
 Japan,Thailand,03/28/17,World Cup,Qualifiers-Asia,4,0,1
 Saudi Arabia,Iraq,03/28/17,World Cup,Qualifiers-Asia,1,0,1
 South Korea,Syria,03/28/17,World Cup,Qualifiers-Asia,1,0,1
@@ -94,6 +96,7 @@ Turkey,Finland,03/24/17,World Cup,Qualifiers-Europe,2,0,1
 Mexico,Costa Rica,03/24/17,World Cup,Qualifiers-North America,2,0,1
 Trinidad and Tobago,Panama,03/24/17,World Cup,Qualifiers-North America,1,0,1
 United States,Honduras,03/24/17,World Cup,Qualifiers-North America,6,0,1
+China,South Korea,03/23/17,World Cup,Qualifiers-Asia,1,0,1
 Iraq,Australia,03/23/17,World Cup,Qualifiers-Asia,1,1,1
 Qatar,Iran,03/23/17,World Cup,Qualifiers-Asia,0,1,1
 Syria,Uzbekistan,03/23/17,World Cup,Qualifiers-Asia,1,0,1
@@ -157,6 +160,7 @@ Suriname,Haiti,01/06/17,Caribbean Cup,Qualifiers,2,4,1
 Trinidad and Tobago,Suriname,01/04/17,Caribbean Cup,Qualifiers,1,2,1
 Comoros,Gabon,11/15/16,Africa Cup of Nations,Friendlies,1,1,0
 Russia,Romania,11/15/16,World Cup,Friendlies,1,0,1
+China,Qatar,11/15/16,World Cup,Qualifiers-Asia,0,0,1
 Japan,Saudi Arabia,11/15/16,World Cup,Qualifiers-Asia,2,1,1
 South Korea,Uzbekistan,11/15/16,World Cup,Qualifiers-Asia,2,1,1
 Syria,Iran,11/15/16,World Cup,Qualifiers-Asia,0,0,1
@@ -230,6 +234,7 @@ Iran,South Korea,10/11/16,World Cup,Qualifiers-Asia,1,0,1
 Iraq,Thailand,10/11/16,World Cup,Qualifiers-Asia,4,0,1
 Qatar,Syria,10/11/16,World Cup,Qualifiers-Asia,1,0,1
 Saudi Arabia,United Arab Emirates,10/11/16,World Cup,Qualifiers-Asia,3,0,1
+Uzbekistan,China,10/11/16,World Cup,Qualifiers-Asia,2,0,1
 Czech Republic,Azerbaijan,10/11/16,World Cup,Qualifiers-Europe,0,0,1
 Denmark,Montenegro,10/11/16,World Cup,Qualifiers-Europe,0,1,1
 Germany,Northern Ireland,10/11/16,World Cup,Qualifiers-Europe,2,0,1
@@ -294,6 +299,7 @@ Latvia,Faroe Islands,10/07/16,World Cup,Qualifiers-Europe,0,2,1
 Luxembourg,Sweden,10/07/16,World Cup,Qualifiers-Europe,0,1,1
 Netherlands,Belarus,10/07/16,World Cup,Qualifiers-Europe,4,1,1
 Portugal,Andorra,10/07/16,World Cup,Qualifiers-Europe,6,0,1
+China,Syria,10/06/16,World Cup,Qualifiers-Asia,0,1,1
 Japan,Iraq,10/06/16,World Cup,Qualifiers-Asia,2,1,1
 Saudi Arabia,Australia,10/06/16,World Cup,Qualifiers-Asia,2,2,1
 South Korea,Qatar,10/06/16,World Cup,Qualifiers-Asia,3,2,1
@@ -327,6 +333,7 @@ Peru,Ecuador,09/07/16,World Cup,Qualifiers-South America,2,1,1
 Uruguay,Paraguay,09/07/16,World Cup,Qualifiers-South America,4,0,1
 Venezuela,Argentina,09/07/16,World Cup,Qualifiers-South America,2,2,1
 Cameroon,Gabon,09/06/16,Africa Cup of Nations,Friendlies,2,1,1
+China,Iran,09/06/16,World Cup,Qualifiers-Asia,0,0,1
 Iraq,Saudi Arabia,09/06/16,World Cup,Qualifiers-Asia,1,2,1
 Qatar,Uzbekistan,09/06/16,World Cup,Qualifiers-Asia,0,1,1
 Syria,South Korea,09/06/16,World Cup,Qualifiers-Asia,0,0,1
@@ -394,6 +401,7 @@ Australia,Iraq,09/01/16,World Cup,Qualifiers-Asia,2,0,1
 Iran,Qatar,09/01/16,World Cup,Qualifiers-Asia,2,0,1
 Japan,United Arab Emirates,09/01/16,World Cup,Qualifiers-Asia,1,2,1
 Saudi Arabia,Thailand,09/01/16,World Cup,Qualifiers-Asia,1,0,1
+South Korea,China,09/01/16,World Cup,Qualifiers-Asia,3,2,1
 Uzbekistan,Syria,09/01/16,World Cup,Qualifiers-Asia,1,0,1
 Bolivia,Peru,09/01/16,World Cup,Qualifiers-South America,2,0,1
 Colombia,Venezuela,09/01/16,World Cup,Qualifiers-South America,2,0,1
@@ -573,6 +581,7 @@ United States Virgin Islands,Grenada,03/29/16,Caribbean Cup,Qualifiers,1,2,1
 France,Russia,03/29/16,European Championship,Friendlies,4,2,1
 Afghanistan,Singapore,03/29/16,World Cup,Qualifiers-Asia,2,1,1
 Australia,Jordan,03/29/16,World Cup,Qualifiers-Asia,5,1,1
+China,Qatar,03/29/16,World Cup,Qualifiers-Asia,2,0,1
 India,Turkmenistan,03/29/16,World Cup,Qualifiers-Asia,1,2,1
 Iran,Oman,03/29/16,World Cup,Qualifiers-Asia,2,0,1
 Iraq,Vietnam,03/29/16,World Cup,Qualifiers-Asia,1,0,1
@@ -637,6 +646,7 @@ Ghana,Mozambique,03/24/16,Africa Cup of Nations,Qualifiers,3,1,1
 Madagascar,Central African Republic,03/24/16,Africa Cup of Nations,Qualifiers,1,1,1
 Australia,Tajikistan,03/24/16,World Cup,Qualifiers-Asia,7,0,1
 Bahrain,Yemen,03/24/16,World Cup,Qualifiers-Asia,3,0,1
+China,Maldives,03/24/16,World Cup,Qualifiers-Asia,4,0,1
 Iran,India,03/24/16,World Cup,Qualifiers-Asia,4,0,1
 Iraq,Thailand,03/24/16,World Cup,Qualifiers-Asia,2,2,1
 Japan,Afghanistan,03/24/16,World Cup,Qualifiers-Asia,5,0,1
@@ -692,6 +702,7 @@ Bangladesh,Australia,11/17/15,World Cup,Qualifiers-Asia,0,4,1
 Bhutan,Qatar,11/17/15,World Cup,Qualifiers-Asia,0,3,1
 Cambodia,Japan,11/17/15,World Cup,Qualifiers-Asia,0,2,1
 Guam,Iran,11/17/15,World Cup,Qualifiers-Asia,0,6,1
+Hong Kong,China,11/17/15,World Cup,Qualifiers-Asia,0,0,1
 Kyrgyzstan,Jordan,11/17/15,World Cup,Qualifiers-Asia,1,0,1
 Laos,South Korea,11/17/15,World Cup,Qualifiers-Asia,0,5,1
 Malaysia,United Arab Emirates,11/17/15,World Cup,Qualifiers-Asia,1,2,1
@@ -745,6 +756,7 @@ Namibia,Guinea,11/12/15,World Cup,Qualifiers-Africa,0,1,1
 Togo,Uganda,11/12/15,World Cup,Qualifiers-Africa,0,1,1
 Afghanistan,Cambodia,11/12/15,World Cup,Qualifiers-Asia,3,0,1
 Australia,Kyrgyzstan,11/12/15,World Cup,Qualifiers-Asia,3,0,1
+China,Bhutan,11/12/15,World Cup,Qualifiers-Asia,12,0,1
 India,Guam,11/12/15,World Cup,Qualifiers-Asia,1,0,1
 Iran,Turkmenistan,11/12/15,World Cup,Qualifiers-Asia,3,1,1
 Lebanon,Laos,11/12/15,World Cup,Qualifiers-Asia,7,0,1
@@ -867,6 +879,7 @@ Kyrgyzstan,Tajikistan,10/08/15,World Cup,Qualifiers-Asia,2,2,1
 Myanmar,Lebanon,10/08/15,World Cup,Qualifiers-Asia,0,2,1
 North Korea,Philippines,10/08/15,World Cup,Qualifiers-Asia,0,0,1
 Oman,Iran,10/08/15,World Cup,Qualifiers-Asia,1,1,1
+Qatar,China,10/08/15,World Cup,Qualifiers-Asia,1,0,1
 Saudi Arabia,United Arab Emirates,10/08/15,World Cup,Qualifiers-Asia,2,1,1
 Singapore,Afghanistan,10/08/15,World Cup,Qualifiers-Asia,1,0,1
 Syria,Japan,10/08/15,World Cup,Qualifiers-Asia,0,3,1
@@ -906,6 +919,7 @@ India,Iran,09/08/15,World Cup,Qualifiers-Asia,0,3,1
 Laos,Kuwait,09/08/15,World Cup,Qualifiers-Asia,0,2,1
 Lebanon,South Korea,09/08/15,World Cup,Qualifiers-Asia,0,3,1
 Malaysia,Saudi Arabia,09/08/15,World Cup,Qualifiers-Asia,1,2,1
+Maldives,China,09/08/15,World Cup,Qualifiers-Asia,0,3,1
 Palestine,United Arab Emirates,09/08/15,World Cup,Qualifiers-Asia,0,0,1
 Philippines,Uzbekistan,09/08/15,World Cup,Qualifiers-Asia,1,5,1
 Taiwan,Vietnam,09/08/15,World Cup,Qualifiers-Asia,1,2,1
@@ -993,6 +1007,7 @@ Netherlands,Iceland,09/03/15,European Championship,Qualifiers,0,1,1
 Turkey,Latvia,09/03/15,European Championship,Qualifiers,1,1,1
 Australia,Bangladesh,09/03/15,World Cup,Qualifiers-Asia,5,0,1
 Bahrain,North Korea,09/03/15,World Cup,Qualifiers-Asia,0,1,1
+China,Hong Kong,09/03/15,World Cup,Qualifiers-Asia,0,0,1
 Iran,Guam,09/03/15,World Cup,Qualifiers-Asia,6,0,1
 Iraq,Taiwan,09/03/15,World Cup,Qualifiers-Asia,5,1,1
 Japan,Cambodia,09/03/15,World Cup,Qualifiers-Asia,3,0,1
@@ -1057,6 +1072,7 @@ El Salvador,Saint Kitts and Nevis,06/17/15,World Cup,Qualifiers-North America,4,
 Chile,Mexico,06/16/15,Copa America,Group,3,3,1
 Paraguay,Jamaica,06/16/15,Copa America,Group,1,0,0
 Bangladesh,Tajikistan,06/16/15,World Cup,Qualifiers-Asia,1,1,1
+Bhutan,China,06/16/15,World Cup,Qualifiers-Asia,0,6,1
 Cambodia,Afghanistan,06/16/15,World Cup,Qualifiers-Asia,0,1,1
 Guam,India,06/16/15,World Cup,Qualifiers-Asia,2,1,1
 Hong Kong,Maldives,06/16/15,World Cup,Qualifiers-Asia,2,0,1

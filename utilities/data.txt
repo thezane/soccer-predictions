@@ -2,24 +2,26 @@
 Hide
 WLE Austria Logo (no text).svg
 Wiki Loves Earth photo contest during June 2017: Upload photos of natural sites in Canada to help Wikipedia and win fantastic prizes!
-2018 FIFA World Cup qualification - OFC First Round
+2018 FIFA World Cup qualification - AFC Second Round
 From Wikipedia, the free encyclopedia
-Nuku'alofa, Tonga
-Loto-Tonga Soka Centre
-2018 FIFA World Cup qualification - OFC First Round is located in Tonga
-Nuku'alofa
-Nuku'alofa
-21°8'S 175°12'W
 
-The first round of OFC matches for 2018 FIFA World Cup qualification (and 2016 OFC Nations Cup qualification) was played from 31 August to 4 September 2015 in Tonga.[1][2]
+The second round of AFC matches for 2018 FIFA World Cup qualification (and 2019 AFC Asian Cup qualification) was played from 24 May 2015 to 29 March 2016.[1]
 
 Contents
 
     1 Format
-    2 Participating teams
-    3 Squads
-    4 Standings
-    5 Matches
+    2 Seeding
+    3 Groups
+        3.1 Group A
+        3.2 Group B
+        3.3 Group C
+        3.4 Group D
+        3.5 Group E
+        3.6 Group F
+        3.7 Group G
+        3.8 Group H
+    4 Ranking of runner-up teams
+    5 Ranking of fourth-placed teams
     6 Goalscorers
     7 Notes
     8 References
@@ -27,160 +29,2521 @@ Contents
 
 Format
 
-In this round, four teams, as determined by the OFC in March 2014,[3] played a single round-robin tournament held in a single country which was later decided to be in Tonga.[1] All matches were held at the Loto-Tonga Soka Centre in Nuku'alofa.
+A total of 40 teams (teams ranked 1-34 in the AFC entrant list and six first round winners) were divided into eight groups of five teams to play home-and-away round-robin matches. The eight group winners and the four best group runners-up advanced to the third round of FIFA World Cup qualification as well as qualify for the 2019 AFC Asian Cup finals.
 
-Samoa, the winner, advanced to the 2016 OFC Nations Cup, held from 28 May - 12 June 2016, to join the other seven teams which received a bye into the group stage. The winner of the OFC Nations Cup, New Zealand, will represent the OFC at the 2017 FIFA Confederations Cup. Moreover, the OFC Nations Cup served as the second round of qualifying for the 2018 FIFA World Cup in Russia, with the top six teams advancing to the third round of FIFA World Cup qualifying.[4]
-Participating teams
+A total of 24 teams eliminated from World Cup qualification in the second round competed in the third round of 2019 AFC Asian Cup qualification (which was separated from the third round of 2018 FIFA World Cup qualification), where they were divided into six groups of four teams and competed for the remaining slots of the 2019 AFC Asian Cup. The 24 teams consisted of the 16 highest ranked teams eliminated in the second round, and the eight teams that advance from the play-off round of 2019 AFC Asian Cup qualification which are contested by the remaining 12 teams eliminated in the second round.[2]
+Seeding
 
-In April 2014 the OFC announced its executive's decision on the teams to compete in the tournament. The four lowest ranked teams (based on FIFA World Ranking and sporting reasons) among the 11 OFC entrants entered the first round:[3]
+The draw for the second round was held on 14 April 2015, at 17:00 MST (UTC+8), at the JW Marriott Hotel in Kuala Lumpur, Malaysia.[3][4]
 
-Note: Bolded team qualified for the 2016 OFC Nations Cup.
-Team FIFA ranking
-at start of event[5]
- American Samoa 200
- Cook Islands 206
- Samoa 197
- Tonga 198
-Squads
-For more details on this topic, see 2018 FIFA World Cup qualification - OFC First Round squads.
-Standings
+The seeding was based on the FIFA World Rankings of April 2015 (shown in parentheses below).[5] The 40 teams were seeded into five pots:[6]
+
+    Pot 1 contained the teams ranked 1-8.
+    Pot 2 contained the teams ranked 9-16.
+    Pot 3 contained the teams ranked 17-24.
+    Pot 4 contained the teams ranked 25-32.
+    Pot 5 contained the teams ranked 33-40.
+
+Each group contained one team from each of the five pots. The fixtures of each group were automatically decided based on the respective pot of each team.
+
+As the seeding order was based on the most recent FIFA Rankings prior to the draw, it differed from the order in the AFC entrant list, which was based on the FIFA World Rankings of January 2015. Among the six first round winners, three were seeded higher than pot 5 (India in pot 3, Timor-Leste and Bhutan in pot 4), on the basis of ranking points gained from the first round matches, while the other three (Yemen, Cambodia and Chinese Taipei) were seeded in pot 5.
+
+Note: Bolded teams qualified for the third round.
+Pot 1 Pot 2 Pot 3
+
+     Iran (40)
+     Japan (50)
+     South Korea (57)
+     Australia (63)
+     United Arab Emirates (68)
+     Uzbekistan (73)
+     China (82)
+     Iraq (86)
+
+
+
+     Saudi Arabia (95)
+     Oman (97)
+     Qatar (99)
+     Jordan (103)
+     Bahrain (108)
+     Vietnam (125)
+     Syria (126)
+     Kuwait (127)
+
+
+
+     Afghanistan (135)
+     Philippines (139)
+     Palestine (140)
+     Maldives (141)
+     Thailand (142)
+     Tajikistan (143)
+     Lebanon (144)
+     India (147)
+
+Pot 4 Pot 5 
+
+     Timor-Leste (152)
+     Kyrgyzstan (153)
+     North Korea (157)
+     Myanmar (158)
+     Turkmenistan (159)
+     Indonesia (159)
+     Singapore (162)
+     Bhutan (163)
+
+
+
+     Malaysia (164)
+     Hong Kong (167)
+     Bangladesh (167)
+     Yemen (170)
+     Guam (175)
+     Laos (178)
+     Cambodia (179)
+     Chinese Taipei (179)
+
+
+Groups
 [show]2018 FIFA World Cup qualification tiebreakers
+Group A
 Pos Team
 
     v t e 
 
 Pld W D L GF GA GD Pts Qualification 
-1  Samoa 3 2 0 1 6 3 +3 6 Advance to 2016 OFC Nations Cup/second round — 3-2 — —
-2  American Samoa 3 2 0 1 6 4 +2 6 — — 2-0 —
-3  Cook Islands 3 2 0 1 4 2 +2 6 1-0 — — —
-4  Tonga (H) 3 0 0 3 1 8 -7 0 0-3 1-2 0-3 —
+1  Saudi Arabia 8 6 2 0 28 4 +24 20 Third round and Asian Cup — 2-1 3-2 2-0 7-0
+2  United Arab Emirates 8 5 2 1 25 4 +21 17 1-1 — 2-0 10-0 8-0
+3  Palestine 8 3 3 2 22 6 +16 12 Asian Cup qualifying third round 0-0 0-0 — 6-0 7-0
+4  Malaysia 8 1 1 6 3 30 -27 4 Asian Cup qualifying play-off round 0-3[a] 1-2 0-6 — 1-1
+5  Timor-Leste 8 0 2 6 2 36 -34 2 0-10 0-1 1-1 0-1 —
 Source: FIFA
 Rules for classification: Qualification tiebreakers
-(H) Host.
-Matches
+Notes:
 
-The match schedule was revealed on 30 July 2015, following a draw held at OFC Headquarters in Auckland, New Zealand.[7] All times are local, UTC+13.
+    The Malaysia v Saudi Arabia match, on 8 September 2015, was abandoned during the 87th minute after a group of supporters threw objects onto the pitch. At the time of the abandonment the score was 2-1 to Saudi Arabia. On 5 October 2015, FIFA decided that this match was forfeited by Malaysia and the result to be declared as a 3-0 win awarded for Saudi Arabia.[8][9]
 
-31 August 2015
-13:00
-Tonga  0-3  Cook Islands
-Report (FIFA)
-Report (OFC) Saghabi Goal 38', 53', 59'
-Loto-Tonga Soka Centre (Field 1), Nuku'alofa
-Attendance: 300
-Referee: Ravitesh Behari (Fiji)
+11 June 2015
+20:45 UTC+8
+Malaysia  1-1  Timor-Leste
+Safee Goal 34' Report (FIFA)
+Report (AFC) Saro Goal 90+3'
+Bukit Jalil National Stadium, Kuala Lumpur
+Attendance: 5,000
+Referee: Jarred Gillett (Australia)
 
-31 August 2015
-15:30
-Samoa  3-2  American Samoa
+11 June 2015[note 1]
+21:00 UTC+3
+Saudi Arabia  3-2  Palestine
 
-    Fa'aiuaso Goal 4'
-    Hamilton-Pama Goal 18'
-    Mobberley Goal 26'
+    Al-Shehri Goal 6'
+    Al-Sahlawi Goal 46', 90+4'
 
 Report (FIFA)
-Report (OFC) Beauchamp Goal 38', 86'
-Loto-Tonga Soka Centre (Field 1), Nuku'alofa
-Attendance: 100
-Referee: Nelson Sogo (Solomon Islands)
+Report (AFC) 
 
-2 September 2015
-13:00
-Cook Islands  1-0  Samoa
-Saghabi Goal 39' Report (FIFA)
-Report (OFC) 
-Loto-Tonga Soka Centre (Field 1), Nuku'alofa
-Attendance: 150
-Referee: Robinson Banga (Vanuatu)
+    Tamburrini Goal 51'
+    Jadue Goal 90+1'
 
-2 September 2015
-15:30
-Tonga  1-2  American Samoa
-S. Uhatahi Goal 47' Report (FIFA)
-Report (OFC) 
+Prince Mohamed bin Fahd Stadium, Dammam
+Attendance: 4,820
+Referee: Abdulrahman Al-Jassim (Qatar)
 
-    J. Manao Goal 49'
-    Ott Goal 51'
-
-Loto-Tonga Soka Centre (Field 1), Nuku'alofa
+16 June 2015
+16:00 UTC+8
+Timor-Leste  0-1  United Arab Emirates
+Report (FIFA)
+Report (AFC) O. Abdulrahman Goal 80'
+Shah Alam Stadium, Shah Alam (Malaysia)[note 2]
 Attendance: 200
-Referee: Salesh Chand (Fiji)
+Referee: Ma Ning (China)
 
-4 September 2015
-13:00[note 1]
-Tonga  0-3  Samoa
+16 June 2015
+20:45 UTC+8
+Malaysia  0-6  Palestine
 Report (FIFA)
-Report (OFC) 
+Report (AFC) 
 
-    Mobberley Goal 9'
-    Hall Goal 22', 77'
+    Al-Batat Goal 9'
+    Maraaba Goal 22', 75'
+    Seyam Goal 41', 86'
+    Yousef Goal 63'
 
-Loto-Tonga Soka Centre (Field 2), Nuku'alofa
-Attendance: 250
-Referee: Averii Jacques (Tahiti)
+Bukit Jalil National Stadium, Kuala Lumpur
+Attendance: 3,000
+Referee: Kim Sang-woo (South Korea)
 
-4 September 2015
-15:30[note 1]
-American Samoa  2-0  Cook Islands
+3 September 2015
+19:15 UTC+4
+United Arab Emirates  10-0  Malaysia
 
-    Mitchell Goal 57'
-    J. Manao Goal 67'
+    Salem Goal 16'
+    Mabkhout Goal 22', 33', 76'
+    Khalil Goal 24', 29', 70', 78'
+    Fardan Goal 25'
+    Ahmed Goal 37'
 
 Report (FIFA)
-Report (OFC) 
-Loto-Tonga Soka Centre (Field 1), Nuku'alofa
-Attendance: 250
-Referee: Ravitesh Behari (Fiji)
+Report (AFC) 
+Mohammed Bin Zayed Stadium, Abu Dhabi
+Attendance: 7,822
+Referee: Abdulrahman Al-Jassim (Qatar)
+
+3 September 2015
+20:40 UTC+3
+Saudi Arabia  7-0  Timor-Leste
+
+    Al-Shehri Goal 2'
+    Al-Sahlawi Goal 23' (pen.), 26', 71'
+    Al-Faraj Goal 30'
+    Al-Jassim Goal 32'
+    Al-Muwallad Goal 73'
+
+Report (FIFA)
+Report (AFC) 
+King Abdullah Sports City, Jeddah
+Attendance: 11,000
+Referee: Timur Faizullin (Kyrgyzstan)
+
+8 September 2015
+20:45 UTC+8
+Malaysia  1-2  Saudi Arabia
+Safiq Goal 70' Report (FIFA)
+Report (AFC) 
+
+    Al-Jassim Goal 73'
+    Al-Sahlawi Goal 76'
+
+Shah Alam Stadium, Shah Alam
+Attendance: 7,000
+Referee: Liu Kwok Man (Hong Kong)
+
+8 September 2015
+17:00 UTC+3
+Palestine  0-0  United Arab Emirates
+Report (FIFA)
+Report (AFC) 
+Faisal Al-Husseini International Stadium, Al-Ram
+Attendance: 15,000
+Referee: Ali Sabah Adday Al-Qaysi (Iraq)
+
+8 October 2015
+16:00 UTC+9
+Timor-Leste  1-1  Palestine
+Saro Goal 54' Report (FIFA)
+Report (AFC) Abu Nahyeh Goal 90+2'
+Dili Municipal Stadium, Dili
+Attendance: 2,000
+Referee: Kim Dong-jin (South Korea)
+
+8 October 2015
+20:00 UTC+3
+Saudi Arabia  2-1  United Arab Emirates
+Al-Sahlawi Goal 45', 90' (pen.) Report (FIFA)
+Report (AFC) Khalil Goal 18'
+King Abdullah Sports City, Jeddah
+Attendance: 32,482
+Referee: Muhammad Taqi Aljaafari Bin Jahari (Singapore)
+
+13 October 2015
+16:00 UTC+9
+Timor-Leste  0-1  Malaysia
+Report (FIFA)
+Report (AFC) Amri Goal 10'
+Dili Municipal Stadium, Dili
+Attendance: 2,500
+Referee: Kim Hee-gon (South Korea)
+
+9 November 2015[note 1]
+16:00 UTC+2
+Palestine  0-0  Saudi Arabia
+Report (FIFA)
+Report (AFC) 
+Amman International Stadium, Amman (Jordan)[note 4]
+Attendance: 10,000
+Referee: Adham Makhadmeh (Jordan)
+
+12 November 2015
+16:00 UTC+2
+Palestine  6-0  Malaysia
+
+    Cantillana Goal 37'
+    Abu Nahyeh Goal 38', 45', 58'
+    Seyam Goal 88'
+    Ihbeisheh Goal 90+1'
+
+Report (FIFA)
+Report (AFC) 
+Amman International Stadium, Amman (Jordan)[note 4]
+Attendance: 9,772
+Referee: Ahmed Al-Kaf (Oman)
+
+12 November 2015
+18:15 UTC+4
+United Arab Emirates  8-0  Timor-Leste
+
+    Mabkhout Goal 15', 19'
+    Khalil Goal 43', 53' (pen.), 56', 57'
+    Ali Goal 54'
+    Al Hashmi Goal 87'
+
+Report (FIFA)
+Report (AFC) 
+Mohammed Bin Zayed Stadium, Abu Dhabi
+Attendance: 7,870
+Referee: Mohsen Torky (Iran)
+
+17 November 2015
+16:00 UTC+9
+Timor-Leste  0-10  Saudi Arabia
+Report (FIFA)
+Report (AFC) 
+
+    Al-Sahlawi Goal 29' (pen.), 42', 55' (pen.), 70', 89'
+    Hawsawi Goal 34'
+    Al-Shehri Goal 35'
+    Al-Jassim Goal 85'
+    Hazazi Goal 90'
+    Al-Muwallad Goal 90+2'
+
+Dili Municipal Stadium, Dili
+Attendance: 2,000
+Referee: Alan Milliner (Australia)
+
+17 November 2015
+20:45 UTC+8
+Malaysia  1-2  United Arab Emirates
+Baddrol Goal 59' Report (FIFA)
+Report (AFC) 
+
+    O. Abdulrahman Goal 22'
+    Khalil Goal 52'
+
+Shah Alam Stadium, Shah Alam
+Attendance: 100[note 3]
+Referee: Masaaki Toma (Japan)
+
+24 March 2016
+19:00 UTC+4
+United Arab Emirates  2-0  Palestine
+
+    Al Hammadi Goal 33'
+    Khalil Goal 60' (pen.)
+
+Report (FIFA)
+Report (AFC) 
+Mohammed Bin Zayed Stadium, Abu Dhabi
+Attendance: 15,822
+Referee: Ben Williams (Australia)
+
+24 March 2016
+20:30 UTC+3
+Saudi Arabia  2-0  Malaysia
+
+    Al-Sahlawi Goal 50'
+    Al-Jassim Goal 74'
+
+Report (FIFA)
+Report (AFC) 
+King Abdullah Sports City, Jeddah
+Attendance: 34,839
+Referee: Kim Dong-jin (South Korea)
+
+29 March 2016
+17:00 UTC+3
+Palestine  7-0  Timor-Leste
+
+    Ihbeisheh Goal 2'
+    Cantillana Goal 18', 66'
+    Pinto Goal 32', 39'
+    Awad Goal 77'
+    Bahdari Goal 90'
+
+Report (FIFA)
+Report (AFC) 
+Dora International Stadium, Hebron
+Attendance: 6,000
+Referee: Hettikamkanamge Perera (Sri Lanka)
+
+29 March 2016
+19:00 UTC+4
+United Arab Emirates  1-1  Saudi Arabia
+O. Abdulrahman Goal 52' Report (FIFA)
+Report (AFC) Al-Jassim Goal 24'
+Mohammed Bin Zayed Stadium, Abu Dhabi
+Attendance: 32,325
+Referee: Nawaf Shukralla (Bahrain)
+Group B
+Pos Team
+
+    v t e 
+
+Pld W D L GF GA GD Pts Qualification 
+1  Australia 8 7 0 1 29 4 +25 21 Third round and Asian Cup — 5-1 3-0 7-0 5-0
+2  Jordan 8 5 1 2 21 7 +14 16 Asian Cup qualifying third round 2-0 — 0-0 3-0 8-0
+3  Kyrgyzstan 8 4 2 2 10 8 +2 14 1-2 1-0 — 2-2 2-0
+4  Tajikistan 8 1 2 5 9 20 -11 5 Asian Cup qualifying play-off round 0-3 1-3 0-1 — 5-0
+5  Bangladesh 8 0 1 7 2 32 -30 1 0-4 0-4 1-3 1-1 —
+Source: FIFA
+Rules for classification: Qualification tiebreakers
+
+11 June 2015
+17:00 UTC+6
+Bangladesh  1-3  Kyrgyzstan
+Kichin Goal 32' (o.g.) Report (FIFA)
+Report (AFC) 
+
+    Zemlianukhin Goal 9', 41'
+    Bernhardt Goal 29' (pen.)
+
+Bangabandhu National Stadium, Dhaka
+Attendance: 10,000
+Referee: Sukhbir Singh (Singapore)
+
+11 June 2015
+20:00 UTC+5
+Tajikistan  1-3  Jordan
+M. Dzhalilov Goal 66' Report (FIFA)
+Report (AFC) Abdel-Fattah Goal 29', 63', 88'
+Pamir Stadium, Dushanbe
+Attendance: 19,000
+Referee: Mohsen Torky (Iran)
+
+16 June 2015
+17:00 UTC+6
+Bangladesh  1-1  Tajikistan
+Hasan Goal 50' Report (FIFA)
+Report (AFC) Fatkhuloev Goal 88'
+Bangabandhu National Stadium, Dhaka
+Attendance: 12,000
+Referee: Lee Min-hu (South Korea)
+
+16 June 2015
+20:00 UTC+6
+Kyrgyzstan  1-2  Australia
+Mirzaliev Goal 90+2' Report (FIFA)
+Report (AFC) 
+
+    Jedinak Goal 2'
+    Oar Goal 68'
+
+Spartak Stadium, Bishkek
+Attendance: 18,000
+Referee: Khamis Al-Marri (Qatar)
+
+3 September 2015
+19:00 UTC+8
+Australia  5-0  Bangladesh
+
+    Leckie Goal 6'
+    Rogic Goal 8', 20'
+    Burns Goal 29'
+    Mooy Goal 61'
+
+Report (FIFA)
+Report (AFC) 
+Perth Oval, Perth
+Attendance: 19,495
+Referee: Võ Minh Trí (Vietnam)
+
+3 September 2015
+19:00 UTC+3
+Jordan  0-0  Kyrgyzstan
+Report (FIFA)
+Report (AFC) 
+Amman International Stadium, Amman
+Attendance: 5,012
+Referee: Mohd Amirul Izwan Yaacob (Malaysia)
+
+8 September 2015
+17:00 UTC+6
+Bangladesh  0-4  Jordan
+Report (FIFA)
+Report (AFC) 
+
+    Deeb Goal 13' (pen.), 56'
+    Abu Amarah Goal 33'
+    Al-Bakhit Goal 58'
+
+Bangabandhu National Stadium, Dhaka
+Attendance: 12,000
+Referee: Yu Ming-hsun (Chinese Taipei)
+
+8 September 2015
+18:00 UTC+5
+Tajikistan  0-3  Australia
+Report (FIFA)
+Report (AFC) 
+
+    Milligan Goal 57'
+    Cahill Goal 73', 90+1'
+
+Pamir Stadium, Dushanbe
+Attendance: 19,000
+Referee: Jameel Abdulhusin (Bahrain)
+
+8 October 2015
+17:00 UTC+3
+Jordan  2-0  Australia
+
+    Abdel-Fattah Goal 47' (pen.)
+    Al-Dardour Goal 84'
+
+Report (FIFA)
+Report (AFC) 
+Amman International Stadium, Amman
+Attendance: 11,462
+Referee: Masaaki Toma (Japan)
+
+8 October 2015
+20:00 UTC+6
+Kyrgyzstan  2-2  Tajikistan
+
+    Duyshobekov Goal 7'
+    Zemlianukhin Goal 90+4' (pen.)
+
+Report (FIFA)
+Report (AFC) 
+
+    M. Dzhalilov Goal 65'
+    Nazarov Goal 71' (pen.)
+
+Spartak Stadium, Bishkek
+Attendance: 17,600
+Referee: Mooud Bonyadifard (Iran)
+
+13 October 2015
+20:00 UTC+6
+Kyrgyzstan  2-0  Bangladesh
+
+    Lux Goal 27'
+    Amirov Goal 89'
+
+Report (FIFA)
+Report (AFC) 
+Spartak Stadium, Bishkek
+Attendance: 12,001
+Referee: Jameel Abdulhusin (Bahrain)
+
+13 October 2015
+19:00 UTC+3
+Jordan  3-0  Tajikistan
+
+    Al-Dardour Goal 65', 90+4'
+    Abdel-Fattah Goal 67'
+
+Report (FIFA)
+Report (AFC) 
+Amman International Stadium, Amman
+Attendance: 15,000
+Referee: Abdullah Al Hilali (Oman)
+
+12 November 2015
+20:00 UTC+11
+Australia  3-0  Kyrgyzstan
+
+    Jedinak Goal 40' (pen.)
+    Cahill Goal 50'
+    Amirov Goal 69' (o.g.)
+
+Report (FIFA)
+Report (AFC) 
+Canberra Stadium, Canberra
+Attendance: 19,412
+Referee: Kim Sang-woo (South Korea)
+
+12 November 2015
+17:00 UTC+5
+Tajikistan  5-0  Bangladesh
+
+    M. Dzhalilov Goal 16', 26', 59', 74'
+    Nazarov Goal 51' (pen.)
+
+Report (FIFA)
+Report (AFC) 
+Pamir Stadium, Dushanbe
+Attendance: 5,500
+Referee: Ali Sabah Adday Al-Qaysi (Iraq)
+
+17 November 2015
+17:30 UTC+6
+Bangladesh  0-4  Australia
+Report (FIFA)
+Report (AFC) 
+
+    Cahill Goal 6', 32', 37'
+    Jedinak Goal 43'
+
+Bangabandhu National Stadium, Dhaka
+Attendance: 19,730
+Referee: Wang Di (China)
+
+17 November 2015
+20:00 UTC+6
+Kyrgyzstan  1-0  Jordan
+Zemlianukhin Goal 48' Report (FIFA)
+Report (AFC) 
+Spartak Stadium, Bishkek
+Attendance: 14,000
+Referee: Çarymyrat Kurbanow (Turkmenistan)
+
+24 March 2016
+19:30 UTC+10:30
+Australia  7-0  Tajikistan
+
+    Luongo Goal 3'
+    Jedinak Goal 13' (pen.)
+    Milligan Goal 57' (pen.)
+    Burns Goal 67', 87'
+    Rogic Goal 70', 72'
+
+Report (FIFA)
+Report (AFC) 
+Adelaide Oval, Adelaide
+Attendance: 35,439
+Referee: Fahad Al-Marri (Qatar)
+
+24 March 2016
+14:30 UTC+2
+Jordan  8-0  Bangladesh
+
+    Al-Dardour Goal 7', 23', 40'
+    Deeb Goal 29' (pen.)
+    Al-Rawashdeh Goal 32'
+    Faisal Goal 63'
+    Al-Naber Goal 82'
+    Samir Goal 90+2' (pen.)
+
+Report (FIFA)
+Report (AFC) 
+Amman International Stadium, Amman
+Attendance: 6,000
+Referee: Muhammad Taqi Aljaafari Bin Jahari (Singapore)
+
+29 March 2016
+20:00 UTC+11
+Australia  5-1  Jordan
+
+    Cahill Goal 24', 44'
+    Mooy Goal 39'
+    Rogic Goal 53'
+    Luongo Goal 69'
+
+Report (FIFA)
+Report (AFC) Deeb Goal 90'
+Sydney Football Stadium, Sydney
+Attendance: 24,975
+Referee: Kim Jong-hyeok (South Korea)
+
+29 March 2016
+18:00 UTC+5
+Tajikistan  0-1  Kyrgyzstan
+Report (FIFA)
+Report (AFC) Lux Goal 18'
+Pamir Stadium, Dushanbe
+Attendance: 7,500
+Referee: Aziz Asimov (Uzbekistan)
+Group C
+Pos Team
+
+    v t e 
+
+Pld W D L GF GA GD Pts Qualification 
+1  Qatar 8 7 0 1 29 4 +25 21 Third round and Asian Cup — 1-0 2-0 4-0 15-0
+2  China 8 5 2 1 27 1 +26 17 2-0 — 0-0 4-0 12-0
+3  Hong Kong 8 4 2 2 13 5 +8 14 Asian Cup qualifying third round 2-3 0-0 — 2-0 7-0
+4  Maldives 8 2 0 6 8 20 -12 6 Asian Cup qualifying play-off round 0-1 0-3 0-1 — 4-2
+5  Bhutan 8 0 0 8 5 52 -47 0 0-3 0-6 0-1 3-4 —
+Source: FIFA
+Rules for classification: Qualification tiebreakers
+
+11 June 2015
+20:00 UTC+8
+Hong Kong  7-0  Bhutan
+
+    McKee Goal 19', 57'
+    Christian Goal 23'
+    Lo Kwan Yee Goal 30'
+    Ju Yingzhi Goal 42'
+    Lam Ka Wai Goal 49' (pen.)
+    Godfred Goal 67'
+
+Report (FIFA)
+Report (AFC) 
+Mong Kok Stadium, Hong Kong
+Attendance: 6,326
+Referee: Çarymyrat Kurbanow (Turkmenistan)
+
+11 June 2015
+21:00 UTC+5
+Maldives  0-1  Qatar
+Report (FIFA)
+Report (AFC) Abdul Maqsoud Goal 90+8'
+National Football Stadium, Malé
+Attendance: 9,000
+Referee: Yudai Yamamoto (Japan)
+
+16 June 2015
+18:00 UTC+6
+Bhutan  0-6  China
+Report (FIFA)
+Report (AFC) 
+
+    Yang Xu Goal 45+2', 60', 76'
+    Wu Lei Goal 55'
+    Yu Dabao Goal 67', 83'
+
+Changlimithang Stadium, Thimphu
+Attendance: 10,000
+Referee: Rowan Arumughan (India)
+
+16 June 2015
+20:00 UTC+8
+Hong Kong  2-0  Maldives
+
+    Xu Deshuai Goal 63'
+    Lam Ka Wai Goal 67'
+
+Report (FIFA)
+Report (AFC) 
+Mong Kok Stadium, Hong Kong
+Attendance: 6,370
+Referee: Adham Makhadmeh (Jordan)
+
+3 September 2015
+19:35 UTC+8
+China  0-0  Hong Kong
+Report (FIFA)
+Report (AFC) 
+Bao'an Stadium, Shenzhen
+Attendance: 26,173
+Referee: Strebre Delovski (Australia)
+
+3 September 2015
+19:00 UTC+3
+Qatar  15-0  Bhutan
+
+    Musa Goal 8', 28'
+    Kasola Goal 18'
+    Assadalla Goal 21', 45', 63'
+    Al-Haidos Goal 25', 87'
+    Muntari Goal 37', 41', 48'
+    Afif Goal 57'
+    Khoukhi Goal 62', 70'
+    Mohammad Goal 75'
+
+Report (FIFA)
+Report (AFC) 
+Jassim Bin Hamad Stadium, Doha
+Attendance: 2,022
+Referee: Mohammad Abu Loum (Jordan)
+
+8 September 2015
+19:35 UTC+8
+Maldives  0-3  China
+Report (FIFA)
+Report (AFC) 
+
+    Yu Dabao Goal 8', 57'
+    Zhang Linpeng Goal 66'
+
+Shenyang Olympic Sports Center Stadium, Shenyang (China)[note 5]
+Attendance: 28,036
+Referee: Sukhbir Singh (Singapore)
+
+8 September 2015
+20:00 UTC+8
+Hong Kong  2-3  Qatar
+
+    Bai He Goal 87'
+    Godfred Goal 89'
+
+Report (FIFA)
+Report (AFC) 
+
+    Boudiaf Goal 22'
+    Hassan Goal 62'
+    Musa Goal 84'
+
+Mong Kok Stadium, Hong Kong
+Attendance: 6,396
+Referee: Kim Sang-woo (South Korea)
+
+8 October 2015
+18:00 UTC+6
+Bhutan  3-4  Maldives
+
+    Dorji Goal 85'
+    Gyeltshen Goal 88'
+    Basnet Goal 90+1'
+
+Report (FIFA)
+Report (AFC) 
+
+    Nashid Goal 11'
+    Ashfaq Goal 23', 33', 57' (pen.)
+
+Changlimithang Stadium, Thimphu
+Attendance: 7,000
+Referee: Tayeb Shamsuzzaman (Bangladesh)
+
+8 October 2015
+18:30 UTC+3
+Qatar  1-0  China
+Boudiaf Goal 22' Report (FIFA)
+Report (AFC) 
+Jassim Bin Hamad Stadium, Doha
+Attendance: 7,730
+Referee: Ko Hyung-jin (South Korea)
+
+13 October 2015
+18:00 UTC+6
+Bhutan  0-1  Hong Kong
+Report (FIFA)
+Report (AFC) Chan Siu Ki Goal 89'
+Changlimithang Stadium, Thimphu
+Attendance: 7,280
+Referee: Aziz Asimov (Uzbekistan)
+
+13 October 2015
+18:30 UTC+3
+Qatar  4-0  Maldives
+
+    Khoukhi Goal 28', 70'
+    Kasola Goal 69'
+    Musa Goal 90+2'
+
+Report (FIFA)
+Report (AFC) 
+Jassim Bin Hamad Stadium, Doha
+Attendance: 4,006
+Referee: Ahmed Al-Kaf (Oman)
+
+12 November 2015
+15:50 UTC+5
+Maldives  0-1  Hong Kong
+Report (FIFA)
+Report (AFC) Paulinho Goal 13' (pen.)
+National Football Stadium, Malé
+Attendance: 6,000
+Referee: Ammar Al-Jeneibi (United Arab Emirates)
+
+12 November 2015
+19:35 UTC+8
+China  12-0  Bhutan
+
+    Mei Fang Goal 10'
+    Yang Xu Goal 13', 21' (pen.), 37', 52'
+    Yu Dabao Goal 16', 39'
+    Yu Hanchao Goal 34', 72'
+    Wang Yongpo Goal 66', 81'
+    Zhang Xizhe Goal 88'
+
+Report (FIFA)
+Report (AFC) 
+Helong Stadium, Changsha
+Attendance: 27,358
+Referee: Marai Al-Awaji (Saudi Arabia)
+
+17 November 2015
+18:00 UTC+6
+Bhutan  0-3  Qatar
+Report (FIFA)
+Report (AFC) 
+
+    Muntari Goal 22'
+    Al-Haidos Goal 36', 90'
+
+Changlimithang Stadium, Thimphu
+Attendance: 4,128
+Referee: Ilgiz Tantashev (Uzbekistan)
+
+17 November 2015
+20:00 UTC+8
+Hong Kong  0-0  China
+Report (FIFA)
+Report (AFC) 
+Mong Kok Stadium, Hong Kong
+Attendance: 6,071
+Referee: Nawaf Shukralla (Bahrain)
+
+24 March 2016
+19:35 UTC+8
+China  4-0  Maldives
+
+    Jiang Ning Goal 2', 84', 90+1'
+    Yang Xu Goal 12'
+
+Report (FIFA)
+Report (AFC) 
+Wuhan Sports Center Stadium, Wuhan
+Attendance: 32,618
+Referee: Ali Sabah Adday Al-Qaysi (Iraq)
+
+24 March 2016
+19:00 UTC+3
+Qatar  2-0  Hong Kong
+
+    Al-Haidos Goal 20'
+    Soria Goal 87'
+
+Report (FIFA)
+Report (AFC) 
+Jassim Bin Hamad Stadium, Doha
+Attendance: 10,170
+Referee: Dmitriy Mashentsev (Kyrgyzstan)
+
+29 March 2016
+20:15 UTC+8
+China  2-0  Qatar
+
+    Huang Bowen Goal 57'
+    Wu Lei Goal 88'
+
+Report (FIFA)
+Report (AFC) 
+Shaanxi Province Stadium, Xi'an
+Attendance: 46,718
+Referee: Mohd Amirul Izwan Yaacob (Malaysia)
+
+29 March 2016
+21:00 UTC+5
+Maldives  4-2  Bhutan
+
+    Asadhulla Goal 37'
+    Ashfaq Goal 81' (pen.), 90+4'
+    Hassan Goal 87'
+
+Report (FIFA)
+Report (AFC) 
+
+    Gyeltshen Goal 7'
+    Dorji Goal 48' (pen.)
+
+National Football Stadium, Malé
+Attendance: 4,102
+Referee: Kim Sang-woo (South Korea)
+Group D
+Pos Team
+
+    v t e 
+
+Pld W D L GF GA GD Pts Qualification 
+1  Iran 8 6 2 0 26 3 +23 20 Third round and Asian Cup — 2-0 3-1 6-0 4-0
+2  Oman 8 4 2 2 11 7 +4 14 Asian Cup qualifying third round 1-1 — 3-1 1-0 3-0
+3  Turkmenistan 8 4 1 3 10 11 -1 13 1-1 2-1 — 1-0 2-1
+4  Guam 8 2 1 5 3 16 -13 7 0-6 0-0 1-0 — 2-1
+5  India 8 1 0 7 5 18 -13 3 Asian Cup qualifying play-off round 0-3[a] 1-2 1-2 1-0 —
+Source: FIFA
+Rules for classification: Qualification tiebreakers
+Notes:
+
+    FIFA awarded Iran a 3-0 win as a result of India fielding the ineligible player Eugeneson Lyngdoh.[21] The match initially ended 3-0 to Iran.
+
+11 June 2015
+16:15 UTC+10
+Guam  1-0  Turkmenistan
+Annaorazow Goal 12' (o.g.) Report (FIFA)
+Report (AFC) 
+Guam F.A. National Training Center, Dededo
+Attendance: 3,000
+Referee: Wang Di (China)
+
+11 June 2015
+19:00 UTC+5:30
+India  1-2  Oman
+Chhetri Goal 26' Report (FIFA)
+Report (AFC) 
+
+    Said Goal 1'
+    Al-Hosni Goal 40' (pen.)
+
+Sree Kanteerava Stadium, Bangalore
+Attendance: 19,312
+Referee: Ko Hyung-jin (South Korea)
+
+16 June 2015
+16:15 UTC+10
+Guam  2-1  India
+
+    McDonald Goal 37'
+    Nicklaw Goal 62'
+
+Report (FIFA)
+Report (AFC) Chhetri Goal 90+3'
+Guam F.A. National Training Center, Dededo
+Attendance: 3,277
+Referee: Võ Minh Trí (Vietnam)
+
+16 June 2015
+18:00 UTC+5
+Turkmenistan  1-1  Iran
+Mingazow Goal 45+1' Report (FIFA)
+Report (AFC) Azmoun Goal 4'
+Sport Toplumy Stadium, Dasoguz
+Attendance: 10,000
+Referee: Jameel Abdulhusin (Bahrain)
+
+3 September 2015
+19:00 UTC+4:30
+Iran  6-0  Guam
+
+    Dejagah Goal 10' (pen.)
+    Taremi Goal 31', 65'
+    Azmoun Goal 34', 41'
+    Torabi Goal 89'
+
+Report (FIFA)
+Report (AFC) 
+Azadi Stadium, Tehran
+Attendance: 11,232
+Referee: Khamis Al-Marri (Qatar)
+
+3 September 2015
+19:00 UTC+4
+Oman  3-1  Turkmenistan
+
+    Saleh Goal 7'
+    Saparow Goal 11' (o.g.)
+    Al-Hosni Goal 59'
+
+Report (FIFA)
+Report (AFC) Amanow Goal 82'
+Al-Seeb Stadium, Seeb
+Attendance: 7,500
+Referee: Muhammad Taqi Aljaafari Bin Jahari (Singapore)
+
+8 September 2015
+16:00 UTC+10
+Guam  0-0  Oman
+Report (FIFA)
+Report (AFC) 
+Guam F.A. National Training Center, Dededo
+Attendance: 2,239
+Referee: Hiroyuki Kimura (Japan)
+
+8 September 2015
+19:00 UTC+5:30
+India  0-3  Iran
+Report (FIFA)
+Report (AFC) 
+
+    Azmoun Goal 28'
+    Teymourian Goal 46'
+    Taremi Goal 49'
+
+Sree Kanteerava Stadium, Bangalore
+Attendance: 14,500
+Referee: Ammar Al-Jeneibi (United Arab Emirates)
+
+8 October 2015
+18:00 UTC+5
+Turkmenistan  2-1  India
+
+    Abylow Goal 8'
+    Amanow Goal 60'
+
+Report (FIFA)
+Report (AFC) Lalpekhlua Goal 28'
+Köpetdag Stadium, Ashgabat
+Attendance: 20,100
+Referee: Masoud Tufayelieh (Syria)
+
+8 October 2015
+18:30 UTC+4
+Oman  1-1  Iran
+Al-Mukhaini Goal 52' Report (FIFA)
+Report (AFC) Hosseini Goal 70'
+Sultan Qaboos Sports Complex, Muscat
+Attendance: 12,400
+Referee: Valentin Kovalenko (Uzbekistan)
+
+13 October 2015
+18:00 UTC+5
+Turkmenistan  1-0  Guam
+Abylow Goal 16' Report (FIFA)
+Report (AFC) 
+Köpetdag Stadium, Ashgabat
+Attendance: 20,200
+Referee: Turki Al-Khudhayr (Saudi Arabia)
+
+13 October 2015
+18:30 UTC+4
+Oman  3-0  India
+
+    Mubarak Goal 55'
+    Al-Muqbali Goal 67', 84'
+
+Report (FIFA)
+Report (AFC) 
+Sultan Qaboos Sports Complex, Muscat
+Attendance: 11,000
+Referee: Fahad Al-Marri (Qatar)
+
+12 November 2015
+15:00 UTC+3:30
+Iran  3-1  Turkmenistan
+
+    Pouraliganji Goal 6'
+    Ezatolahi Goal 64'
+    Dejagah Goal 83' (pen.)
+
+Report (FIFA)
+Report (AFC) Saparow Goal 62'
+Azadi Stadium, Tehran
+Attendance: 35,800
+Referee: Kim Dong-jin (South Korea)
+
+12 November 2015
+19:00 UTC+5:30
+India  1-0  Guam
+R. Singh Goal 10' Report (FIFA)
+Report (AFC) 
+Sree Kanteerava Stadium, Bangalore
+Attendance: 6,277
+Referee: Jarred Gillett (Australia)
+
+17 November 2015
+15:30 UTC+10
+Guam  0-6  Iran
+Report (FIFA)
+Report (AFC) 
+
+    Taremi Goal 12', 63'
+    Kamyabinia Goal 32'
+    Rezaeian Goal 49'
+    Shojaei Goal 52' (pen.)
+    Ansarifard Goal 53'
+
+Guam F.A. National Training Center, Dededo
+Attendance: 2,087
+Referee: Ho Wai Sing (Hong Kong)
+
+17 November 2015
+18:00 UTC+5
+Turkmenistan  2-1  Oman
+
+    Geworkýan Goal 40'
+    Muhadow Goal 67'
+
+Report (FIFA)
+Report (AFC) Al-Ghassani Goal 70'
+Köpetdag Stadium, Ashgabat
+Attendance: 23,100
+Referee: Ma Ning (China)
+
+24 March 2016
+19:00 UTC+4:30
+Iran  4-0  India
+
+    Hajsafi Goal 33' (pen.), 66' (pen.)
+    Azmoun Goal 61'
+    Jahanbakhsh Goal 78'
+
+Report (FIFA)
+Report (AFC) 
+Azadi Stadium, Tehran
+Attendance: 29,160
+Referee: Võ Minh Trí (Vietnam)
+
+24 March 2016
+19:00 UTC+4
+Oman  1-0  Guam
+Mubarak Goal 53' Report (FIFA)
+Report (AFC) 
+Sultan Qaboos Sports Complex, Muscat
+Attendance: 8,000
+Referee: Jameel Abdulhusin (Bahrain)
+
+29 March 2016
+18:00 UTC+5:30
+India  1-2  Turkmenistan
+Jhingan Goal 26' Report (FIFA)
+Report (AFC) 
+
+    Amanow Goal 48'
+    Ataýew Goal 70'
+
+Jawaharlal Nehru Stadium, Kochi
+Attendance: 3,111
+Referee: Khamis Al-Marri (Qatar)
+
+29 March 2016
+19:00 UTC+4:30
+Iran  2-0  Oman
+Azmoun Goal 16', 23' Report (FIFA)
+Report (AFC) 
+Azadi Stadium, Tehran
+Attendance: 33,850
+Referee: Minoru Tojo (Japan)
+Group E
+Pos Team
+
+    v t e 
+
+Pld W D L GF GA GD Pts Qualification 
+1  Japan 8 7 1 0 27 0 +27 22 Third round and Asian Cup — 5-0 0-0 5-0 3-0
+2  Syria 8 6 0 2 26 11 +15 18 0-3 — 1-0 5-2 6-0
+3  Singapore 8 3 1 4 9 9 0 10 Asian Cup qualifying third round 0-3 1-2 — 1-0 2-1
+4  Afghanistan 8 3 0 5 8 24 -16 9 0-6 0-6 2-1 — 3-0
+5  Cambodia 8 0 0 8 1 27 -26 0 Asian Cup qualifying play-off round 0-2 0-6 0-4 0-1 —
+Source: FIFA
+Rules for classification: Qualification tiebreakers
+
+11 June 2015
+18:30 UTC+7
+Cambodia  0-4  Singapore
+Report (FIFA)
+Report (AFC) 
+
+    Khairul Goal 9'
+    Safuwan Goal 21', 35'
+    Fazrul Goal 55'
+
+Olympic Stadium, Phnom Penh
+Attendance: 63,000
+Referee: Liu Kwok Man (Hong Kong)
+
+11 June 2015
+20:00 UTC+4:30
+Afghanistan  0-6  Syria
+Report (FIFA)
+Report (AFC) 
+
+    Rafe Goal 19', 35'
+    Ajan Goal 42'
+    Al Hussain Goal 70'
+    Malki Goal 75'
+    Kharbin Goal 90+4' (pen.)
+
+Samen Stadium, Mashhad (Iran)[note 7]
+Attendance: 7,647
+Referee: Ilgiz Tantashev (Uzbekistan)
+
+16 June 2015[note 8]
+19:30 UTC+9
+Japan  0-0  Singapore
+Report (FIFA)
+Report (AFC) 
+Saitama Stadium 2002, Saitama
+Attendance: 57,533
+Referee: Mohanad Qasim Eesee Sarray (Iraq)
+
+16 June 2015
+18:30 UTC+7
+Cambodia  0-1  Afghanistan
+Report (FIFA)
+Report (AFC) Zazai Goal 86'
+Olympic Stadium, Phnom Penh
+Attendance: 55,000
+Referee: Marai Al-Awaji (Saudi Arabia)
+
+3 September 2015
+19:26 UTC+9
+Japan  3-0  Cambodia
+
+    Honda Goal 28'
+    Yoshida Goal 50'
+    Kagawa Goal 61'
+
+Report (FIFA)
+Report (AFC) 
+Saitama Stadium 2002, Saitama
+Attendance: 54,716
+Referee: Kim Hee-gon (South Korea)
+
+3 September 2015
+20:00 UTC+4
+Syria  1-0  Singapore
+Al-Jafal Goal 59' Report (FIFA)
+Report (AFC) 
+Sultan Qaboos Sports Complex, Muscat (Oman)[note 9]
+Attendance: 100
+Referee: Yousef Al-Marzouq (Kuwait)
+
+8 September 2015
+18:30 UTC+7
+Cambodia  0-6  Syria
+Report (FIFA)
+Report (AFC) 
+
+    Kharbin Goal 29', 39'
+    Malki Goal 31'
+    Al-Mawas Goal 44'
+    Midani Goal 50'
+    Omari Goal 81'
+
+Olympic Stadium, Phnom Penh
+Attendance: 35,000
+Referee: Wang Di (China)
+
+8 September 2015
+16:55 UTC+4:30
+Afghanistan  0-6  Japan
+Report (FIFA)
+Report (AFC) 
+
+    Kagawa Goal 10', 50'
+    Morishige Goal 35'
+    Okazaki Goal 57', 60'
+    Honda Goal 74'
+
+Azadi Stadium, Tehran (Iran)[note 7]
+Attendance: 8,650
+Referee: Khamis Al-Kuwari (Qatar)
+
+8 October 2015
+20:00 UTC+8
+Singapore  1-0  Afghanistan
+Khairul Goal 72' Report (FIFA)
+Report (AFC) 
+National Stadium, Kallang
+Attendance: 5,400
+Referee: Ng Chiu Kok (Hong Kong)
+
+8 October 2015
+17:00 UTC+4
+Syria  0-3  Japan
+Report (FIFA)
+Report (AFC) 
+
+    Honda Goal 55' (pen.)
+    Okazaki Goal 70'
+    Usami Goal 88'
+
+Al-Seeb Stadium, Seeb (Oman)[note 9]
+Attendance: 680
+Referee: Ravshan Irmatov (Uzbekistan)
+
+13 October 2015
+20:00 UTC+8
+Singapore  2-1  Cambodia
+
+    Faris Goal 16'
+    Fazrul Goal 47'
+
+Report (FIFA)
+Report (AFC) Suhana Goal 65'
+National Stadium, Kallang
+Attendance: 6,650
+Referee: Kim Dae-yong (South Korea)
+
+13 October 2015
+20:00 UTC+4
+Syria  5-2  Afghanistan
+
+    Omari Goal 9', 21', 83'
+    Al-Mawas Goal 32', 90'
+
+Report (FIFA)
+Report (AFC) 
+
+    Amiri Goal 44'
+    Shayesteh Goal 78'
+
+Al-Seeb Stadium, Seeb (Oman)[note 9]
+Attendance: 200
+Referee: Dmitriy Mashentsev (Kyrgyzstan)
+
+12 November 2015[note 8]
+19:15 UTC+8
+Singapore  0-3  Japan
+Report (FIFA)
+Report (AFC) 
+
+    Kanazaki Goal 20'
+    Honda Goal 26'
+    Yoshida Goal 88'
+
+National Stadium, Kallang
+Attendance: 33,868
+Referee: Fahad Al-Mirdasi (Saudi Arabia)
+
+12 November 2015
+15:00 UTC+3:30
+Afghanistan  3-0  Cambodia
+
+    Zazai Goal 42'
+    Amiri Goal 78'
+    Amani Goal 90+4'
+
+Report (FIFA)
+Report (AFC) 
+Takhti Stadium, Tehran (Iran)[note 7]
+Attendance: 2,585
+Referee: Adham Makhadmeh (Jordan)
+
+17 November 2015
+20:00 UTC+8
+Singapore  1-2  Syria
+Safuwan Goal 89' (pen.) Report (FIFA)
+Report (AFC) Kharbin Goal 20', 90+3'
+National Stadium, Kallang
+Attendance: 7,468
+Referee: Kim Jong-hyeok (South Korea)
+
+17 November 2015
+19:14 UTC+7
+Cambodia  0-2  Japan
+Report (FIFA)
+Report (AFC) 
+
+    Laboravy Goal 51' (o.g.)
+    Honda Goal 90'
+
+Olympic Stadium, Phnom Penh
+Attendance: 29,871
+Referee: Fu Ming (China)
+
+24 March 2016
+19:34 UTC+9
+Japan  5-0  Afghanistan
+
+    Okazaki Goal 43'
+    Kiyotake Goal 58'
+    Mukhammad Goal 63' (o.g.)
+    Yoshida Goal 74'
+    Kanazaki Goal 78'
+
+Report (FIFA)
+Report (AFC) 
+Saitama Stadium 2002, Saitama
+Attendance: 48,967
+Referee: Mohanad Qasim Eesee Sarray (Iraq)
+
+24 March 2016
+20:00 UTC+4
+Syria  6-0  Cambodia
+
+    Kharbin Goal 7', 19'
+    Kallasi Goal 57'
+    Makara Goal 70' (o.g.)
+    Al Hussain Goal 80'
+    Malki Goal 84'
+
+Report (FIFA)
+Report (AFC) 
+Al-Seeb Stadium, Seeb (Oman)[note 9]
+Attendance: 100
+Referee: Chris Beath (Australia)
+
+29 March 2016
+15:00 UTC+4:30
+Afghanistan  2-1  Singapore
+
+    Amani Goal 39'
+    Shirdel Goal 79'
+
+Report (FIFA)
+Report (AFC) Fazrul Goal 89'
+Takhti Stadium, Tehran (Iran)[note 7]
+Attendance: 24,500
+Referee: Fu Ming (China)
+
+29 March 2016
+19:34 UTC+9
+Japan  5-0  Syria
+
+    Al Masri Goal 17' (o.g.)
+    Kagawa Goal 66', 90'
+    Honda Goal 86'
+    Haraguchi Goal 90+3'
+
+Report (FIFA)
+Report (AFC) 
+Saitama Stadium 2002, Saitama
+Attendance: 57,475
+Referee: Alireza Faghani (Iran)
+Group F
+Pos Team
+
+    v t e 
+
+Pld W D L GF GA GD Pts Qualification 
+1  Thailand 6 4 2 0 14 6 +8 14 Third round and Asian Cup — 2-2 1-0 4-2 —
+2  Iraq 6 3 3 0 13 6 +7 12 2-2 — 1-0 5-1 —
+3  Vietnam 6 2 1 3 7 8 -1 7 Asian Cup qualifying third round 0-3 1-1 — 4-1 —
+4  Chinese Taipei 6 0 0 6 5 19 -14 0 Asian Cup qualifying play-off round 0-2 0-2 1-2 — —
+5  Indonesia (D) 0 0 0 0 0 0 0 0 Disqualified due to FIFA suspension[a] — — — — —
+Source: FIFA
+Rules for classification: Qualification tiebreakers
+(D) Disqualified.
+Notes:
+
+    On 30 May 2015, FIFA announced that the Football Association of Indonesia (PSSI) was suspended with immediate effect for governmental interference.[25] On 3 June 2015, the AFC confirmed that Indonesia have been excluded from the qualifying competition, and all matches involving them have been cancelled.[26]
+
+24 May 2015[note 10]
+19:00 UTC+7
+Thailand  1-0  Vietnam
+Pokklaw Goal 80' Report (FIFA)
+Report (AFC) 
+Rajamangala Stadium, Bangkok
+Attendance: 40,500
+Referee: Ben Williams (Australia)
+
+16 June 2015
+19:30 UTC+8
+Chinese Taipei  0-2  Thailand
+Report (FIFA)
+Report (AFC) Teerasil Goal 21', 39'
+Taipei Municipal Stadium, Taipei
+Attendance: 18,168
+Referee: Ali Shaban (Kuwait)
+
+3 September 2015
+17:00 UTC+4:30
+Iraq  5-1  Chinese Taipei
+
+    Adnan Goal 37'
+    Hosni Goal 59'
+    Yasin Goal 80'
+    Mahmoud Goal 88'
+    Meram Goal 90+1' (pen.)
+
+Report (FIFA)
+Report (AFC) Wen Chih-hao Goal 86'
+PAS Stadium, Tehran (Iran)[note 11]
+Attendance: 4,200
+Referee: Yaqoob Abdul Baki (Oman)
+
+8 September 2015
+19:00 UTC+8
+Chinese Taipei  1-2  Vietnam
+Wu Chun-ching Goal 82' Report (FIFA)
+Report (AFC) 
+
+    Thành Goal 53'
+    Son Goal 90+2'
+
+Taipei Municipal Stadium, Taipei
+Attendance: 20,239
+Referee: Kim Dae-yong (South Korea)
+
+8 September 2015
+19:00 UTC+7
+Thailand  2-2  Iraq
+
+    Theerathon Goal 80' (pen.)
+    Mongkol Goal 83'
+
+Report (FIFA)
+Report (AFC) 
+
+    Meram Goal 34'
+    Mahmoud Goal 49'
+
+Rajamangala Stadium, Bangkok
+Attendance: 43,572
+Referee: Masaaki Toma (Japan)
+
+8 October 2015
+19:00 UTC+7
+Vietnam  1-1  Iraq
+Vinh Goal 25' Report (FIFA)
+Report (AFC) Mahmoud Goal 90+7' (pen.)
+M? Ðình National Stadium, Hanoi
+Attendance: 10,000
+Referee: Chris Beath (Australia)
+
+13 October 2015
+19:00 UTC+7
+Vietnam  0-3  Thailand
+Report (FIFA)
+Report (AFC) 
+
+    Kroekrit Goal 29'
+    Ðinh Ti?n Thành Goal 56' (o.g.)
+    Theerathon Goal 70'
+
+M? Ðình National Stadium, Hanoi
+Attendance: 35,000
+Referee: Nawaf Shukralla (Bahrain)
+
+12 November 2015
+19:00 UTC+7
+Thailand  4-2  Chinese Taipei
+
+    Teerasil Goal 41'
+    Pokklaw Goal 52'
+    Adisak Goal 72'
+    Tana Goal 74'
+
+Report (FIFA)
+Report (AFC) 
+
+    Yaki Yen Goal 3'
+    Hung Kai-chun Goal 65'
+
+Rajamangala Stadium, Bangkok
+Attendance: 50,000
+Referee: Dmitriy Mashentsev (Kyrgyzstan)
+
+17 November 2015
+19:00 UTC+8
+Chinese Taipei  0-2  Iraq
+Report (FIFA)
+Report (AFC) 
+
+    Ismail Goal 19'
+    Mahmoud Goal 85'
+
+National Stadium, Kaohsiung
+Attendance: 11,960
+Referee: Jumpei Iida (Japan)
+
+24 March 2016
+19:00 UTC+7
+Vietnam  4-1  Chinese Taipei
+
+    Vinh Goal 8', 90+1'
+    Van Toàn Goal 29', 42'
+
+Report (FIFA)
+Report (AFC) Wu Chun-ching Goal 7'
+M? Ðình National Stadium, Hanoi
+Attendance: 18,350
+Referee: Adham Makhadmeh (Jordan)
+
+24 March 2016
+18:30 UTC+4:30
+Iraq  2-2  Thailand
+
+    Kamel Goal 66'
+    Adnan Goal 90+5'
+
+Report (FIFA)
+Report (AFC) 
+
+    Mongkol Goal 39'
+    Adisak Goal 86'
+
+PAS Stadium, Tehran (Iran)[note 11]
+Attendance: 4,000
+Referee: Abdulrahman Al-Jassim (Qatar)
+
+29 March 2016
+18:30 UTC+4:30
+Iraq  1-0  Vietnam
+Abdul-Raheem Goal 45+1' Report (FIFA)
+Report (AFC) 
+PAS Stadium, Tehran (Iran)[note 11]
+Attendance: 2,160
+Referee: Peter Green (Australia)
+Group G
+Pos Team
+
+    v t e 
+
+Pld W D L GF GA GD Pts Qualification 
+1  South Korea 8 8 0 0 27 0 +27 24 Third round and Asian Cup — 1-0 3-0[a] 4-0 8-0
+2  Lebanon 8 3 2 3 12 6 +6 11 Asian Cup qualifying third round 0-3 — 0-1 1-1 7-0
+3  Kuwait[a] 8 3 1 4 12 10 +2 10 0-1 0-0 — 9-0 0-3[a]
+4  Myanmar 8 2 2 4 9 21 -12 8 0-2 0-2 3-0[a] — 3-1
+5  Laos 8 1 1 6 6 29 -23 4 Asian Cup qualifying play-off round 0-5 0-2 0-2 2-2 —
+Source: FIFA
+Rules for classification: Qualification tiebreakers
+Notes:
+
+    On 16 October 2015, FIFA announced that the Kuwait Football Association (KFA) was suspended with immediate effect, following a decision from the FIFA Executive Committee that sports law of Kuwait had to be changed before 15 October.[28] The Myanmar v Kuwait match, scheduled for 17 November 2015, was not played due to that suspension,[29] and on 13 January 2016, FIFA decided that that match should be forfeited by Kuwait, and awarded as a 3-0 win for Myanmar.[30] The Kuwait v Laos and South Korea v Kuwait matches, scheduled for 24 and 29 March 2016 respectively, did not take place as scheduled, and on 6 April, FIFA decided that those matches should be forfeited by Kuwait, and awarded as 3-0 wins for Laos and South Korea.[31]
+
+11 June 2015
+19:00 UTC+7
+Laos  2-2  Myanmar
+Sayavutthi Goal 81' (pen.), 83' Report (FIFA)
+Report (AFC) 
+
+    Zaw Min Tun Goal 41'
+    Kyaw Zayar Win Goal 85'
+
+New Laos National Stadium, Vientiane
+Attendance: 1,500
+Referee: Tan Hai (China)
+
+11 June 2015
+17:00 UTC+3
+Lebanon  0-1  Kuwait
+Report (FIFA)
+Report (AFC) Nasser Goal 86'
+Saida International Stadium, Sidon
+Attendance: 15,215
+Referee: Valentin Kovalenko (Uzbekistan)
+
+16 June 2015
+19:00 UTC+7
+Myanmar  0-2  South Korea
+Report (FIFA)
+Report (AFC) 
+
+    Lee Jae-sung Goal 35'
+    Son Heung-min Goal 67'
+
+Rajamangala Stadium, Bangkok (Thailand)[note 12]
+Attendance: 1,090
+Referee: Ahmed Al-Kaf (Oman)
+
+16 June 2015
+19:00 UTC+7
+Laos  0-2  Lebanon
+Report (FIFA)
+Report (AFC) 
+
+    Ghaddar Goal 5'
+    Shamsin Goal 75'
+
+New Laos National Stadium, Vientiane
+Attendance: 2,500
+Referee: Yu Ming-hsun (Chinese Taipei)
+
+3 September 2015
+20:00 UTC+9
+South Korea  8-0  Laos
+
+    Lee Chung-yong Goal 9'
+    Son Heung-min Goal 12', 74', 89'
+    Kwon Chang-hoon Goal 30', 75'
+    Suk Hyun-jun Goal 57'
+    Lee Jae-sung Goal 90+4'
+
+Report (FIFA)
+Report (AFC) 
+Hwaseong Stadium, Hwaseong
+Attendance: 30,205
+Referee: Jumpei Iida (Japan)
+
+3 September 2015
+20:00 UTC+3
+Kuwait  9-0  Myanmar
+
+    Nasser Goal 11', 18'
+    Maqseed Goal 12'
+    Zayid Goal 46'
+    Zaw Min Tun Goal 56' (o.g.)
+    Mashaan Goal 61'
+    Al-Mutawa Goal 69' (pen.), 88', 90+3'
+
+Report (FIFA)
+Report (AFC) 
+Abdullah bin Khalifa Stadium, Doha (Qatar)[note 13]
+Attendance: 550
+Referee: Aziz Asimov (Uzbekistan)
+
+8 September 2015
+19:00 UTC+7
+Laos  0-2  Kuwait
+Report (FIFA)
+Report (AFC) 
+
+    Nasser Goal 31'
+    Al-Mutawa Goal 84' (pen.)
+
+New Laos National Stadium, Vientiane
+Attendance: 1,300
+Referee: Sivakorn Pu-udom (Thailand)
+
+8 September 2015
+17:00 UTC+3
+Lebanon  0-3  South Korea
+Report (FIFA)
+Report (AFC) 
+
+    Jang Hyun-soo Goal 22' (pen.)
+    Ali Hamam Goal 26' (o.g.)
+    Kwon Chang-hoon Goal 60'
+
+Saida International Stadium, Sidon
+Attendance: 5,500
+Referee: Dmitriy Mashentsev (Kyrgyzstan)
+
+8 October 2015
+19:00 UTC+7
+Myanmar  0-2  Lebanon
+Report (FIFA)
+Report (AFC) 
+
+    Maatouk Goal 28'
+    Atwi Goal 90+3'
+
+Suphachalasai Stadium, Bangkok (Thailand)[note 12]
+Attendance: 3,056
+Referee: Mohd Nafeez Abdul Wahab (Malaysia)
+
+8 October 2015
+17:55 UTC+3
+Kuwait  0-1  South Korea
+Report (FIFA)
+Report (AFC) Koo Ja-cheol Goal 12'
+Al Kuwait Sports Club Stadium, Kuwait City
+Attendance: 12,350
+Referee: Alireza Faghani (Iran)
+
+13 October 2015
+19:00 UTC+7
+Myanmar  3-1  Laos
+
+    Suan Lam Mang Goal 13'
+    Kyaw Ko Ko Goal 32'
+    Aung Thu Goal 50'
+
+Report (FIFA)
+Report (AFC) Sayavutthi Goal 2'
+Suphachalasai Stadium, Bangkok (Thailand)[note 12]
+Attendance: 6,500
+Referee: Salah Abbas Alabbasi (Bahrain)
+
+13 October 2015
+19:30 UTC+3
+Kuwait  0-0  Lebanon
+Report (FIFA)
+Report (AFC) 
+Al Kuwait Sports Club Stadium, Kuwait City
+Attendance: 12,150
+Referee: Ammar Al-Jeneibi (United Arab Emirates)
+
+12 November 2015
+20:00 UTC+9
+South Korea  4-0  Myanmar
+
+    Lee Jae-sung Goal 18'
+    Koo Ja-cheol Goal 30'
+    Jang Hyun-soo Goal 82'
+    Nam Tae-hee Goal 86'
+
+Report (FIFA)
+Report (AFC) 
+Suwon World Cup Stadium, Suwon
+Attendance: 24,270
+Referee: Khamis Al-Marri (Qatar)
+
+12 November 2015
+17:00 UTC+2
+Lebanon  7-0  Laos
+
+    Mohamad Goal 27'
+    Antar Goal 34'
+    Chaito Goal 36', 90+3'
+    Hamam Goal 42'
+    Maatouk Goal 59'
+    Oumari Goal 90'
+
+Report (FIFA)
+Report (AFC) 
+Saida International Stadium, Sidon
+Attendance: 2,000
+Referee: Sivakorn Pu-udom (Thailand)
+
+17 November 2015
+19:00 UTC+7
+Laos  0-5  South Korea
+Report (FIFA)
+Report (AFC) 
+
+    Ki Sung-yueng Goal 3' (pen.), 33'
+    Son Heung-min Goal 35', 67'
+    Suk Hyun-jun Goal 43'
+
+New Laos National Stadium, Vientiane
+Attendance: 3,000
+Referee: Turki Al-Khudhayr (Saudi Arabia)
+
+24 March 2016
+20:00 UTC+9
+South Korea  1-0  Lebanon
+Lee Jeong-hyeop Goal 90+3' Report (FIFA)
+Report (AFC) 
+Ansan Wa~ Stadium, Ansan
+Attendance: 30,532
+Referee: Ma Ning (China)
+
+
+29 March 2016
+15:00 UTC+3
+Lebanon  1-1  Myanmar
+El-Helwe Goal 88' Report (FIFA)
+Report (AFC) Aung Thu Goal 73'
+Saida International Stadium, Sidon
+Attendance: 3,470
+Referee: Jumpei Iida (Japan)
+
+
+Pld W D L GF GA GD Pts Qualification 
+1  Uzbekistan 8 7 0 1 20 7 +13 21 Third round and Asian Cup — 3-1 1-0 1-0 1-0
+2  North Korea 8 5 1 2 14 8 +6 16 Asian Cup qualifying third round 4-2 — 0-0 2-0 1-0
+3  Philippines 8 3 1 4 8 12 -4 10 1-5 3-2 — 2-1 0-1
+4  Bahrain 8 3 0 5 10 10 0 9 0-4 0-1 2-0 — 3-0
+5  Yemen 8 1 0 7 2 17 -15 3 Asian Cup qualifying play-off round 1-3 0-3[a] 0-2 0-4 —
+Source: FIFA
+Rules for classification: Qualification tiebreakers
+Notes:
+
+    FIFA awarded North Korea a 3-0 win as a result of Yemen fielding the ineligible player Mudir Al-Radaei, after North Korea had defeated Yemen 1-0. Al-Radaei failed to serve an automatic one match suspension for receiving two yellow cards earlier in the First Round of the competition.[38]
+
+11 June 2015
+20:00 UTC+8
+Philippines  2-1  Bahrain
+
+    Bahadoran Goal 50'
+    Patiño Goal 60'
+
+Report (FIFA)
+Report (AFC) Al-Malood Goal 90+3'
+Philippine Sports Stadium, Bocaue
+Attendance: 6,000
+Referee: Jumpei Iida (Japan)
+
+11 June 2015
+19:00 UTC+3
+Yemen  0-1  North Korea
+Report (FIFA)
+Report (AFC) So Hyon-uk Goal 71'
+Suheim Bin Hamad Stadium, Doha (Qatar)[note 21]
+Attendance: 3,200
+Referee: Hettikamkanamge Perera (Sri Lanka)
+
+16 June 2015
+17:00 UTC+9
+North Korea  4-2  Uzbekistan
+
+    Pak Kwang-ryong Goal 4'
+    Jang Kuk-chol Goal 16'
+    Ro Hak-su Goal 34'
+    Ri Hyok-chol Goal 36'
+
+Report (FIFA)
+Report (AFC) 
+
+    Ismailov Goal 53'
+    Rashidov Goal 79'
+
+Kim Il-sung Stadium, Pyongyang
+Attendance: 42,000
+Referee: Mohd Amirul Izwan Yaacob (Malaysia)
+
+16 June 2015
+19:00 UTC+3
+Yemen  0-2  Philippines
+Report (FIFA)
+Report (AFC) 
+
+    Bahadoran Goal 52'
+    Ramsay Goal 74'
+
+Suheim Bin Hamad Stadium, Doha (Qatar)[note 21]
+Attendance: 5,200
+Referee: Dmitriy Mashentsev (Kyrgyzstan)
+
+3 September 2015
+19:00 UTC+5
+Uzbekistan  1-0  Yemen
+Geynrikh Goal 51' Report (FIFA)
+Report (AFC) 
+Pakhtakor Markaziy Stadium, Tashkent
+Attendance: 15,000
+Referee: Lee Min-hu (South Korea)
+
+3 September 2015
+18:40 UTC+3
+Bahrain  0-1  North Korea
+Report (FIFA)
+Report (AFC) Jong Il-gwan Goal 42'
+Bahrain National Stadium, Riffa
+Attendance: 9,500
+Referee: Mohsen Torky (Iran)
+
+8 September 2015
+20:00 UTC+8
+Philippines  1-5  Uzbekistan
+Schröck Goal 68' Report (FIFA)
+Report (AFC) 
+
+    Ahmedov Goal 1'
+    Rashidov Goal 14', 80'
+    Sergeev Goal 43', 65'
+
+Philippine Sports Stadium, Bocaue
+Attendance: 7,500
+Referee: Peter Green (Australia)
+
+8 September 2015
+19:00 UTC+3
+Yemen  0-4  Bahrain
+Report (FIFA)
+Report (AFC) 
+
+    Ali Baba Goal 31' (pen.)
+    Al-Husaini Goal 45+1'
+    Omar Goal 66'
+    Adnan Goal 77'
+
+Grand Hamad Stadium, Doha (Qatar)[note 21]
+Attendance: 421
+Referee: Turki Al-Khudhayr (Saudi Arabia)
+
+8 October 2015
+16:00 UTC+8:30
+North Korea  0-0  Philippines
+Report (FIFA)
+Report (AFC) 
+Kim Il-sung Stadium, Pyongyang
+Attendance: 41,000
+Referee: Ma Ning (China)
+
+8 October 2015
+18:00 UTC+3
+Bahrain  0-4  Uzbekistan
+Report (FIFA)
+Report (AFC) 
+
+    Sergeev Goal 52'
+    Ahmedov Goal 56'
+    Rashidov Goal 66'
+    Shomurodov Goal 90+5'
+
+Bahrain National Stadium, Riffa
+Attendance: 5,000
+Referee: Minoru Tojo (Japan)
+
+13 October 2015
+16:00 UTC+8:30
+North Korea  1-0  Yemen
+Jong Il-gwan Goal 12' (pen.) Report (FIFA)
+Report (AFC) 
+Kim Il-sung Stadium, Pyongyang
+Attendance: 41,000
+Referee: Liu Kwok Man (Hong Kong)
+
+13 October 2015
+18:00 UTC+3
+Bahrain  2-0  Philippines
+
+    Abdullatif Goal 53'
+    Adnan Goal 61'
+
+Report (FIFA)
+Report (AFC) 
+Bahrain National Stadium, Riffa
+Attendance: 3,050
+Referee: Mohanad Qasim Eesee Sarray (Iraq)
+
+12 November 2015
+20:00 UTC+8
+Philippines  0-1  Yemen
+Report (FIFA)
+Report (AFC) A. Al-Sarori Goal 83'
+Rizal Memorial Stadium, Manila
+Attendance: 6,478
+Referee: Kim Hee-gon (South Korea)
+
+12 November 2015
+18:00 UTC+5
+Uzbekistan  3-1  North Korea
+
+    Sergeev Goal 23'
+    Geynrikh Goal 65'
+    Ahmedov Goal 87'
+
+Report (FIFA)
+Report (AFC) Ri Hyok-chol Goal 2'
+Pakhtakor Markaziy Stadium, Tashkent
+Attendance: 27,135
+Referee: Alireza Faghani (Iran)
+
+17 November 2015
+15:30 UTC+8:30
+North Korea  2-0  Bahrain
+
+    Pak Kwang-ryong Goal 45+1' (pen.)
+    Jong Il-gwan Goal 90+3'
+
+Report (FIFA)
+Report (AFC) 
+Kim Il-sung Stadium, Pyongyang
+Attendance: 45,000
+Referee: Muhammad Taqi Aljaafari (Singapore)
+
+17 November 2015
+18:30 UTC+3
+Yemen  1-3  Uzbekistan
+A. Al-Sarori Goal 90+2' Report (FIFA)
+Report (AFC) 
+
+    Haydarov Goal 7'
+    Djeparov Goal 31'
+    Andreev Goal 50'
+
+Grand Hamad Stadium, Doha (Qatar)[note 21]
+Attendance: 350
+Referee: Abdullah Al Hilali (Oman)
+
+24 March 2016
+18:00 UTC+5
+Uzbekistan  1-0  Philippines
+Ismailov Goal 59' Report (FIFA)
+Report (AFC) 
+Bunyodkor Stadium, Tashkent
+Attendance: 34,000
+Referee: Ryuji Sato (Japan)
+
+24 March 2016
+18:30 UTC+3
+Bahrain  3-0  Yemen
+
+    Abdulatif Goal 32' (pen.)
+    Al-Malood Goal 63'
+    Al Romaihi Goal 90+2'
+
+Report (FIFA)
+Report (AFC) 
+Bahrain National Stadium, Riffa
+Attendance: 1,000
+Referee: Ahmed Al-Kaf (Oman)
+
+29 March 2016
+20:00 UTC+8
+Philippines  3-2  North Korea
+
+    Bahadoran Goal 43'
+    Ott Goal 84'
+    Ramsay Goal 90'
+
+Report (FIFA)
+Report (AFC) 
+
+    So Kyong-jin Goal 45+2'
+    Ri Hyok-chol Goal 48'
+
+Rizal Memorial Stadium, Manila
+Attendance: 7,350
+Referee: Fahad Al-Mirdasi (Saudi Arabia)
+
+29 March 2016
+18:00 UTC+5
+Uzbekistan  1-0  Bahrain
+Rashidov Goal 50' Report (FIFA)
+Report (AFC) 
+Bunyodkor Stadium, Tashkent
+Attendance: 34,000
+Referee: Mohammed Abdulla Hassan Mohamed (United Arab Emirates)
+Ranking of runner-up teams
+
+To determine the four best runner-up teams, the following criteria were used:
+
+    Points (3 points for a win, 1 point for a draw, 0 points for a loss)
+    Goal difference
+    Goals scored
+    Play-off match(es) on neutral ground (if approved by FIFA Organizing Committee), with extra time and penalty shoot-out if necessary
+
+As a result of Indonesia being disqualified by FIFA suspension, Group F contained only four teams compared to five teams in all other groups. Therefore, the results against the fifth-placed team were not counted when determining the ranking of the runner-up teams.[40]
+Pos Grp Team
+
+    v t e 
+
+Pld W D L GF GA GD Pts Qualification
+1 F  Iraq 6 3 3 0 13 6 +7 12 Third round and Asian Cup
+2 E  Syria 6 4 0 2 14 11 +3 12
+3 A  United Arab Emirates 6 3 2 1 16 4 +12 11
+4 C  China 6 3 2 1 9 1 +8 11
+5 H  North Korea 6 3 1 2 10 8 +2 10 Asian Cup qualifying third round
+6 B  Jordan 6 3 1 2 9 7 +2 10
+7 D  Oman 6 2 2 2 6 6 0 8
+8 G  Lebanon 6 1 2 3 3 6 -3 5
+Source: FIFA
+Rules for classification: 1) Points from matches against teams ranked first, third and fourth in the group; 2) Goal difference from these matches; 3) Goals scored in these matches; 4) Play-off
+Ranking of fourth-placed teams
+
+To determine the four best fourth-placed teams, the following criteria were used:
+
+    Points (3 points for a win, 1 point for a draw, 0 points for a loss)
+    Goal difference
+    Goals scored
+    Play-off match(es) on neutral ground (if approved by AFC Organizing Committee), with extra time and penalty shoot-out if necessary
+
+As a result of Indonesia being disqualified by FIFA suspension, Group F contains only four teams compared to five teams in all other groups. Therefore, the results against the fifth-placed team are not counted when determining the ranking of the fourth-placed teams.[40]
+Pos Grp Team
+
+    v t e 
+
+Pld W D L GF GA GD Pts Qualification
+1 D  Guam 6 1 1 4 1 14 -13 4 Asian Cup qualifying third round
+2 G  Myanmar 6 1 1 4 4 18 -14 4
+3 H  Bahrain 6 1 0 5 3 10 -7 3
+4 E  Afghanistan 6 1 0 5 4 24 -20 3
+5 B  Tajikistan 6 0 1 5 3 19 -16 1 Asian Cup qualifying play-off round
+6 F  Chinese Taipei 6 0 0 6 5 19 -14 0
+7 C  Maldives 6 0 0 6 0 15 -15 0
+8 A  Malaysia 6 0 0 6 1 29 -28 0
+Source: FIFA
+Rules for classification: 1) Points from matches against teams ranked first to third in the group; 2) Goal difference from these matches; 3) Goals scored in these matches; 4) Play-off
 Goalscorers
 
-There were 17 goals scored in 6 matches, for an average of 2.83 goals per match.
+There were 507 goals scored in 152 matches, for an average of 3.34 goals per match.
+
+14 goals
+
+    Saudi Arabia Mohammad Al-Sahlawi
+
+11 goals
+
+    United Arab Emirates Ahmed Khalil
+
+8 goals
+
+    Australia Tim Cahill
+    China Yang Xu
+
+7 goals
+
+    Iran Sardar Azmoun
+    Syria Omar Khribin
+
+6 goals
+
+    China Yu Dabao
+    Japan Keisuke Honda
+    Jordan Hamza Al-Dardour
+    South Korea Son Heung-min
+    Tajikistan Manuchekhr Dzhalilov
+
+5 goals
+
+    Australia Tom Rogic
+    Iran Mehdi Taremi
+    Japan Shinji Kagawa
+    Jordan Hassan Abdel-Fattah
+    Maldives Ali Ashfaq
+    Qatar Hassan Al-Haidos
+    Saudi Arabia Taisir Al-Jassim
+    United Arab Emirates Ali Mabkhout
+    Uzbekistan Sardor Rashidov
 
 4 goals
 
-    Cook Islands Taylor Saghabi
+    Australia Mile Jedinak
+    Iraq Younis Mahmoud
+    Japan Shinji Okazaki
+    Jordan Abdallah Deeb
+    Kuwait Bader Al-Mutawa
+    Kuwait Yousef Nasser
+    Kyrgyzstan Anton Zemlianukhin
+    State of Palestine Ahmad Abu Nahyeh
+    Qatar Boualem Khoukhi
+    Qatar Mohammed Muntari
+    Qatar Mohammed Musa
+    Syria Osama Omari
+    Uzbekistan Igor Sergeev
+
+3 goals
+
+    Australia Nathan Burns
+    China Jiang Ning
+    Japan Maya Yoshida
+    Laos Khampheng Sayavutthi
+    North Korea Ri Hyok-chol
+    North Korea Jong Il-gwan
+    State of Palestine Jonathan Cantillana
+    State of Palestine Tamer Seyam
+    Philippines Misagh Bahadoran
+    Qatar Ali Assadalla
+    Saudi Arabia Yahya Al-Shehri
+    Singapore Safuwan Baharudin
+    Singapore Fazrul Nawaz
+    South Korea Kwon Chang-hoon
+    South Korea Lee Jae-sung
+    Syria Mahmoud Al-Mawas
+    Syria Sanharib Malki
+    Thailand Teerasil Dangda
+    Turkmenistan Arslanmyrat Amanow
+    United Arab Emirates Omar Abdulrahman
+    Uzbekistan Odil Ahmedov
+    Vietnam Lê Công Vinh
 
 2 goals
 
-    American Samoa Demetrius Beauchamp
-    American Samoa Justin Manao
-    Samoa Johnny Hall
-    Samoa Andrew Mobberley
+    Afghanistan Khaibar Amani
+    Afghanistan Norlla Amiri
+    Afghanistan Mustafa Zazai
+    Australia Massimo Luongo
+    Australia Mark Milligan
+    Australia Aaron Mooy
+    Bahrain Ismail Abdullatif
+    Bahrain Abdulwahab Al-Malood
+    Bahrain Sayed Mohamed Adnan
+    Bhutan Tshering Dorji
+    Bhutan Chencho Gyeltshen
+    China Wang Yongpo
+    China Wu Lei
+    China Yu Hanchao
+    Chinese Taipei Wu Chun-ching
+    Hong Kong Godfred Karikari
+    Hong Kong Lam Ka Wai
+    Hong Kong Jaimes McKee
+    India Sunil Chhetri
+    Iran Ashkan Dejagah
+    Iran Ehsan Hajsafi
+    Iraq Ali Adnan
+    Iraq Justin Meram
+    Japan Mu Kanazaki
+    Kyrgyzstan Vitalij Lux
+    Lebanon Hassan Chaito
+    Lebanon Hassan Maatouk
+    Myanmar Aung Thu
+    North Korea Pak Kwang-ryong
+    Oman Amad Al-Hosni
+    Oman Ahmed Mubarak Al-Mahaijri
+    Oman Abdulaziz Al-Muqbali
+    State of Palestine Jaka Ihbeisheh
+    State of Palestine Sameh Maraaba
+    State of Palestine Yashir Pinto
+    Philippines Iain Ramsay
+    Qatar Karim Boudiaf
+    Qatar Mohammed Kasola
+    Saudi Arabia Fahad Al-Muwallad
+    Singapore Khairul Amri
+    South Korea Jang Hyun-soo
+    South Korea Ki Sung-yueng
+    South Korea Koo Ja-cheol
+    South Korea Suk Hyun-jun
+    Syria Abdelrazaq Al Hussain
+    Syria Raja Rafe
+    Tajikistan Akhtam Nazarov
+    Thailand Pokklaw Anan
+    Thailand Theerathon Bunmathan
+    Thailand Adisak Kraisorn
+    Thailand Mongkol Tossakrai
+    East Timor Ramon Saro
+    Turkmenistan Guwanç Abylow
+    Uzbekistan Alexander Geynrikh
+    Uzbekistan Anzur Ismailov
+    Vietnam Nguy?n Van Toàn
+    Yemen Ahmed Al-Sarori
 
 1 goal
 
-    American Samoa Ryan Aloali'i Mitchell
-    American Samoa Ramin Ott
-    Samoa Desmond Fa'aiuaso
-    Samoa Faitalia Hamilton-Pama
-    Tonga Sione Uhatahi
+    Afghanistan Faysal Shayesteh
+    Afghanistan Josef Shirdel
+    Australia Mathew Leckie
+    Australia Tommy Oar
+    Bahrain Sami Al-Husaini
+    Bahrain Hussain Ali Baba
+    Bahrain Mohamed Al Romaihi
+    Bahrain Abdullah Omar
+    Bangladesh Jahid Hasan Ameli
+    Bhutan Biren Basnet
+    Cambodia Sos Suhana
+    China Huang Bowen
+    China Mei Fang
+    China Zhang Linpeng
+    China Zhang Xizhe
+    Chinese Taipei Hung Kai-chun
+    Chinese Taipei Wen Chih-hao
+    Chinese Taipei Yaki Yen
+    Guam Brandon McDonald
+    Guam Travis Nicklaw
+    Hong Kong Christian Annan
+    Hong Kong Bai He
+    Hong Kong Chan Siu Ki
+    Hong Kong Ju Yingzhi
+    Hong Kong Lo Kwan Yee
+    Hong Kong Paulinho
+    Hong Kong Xu Deshuai
+    India Sandesh Jhingan
+    India Jeje Lalpekhlua
+    India Robin Singh
+    Iran Karim Ansarifard
+    Iran Saeid Ezatolahi
+    Iran Jalal Hosseini
+    Iran Alireza Jahanbakhsh
+    Iran Kamal Kamyabinia
+    Iran Morteza Pouraliganji
+    Iran Ramin Rezaeian
+    Iran Masoud Shojaei
+    Iran Andranik Teymourian
+    Iran Mehdi Torabi
+    Iraq Mohannad Abdul-Raheem
+    Iraq Ali Hosni
+    Iraq Dhurgham Ismail
+    Iraq Mahdi Kamel
+    Iraq Ahmed Yasin
+    Japan Genki Haraguchi
+    Japan Hiroshi Kiyotake
+    Japan Masato Morishige
+    Japan Takashi Usami
+    Jordan Munther Abu Amarah
+    Jordan Yaseen Al-Bakhit
+    Jordan Yousef Al-Naber
+    Jordan Yousef Al-Rawashdeh
+    Jordan Baha' Faisal
+    Jordan Ahmed Samir
+    Kuwait Ali Maqseed
+    Kuwait Aziz Mashaan
+    Kuwait Faisal Zayid
+    Kyrgyzstan Ildar Amirov
+    Kyrgyzstan Edgar Bernhardt
+    Kyrgyzstan Bakhtiyar Duyshobekov
+    Kyrgyzstan Almazbek Mirzaliev
+    Lebanon Roda Antar
+    Lebanon Abbas Ahmed Atwi
+    Lebanon Hilal El-Helwe
+    Lebanon Mohammed Ghaddar
+    Lebanon Ali Hamam
+    Lebanon Youssef Mohamad
+    Lebanon Joan Oumari
+    Lebanon Feiz Shamsin
+    Malaysia Mohd Amri Yahyah
+    Malaysia Baddrol Bakhtiar
+    Malaysia Mohd Safiq Rahim
+    Malaysia Safee Sali
+    Maldives Asadhulla Abdulla
+    Maldives Naiz Hassan
+    Maldives Ahmed Nashid
+    Myanmar Kyaw Ko Ko
+    Myanmar Kyaw Zayar Win
+    Myanmar Suan Lam Mang
+    Myanmar Zaw Min Tun
+    North Korea Jang Kuk-chol
+    North Korea Ro Hak-su
+    North Korea So Hyon-uk
+    North Korea So Kyong-jin
+    Oman Mohammed Al-Ghassani
+    Oman Saad Al-Mukhaini
+    Oman Qasim Said
+    Oman Raed Ibrahim Saleh
+    State of Palestine Mus'ab Al-Batat
+    State of Palestine Ahmed Awad
+    State of Palestine Abdelatif Bahdari
+    State of Palestine Matías Jadue
+    State of Palestine Pablo Tamburrini
+    State of Palestine Khader Yousef
+    Philippines Manuel Ott
+    Philippines Javier Patiño
+    Philippines Stephan Schröck
+    Qatar Akram Afif
+    Qatar Abdelkarim Hassan
+    Qatar Ahmed Abdul Maqsoud
+    Qatar Ismaeel Mohammad
+    Qatar Sebastián Soria
+    Saudi Arabia Salman Al-Faraj
+    Saudi Arabia Osama Hawsawi
+    Saudi Arabia Naif Hazazi
+    Singapore Faris Ramli
+    South Korea Lee Chung-yong
+    South Korea Lee Jeong-hyeop
+    South Korea Nam Tae-hee
+    Syria Moayad Ajan
+    Syria Oday Al-Jafal
+    Syria Ahmad Kallasi
+    Syria Omar Midani
+    Tajikistan Fatkhullo Fatkhuloev
+    Thailand Tana Chanabut
+    Thailand Kroekrit Thaweekarn
+    Turkmenistan Serdaraly Ataýew
+    Turkmenistan Artur Geworkýan
+    Turkmenistan Ruslan Mingazow
+    Turkmenistan Süleýman Muhadow
+    Turkmenistan Mekan Saparow
+    United Arab Emirates Mohamed Ahmed
+    United Arab Emirates Ismail Al Hammadi
+    United Arab Emirates Ahmed Al Hashmi
+    United Arab Emirates Habib Fardan
+    United Arab Emirates Abdullah Mousa
+    United Arab Emirates Mohanad Salem
+    Uzbekistan Stanislav Andreev
+    Uzbekistan Server Djeparov
+    Uzbekistan Azizbek Haydarov
+    Uzbekistan Eldor Shomurodov
+    Vietnam Ðinh Ti?n Thành
+    Vietnam Tr?n Phi Son
+
+1 own goal
+
+    Afghanistan Sharif Mukhammad (playing against Japan)
+    Cambodia Khoun Laboravy (playing against Japan)
+    Cambodia Leng Makara (playing against Syria)
+    Kyrgyzstan Ildar Amirov (playing against Australia)
+    Kyrgyzstan Valery Kichin (playing against Bangladesh)
+    Lebanon Ali Hamam (playing against South Korea)
+    Myanmar Zaw Min Tun (playing against Kuwait)
+    Syria Hamdi Al Masri (playing against Japan)
+    Turkmenistan Serdar Annaorazow (playing against Guam)
+    Turkmenistan Mekan Saparow (playing against Oman)
+    Vietnam Ðinh Ti?n Thành (playing against Thailand)
 
 Notes
 
-    The final round matches were originally scheduled to be played simultaneously at 15:00, but were changed by the OFC to be played consecutively one day before the matches.[8]
+The fixtures between Saudi Arabia and Palestine were switched after Saudi Arabia cited "exceptional conditions" for their inability to travel to the West Bank.[11] The return fixture, originally to be played on 13 October 2015 at the Faisal Al-Husseini International Stadium, Al-Ram, was later postponed by Saudi Arabia's refusal to pass through Israeli-controlled borders,[12] until the process of agreeing on the venue was concluded.[13] The match was rescheduled to be played on 5 November 2015 in Palestine, after the Palestinian Football Association gave full security guarantees for the match.[14] The match was later further delayed until 9 November, and to be changed to a neutral venue in Asia, as the Palestinian government confirmed that it could no longer guarantee the safety and security for the match.[15] The neutral venue was announced to be Amman International Stadium in Amman, Jordan.[16]
+Timor-Leste played their home match against the United Arab Emirates in Malaysia for the lack of a suitable venue in Dili.[17]
+The match between Malaysia and Saudi Arabia was abandoned during the 87th minute after a group of supporters threw objects onto the pitch. At the time of the abandonment the score was 2-1 to Saudi Arabia. On 5 October 2015, FIFA decided that the match should be declared as lost by forfeit by Malaysia (and awarded as a 3-0 win for Saudi Arabia). Malaysia also had to play their next home match against the United Arab Emirates behind closed doors.[18][19]
+The home matches of Palestine against Saudi Arabia and Malaysia were played on neutral ground as the Palestinian government confirmed that it could no longer guarantee the safety and security for the matches.[15] The neutral venue was announced to be Amman International Stadium in Amman, Jordan.[16]
+Maldives played their home match against China in China because of the poor condition of the National Football Stadium.[20]
+FIFA awarded Iran a 3-0 win as a result of India fielding the ineligible player Eugeneson Lyngdoh.[21] The match initially ended 3-0 to Iran.
+Afghanistan played their home matches in Iran because of security concerns from the War in Afghanistan.[22]
+The fixtures between Japan and Singapore were switched because the Singapore National Stadium was booked on 16 June 2015 to host the closing ceremony of the 2015 Southeast Asian Games.[23]
+Syria played their home matches in Oman because of security concerns from the Syrian Civil War.[24]
+The Thailand v Vietnam match was brought forward from 11 June 2015, as it interfered with commitments for the 2015 Southeast Asian Games.[27]
+Iraq played their home matches in Iran because of security concerns from the Iraqi Civil War.[22]
+Myanmar played their home matches in Thailand because of sanctions after a crowd violence incident in their qualifier in Yangon in the 2014 FIFA World Cup preliminary round.[32]
+Kuwait played their home match against Myanmar in Qatar for unspecified reasons.[33]
+The Myanmar v Kuwait match, originally to be played on 17 November 2015, 19:00 UTC+7, at the Rajamangala Stadium in Bangkok, Thailand, was not played as scheduled because of the suspension of the Kuwait Football Association by FIFA.[34]
+On 13 January 2016, FIFA decided that the match scheduled for 17 November 2015 should be forfeited by Kuwait (and awarded as a 3-0 win for Myanmar) as it did not take place because of the suspension of the Kuwait Football Association.[35][36]
+The Kuwait v Laos match, originally to be played on 24 March 2016, 18:35 UTC+3, at the Al Kuwait Sports Club Stadium, Kuwait City, was not played as scheduled because of the suspension of the Kuwait Football Association by FIFA.[34]
+On 6 April 2016, FIFA decided that the match scheduled for 24 March 2016 should be forfeited by Kuwait (and awarded as a 3-0 win for Laos) as it did not take place because of the suspension of the Kuwait Football Association.[36][37]
+The South Korea v Kuwait match, originally to be played on 29 March 2016, 20:00 UTC+9, at the Daegu World Cup Stadium, Daegu, was not played as scheduled because of the suspension of the Kuwait Football Association by FIFA.[34]
+On 6 April 2016, FIFA decided that the match scheduled for 29 March 2016 should be forfeited by Kuwait (and awarded as a 3-0 win for South Korea) as it did not take place because of the suspension of the Kuwait Football Association.[36][37]
+FIFA awarded North Korea a 3-0 win as a result of Yemen fielding the ineligible player Mudir Al-Radaei, after North Korea had defeated Yemen by 1-0. Al-Radaei failed to serve an automatic one match suspension for receiving two yellow cards earlier in the First Round of the competition.[38]
+
+    Yemen played their home matches in Qatar because of security concerns from the Saudi Arabian-led intervention in Yemen.[39]
 
 References
 
-"Preliminary Draw procedures outlined". fifa.com. 9 July 2015. Retrieved 9 July 2015.
-"Draw Procedures - Oceanian Zone" (PDF). FIFA.com.
-"OFC Executive Committee decisions". OFC. Retrieved 20 May 2014.
-"Preliminary competition format outlined". Oceania Football Confederation. 10 July 2015.
-"FIFA/Coca-Cola World Ranking - August 2015 (CAF)". FIFA.com. Fédération Internationale de Football Association. 6 August 2015. Retrieved 6 August 2015.
+"ExCo approves expanded AFC Asian Cup finals". AFC. 16 April 2014.
+"World Cup draw looms large in Asia". FIFA.com. 13 April 2015. "Completing the tournament's qualifying contenders will be the next 16 highest ranked teams, with the remaining 12 sides battling it out in play-off matches to claim the last eight spots."
+"Draw date set for Round 2 of 2018 World Cup, 2019 Asian Cup qualifiers". AFC. 26 March 2015.
+"Draw: Russia 2018 / UAE 2019 Joint Qualification Round 2". AFC. 15 April 2015.
+"FIFA Men's Ranking - April 2015 (AFC)". FIFA.com. 8 January 2015.
+"Draw for Russia 2018, UAE 2019 Round 2 qualifiers looms large". AFC. 13 April 2015.
 "Regulations - 2018 FIFA World Cup Russia" (PDF). FIFA.com.
-"Stage 1 draw revealed". OFC. 30 July 2015.
+Rashvinjeet S. Bedi; T. Avineshwaran (8 September 2015). "Malaysia-Saudi match abandoned after crowd trouble". The Star. Retrieved 8 September 2015.
+"Malaysian FA sanctioned after abandonment of FIFA World Cup qualifier". FIFA.com. 5 October 2015. Retrieved 5 October 2015.
+"Federacao Futebol Timor-Leste expelled from AFC Asian Cup 2023". The-AFC.com. Retrieved 20 January 2017.
+"Palestine and Saudi Arabia agree to swap venues for World Cup qualifier". The National (UAE). 8 June 2015.
+"World Cup 2018: Palestinians and Saudi Arabia at loggerheads over key game". CNN. 29 September 2015.
+"FIFA statement on the Palestine-Saudi Arabia 2018 FIFA World Cup™ qualifier". FIFA.com. 7 October 2015.
+"Palestine vs Saudi Arabia 2018 FIFA World Cup™ qualifier to be played on 5 November". FIFA.com. 21 October 2015.
+"Palestine to play Saudi Arabia and Malaysia on neutral ground". FIFA.com. 4 November 2015.
+"Amman the venue for Palestine qualifiers". FIFA.com. 5 November 2015.
+"S. Korea to travel to Southeast Asia for friendly, World Cup qualifier". Yonhap News Agency. 26 May 2015.
+"VIDEO: Malaysia vs Saudi Arabia halted indefinitely as crowd gets hostile". Fourth Official. 8 September 2015. Retrieved 8 September 2015.
+"Malaysian FA sanctioned after abandonment of FIFA World Cup qualifier". FIFA.com. 5 October 2015. Retrieved 5 October 2015.
+"????FIFA??? ????????????" [FIFA confirmed that the Maldives vs. China match would be played in Shenyang, China] (in Chinese). Sohu. 20 August 2015.
+"DISCIPLINARY OVERVIEW - 2018 FIFA WORLD CUP RUSSIA™ QUALIFIERS" (PDF). FIFA. 1 February 2016. Archived from the original (PDF) on 5 February 2016.
+"Crisis-Hit Countries Can Play World Cup Qualifiers in Iran". persianfootball.com. 29 April 2015.
+"Japan, Singapore approve swapping venues for World Cup qualifiers". The Japan Times. 24 April 2015.
+"Neutral venues set for Japan matches". The Japan News. 26 May 2015.
+"Current allocation of FIFA World Cup™ confederation slots maintained". FIFA.com. 30 May 2015.
+"Impact of Football Association of Indonesia suspension". AFC. 3 June 2015.
+"FIFA reschedules Vietnam, Thailand match". Dantri International. 28 April 2015.
+"Suspension of the Kuwait Football Association". FIFA.com. 16 October 2015.
+"FIFA statement on Myanmar-Kuwait qualifier". FIFA.com. 17 November 2015.
+"Kuwait sanctioned after unplayed FIFA World Cup™ qualifier". FIFA. 13 January 2016. Retrieved 13 January 2016.
+"Kuwait's matches against Laos and Korea Republic forfeited". FIFA.com. 6 April 2016.
+"FIFA confirms Afghanistan, Myanmar choice of neutral venues for World Cup qualifiers". Zurich: New Europe. Associated Press. 11 May 2015. Retrieved 12 May 2015.
+"Qatar agrees to host joint Asian, World Cup qualifiers". Kuwait Times. 22 August 2015.
+"???? ???? ??? ????? ?????? ??????" (in Arabic). Kuwait Football Association. 9 November 2015. Retrieved 13 November 2015.
+"Kuwait sanctioned after unplayed FIFA World Cup™ qualifier". FIFA. 13 January 2016. Retrieved 13 January 2016.
+"FIFA sanctions several football associations after discriminatory chants by fans" (PDF). FIFA. Retrieved 13 January 2016.
+"Kuwait's matches against Laos and Korea Republic forfeited". FIFA. 6 April 2016. Retrieved 6 April 2016.
+"Yemen sanctioned for fielding ineligible player". FIFA. 6 July 2015.
+"Yemen football team flees war by boat to make World Cup 2018 qualifier with North Korea". ibtimes.co.uk. 4 June 2015.
 
-    "Kick-off changes for MD3". Oceania Football Confederation. 3 September 2015.
+    "Criteria to Determine the Rankings of Best-placed Teams among the Groups" (PDF). AFC.
 
 External links
 
     Official FIFA World Cup website
-        Qualifiers - Oceania: Round 1, FIFA.com
-    Stage 1 Qualifiers, oceaniafootball.com
+        Qualifiers - Asia: Round 2, FIFA.com
+    FIFA World Cup, the-AFC.com
+    AFC Asian Cup, the-AFC.com
 
-[show]
-
-    v t e 
-
-OFC Nations Cup
 [show]
 
     v t e 
@@ -190,10 +2553,10 @@ OFC Nations Cup
 
     v t e 
 
-2015 in Oceanian Football (OFC)
+2019 AFC Asian Cup
 Categories:
 
-    2015-16 in OFC football2016 OFC Nations Cup2018 FIFA World Cup qualification (OFC)OFC Nations Cup qualificationInternational association football competitions hosted by Tonga
+    2018 FIFA World Cup qualification (AFC)2019 AFC Asian Cup qualification2015 in Asian football2016 in Asian football
 
 Navigation menu
 
@@ -247,17 +2610,20 @@ Print/export
 
 Languages
 
+    ???????
     Bosanski
     Español
+    Français
     ???
     Bahasa Indonesia
-    Italiano
     Magyar
     Bahasa Melayu
+    ???
+    O?zbekcha/???????
     Português
     Româna
-    ???????
     Svenska
+    ???
     Türkçe
     Ti?ng Vi?t
     ??
@@ -282,60 +2648,83 @@ Edit links
 Hide
 WLE Austria Logo (no text).svg
 Wiki Loves Earth photo contest during June 2017: Upload photos of natural sites in Canada to help Wikipedia and win fantastic prizes!
-2018 FIFA World Cup qualification - OFC Third Round
+2018 FIFA World Cup qualification - AFC Third Round
 From Wikipedia, the free encyclopedia
 
-The third round of OFC matches for 2018 FIFA World Cup qualification began on 7 November 2016.[1]
+The third round of AFC matches for 2018 FIFA World Cup qualification is being played from 1 September 2016 to 5 September 2017.[1]
 
 Contents
 
     1 Format
     2 Qualified teams
     3 Seeding
-    4 Group stage
+    4 Groups
         4.1 Group A
         4.2 Group B
-    5 Final
-    6 Goalscorers
-    7 Notes
-    8 References
-    9 External links
+    5 Goalscorers
+    6 Notes
+    7 References
+    8 External links
 
 Format
 
-A total of six teams which advanced from the OFC Nations Cup (second round) were drawn into two groups of three teams to play home-and-away round-robin matches. The winners of each group will advance to the OFC Final, played home-and-away over two legs, and the winners of the final will advance to the inter-confederation play-offs.
+A total of 12 teams which advanced from the second round (the eight group winners and the four best group runners-up) were divided into two groups of six teams to play home-and-away round-robin matches. The top two teams of each group will qualify for the 2018 FIFA World Cup, and the two third-placed teams will advance to the fourth round.
 Qualified teams
 Group
-(Nations Cup) Winners Runners-up Third-placed teams
-A  Papua New Guinea  New Caledonia  Tahiti
-B  New Zealand  Solomon Islands  Fiji
+(2nd round) Winners Runners-up (Best 4)
+A  Saudi Arabia  United Arab Emirates
+B  Australia —
+C  Qatar  China
+D  Iran —
+E  Japan  Syria
+F  Thailand  Iraq
+G  South Korea —
+H  Uzbekistan —
 Seeding
 
-The draw for the third round was held on 8 July 2016, 11:00 NZST (UTC+12), at the OFC headquarters in Auckland, New Zealand.[2]
+The draw for the third round was held on 12 April 2016, at 16:30 MST (UTC+8), at the Mandarin Oriental Hotel in Kuala Lumpur, Malaysia.[2][3]
 
-The seeding was based on the results of the 2016 OFC Nations Cup (second round):
+The seeding are based on the FIFA World Rankings of April 2016 (shown in parentheses below).[4] The 12 teams are seeded into six pots:[5]
 
-    The OFC Nations Cup champions (New Zealand) and runners-up (Papua New Guinea) were seeded as A1 and B1 respectively.
-    Pot 1 contained the OFC Nations Cup losing semi-finalists (New Caledonia and Solomon Islands).
-    Pot 2 contained the third-placed teams of the OFC Nations Cup group stage (Fiji and Tahiti).
+    Pot 1 contained the teams ranked 1-2.
+    Pot 2 contained the teams ranked 3-4.
+    Pot 3 contained the teams ranked 5-6.
+    Pot 4 contained the teams ranked 7-8.
+    Pot 5 contained the teams ranked 9-10.
+    Pot 6 contained the teams ranked 11-12.
 
-Each group contained a seeded team, a team from Pot 1, and a team from Pot 2. The same group compositions as the OFC Nations Cup were not allowed by the draw (i.e., Papua New Guinea, New Caledonia and Tahiti in one group, New Zealand, Solomon Islands and Fiji in the other group). The fixtures of each group were confirmed by the OFC after the draw, taking into account the need for New Zealand to have a bye in June 2017 for playing in the 2017 FIFA Confederations Cup, and Papua New Guinea to have a bye in November 2016 for hosting the 2016 FIFA U-20 Women's World Cup.[2]
-Seeded teams Pot 1 Pot 2
+Each group contained one team from each of the six pots. The fixtures of each group were automatically decided based on the respective pot of each team.
+Pot 1 Pot 2 Pot 3
 
-     New Zealand (assigned to A1)
-     Papua New Guinea (assigned to B1)
-
-
-
-     New Caledonia
-     Solomon Islands
+     Iran (42)
+     Australia (50)
 
 
 
-     Fiji
-     Tahiti
+     South Korea (56)
+     Japan (57)
 
-Group stage
+
+
+     Saudi Arabia (60)
+     Uzbekistan (66)
+
+Pot 4 Pot 5 Pot 6
+
+     United Arab Emirates (68)
+     China (81)
+
+
+
+     Qatar (83)
+     Iraq (105)
+
+
+
+     Syria (110)
+     Thailand (119)
+
+Groups
 [show]2018 FIFA World Cup qualification tiebreakers
 Group A
 Pos Team
@@ -343,240 +2732,764 @@ Pos Team
     v t e 
 
 Pld W D L GF GA GD Pts Qualification 
-1  New Zealand 4 3 1 0 6 0 +6 10 Advance to OFC Final — 2-0 2-0
-2  New Caledonia 4 1 2 1 4 5 -1 5 0-0 — 2-1
-3  Fiji 4 0 1 3 3 8 -5 1 0-2 2-2 —
-Source: FIFA
+1  Iran (Q) 8 6 2 0 8 0 +8 20 Qualification to 2018 FIFA World Cup — 1-0 2-0 5 Sep 2-0 1-0
+2  South Korea 8 4 1 3 11 10 +1 13 31 Aug — 2-1 1-0 3-2 3-2
+3  Uzbekistan 8 4 0 4 6 6 0 12 Advance to fourth round 0-1 5 Sep — 1-0 1-0 2-0
+4  Syria 8 2 3 3 4 5 -1 9 0-0 0-0 1-0 — 31 Aug 2-2
+5  Qatar (Y) 8 2 1 5 6 10 -4 7 0-1 3-2 0-1 1-0 — 5 Sep
+6  China (Y) 8 1 3 4 5 9 -4 6 0-0 1-0 31 Aug 0-1 0-0 —
+Updated to match(es) played on 13 June 2017. Source: FIFA
 Rules for classification: Qualification tiebreakers
+(Q) Qualified to the phase indicated; (Y) Cannot qualify directly to 2018 FIFA World Cup, but may still advance to the fourth round.
 
-12 November 2016
-15:00 UTC+13
-New Zealand  2-0  New Caledonia
-Rojas Goal 42', 72' Report (FIFA)
-Report (OFC) 
-QBE Stadium, Auckland
-Attendance: 8,131
-Referee: Norbert Hauata (Tahiti)
+1 September 2016
+20:00 UTC+9
+South Korea  3-2  China
+
+    Zheng Zhi Goal 21' (o.g.)
+    Lee Chung-yong Goal 63'
+    Koo Ja-cheol Goal 66'
+
+Report (FIFA)
+Report (AFC) 
+
+    Yu Hai Goal 74'
+    Hao Junmin Goal 77'
+
+Seoul World Cup Stadium, Seoul
+Attendance: 51,238
+Referee: Mohammed Abdulla Hassan Mohamed (United Arab Emirates)
+
+1 September 2016
+20:00 UTC+5
+Uzbekistan  1-0  Syria
+Geynrikh Goal 73' Report (FIFA)
+Report (AFC) 
+Bunyodkor Stadium, Tashkent
+Attendance: 29,100
+Referee: Ryuji Sato (Japan)
+
+1 September 2016
+21:00 UTC+4:30
+Iran  2-0  Qatar
+
+    Ghoochannejhad Goal 90+4'
+    Jahanbakhsh Goal 90+6'
+
+Report (FIFA)
+Report (AFC) 
+Azadi Stadium, Tehran
+Attendance: 78,000
+Referee: Hettikamkanamge Perera (Sri Lanka)
+
+6 September 2016
+19:35 UTC+8
+China  0-0  Iran
+Report (FIFA)
+Report (AFC) 
+Shenyang Olympic Sports Center Stadium, Shenyang
+Attendance: 35,776
+Referee: Adham Makhadmeh (Jordan)
+
+6 September 2016
+20:00 UTC+8
+Syria  0-0  South Korea
+Report (FIFA)
+Report (AFC) 
+Tuanku Abdul Rahman Stadium, Seremban (Malaysia)[note 1]
+Attendance: 4,350
+Referee: Chris Beath (Australia)
+
+6 September 2016
+19:00 UTC+3
+Qatar  0-1  Uzbekistan
+Report (FIFA)
+Report (AFC) Krimets Goal 86'
+Jassim Bin Hamad Stadium, Doha
+Attendance: 7,898
+Referee: Ali Abdulnabi (Bahrain)
+
+6 October 2016
+20:00 UTC+9
+South Korea  3-2  Qatar
+
+    Ki Sung-yueng Goal 11'
+    Ji Dong-won Goal 56'
+    Son Heung-min Goal 58'
+
+Report (FIFA)
+Report (AFC) 
+
+    Al-Haidos Goal 16' (pen.)
+    Soria Goal 45'
+
+Suwon World Cup Stadium, Suwon
+Attendance: 32,550
+Referee: Mohd Amirul Izwan Yaacob (Malaysia)
+
+6 October 2016
+19:35 UTC+8
+China  0-1  Syria
+Report (FIFA)
+Report (AFC) Al-Mawas Goal 54'
+Shaanxi Province Stadium, Xi'an
+Attendance: 37,368
+Referee: Muhammad Taqi (Singapore)
+
+6 October 2016
+18:00 UTC+5
+Uzbekistan  0-1  Iran
+Report (FIFA)
+Report (AFC) Hosseini Goal 27'
+Bunyodkor Stadium, Tashkent
+Attendance: 34,000
+Referee: Ben Williams (Australia)
+
+11 October 2016
+18:00 UTC+5
+Uzbekistan  2-0  China
+
+    Bikmaev Goal 50'
+    Shukurov Goal 85'
+
+Report (FIFA)
+Report (AFC) 
+Bunyodkor Stadium, Tashkent
+Attendance: 21,503
+Referee: Hettikamkanamge Perera (Sri Lanka)
+
+11 October 2016
+18:15 UTC+3:30
+Iran  1-0  South Korea
+Azmoun Goal 25' Report (FIFA)
+Report (AFC) 
+Azadi Stadium, Tehran
+Attendance: 75,800
+Referee: Ryuji Sato (Japan)
+
+11 October 2016
+19:00 UTC+3
+Qatar  1-0  Syria
+Al-Haidos Goal 37' (pen.) Report (FIFA)
+Report (AFC) 
+Jassim Bin Hamad Stadium, Doha
+Attendance: 9,940
+Referee: Ahmed Al-Kaf (Oman)
 
 15 November 2016
-17:00 UTC+11
-New Caledonia  0-0  New Zealand
+20:00 UTC+9
+South Korea  2-1  Uzbekistan
+
+    Nam Tae-hee Goal 67'
+    Koo Ja-cheol Goal 85'
+
 Report (FIFA)
-Report (OFC) 
-Stade Yoshida, Koné
-Attendance: 2,000
-Referee: George Time (Solomon Islands)
+Report (AFC) Bikmaev Goal 25'
+Seoul World Cup Stadium, Seoul
+Attendance: 30,526
+Referee: Fahad Al-Mirdasi (Saudi Arabia)
 
-25 March 2017
-13:00 UTC+12
-Fiji  0-2  New Zealand
+15 November 2016
+19:35 UTC+8
+China  0-0  Qatar
 Report (FIFA)
-Report (OFC) 
+Report (AFC) 
+Tuodong Stadium, Kunming
+Attendance: 32,763
+Referee: Mohanad Qasim Eesee Sarray (Iraq)
 
-    Wood Goal 48' (pen.)
-    Rojas Goal 55'
+15 November 2016
+20:45 UTC+8[note 2]
+Syria  0-0  Iran
+Report (FIFA)
+Report (AFC) 
+Tuanku Abdul Rahman Stadium, Seremban (Malaysia)[note 1]
+Attendance: 4,560
+Referee: Ali Sabah (Iraq)
 
-Churchill Park, Lautoka
-Attendance: 7,000
-Referee: Norbert Hauata (Tahiti)
+23 March 2017
+19:35 UTC+8
+China  1-0  South Korea
+Yu Dabao Goal 35' Report (FIFA)
+Report (AFC) 
+Helong Stadium, Changsha
+Attendance: 30,950
+Referee: Peter Green (Australia)
+
+23 March 2017
+20:00 UTC+8
+Syria  1-0  Uzbekistan
+Kharbin Goal 90+1' (pen.) Report (FIFA)
+Report (AFC) 
+Hang Jebat Stadium, Krubong (Malaysia)[note 1]
+Attendance: 350
+Referee: Mohammed Abdulla Hassan Mohamed (United Arab Emirates)
+
+23 March 2017
+19:00 UTC+3
+Qatar  0-1  Iran
+Report (FIFA)
+Report (AFC) Taremi Goal 52'
+Jassim Bin Hamad Stadium, Doha
+Attendance: 10,237
+Referee: Liu Kwok Man (Hong Kong)
 
 28 March 2017
-19:35 UTC+13
-New Zealand  2-0  Fiji
-Thomas Goal 27', 68' Report (FIFA)
-Report (OFC) 
-Westpac Stadium, Wellington
-Attendance: 10,133
-Referee: Kader Zitouni (Tahiti)
+20:00 UTC+9
+South Korea  1-0  Syria
+Hong Jeong-ho Goal 4' Report (FIFA)
+Report (AFC) 
+Seoul World Cup Stadium, Seoul
+Attendance: 30,352
+Referee: Adham Makhadmeh (Jordan)
 
-7 June 2017
-16:00 UTC+12
-Fiji  2-2  New Caledonia
+28 March 2017
+16:30 UTC+4:30
+Iran  1-0  China
+Taremi Goal 46' Report (FIFA)
+Report (AFC) 
+Azadi Stadium, Tehran
+Attendance: 78,115
+Referee: Muhammad Taqi (Singapore)
 
-    Waqa Goal 45+2'
-    Krishna Goal 54'
+28 March 2017
+18:00 UTC+5
+Uzbekistan  1-0  Qatar
+Ahmedov Goal 65' Report (FIFA)
+Report (AFC) 
+Bunyodkor Stadium, Tashkent
+Attendance: 19,000
+Referee: Mohanad Qasim Eesee Sarray (Iraq)
+
+12 June 2017
+21:15 UTC+4:30
+Iran  2-0  Uzbekistan
+
+    Azmoun Goal 23'
+    Taremi Goal 88'
 
 Report (FIFA)
-Report (OFC) Wamowe Goal 13', 24'
-Churchill Park, Lautoka
-Attendance: 1,500
-Referee: Kader Zitouni (Tahiti)
+Report (AFC) 
+Azadi Stadium, Tehran
+Attendance: 59,730
+Referee: Ahmed Al-Kaf (Oman)
 
-11 June 2017
-17:00 UTC+11
-New Caledonia  2-1  Fiji
+13 June 2017
+21:45 UTC+8
+Syria  2-2  China
+Al-Mawas Goal 12' (pen.)
+Al Salih Goal 90+3' Report (FIFA)
+Report (AFC) Gao Lin Goal 68' (pen.)
+Wu Xi Goal 75'
+Hang Jebat Stadium, Krubong (Malaysia)[note 1]
+Attendance: 4,737
+Referee: Ammar Al-Jeneibi (United Arab Emirates)
 
-    Ounei Goal 43' (pen.)
-    Sele Goal 73'
+13 June 2017
+22:00 UTC+3
+Qatar  3-2  South Korea
+
+    Al-Haidos Goal 25', 75'
+    Afif Goal 51'
 
 Report (FIFA)
-Report (OFC) Saukuru Goal 66'
-Stade Numa-Daly Magenta, Nouméa
-Attendance: 1,050
-Referee: Norbert Hauata (Tahiti)
+Report (AFC) 
+
+    Ki Sung-yueng Goal 62'
+    Hwang Hee-chan Goal 70'
+
+Jassim Bin Hamad Stadium, Doha
+Attendance: 5,373
+Referee: Hettikamkanamge Perera (Sri Lanka)
+
+31 August 2017
+Syria  v  Qatar
+Report (FIFA)
+Report (AFC) 
+[note 1]
+
+31 August 2017
+19:35 UTC+8
+China  v  Uzbekistan
+Report (FIFA)
+Report (AFC) 
+Wuhan Sports Center Stadium, Wuhan
+
+31 August 2017
+20:00 UTC+9
+South Korea  v  Iran
+Report (FIFA)
+Report (AFC) 
+
+5 September 2017
+19:00 UTC+3
+Qatar  v  China
+Report (FIFA)
+Report (AFC) 
+Jassim Bin Hamad Stadium, Doha
+
+5 September 2017
+20:30 UTC+4:30
+Iran  v  Syria
+Report (FIFA)
+Report (AFC) 
+Azadi Stadium, Tehran
+
+5 September 2017
+21:00 UTC+5
+Uzbekistan  v  South Korea
+Report (FIFA)
+Report (AFC) 
+Bunyodkor Stadium, Tashkent
 Group B
 Pos Team
 
     v t e 
 
 Pld W D L GF GA GD Pts Qualification 
-1  Solomon Islands 4 3 0 1 6 6 0 9 Advance to OFC Final — 1-0 3-2
-2  Tahiti 4 2 0 2 7 4 +3 6 3-0[a] — 1-2
-3  Papua New Guinea 4 1 0 3 6 9 -3 3 1-2 1-3 —
-Source: FIFA
+1  Japan (X) 8 5 2 1 15 6 +9 17 Qualification to 2018 FIFA World Cup — 2-1 31 Aug 1-2 2-1 4-0
+2  Saudi Arabia 8 5 1 2 15 8 +7 16 5 Sep — 2-2 3-0 1-0 1-0
+3  Australia 8 4 4 0 14 8 +6 16 Advance to fourth round 1-1 3-2 — 2-0 2-0 5 Sep
+4  United Arab Emirates 8 3 1 4 8 11 -3 10 0-2 29 Aug 0-1 — 2-0 3-1
+5  Iraq (E) 8 1 2 5 8 11 -3 5 1-1 1-2 1-1 5 Sep — 4-0
+6  Thailand (E) 8 0 2 6 4 20 -16 2 0-2 0-3 2-2 1-1 31 Aug —
+Updated to match(es) played on 13 June 2017. Source: FIFA
 Rules for classification: Qualification tiebreakers
-Notes:
+(E) Eliminated; (X) Assured of at least fourth round.
 
-    FIFA awarded Tahiti a 3-0 win as a result of the Solomon Islands fielding the ineligible player Henry Fa'arodo, after Tahiti had defeated the Solomon Islands 1-0. Fa'arodo failed to serve a one-game ban after receiving two yellow cards in the 2016 OFC Nations Cup.[4]
+1 September 2016
+18:30 UTC+8
+Australia  2-0  Iraq
 
-7 November 2016
-19:00 UTC-10
-Tahiti  3-0
-Awarded[note 1]  Solomon Islands
-Keck Goal 53' Report (FIFA)
-Report (OFC) 
-Stade Pater, Pirae
-Attendance: 2,200
-Referee: Médéric Lacour (New Caledonia)
+    Luongo Goal 58'
+    Juric Goal 64'
 
-13 November 2016
-15:00 UTC+11
-Solomon Islands  1-0  Tahiti
-Poila Goal 90+3' Report (FIFA)
-Report (OFC) 
-Lawson Tama Stadium, Honiara
-Attendance: 5,000
-Referee: Matthew Conger (New Zealand)
+Report (FIFA)
+Report (AFC) 
+Perth Oval, Perth
+Attendance: 18,923
+Referee: Alireza Faghani (Iran)
+
+1 September 2016
+19:35 UTC+9
+Japan  1-2  United Arab Emirates
+Honda Goal 11' Report (FIFA)
+Report (AFC) Khalil Goal 20', 54' (pen.)
+Saitama Stadium 2002, Saitama
+Attendance: 58,895
+Referee: Abdulrahman Al-Jassim (Qatar)
+
+1 September 2016
+20:30 UTC+3
+Saudi Arabia  1-0  Thailand
+Al Abed Goal 84' (pen.) Report (FIFA)
+Report (AFC) 
+King Fahd International Stadium, Riyadh
+Attendance: 40,983
+Referee: Fu Ming (China)
+
+6 September 2016
+19:00 UTC+8
+Iraq  1-2  Saudi Arabia
+Abdul-Raheem Goal 18' Report (FIFA)
+Report (AFC) Al Abed Goal 81' (pen.), 88' (pen.)
+Shah Alam Stadium, Shah Alam (Malaysia)[note 3]
+Attendance: 3,400
+Referee: Khamis Al-Marri (Qatar)
+
+6 September 2016
+19:15 UTC+7
+Thailand  0-2  Japan
+Report (FIFA)
+Report (AFC) 
+
+    Haraguchi Goal 19'
+    Asano Goal 75'
+
+Rajamangala Stadium, Bangkok
+Attendance: 44,500
+Referee: Mohsen Torky (Iran)
+
+6 September 2016
+19:30 UTC+4
+United Arab Emirates  0-1  Australia
+Report (FIFA)
+Report (AFC) Cahill Goal 75'
+Mohammed Bin Zayed Stadium, Abu Dhabi
+Attendance: 40,893
+Referee: Mohd Amirul Izwan Yaacob (Malaysia)
+
+6 October 2016
+19:35 UTC+9
+Japan  2-1  Iraq
+
+    Haraguchi Goal 26'
+    Yamaguchi Goal 90+5'
+
+Report (FIFA)
+Report (AFC) Abdul-Amir Goal 60'
+Saitama Stadium 2002, Saitama
+Attendance: 57,768
+Referee: Kim Dong-jin (South Korea)
+
+6 October 2016
+20:00 UTC+4
+United Arab Emirates  3-1  Thailand
+
+    Mabkhout Goal 14', 47'
+    Khalil Goal 90+3'
+
+Report (FIFA)
+Report (AFC) Tana Goal 65'
+Mohammed Bin Zayed Stadium, Abu Dhabi
+Attendance: 18,242
+Referee: Liu Kwok Man (Hong Kong)
+
+6 October 2016
+20:45 UTC+3
+Saudi Arabia  2-2  Australia
+
+    Al-Jassim Goal 5'
+    Al-Shamrani Goal 79'
+
+Report (FIFA)
+Report (AFC) 
+
+    Sainsbury Goal 45'
+    Juric Goal 71'
+
+King Abdullah Sports City, Jeddah
+Attendance: 51,616
+Referee: Ravshan Irmatov (Uzbekistan)
+
+11 October 2016
+20:00 UTC+11
+Australia  1-1  Japan
+Jedinak Goal 52' (pen.) Report (FIFA)
+Report (AFC) Haraguchi Goal 5'
+Docklands Stadium, Melbourne
+Attendance: 48,460
+Referee: Nawaf Shukralla (Bahrain)
+
+11 October 2016
+16:00 UTC+3:30
+Iraq  4-0  Thailand
+Abdul-Raheem Goal 7', 25', 87', 90+4' Report (FIFA)
+Report (AFC) 
+Shahid Dastgerdi Stadium, Tehran (Iran)[note 3]
+Attendance: 2,255
+Referee: Ma Ning (China)
+
+11 October 2016
+20:45 UTC+3
+Saudi Arabia  3-0  United Arab Emirates
+
+    Al-Muwallad Goal 73'
+    Al Abed Goal 79'
+    Al-Shehri Goal 90+2'
+
+Report (FIFA)
+Report (AFC) 
+King Abdullah Sports City, Jeddah
+Attendance: 60,102
+Referee: Kim Jong-hyeok (South Korea)
+
+15 November 2016
+19:35 UTC+9
+Japan  2-1  Saudi Arabia
+
+    Kiyotake Goal 45' (pen.)
+    Haraguchi Goal 80'
+
+Report (FIFA)
+Report (AFC) Om. Hawsawi Goal 90'
+Saitama Stadium 2002, Saitama
+Attendance: 58,420
+Referee: Muhammad Taqi (Singapore)
+
+15 November 2016
+19:00 UTC+7
+Thailand  2-2  Australia
+Teerasil Goal 20', 57' (pen.) Report (FIFA)
+Report (AFC) Jedinak Goal 9' (pen.), 65' (pen.)
+Rajamangala Stadium, Bangkok
+Attendance: 36,534
+Referee: Fahad Al-Marri (Qatar)
+
+15 November 2016
+19:20 UTC+4
+United Arab Emirates  2-0  Iraq
+
+    Khalil Goal 26'
+    Matar Goal 90+3'
+
+Report (FIFA)
+Report (AFC) 
+Mohammed Bin Zayed Stadium, Abu Dhabi
+Attendance: 14,583
+Referee: Ilgiz Tantashev (Uzbekistan)
 
 23 March 2017
-16:00 UTC+10
-Papua New Guinea  1-3  Tahiti
-Dabinyaba Goal 45+1' Report (FIFA)
-Report (OFC) 
+16:30 UTC+4:30
+Iraq  1-1  Australia
+Yasin Goal 76' Report (FIFA)
+Report (AFC) Leckie Goal 40'
+Shahid Dastgerdi Stadium, Tehran (Iran)[note 3]
+Attendance: 3,270
+Referee: Kim Jong-hyeok (South Korea)
 
-    Graglia Goal 59', 85'
-    T. Tehau Goal 90+4'
+23 March 2017
+19:00 UTC+7
+Thailand  0-3  Saudi Arabia
+Report (FIFA)
+Report (AFC) 
 
-Sir John Guise Stadium, Port Moresby
-Attendance: 4,209
-Referee: Salesh Chand (Fiji)
+    Al-Sahlawi Goal 26'
+    Tanaboon Goal 84' (o.g.)
+    Al-Moasher Goal 90+2'
+
+Rajamangala Stadium, Bangkok
+Attendance: 41,613
+Referee: Ali Abdulnabi (Bahrain)
+
+23 March 2017
+19:30 UTC+4
+United Arab Emirates  0-2  Japan
+Report (FIFA)
+Report (AFC) 
+
+    Kubo Goal 14'
+    Konno Goal 52'
+
+Hazza Bin Zayed Stadium, Al Ain
+Attendance: 23,725
+Referee: Ravshan Irmatov (Uzbekistan)
 
 28 March 2017
-19:00 UTC-10
-Tahiti  1-2  Papua New Guinea
-Keck Goal 90+3' Report (FIFA)
-Report (OFC) 
+20:00 UTC+11
+Australia  2-0  United Arab Emirates
 
-    Aisa Goal 62'
-    Gunemba Goal 74'
-
-Stade Pater, Pirae
-Attendance: 5,000
-Referee: Matthew Conger (New Zealand)
-
-9 June 2017
-15:00 UTC+11
-Solomon Islands  3-2  Papua New Guinea
-
-    Kaua Goal 12'
-    Totori Goal 37'
-    Lea'alafa Goal 74'
+    Irvine Goal 7'
+    Leckie Goal 78'
 
 Report (FIFA)
-Report (OFC) 
+Report (AFC) 
+Sydney Football Stadium, Sydney
+Attendance: 27,328
+Referee: Ahmed Al-Kaf (Oman)
 
-    Foster Goal 48'
-    Aisa Goal 61'
+28 March 2017
+19:35 UTC+9
+Japan  4-0  Thailand
 
-Lawson Tama Stadium, Honiara
-Attendance: 14,700
-Referee: Jarred Gillett (Australia)
+    Kagawa Goal 8'
+    Okazaki Goal 19'
+    Kubo Goal 57'
+    Yoshida Goal 83'
+
+Report (FIFA)
+Report (AFC) 
+Saitama Stadium 2002, Saitama
+Attendance: 59,003
+Referee: Kim Dong-jin (South Korea)
+
+28 March 2017
+20:30 UTC+3
+Saudi Arabia  1-0  Iraq
+Al-Shehri Goal 53' Report (FIFA)
+Report (AFC) 
+King Abdullah Sports City, Jeddah
+Attendance: 60,153
+Referee: Valentin Kovalenko (Uzbekistan)
+
+8 June 2017[note 4]
+19:30 UTC+9:30
+Australia  3-2  Saudi Arabia
+
+    Juric Goal 7', 36'
+    Rogic Goal 64'
+
+Report (FIFA)
+Report (AFC) 
+
+    Al-Dawsari Goal 23'
+    Al-Sahlawi Goal 45+2'
+
+Adelaide Oval, Adelaide
+Attendance: 29,785
+Referee: Ravshan Irmatov (Uzbekistan)
 
 13 June 2017
-17:00 UTC+10
-Papua New Guinea  1-2  Solomon Islands
-Gunemba Goal 18' Report (FIFA)
-Report (OFC) 
+19:00 UTC+7
+Thailand  1-1  United Arab Emirates
+Mongkol Goal 69' Report (FIFA)
+Report (AFC) Mabkhout Goal 90+3'
+Rajamangala Stadium, Bangkok
+Attendance: 24,417
+Referee: Muhammad Taqi (Singapore)[10]
 
-    Fa'arodo Goal 33' (pen.)
-    Donga Goal 45+2'
+13 June 2017
+16:55 UTC+4:30
+Iraq  1-1  Japan
+Kamel Goal 73' Report (FIFA)
+Report (AFC) Osako Goal 8'
+PAS Stadium, Tehran (Iran)[note 3]
+Attendance: 983
+Referee: Fu Ming (China)
 
-PNG Football Stadium, Port Moresby
-Attendance: 2,035
-Referee: Jumpei Iida (Japan)
-Final
-
-The draw for the final (which decided the order of legs) was held on 15 June 2017, 16:00 NZST (UTC+12), at the OFC headquarters in Auckland, New Zealand.[5]
-
-The winner of the final advances to inter-confederation play-offs. Dates have been set for the two-legged final as being between 28 August and 5 September 2017.[6]
-Team 1 Agg. Team 2 1st leg 2nd leg
-New Zealand   Solomon Islands 28 Aug 5 Sep
-
-28 August 2017[note 2]
-New Zealand  v  Solomon Islands
+29 August 2017
+United Arab Emirates  v  Saudi Arabia
 Report (FIFA)
-Report (OFC) 
+Report (AFC) 
+Mohammed Bin Zayed Stadium, Abu Dhabi
 
-5 September 2017[note 2]
-Solomon Islands  v  New Zealand
+31 August 2017
+19:00 UTC+7
+Thailand  v  Iraq
 Report (FIFA)
-Report (OFC) 
+Report (AFC) 
+Rajamangala Stadium, Bangkok
+
+31 August 2017
+19:30 UTC+9
+Japan  v  Australia
+Report (FIFA)
+Report (AFC) 
+Saitama Stadium 2002, Saitama
+
+5 September 2017
+Iraq  v  United Arab Emirates
+Report (FIFA)
+Report (AFC) 
+
+5 September 2017
+Australia  v  Thailand
+Report (FIFA)
+Report (AFC) 
+
+5 September 2017
+Saudi Arabia  v  Japan
+Report (FIFA)
+Report (AFC) 
+King Fahd International Stadium, Riyadh
 Goalscorers
 
-There have been 30 goals scored in 12 matches, for an average of 2.5 goals per match.
+There have been 104 goals scored in 48 matches, for an average of 2.17 goals per match.
+
+5 goals
+
+    Iraq Mohannad Abdul-Raheem
+
+4 goals
+
+    Australia Tomi Juric
+    Japan Genki Haraguchi
+    Qatar Hassan Al-Haidos
+    Saudi Arabia Nawaf Al Abed
+    United Arab Emirates Ahmed Khalil
 
 3 goals
 
-    New Zealand Marco Rojas
+    Australia Mile Jedinak
+    Iran Mehdi Taremi
+    United Arab Emirates Ali Mabkhout
 
 2 goals
 
-    New Caledonia Mone Wamowe
-    New Zealand Ryan Thomas
-    Papua New Guinea Patrick Aisa
-    Papua New Guinea Raymond Gunemba
-    French Polynesia Sylvain Graglia
-    French Polynesia Tauhiti Keck
+    Australia Mathew Leckie
+    Iran Sardar Azmoun
+    Japan Yuya Kubo
+    Saudi Arabia Mohammad Al-Sahlawi
+    Saudi Arabia Yahya Al-Shehri
+    South Korea Ki Sung-yueng
+    South Korea Koo Ja-cheol
+    Syria Mahmoud Al-Mawas
+    Thailand Teerasil Dangda
+    Uzbekistan Marat Bikmaev
 
 1 goal
 
-    Fiji Roy Krishna
-    Fiji Epeli Saukuru
-    Fiji Saula Waqa
-    New Caledonia Emile Ounei
-    New Caledonia Richard Sele
-    New Zealand Chris Wood
-    Papua New Guinea Nigel Dabinyaba
-    Papua New Guinea Michael Foster
-    Solomon Islands Jerry Donga
-    Solomon Islands Henry Fa'arodo
-    Solomon Islands Atkin Kaua
-    Solomon Islands Micah Lea'alafa
-    Solomon Islands Emmanuel Poila
-    Solomon Islands Benjamin Totori
-    French Polynesia Teaonui Tehau
+    Australia Tim Cahill
+    Australia Jackson Irvine
+    Australia Massimo Luongo
+    Australia Tom Rogic
+    Australia Trent Sainsbury
+    China Gao Lin
+    China Hao Junmin
+    China Wu Xi
+    China Yu Dabao
+    China Yu Hai
+    Iran Reza Ghoochannejhad
+    Iran Jalal Hosseini
+    Iran Alireza Jahanbakhsh
+    Iraq Saad Abdul-Amir
+    Iraq Mahdi Kamel
+    Iraq Ahmed Yasin
+    Japan Takuma Asano
+    Japan Keisuke Honda
+    Japan Shinji Kagawa
+    Japan Hiroshi Kiyotake
+    Japan Yasuyuki Konno
+    Japan Shinji Okazaki
+    Japan Yuya Osako
+    Japan Hotaru Yamaguchi
+    Japan Maya Yoshida
+    Qatar Akram Afif
+    Qatar Sebastián Soria
+    Saudi Arabia Salem Al-Dawsari
+    Saudi Arabia Taisir Al-Jassim
+    Saudi Arabia Salman Al-Moasher
+    Saudi Arabia Fahad Al-Muwallad
+    Saudi Arabia Nasser Al-Shamrani
+    Saudi Arabia Omar Hawsawi
+    South Korea Hong Jeong-ho
+    South Korea Hwang Hee-chan
+    South Korea Ji Dong-won
+    South Korea Lee Chung-yong
+    South Korea Nam Tae-hee
+    South Korea Son Heung-min
+    Syria Ahmad Al Salih
+    Syria Omar Kharbin
+    Thailand Tana Chanabut
+    Thailand Mongkol Tossakrai
+    United Arab Emirates Ismail Matar
+    Uzbekistan Odil Ahmedov
+    Uzbekistan Alexander Geynrikh
+    Uzbekistan Egor Krimets
+    Uzbekistan Otabek Shukurov
+
+1 own goal
+
+    China Zheng Zhi (playing against South Korea)
+    Thailand Tanaboon Kesarat (playing against Saudi Arabia)
 
 Notes
 
-FIFA awarded Tahiti a 3-0 win as a result of the Solomon Islands fielding the ineligible player Henry Fa'arodo, after Tahiti had defeated the Solomon Islands 1-0. Henry Fa'arodo failed to serve a one-game ban after receiving two yellow cards in the 2016 OFC Nations Cup.[4]
+Syria play their home matches outside Syria due to security concerns from the Syrian Civil War.
+The kickoff of the Syria v Iran match was originally at 20:00 local time but was delayed by 45 minutes due to heavy rain.[7]
+Iraq play their home matches in Iran due to security concerns from the Iraqi Civil War. However, due to Saudi Arabia's refusal to play in Iran after the attack on their diplomatic missions in Iran, the first match was played in Malaysia.[8]
 
-    Exact dates subject to official confirmation by the OFC.
+    The Australia v Saudi Arabia match was brought forward from 13 June 2017 due to Australia's participation in the 2017 FIFA Confederations Cup.[9]
 
 References
 
-"2018 WCQ Stage 3 Schedule & Results". Oceania Football Confederation. Retrieved 8 July 2016.
-"Stage 3 draw complete". Oceania Football Confederation.
+"ExCo approves expanded AFC Asian Cup finals". AFC. 16 April 2014.
+"2018 FIFA World Cup: Asian Qualifying Round 3 line up complete". Asian Football Confederation. 30 March 2016.
+"Stage set for Russia 2018 Asian Qualifiers Final Round draw". Asian Football Confederation. 10 April 2016.
+"FIFA/Coca-Cola World Ranking - April 2016 (AFC)". FIFA.com. Fédération Internationale de Football Association. 7 April 2016. Retrieved 7 April 2016.
+"Iran remain No. 1 in Asia, Australia the big movers". the-afc.com. Asian Football Confederation. 7 April 2016. Retrieved 7 April 2016.
 "Regulations - 2018 FIFA World Cup Russia" (PDF). FIFA.com.
-"Several member associations sanctioned for incidents during FIFA World Cup qualifiers and friendlies". FIFA.com. 19 December 2016.
-"New Zealand at home first in OFC play-off". FIFA. Retrieved 15 June 2017.
+"Iran hold by Syria in FIFA World Cup qualifier". Tehran Times. 15 November 2016.
+"AFC deny Iraq's demand to play Saudi Arabia in Iran". Goal.com. 29 April 2016.
+"Australia, Japan to go head-to-head following Asian draw". FIFA.com. 12 April 2016.
 
-    "Next steps to Russia laid out". Football NZ. 8 July 2016. Retrieved 11 July 2016.
+    "Football: FIFA replaces Qatari referee for UAE World Cup qualifier; Singaporean steps in".
 
 External links
 
     Official FIFA World Cup website
-        Qualifiers - Oceania: Round 3, FIFA.com
-    2018 FIFA World Cup Russia Qualifiers - OFC Stage 3, oceaniafootball.com
+        Qualifiers - Asia: Round 3, FIFA.com
+    FIFA World Cup, the-AFC.com
 
 [show]
 
@@ -585,7 +3498,7 @@ External links
 2018 FIFA World Cup qualification
 Categories:
 
-    2018 FIFA World Cup qualification (OFC)2016-17 in OFC football2017-18 in OFC football
+    2018 FIFA World Cup qualification (AFC)2016 in Asian football2017 in Asian football
 
 Navigation menu
 
@@ -639,21 +3552,29 @@ Print/export
 
 Languages
 
+    ???????
+    Bosanski
+    Español
+    ?????
+    Français
     ???
-    Italiano
+    Bahasa Indonesia
     Magyar
     Bahasa Melayu
     ???
+    Polski
     Português
+    Româna
     ???????
     Svenska
+    ???
     Türkçe
     Ti?ng Vi?t
     ??
 
 Edit links
 
-    This page was last edited on 15 June 2017, at 15:39.
+    This page was last edited on 16 June 2017, at 03:08.
     Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
 
     Privacy policy
