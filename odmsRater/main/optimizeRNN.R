@@ -29,18 +29,14 @@ trainRNN <- function(rData, dataPath) {
     file.remove(iterFile)
   }
 
-  fn <- function(x, rData.=rData, iterFile.=iterFile) {
-      rData <- updateRNN(x, rData)
-      rOutput <- rData[["rOutput"]]
-      totalCosts <- computeTotalCosts(rOutput)
-      writeIter(totalCosts[2], x, iterFile)
-      totalCosts[1]
-  }
+  fn <- constructRNNCompute(rData, iterFile, TRUE)
+  fi <- constructRNNCompute(rData, iterFile, FALSE)
+  
   cores <- min(detectCores() - 1, n)
   cluster <- makeCluster(cores)
   clusterExport(cluster, ls(envir=.GlobalEnv), envir=.GlobalEnv)
   gr <- function(x, n.=n, fn.=fn, e=1e-06, cluster.=cluster) {
-      computeGradientPar(x, n, fn, e, cluster)
+      computeGradientPar(x, n, fi, e, cluster)
   }
   optimObj <- optim(x, fn, gr, method="L-BFGS-B",
       lower=xLBd, upper=xUBd, control=list(trace=3, lmm=rOptions$lmm,
