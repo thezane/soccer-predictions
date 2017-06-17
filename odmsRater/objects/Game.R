@@ -50,8 +50,8 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     game$dataset <- "validation"
   }
   
-  game$isContinental <- contest != "Copa Centroamericana" &&
-      contest != "Caribbean Cup"
+  game$isContinental <- contest != "AFC Challenge Cup" &&
+      contest != "Copa Centroamericana" && contest != "Caribbean Cup"
   game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
       game$isPlayoff
       

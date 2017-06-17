@@ -1033,9 +1033,6 @@ Uzbekistan,North Korea,01/10/15,Asian Cup,Group,1,0,0
 Australia,Kuwait,01/09/15,Asian Cup,Group,4,1,1
 Cape Verde,Equatorial Guinea,01/07/15,Africa Cup of Nations,Friendlies,1,1,0
 South Korea,Saudi Arabia,01/04/15,Asian Cup,Friendlies,2,0,0
-China,Palestine,12/21/14,Asian Cup,Friendlies,0,0,1
-Uzbekistan,Palestine,12/13/14,Asian Cup,Friendlies,1,0,0
-Mexico,North Korea,11/29/14,Asian Cup,Friendlies,4,0,0
 Iran,South Korea,11/18/14,Asian Cup,Friendlies,1,0,1
 Japan,Australia,11/18/14,Asian Cup,Friendlies,2,1,1
 Cuba,Haiti,11/18/14,Caribbean Cup,Knockout,1,2,0
@@ -1083,11 +1080,6 @@ Jamaica,Martinique,11/12/14,Caribbean Cup,Group,1,1,1
 Cuba,French Guiana,11/11/14,Caribbean Cup,Group,1,1,0
 Curacao,Trinidad and Tobago,11/11/14,Caribbean Cup,Group,2,3,0
 Armenia,France,11/11/14,European Championship,Friendlies,0,3,1
-Vietnam,Palestine,11/09/14,Asian Cup,Friendlies,1,3,1
-Qatar,North Korea,11/06/14,Asian Cup,Friendlies,3,1,1
-Saudi Arabia,Palestine,11/06/14,Asian Cup,Friendlies,2,0,1
-Bahrain,North Korea,11/02/14,Asian Cup,Friendlies,2,2,1
-Kuwait,North Korea,10/31/14,Asian Cup,Friendlies,1,0,1
 Brazil,Japan,10/14/14,Asian Cup,Friendlies,4,0,0
 Qatar,Australia,10/14/14,Asian Cup,Friendlies,1,0,1
 South Korea,Costa Rica,10/14/14,Asian Cup,Friendlies,1,3,1
@@ -1109,7 +1101,6 @@ Latvia,Turkey,10/13/14,European Championship,Qualifiers,1,1,1
 Malta,Italy,10/13/14,European Championship,Qualifiers,0,1,1
 Norway,Bulgaria,10/13/14,European Championship,Qualifiers,2,1,1
 Wales,Cyprus,10/13/14,European Championship,Qualifiers,2,1,1
-Pakistan,Palestine,10/12/14,Asian Cup,Friendlies,0,2,1
 Barbados,French Guiana,10/12/14,Caribbean Cup,Qualifiers,0,2,1
 Guadeloupe,Curacao,10/12/14,Caribbean Cup,Qualifiers,0,1,1
 Haiti,Saint Kitts and Nevis,10/12/14,Caribbean Cup,Qualifiers,0,0,1
@@ -1166,7 +1157,6 @@ Guadeloupe,Saint Vincent and the Grenadines,10/08/14,Caribbean Cup,Qualifiers,3,
 Haiti,French Guiana,10/08/14,Caribbean Cup,Qualifiers,2,2,1
 Saint Kitts and Nevis,Barbados,10/08/14,Caribbean Cup,Qualifiers,2,3,1
 Trinidad and Tobago,Dominican Republic,10/08/14,Caribbean Cup,Qualifiers,6,1,1
-India,Palestine,10/06/14,Asian Cup,Friendlies,2,3,1
 El Salvador,Panama,09/13/14,Copa Centroamericana,Knockout,0,1,0
 Guatemala,Costa Rica,09/13/14,Copa Centroamericana,Knockout,1,2,0
 Honduras,Nicaragua,09/13/14,Copa Centroamericana,Knockout,1,0,0
@@ -1213,7 +1203,6 @@ Gibraltar,Poland,09/07/14,European Championship,Qualifiers,0,7,1
 Greece,Romania,09/07/14,European Championship,Qualifiers,0,1,1
 Hungary,Northern Ireland,09/07/14,European Championship,Qualifiers,1,2,1
 Portugal,Albania,09/07/14,European Championship,Qualifiers,0,1,1
-Palestine,Taiwan,09/06/14,Asian Cup,Friendlies,7,3,0
 Japan,Uruguay,09/05/14,Asian Cup,Friendlies,0,2,1
 South Korea,Venezuela,09/05/14,Asian Cup,Friendlies,3,1,1
 Antigua and Barbuda,Dominican Republic,09/05/14,Caribbean Cup,Qualifiers,2,1,1
@@ -1226,7 +1215,6 @@ Saint Lucia,Guyana,09/05/14,Caribbean Cup,Qualifiers,2,0,1
 Saint Vincent and the Grenadines,Anguilla,09/05/14,Caribbean Cup,Qualifiers,4,0,1
 Suriname,Bonaire,09/05/14,Caribbean Cup,Qualifiers,2,3,1
 Belgium,Australia,09/04/14,Asian Cup,Friendlies,2,0,1
-Myanmar,Palestine,09/03/14,Asian Cup,Friendlies,4,1,0
 Antigua and Barbuda,Anguilla,09/03/14,Caribbean Cup,Qualifiers,6,0,1
 Barbados,Suriname,09/03/14,Caribbean Cup,Qualifiers,1,1,1
 Dominican Republic,Saint Vincent and the Grenadines,09/03/14,Caribbean Cup,Qualifiers,0,1,1
@@ -1333,14 +1321,30 @@ Chad,Malawi,05/31/14,Africa Cup of Nations,Qualifiers,3,1,1
 Rwanda,Libya,05/31/14,Africa Cup of Nations,Qualifiers,3,0,1
 Sierra Leone,Swaziland,05/31/14,Africa Cup of Nations,Qualifiers,1,0,1
 Uganda,Madagascar,05/31/14,Africa Cup of Nations,Qualifiers,1,0,1
+Palestine,Philippines,05/30/14,AFC Challenge Cup,Knockout,1,0,0
 Comoros,Kenya,05/30/14,Africa Cup of Nations,Qualifiers,1,1,1
 South Sudan,Mozambique,05/30/14,Africa Cup of Nations,Qualifiers,0,0,1
 Aruba,Turks and Caicos Islands,05/30/14,Caribbean Cup,Qualifiers,1,0,1
 French Guiana,British Virgin Islands,05/30/14,Caribbean Cup,Qualifiers,6,0,1
 Montserrat,United States Virgin Islands,05/30/14,Caribbean Cup,Qualifiers,1,0,1
+Afghanistan,Maldives,05/29/14,AFC Challenge Cup,Knockout,1,1,0
 South Korea,Tunisia,05/28/14,Asian Cup,Friendlies,0,1,1
+Palestine,Afghanistan,05/27/14,AFC Challenge Cup,Knockout,2,0,0
+Philippines,Maldives,05/27/14,AFC Challenge Cup,Knockout,3,2,0
 Japan,Cyprus,05/27/14,Asian Cup,Friendlies,1,0,1
 Australia,South Africa,05/26/14,Asian Cup,Friendlies,1,1,1
+Afghanistan,Laos,05/24/14,AFC Challenge Cup,Group,0,0,0
+Turkmenistan,Philippines,05/24/14,AFC Challenge Cup,Group,0,2,0
+Kyrgyzstan,Myanmar,05/23/14,AFC Challenge Cup,Group,1,0,0
+Maldives,Palestine,05/23/14,AFC Challenge Cup,Group,0,0,1
+Afghanistan,Turkmenistan,05/22/14,AFC Challenge Cup,Group,3,1,0
+Laos,Philippines,05/22/14,AFC Challenge Cup,Group,0,2,0
+Maldives,Kyrgyzstan,05/21/14,AFC Challenge Cup,Group,2,0,1
+Myanmar,Palestine,05/21/14,AFC Challenge Cup,Group,0,2,0
+Philippines,Afghanistan,05/20/14,AFC Challenge Cup,Group,0,0,0
+Turkmenistan,Laos,05/20/14,AFC Challenge Cup,Group,5,1,0
+Maldives,Myanmar,05/19/14,AFC Challenge Cup,Group,2,3,1
+Palestine,Kyrgyzstan,05/19/14,AFC Challenge Cup,Group,1,0,0
 Burundi,Botswana,05/18/14,Africa Cup of Nations,Qualifiers,0,0,1
 Kenya,Comoros,05/18/14,Africa Cup of Nations,Qualifiers,1,0,1
 Liberia,Lesotho,05/18/14,Africa Cup of Nations,Qualifiers,1,0,1
@@ -1369,7 +1373,6 @@ Vietnam,Hong Kong,03/05/14,Asian Cup,Qualifiers,3,1,1
 Yemen,Malaysia,03/05/14,Asian Cup,Qualifiers,1,2,1
 South Africa,Brazil,03/05/14,World Cup,Friendlies,0,5,1
 Iran,Kuwait,03/03/14,Asian Cup,Qualifiers,3,2,1
-Iraq,North Korea,02/21/14,Asian Cup,Friendlies,2,0,0
 Singapore,Jordan,02/04/14,Asian Cup,Qualifiers,1,3,1
 United States,South Korea,02/01/14,Asian Cup,Friendlies,2,0,1
 Oman,Jordan,01/31/14,Asian Cup,Qualifiers,0,0,1
@@ -1592,7 +1595,6 @@ Singapore,Oman,08/14/13,Asian Cup,Qualifiers,0,2,1
 South Korea,Peru,08/14/13,World Cup,Friendlies,0,0,1
 Switzerland,Brazil,08/14/13,World Cup,Friendlies,1,0,1
 Northern Ireland,Russia,08/14/13,World Cup,Qualifiers-Europe,1,0,1
-Jordan,Palestine,08/06/13,Asian Cup,Friendlies,4,1,1
 United States,Panama,07/28/13,CONCACAF Gold Cup,Knockout,1,0,1
 Panama,Mexico,07/24/13,CONCACAF Gold Cup,Knockout,2,1,0
 United States,Honduras,07/24/13,CONCACAF Gold Cup,Knockout,3,1,1
@@ -1665,7 +1667,6 @@ Mexico,Costa Rica,06/12/13,World Cup,Qualifiers-North America,0,0,1
 United States,Panama,06/12/13,World Cup,Qualifiers-North America,2,0,1
 Chile,Bolivia,06/12/13,World Cup,Qualifiers-South America,3,1,1
 Venezuela,Uruguay,06/12/13,World Cup,Qualifiers-South America,0,1,1
-Qatar,North Korea,06/11/13,Asian Cup,Friendlies,0,0,1
 Australia,Jordan,06/11/13,World Cup,Qualifiers-Asia,4,0,1
 Iran,Lebanon,06/11/13,World Cup,Qualifiers-Asia,4,0,1
 Iraq,Japan,06/11/13,World Cup,Qualifiers-Asia,0,1,1
@@ -1726,7 +1727,6 @@ Lebanon,South Korea,06/04/13,World Cup,Qualifiers-Asia,1,1,1
 Oman,Iraq,06/04/13,World Cup,Qualifiers-Asia,1,0,1
 Qatar,Iran,06/04/13,World Cup,Qualifiers-Asia,0,1,1
 Brazil,England,06/02/13,World Cup,Friendlies,2,2,1
-Qatar,Palestine,04/17/13,Asian Cup,Friendlies,2,0,1
 Brazil,Chile,04/13/13,World Cup,Friendlies,2,2,1
 Bolivia,Brazil,04/06/13,World Cup,Friendlies,0,4,1
 Costa Rica,Jamaica,03/27/13,World Cup,Qualifiers-North America,2,0,1
@@ -1734,7 +1734,6 @@ Mexico,United States,03/27/13,World Cup,Qualifiers-North America,0,0,1
 Panama,Honduras,03/27/13,World Cup,Qualifiers-North America,2,0,1
 Chile,Uruguay,03/27/13,World Cup,Qualifiers-South America,2,0,1
 Venezuela,Colombia,03/27/13,World Cup,Qualifiers-South America,1,0,1
-Malaysia,Palestine,03/26/13,Asian Cup,Friendlies,0,2,1
 Kuwait,Iran,03/26/13,Asian Cup,Qualifiers,1,1,1
 Algeria,Benin,03/26/13,World Cup,Qualifiers-Africa,3,1,1
 Egypt,Zimbabwe,03/26/13,World Cup,Qualifiers-Africa,2,1,1
@@ -1823,19 +1822,16 @@ Honduras,Mexico,03/22/13,World Cup,Qualifiers-North America,2,2,1
 New Zealand,New Caledonia,03/22/13,World Cup,Qualifiers-Oceania,2,1,1
 Colombia,Bolivia,03/22/13,World Cup,Qualifiers-South America,5,0,1
 Uruguay,Paraguay,03/22/13,World Cup,Qualifiers-South America,1,1,1
-Kuwait,Palestine,03/21/13,Africa Cup of Nations,Friendlies,2,1,1
 Brazil,Italy,03/21/13,World Cup,Friendlies,2,2,0
 Nigeria,Burkina Faso,02/10/13,Africa Cup of Nations,Knockout,1,0,0
 Mali,Ghana,02/09/13,Africa Cup of Nations,Knockout,3,1,0
 Mexico,Jamaica,02/07/13,World Cup,Qualifiers-North America,0,0,1
 Panama,Costa Rica,02/07/13,World Cup,Qualifiers-North America,2,2,1
-India,Palestine,02/06/13,Africa Cup of Nations,Friendlies,2,4,1
 Japan,Latvia,02/06/13,Africa Cup of Nations,Friendlies,3,0,1
 Romania,Australia,02/06/13,Africa Cup of Nations,Friendlies,3,2,0
 Romania,Australia,02/06/13,Africa Cup of Nations,Friendlies,3,2,1
 Burkina Faso,Ghana,02/06/13,Africa Cup of Nations,Knockout,1,1,0
 Mali,Nigeria,02/06/13,Africa Cup of Nations,Knockout,1,4,0
-North Korea,Laos,02/06/13,Asian Cup,Friendlies,1,0,0
 Iran,Lebanon,02/06/13,Asian Cup,Qualifiers,5,0,1
 Iraq,Indonesia,02/06/13,Asian Cup,Qualifiers,1,0,1
 Jordan,Singapore,02/06/13,Asian Cup,Qualifiers,4,0,1
@@ -2245,6 +2241,22 @@ Ukraine,Estonia,05/28/12,European Championship,Friendlies,4,0,1
 Poland,Slovakia,05/26/12,European Championship,Friendlies,1,0,1
 Brazil,Denmark,05/26/12,World Cup,Friendlies,3,1,0
 Poland,Latvia,05/22/12,European Championship,Friendlies,1,0,1
+Philippines,Palestine,03/19/12,AFC Challenge Cup,Knockout,4,3,0
+Turkmenistan,North Korea,03/19/12,AFC Challenge Cup,Knockout,1,2,0
+North Korea,Palestine,03/16/12,AFC Challenge Cup,Knockout,2,0,0
+Turkmenistan,Philippines,03/16/12,AFC Challenge Cup,Knockout,2,1,0
+North Korea,India,03/13/12,AFC Challenge Cup,Group,4,0,0
+Tajikistan,Philippines,03/13/12,AFC Challenge Cup,Group,1,2,0
+Maldives,Palestine,03/12/12,AFC Challenge Cup,Group,0,2,0
+Nepal,Turkmenistan,03/12/12,AFC Challenge Cup,Group,0,3,1
+Philippines,India,03/11/12,AFC Challenge Cup,Group,2,0,0
+Tajikistan,North Korea,03/11/12,AFC Challenge Cup,Group,0,2,0
+Nepal,Maldives,03/10/12,AFC Challenge Cup,Group,0,1,1
+Palestine,Turkmenistan,03/10/12,AFC Challenge Cup,Group,0,0,0
+India,Tajikistan,03/09/12,AFC Challenge Cup,Group,0,2,0
+North Korea,Philippines,03/09/12,AFC Challenge Cup,Group,2,0,0
+Nepal,Palestine,03/08/12,AFC Challenge Cup,Group,0,2,1
+Turkmenistan,Maldives,03/08/12,AFC Challenge Cup,Group,3,1,0
 Burundi,Zimbabwe,02/29/12,Africa Cup of Nations,Qualifiers,2,1,1
 Chad,Malawi,02/29/12,Africa Cup of Nations,Qualifiers,3,2,1
 Ethiopia,Benin,02/29/12,Africa Cup of Nations,Qualifiers,0,0,1
@@ -3016,7 +3028,6 @@ Puerto Rico,Anguilla,10/02/10,Caribbean Cup,Qualifiers,3,1,1
 Saint Martin,Cayman Islands,10/02/10,Caribbean Cup,Qualifiers,1,1,1
 Iraq,Oman,09/21/10,Asian Cup,Friendlies,3,2,1
 Jordan,Iraq,09/16/10,Asian Cup,Friendlies,4,1,1
-India,Thailand,09/08/10,Asian Cup,Friendlies,1,2,1
 Qatar,Oman,09/07/10,Asian Cup,Friendlies,1,1,1
 South Korea,Iran,09/07/10,Asian Cup,Friendlies,0,1,1
 Albania,Luxembourg,09/07/10,European Championship,Qualifiers,1,0,1
@@ -3061,7 +3072,6 @@ Sudan,Republic of the Congo,09/04/10,Africa Cup of Nations,Qualifiers,2,0,1
 The Gambia,Namibia,09/04/10,Africa Cup of Nations,Qualifiers,3,1,1
 Tunisia,Malawi,09/04/10,Africa Cup of Nations,Qualifiers,2,2,1
 Uganda,Angola,09/04/10,Africa Cup of Nations,Qualifiers,3,0,1
-Thailand,India,09/04/10,Asian Cup,Friendlies,1,0,1
 Poland,Ukraine,09/04/10,European Championship,Friendlies,1,1,1
 Algeria,Tanzania,09/03/10,Africa Cup of Nations,Qualifiers,1,1,1
 Qatar,Bahrain,09/03/10,Asian Cup,Friendlies,1,1,1
@@ -3179,6 +3189,22 @@ Jordan,Singapore,03/03/10,Asian Cup,Qualifiers,2,1,1
 Oman,Kuwait,03/03/10,Asian Cup,Qualifiers,0,0,1
 Syria,Lebanon,03/03/10,Asian Cup,Qualifiers,4,0,1
 Uzbekistan,United Arab Emirates,03/03/10,Asian Cup,Qualifiers,0,1,1
+Tajikistan,Myanmar,02/27/10,AFC Challenge Cup,Knockout,1,0,0
+Turkmenistan,North Korea,02/27/10,AFC Challenge Cup,Knockout,1,1,0
+North Korea,Myanmar,02/24/10,AFC Challenge Cup,Knockout,5,0,0
+Tajikistan,Turkmenistan,02/24/10,AFC Challenge Cup,Knockout,0,2,0
+India,North Korea,02/21/10,AFC Challenge Cup,Group,0,3,0
+Turkmenistan,Kyrgyzstan,02/21/10,AFC Challenge Cup,Group,1,0,0
+Sri Lanka,Bangladesh,02/20/10,AFC Challenge Cup,Group,3,0,1
+Tajikistan,Myanmar,02/20/10,AFC Challenge Cup,Group,3,0,0
+Kyrgyzstan,North Korea,02/19/10,AFC Challenge Cup,Group,0,4,0
+Turkmenistan,India,02/19/10,AFC Challenge Cup,Group,1,0,0
+Bangladesh,Myanmar,02/18/10,AFC Challenge Cup,Group,1,2,0
+Sri Lanka,Tajikistan,02/18/10,AFC Challenge Cup,Group,1,3,1
+India,Kyrgyzstan,02/17/10,AFC Challenge Cup,Group,1,2,0
+North Korea,Turkmenistan,02/17/10,AFC Challenge Cup,Group,1,1,0
+Sri Lanka,Myanmar,02/16/10,AFC Challenge Cup,Group,0,4,1
+Tajikistan,Bangladesh,02/16/10,AFC Challenge Cup,Group,1,2,0
 Ghana,Egypt,01/31/10,Africa Cup of Nations,Knockout,0,1,0
 Nigeria,Algeria,01/30/10,Africa Cup of Nations,Knockout,1,0,0
 Algeria,Egypt,01/28/10,Africa Cup of Nations,Knockout,0,4,0
@@ -3917,10 +3943,26 @@ Guatemala,United States,08/21/08,World Cup,Qualifiers-North America,0,1,1
 Haiti,Suriname,08/21/08,World Cup,Qualifiers-North America,2,2,1
 Mexico,Honduras,08/21/08,World Cup,Qualifiers-North America,2,1,1
 Kazakhstan,Andorra,08/20/08,World Cup,Qualifiers-Europe,3,0,1
+India,Tajikistan,08/13/08,AFC Challenge Cup,Knockout,4,1,1
+Myanmar,North Korea,08/13/08,AFC Challenge Cup,Knockout,0,4,0
 Guyana,Suriname,08/10/08,Caribbean Cup,Qualifiers,1,1,1
 Dominica,Suriname,08/09/08,Caribbean Cup,Qualifiers,1,3,1
 Guyana,Dominica,08/08/08,Caribbean Cup,Qualifiers,3,0,1
+India,Myanmar,08/07/08,AFC Challenge Cup,Knockout,1,0,1
+North Korea,Tajikistan,08/07/08,AFC Challenge Cup,Knockout,0,1,0
+Nepal,Sri Lanka,08/04/08,AFC Challenge Cup,Group,3,0,0
+North Korea,Myanmar,08/04/08,AFC Challenge Cup,Group,1,0,0
+Afghanistan,Tajikistan,08/03/08,AFC Challenge Cup,Group,0,4,0
+India,Turkmenistan,08/03/08,AFC Challenge Cup,Group,2,1,1
+Nepal,North Korea,08/02/08,AFC Challenge Cup,Group,0,1,0
+Sri Lanka,Myanmar,08/02/08,AFC Challenge Cup,Group,1,3,0
+Afghanistan,Turkmenistan,08/01/08,AFC Challenge Cup,Group,0,5,0
+India,Tajikistan,08/01/08,AFC Challenge Cup,Group,1,1,1
+Myanmar,Nepal,07/31/08,AFC Challenge Cup,Group,3,0,0
+North Korea,Sri Lanka,07/31/08,AFC Challenge Cup,Group,3,0,0
 Netherlands Antilles,Grenada,07/31/08,Caribbean Cup,Qualifiers,2,0,1
+India,Afghanistan,07/30/08,AFC Challenge Cup,Group,1,0,1
+Turkmenistan,Tajikistan,07/30/08,AFC Challenge Cup,Group,0,0,0
 Grenada,Aruba,07/29/08,Caribbean Cup,Qualifiers,3,1,1
 Netherlands Antilles,Aruba,07/27/08,Caribbean Cup,Qualifiers,0,0,1
 Germany,Spain,06/29/08,European Championship,Knockout,0,1,0
