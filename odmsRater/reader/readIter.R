@@ -1,6 +1,6 @@
 readIter <- function(iterFile) {
   iterData <- read.csv(iterFile, header=FALSE)
-  minCostI <- which.min(iterData[[1]])
+  minCostI <- nrow(iterData)
   x <- as.numeric(iterData[minCostI, -1])
   x
 }

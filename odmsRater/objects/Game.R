@@ -50,7 +50,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     game$dataset <- "validation"
   }
   
-  game$isContinental <- contest != "AFC Challenge Cup" &&
+  game$isMajor <- contest != "AFC Challenge Cup" &&
       contest != "Copa Centroamericana" && contest != "Caribbean Cup"
   game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
       game$isPlayoff
@@ -58,8 +58,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   if (game$isWorldCup && !game$isQualifier && !game$isFriendly) {
     game$weight = 1
   }
-  else if (game$isContinental &&
-      !game$isQualifier && !game$isFriendly) {
+  else if (game$isMajor && !game$isQualifier && !game$isFriendly) {
     game$weight = 0.9
   }
   else if (!game$isFriendly) {
