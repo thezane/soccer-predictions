@@ -52,8 +52,8 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   
   game$isContinental <- contest != "AFC Challenge Cup" &&
       contest != "Copa Centroamericana" && contest != "Caribbean Cup"
-  game$isRelevant <- game$isContinental &&
-      ((!game$isFriendly && !game$isQualifier) || game$isPlayoff)
+  game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
+      game$isPlayoff
       
   if (game$isWorldCup && !game$isQualifier && !game$isFriendly) {
     game$weight = 1
@@ -66,7 +66,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     game$weight = 0.8
   }
   else {
-    game$weight = 0.2
+    game$weight = 0.3
   }
       
   class(game) <- "Game"
