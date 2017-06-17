@@ -56,16 +56,16 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
       game$isPlayoff
       
   if (game$isWorldCup && !game$isQualifier && !game$isFriendly) {
-    game$weight = 1
+    game$weight = 1.2
   }
   else if (game$isMajor && !game$isQualifier && !game$isFriendly) {
-    game$weight = 0.9
+    game$weight = 1
   }
   else if (!game$isFriendly) {
     game$weight = 0.8
   }
   else {
-    game$weight = 0.2
+    game$weight = 0.4
   }
       
   class(game) <- "Game"
