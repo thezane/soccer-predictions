@@ -56,8 +56,14 @@ newRatingsOptions <- function(fTree) {
   )
   
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
-  rOptions$strFsNormLBd <- rep(-Inf, rOptions$numFs)
-  rOptions$strFsNormUBd <- rep(Inf, rOptions$numFs)
+  i <- 1
+  
+  while (i <= rOptions$numFs) {
+    strFNorm <- strFsNorm[i]
+    rOptions$fTree[[rOptions$fNames[i]]] <- c(strFNorm, -strFNorm)
+    i <- i + 1
+  }
+  
   class(rOptions) <- "RatingsOptions"
   rOptions
 }
@@ -66,24 +72,21 @@ getModel <- function(rOptions) {
   c(rOptions$b, rOptions$c,
     rOptions$k,
     rOptions$meanGoals, rOptions$strBeta, rOptions$hA,
-        rOptions$corrBeta,
-    rOptions$strFsNorm)
+        rOptions$corrBeta)
 }
 
 getModelLBd <- function(rOptions) {
   c(rOptions$bLBd, rOptions$cLBd,
     rOptions$kLBd,
     rOptions$meanGoalsLBd, rOptions$strBetaLBd, rOptions$hALBd,
-        rOptions$corrBetaLBd,
-    rOptions$strFsNormLBd)
+        rOptions$corrBetaLBd)
 }
 
 getModelUBd <- function(rOptions) {
   c(rOptions$bUBd, rOptions$cUBd,
     rOptions$kUBd,
     rOptions$meanGoalsUBd, rOptions$strBetaUBd, rOptions$hAUBd,
-        rOptions$corrBetaUBd,
-    rOptions$strFsNormUBd)
+        rOptions$corrBetaUBd)
 }
 
 updateOptions <- function(rOptions, x) {
@@ -97,14 +100,6 @@ updateOptions <- function(rOptions, x) {
   rOptions$strFsNorm <- x[-c(1: 7)]
   strFsNorm <- rOptions$strFsNorm
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
-  i <- 1
-  
-  while (i <= rOptions$numFs) {
-    strFNorm <- strFsNorm[i]
-    rOptions$fTree[[rOptions$fNames[i]]] <- c(strFNorm, -strFNorm)
-    i <- i + 1
-  }
-
   rOptions$slopeCost <- rOptions$slopeCostReg *
       norm(matrix(c(rOptions$b, rOptions$strBeta, rOptions$hA)), "f")
   rOptions
