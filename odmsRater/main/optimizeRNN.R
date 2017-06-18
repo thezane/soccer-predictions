@@ -77,4 +77,5 @@ updateRNN <- function(x, rData) {
 computeGradientPar <- function(x, n, f, e, cluster) {
   I <- c(1: n)
   g <- 0 * I
+  g
 }
