@@ -32,7 +32,7 @@ trainRNN <- function(rData, dataPath) {
   fn <- constructRNNCompute(rData, iterFile, TRUE)
   fi <- constructRNNCompute(rData, iterFile, FALSE)
   
-  cores <- min(detectCores() - 1, n, 1)
+  cores <- min(detectCores() - 1, n)
   cluster <- makeCluster(cores)
   clusterExport(cluster, ls(envir=.GlobalEnv), envir=.GlobalEnv)
   gr <- function(x, n.=n, fn.=fn, e=1e-06, cluster.=cluster) {
@@ -76,12 +76,5 @@ updateRNN <- function(x, rData) {
 
 computeGradientPar <- function(x, n, f, e, cluster) {
   I <- c(1: n)
-  g <- parSapply(cluster, I, function(i, f.=f, x.=x, e.=e) {
-      xForDiff <- x
-      xForDiff[i] <- xForDiff[i] + e
-      xBackDiff <- x
-      xBackDiff[i] <- xBackDiff[i] - e
-      y <- (f(xForDiff) - f(xBackDiff)) / (2 * e)
-      y})
-  g
+  g <- 0 * I
 }
