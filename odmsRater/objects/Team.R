@@ -29,13 +29,12 @@ updateTeam <- function(team, game, i) {
   team
 }
 
-getTeamStrs <- function(team, rOptions, rOutput) {
+getTeamStrs <- function(team, rOptions, tTree) {
   if (team$numUpdates > 0) {
     strNorm <-team$strNorm
     strAgg <- team$strAgg
   }
   else if (team$numUpdates == 0 && team$adopterName != "None") {
-    tTree <- rOutput[["tTree"]]
     adopter <- tTree[[team$adopterName]]
     strNorm=adopter$strNorm
     strAgg <- adopter$strAgg
