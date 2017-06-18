@@ -66,21 +66,24 @@ getModel <- function(rOptions) {
   c(rOptions$b, rOptions$c,
     rOptions$k,
     rOptions$meanGoals, rOptions$strBeta, rOptions$hA,
-        rOptions$corrBeta)
+        rOptions$corrBeta,
+    rOptions$strFsNorm)
 }
 
 getModelLBd <- function(rOptions) {
   c(rOptions$bLBd, rOptions$cLBd,
     rOptions$kLBd,
     rOptions$meanGoalsLBd, rOptions$strBetaLBd, rOptions$hALBd,
-        rOptions$corrBetaLBd)
+        rOptions$corrBetaLBd,
+    rOptions$strFsNormLBd)
 }
 
 getModelUBd <- function(rOptions) {
   c(rOptions$bUBd, rOptions$cUBd,
     rOptions$kUBd,
     rOptions$meanGoalsUBd, rOptions$strBetaUBd, rOptions$hAUBd,
-        rOptions$corrBetaUBd)
+        rOptions$corrBetaUBd,
+    rOptions$strFsNormUBd)
 }
 
 updateOptions <- function(rOptions, x) {
