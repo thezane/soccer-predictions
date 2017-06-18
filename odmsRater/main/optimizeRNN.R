@@ -22,8 +22,6 @@ trainRNN <- function(rData, dataPath) {
   x <- getModel(rOptions)
   xLBd <- getModelLBd(rOptions)
   xUBd <- getModelUBd(rOptions)
-  n <- length(x)
-  print(n)
   iterFile <- paste(dataPath, "odms-iters.csv", sep="")
   
   if (file.exists(iterFile)) {
@@ -32,6 +30,8 @@ trainRNN <- function(rData, dataPath) {
 
   fn <- constructRNNCompute(rData, iterFile, TRUE)
   fi <- constructRNNCompute(rData, iterFile, FALSE)
+  
+  fi(x)
   
   cores <- min(detectCores() - 1, n)
   cluster <- makeCluster(cores)
