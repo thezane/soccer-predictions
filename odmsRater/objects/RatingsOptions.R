@@ -97,7 +97,6 @@ updateOptions <- function(rOptions, x) {
   rOptions$strBeta <- x[5]
   rOptions$hA <- x[6]
   rOptions$corrBeta <- x[7]
-  rOptions$strFsNorm <- x[-c(1: 7)]
   strFsNorm <- rOptions$strFsNorm
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
   rOptions$slopeCost <- rOptions$slopeCostReg *
