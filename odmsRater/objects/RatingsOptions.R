@@ -59,7 +59,7 @@ newRatingsOptions <- function(fTree) {
   i <- 1
   
   while (i <= rOptions$numFs) {
-    strFNorm <- strFsNorm[i]
+    strFNorm <- rOptions$strFsNorm[i]
     rOptions$fTree[[rOptions$fNames[i]]] <- c(strFNorm, -strFNorm)
     i <- i + 1
   }
