@@ -56,14 +56,8 @@ newRatingsOptions <- function(fTree) {
   )
   
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
-  i <- 1
-  
-  while (i <= rOptions$numFs) {
-    strFNorm <- rOptions$strFsNorm[i]
-    rOptions$fTree[[rOptions$fNames[i]]] <- c(strFNorm, -strFNorm)
-    i <- i + 1
-  }
-  
+  rOptions$strFsNormLBd <- rep(-Inf, rOptions$numFs)
+  rOptions$strFsNormUBd <- rep(Inf, rOptions$numFs)
   class(rOptions) <- "RatingsOptions"
   rOptions
 }
@@ -97,7 +91,16 @@ updateOptions <- function(rOptions, x) {
   rOptions$strBeta <- x[5]
   rOptions$hA <- x[6]
   rOptions$corrBeta <- x[7]
+  strFsNorm <- rOptions$strFsNorm
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
+  i <- 1
+  
+  while (i <= rOptions$numFs) {
+    strFNorm <- strFsNorm[i]
+    rOptions$fTree[[rOptions$fNames[i]]] <- c(strFNorm, -strFNorm)
+    i <- i + 1
+  }
+
   rOptions$slopeCost <- rOptions$slopeCostReg *
       norm(matrix(c(rOptions$b, rOptions$strBeta, rOptions$hA)), "f")
   rOptions
