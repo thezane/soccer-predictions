@@ -97,7 +97,6 @@ updateOptions <- function(rOptions, x) {
   rOptions$strBeta <- x[5]
   rOptions$hA <- x[6]
   rOptions$corrBeta <- x[7]
-  strFsNorm <- rOptions$strFsNorm
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
   rOptions$slopeCost <- rOptions$slopeCostReg *
       norm(matrix(c(rOptions$b, rOptions$strBeta, rOptions$hA)), "f")

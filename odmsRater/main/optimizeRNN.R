@@ -76,6 +76,8 @@ updateRNN <- function(x, rData) {
 
 computeGradientPar <- function(x, n, f, e, cluster) {
   I <- c(1: n)
+  print(x)
+  print(n)
   g <- parSapply(cluster, I, function(i, f.=f, x.=x, e.=e) {
       xForDiff <- x
       xForDiff[i] <- xForDiff[i] + e
