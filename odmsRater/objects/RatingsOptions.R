@@ -18,7 +18,7 @@ newRatingsOptions <- function(fTree) {
 
     # Default federation strengths for Africa, Asia, Europe,
     # North America, Oceania and South America respectively
-    strFsNorm=c(0, 0, 0.2, 0, -0.6, 0.4),    
+    strFsNorm=c(-0.1, -0.1, 0.3, -0.1, -0.4, 0.4),    
 
     # Lower bounds for optimizable parameters
     bLBd=0.01,
