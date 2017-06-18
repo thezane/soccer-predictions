@@ -118,11 +118,4 @@ printModel <- function(rOptions) {
   print(noquote(sprintf("strBeta = %f", rOptions$strBeta)))
   print(noquote(sprintf("ha = %f", rOptions$hA)))
   print(noquote(sprintf("corr = %f", rOptions$corrBeta)))
-  i <- 1
-  
-  while (i <= rOptions$numFs) {
-    print(noquote(sprintf("%s = %f", rOptions$fNames[i],
-        rOptions$fTree[[rOptions$fNames[i]]][1])))
-    i <- i + 1
-  }
 }
