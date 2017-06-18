@@ -22,6 +22,7 @@ trainRNN <- function(rData, dataPath) {
   x <- getModel(rOptions)
   xLBd <- getModelLBd(rOptions)
   xUBd <- getModelUBd(rOptions)
+  n <- length(x)
   iterFile <- paste(dataPath, "odms-iters.csv", sep="")
   
   if (file.exists(iterFile)) {
