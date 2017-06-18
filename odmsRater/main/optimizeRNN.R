@@ -34,6 +34,8 @@ trainRNN <- function(rData, dataPath) {
   
   cores <- min(detectCores() - 1, n)
   cluster <- makeCluster(cores)
+  clusterEvalQ(cluster,
+      sink(paste("out", Sys.getpid(), ".txt", sep="")))
   clusterExport(cluster, ls(envir=.GlobalEnv), envir=.GlobalEnv)
   gr <- function(x, n.=n, fn.=fn, e=1e-06, cluster.=cluster) {
       computeGradientPar(x, n, fi, e, cluster)

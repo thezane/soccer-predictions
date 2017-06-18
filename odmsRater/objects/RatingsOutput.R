@@ -12,8 +12,8 @@ newRatingsOutput <- function(tTree, gTree, gi) {
 }
 
 resetRatingsOutput <- function(rOutput) {
-  rOutput$costs["training"] <- newRatingsCosts("training")
-  rOutput$costs["validation"] <- newRatingsCosts("validation")
+  rOutput$costs[["training"]] <- newRatingsCosts("training")
+  rOutput$costs[["validation"]] <- newRatingsCosts("validation")
   rOutput
 }
 
@@ -32,9 +32,9 @@ updateStrMeanCosts.RatingsOutput <- function(rOutput, dataset) {
 }
 
 updateTotalCosts <- function(rOutput, rOptions) {
-  rOutput$costs["training"] <- updateTotalCost(
+  rOutput$costs[["training"]] <- updateTotalCost(
       rOutput$costs[["training"]], rOptions)
-  rOutput$costs["validation"] <- updateTotalCost(
+  rOutput$costs[["validation"]] <- updateTotalCost(
       rOutput$costs[["validation"]], rOptions)
   rOutput
 }
