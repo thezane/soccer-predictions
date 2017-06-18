@@ -1,4 +1,4 @@
-Team,Federation,Adopter
+Team,Federation,Adoptee
 Afghanistan,Asia,None
 Albania,Europe,None
 Algeria,Africa,None
@@ -75,7 +75,7 @@ Gabon,Africa,None
 Georgia,Europe,None
 Germany,Europe,None
 Ghana,Africa,None
-Gibraltar,Europe,Faroe Islands
+Gibraltar,Europe,Malta
 Greece,Europe,None
 Grenada,North America,None
 Guadeloupe,North America,None
@@ -101,7 +101,7 @@ Japan,Asia,None
 Jordan,Asia,None
 Kazakhstan,Europe,None
 Kenya,Africa,None
-Kosovo,Europe,None
+Kosovo,Europe,Serbia
 Kuwait,Asia,None
 Kyrgyzstan,Asia,None
 Laos,Asia,None
@@ -127,7 +127,7 @@ Mauritius,Africa,None
 Mexico,South America,None
 Moldova,Europe,None
 Mongolia,Asia,None
-Montenegro,Europe,None
+Montenegro,Europe,Serbia and Montenegro
 Montserrat,North America,None
 Morocco,Africa,None
 Mozambique,Africa,None
@@ -171,7 +171,7 @@ Sao Tome and Principe,Africa,None
 Saudi Arabia,Asia,None
 Scotland,Europe,None
 Senegal,Africa,None
-Serbia,Europe,None
+Serbia,Europe,Serbia and Montenegro
 Serbia and Montenegro,Europe,None
 Seychelles,Africa,None
 Sierra Leone,Africa,None

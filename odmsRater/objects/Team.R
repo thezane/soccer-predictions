@@ -1,8 +1,8 @@
-newTeam <- function(teamName, fName, adopterName) {
+newTeam <- function(teamName, fName, adopteeName) {
   team <- list(
     name=teamName,
     fName=fName,
-    adopterName=adopterName,
+    adopteeName=adopteeName,
     strNorm=c(0, 0),
     strAgg=0,
     numUpdates=0,
@@ -34,10 +34,10 @@ getTeamStrs <- function(team, rOptions, tTree) {
     strNorm <-team$strNorm
     strAgg <- team$strAgg
   }
-  else if (team$numUpdates == 0 && team$adopterName != "None") {
-    adopter <- tTree[[team$adopterName]]
-    strNorm=adopter$strNorm
-    strAgg <- adopter$strAgg
+  else if (team$numUpdates == 0 && team$adopteeName != "None") {
+    adoptee <- tTree[[team$adopteeName]]
+    strNorm=adoptee$strNorm
+    strAgg <- adoptee$strAgg
   }
   else {
 	strNorm=rOptions$fTree[[team$fName]]
