@@ -34,11 +34,11 @@ newRatingsOptions <- function(fTree) {
     hAUBd=Inf,
     corrBetaUBd=0,
     
-    # Default federation strengths for Africa, Asia, Europe,
+    # Non-optimizable federation strengths for Africa, Asia, Europe,
     # North America, Oceania and South America respectively
     strFsNorm=c(0, -0.28, 0.28, -0.24, -0.6, 0.48),
     
-    # Non-optimizable paramters
+    # Other non-optimizable paramters
     fTree=fTree,
     fNames=fNames,
     minUpdates=0,
@@ -56,6 +56,14 @@ newRatingsOptions <- function(fTree) {
   )
   
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
+  i <- 1
+  
+  while (i <= rOptions$numFs) {
+    strFNorm <- strFsNorm[i]
+    rOptions$fTree[[rOptions$fNames[i]]] <- c(strFNorm, -strFNorm)
+    i <- i + 1
+  }
+  
   class(rOptions) <- "RatingsOptions"
   rOptions
 }
