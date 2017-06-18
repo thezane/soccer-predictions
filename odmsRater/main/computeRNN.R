@@ -63,7 +63,7 @@ constructStrPrereqs <- function(rOptions, game, gamePrev, tTree) {
     print(awayTeamName)
   }
 
-  game <- updateGamePreRate(game, rOptions, homeTeam, awayTeam)
+  game <- updateGamePreRate(game, rOptions, tTree, homeTeam, awayTeam)
   strPrereqs <- list(game=game, tTree=tTree)
   strPrereqs
 }
@@ -79,7 +79,7 @@ updateStr <- function(strPrereqs, rOptions) {
   awayTeam <- tTree[[awayTeamName]]
   strNextNorm <- computeLayerRatings(game, rOptions, homeTeam, awayTeam,
       strPostNorm)
-  game <- updateGamePostRate(game, rOptions, tTree, strNextNorm)
+  game <- updateGamePostRate(game, rOptions, strNextNorm)
   tTree[homeTeamName] <- updateTeam(homeTeam, game, 1)
   tTree[awayTeamName] <- updateTeam(awayTeam, game, 2)
   updateStrData <- list(tTree=tTree, game=game)
