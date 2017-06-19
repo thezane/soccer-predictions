@@ -36,7 +36,8 @@ newGame <- function(T, i, tTree, homeTeamName, awayTeamName,
     # Contest
     contest=contest,
     isMajor=contest != "AFC Challenge Cup" &&
-      contest != "Copa Centroamericana" && contest != "Caribbean Cup"
+        contest != "Copa Centroamericana" &&
+        contest != "Caribbean Cup",
     type=type,
     isFriendly=type=="Friendlies",
     isQualifier=grepl("Qualifiers", type),
