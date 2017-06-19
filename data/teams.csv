@@ -7,14 +7,14 @@ Burkina Faso,Africa,None
 Burundi,Africa,None
 Cameroon,Africa,None
 Cape Verde,Africa,None
-Central African Republic,Africa,Gabon
-Chad,Africa,Gabon
-Comoros,Africa,Seychelles
+Central African Republic,Africa,None
+Chad,Africa,None
+Comoros,Africa,None
 Democratic Republic of the Congo,Africa,None
-Djibouti,Africa,Seychelles
+Djibouti,Africa,None
 Egypt,Africa,None
-Equatorial Guinea,Africa,Gabon
-Eritrea,Africa,Sudan
+Equatorial Guinea,Africa,None
+Eritrea,Africa,None
 Ethiopia,Africa,None
 Gabon,Africa,None
 Ghana,Africa,None
@@ -24,7 +24,7 @@ Ivory Coast,Africa,None
 Kenya,Africa,None
 Lesotho,Africa,None
 Liberia,Africa,None
-Libya,Africa,Mali
+Libya,Africa,None
 Madagascar,Africa,None
 Malawi,Africa,None
 Mali,Africa,None
@@ -36,14 +36,14 @@ Namibia,Africa,None
 Niger,Africa,None
 Nigeria,Africa,None
 Republic of the Congo,Africa,None
-Rwanda,Africa,Ethiopia
-Sao Tome and Principe,Africa,Guinea-Bissau
+Rwanda,Africa,None
+Sao Tome and Principe,Africa,None
 Senegal,Africa,None
-Seychelles,Africa,Mauritius
+Seychelles,Africa,None
 Sierra Leone,Africa,None
-Somalia,Africa,Ethiopia
+Somalia,Africa,None
 South Africa,Africa,None
-South Sudan,Africa,Sudan
+South Sudan,Africa,None
 Sudan,Africa,None
 Swaziland,Africa,None
 Tanzania,Africa,None
@@ -53,12 +53,12 @@ Tunisia,Africa,None
 Uganda,Africa,None
 Zambia,Africa,None
 Zimbabwe,Africa,None
-Afghanistan,Asia,Pakistan
+Afghanistan,Asia,None
 Australia,Asia,None
 Bahrain,Asia,None
 Bangladesh,Asia,None
 Bhutan,Asia,None
-Brunei,Asia,Philippines
+Brunei,Asia,None
 Cambodia,Asia,None
 China,Asia,None
 East Timor,Asia,None
@@ -72,7 +72,7 @@ Japan,Asia,None
 Jordan,Asia,None
 Kuwait,Asia,None
 Kyrgyzstan,Asia,None
-Laos,Asia,Philippines
+Laos,Asia,None
 Lebanon,Asia,None
 Macau,Asia,None
 Malaysia,Asia,None
@@ -107,7 +107,7 @@ Austria,Europe,None
 Azerbaijan,Europe,None
 Belarus,Europe,None
 Belgium,Europe,None
-Bosnia-Herzegovina,Europe,Albania
+Bosnia-Herzegovina,Europe,None
 Bulgaria,Europe,None
 Croatia,Europe,None
 Czechoslovakia,Europe,None
@@ -121,14 +121,14 @@ Finland,Europe,None
 France,Europe,None
 Georgia,Europe,None
 Germany,Europe,None
-Gibraltar,Europe,Malta
+Gibraltar,Europe,None
 Greece,Europe,None
 Hungary,Europe,None
 Iceland,Europe,None
 Israel,Europe,None
 Italy,Europe,None
 Kazakhstan,Europe,None
-Kosovo,Europe,Albania
+Kosovo,Europe,None
 Latvia,Europe,None
 Liechtenstein,Europe,None
 Lithuania,Europe,None
@@ -136,7 +136,7 @@ Luxembourg,Europe,None
 Macedonia,Europe,None
 Malta,Europe,None
 Moldova,Europe,None
-Montenegro,Europe,Serbia and Montenegro
+Montenegro,Europe,None
 Netherlands,Europe,None
 Northern Ireland,Europe,None
 Norway,Europe,None
@@ -160,11 +160,11 @@ Wales,Europe,None
 Anguilla,North America,None
 Antigua and Barbuda,North America,None
 Aruba,North America,None
-Bahamas,North America,Dominican Republic
+Bahamas,North America,None
 Barbados,North America,None
 Belize,North America,None
 Bermuda,North America,None
-Bonaire,North America,Aruba
+Bonaire,North America,None
 British Virgin Islands,North America,None
 Canada,North America,None
 Cayman Islands,North America,None
