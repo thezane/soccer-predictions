@@ -54,17 +54,18 @@ newGame <- function(T, i, tTree, homeTeamName, awayTeamName,
     game$dataset <- "validation"
   }
   
+  minUpdates <- 10
   homeTeam <- tTree[[homeTeamName]]
   awayTeam <- tTree[[awayTeamName]]
   
-  if (homeTeam$numUpdates < 10) {
+  if (homeTeam$numUpdates < minUpdates) {
     game$reliability[2] <- min(1,
-        (1 + homeTeam$numUpdates) / (1 + awayTeam$numUpdates))
+        (1 + homeTeam$numUpdates) / (1 + minUpdates))
   }
 
-  if (awayTeam$numUpdates < 10) {
+  if (awayTeam$numUpdates < minUpdates) {
     game$reliability[1] <- min(1,
-        (1 + awayTeam$numUpdates) / (1 + homeTeam$numUpdates))
+        (1 + awayTeam$numUpdates) / (1 + minUpdates))
   }
   
   game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
