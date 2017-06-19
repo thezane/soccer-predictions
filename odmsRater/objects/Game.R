@@ -55,10 +55,14 @@ newGame <- function(T, i, tTree, homeTeamName, awayTeamName,
   
   homeTeam <- tTree[[homeTeamName]]
   awayTeam <- tTree[[awayTeamName]]
-  game$reliability[1] <- min(1,
-      (1 + awayTeam$numUpdates) / (1 + homeTeam$numUpdates))
-  game$reliability[2] <- min(1,
-      (1 + homeTeam$numUpdates) / (1 + awayTeam$numUpdates))
+  
+  if (homeTeam$numUpdates < 10 || awayTeam$numUpdates < 10) {
+    game$reliability[1] <- min(1,
+        (1 + awayTeam$numUpdates) / (1 + homeTeam$numUpdates))
+    game$reliability[2] <- min(1,
+        (1 + homeTeam$numUpdates) / (1 + awayTeam$numUpdates))
+  }
+  
   game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
       game$isPlayoff
       
