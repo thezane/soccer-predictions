@@ -58,12 +58,14 @@ newGame <- function(T, i, tTree, homeTeamName, awayTeamName,
   homeTeam <- tTree[[homeTeamName]]
   awayTeam <- tTree[[awayTeamName]]
   
-  if (homeTeam$numUpdates < minUpdates) {
+  if (homeTeam$numUpdates < minUpdates &&
+      awayTeam$numUpdate >= minUpdates) {
     game$reliability[2] <- min(1,
         (1 + homeTeam$numUpdates) / (1 + minUpdates))
   }
 
-  if (awayTeam$numUpdates < minUpdates) {
+  if (awayTeam$numUpdates < minUpdates &&
+      homeTeam$numUpdates >= minUpdates) {
     game$reliability[1] <- min(1,
         (1 + awayTeam$numUpdates) / (1 + minUpdates))
   }
