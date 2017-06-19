@@ -24,7 +24,7 @@ newGame <- function(T, i, tTree, homeTeamName, awayTeamName,
     A=zeroesMat,
 
     # Ratings
-    reliability=c(1, 1)
+    reliability=c(1, 1),
     teamNames=c(homeTeamName, awayTeamName),
     strNorm=zeroesMat,
     strNextNorm=zeroesMat,
