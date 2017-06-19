@@ -10,9 +10,10 @@ constructGames <- function(currentDate, tTree, dateFormat, dataPath) {
     gameDate <- as.Date(T[[i, "Date"]], dateFormat)  
     homeTeamName <- T[[i, "HomeTeam"]]
     awayTeamName <- T[[i, "AwayTeam"]]
-    gameData <- addGame(T, i, gTree, homeTeamName, awayTeamName,
+    gameData <- addGame(T, i, gTree, tTree, homeTeamName, awayTeamName,
         currentDate, gameDate)
     gTree <- gameData[["gTree"]]
+    tTree <- gameData[["tTree"]]
     game <- gameData[["game"]]
     i <- i + 1
   }
@@ -21,10 +22,16 @@ constructGames <- function(currentDate, tTree, dateFormat, dataPath) {
   gamesData
 }
 
-addGame <- function(T, i, gTree, homeTeamName, awayTeamName,
+addGame <- function(T, i, gTree, tTree, homeTeamName, awayTeamName,
       currentDate, gameDate) {
-  game <- newGame(T, i, homeTeamName, awayTeamName,
+  game <- newGame(T, i, tTree, homeTeamName, awayTeamName,
       currentDate, gameDate)
+  homeTeam <- tTree[[homeTeamName]]
+  awayTeam <- tTree[[awayTeamName]]
+  homeTeam$numUpdates <- homeTeam$numUpdates + 1
+  awayTeam$numUpdates <- awayTeam$numUpdates + 1
+  tTree[[homeTeamName]] <- homeTeam
+  tTree[[awayTeamName]] <- awayTeam
   gameDateStr <- game$gameDateStr
   
   if (!has.key(gameDateStr, gTree)) {
@@ -35,6 +42,6 @@ addGame <- function(T, i, gTree, homeTeamName, awayTeamName,
   game$gameNum <- length(gDateList) + 1
   gDateList[[game$gameNum]] <- game
   gTree[[gameDateStr]] <- gDateList
-  gameData <- list(gTree=gTree, game=game)
+  gameData <- list(gTree=gTree, tTree=tTree, game=game)
   gameData
 }

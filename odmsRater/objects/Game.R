@@ -1,4 +1,4 @@
-newGame <- function(T, i, homeTeamName, awayTeamName,
+newGame <- function(T, i, tTree, homeTeamName, awayTeamName,
     currentDate, gameDate) {
   contest <- T[[i, "Contest"]]
   type <- T[[i, "Type"]]
@@ -24,6 +24,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     A=zeroesMat,
 
     # Ratings
+    reliability=c(1, 1)
     teamNames=c(homeTeamName, awayTeamName),
     strNorm=zeroesMat,
     strNextNorm=zeroesMat,
@@ -34,6 +35,8 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
 
     # Contest
     contest=contest,
+    isMajor=contest != "AFC Challenge Cup" &&
+      contest != "Copa Centroamericana" && contest != "Caribbean Cup"
     type=type,
     isFriendly=type=="Friendlies",
     isQualifier=grepl("Qualifiers", type),
@@ -50,8 +53,12 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     game$dataset <- "validation"
   }
   
-  game$isMajor <- contest != "AFC Challenge Cup" &&
-      contest != "Copa Centroamericana" && contest != "Caribbean Cup"
+  homeTeam <- tTree[[homeTeamName]]
+  awayTeam <- tTree[[awayTeamName]]
+  game$reliability[1] <- min(1,
+      (1 + awayTeam$numUpdates) / (1 + homeTeam$numUpdates))
+  game$reliability[2] <- min(1,
+      (1 + homeTeam$numUpdates) / (1 + awayTeam$numUpdates))
   game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
       game$isPlayoff
       
