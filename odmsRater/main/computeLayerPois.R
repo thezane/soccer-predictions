@@ -11,20 +11,17 @@ computeLayerPois <- function (game, rOptions) {
   gamePrediction <- computeGamePrediction(lambdas, maxGoals)
   gamePrediction[["goalsExpected"]] <- c(lambdas[1], lambdas[2]) +
       lambdas[3]
-  gamePrediction[["strNorm"]] <- strNorm
+  gamePrediction[["strNormBeta"]] <- game$strNormBeta
   gamePrediction[["strAgg"]] <- game$strAgg
   gamePrediction
 }
 
 computeLambdas <- function(rOptions, homeMeanGoals, awayMeanGoals,
     homeStr, awayStr) {
-  strBeta <- rOptions$strBeta
   lambda1Log <- log(homeMeanGoals) +
-      strBeta * awayStr[2] +
-      strBeta * homeStr[1]
+      rOptions$strBeta * (awayStr[2] + homeStr[1])
   lambda2Log <- log(awayMeanGoals) +
-      strBeta * homeStr[2] +
-      strBeta * awayStr[1]
+      rOptions$strBeta * (homeStr[2] + awayStr[1])
   lambda3Log <- rOptions$corrBeta
   lambdas <- exp(c(lambda1Log, lambda2Log, lambda3Log))
   lambdas

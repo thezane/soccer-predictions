@@ -33,12 +33,12 @@ getGamesData <- function(gi, T) {
 }
 
 updateGames <- function(T, game) {
-  numDecimals <- 4
+  numDecimals <- 2
   i <- game$gameRow
   strAgg <- round(game$strAgg, numDecimals)
   strAggNext <- round(game$strAggNext, numDecimals)
-  strNorm <- round(game$strNorm, numDecimals)
-  strNextNorm <- round(game$strNextNorm, numDecimals)
+  strNormBeta <- round(game$strNormBeta, numDecimals)
+  strNextNormBeta <- round(game$strNextNormBeta, numDecimals)
   ps <- round(game$Ps, numDecimals)
   T[i, "Date"] <- game$gameDateStr
   T[i, "Contest"] <- game$contest
@@ -47,14 +47,14 @@ updateGames <- function(T, game) {
   T[i, "AwayStrAgg"] <- strAgg[2]
   T[i, "HomeStrAggNext"] <- strAggNext[1]
   T[i, "AwayStrAggNext"] <- strAggNext[2]
-  T[i, "HomeAttack"] <- strNorm[1, 1]
-  T[i, "HomeDefense"] <- strNorm[1, 2]
-  T[i, "AwayAttack"] <- strNorm[2, 1]
-  T[i, "AwayDefense"] <- strNorm[2, 2]
-  T[i, "HomeAttackNext"] <- strNextNorm[1, 1]
-  T[i, "HomeDefenseNext"] <- strNextNorm[1, 2]
-  T[i, "AwayAttackNext"] <- strNextNorm[2, 1]
-  T[i, "AwayDefenseNext"] <- strNextNorm[2, 2]
+  T[i, "HomeAttack"] <- strNormBeta[1, 1]
+  T[i, "HomeDefense"] <- strNormBeta[1, 2]
+  T[i, "AwayAttack"] <- strNormBeta[2, 1]
+  T[i, "AwayDefense"] <- strNormBeta[2, 2]
+  T[i, "HomeAttackNext"] <- strNextNormBeta[1, 1]
+  T[i, "HomeDefenseNext"] <- strNextNormBeta[1, 2]
+  T[i, "AwayAttackNext"] <- strNextNormBeta[2, 1]
+  T[i, "AwayDefenseNext"] <- strNextNormBeta[2, 2]
   T[i, "HomeWin"] <- ps[1]
   T[i, "Tie"] <- ps[2]
   T[i, "AwayWin"] <- ps[3]

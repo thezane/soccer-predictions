@@ -27,7 +27,9 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     reliability=c(1, 1),
     teamNames=c(homeTeamName, awayTeamName),
     strNorm=zeroesMat,
+    strNormBeta=zeroesMat,
     strNextNorm=zeroesMat,
+    strNextNormBeta=zeroesMat,
     strAgg=c(0, 0),
     strAggNext=c(0, 0),
     existsHA=T[[i, "HomeAdvantage"]],
@@ -114,6 +116,7 @@ updateGamePreRate <- function(game, rOptions, tTree,
   awayTeamStrs <- getTeamStrs(awayTeam, rOptions, tTree)
   game$strNorm <- matrix(c(homeTeamStrs[["strNorm"]],
       awayTeamStrs[["strNorm"]]), 2, 2, TRUE)
+  game$strNormBeta <- rOptions$strBeta * game$strNorm
   game$strAgg <- c(homeTeamStrs[["strAgg"]], awayTeamStrs[["strAgg"]])
   game
 }
@@ -121,6 +124,7 @@ updateGamePreRate <- function(game, rOptions, tTree,
 # Update team ratings after game.
 updateGamePostRate <- function(game, rOptions, strNextNorm) {
   game$strNextNorm <- strNextNorm
+  game$strNextNormBeta <- rOptions$strBeta * strNextNorm
   game$strAggNext <- c(game$strNextNorm[1, ] %*% rOptions$strBetas,
       game$strNextNorm[2, ] %*% rOptions$strBetas)
   game

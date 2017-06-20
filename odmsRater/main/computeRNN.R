@@ -77,8 +77,8 @@ updateStr <- function(strPrereqs, rOptions) {
   awayTeamName <- game$teamNames[2]  
   homeTeam <- tTree[[homeTeamName]]
   awayTeam <- tTree[[awayTeamName]]
-  strNextNorm <- computeLayerRatings(game, rOptions, homeTeam, awayTeam,
-      strPostNorm)
+  strNextNorm <- computeLayerRatings(game, rOptions,
+      homeTeam, awayTeam, strPostNorm)
   game <- updateGamePostRate(game, rOptions, strNextNorm)
   tTree[homeTeamName] <- updateTeam(homeTeam, game, 1)
   tTree[awayTeamName] <- updateTeam(awayTeam, game, 2)
