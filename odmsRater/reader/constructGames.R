@@ -3,6 +3,7 @@ constructGames <- function(currentDate, tTree, dateFormat, dataPath) {
   matchSrc <- paste(dataPath, "matches.csv", sep="")
   T <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
+  T <- T[order(as.Date(T[["Date"]], format=dateFormat)), ]
   n <- nrow(T)
   i <- 1
   
