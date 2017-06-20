@@ -29,10 +29,9 @@ addGame <- function(T, i, gTree, tTree, homeTeamName, awayTeamName,
       currentDate, gameDate)
   homeTeam <- tTree[[homeTeamName]]
   awayTeam <- tTree[[awayTeamName]]
-  homeTeam$numUpdates <- homeTeam$numUpdates + 1
-  awayTeam$numUpdates <- awayTeam$numUpdates + 1
-  tTree[[homeTeamName]] <- homeTeam
-  tTree[[awayTeamName]] <- awayTeam
+  game <- computeReliability(game, homeTeam, awayTeam)
+  tTree[[homeTeamName]] <- updateTeam(homeTeam, game, i)
+  tTree[[awayTeamName]] <- updateTeam(awayTeam, game, i)
   gameDateStr <- game$gameDateStr
   
   if (!has.key(gameDateStr, gTree)) {

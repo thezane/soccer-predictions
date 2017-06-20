@@ -1,4 +1,4 @@
-newGame <- function(T, i, tTree, homeTeamName, awayTeamName,
+newGame <- function(T, i, homeTeamName, awayTeamName,
     currentDate, gameDate) {
   contest <- T[[i, "Contest"]]
   type <- T[[i, "Type"]]
@@ -54,22 +54,6 @@ newGame <- function(T, i, tTree, homeTeamName, awayTeamName,
     game$dataset <- "validation"
   }
   
-  minUpdates <- 10
-  homeTeam <- tTree[[homeTeamName]]
-  awayTeam <- tTree[[awayTeamName]]
-  
-  if (homeTeam$numUpdates < minUpdates &&
-      awayTeam$numUpdate >= minUpdates) {
-    game$reliability[2] <- min(1,
-        (1 + homeTeam$numUpdates) / (1 + minUpdates))
-  }
-
-  if (awayTeam$numUpdates < minUpdates &&
-      homeTeam$numUpdates >= minUpdates) {
-    game$reliability[1] <- min(1,
-        (1 + awayTeam$numUpdates) / (1 + minUpdates))
-  }
-  
   game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
       game$isPlayoff
       
@@ -87,6 +71,23 @@ newGame <- function(T, i, tTree, homeTeamName, awayTeamName,
   }
       
   class(game) <- "Game"
+  game
+}
+
+computeReliability <- function(game, homeTeam, awayTeam) {
+  minUpdates <- 10
+  
+  if (homeTeam$numUpdates < minUpdates &&
+      awayTeam$numUpdate >= minUpdates) {
+    game$reliability[2] <- min(1,
+        (1 + homeTeam$numUpdates) / (1 + minUpdates))
+  }
+  else if (awayTeam$numUpdates < minUpdates &&
+      homeTeam$numUpdates >= minUpdates) {
+    game$reliability[1] <- min(1,
+        (1 + awayTeam$numUpdates) / (1 + minUpdates))
+  }
+
   game
 }
 
