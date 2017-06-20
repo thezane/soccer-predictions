@@ -30,6 +30,7 @@ addGame <- function(T, i, gTree, tTree, homeTeamName, awayTeamName,
   homeTeam <- tTree[[homeTeamName]]
   awayTeam <- tTree[[awayTeamName]]
   game <- computeReliability(game, homeTeam, awayTeam)
+  game <- computeWeight(game)
   tTree[[homeTeamName]] <- updateTeam(homeTeam, game, 1)
   tTree[[awayTeamName]] <- updateTeam(awayTeam, game, 2)
   gameDateStr <- game$gameDateStr

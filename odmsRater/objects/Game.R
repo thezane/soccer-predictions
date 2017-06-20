@@ -57,19 +57,6 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
       game$isPlayoff
       
-  if (game$isWorldCup && !game$isQualifier && !game$isFriendly) {
-    game$weight = 1.2
-  }
-  else if (game$isMajor && !game$isQualifier && !game$isFriendly) {
-    game$weight = 1
-  }
-  else if (!game$isFriendly) {
-    game$weight = 0.8
-  }
-  else {
-    game$weight = 0.4
-  }
-      
   class(game) <- "Game"
   game
 }
@@ -86,6 +73,23 @@ computeReliability <- function(game, homeTeam, awayTeam) {
       homeTeam$numUpdates >= minUpdates) {
     game$reliability[1] <- min(1,
         (1 + awayTeam$numUpdates) / (1 + minUpdates))
+  }
+
+  game
+}
+
+computeWeight <- function(game) {
+  if (game$isWorldCup && !game$isQualifier && !game$isFriendly) {
+    game$weight = 1.2
+  }
+  else if (game$isMajor && !game$isQualifier && !game$isFriendly) {
+    game$weight = 1
+  }
+  else if (!game$isFriendly) {
+    game$weight = 0.8
+  }
+  else {
+    game$weight = 0.4
   }
 
   game
