@@ -65,6 +65,7 @@ computeRelevance <- function(game, homeTeam, awayTeam) {
   game$isRelevant <- homeTeam$numUpdates >= minUpdates &&
       awayTeam$numUpdates >= minUpdates &&
       ((!game$isFriendly && !game$isQualifier) || game$isPlayoff)
+  game
 }
 
 computeReliability <- function(game, homeTeam, awayTeam) {
