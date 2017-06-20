@@ -51,7 +51,7 @@ newRatingsOptions <- function(fTree) {
     slopeCostReg=0.001,
 
     # L-BFGS-B parameters
-    factr=1e-04 / .Machine$double.eps,
+    factr=1e-06 / .Machine$double.eps,
     lmm=10
   )
   
