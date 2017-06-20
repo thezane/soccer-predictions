@@ -29,6 +29,7 @@ addGame <- function(T, i, gTree, tTree, homeTeamName, awayTeamName,
       currentDate, gameDate)
   homeTeam <- tTree[[homeTeamName]]
   awayTeam <- tTree[[awayTeamName]]
+  game <- computeRelevance(game, homeTeam, awayTeam)
   game <- computeReliability(game, homeTeam, awayTeam)
   game <- computeWeight(game)
   tTree[[homeTeamName]] <- updateTeam(homeTeam, game, 1)
