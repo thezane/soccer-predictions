@@ -7,7 +7,7 @@ newGameHypo <- function(homeTeamName, awayTeamName, location, rData) {
 
   gameHypo <- list(
     teamNames=c(homeTeamName, awayTeamName),
-    strNorm=matrix(c(homeTeam$strNorm, awayTeam$strNorm),
+    strNormBeta=matrix(c(homeTeam$strNormBeta, awayTeam$strNormBeta),
         2, 2, TRUE),
     strAgg=c(homeTeam$strAgg, awayTeam$strAgg),
     existsHA=homeTeamName %in% location

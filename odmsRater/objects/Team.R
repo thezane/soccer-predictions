@@ -3,6 +3,7 @@ newTeam <- function(teamName, fName) {
     name=teamName,
     fName=fName,
     strNorm=c(0, 0),
+    strNormBeta=c(0, 0),
     strAgg=0,
     numUpdates=0,
     updateDate=as.Date("0001-01-01")
@@ -23,7 +24,7 @@ resetTeam <- function(team, rOptions) {
 updateTeam <- function(team, game, i) {
   team$updateDate <- game$gameDate
   team$strNorm <- game$strNextNorm[i, ]
-  team$strNormBeta <- game$strNormBeta[i, ]
+  team$strNormBeta <- game$strNextNormBeta[i, ]
   team$strAgg <- game$strAggNext[i]
   team$numUpdates <- team$numUpdates + 1
   team
