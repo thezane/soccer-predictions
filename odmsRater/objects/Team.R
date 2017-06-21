@@ -3,6 +3,7 @@ newTeam <- function(teamName, fName) {
     name=teamName,
     fName=fName,
     strNorm=c(0, 0),
+    strNormBeta=c(0, 0),
     strAgg=0,
     numUpdates=0,
     updateDate=as.Date("0001-01-01")
