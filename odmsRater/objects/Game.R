@@ -61,10 +61,8 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
 }
 
 computeRelevance <- function(game, homeTeam, awayTeam) {
-  minUpdates <- 10
-  game$isRelevant <- homeTeam$numUpdates >= minUpdates &&
-      awayTeam$numUpdates >= minUpdates &&
-      ((!game$isFriendly && !game$isQualifier) || game$isPlayoff)
+  game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
+      game$isPlayoff
   game
 }
 
