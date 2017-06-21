@@ -55,11 +55,14 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   else {
     game$dataset <- "validation"
   }
-  
-  game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
-      game$isPlayoff
       
   class(game) <- "Game"
+  game
+}
+
+computeRelevance <- function(game, homeTeam, awayTeam) {
+  game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
+      game$isPlayoff
   game
 }
 

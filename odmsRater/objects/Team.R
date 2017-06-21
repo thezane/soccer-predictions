@@ -24,7 +24,7 @@ resetTeam <- function(team, rOptions) {
 updateTeam <- function(team, game, i) {
   team$updateDate <- game$gameDate
   team$strNorm <- game$strNextNorm[i, ]
-  team$strNormBeta <- game$strNormBeta[i, ]
+  team$strNormBeta <- game$strNextNormBeta[i, ]
   team$strAgg <- game$strAggNext[i]
   team$numUpdates <- team$numUpdates + 1
   team
