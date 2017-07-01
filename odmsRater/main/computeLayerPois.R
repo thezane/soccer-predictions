@@ -1,5 +1,4 @@
 computeLayerPois <- function (game, rOptions) {
-  maxGoals <- 20
   meanGoals <- game$meanGoals
   homeMeanGoals <- meanGoals[1]
   awayMeanGoals <- meanGoals[2]
@@ -8,9 +7,7 @@ computeLayerPois <- function (game, rOptions) {
   awayStr <- strNorm[2, ]
   lambdas <- computeLambdas(rOptions, homeMeanGoals, awayMeanGoals,
       homeStr, awayStr)
-  gamePrediction <- computeGamePrediction(lambdas, maxGoals)
-  gamePrediction[["goalsExpected"]] <- c(lambdas[1], lambdas[2]) +
-      lambdas[3]
+  gamePrediction <- computeGamePrediction(lambdas)
   gamePrediction[["strNormBeta"]] <- game$strNormBeta
   gamePrediction[["strAgg"]] <- game$strAgg
   gamePrediction
@@ -27,8 +24,9 @@ computeLambdas <- function(rOptions, homeMeanGoals, awayMeanGoals,
   lambdas
 }
 
-computeGamePrediction <- function(lambdas, maxGoals) {
-  n <- maxGoals + 1
+computeGamePrediction <- function(lambdas) {
+  goalsExpected <- c(lambdas[1], lambdas[2]) + lambdas[3]
+  n <- 10 + max(goalsExpected[1], goalsExpected[2]) ^ 1.5
   homeAwayGoals <- matrix(nrow=n, ncol=n)
   gamePs <- rep(0, 3)
   i <- 1
@@ -48,7 +46,8 @@ computeGamePrediction <- function(lambdas, maxGoals) {
     i <- i + 1
   }
   
-  gamePrediction <- list(homeAwayGoals=homeAwayGoals, gamePs=gamePs)
+  gamePrediction <- list(homeAwayGoals=homeAwayGoals, gamePs=gamePs,
+      goalsExpected=goalsExpected)
   gamePrediction
 }
 
