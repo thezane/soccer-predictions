@@ -67,7 +67,7 @@ computeRelevance <- function(game, homeTeam, awayTeam) {
 }
 
 computeReliability <- function(game, homeTeam, awayTeam) {
-  minUpdates <- 10
+  minUpdates <- 20
   
   if (homeTeam$numUpdates < minUpdates &&
       awayTeam$numUpdate >= minUpdates) {

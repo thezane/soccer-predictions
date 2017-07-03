@@ -26,7 +26,7 @@ computeLambdas <- function(rOptions, homeMeanGoals, awayMeanGoals,
 
 computeGamePrediction <- function(lambdas) {
   goalsExpected <- c(lambdas[1], lambdas[2]) + lambdas[3]
-  n <- 10 + max(goalsExpected[1], goalsExpected[2]) ^ 1.5
+  n <- 20
   homeAwayGoals <- matrix(nrow=n, ncol=n)
   gamePs <- rep(0, 3)
   i <- 1

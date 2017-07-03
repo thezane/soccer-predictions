@@ -27,7 +27,8 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   goals <- game$goals
   homeAwayGoals <- gamePrediction[["homeAwayGoals"]]
   p <- homeAwayGoals[goals[1] + 1, goals[2] + 1]
-  rOutput <- updateGoalsCost(rOutput, p, game$weight, game$dataset)
+  weight <- min(game$reliability) * game$weight
+  rOutput <- updateGoalsCost(rOutput, p, weight, game$dataset)
   costData <- list(rOutput=rOutput, game=game)
   costData
 }

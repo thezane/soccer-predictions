@@ -1,18 +1,4 @@
 HomeTeam,AwayTeam,Date,Contest,Type,HomeGoals,AwayGoals,HomeAdvantage
-Germany,Mexico,06/29/17,Confederations Cup,Knockout,4,1,0
-Portugal,Chile,06/28/17,Confederations Cup,Knockout,0,0,0
-Chile,Australia,06/25/17,Confederations Cup,Group,1,1,0
-Germany,Cameroon,06/25/17,Confederations Cup,Group,3,1,0
-Russia,Mexico,06/24/17,Confederations Cup,Group,1,2,1
-New Zealand,Portugal,06/24/17,Confederations Cup,Group,0,4,0
-Cameroon,Australia,06/22/17,Confederations Cup,Group,1,1,0
-Germany,Chile,06/22/17,Confederations Cup,Group,1,1,0
-Mexico,New Zealand,06/21/17,Confederations Cup,Group,2,1,0
-Russia,Portugal,06/21/17,Confederations Cup,Group,0,1,1
-Australia,Germany,06/19/17,Confederations Cup,Group,2,3,0
-Cameroon,Chile,06/18/17,Confederations Cup,Group,0,2,0
-Portugal,Mexico,06/18/17,Confederations Cup,Group,2,2,0
-Russia,New Zealand,06/17/17,Confederations Cup,Group,2,0,1
 Iraq,Japan,06/13/17,World Cup,Qualifiers-Asia,1,1,1
 Qatar,South Korea,06/13/17,World Cup,Qualifiers-Asia,3,2,1
 Syria,China,06/13/17,World Cup,Qualifiers-Asia,2,2,1
@@ -3540,7 +3526,7 @@ Indonesia,Kuwait,11/18/09,Asian Cup,Qualifiers,1,1,1
 Malaysia,Uzbekistan,11/18/09,Asian Cup,Qualifiers,1,3,1
 Syria,Vietnam,11/18/09,Asian Cup,Qualifiers,0,0,1
 Thailand,Singapore,11/18/09,Asian Cup,Qualifiers,0,1,1
-Egypt,Algeria,11/18/09,World Cup,Qualifiers-Playoffs,0,1,0
+Egypt,Algeria,11/18/09,World Cup,Qualifiers-Africa,0,1,0
 Uruguay,Costa Rica,11/18/09,World Cup,Qualifiers-Playoffs,1,1,1
 Belgium,Qatar,11/17/09,Asian Cup,Friendlies,2,0,0
 Iraq,Azerbaijan,11/15/09,Asian Cup,Friendlies,1,0,0
