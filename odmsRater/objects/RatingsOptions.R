@@ -17,7 +17,7 @@ newRatingsOptions <- function(fTree) {
     corrBeta=-1,
     theta=1,
     tieBias=-3.2,
-    tieBeta=-8,
+    tieBeta=-4,
 
     # Default federation strengths for Africa, Asia, Europe,
     # North America, Oceania and South America respectively
