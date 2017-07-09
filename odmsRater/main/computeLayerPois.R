@@ -32,7 +32,8 @@ computeMixtureWeight <- function(tieBias, tieBeta, strAgg) {
 }
 
 computeGamePrediction <- function(lambdas, theta, p) {
-  goalsExpected <- c(lambdas[1], lambdas[2]) + lambdas[3]
+  goalsExpected <- (1 - p) * (c(lambdas[1], lambdas[2]) + lambdas[3]) +
+      p * theta
   n <- 20
   homeAwayGoals <- matrix(nrow=n, ncol=n)
   gamePs <- rep(0, 3)
