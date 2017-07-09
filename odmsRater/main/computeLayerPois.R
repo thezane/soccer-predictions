@@ -59,11 +59,11 @@ computeGamePrediction <- function(lambdas, theta, p) {
 }
 
 computeGoalsP <- function(homeGoals, awayGoals, lambdas, theta, p) {
-  nonDiagP <- pbivpois(homeGoals, awayGoals, lambdas)
+  nonDiagP <- (1 - p) * pbivpois(homeGoals, awayGoals, lambdas)
 
   if (homeGoals == awayGoals) {
-    diagP <- dpois(homeGoals, theta)
-    goalsP <- p * diagP + (1 - p) * nonDiagP
+    diagP <- p * dpois(homeGoals, theta)
+    goalsP <- diagP + nonDiagP
   }
   else {
     goalsP <- nonDiagP
