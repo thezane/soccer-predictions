@@ -33,7 +33,7 @@ getGamesData <- function(gi, T) {
 }
 
 updateGames <- function(T, game) {
-  numDecimals <- 2
+  numDecimals <- 4
   i <- game$gameRow
   strAgg <- round(game$strAgg, numDecimals)
   strAggNext <- round(game$strAggNext, numDecimals)
