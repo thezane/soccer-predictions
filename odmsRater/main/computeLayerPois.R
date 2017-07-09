@@ -10,8 +10,6 @@ computeLayerPois <- function (game, rOptions) {
   theta <- rOptions$theta
   p <- computeMixtureWeight(rOptions$tieBias, rOptions$tieBeta,
       game$strAgg)
-  print(game$strAgg)
-  print(p)
   gamePrediction <- computeGamePrediction(lambdas, theta, p)
   gamePrediction[["strNormBeta"]] <- game$strNormBeta
   gamePrediction[["strAgg"]] <- game$strAgg
