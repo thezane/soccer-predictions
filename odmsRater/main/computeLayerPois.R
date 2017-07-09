@@ -2,12 +2,15 @@ computeLayerPois <- function (game, rOptions) {
   meanGoals <- game$meanGoals
   homeMeanGoals <- meanGoals[1]
   awayMeanGoals <- meanGoals[2]
-  strNorm <- game$strNorm  
+  strNorm <- game$strNorm 
   homeStr <- strNorm[1, ]
   awayStr <- strNorm[2, ]
   lambdas <- computeLambdas(rOptions, homeMeanGoals, awayMeanGoals,
       homeStr, awayStr)
-  gamePrediction <- computeGamePrediction(lambdas)
+  theta <- rOptions$theta
+  p <- computeMixtureWeight(rOptions$tieBias, rOptions$tieBeta,
+      game$strAgg)
+  gamePrediction <- computeGamePrediction(lambdas, theta, p)
   gamePrediction[["strNormBeta"]] <- game$strNormBeta
   gamePrediction[["strAgg"]] <- game$strAgg
   gamePrediction
@@ -24,7 +27,11 @@ computeLambdas <- function(rOptions, homeMeanGoals, awayMeanGoals,
   lambdas
 }
 
-computeGamePrediction <- function(lambdas) {
+computeMixtureWeight <- function(tieBias, tieBeta, strAgg) {
+  plogis(tieBias + tieBeta * abs(diff(strAgg)))
+}
+
+computeGamePrediction <- function(lambdas, theta, p) {
   goalsExpected <- c(lambdas[1], lambdas[2]) + lambdas[3]
   n <- 20
   homeAwayGoals <- matrix(nrow=n, ncol=n)
@@ -37,9 +44,9 @@ computeGamePrediction <- function(lambdas) {
     while (j <= n) {
       homeGoals <- i - 1
       awayGoals <- j - 1
-      p <- pbivpois(homeGoals, awayGoals, lambdas)
-      homeAwayGoals[i, j] <- p
-      gamePs <- updateGamePs(gamePs, homeGoals, awayGoals, p)
+      goalsP <- computeGoalsP(homeGoals, awayGoals, lambdas, theta, p)
+      homeAwayGoals[i, j] <- goalsP
+      gamePs <- updateGamePs(gamePs, homeGoals, awayGoals, goalsP)
       j <- j + 1
     }
     
@@ -49,6 +56,20 @@ computeGamePrediction <- function(lambdas) {
   gamePrediction <- list(homeAwayGoals=homeAwayGoals, gamePs=gamePs,
       goalsExpected=goalsExpected)
   gamePrediction
+}
+
+computeGoalsP <- function(homeGoals, awayGoals, lambdas, theta, p) {
+  nonDiagP <- pbivpois(homeGoals, awayGoals, lambdas)
+
+  if (homeGoals == awayGoals) {
+    diagP <- dpois(homeGoals, theta)
+    goalsP <- p * diagP + (1 - p) * nonDiagP
+  }
+  else {
+    goalsP <- nonDiagP
+  }
+
+  goalsP
 }
 
 updateGamePs <- function(gamePs, homeGoals, awayGoals, p) {
