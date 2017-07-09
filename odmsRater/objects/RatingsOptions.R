@@ -16,7 +16,7 @@ newRatingsOptions <- function(fTree) {
     hA=0.32,
     corrBeta=-1,
     theta=1,
-    tieBias=-4,
+    tieBias=-2,
     tieBeta=-4,
 
     # Default federation strengths for Africa, Asia, Europe,
@@ -45,7 +45,7 @@ newRatingsOptions <- function(fTree) {
     corrBetaUBd=0,
     thetaUBd=Inf,
     tieBias=Inf,
-    tieBeta=0,
+    tieBeta=-1,
     
     # Non-optimizable paramters
     fTree=fTree,
