@@ -20,11 +20,11 @@ computeLayerOdm <- function(A, strNorm, b, c, odmIter) {
   strPostNorm
 }
 
-computeAD <- function(A, a, d, tolScale) {
-  strRelA = scaleRating(A, a, tolScale);
+computeAD <- function(A, a, d, odmIter) {
+  strRelA = scaleRating(A, a, odmIter);
   aRelA <- strRelA[["x"]]
   dRelA <- strRelA[["y"]]
-  strRelD <- scaleRating(t(A), d, tolScale);
+  strRelD <- scaleRating(t(A), d, odmIter);
   dRelD <- strRelD[["x"]]
   aRelD <- strRelD[["y"]]
   aPost <- (aRelA + aRelD) / 2;
