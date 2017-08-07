@@ -15,8 +15,24 @@ newRatingsOutput <- function(tTree, gTree, gi) {
 resetRatingsOutput <- function(rOutput) {
   rOutput$costs[["training"]] <- newRatingsCosts("training")
   rOutput$costs[["validation"]] <- newRatingsCosts("validation")
-  rOutput$tTree <- copy(rOutput$tTreeBackup)
+  rOutput$tTree <- copyTTree(rOutput, rOutput$tTreeBackup)
   rOutput
+}
+
+copyTTree <- function(rOutput, tTree) {
+  tTreeCopy <- hash()
+  teams <- keys(tTree)
+  n <- length(teams)
+  i <- 1
+
+  while (i <= n) {
+    teamName <- teams[i]
+    team <- tTree[[teamName]]
+    tTreeCopy[[teamName]] <- newTeam(teamName, team$fName)
+    i <- i + 1
+  }
+
+  tTreeCopy
 }
 
 updateGoalsCost.RatingsOutput <- function(rOutput, p, w, dataset) {
