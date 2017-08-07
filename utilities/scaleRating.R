@@ -5,8 +5,6 @@ scaleRating <- function(A, x, odmIter) {
   while (i <= odmIter) {
     xPost <- t(A) %*% (1 / y);
     yPost <- A %*% (1 / x);
-    xDel <- xPost - x;
-    yDel <- yPost - y;
     x <- xPost;
     y <- yPost;
     i <- i + 1

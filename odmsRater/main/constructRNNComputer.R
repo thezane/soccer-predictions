@@ -1,4 +1,4 @@
-constructRNNCompute <- function(rData, iterFile, enableWriteIter) {
+constructRNNComputer <- function(rData, iterFile, enableWriteIter) {
   fn <- function(x, rData.=rData, iterFile.=iterFile,
       enableWriteIter.=enableWriteIter) {
     rData <- updateRNN(x, rData)

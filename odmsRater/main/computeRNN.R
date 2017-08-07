@@ -6,25 +6,27 @@ computeRNN <- function(rOptions, rOutput) {
   tTree <- iterTeams(rOptions, tTree, resetTeam)
   gi <- reset(gi)
   gamePrev <- NULL
-  i <- 1
   
-  while (hasNextGame(gi)) {
-    gameData <- nextGame(gi)
-    gi <- gameData[["gi"]]
-    game <- gameData[["game"]]
-    game <- normalizeGoals(game, rOptions)
-    strPrereqs <- constructStrPrereqs(rOptions, game, gamePrev, tTree)
-    updateStrData <- updateStr(strPrereqs, rOptions)
-    tTree <- updateStrData[["tTree"]]
-    game <- updateStrData[["game"]]
-    costData <- updateCost(rOptions, rOutput, game, gamePrev)
-    rOutput <- costData[["rOutput"]]
-    game <- costData[["game"]]
-    gDateList <- gTree[[game$gameDateStr]]
-    gDateList[[game$gameNum]] <- game
-    gTree[game$gameDateStr] <- gDateList
-    gamePrev <- game
-    i <- i + 1
+  while (hasNextEvent(gi)) {
+    eventData <- nextEvent(gi)
+    gi <- eventData[["gi"]]
+    event <- eventData[["event"]]
+    
+    if (class(event) == "Game") {
+      game <- event
+      game <- normalizeGoals(game, rOptions)
+      strPrereqs <- constructStrPrereqs(rOptions, game, gamePrev, tTree)
+      updateStrData <- updateStr(strPrereqs, rOptions)
+      tTree <- updateStrData[["tTree"]]
+      game <- updateStrData[["game"]]
+      costData <- updateCost(rOptions, rOutput, game, gamePrev)
+      rOutput <- costData[["rOutput"]]
+      game <- costData[["game"]]
+      gDateList <- gTree[[game$gameDateStr]]
+      gDateList[[game$gameNum]] <- game
+      gTree[game$gameDateStr] <- gDateList
+      gamePrev <- game
+    }
   }
   
   rOutput <- updateTotalCosts(rOutput, rOptions)

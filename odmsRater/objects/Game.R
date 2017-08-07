@@ -55,49 +55,52 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   else {
     game$dataset <- "validation"
   }
-      
+  
+  game$isRelevant <- computeRelevance(game)
+  game$weight <- computeWeight(game)
+
   class(game) <- "Game"
   game
 }
 
-computeRelevance <- function(game, homeTeam, awayTeam) {
-  game$isRelevant <- (!game$isFriendly && !game$isQualifier) ||
-      game$isPlayoff
-  game
-}
-
-computeReliability <- function(game, homeTeam, awayTeam) {
-  minUpdates <- 20
-  
-  if (homeTeam$numUpdates < minUpdates &&
-      awayTeam$numUpdate >= minUpdates) {
-    game$reliability[2] <- min(1,
-        (1 + homeTeam$numUpdates) / (1 + minUpdates))
-  }
-  else if (awayTeam$numUpdates < minUpdates &&
-      homeTeam$numUpdates >= minUpdates) {
-    game$reliability[1] <- min(1,
-        (1 + awayTeam$numUpdates) / (1 + minUpdates))
-  }
-
-  game
+computeRelevance <- function(game) {
+  (!game$isFriendly && !game$isQualifier) || game$isPlayoff
 }
 
 computeWeight <- function(game) {
   if (game$isWorldCup && !game$isQualifier && !game$isFriendly) {
-    game$weight = 1.2
+    weight = 1
   }
   else if (game$isMajor && !game$isQualifier && !game$isFriendly) {
-    game$weight = 1
+    weight = 5 / 6
   }
   else if (!game$isFriendly) {
-    game$weight = 0.8
+    weight = 2 / 3
   }
   else {
-    game$weight = 0.4
+    weight = 1 / 3
   }
 
-  game
+  weight
+}
+
+computeReliability <- function(game, homeTeam, awayTeam) {
+  minUpdates <- 10
+  reliability <- c(1, 1)
+  
+  if (homeTeam$numUpdates < minUpdates &&
+      awayTeam$numUpdate >= minUpdates) {
+    reliability[2] <- min(1,
+        (1 + homeTeam$numUpdates) / (1 + minUpdates))
+  }
+  else if (awayTeam$numUpdates < minUpdates &&
+      homeTeam$numUpdates >= minUpdates) {
+    reliability[1] <- min(1,
+        (1 + awayTeam$numUpdates) / (1 + minUpdates))
+  }
+
+  reliability <- reliability
+  reliability
 }
 
 # Adjust goals scored by teams with home advantage.

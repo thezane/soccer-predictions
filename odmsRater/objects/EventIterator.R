@@ -1,4 +1,4 @@
-newGameIterator <- function(gTree) {
+newEventIterator <- function(gTree) {
   dates <- keys(gTree)
   gi <- list(
     gTree=gTree,
@@ -6,29 +6,29 @@ newGameIterator <- function(gTree) {
     I=c(0, 1),
     N=c(length(dates), 0)
   )
-  class(gi) <- "GameIterator"
+  class(gi) <- "EventIterator"
   gi
 }
 
-hasNextGame <- function(gi) {
+hasNextEvent <- function(gi) {
   tf <- (gi$I[1] < gi$N[1]) || (gi$I[2] <= gi$N[2])
   tf
 }
 
-nextGame <- function(gi) {
+nextEvent <- function(gi) {
   if (gi$I[2] > gi$N[2]) {
     gi$I[1] <- gi$I[1] + 1
     gi$I[2] <- 1
-    gameDate <- gi$dates[gi$I[1]]
-    gi$N[2] <- length(gi$gTree[[gameDate]])
+    eventDate <- gi$dates[gi$I[1]]
+    gi$N[2] <- length(gi$gTree[[eventDate]])
   }
                
   nextDate <- gi$dates[gi$I[1]]
   gDateList <- gi$gTree[[nextDate]]
-  game <- gDateList[[gi$I[2]]]
+  event <- gDateList[[gi$I[2]]]
   gi$I[2] <- gi$I[2] + 1
-  gameData <- list(gi=gi, game=game)
-  gameData
+  eventData <- list(gi=gi, event=event)
+  eventData
 }
 
 reset <- function(gi) {

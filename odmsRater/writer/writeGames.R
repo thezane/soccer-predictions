@@ -18,14 +18,16 @@ getGamesData <- function(gi, T) {
       "SSE")
   T[colNames] <- 0
   gi <- reset(gi)
-  endDate <- "" 
 
-  while (hasNextGame(gi)) {
-    gameData <- nextGame(gi)
-    gi <- gameData[["gi"]]
-    game <- gameData[["game"]]
-    T <- updateGames(T, game)
-    endDate <- game$gameDate
+  while (hasNextEvent(gi)) {
+    eventData <- nextEvent(gi)
+    gi <- eventData[["gi"]]
+    event <- eventData[["event"]]
+    
+    if (class(event) == "Game") {
+	  game <- event
+	  T <- updateGames(T, game)	
+    }
   }
   
   T <- T[order(as.Date(T[, "Date"]), decreasing=TRUE), ]
