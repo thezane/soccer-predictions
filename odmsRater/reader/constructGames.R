@@ -35,11 +35,12 @@ addGame <- function(T, i, gTree, tTree, homeTeamName, awayTeamName,
   gameDateStr <- game$gameDateStr
   
   if (!has.key(gameDateStr, gTree)) {
-    gTree[gameDateStr] <- NULL
+    gTree[[gameDateStr]] <- NULL
   }
   
   gDateList <- gTree[[gameDateStr]]
-  gDateList[length(gDateList) + 1] <- game
+  gDateList[[length(gDateList) + 1]] <- game
+  browser()
   gTree[[gameDateStr]] <- gDateList
   gameData <- list(gTree=gTree, tTree=tTree, game=game)
   gameData

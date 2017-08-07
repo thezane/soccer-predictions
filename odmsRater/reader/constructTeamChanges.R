@@ -18,11 +18,11 @@ addTeamChange <- function(T, i, gTree, teamChangeDate) {
   teamChangeDateStr <- as.character(teamChangeDate)
 
   if (!has.key(teamChangeDateStr, gTree)) {
-    gTree[teamChangeDateStr] <- NULL
+    gTree[[teamChangeDateStr]] <- NULL
   }
 
   gDateList <- gTree[[teamChangeDateStr]]
-  gDateList[length(gDateList) + 1] <- newTeamChange(T, i)
+  gDateList[[length(gDateList) + 1]] <- newTeamChange(T, i)
   gTree[[teamChangeDateStr]] <- gDateList
   gTree
 }
