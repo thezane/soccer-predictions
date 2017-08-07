@@ -1,4 +1,4 @@
-constructGames <- function(currentDate, tTree, dateFormat, dataPath) {
+constructGames <- function(currentDate, dateFormat, dataPath) {
   gTree <- hash()
   matchSrc <- paste(dataPath, "matches.csv", sep="")
   T <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
@@ -11,7 +11,7 @@ constructGames <- function(currentDate, tTree, dateFormat, dataPath) {
     gameDate <- as.Date(T[[i, "Date"]], dateFormat)  
     homeTeamName <- T[[i, "HomeTeam"]]
     awayTeamName <- T[[i, "AwayTeam"]]
-    gameData <- addGame(T, i, gTree, tTree, homeTeamName, awayTeamName,
+    gameData <- addGame(T, i, gTree, homeTeamName, awayTeamName,
         currentDate, gameDate)
     gTree <- gameData[["gTree"]]
     tTree <- gameData[["tTree"]]
@@ -23,15 +23,10 @@ constructGames <- function(currentDate, tTree, dateFormat, dataPath) {
   gamesData
 }
 
-addGame <- function(T, i, gTree, tTree, homeTeamName, awayTeamName,
+addGame <- function(T, i, gTree, homeTeamName, awayTeamName,
       currentDate, gameDate) {
   game <- newGame(T, i, homeTeamName, awayTeamName,
       currentDate, gameDate)
-  homeTeam <- tTree[[homeTeamName]]
-  awayTeam <- tTree[[awayTeamName]]
-  game$reliability <- computeReliability(game, homeTeam, awayTeam)
-  tTree[[homeTeamName]] <- updateTeam(homeTeam, game, 1)
-  tTree[[awayTeamName]] <- updateTeam(awayTeam, game, 2)
   gameDateStr <- game$gameDateStr
   
   if (!has.key(gameDateStr, gTree)) {
@@ -42,6 +37,6 @@ addGame <- function(T, i, gTree, tTree, homeTeamName, awayTeamName,
   game$gameNum <- length(gDateList) + 1
   gDateList[[game$gameNum]] <- game
   gTree[[gameDateStr]] <- gDateList
-  gameData <- list(gTree=gTree, tTree=tTree, game=game)
+  gameData <- list(gTree=gTree, game=game)
   gameData
 }

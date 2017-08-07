@@ -48,13 +48,19 @@ handleDestruction <- function(teamChange, tTree) {
 handleFederation <- function(teamChange, tTree) {
   teamName <- teamChange$name
   fNameNew <- teamChange$change
-  tTree[[teamName]]$fName <- fNameNew
+  team <- tTree[[teamName]]
+  team$fName <- fNameNew
+  team$numUpdates <- 0
+  tTree[[teamName]] <- team
+  browser()
   tTree
 }
 
 handleName <- function(teamChange, tTree) {
   teamName <- teamChange$name
   teamNameNew <- teamChange$change
-  tTree[[teamName]]$name <- teamNameNew
+  tTree[[teamNameNew]] <- tTree[[teamName]]
+  tTree[[teamNameNew]]$name <- teamNameNew
+  tTree[[teamName]] <- NULL 
   tTree
 }

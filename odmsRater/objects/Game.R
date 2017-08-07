@@ -117,6 +117,7 @@ normalizeGoals <- function(game, rOptions) {
 # Construct ratings matrix before game.
 updateGamePreRate <- function(game, rOptions, tTree,
     homeTeam, awayTeam) {
+  game$reliability <- computeReliability(game, homeTeam, awayTeam)
   homeTeamStrs <- getTeamStrs(homeTeam, rOptions, tTree)
   awayTeamStrs <- getTeamStrs(awayTeam, rOptions, tTree)
   game$strNorm <- matrix(c(homeTeamStrs[["strNorm"]],
