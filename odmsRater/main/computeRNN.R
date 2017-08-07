@@ -27,6 +27,10 @@ computeRNN <- function(rOptions, rOutput) {
       gTree[game$gameDateStr] <- gDateList
       gamePrev <- game
     }
+    else if (class(event) == "TeamChange") {
+      teamChange <- event
+      tTree <- handleChange(teamChange, tTree)
+    }
   }
   
   rOutput <- updateTotalCosts(rOutput, rOptions)

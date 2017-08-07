@@ -11,11 +11,6 @@ newTeam <- function(teamName, fName) {
   
   class(team) <- "Team"
   team
-} 
-
-resetTeam <- function(team, rOptions) {
-  team$numUpdates <- 0
-  team
 }
 
 updateTeam <- function(team, game, i) {
