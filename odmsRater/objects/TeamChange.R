@@ -1,5 +1,5 @@
 newTeamChange <- function(T, i) {
-  name <- T[["Team"]]
+  name <- T[[i, "Team"]]
   date <- T[[i, "Date"]]
   type <- T[[i, "Type"]]
   change <- T[[i, "Change"]]
