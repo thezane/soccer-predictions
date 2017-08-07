@@ -1,6 +1,6 @@
 constructTeamChanges <- function(gTree, dateFormat, dataPath) {
   teamChangesSrc <- paste(dataPath, "team-changes.csv", sep="")
-  T <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
+  T <- read.csv(teamChangesSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
   n <- nrow(T)
   i <- 1
