@@ -7,6 +7,7 @@ computeRNN <- function(rOptions, rOutput) {
   gamePrev <- NULL
   
   while (hasNextEvent(gi)) {
+	  
     eventData <- nextEvent(gi)
     gi <- eventData[["gi"]]
     event <- eventData[["event"]]
@@ -17,6 +18,11 @@ computeRNN <- function(rOptions, rOutput) {
       strPrereqs <- constructStrPrereqs(rOptions, game, gamePrev, tTree)
       updateStrData <- updateStr(strPrereqs, rOptions)
       tTree <- updateStrData[["tTree"]]
+      
+      if (gamePrev == NULL) {
+	    print(tTree[["United States"]])
+      }
+      
       game <- updateStrData[["game"]]
       costData <- updateCost(rOptions, rOutput, game, gamePrev)
       rOutput <- costData[["rOutput"]]
