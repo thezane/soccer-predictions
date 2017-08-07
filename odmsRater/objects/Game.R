@@ -99,7 +99,6 @@ computeReliability <- function(game, homeTeam, awayTeam) {
         (1 + awayTeam$numUpdates) / (1 + minUpdates))
   }
 
-  reliability <- reliability
   reliability
 }
 
