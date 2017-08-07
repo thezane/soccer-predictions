@@ -52,7 +52,6 @@ handleFederation <- function(teamChange, tTree) {
   team$fName <- fNameNew
   team$numUpdates <- 0
   tTree[[teamName]] <- team
-  browser()
   tTree
 }
 
