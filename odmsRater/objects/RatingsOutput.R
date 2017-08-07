@@ -1,6 +1,7 @@
 newRatingsOutput <- function(tTree, gTree, gi) {
   rOutput <- list(
     tTree=tTree,
+    tTreeBackup=tTree,
     gTree=gTree,
     gi=gi,
     costs=hash(),
@@ -14,6 +15,8 @@ newRatingsOutput <- function(tTree, gTree, gi) {
 resetRatingsOutput <- function(rOutput) {
   rOutput$costs[["training"]] <- newRatingsCosts("training")
   rOutput$costs[["validation"]] <- newRatingsCosts("validation")
+  rOutput$tTree <- rOutput$tTreeBackup
+  rOutput$tTreeBackup <- copy(rOutput$tTreeBackup)
   rOutput
 }
 

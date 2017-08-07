@@ -14,10 +14,7 @@ newTeam <- function(teamName, fName) {
 } 
 
 resetTeam <- function(team, rOptions) {
-  team$strNorm <- c(0, 0)
-  team$strAgg <- 0
   team$numUpdates <- 0
-  team$updateDate <- as.Date("0001-01-01")
   team
 }
 

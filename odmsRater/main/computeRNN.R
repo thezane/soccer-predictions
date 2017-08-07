@@ -3,7 +3,6 @@ computeRNN <- function(rOptions, rOutput) {
   tTree <- rOutput$tTree
   gTree <- rOutput$gTree
   gi <- rOutput$gi
-  tTree <- iterTeams(rOptions, tTree, resetTeam)
   gi <- reset(gi)
   gamePrev <- NULL
   
@@ -34,21 +33,6 @@ computeRNN <- function(rOptions, rOutput) {
   rOutput$gTree <- gTree
   rOutput$gi <- gi
   rOutput
-}
-
-iterTeams <- function(rOptions, tTree, f) {
-  teams <- keys(tTree)
-  n <- length(teams)
-  i <- 1
-  
-  while (i <= n) {
-    teamName <- teams[i]
-    team <- tTree[[teamName]]
-    tTree[teamName] <- f(team, rOptions)
-    i <- i + 1
-  }
-  
-  tTree
 }
 
 constructStrPrereqs <- function(rOptions, game, gamePrev, tTree) {
