@@ -19,7 +19,7 @@ computeRNN <- function(rOptions, rOutput) {
       updateStrData <- updateStr(strPrereqs, rOptions)
       tTree <- updateStrData[["tTree"]]
       
-      if (gamePrev == NULL) {
+      if (is.null(gamePrev)) {
 	    print(tTree[["United States"]])
       }
       
