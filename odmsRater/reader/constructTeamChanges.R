@@ -20,7 +20,7 @@ addTeamChange <- function(T, i, gTree, teamChangeDate) {
   }
 
   gDateList <- gTree[[gameDateStr]]
-  gDateList[length(gDateList)] <- newTeamChange(T, i)
+  gDateList[length(gDateList) + 1] <- newTeamChange(T, i)
   gTree[[gameDateStr]] <- gDateList
   gTree
 }
