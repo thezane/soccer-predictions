@@ -1,5 +1,4 @@
-constructGames <- function(currentDate, dateFormat, dataPath) {
-  gTree <- hash()
+constructGames <- function(gTree, currentDate, dateFormat, dataPath) {
   matchSrc <- paste(dataPath, "matches.csv", sep="")
   T <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
