@@ -15,8 +15,7 @@ newRatingsOutput <- function(tTree, gTree, gi) {
 resetRatingsOutput <- function(rOutput) {
   rOutput$costs[["training"]] <- newRatingsCosts("training")
   rOutput$costs[["validation"]] <- newRatingsCosts("validation")
-  rOutput$tTree <- rOutput$tTreeBackup
-  rOutput$tTreeBackup <- copy(rOutput$tTreeBackup)
+  rOutput$tTree <- copy(rOutput$tTreeBackup)
   rOutput
 }
 
