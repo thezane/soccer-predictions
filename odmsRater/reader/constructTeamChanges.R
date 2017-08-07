@@ -18,7 +18,7 @@ addTeamChange <- function(T, i, gTree, teamChangeDate) {
   teamChangeDateStr <- as.character(teamChangeDate)
 
   if (!has.key(teamChangeDateStr, gTree)) {
-    gTree[teamChangeDate] <- NULL
+    gTree[teamChangeDateStr] <- NULL
   }
 
   gDateList <- gTree[[teamChangeDateStr]]
