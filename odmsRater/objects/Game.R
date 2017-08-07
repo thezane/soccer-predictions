@@ -6,6 +6,7 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
   zeroesMat <- matrix(0, 2, 2)
   
   game <- list(
+    gameNum=1,
     gameRow=i,
 
     # Date
