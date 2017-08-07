@@ -39,8 +39,7 @@ addGame <- function(T, i, gTree, tTree, homeTeamName, awayTeamName,
   }
   
   gDateList <- gTree[[gameDateStr]]
-  game$gameNum <- length(gDateList) + 1
-  gDateList[[game$gameNum]] <- game
+  gDateList[length(gDateList)] <- game
   gTree[[gameDateStr]] <- gDateList
   gameData <- list(gTree=gTree, tTree=tTree, game=game)
   gameData
