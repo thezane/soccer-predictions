@@ -40,7 +40,6 @@ addGame <- function(T, i, gTree, tTree, homeTeamName, awayTeamName,
   
   gDateList <- gTree[[gameDateStr]]
   gDateList[[length(gDateList) + 1]] <- game
-  browser()
   gTree[[gameDateStr]] <- gDateList
   gameData <- list(gTree=gTree, tTree=tTree, game=game)
   gameData
