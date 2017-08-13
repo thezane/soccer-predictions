@@ -3,13 +3,11 @@ forecastRatings <- function(currentDate, rData=NULL) {
   library(hash)
   library(parallel)
   regexRFiles <- ".*\\.R"
-  srcFiles <- list.files("../", regexRFiles,
+  dataPath <- "../data/"
+  srcFiles <- list.files(".", regexRFiles,
       full.names=TRUE, recursive=TRUE)
-  utilitiesFiles <- list.files("../../utilities", regexRFiles,
-      full.names=TRUE, recursive=TRUE)
-  sapply(c(srcFiles, utilitiesFiles), source)
+  sapply(srcFiles, source)
   dateFormat <- "%m/%d/%y"
-  dataPath <- "../../data/"
   currentDate <- as.Date(currentDate, dateFormat)
   readsData <- readData(currentDate, dateFormat, dataPath)
   tTree <- readsData[["tTree"]]
@@ -17,7 +15,16 @@ forecastRatings <- function(currentDate, rData=NULL) {
   gTree <- readsData[["gTree"]]
   T <- readsData[["T"]]
   gi <- newEventIterator(gTree)
-  rData <- optimizeRNN(tTree, fTree, gTree, gi, rData, dataPath)
+  rOutput <- newRatingsOutput(tTree, gTree, gi)
+  
+  if (is.null(rData)) {
+    rData <- optimizeRNN(tTree, fTree, gTree, gi, rOutput, dataPath)
+  }
+  else {
+    rOutput <- computeRNN(rOptions, rOutput)
+    rData <- list(rOptions=rOptions, rOutput=rOutput)
+  }
+    
   writeGames(rData, T, dataPath)
   rData
 }

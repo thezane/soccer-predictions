@@ -1,0 +1,29 @@
+constructChanges <- function(dateFormat, dataPath) {
+  gTree <- hash()
+  changesSrc <- paste(dataPath, "changes.csv", sep="")
+  T <- read.csv(changesSrc, header=TRUE, sep=",", quote="\"", 
+      stringsAsFactors=FALSE)
+  n <- nrow(T)
+  i <- 1
+
+  while (i <= n) {
+    changeDate <- as.Date(T[[i, "Date"]], dateFormat)
+    gTree <- addChange(T, i, gTree, changeDate)
+    i <- i + 1
+  }
+
+  gTree
+}
+
+addChange <- function(T, i, gTree, changeDate) {
+  changeDateStr <- as.character(changeDate)
+
+  if (!has.key(changeDateStr, gTree)) {
+    gTree[[changeDateStr]] <- NULL
+  }
+
+  gDateList <- gTree[[changeDateStr]]
+  gDateList[[length(gDateList) + 1]] <- newChange(T, i)
+  gTree[[changeDateStr]] <- gDateList
+  gTree
+}

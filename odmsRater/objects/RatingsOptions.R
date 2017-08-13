@@ -1,7 +1,4 @@
 newRatingsOptions <- function(fTree) {
-  fNames <- keys(fTree)
-  numFs <- length(fNames)
-
   rOptions <- list(
     # ODM layer
     b=0.3,
@@ -49,9 +46,7 @@ newRatingsOptions <- function(fTree) {
     
     # Non-optimizable paramters
     fTree=fTree,
-    fNames=fNames,
-    minUpdates=0,
-    numFs=numFs,
+    minUpdatesUntilReliable=10,
     odmIter=10,
     
     # Regularization
@@ -65,17 +60,24 @@ newRatingsOptions <- function(fTree) {
   )
   
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
-  
-  i <- 1
-  
-  while (i <= rOptions$numFs) {
-    strFNorm <- rOptions$strFsNorm[i]
-    rOptions$fTree[[rOptions$fNames[i]]] <- c(strFNorm, -strFNorm)
-    i <- i + 1
-  }
-  
+  rOptions$fTree <- updateStrFs(rOptions, fTree)
+
   class(rOptions) <- "RatingsOptions"
   rOptions
+}
+
+updateStrFs <- function(rOptions, fTree) {
+  fNames <- keys(fTree)
+  numFs <- length(fNames)
+  i <- 1
+  
+  while (i <= numFs) {
+    strFNorm <- rOptions$strFsNorm[i]
+    fTree[[fNames[i]]] <- c(strFNorm, -strFNorm)
+    i <- i + 1
+  }
+
+  fTree
 }
 
 getModel <- function(rOptions) {

@@ -27,9 +27,9 @@ computeRNN <- function(rOptions, rOutput) {
       gTree[game$gameDateStr] <- gDateList
       gamePrev <- game
     }
-    else if (class(event) == "TeamChange") {
-      teamChange <- event
-      tTree <- handleChange(teamChange, tTree)
+    else if (class(event) == "Change") {
+      change <- event
+      tTree <- handleChange(change, tTree)
     }
   }
   

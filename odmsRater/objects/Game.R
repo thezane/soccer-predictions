@@ -49,18 +49,23 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     weight=0
   )
   
-  if (gameDate <= currentDate) {
-    game$dataset <- "training"
-  }
-  else {
-    game$dataset <- "validation"
-  }
-  
+  game$dataset <- assignDataset(game, currentDate)
   game$isRelevant <- computeRelevance(game)
   game$weight <- computeWeight(game)
 
   class(game) <- "Game"
   game
+}
+
+assignDataset <- function(game, currentDate) {
+  if (game$gameDate <= currentDate) {
+    dataset <- "training"
+  }
+  else {
+    dataset <- "validation"
+  }
+
+  dataset
 }
 
 computeRelevance <- function(game) {
@@ -84,19 +89,15 @@ computeWeight <- function(game) {
   weight
 }
 
-computeReliability <- function(game, homeTeam, awayTeam) {
-  minUpdates <- 10
+computeReliability <- function(game, rOptions, homeTeam, awayTeam) {
+  n <- rOptions$minUpdatesUntilReliable
   reliability <- c(1, 1)
   
-  if (homeTeam$numUpdates < minUpdates &&
-      awayTeam$numUpdate >= minUpdates) {
-    reliability[2] <- min(1,
-        (1 + homeTeam$numUpdates) / (1 + minUpdates))
+  if (homeTeam$numUpdates < n && awayTeam$numUpdate >= n) {
+    reliability[2] <- min(1, (1 + homeTeam$numUpdates) / (1 + n))
   }
-  else if (awayTeam$numUpdates < minUpdates &&
-      homeTeam$numUpdates >= minUpdates) {
-    reliability[1] <- min(1,
-        (1 + awayTeam$numUpdates) / (1 + minUpdates))
+  else if (awayTeam$numUpdates < n && homeTeam$numUpdates >= n) {
+    reliability[1] <- min(1, (1 + awayTeam$numUpdates) / (1 + n))
   }
 
   reliability
@@ -117,7 +118,8 @@ normalizeGoals <- function(game, rOptions) {
 # Construct ratings matrix before game.
 updateGamePreRate <- function(game, rOptions, tTree,
     homeTeam, awayTeam) {
-  game$reliability <- computeReliability(game, homeTeam, awayTeam)
+  game$reliability <- computeReliability(game, rOptions,
+      homeTeam, awayTeam)
   homeTeamStrs <- getTeamStrs(homeTeam, rOptions, tTree)
   awayTeamStrs <- getTeamStrs(awayTeam, rOptions, tTree)
   game$strNorm <- matrix(c(homeTeamStrs[["strNorm"]],

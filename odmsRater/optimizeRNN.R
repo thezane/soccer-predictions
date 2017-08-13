@@ -1,19 +1,8 @@
-optimizeRNN <- function(tTree, fTree, gTree, gi, rData, dataPath) {
-  rOutput <- newRatingsOutput(tTree, gTree, gi)
-
-  if (is.null(rData)) {
-    rOptions <- newRatingsOptions(fTree)
-    rData <- list(rOptions=rOptions, rOutput=rOutput)
-    x <- trainRNN(rData, dataPath)
-    rData <- updateRNN(x, rData)
-  }
-  else {
-    rOptions <- rData[["rOptions"]]
-    rOutput <- computeRNN(rOptions, rOutput)
-    rData <- list(rOptions=rOptions, rOutput=rOutput)
-  }
-
-  rData
+optimizeRNN <- function(tTree, fTree, gTree, gi, rOutput, dataPath) {
+  rOptions <- newRatingsOptions(fTree)
+  rData <- list(rOptions=rOptions, rOutput=rOutput)
+  x <- trainRNN(rData, dataPath)
+  rData <- updateRNN(x, rData)
 }
 
 trainRNN <- function(rData, dataPath) {
