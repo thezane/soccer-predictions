@@ -17,7 +17,6 @@ computeRNN <- function(rOptions, rOutput) {
       strPrereqs <- constructStrPrereqs(rOptions, game, gamePrev, tTree)
       updateStrData <- updateStr(strPrereqs, rOptions)
       tTree <- updateStrData[["tTree"]]
-      
       game <- updateStrData[["game"]]
       costData <- updateCost(rOptions, rOutput, game, gamePrev)
       rOutput <- costData[["rOutput"]]
