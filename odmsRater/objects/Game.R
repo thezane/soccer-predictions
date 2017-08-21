@@ -1,4 +1,4 @@
-newGame <- function(T, i, homeTeamName, awayTeamName,
+new.Game <- function(T, i, homeTeamName, awayTeamName,
     currentDate, gameDate) {
   contest <- T[[i, "Contest"]]
   type <- T[[i, "Type"]]
@@ -49,15 +49,15 @@ newGame <- function(T, i, homeTeamName, awayTeamName,
     weight=0
   )
   
-  game$dataset <- assignDataset(game, currentDate)
-  game$isRelevant <- computeRelevance(game)
-  game$weight <- computeWeight(game)
+  game$dataset <- assignDataset.Game(game, currentDate)
+  game$isRelevant <- computeRelevance.Game(game)
+  game$weight <- computeWeight.Game(game)
 
   class(game) <- "Game"
   game
 }
 
-assignDataset <- function(game, currentDate) {
+assignDataset.Game <- function(game, currentDate) {
   if (game$gameDate <= currentDate) {
     dataset <- "training"
   }
@@ -68,11 +68,11 @@ assignDataset <- function(game, currentDate) {
   dataset
 }
 
-computeRelevance <- function(game) {
+computeRelevance.Game <- function(game) {
   (!game$isFriendly && !game$isQualifier) || game$isPlayoff
 }
 
-computeWeight <- function(game) {
+computeWeight.Game <- function(game) {
   if (game$isWorldCup && !game$isQualifier && !game$isFriendly) {
     weight = 1
   }
@@ -89,7 +89,7 @@ computeWeight <- function(game) {
   weight
 }
 
-computeReliability <- function(game, rOptions, homeTeam, awayTeam) {
+computeReliability.Game <- function(game, rOptions, homeTeam, awayTeam) {
   n <- rOptions$minUpdatesUntilReliable
   reliability <- c(1, 1)
   
@@ -104,7 +104,7 @@ computeReliability <- function(game, rOptions, homeTeam, awayTeam) {
 }
 
 # Adjust goals scored by teams with home advantage.
-normalizeGoals <- function(game, rOptions) {
+normalizeGoals.Game <- function(game, rOptions) {
   goals <- game$goals
   goalsNorm <- goals
   meanGoals <- computeMeanGoals(game$existsHA, rOptions)
@@ -116,12 +116,12 @@ normalizeGoals <- function(game, rOptions) {
 }
 
 # Construct ratings matrix before game.
-updateGamePreRate <- function(game, rOptions, tTree,
+updatePreRate.Game <- function(game, rOptions, tTree,
     homeTeam, awayTeam) {
-  game$reliability <- computeReliability(game, rOptions,
+  game$reliability <- computeReliability.Game(game, rOptions,
       homeTeam, awayTeam)
-  homeTeamStrs <- getTeamStrs(homeTeam, rOptions, tTree)
-  awayTeamStrs <- getTeamStrs(awayTeam, rOptions, tTree)
+  homeTeamStrs <- getStrs.Team(homeTeam, rOptions, tTree)
+  awayTeamStrs <- getStrs.Team(awayTeam, rOptions, tTree)
   game$strNorm <- matrix(c(homeTeamStrs[["strNorm"]],
       awayTeamStrs[["strNorm"]]), 2, 2, TRUE)
   game$strNormBeta <- rOptions$strBeta * game$strNorm
@@ -130,7 +130,7 @@ updateGamePreRate <- function(game, rOptions, tTree,
 }
 
 # Update team ratings after game.
-updateGamePostRate <- function(game, rOptions, strNextNorm) {
+updatePostRate.Game <- function(game, rOptions, strNextNorm) {
   game$strNextNorm <- strNextNorm
   game$strNextNormBeta <- rOptions$strBeta * strNextNorm
   game$strAggNext <- c(game$strNextNorm[1, ] %*% rOptions$strBetas,
@@ -138,7 +138,7 @@ updateGamePostRate <- function(game, rOptions, strNextNorm) {
   game
 }
 
-computeSSE <- function(game, resultExpected, resultActual) {
+computeSSE.Game <- function(game, resultExpected, resultActual) {
   game$sse <- sum((resultExpected - resultActual) ^ 2)
   game
 }

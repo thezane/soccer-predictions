@@ -1,7 +1,7 @@
 updateCost <- function(rOptions, rOutput, game, gamePrev) {
 
   if (!is.null(gamePrev) && gamePrev$year < game$year) {
-    rOutput <- updateStrMeanCosts(rOutput, game$dataset)
+    rOutput <- updateStrMeanCosts.RatingsOutput(rOutput, game$dataset)
   }
 
   if (game$isRelevant) {
@@ -20,7 +20,7 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   # Update cost of outcome
   resultExpected <- gamePrediction[["gamePs"]]
   resultActual <- game$outcome
-  game <- computeSSE(game, resultExpected, resultActual)
+  game <- computeSSE.Game(game, resultExpected, resultActual)
   game$Ps <- gamePrediction[["gamePs"]]
   
   # Update cost of goals
@@ -28,7 +28,8 @@ updateRatingsCost <- function(rOptions, rOutput, game) {
   homeAwayGoals <- gamePrediction[["homeAwayGoals"]]
   p <- homeAwayGoals[goals[1] + 1, goals[2] + 1]
   weight <- min(game$reliability) * game$weight
-  rOutput <- updateGoalsCost(rOutput, p, weight, game$dataset)
+  rOutput <- updateGoalsCost.RatingsOutput(rOutput, p, weight,
+      game$dataset)
   costData <- list(rOutput=rOutput, game=game)
   costData
 }

@@ -1,4 +1,4 @@
-newRatingsOptions <- function(fTree) {
+new.RatingsOptions <- function(fTree) {
   rOptions <- list(
     # ODM layer
     b=0.3,
@@ -60,13 +60,13 @@ newRatingsOptions <- function(fTree) {
   )
   
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
-  rOptions$fTree <- updateStrFs(rOptions, fTree)
+  rOptions$fTree <- updateStrFs.Ratings(rOptions, fTree)
 
   class(rOptions) <- "RatingsOptions"
   rOptions
 }
 
-updateStrFs <- function(rOptions, fTree) {
+updateStrFs.Ratings <- function(rOptions, fTree) {
   fNames <- keys(fTree)
   numFs <- length(fNames)
   i <- 1
@@ -80,7 +80,7 @@ updateStrFs <- function(rOptions, fTree) {
   fTree
 }
 
-getModel <- function(rOptions) {
+getModel.RatingsOptions <- function(rOptions) {
   c(rOptions$b, rOptions$c,
     rOptions$k,
     rOptions$meanGoals, rOptions$strBeta, rOptions$hA,
@@ -88,7 +88,7 @@ getModel <- function(rOptions) {
         rOptions$theta, rOptions$tieBias, rOptions$tieBeta)
 }
 
-getModelLBd <- function(rOptions) {
+getModelLBd.RatingsOptions <- function(rOptions) {
   c(rOptions$bLBd, rOptions$cLBd,
     rOptions$kLBd,
     rOptions$meanGoalsLBd, rOptions$strBetaLBd, rOptions$hALBd,
@@ -96,7 +96,7 @@ getModelLBd <- function(rOptions) {
         rOptions$thetaLBd, rOptions$tieBiasLBd, rOptions$tieBetaLBd)
 }
 
-getModelUBd <- function(rOptions) {
+getModelUBd.RatingsOptions <- function(rOptions) {
   c(rOptions$bUBd, rOptions$cUBd,
     rOptions$kUBd,
     rOptions$meanGoalsUBd, rOptions$strBetaUBd, rOptions$hAUBd,
@@ -104,7 +104,7 @@ getModelUBd <- function(rOptions) {
         rOptions$thetaUBd, rOptions$tieBiasLBd, rOptions$tieBetaLBd)
 }
 
-updateOptions <- function(rOptions, x) {
+update.RatingsOptions <- function(rOptions, x) {
   rOptions$b <- x[1]
   rOptions$c <- x[2]
   rOptions$k <- x[3]
@@ -121,7 +121,7 @@ updateOptions <- function(rOptions, x) {
   rOptions
 }
 
-printModel <- function(rOptions) {
+print.RatingsOptions <- function(rOptions) {
   print(noquote(sprintf("b = %f", rOptions$b)))
   print(noquote(sprintf("c = %f", rOptions$c)))
   print(noquote(sprintf("k = %f", rOptions$k)))

@@ -1,4 +1,4 @@
-newGameHypo <- function(homeTeamName, awayTeamName, location, rData) {
+new.GameHypo <- function(homeTeamName, awayTeamName, location, rData) {
   rOptions <- rData[["rOptions"]]
   rOutput <- rData[["rOutput"]]
   tTree <- rOutput$tTree

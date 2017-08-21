@@ -1,19 +1,19 @@
 computeRNN <- function(rOptions, rOutput) {
-  rOutput <- resetRatingsOutput(rOutput)
+  rOutput <- reset.RatingsOutput(rOutput)
   tTree <- rOutput$tTree
   gTree <- rOutput$gTree
   gi <- rOutput$gi
-  gi <- reset(gi)
+  gi <- reset.EventIterator(gi)
   gamePrev <- NULL
   
-  while (hasNextEvent(gi)) {
-    eventData <- nextEvent(gi)
+  while (hasNext.EventIterator(gi)) {
+    eventData <- next.EventIterator(gi)
     gi <- eventData[["gi"]]
     event <- eventData[["event"]]
     
     if (class(event) == "Game") {
       game <- event
-      game <- normalizeGoals(game, rOptions)
+      game <- normalizeGoals.Game(game, rOptions)
       strPrereqs <- constructStrPrereqs(rOptions, game, gamePrev, tTree)
       updateStrData <- updateStr(strPrereqs, rOptions)
       tTree <- updateStrData[["tTree"]]
@@ -28,11 +28,11 @@ computeRNN <- function(rOptions, rOutput) {
     }
     else if (class(event) == "Change") {
       change <- event
-      tTree <- handleChange(change, tTree)
+      tTree <- handle.Change(change, tTree)
     }
   }
   
-  rOutput <- updateTotalCosts(rOutput, rOptions)
+  rOutput <- updateTotalCosts.RatingsOutput(rOutput, rOptions)
   rOutput$tTree <- tTree
   rOutput$gTree <- gTree
   rOutput$gi <- gi
@@ -53,7 +53,8 @@ constructStrPrereqs <- function(rOptions, game, gamePrev, tTree) {
     print(awayTeamName)
   }
 
-  game <- updateGamePreRate(game, rOptions, tTree, homeTeam, awayTeam)
+  game <- updatePreRate.Game(game, rOptions, tTree,
+      homeTeam, awayTeam)
   strPrereqs <- list(game=game, tTree=tTree)
   strPrereqs
 }
@@ -69,9 +70,9 @@ updateStr <- function(strPrereqs, rOptions) {
   awayTeam <- tTree[[awayTeamName]]
   strNextNorm <- computeLayerRatings(game, rOptions,
       homeTeam, awayTeam, strPostNorm)
-  game <- updateGamePostRate(game, rOptions, strNextNorm)
-  tTree[homeTeamName] <- updateTeam(homeTeam, game, 1)
-  tTree[awayTeamName] <- updateTeam(awayTeam, game, 2)
+  game <- updatePostRate.Game(game, rOptions, strNextNorm)
+  tTree[homeTeamName] <- update.Team(homeTeam, game, 1)
+  tTree[awayTeamName] <- update.Team(awayTeam, game, 2)
   updateStrData <- list(tTree=tTree, game=game)
   updateStrData
 }

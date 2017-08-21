@@ -13,7 +13,7 @@ newTeam <- function(teamName, fName) {
   team
 }
 
-updateTeam <- function(team, game, i) {
+update.Team <- function(team, game, i) {
   team$updateDate <- game$gameDate
   team$strNorm <- game$strNextNorm[i, ]
   team$strNormBeta <- game$strNextNormBeta[i, ]
@@ -22,7 +22,7 @@ updateTeam <- function(team, game, i) {
   team
 }
 
-getTeamStrs <- function(team, rOptions, tTree) {
+getStrs.Team <- function(team, rOptions, tTree) {
   if (team$numUpdates > 0) {
     strNorm <-team$strNorm
     strAgg <- team$strAgg

@@ -1,4 +1,4 @@
-newRatingsCosts <- function(dataset) {
+new.RatingsCosts <- function(dataset) {
     rCosts <- list(
       dataset=dataset,
       goalsCosts=NULL,
@@ -31,16 +31,16 @@ updateStrMeanCosts.RatingsCosts <- function(rCosts, tTree) {
   rCosts
 }
 
-updateTotalCost <- function(rCosts, rOptions) {
-  rCosts$goalsCost <- computeGoalsCost(rCosts)
+updateTotalCost.RatingsCosts <- function(rCosts, rOptions) {
+  rCosts$goalsCost <- computeGoalsCost.RatingsCosts(rCosts)
   rCosts$strMeanCost <- rOptions$strMeanCostReg *
-      computeStrMeanCost(rCosts)
+      computeStrMeanCost.RatingsCosts(rCosts)
   rCosts$totalCost <- rCosts$goalsCost + rCosts$strMeanCost +
       rOptions$slopeCost
   rCosts
 }
 
-computeGoalsCost <- function(rCosts) {
+computeGoalsCost.RatingsCosts <- function(rCosts) {
   ps <- rCosts$goalsCosts
   ws <- rCosts$goalsWeights
 
@@ -54,7 +54,7 @@ computeGoalsCost <- function(rCosts) {
   cost
 }
 
-computeStrMeanCost <- function(rCosts) {
+computeStrMeanCost.RatingsCosts <- function(rCosts) {
   strMeanCosts <- rCosts$strMeanCosts
 
   if (is.null(strMeanCosts)) {

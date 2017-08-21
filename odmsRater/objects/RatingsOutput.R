@@ -1,4 +1,4 @@
-newRatingsOutput <- function(tTree, gTree, gi) {
+new.RatingsOutput <- function(tTree, gTree, gi) {
   rOutput <- list(
     tTree=tTree,
     tTreeBackup=tTree,
@@ -12,14 +12,15 @@ newRatingsOutput <- function(tTree, gTree, gi) {
   rOutput
 }
 
-resetRatingsOutput <- function(rOutput) {
-  rOutput$costs[["training"]] <- newRatingsCosts("training")
-  rOutput$costs[["validation"]] <- newRatingsCosts("validation")
-  rOutput$tTree <- copyTTree(rOutput, rOutput$tTreeBackup)
+reset.RatingsOutput <- function(rOutput) {
+  rOutput$costs[["training"]] <- new.RatingsCosts("training")
+  rOutput$costs[["validation"]] <- new.RatingsCosts("validation")
+  rOutput$tTree <- copyTTree.RatingsOutput(rOutput,
+      rOutput$tTreeBackup)
   rOutput
 }
 
-copyTTree <- function(rOutput, tTree) {
+copyTTree.RatingsOutput <- function(rOutput, tTree) {
   tTreeCopy <- hash()
   teams <- keys(tTree)
   n <- length(teams)
@@ -37,37 +38,37 @@ copyTTree <- function(rOutput, tTree) {
 
 updateGoalsCost.RatingsOutput <- function(rOutput, p, w, dataset) {
   rCosts <- rOutput$costs[[dataset]]
-  rCosts <- updateGoalsCost(rCosts, p, w)
+  rCosts <- updateGoalsCost.RatingsCosts(rCosts, p, w)
   rOutput$costs[dataset] <- rCosts
   rOutput
 }
 
 updateStrMeanCosts.RatingsOutput <- function(rOutput, dataset) {
   rCosts <- rOutput$costs[[dataset]]
-  rCosts <- updateStrMeanCosts(rCosts, rOutput$tTree)
+  rCosts <- updateStrMeanCosts.RatingsCosts(rCosts, rOutput$tTree)
   rOutput$costs[dataset] <- rCosts
   rOutput
 }
 
-updateTotalCosts <- function(rOutput, rOptions) {
-  rOutput$costs[["training"]] <- updateTotalCost(
+updateTotalCosts.RatingsOutput <- function(rOutput, rOptions) {
+  rOutput$costs[["training"]] <- updateTotalCost.RatingsCosts(
       rOutput$costs[["training"]], rOptions)
-  rOutput$costs[["validation"]] <- updateTotalCost(
+  rOutput$costs[["validation"]] <- updateTotalCost.RatingsCosts(
       rOutput$costs[["validation"]], rOptions)
   rOutput
 }
 
-computeGoalsCosts <- function(rOutput) {
+computeGoalsCosts.RatingsOutput <- function(rOutput) {
   c(rOutput$costs[["training"]]$goalsCost,
       rOutput$costs[["validation"]]$goalsCost)
 }
 
-computeStrMeanCosts <- function(rOutput) {
+computeStrMeanCosts.RatingsOutput <- function(rOutput) {
   c(rOutput$costs[["training"]]$strMeanCost,
       rOutput$costs[["validation"]]$strMeanCost)
 }
 
-computeTotalCosts <- function(rOutput) {
+computeTotalCosts.RatingsOutput <- function(rOutput) {
   c(rOutput$costs[["training"]]$totalCost,
       rOutput$costs[["validation"]]$totalCost)
 }

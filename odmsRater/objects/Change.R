@@ -1,4 +1,4 @@
-newChange <- function(T, i) {
+new.Change <- function(T, i) {
   name <- T[[i, "Team"]]
   date <- T[[i, "Date"]]
   type <- T[[i, "Type"]]
@@ -15,37 +15,37 @@ newChange <- function(T, i) {
   change
 }
 
-handleChange <- function(change, tTree) {
+handle.Change <- function(change, tTree) {
   if (change$type == "Creation") {
-    tTree <- handleCreation(change, tTree)
+    tTree <- handleCreation.Change(change, tTree)
   }
   else if (change$type == "Destruction") {
-    tTree <- handleDestruction(change, tTree)
+    tTree <- handleDestruction.Change(change, tTree)
   }
   else if (change$type == "Federation") {
-    tTree <- handleFederation(change, tTree)
+    tTree <- handleFederation.Change(change, tTree)
   }
   else if (change$type == "Name") {
-    tTree <- handleName(change, tTree)
+    tTree <- handleName.Change(change, tTree)
   }
 
   tTree
 }
 
-handleCreation <- function(change, tTree) {
+handleCreation.Change <- function(change, tTree) {
   teamName <- change$name
   fName <- change$change
   tTree[[teamName]] <- newTeam(teamName, fName)
   tTree
 }
 
-handleDestruction <- function(change, tTree) {
+handleDestruction.Change <- function(change, tTree) {
   teamName <- change$name
   tTree[[teamName]] <- NULL
   tTree
 }
 
-handleFederation <- function(change, tTree) {
+handleFederation.Change <- function(change, tTree) {
   teamName <- change$name
   fNameNew <- change$change
   team <- tTree[[teamName]]
@@ -55,7 +55,7 @@ handleFederation <- function(change, tTree) {
   tTree
 }
 
-handleName <- function(change, tTree) {
+handleName.Change <- function(change, tTree) {
   teamName <- change$name
   teamNameNew <- change$change
   tTree[[teamNameNew]] <- tTree[[teamName]]

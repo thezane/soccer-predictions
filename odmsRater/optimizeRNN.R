@@ -1,5 +1,5 @@
 optimizeRNN <- function(tTree, fTree, gTree, gi, rOutput, dataPath) {
-  rOptions <- newRatingsOptions(fTree)
+  rOptions <- new.RatingsOptions(fTree)
   rData <- list(rOptions=rOptions, rOutput=rOutput)
   x <- trainRNN(rData, dataPath)
   rData <- updateRNN(x, rData)
@@ -8,9 +8,9 @@ optimizeRNN <- function(tTree, fTree, gTree, gi, rOutput, dataPath) {
 trainRNN <- function(rData, dataPath) {
   rOptions <- rData[["rOptions"]]
   rOutput <- rData[["rOutput"]]
-  x <- getModel(rOptions)
-  xLBd <- getModelLBd(rOptions)
-  xUBd <- getModelUBd(rOptions)
+  x <- getModel.RatingsOptions(rOptions)
+  xLBd <- getModelLBd.RatingsOptions(rOptions)
+  xUBd <- getModelUBd.RatingsOptions(rOptions)
   n <- length(x)
   iterFile <- paste(dataPath, "odms-iters.csv", sep="")
   

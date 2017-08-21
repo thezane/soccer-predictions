@@ -17,10 +17,10 @@ getGamesData <- function(gi, T) {
       "HomeWin", "Tie", "AwayWin",
       "SSE")
   T[colNames] <- 0
-  gi <- reset(gi)
+  gi <- reset.EventIterator(gi)
 
-  while (hasNextEvent(gi)) {
-    eventData <- nextEvent(gi)
+  while (hasNext.EventIterator(gi)) {
+    eventData <- next.EventIterator(gi)
     gi <- eventData[["gi"]]
     event <- eventData[["event"]]
     

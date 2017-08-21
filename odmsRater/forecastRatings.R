@@ -14,8 +14,8 @@ forecastRatings <- function(currentDate, rData=NULL) {
   fTree <- readsData[["fTree"]]
   gTree <- readsData[["gTree"]]
   T <- readsData[["T"]]
-  gi <- newEventIterator(gTree)
-  rOutput <- newRatingsOutput(tTree, gTree, gi)
+  gi <- new.EventIterator(gTree)
+  rOutput <- new.RatingsOutput(tTree, gTree, gi)
   
   if (is.null(rData)) {
     rData <- optimizeRNN(tTree, fTree, gTree, gi, rOutput, dataPath)

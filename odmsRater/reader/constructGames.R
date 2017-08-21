@@ -24,7 +24,7 @@ constructGames <- function(gTree, currentDate, dateFormat, dataPath) {
 
 addGame <- function(T, i, gTree, homeTeamName, awayTeamName,
       currentDate, gameDate) {
-  game <- newGame(T, i, homeTeamName, awayTeamName,
+  game <- new.Game(T, i, homeTeamName, awayTeamName,
       currentDate, gameDate)
   gameDateStr <- game$gameDateStr
   

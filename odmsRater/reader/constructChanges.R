@@ -23,7 +23,7 @@ addChange <- function(T, i, gTree, changeDate) {
   }
 
   gDateList <- gTree[[changeDateStr]]
-  gDateList[[length(gDateList) + 1]] <- newChange(T, i)
+  gDateList[[length(gDateList) + 1]] <- new.Change(T, i)
   gTree[[changeDateStr]] <- gDateList
   gTree
 }

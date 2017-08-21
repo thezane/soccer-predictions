@@ -3,7 +3,7 @@ constructRNNComputer <- function(rData, iterFile, enableWriteIter) {
       enableWriteIter.=enableWriteIter) {
     rData <- updateRNN(x, rData)
     rOutput <- rData[["rOutput"]]
-    totalCosts <- computeTotalCosts(rOutput)
+    totalCosts <- computeTotalCosts.RatingsOutput(rOutput)
       
     if (enableWriteIter) {
       writeIter(totalCosts[2], x, iterFile)
@@ -20,16 +20,16 @@ updateRNN <- function(x, rData) {
   rOutput <- rData[["rOutput"]]
 
   # Update model parameters
-  rOptions <- updateOptions(rOptions, x)
+  rOptions <- update.RatingsOptions(rOptions, x)
   cat("\n")
-  printModel(rOptions)
+  print.RatingsOptions(rOptions)
 
   # Compute RNN with updated parameters
   rOutput <- computeRNN(rOptions, rOutput)
 
   # Compute cost
-  goalsCosts <- computeGoalsCosts(rOutput)
-  strMeanCosts <- computeStrMeanCosts(rOutput)
+  goalsCosts <- computeGoalsCosts.RatingsOutput(rOutput)
+  strMeanCosts <- computeStrMeanCosts.RatingsOutput(rOutput)
   slopeCost <- rOptions$slopeCost
 
   # Print cost

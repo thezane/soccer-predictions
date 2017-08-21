@@ -1,4 +1,4 @@
-newEventIterator <- function(gTree) {
+new.EventIterator <- function(gTree) {
   dates <- keys(gTree)
   gi <- list(
     gTree=gTree,
@@ -10,12 +10,12 @@ newEventIterator <- function(gTree) {
   gi
 }
 
-hasNextEvent <- function(gi) {
+hasNext.EventIterator <- function(gi) {
   tf <- (gi$I[1] < gi$N[1]) || (gi$I[2] <= gi$N[2])
   tf
 }
 
-nextEvent <- function(gi) {
+next.EventIterator <- function(gi) {
   if (gi$I[2] > gi$N[2]) {
     gi$I[1] <- gi$I[1] + 1
     gi$I[2] <- 1
@@ -31,7 +31,7 @@ nextEvent <- function(gi) {
   eventData
 }
 
-reset <- function(gi) {
+reset.EventIterator <- function(gi) {
   gi$I <- c(0, 1)
   gi$N <- c(length(gi$dates), 0)
   gi
