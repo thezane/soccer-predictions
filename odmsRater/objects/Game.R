@@ -1,5 +1,5 @@
-new.Game <- function(T, i, homeTeamName, awayTeamName,
-    currentDate, gameDate) {
+new.Game <- function(T, i, rOptions, homeTeamName, awayTeamName,
+    gameDate) {
   contest <- T[[i, "Contest"]]
   type <- T[[i, "Type"]]
   goals <- c(T[[i, "HomeGoals"]], T[[i, "AwayGoals"]])
@@ -45,13 +45,11 @@ new.Game <- function(T, i, homeTeamName, awayTeamName,
     isQualifier=grepl("Qualifiers", type),
     isPlayoff=grepl("Playoff", type),
     isWorldCup=grepl("World Cup", contest),
-    isRelevant=FALSE,
-    weight=0
   )
   
-  game$dataset <- assignDataset.Game(game, currentDate)
+  game$dataset <- assignDataset.Game(game, rOptions$currentDate)
   game$isRelevant <- computeRelevance.Game(game)
-  game$weight <- computeWeight.Game(game)
+  game$weight <- computeWeight.Game(game, rOptions)
 
   class(game) <- "Game"
   game
@@ -72,24 +70,27 @@ computeRelevance.Game <- function(game) {
   (!game$isFriendly && !game$isQualifier) || game$isPlayoff
 }
 
-computeWeight.Game <- function(game) {
+computeWeight.Game <- function(game, rOptions) {
+  wTree = rOptions$wTree
+	
   if (game$isWorldCup && !game$isQualifier && !game$isFriendly) {
-    weight = 1
+    weight = wTree[["very high"]]
   }
   else if (game$isMajor && !game$isQualifier && !game$isFriendly) {
-    weight = 5 / 6
+    weight = wTree[["high"]]
   }
   else if (!game$isFriendly) {
-    weight = 2 / 3
+    weight = wTree[["moderate"]]
   }
   else {
-    weight = 1 / 3
+    weight = wTree[["very low"]]
   }
 
   weight
 }
 
-computeReliability.Game <- function(game, rOptions, homeTeam, awayTeam) {
+computeReliability.Game <- function(game, rOptions,
+    homeTeam, awayTeam) {
   n <- rOptions$minUpdatesUntilReliable
   reliability <- c(1, 1)
   

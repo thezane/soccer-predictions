@@ -1,4 +1,4 @@
-forecastRatings <- function(currentDate, rData=NULL) {
+forecastRatings <- function(rData=NULL) {
   library(MASS)
   library(hash)
   library(parallel)
@@ -7,18 +7,24 @@ forecastRatings <- function(currentDate, rData=NULL) {
   srcFiles <- list.files(".", regexRFiles,
       full.names=TRUE, recursive=TRUE)
   sapply(srcFiles, source)
-  dateFormat <- "%m/%d/%y"
-  currentDate <- as.Date(currentDate, dateFormat)
-  readsData <- readData(currentDate, dateFormat, dataPath)
+  
+  if (is.null(rData)) {
+	rOptions = new.RatingsOptions()
+  }
+  else {
+    rOptions = rData$rOptions
+  }
+  
+  readsData <- readData(rOptions, dataPath)
   tTree <- readsData[["tTree"]]
-  fTree <- readsData[["fTree"]]
   gTree <- readsData[["gTree"]]
   T <- readsData[["T"]]
   gi <- new.EventIterator(gTree)
   rOutput <- new.RatingsOutput(tTree, gTree, gi)
   
   if (is.null(rData)) {
-    rData <- optimizeRNN(tTree, fTree, gTree, gi, rOutput, dataPath)
+    rData <- list(rOptions=rOptions, rOutput=rOutput)
+    rData <- optimizeRNN(tTree, gTree, gi, rData, dataPath)
   }
   else {
     rOutput <- computeRNN(rOptions, rOutput)

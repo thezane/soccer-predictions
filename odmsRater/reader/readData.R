@@ -1,11 +1,9 @@
-readData <- function(currentDate, dateFormat, dataPath) {
-  teamsData <- constructTeams(dataPath)
-  tTree <- teamsData[["tTree"]]
-  fTree <- teamsData[["fTree"]]
-  gTree <- constructChanges(dateFormat, dataPath)
-  gamesData <- constructGames(gTree, currentDate, dateFormat, dataPath)
+readData <- function(rOptions, dataPath) {
+  tTree <- constructTeams(dataPath)
+  gTree <- constructChanges(rOptions, dataPath)
+  gamesData <- constructGames(gTree, rOptions, dataPath)
   gTree <- gamesData[["gTree"]]
   T <- gamesData[["T"]]
-  readsData <- list(tTree=tTree, fTree=fTree, gTree=gTree, T=T)
+  readsData <- list(tTree=tTree, gTree=gTree, T=T)
   readsData
 } 

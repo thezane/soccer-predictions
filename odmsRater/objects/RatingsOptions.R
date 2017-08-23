@@ -1,4 +1,4 @@
-new.RatingsOptions <- function(fTree) {
+new.RatingsOptions <- function() {
   rOptions <- list(
     # ODM layer
     b=0.3,
@@ -14,11 +14,7 @@ new.RatingsOptions <- function(fTree) {
     corrBeta=-1,
     theta=1,
     tieBias=-3.2,
-    tieBeta=-4,
-
-    # Default federation strengths for Africa, Asia, Europe,
-    # North America, Oceania and South America respectively
-    strFsNorm=c(0.04, -0.28, 0.32, -0.2, -0.56, 0.52),    
+    tieBeta=-4,  
 
     # Lower bounds for optimizable parameters
     bLBd=0.01,
@@ -45,7 +41,21 @@ new.RatingsOptions <- function(fTree) {
     tieBeta=-1,
     
     # Non-optimizable paramters
-    fTree=fTree,
+    fTree=list(
+        "Africa"=c(0.04, -0.04),
+        "Asia"=c(-0.28, 0.28),
+        "Europe"=c(0.32, -0.32),
+        "North America"=c(-0.2, 0.2),
+        "Oceania"=c(-0.56, 0.56),
+        "South America"=c(0.52, -0.52)),
+    wTree=list(
+        "very high"=1,
+        "high"=5/6,
+        "moderate"=4/6,
+        "low"=3/6,
+        "very low"=2/6
+    ),
+    dateFormat="%m/%d/%y",
     minUpdatesUntilReliable=10,
     odmIter=10,
     
@@ -58,26 +68,12 @@ new.RatingsOptions <- function(fTree) {
     factr=1e-04 / .Machine$double.eps,
     lmm=10
   )
-  
+
+  rOptions$currentDate <- as.Date("6/11/14", rOptions$dateFormat)
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
-  rOptions$fTree <- updateStrFs.Ratings(rOptions, fTree)
 
   class(rOptions) <- "RatingsOptions"
   rOptions
-}
-
-updateStrFs.Ratings <- function(rOptions, fTree) {
-  fNames <- keys(fTree)
-  numFs <- length(fNames)
-  i <- 1
-  
-  while (i <= numFs) {
-    strFNorm <- rOptions$strFsNorm[i]
-    fTree[[fNames[i]]] <- c(strFNorm, -strFNorm)
-    i <- i + 1
-  }
-
-  fTree
 }
 
 getModel.RatingsOptions <- function(rOptions) {
