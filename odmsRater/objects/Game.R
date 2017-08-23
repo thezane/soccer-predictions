@@ -44,7 +44,7 @@ new.Game <- function(T, i, rOptions, homeTeamName, awayTeamName,
     isFriendly=type=="Friendlies",
     isQualifier=grepl("Qualifiers", type),
     isPlayoff=grepl("Playoff", type),
-    isWorldCup=grepl("World Cup", contest),
+    isWorldCup=grepl("World Cup", contest)
   )
   
   game$dataset <- assignDataset.Game(game, rOptions$currentDate)
