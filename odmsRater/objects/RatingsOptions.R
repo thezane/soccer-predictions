@@ -57,6 +57,7 @@ new.RatingsOptions <- function() {
     ),
     dateFormat="%m/%d/%y",
     minUpdatesUntilReliable=10,
+    pGoalsMatSize=20,
     odmIter=10,
     
     # Regularization

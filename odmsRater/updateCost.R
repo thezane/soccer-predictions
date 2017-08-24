@@ -15,17 +15,20 @@ updateCost <- function(rOptions, rOutput, game, gamePrev) {
 }
 
 updateRatingsCost <- function(rOptions, rOutput, game) {
-  gamePrediction <- computeLayerPois(game, rOptions)
+  gamePredictionBivPois <- computeLayerBivPois(game, rOptions)
+  gamePredictionPois <- computeLayerPois(game, rOptions)
+  gamePrediction <- computeLayerMixture(game,
+      gamePredictionBivPois, gamePredictionPois, rOptions)
   
   # Update cost of outcome
-  resultExpected <- gamePrediction[["gamePs"]]
+  resultExpected <- gamePrediction[["pWinTieLoss"]]
   resultActual <- game$outcome
   game <- computeSSE.Game(game, resultExpected, resultActual)
-  game$Ps <- gamePrediction[["gamePs"]]
+  game$Ps <- resultExpected
   
   # Update cost of goals
   goals <- game$goals
-  homeAwayGoals <- gamePrediction[["homeAwayGoals"]]
+  homeAwayGoals <- gamePrediction[["pGoals"]]
   p <- homeAwayGoals[goals[1] + 1, goals[2] + 1]
   weight <- min(game$reliability) * game$weight
   rOutput <- updateGoalsCost.RatingsOutput(rOutput, p, weight,

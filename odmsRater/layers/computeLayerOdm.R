@@ -1,8 +1,11 @@
-computeLayerOdm <- function(A, strNorm, b, c, odmIter) {
-  teamStr <- exp(strNorm)
+# Compute post-game strengths for teams in a game with model parameters
+# rOptions.
+computeLayerOdm <- function(game, rOptions) {
+  A <- rOptions$b * game$A + rOptions$c;
+  teamStr <- exp(game$strNorm)
   a <- teamStr[, 1];
   d <- teamStr[, 2];
-  A <- b * A + c;
+  odmIter <- rOptions$odmIter
   i <- 1
 
   while (i <= odmIter) {
