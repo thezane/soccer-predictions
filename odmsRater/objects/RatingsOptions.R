@@ -82,14 +82,22 @@ constructLayersComputer.rOptions <- function(rOptions) {
   computeLayers <- function(rOptions, game) {
     strPostNorm <- computeLayerOdm(game, rOptions)
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
-    gamePredictionBivPois <- computeLayerBivPois(game, rOptions)
-    gamePredictionPois <- computeLayerPois(game, rOptions)
-    gamePrediction <- computeLayerMixture(game,
-        gamePredictionBivPois, gamePredictionPois, rOptions)
+
+    if (game$isRelevant) {
+      gamePredictionBivPois <- computeLayerBivPois(game, rOptions)
+      gamePredictionPois <- computeLayerPois(game, rOptions)
+      gamePrediction <- computeLayerMixture(game,
+          gamePredictionBivPois, gamePredictionPois, rOptions)
+    }
+    else {
+      gamePrediction = NULL
+    }
+
     layerOutput <- list(gamePrediction=gamePrediction,
         strNextNorm=strNextNorm)
     layerOutput
   }
+
   computeLayers
 }
 
