@@ -14,11 +14,14 @@ computeRNN <- function(rOptions, rOutput) {
     if (class(event) == "Game") {
       game <- event
       game <- normalizeGoals.Game(game, rOptions)
-      strPrereqs <- constructStrPrereqs(rOptions, game, gamePrev, tTree)
-      updateStrData <- updateStr(strPrereqs, rOptions)
-      tTree <- updateStrData[["tTree"]]
+      strPrereqs <- constructStrPrereqs(rOptions, game, tTree)
+      layerOutput <- rOptions$layersComputer(rOptions, game)
+      gamePrediction <- layerOutput[["gamePrediction"]]
+      strNextNorm <- layerOutput[["strNextNorm"]]
+      updateStrData <- updateStr(strPrereqs, rOptions, strNextNorm)
       game <- updateStrData[["game"]]
-      costData <- updateCost(rOptions, rOutput, game, gamePrev)
+      tTree <- updateStrData[["tTree"]]
+      costData <- updateCost(rOutput, gamePrediction, game, gamePrev)
       rOutput <- costData[["rOutput"]]
       game <- costData[["game"]]
       gDateList <- gTree[[game$gameDateStr]]
@@ -39,7 +42,7 @@ computeRNN <- function(rOptions, rOutput) {
   rOutput
 }
 
-constructStrPrereqs <- function(rOptions, game, gamePrev, tTree) {
+constructStrPrereqs <- function(rOptions, game, tTree) {
   homeTeamName <- game$teamNames[1]
   awayTeamName <- game$teamNames[2]
   homeTeam <- tTree[[homeTeamName]]
@@ -59,11 +62,9 @@ constructStrPrereqs <- function(rOptions, game, gamePrev, tTree) {
   strPrereqs
 }
 
-updateStr <- function(strPrereqs, rOptions) {
+updateStr <- function(strPrereqs, rOptions, strNextNorm) {
   game <- strPrereqs[["game"]]
   tTree <- strPrereqs[["tTree"]]
-  strPostNorm <- computeLayerOdm(game, rOptions)
-  strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
   game <- updatePostRate.Game(game, rOptions, strNextNorm)
   homeTeamName <- game$teamNames[1]
   awayTeamName <- game$teamNames[2]  
@@ -71,6 +72,37 @@ updateStr <- function(strPrereqs, rOptions) {
   awayTeam <- tTree[[awayTeamName]]
   tTree[homeTeamName] <- update.Team(homeTeam, game, 1)
   tTree[awayTeamName] <- update.Team(awayTeam, game, 2)
-  updateStrData <- list(tTree=tTree, game=game)
+  updateStrData <- list(game=game, tTree=tTree)
   updateStrData
+}
+
+updateCost <- function(rOutput, gamePrediction, game, gamePrev) {
+
+  if (!is.null(gamePrev) && gamePrev$year < game$year) {
+    rOutput <- updateStrMeanCosts.RatingsOutput(rOutput, game$dataset)
+  }
+
+  if (game$isRelevant) {
+    # Update cost of outcome
+    resultExpected <- gamePrediction[["pWinTieLoss"]]
+    resultActual <- game$outcome
+    game <- computeSSE.Game(game, resultExpected, resultActual)
+    game$Ps <- resultExpected
+  
+    # Update cost of goals
+    p <- gamePrediction$p
+    reliability <- game$reliability
+    weight <- game$weight
+    weightCost <- min(reliability) * weight
+    dataset <- game$dataset
+    rOutput <- updateGoalsCost.RatingsOutput(rOutput, p, weightCost,
+        dataset)
+    costData <- list(rOutput=rOutput, game=game)
+    costData
+  }
+  else {
+    costData <- list(rOutput=rOutput, game=game)
+  }
+
+  costData
 }

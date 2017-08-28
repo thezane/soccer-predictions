@@ -57,7 +57,7 @@ new.RatingsOptions <- function() {
     ),
     dateFormat="%m/%d/%y",
     minUpdatesUntilReliable=10,
-    pGoalsMatSize=20,
+    pGoalsMatSize=40,
     odmIter=10,
     
     # Regularization
@@ -72,9 +72,25 @@ new.RatingsOptions <- function() {
 
   rOptions$currentDate <- as.Date("6/11/14", rOptions$dateFormat)
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
+  rOptions$layersComputer <- constructLayersComputer.rOptions(rOptions)
 
   class(rOptions) <- "RatingsOptions"
   rOptions
+}
+
+constructLayersComputer.rOptions <- function(rOptions) {
+  computeLayers <- function(rOptions, game) {
+    strPostNorm <- computeLayerOdm(game, rOptions)
+    strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
+    gamePredictionBivPois <- computeLayerBivPois(game, rOptions)
+    gamePredictionPois <- computeLayerPois(game, rOptions)
+    gamePrediction <- computeLayerMixture(game,
+        gamePredictionBivPois, gamePredictionPois, rOptions)
+    layerOutput <- list(gamePrediction=gamePrediction,
+        strNextNorm=strNextNorm)
+    layerOutput
+  }
+  computeLayers
 }
 
 getModel.RatingsOptions <- function(rOptions) {
