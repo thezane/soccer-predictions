@@ -38,6 +38,5 @@ computePrediction <- function(p, gamePredictionBivPois,
       sum(pGoals[upper.tri(pGoals)]))
   gamePrediction <- list(goalsExpected=goalsExpected, pGoals=pGoals,
       pWinTieLose=pWinTieLose)
-  browser()
   gamePrediction
 }

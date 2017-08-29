@@ -20,9 +20,9 @@ updateRNN <- function(x, rData) {
   rOutput <- rData[["rOutput"]]
 
   # Update model parameters
-  rOptions <- update.RatingsOptions(rOptions, x)
+  rOptions <- update(rOptions, x)
   cat("\n")
-  print.RatingsOptions(rOptions)
+  print(rOptions)
 
   # Compute RNN with updated parameters
   rOutput <- computeRNN(rOptions, rOutput)

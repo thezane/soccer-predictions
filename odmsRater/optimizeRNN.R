@@ -13,9 +13,9 @@ optimizeRNN <- function(tTree, gTree, gi, rData, dataPath) {
 trainRNN <- function(rData, dataPath) {
   rOptions <- rData[["rOptions"]]
   rOutput <- rData[["rOutput"]]
-  x <- getModel.RatingsOptions(rOptions)
-  xLBd <- getModelLBd.RatingsOptions(rOptions)
-  xUBd <- getModelUBd.RatingsOptions(rOptions)
+  x <- getModel(rOptions)
+  xLBd <- getModelLBd(rOptions)
+  xUBd <- getModelUBd(rOptions)
   n <- length(x)
   iterFile <- paste(dataPath, rOptions$iterName, sep="")
   
