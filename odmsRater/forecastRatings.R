@@ -1,4 +1,4 @@
-forecastRatings <- function(rData=NULL) {
+forecastRatings <- function(rOptions=NULL) {
   library(MASS)
   library(hash)
   library(parallel)
@@ -8,11 +8,8 @@ forecastRatings <- function(rData=NULL) {
       full.names=TRUE, recursive=TRUE)
   sapply(srcFiles, source)
   
-  if (is.null(rData)) {
+  if (is.null(rOptions)) {
 	rOptions = new.RatingsOptions()
-  }
-  else {
-    rOptions = rData$rOptions
   }
   
   readsData <- readData(rOptions, dataPath)
@@ -22,13 +19,13 @@ forecastRatings <- function(rData=NULL) {
   gi <- new.EventIterator(gTree)
   rOutput <- new.RatingsOutput(tTree, gTree, gi)
   
-  if (is.null(rData)) {
+  if (rOptions$isOptimized) {
+	rOutput <- computeRNN(rOptions, rOutput)
     rData <- list(rOptions=rOptions, rOutput=rOutput)
-    rData <- optimizeRNN(tTree, gTree, gi, rData, dataPath)
   }
   else {
-    rOutput <- computeRNN(rOptions, rOutput)
     rData <- list(rOptions=rOptions, rOutput=rOutput)
+    rData <- optimizeRNN(tTree, gTree, gi, rData, dataPath)
   }
     
   writeGames(rData, T, dataPath)

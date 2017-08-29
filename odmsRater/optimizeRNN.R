@@ -4,6 +4,10 @@ optimizeRNN <- function(tTree, gTree, gi, rData, dataPath) {
   rData <- list(rOptions=rOptions, rOutput=rOutput)
   x <- trainRNN(rData, dataPath)
   rData <- updateRNN(x, rData)
+  rOptions <- rData[["rOptions"]]
+  rOptions$isOptimized <- TRUE
+  rData[["rOptions"]] <- rOptions
+  rData
 }
 
 trainRNN <- function(rData, dataPath) {
@@ -13,7 +17,7 @@ trainRNN <- function(rData, dataPath) {
   xLBd <- getModelLBd.RatingsOptions(rOptions)
   xUBd <- getModelUBd.RatingsOptions(rOptions)
   n <- length(x)
-  iterFile <- paste(dataPath, "odms-iters.csv", sep="")
+  iterFile <- paste(dataPath, rOptions$iterName, sep="")
   
   if (file.exists(iterFile)) {
     file.remove(iterFile)

@@ -1,20 +1,17 @@
-new.RatingsOptions <- function() {
+new.RatingsOptionsBivPois <- function() {
   rOptions <- list(
     # ODM layer
     b=0.3,
     c=0.3,
 
-    # Lin layer
+    # Ratings layer
     k=0.16,
 
-    # Poisson layer
+    # Bivariate Poisson layer
     meanGoals=1,
     strBeta=1.6,
     hA=0.32,
     corrBeta=-1,
-    theta=1,
-    tieBias=-3.2,
-    tieBeta=-4,  
 
     # Lower bounds for optimizable parameters
     bLBd=0.01,
@@ -24,9 +21,6 @@ new.RatingsOptions <- function() {
     strBetaLBd=0.01,
     hALBd=0,
     corrBetaLBd=-Inf,
-    thetaLBd=0.01,
-    tieBiasLBd=-Inf,
-    tieBetaLBd=-Inf,
     
     # Upper bounds for optimizable parameters
     bUBd=Inf,
@@ -36,9 +30,6 @@ new.RatingsOptions <- function() {
     strBetaUBd=Inf,
     hAUBd=Inf,
     corrBetaUBd=0,
-    thetaUBd=Inf,
-    tieBias=Inf,
-    tieBeta=-1,
     
     # Non-optimizable paramters
     fTree=list(
@@ -56,9 +47,12 @@ new.RatingsOptions <- function() {
         "very low"=2/6
     ),
     dateFormat="%m/%d/%y",
+    isOptimized=FALSE,
+    iterName="odms-iter-bivpois.csv",
     minUpdatesUntilReliable=10,
-    pGoalsMatSize=20,
     odmIter=10,
+    pGoalsMatSize=20,
+    writeName="odms-matches-bivpois.csv",
     
     # Regularization
     slopeCost=0,
@@ -74,7 +68,7 @@ new.RatingsOptions <- function() {
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
   rOptions$layersComputer <- constructLayersComputer.rOptions(rOptions)
 
-  class(rOptions) <- "RatingsOptions"
+  class(rOptions) <- c("RatingsOptionsBivPois", "RatingsOptions")
   rOptions
 }
 
@@ -84,10 +78,7 @@ constructLayersComputer.rOptions <- function(rOptions) {
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
 
     if (game$isRelevant) {
-      gamePredictionBivPois <- computeLayerBivPois(game, rOptions)
-      gamePredictionPois <- computeLayerPois(game, rOptions)
-      gamePrediction <- computeLayerMixture(game,
-          gamePredictionBivPois, gamePredictionPois, rOptions)
+      gamePrediction <- computeLayerBivPois(game, rOptions)
     }
     else {
       gamePrediction = NULL
@@ -105,24 +96,21 @@ getModel.RatingsOptions <- function(rOptions) {
   c(rOptions$b, rOptions$c,
     rOptions$k,
     rOptions$meanGoals, rOptions$strBeta, rOptions$hA,
-        rOptions$corrBeta,
-        rOptions$theta, rOptions$tieBias, rOptions$tieBeta)
+        rOptions$corrBeta)
 }
 
 getModelLBd.RatingsOptions <- function(rOptions) {
   c(rOptions$bLBd, rOptions$cLBd,
     rOptions$kLBd,
     rOptions$meanGoalsLBd, rOptions$strBetaLBd, rOptions$hALBd,
-        rOptions$corrBetaLBd,
-        rOptions$thetaLBd, rOptions$tieBiasLBd, rOptions$tieBetaLBd)
+        rOptions$corrBetaLBd)
 }
 
 getModelUBd.RatingsOptions <- function(rOptions) {
   c(rOptions$bUBd, rOptions$cUBd,
     rOptions$kUBd,
     rOptions$meanGoalsUBd, rOptions$strBetaUBd, rOptions$hAUBd,
-        rOptions$corrBetaUBd,
-        rOptions$thetaUBd, rOptions$tieBiasLBd, rOptions$tieBetaLBd)
+        rOptions$corrBetaUBd)
 }
 
 update.RatingsOptions <- function(rOptions, x) {
@@ -133,9 +121,6 @@ update.RatingsOptions <- function(rOptions, x) {
   rOptions$strBeta <- x[5]
   rOptions$hA <- x[6]
   rOptions$corrBeta <- x[7]
-  rOptions$theta <- x[8]
-  rOptions$tieBias <- x[9]
-  rOptions$tieBeta <- x[10]
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
   rOptions$slopeCost <- rOptions$slopeCostReg *
       norm(matrix(c(rOptions$b, rOptions$strBeta, rOptions$hA)), "f")
@@ -150,7 +135,4 @@ print.RatingsOptions <- function(rOptions) {
   print(noquote(sprintf("strBeta = %f", rOptions$strBeta)))
   print(noquote(sprintf("ha = %f", rOptions$hA)))
   print(noquote(sprintf("corr = %f", rOptions$corrBeta)))
-  print(noquote(sprintf("theta = %f", rOptions$theta)))
-  print(noquote(sprintf("tieBias = %f", rOptions$tieBias)))
-  print(noquote(sprintf("tieBeta = %f", rOptions$tieBeta)))
 }

@@ -1,9 +1,10 @@
 writeGames <- function(rData, T, dataPath) {
+  rOptions <- rData[["rOptions"]]
   rOutput <- rData[["rOutput"]]
   T <- getGamesData(rOutput$gi, T)
-  outFile <- paste(dataPath, "odms-matches", sep="")
+  outFile <- paste(dataPath, rOptions$writeName, sep="")
   save(rData, file=paste(outFile, ".RData", sep=""))
-  write.csv(T, paste(outFile, ".csv", sep=""), row.names=FALSE)
+  write.csv(T, outfile, row.names=FALSE)
 }
 
 getGamesData <- function(gi, T) {

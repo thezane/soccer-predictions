@@ -10,7 +10,14 @@ computeLayerBivPois <- function(game, rOptions) {
       homeStr, awayStr)
   pGoals <- computePGoals(lambdas, rOptions)
   goalsExpected <- c(lambdas[1], lambdas[2]) + lambdas[3]
-  gamePrediction <- list(goalsExpected=goalsExpected, pGoals=pGoals)
+  goals <- game$goals
+  p <- pGoals[goals[1] + 1, goals[2] + 1]
+  gamePrediction <- list()
+  gamePrediction[["goalsExpected"]] <- goalsExpected
+  gamePrediction[["pGoals"]] <- pGoals
+  gamePrediction[["p"]] <- p
+  gamePrediction[["strNormBeta"]] <- game$strNormBeta
+  gamePrediction[["strAgg"]] <- game$strAgg
   gamePrediction
 }
 
