@@ -15,6 +15,8 @@ computeRNN <- function(rOptions, rOutput) {
       game <- event
       game <- normalizeGoals.Game(game, rOptions)
       strPrereqs <- constructStrPrereqs(rOptions, game, tTree)
+      game <- strPrereqs[["game"]]
+      tTree <- strPrereqs[["tTree"]]
       layerOutput <- rOptions$layersComputer(rOptions, game)
       gamePrediction <- layerOutput[["gamePrediction"]]
       strNextNorm <- layerOutput[["strNextNorm"]]
@@ -90,7 +92,7 @@ updateCost <- function(rOutput, gamePrediction, game, gamePrev) {
     game$Ps <- resultExpected
   
     # Update cost of goals
-    p <- gamePrediction$p
+    p <- gamePrediction[["p"]]
     reliability <- game$reliability
     weight <- game$weight
     weightCost <- min(reliability) * weight
