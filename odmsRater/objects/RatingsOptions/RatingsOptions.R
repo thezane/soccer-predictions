@@ -79,13 +79,14 @@ new.RatingsOptions <- function() {
 
   rOptions$currentDate <- as.Date("6/11/14", rOptions$dateFormat)
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
-  rOptions$layersComputer <- constructLayersComputer.rOptions(rOptions)
+  rOptions$layersComputer <-
+      constructLayersComputer.RatingsOptions(rOptions)
 
   class(rOptions) <- "RatingsOptions"
   rOptions
 }
 
-constructLayersComputer.rOptions <- function(rOptions) {
+constructLayersComputer.RatingsOptions <- function(rOptions) {
   computeLayers <- function(rOptions, game) {
     strPostNorm <- computeLayerOdm(game, rOptions)
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)

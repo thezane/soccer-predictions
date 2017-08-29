@@ -8,7 +8,7 @@ computeLayerMixture <- function (game, gamePredictionBivPois,
   awayStr <- strNorm[2, ]
   p <- computeMixtureWeight(rOptions$tieBias, rOptions$tieBeta,
       game$strAgg)
-  gamePrediction <- computeGamePrediction(p, gamePredictionBivPois,
+  gamePrediction <- computePrediction(p, gamePredictionBivPois,
       gamePredictionPois)
   goals <- game$goals
   pGoals <- gamePrediction[["pGoals"]]
@@ -23,7 +23,7 @@ computeMixtureWeight <- function(tieBias, tieBeta, strAgg) {
   plogis(tieBias + tieBeta * abs(diff(strAgg)))
 }
 
-computeGamePrediction <- function(p, gamePredictionBivPois,
+computePrediction <- function(p, gamePredictionBivPois,
     gamePredictionPois) {
   goalsExpectedBivPois <- gamePredictionBivPois[["goalsExpected"]]
   goalsExpectedPois <- gamePredictionPois[["goalsExpected"]]
@@ -38,5 +38,6 @@ computeGamePrediction <- function(p, gamePredictionBivPois,
       sum(pGoals[upper.tri(pGoals)]))
   gamePrediction <- list(goalsExpected=goalsExpected, pGoals=pGoals,
       pWinTieLose=pWinTieLose)
+  browser()
   gamePrediction
 }

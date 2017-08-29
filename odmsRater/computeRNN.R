@@ -86,7 +86,7 @@ updateCost <- function(rOutput, gamePrediction, game, gamePrev) {
 
   if (game$isRelevant) {
     # Update cost of outcome
-    resultExpected <- gamePrediction[["pWinTieLoss"]]
+    resultExpected <- gamePrediction[["pWinTieLose"]]
     resultActual <- game$outcome
     game <- computeSSE.Game(game, resultExpected, resultActual)
     game$Ps <- resultExpected

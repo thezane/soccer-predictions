@@ -8,13 +8,10 @@ computeLayerBivPois <- function(game, rOptions) {
   awayStr <- strNorm[2, ]
   lambdas <- computeLambdas(rOptions, homeMeanGoals, awayMeanGoals,
       homeStr, awayStr)
-  pGoals <- computePGoals(lambdas, rOptions)
-  goalsExpected <- c(lambdas[1], lambdas[2]) + lambdas[3]
+  gamePrediction <- computePredictionBivPois(lambdas, rOptions)
   goals <- game$goals
+  pGoals <- gamePrediction[["pGoals"]]
   p <- pGoals[goals[1] + 1, goals[2] + 1]
-  gamePrediction <- list()
-  gamePrediction[["goalsExpected"]] <- goalsExpected
-  gamePrediction[["pGoals"]] <- pGoals
   gamePrediction[["p"]] <- p
   gamePrediction[["strNormBeta"]] <- game$strNormBeta
   gamePrediction[["strAgg"]] <- game$strAgg
@@ -32,9 +29,11 @@ computeLambdas <- function(rOptions, homeMeanGoals, awayMeanGoals,
   lambdas
 }
 
-computePGoals <- function(lambdas, rOptions) {
+computePredictionBivPois <- function(lambdas, rOptions) {
+  goalsExpected <- c(lambdas[1], lambdas[2]) + lambdas[3]
   n <- rOptions$pGoalsMatSize
   pGoals <- matrix(0, nrow=n, ncol=n)
+  pWinTieLose <- c(0, 0, 0)
   i <- 1
   
   while (i <= n) {
@@ -43,12 +42,17 @@ computePGoals <- function(lambdas, rOptions) {
     while (j <= n) {
       homeGoals <- i - 1
       awayGoals <- j - 1
-      pGoals[i, j] <- pbivpois(homeGoals, awayGoals, lambdas)
+      p <- pbivpois(homeGoals, awayGoals, lambdas)
+      pGoals[i, j] <- p
+      pWinTieLose <- pWinTieLose + p * as.numeric(
+          c(i > j, i == j, i < j))
       j <- j + 1
     }
     
     i <- i + 1
   }
   
-  pGoals
+  gamePrediction <- list(goalsExpected=goalsExpected, pGoals=pGoals,
+      pWinTieLose=pWinTieLose)
+  gamePrediction
 }

@@ -66,13 +66,14 @@ new.RatingsOptionsBivPois <- function() {
 
   rOptions$currentDate <- as.Date("6/11/14", rOptions$dateFormat)
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
-  rOptions$layersComputer <- constructLayersComputer.rOptions(rOptions)
+  rOptions$layersComputer <-
+      constructLayersComputer.RatingsOptionsBivPois(rOptions)
 
   class(rOptions) <- c("RatingsOptionsBivPois", "RatingsOptions")
   rOptions
 }
 
-constructLayersComputer.rOptions <- function(rOptions) {
+constructLayersComputer.RatingsOptionsBivPois <- function(rOptions) {
   computeLayers <- function(rOptions, game) {
     strPostNorm <- computeLayerOdm(game, rOptions)
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
@@ -92,28 +93,28 @@ constructLayersComputer.rOptions <- function(rOptions) {
   computeLayers
 }
 
-getModel.RatingsOptions <- function(rOptions) {
+getModel.RatingsOptionsBivPois <- function(rOptions) {
   c(rOptions$b, rOptions$c,
     rOptions$k,
     rOptions$meanGoals, rOptions$strBeta, rOptions$hA,
         rOptions$corrBeta)
 }
 
-getModelLBd.RatingsOptions <- function(rOptions) {
+getModelLBd.RatingsOptionsBivPois <- function(rOptions) {
   c(rOptions$bLBd, rOptions$cLBd,
     rOptions$kLBd,
     rOptions$meanGoalsLBd, rOptions$strBetaLBd, rOptions$hALBd,
         rOptions$corrBetaLBd)
 }
 
-getModelUBd.RatingsOptions <- function(rOptions) {
+getModelUBd.RatingsOptionsBivPois <- function(rOptions) {
   c(rOptions$bUBd, rOptions$cUBd,
     rOptions$kUBd,
     rOptions$meanGoalsUBd, rOptions$strBetaUBd, rOptions$hAUBd,
         rOptions$corrBetaUBd)
 }
 
-update.RatingsOptions <- function(rOptions, x) {
+update.RatingsOptionsBivPois <- function(rOptions, x) {
   rOptions$b <- x[1]
   rOptions$c <- x[2]
   rOptions$k <- x[3]
@@ -127,7 +128,7 @@ update.RatingsOptions <- function(rOptions, x) {
   rOptions
 }
 
-print.RatingsOptions <- function(rOptions) {
+print.RatingsOptionsBivPois <- function(rOptions) {
   print(noquote(sprintf("b = %f", rOptions$b)))
   print(noquote(sprintf("c = %f", rOptions$c)))
   print(noquote(sprintf("k = %f", rOptions$k)))
