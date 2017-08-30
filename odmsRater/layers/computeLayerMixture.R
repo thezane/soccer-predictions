@@ -14,8 +14,6 @@ computeLayerMixture <- function (game, gamePredictionBivPois,
   pGoals <- gamePrediction[["pGoals"]]
   p <- pGoals[goals[1] + 1, goals[2] + 1]
   gamePrediction[["p"]] <- p
-  gamePrediction[["strNormBeta"]] <- game$strNormBeta
-  gamePrediction[["strAgg"]] <- game$strAgg
   gamePrediction
 }
 
@@ -36,7 +34,12 @@ computePrediction <- function(p, gamePredictionBivPois,
       sum(pGoals[lower.tri(pGoals)]),
       sum(diag(pGoals)),
       sum(pGoals[upper.tri(pGoals)]))
-  gamePrediction <- list(goalsExpected=goalsExpected, pGoals=pGoals,
-      pWinTieLose=pWinTieLose)
+  gamePrediction <- list()
+  gamePrediction[["goalsExpected"]] <- goalsExpected
+  gamePrediction[["pGoals"]] <- pGoals
+  gamePrediction[["pWinTieLose"]] <- pWinTieLose
+  gamePrediction[["strNormBeta"]] <-
+      gamePredictionBivPois[["strNormBeta"]]
+  gamePrediction[["strAgg"]] <- gamePredictionBivPois[["strAgg"]]
   gamePrediction
 }

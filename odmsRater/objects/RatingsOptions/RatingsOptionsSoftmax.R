@@ -1,4 +1,4 @@
-new.RatingsOptions <- function() {
+new.RatingsOptionsSoftmax <- function() {
   rOptions <- list(
     # ODM layer
     b=0.3,
@@ -7,18 +7,12 @@ new.RatingsOptions <- function() {
     # Ratings layer
     k=0.16,
 
-    # Bivariate Poisson layer
+    # Softmax layer
     meanGoals=1,
     strBeta=1.6,
     hA=0.32,
-    corrBeta=-1,
-    
-    # Poisson layer
-    theta=1,
-    
-    # Mixture layer
-    tieBias=-3.2,
-    tieBeta=-4,  
+    tieBias=1,
+    tieBeta=-2,  
 
     # Lower bounds for optimizable parameters
     bLBd=0.01,
@@ -27,8 +21,6 @@ new.RatingsOptions <- function() {
     meanGoalsLBd=0.01,
     strBetaLBd=0.01,
     hALBd=0,
-    corrBetaLBd=-Inf,
-    thetaLBd=0.01,
     tieBiasLBd=-Inf,
     tieBetaLBd=-Inf,
     
@@ -39,10 +31,8 @@ new.RatingsOptions <- function() {
     meanGoalsUBd=Inf,
     strBetaUBd=Inf,
     hAUBd=Inf,
-    corrBetaUBd=0,
-    thetaUBd=Inf,
     tieBiasUBd=Inf,
-    tieBetaUBd=-1,
+    tieBetaUBd=Inf,
     
     # Non-optimizable paramters
     fTree=list(
@@ -61,11 +51,11 @@ new.RatingsOptions <- function() {
     ),
     dateFormat="%m/%d/%y",
     isOptimized=FALSE,
-    iterName="odms-iter.csv",
+    iterName="odms-iter-softmax.csv",
     minUpdatesUntilReliable=10,
     odmIter=10,
     pGoalsMatSize=20,
-    writeName="odms-matches.csv",
+    writeName="odms-matches-softmax.csv",
     
     # Regularization
     slopeCost=0,
@@ -80,22 +70,19 @@ new.RatingsOptions <- function() {
   rOptions$currentDate <- as.Date("6/11/14", rOptions$dateFormat)
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
   rOptions$layersComputer <-
-      constructLayersComputer.RatingsOptions(rOptions)
+      constructLayersComputer.RatingsOptionsSoftmax(rOptions)
 
-  class(rOptions) <- "RatingsOptions"
+  class(rOptions) <- c("RatingsOptionsSoftmax", "RatingsOptions")
   rOptions
 }
 
-constructLayersComputer.RatingsOptions <- function(rOptions) {
+constructLayersComputer.RatingsOptionsSoftmax <- function(rOptions) {
   computeLayers <- function(rOptions, game) {
     strPostNorm <- computeLayerOdm(game, rOptions)
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
 
     if (game$isRelevant) {
-      gamePredictionBivPois <- computeLayerBivPois(game, rOptions)
-      gamePredictionPois <- computeLayerPois(game, rOptions)
-      gamePrediction <- computeLayerMixture(game,
-          gamePredictionBivPois, gamePredictionPois, rOptions)
+      gamePrediction <- computeLayerSoftmax(game, rOptions)
     }
     else {
       gamePrediction = NULL
@@ -109,72 +96,49 @@ constructLayersComputer.RatingsOptions <- function(rOptions) {
   computeLayers
 }
 
-getModel <- function(class) {
-  UseMethod("getModel")
-}
-
-getModel.RatingsOptions <- function(rOptions) {
+getModel.RatingsOptionsSoftmax <- function(rOptions) {
   c(rOptions$b, rOptions$c,
     rOptions$k,
     rOptions$meanGoals, rOptions$strBeta, rOptions$hA,
-        rOptions$corrBeta,
-        rOptions$theta, rOptions$tieBias, rOptions$tieBeta)
+        rOptions$tieBias, rOptions$tieBeta)
 }
 
-getModelLBd <- function(class) {
-  UseMethod("getModelLBd")
-}
-
-getModelLBd.RatingsOptions <- function(rOptions) {
+getModelLBd.RatingsOptionsSoftmax <- function(rOptions) {
   c(rOptions$bLBd, rOptions$cLBd,
     rOptions$kLBd,
     rOptions$meanGoalsLBd, rOptions$strBetaLBd, rOptions$hALBd,
-        rOptions$corrBetaLBd,
-        rOptions$thetaLBd, rOptions$tieBiasLBd, rOptions$tieBetaLBd)
+        rOptions$tieBiasLBd, rOptions$tieBetaLBd)
 }
 
-getModelUBd <- function(class) {
-  UseMethod("getModelUBd")
-}
-
-getModelUBd.RatingsOptions <- function(rOptions) {
+getModelUBd.RatingsOptionsSoftmax <- function(rOptions) {
   c(rOptions$bUBd, rOptions$cUBd,
     rOptions$kUBd,
     rOptions$meanGoalsUBd, rOptions$strBetaUBd, rOptions$hAUBd,
-        rOptions$corrBetaUBd,
-        rOptions$thetaUBd, rOptions$tieBiasUBd, rOptions$tieBetaUBd)
+        rOptions$tieBiasUBd, rOptions$tieBetaUBd)
 }
 
-update <- function(class, x) {
-  UseMethod("update")
-}
-
-update.RatingsOptions <- function(rOptions, x) {
+update.RatingsOptionsSoftmax <- function(rOptions, x) {
   rOptions$b <- x[1]
   rOptions$c <- x[2]
   rOptions$k <- x[3]
   rOptions$meanGoals <- x[4]
   rOptions$strBeta <- x[5]
   rOptions$hA <- x[6]
-  rOptions$corrBeta <- x[7]
-  rOptions$theta <- x[8]
-  rOptions$tieBias <- x[9]
-  rOptions$tieBeta <- x[10]
+  rOptions$tieBias <- x[7]
+  rOptions$tieBeta <- x[8]
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
   rOptions$slopeCost <- rOptions$slopeCostReg *
       norm(matrix(c(rOptions$b, rOptions$strBeta, rOptions$hA)), "f")
   rOptions
 }
 
-print.RatingsOptions <- function(rOptions) {
+print.RatingsOptionsSoftmax <- function(rOptions) {
   print(noquote(sprintf("b = %f", rOptions$b)))
   print(noquote(sprintf("c = %f", rOptions$c)))
   print(noquote(sprintf("k = %f", rOptions$k)))
   print(noquote(sprintf("mu = %f", rOptions$meanGoals)))
   print(noquote(sprintf("strBeta = %f", rOptions$strBeta)))
   print(noquote(sprintf("ha = %f", rOptions$hA)))
-  print(noquote(sprintf("corr = %f", rOptions$corrBeta)))
-  print(noquote(sprintf("theta = %f", rOptions$theta)))
   print(noquote(sprintf("tieBias = %f", rOptions$tieBias)))
   print(noquote(sprintf("tieBeta = %f", rOptions$tieBeta)))
 }

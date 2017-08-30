@@ -1,4 +1,5 @@
-# Compute probability of each scoreline with model parameters rOptions.
+# Compute probability of each scoreline with bivariate poisson model
+# and model parameters rOptions.
 computeLayerBivPois <- function(game, rOptions) {
   meanGoals <- game$meanGoals
   homeMeanGoals <- meanGoals[1]
@@ -21,9 +22,9 @@ computeLayerBivPois <- function(game, rOptions) {
 computeLambdas <- function(rOptions, homeMeanGoals, awayMeanGoals,
     homeStr, awayStr) {
   lambda1Log <- log(homeMeanGoals) +
-      rOptions$strBeta * (awayStr[2] + homeStr[1])
+      rOptions$strBeta * (homeStr[1] + awayStr[2])
   lambda2Log <- log(awayMeanGoals) +
-      rOptions$strBeta * (homeStr[2] + awayStr[1])
+      rOptions$strBeta * (awayStr[1] + homeStr[2])
   lambda3Log <- rOptions$corrBeta
   lambdas <- exp(c(lambda1Log, lambda2Log, lambda3Log))
   lambdas
