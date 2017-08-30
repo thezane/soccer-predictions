@@ -109,12 +109,20 @@ constructLayersComputer.RatingsOptions <- function(rOptions) {
   computeLayers
 }
 
+getModel <- function(class) {
+  UseMethod("getModel")
+}
+
 getModel.RatingsOptions <- function(rOptions) {
   c(rOptions$b, rOptions$c,
     rOptions$k,
     rOptions$meanGoals, rOptions$strBeta, rOptions$hA,
         rOptions$corrBeta,
         rOptions$theta, rOptions$tieBias, rOptions$tieBeta)
+}
+
+getModelLBd <- function(class) {
+  UseMethod("getModelLBd")
 }
 
 getModelLBd.RatingsOptions <- function(rOptions) {
@@ -125,12 +133,20 @@ getModelLBd.RatingsOptions <- function(rOptions) {
         rOptions$thetaLBd, rOptions$tieBiasLBd, rOptions$tieBetaLBd)
 }
 
+getModelUBd <- function(class) {
+  UseMethod("getModelUBd")
+}
+
 getModelUBd.RatingsOptions <- function(rOptions) {
   c(rOptions$bUBd, rOptions$cUBd,
     rOptions$kUBd,
     rOptions$meanGoalsUBd, rOptions$strBetaUBd, rOptions$hAUBd,
         rOptions$corrBetaUBd,
         rOptions$thetaUBd, rOptions$tieBiasLBd, rOptions$tieBetaLBd)
+}
+
+update <- function(class, x) {
+  UseMethod("update")
 }
 
 update.RatingsOptions <- function(rOptions, x) {

@@ -4,7 +4,7 @@ writeGames <- function(rData, T, dataPath) {
   T <- getGamesData(rOutput$gi, T)
   outFile <- paste(dataPath, rOptions$writeName, sep="")
   save(rData, file=paste(outFile, ".RData", sep=""))
-  write.csv(T, outfile, row.names=FALSE)
+  write.csv(T, outFile, row.names=FALSE)
 }
 
 getGamesData <- function(gi, T) {
