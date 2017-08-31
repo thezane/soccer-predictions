@@ -1,4 +1,4 @@
-new.RatingsOptions <- function() {
+new.RatingsOptionsOdmMod <- function() {
   rOptions <- list(
     # ODM layer
     b=0.3,
@@ -80,13 +80,13 @@ new.RatingsOptions <- function() {
   rOptions$currentDate <- as.Date("6/11/14", rOptions$dateFormat)
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
   rOptions$layersComputer <-
-      constructLayersComputer.RatingsOptions(rOptions)
+      constructLayersComputer.RatingsOptionsOdmMod(rOptions)
 
   class(rOptions) <- "RatingsOptions"
   rOptions
 }
 
-constructLayersComputer.RatingsOptions <- function(rOptions) {
+constructLayersComputer.RatingsOptionsOdmMod <- function(rOptions) {
   computeLayers <- function(rOptions, game) {
     strPostNorm <- computeLayerOdm(game, rOptions)
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
@@ -109,11 +109,7 @@ constructLayersComputer.RatingsOptions <- function(rOptions) {
   computeLayers
 }
 
-getModel <- function(class) {
-  UseMethod("getModel")
-}
-
-getModel.RatingsOptions <- function(rOptions) {
+getModel.RatingsOptionsOdmMod <- function(rOptions) {
   c(rOptions$b, rOptions$c,
       rOptions$k,
       rOptions$meanGoals, rOptions$strBeta, rOptions$hA,
@@ -121,11 +117,8 @@ getModel.RatingsOptions <- function(rOptions) {
           rOptions$theta, rOptions$tieBias, rOptions$tieBeta)
 }
 
-getModelLBd <- function(class) {
-  UseMethod("getModelLBd")
-}
 
-getModelLBd.RatingsOptions <- function(rOptions) {
+getModelLBd.RatingsOptionsOdmMod <- function(rOptions) {
   c(rOptions$bLBd, rOptions$cLBd,
       rOptions$kLBd,
       rOptions$meanGoalsLBd, rOptions$strBetaLBd, rOptions$hALBd,
@@ -133,11 +126,8 @@ getModelLBd.RatingsOptions <- function(rOptions) {
           rOptions$thetaLBd, rOptions$tieBiasLBd, rOptions$tieBetaLBd)
 }
 
-getModelUBd <- function(class) {
-  UseMethod("getModelUBd")
-}
 
-getModelUBd.RatingsOptions <- function(rOptions) {
+getModelUBd.RatingsOptionsOdmMod <- function(rOptions) {
   c(rOptions$bUBd, rOptions$cUBd,
       rOptions$kUBd,
       rOptions$meanGoalsUBd, rOptions$strBetaUBd, rOptions$hAUBd,
@@ -145,21 +135,15 @@ getModelUBd.RatingsOptions <- function(rOptions) {
           rOptions$thetaUBd, rOptions$tieBiasUBd, rOptions$tieBetaUBd)
 }
 
-getSlopes <- function(class) {
-  UseMethod("getSlopes")
-}
 
-getSlopes.RatingsOptions <- function(rOptions) {
+getSlopes.RatingsOptionsOdmMod <- function(rOptions) {
   c(rOptions$b,
       rOptions$strBeta, rOptions$hA,
       rOptions$tieBeta)
 }
 
-update <- function(class, x) {
-  UseMethod("update")
-}
 
-update.RatingsOptions <- function(rOptions, x) {
+update.RatingsOptionsOdmMod <- function(rOptions, x) {
   rOptions$b <- x[1]
   rOptions$c <- x[2]
   rOptions$k <- x[3]
@@ -177,7 +161,7 @@ update.RatingsOptions <- function(rOptions, x) {
   rOptions
 }
 
-print.RatingsOptions <- function(rOptions) {
+print.RatingsOptionsOdmMod <- function(rOptions) {
   print(noquote(sprintf("b = %f", rOptions$b)))
   print(noquote(sprintf("c = %f", rOptions$c)))
   print(noquote(sprintf("k = %f", rOptions$k)))

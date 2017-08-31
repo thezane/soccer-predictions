@@ -1,4 +1,4 @@
-new.RatingsOptionsSoftmax <- function() {
+new.RatingsOptionsSoftmaxOdmMod <- function() {
   rOptions <- list(
     # ODM layer
     b=0.3,
@@ -70,13 +70,14 @@ new.RatingsOptionsSoftmax <- function() {
   rOptions$currentDate <- as.Date("6/11/14", rOptions$dateFormat)
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
   rOptions$layersComputer <-
-      constructLayersComputer.RatingsOptionsSoftmax(rOptions)
+      constructLayersComputer.RatingsOptionsSoftmaxOdmMod(rOptions)
 
   class(rOptions) <- c("RatingsOptionsSoftmax", "RatingsOptions")
   rOptions
 }
 
-constructLayersComputer.RatingsOptionsSoftmax <- function(rOptions) {
+constructLayersComputer.RatingsOptionsSoftmaxOdmMod <- function(
+    rOptions) {
   computeLayers <- function(rOptions, game) {
     strPostNorm <- computeLayerOdm(game, rOptions)
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
@@ -96,34 +97,34 @@ constructLayersComputer.RatingsOptionsSoftmax <- function(rOptions) {
   computeLayers
 }
 
-getModel.RatingsOptionsSoftmax <- function(rOptions) {
+getModel.RatingsOptionsSoftmaxOdmMod <- function(rOptions) {
   c(rOptions$b, rOptions$c,
     rOptions$k,
     rOptions$meanGoals, rOptions$strBeta, rOptions$hA,
         rOptions$tieBias, rOptions$tieBeta)
 }
 
-getModelLBd.RatingsOptionsSoftmax <- function(rOptions) {
+getModelLBd.RatingsOptionsSoftmaxOdmMod <- function(rOptions) {
   c(rOptions$bLBd, rOptions$cLBd,
     rOptions$kLBd,
     rOptions$meanGoalsLBd, rOptions$strBetaLBd, rOptions$hALBd,
         rOptions$tieBiasLBd, rOptions$tieBetaLBd)
 }
 
-getModelUBd.RatingsOptionsSoftmax <- function(rOptions) {
+getModelUBd.RatingsOptionsSoftmaxOdmMod <- function(rOptions) {
   c(rOptions$bUBd, rOptions$cUBd,
     rOptions$kUBd,
     rOptions$meanGoalsUBd, rOptions$strBetaUBd, rOptions$hAUBd,
         rOptions$tieBiasUBd, rOptions$tieBetaUBd)
 }
 
-getSlopes.RatingsOptionsSoftmax <- function(rOptions) {
+getSlopes.RatingsOptionsSoftmaxOdmMod <- function(rOptions) {
   c(rOptions$b,
       rOptions$strBeta, rOptions$hA,
       rOptions$tieBias)
 }
 
-update.RatingsOptionsSoftmax <- function(rOptions, x) {
+update.RatingsOptionsSoftmaxOdmMod <- function(rOptions, x) {
   rOptions$b <- x[1]
   rOptions$c <- x[2]
   rOptions$k <- x[3]
@@ -139,7 +140,7 @@ update.RatingsOptionsSoftmax <- function(rOptions, x) {
   rOptions
 }
 
-print.RatingsOptionsSoftmax <- function(rOptions) {
+print.RatingsOptionsSoftmaxOdmMod <- function(rOptions) {
   print(noquote(sprintf("b = %f", rOptions$b)))
   print(noquote(sprintf("c = %f", rOptions$c)))
   print(noquote(sprintf("k = %f", rOptions$k)))

@@ -1,4 +1,4 @@
-new.RatingsOptionsBivPois <- function() {
+new.RatingsOptionsBivPoisOdmMod <- function() {
   rOptions <- list(
     # ODM layer
     b=0.3,
@@ -67,13 +67,14 @@ new.RatingsOptionsBivPois <- function() {
   rOptions$currentDate <- as.Date("6/11/14", rOptions$dateFormat)
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
   rOptions$layersComputer <-
-      constructLayersComputer.RatingsOptionsBivPois(rOptions)
+      constructLayersComputer.RatingsOptionsBivPoisOdmMod(rOptions)
 
   class(rOptions) <- c("RatingsOptionsBivPois", "RatingsOptions")
   rOptions
 }
 
-constructLayersComputer.RatingsOptionsBivPois <- function(rOptions) {
+constructLayersComputer.RatingsOptionsBivPoisOdmMod <- function(
+    rOptions) {
   computeLayers <- function(rOptions, game) {
     strPostNorm <- computeLayerOdm(game, rOptions)
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
@@ -93,33 +94,33 @@ constructLayersComputer.RatingsOptionsBivPois <- function(rOptions) {
   computeLayers
 }
 
-getModel.RatingsOptionsBivPois <- function(rOptions) {
+getModel.RatingsOptionsBivPoisOdmMod <- function(rOptions) {
   c(rOptions$b, rOptions$c,
     rOptions$k,
     rOptions$meanGoals, rOptions$strBeta, rOptions$hA,
         rOptions$corrBeta)
 }
 
-getModelLBd.RatingsOptionsBivPois <- function(rOptions) {
+getModelLBd.RatingsOptionsBivPoisOdmMod <- function(rOptions) {
   c(rOptions$bLBd, rOptions$cLBd,
     rOptions$kLBd,
     rOptions$meanGoalsLBd, rOptions$strBetaLBd, rOptions$hALBd,
         rOptions$corrBetaLBd)
 }
 
-getModelUBd.RatingsOptionsBivPois <- function(rOptions) {
+getModelUBd.RatingsOptionsBivPoisOdmMod <- function(rOptions) {
   c(rOptions$bUBd, rOptions$cUBd,
     rOptions$kUBd,
     rOptions$meanGoalsUBd, rOptions$strBetaUBd, rOptions$hAUBd,
         rOptions$corrBetaUBd)
 }
 
-getSlopes.RatingsOptionsBivPois <- function(rOptions) {
+getSlopes.RatingsOptionsBivPoisOdmMod <- function(rOptions) {
   c(rOptions$b,
       rOptions$strBeta, rOptions$hA)
 }
 
-update.RatingsOptionsBivPois <- function(rOptions, x) {
+update.RatingsOptionsBivPoisOdmMod <- function(rOptions, x) {
   rOptions$b <- x[1]
   rOptions$c <- x[2]
   rOptions$k <- x[3]
@@ -134,7 +135,7 @@ update.RatingsOptionsBivPois <- function(rOptions, x) {
   rOptions
 }
 
-print.RatingsOptionsBivPois <- function(rOptions) {
+print.RatingsOptionsBivPoisOdmMod <- function(rOptions) {
   print(noquote(sprintf("b = %f", rOptions$b)))
   print(noquote(sprintf("c = %f", rOptions$c)))
   print(noquote(sprintf("k = %f", rOptions$k)))
