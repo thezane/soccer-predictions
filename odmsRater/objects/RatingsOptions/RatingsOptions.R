@@ -61,11 +61,11 @@ new.RatingsOptions <- function() {
     ),
     dateFormat="%m/%d/%y",
     isOptimized=FALSE,
-    iterName="odms-iter.csv",
+    iterName="odms-iter",
     minUpdatesUntilReliable=10,
     odmIter=10,
     pGoalsMatSize=20,
-    writeName="odms-matches.csv",
+    writeName="odms-matches",
     
     # Regularization
     slopeCost=0,

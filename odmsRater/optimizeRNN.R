@@ -17,7 +17,7 @@ trainRNN <- function(rData, outputPath) {
   xLBd <- getModelLBd(rOptions)
   xUBd <- getModelUBd(rOptions)
   n <- length(x)
-  iterFile <- paste(outputPath, rOptions$iterName, sep="")
+  iterFile <- paste(outputPath, rOptions$iterName, ".csv", sep="")
   
   if (file.exists(iterFile)) {
     file.remove(iterFile)

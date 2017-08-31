@@ -11,7 +11,7 @@ new.RatingsOptionsSoftmaxOdmMod <- function() {
     meanGoals=1,
     strBeta=1.6,
     hA=0.32,
-    tieBias=0,
+    tieBias=0.4,
     tieBeta=-2,  
 
     # Lower bounds for optimizable parameters
@@ -51,11 +51,11 @@ new.RatingsOptionsSoftmaxOdmMod <- function() {
     ),
     dateFormat="%m/%d/%y",
     isOptimized=FALSE,
-    iterName="odms-iter-softmax-odmmod.csv",
+    iterName="odms-iter-softmax-odmmod",
     minUpdatesUntilReliable=10,
     odmIter=1,
     pGoalsMatSize=20,
-    writeName="odms-matches-softmax-odmmod.csv",
+    writeName="odms-matches-softmax-odmmod",
     
     # Regularization
     slopeCost=0,

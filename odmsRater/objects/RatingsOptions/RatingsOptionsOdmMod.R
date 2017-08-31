@@ -61,11 +61,11 @@ new.RatingsOptionsOdmMod <- function() {
     ),
     dateFormat="%m/%d/%y",
     isOptimized=FALSE,
-    iterName="odms-iter-odmmod.csv",
+    iterName="odms-iter-odmmod",
     minUpdatesUntilReliable=10,
     odmIter=1,
     pGoalsMatSize=20,
-    writeName="odms-matches-odmmod.csv",
+    writeName="odms-matches-odmmod",
     
     # Regularization
     slopeCost=0,

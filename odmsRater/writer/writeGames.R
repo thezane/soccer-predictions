@@ -2,9 +2,10 @@ writeGames <- function(rData, T, outputPath) {
   rOptions <- rData[["rOptions"]]
   rOutput <- rData[["rOutput"]]
   T <- getGamesData(rOutput$gi, T)
-  outFile <- paste(outputPath, rOptions$writeName, sep="")
-  save(rData, file=paste(outFile, ".RData", sep=""))
+  outFile <- paste(outputPath, rOptions$writeName, ".csv", sep="")
+  outFileR <- paste(outputPath, rOptions$writeName, ".RData", sep="")
   write.csv(T, outFile, row.names=FALSE)
+  save(rData, file=outFileR)
 }
 
 getGamesData <- function(gi, T) {

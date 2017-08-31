@@ -48,11 +48,11 @@ new.RatingsOptionsBivPois <- function() {
     ),
     dateFormat="%m/%d/%y",
     isOptimized=FALSE,
-    iterName="odms-iter-bivpois.csv",
+    iterName="odms-iter-bivpois",
     minUpdatesUntilReliable=10,
     odmIter=10,
     pGoalsMatSize=20,
-    writeName="odms-matches-bivpois.csv",
+    writeName="odms-matches-bivpois",
     
     # Regularization
     slopeCost=0,
