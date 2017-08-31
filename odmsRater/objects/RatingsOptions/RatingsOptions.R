@@ -115,10 +115,10 @@ getModel <- function(class) {
 
 getModel.RatingsOptions <- function(rOptions) {
   c(rOptions$b, rOptions$c,
-    rOptions$k,
-    rOptions$meanGoals, rOptions$strBeta, rOptions$hA,
-        rOptions$corrBeta,
-        rOptions$theta, rOptions$tieBias, rOptions$tieBeta)
+      rOptions$k,
+      rOptions$meanGoals, rOptions$strBeta, rOptions$hA,
+          rOptions$corrBeta,
+          rOptions$theta, rOptions$tieBias, rOptions$tieBeta)
 }
 
 getModelLBd <- function(class) {
@@ -127,10 +127,10 @@ getModelLBd <- function(class) {
 
 getModelLBd.RatingsOptions <- function(rOptions) {
   c(rOptions$bLBd, rOptions$cLBd,
-    rOptions$kLBd,
-    rOptions$meanGoalsLBd, rOptions$strBetaLBd, rOptions$hALBd,
-        rOptions$corrBetaLBd,
-        rOptions$thetaLBd, rOptions$tieBiasLBd, rOptions$tieBetaLBd)
+      rOptions$kLBd,
+      rOptions$meanGoalsLBd, rOptions$strBetaLBd, rOptions$hALBd,
+          rOptions$corrBetaLBd,
+          rOptions$thetaLBd, rOptions$tieBiasLBd, rOptions$tieBetaLBd)
 }
 
 getModelUBd <- function(class) {
@@ -139,10 +139,20 @@ getModelUBd <- function(class) {
 
 getModelUBd.RatingsOptions <- function(rOptions) {
   c(rOptions$bUBd, rOptions$cUBd,
-    rOptions$kUBd,
-    rOptions$meanGoalsUBd, rOptions$strBetaUBd, rOptions$hAUBd,
-        rOptions$corrBetaUBd,
-        rOptions$thetaUBd, rOptions$tieBiasUBd, rOptions$tieBetaUBd)
+      rOptions$kUBd,
+      rOptions$meanGoalsUBd, rOptions$strBetaUBd, rOptions$hAUBd,
+          rOptions$corrBetaUBd,
+          rOptions$thetaUBd, rOptions$tieBiasUBd, rOptions$tieBetaUBd)
+}
+
+getSlopes <- function(class) {
+  UseMethod("getSlopes")
+}
+
+getSlopes.RatingsOptions <- function(rOptions) {
+  c(rOptions$b,
+      rOptions$strBeta, rOptions$hA,
+      rOptions$tieBeta)
 }
 
 update <- function(class, x) {
@@ -161,11 +171,9 @@ update.RatingsOptions <- function(rOptions, x) {
   rOptions$tieBias <- x[9]
   rOptions$tieBeta <- x[10]
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
-  rOptions$slopeCost <- rOptions$slopeCostReg * norm(matrix(c(
-      rOptions$b,
-      rOptions$strBeta,
-      rOptions$hA,
-      rOptions$tieBeta)), "f")
+  slopes <- getSlopes.RatingsOptions(rOptions)
+  rOptions$slopeCost <- rOptions$slopeCostReg *
+      (t(slopes) %*% slopes) / length(slopes)
   rOptions
 }
 

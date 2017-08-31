@@ -114,6 +114,11 @@ getModelUBd.RatingsOptionsBivPois <- function(rOptions) {
         rOptions$corrBetaUBd)
 }
 
+getSlopes.RatingsOptionsBivPois <- function(rOptions) {
+  c(rOptions$b,
+      rOptions$strBeta, rOptions$hA)
+}
+
 update.RatingsOptionsBivPois <- function(rOptions, x) {
   rOptions$b <- x[1]
   rOptions$c <- x[2]
@@ -123,10 +128,9 @@ update.RatingsOptionsBivPois <- function(rOptions, x) {
   rOptions$hA <- x[6]
   rOptions$corrBeta <- x[7]
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
-  rOptions$slopeCost <- rOptions$slopeCostReg * norm(matrix(c(
-      rOptions$b,
-      rOptions$strBeta,
-      rOptions$hA)), "f")
+  slopes <- getSlopes.RatingsOptions(rOptions)
+  rOptions$slopeCost <- rOptions$slopeCostReg *
+      (t(slopes) %*% slopes) / length(slopes)
   rOptions
 }
 

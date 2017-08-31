@@ -117,6 +117,12 @@ getModelUBd.RatingsOptionsSoftmax <- function(rOptions) {
         rOptions$tieBiasUBd, rOptions$tieBetaUBd)
 }
 
+getSlopes.RatingsOptionsSoftmax(rOptions) {
+  c(rOptions$b,
+      rOptions$strBeta, rOptions$hA,
+      rOptions$tieBias)
+}
+
 update.RatingsOptionsSoftmax <- function(rOptions, x) {
   rOptions$b <- x[1]
   rOptions$c <- x[2]
@@ -127,11 +133,9 @@ update.RatingsOptionsSoftmax <- function(rOptions, x) {
   rOptions$tieBias <- x[7]
   rOptions$tieBeta <- x[8]
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
-  rOptions$slopeCost <- rOptions$slopeCostReg * norm(matrix(c(
-      rOptions$b,
-      rOptions$strBeta,
-      rOptions$hA,
-      rOptions$tieBias)), "f")
+  slopes <- getSlopes.RatingsOptions(rOptions)
+  rOptions$slopeCost <- rOptions$slopeCostReg *
+      (t(slopes) %*% slopes) / length(slopes)
   rOptions
 }
 
