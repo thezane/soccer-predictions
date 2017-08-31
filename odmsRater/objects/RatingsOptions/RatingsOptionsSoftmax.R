@@ -117,7 +117,7 @@ getModelUBd.RatingsOptionsSoftmax <- function(rOptions) {
         rOptions$tieBiasUBd, rOptions$tieBetaUBd)
 }
 
-getSlopes.RatingsOptionsSoftmax(rOptions) {
+getSlopes.RatingsOptionsSoftmax <- function(rOptions) {
   c(rOptions$b,
       rOptions$strBeta, rOptions$hA,
       rOptions$tieBias)
