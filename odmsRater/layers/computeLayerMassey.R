@@ -1,1 +1,2 @@
-
+computeLayerMassey <- function(game, rOptions) {
+}

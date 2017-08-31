@@ -51,11 +51,11 @@ new.RatingsOptionsSoftmax <- function() {
     ),
     dateFormat="%m/%d/%y",
     isOptimized=FALSE,
-    iterName="odms-iter-softmax.csv",
+    iterName="odms-iter-softmax-odmmod.csv",
     minUpdatesUntilReliable=10,
-    odmIter=10,
+    odmIter=1,
     pGoalsMatSize=20,
-    writeName="odms-matches-softmax.csv",
+    writeName="odms-matches-softmax-odmmod.csv",
     
     # Regularization
     slopeCost=0,
