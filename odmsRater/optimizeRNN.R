@@ -1,8 +1,8 @@
-optimizeRNN <- function(tTree, gTree, gi, rData, dataPath) {
+optimizeRNN <- function(tTree, gTree, gi, rData, outputPath) {
   rOptions <- rData$rOptions
   rOutput <- rData$rOutput
   rData <- list(rOptions=rOptions, rOutput=rOutput)
-  x <- trainRNN(rData, dataPath)
+  x <- trainRNN(rData, outputPath)
   rData <- updateRNN(x, rData)
   rOptions <- rData[["rOptions"]]
   rOptions$isOptimized <- TRUE
@@ -10,14 +10,14 @@ optimizeRNN <- function(tTree, gTree, gi, rData, dataPath) {
   rData
 }
 
-trainRNN <- function(rData, dataPath) {
+trainRNN <- function(rData, outputPath) {
   rOptions <- rData[["rOptions"]]
   rOutput <- rData[["rOutput"]]
   x <- getModel(rOptions)
   xLBd <- getModelLBd(rOptions)
   xUBd <- getModelUBd(rOptions)
   n <- length(x)
-  iterFile <- paste(dataPath, rOptions$iterName, sep="")
+  iterFile <- paste(outputPath, rOptions$iterName, sep="")
   
   if (file.exists(iterFile)) {
     file.remove(iterFile)

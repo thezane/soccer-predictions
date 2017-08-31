@@ -1,6 +1,6 @@
-constructChanges <- function(rOptions, dataPath) {
+constructChanges <- function(rOptions, inputPath) {
   gTree <- hash()
-  changesSrc <- paste(dataPath, "changes.csv", sep="")
+  changesSrc <- paste(inputPath, "changes.csv", sep="")
   dateFormat <- rOptions$dateFormat
   T <- read.csv(changesSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)

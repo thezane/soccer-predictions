@@ -1,6 +1,6 @@
-constructTeams <- function(dataPath) {
+constructTeams <- function(inputPath) {
   tTree <- hash()
-  teamsSrc <- paste(dataPath, "teams.csv", sep="")
+  teamsSrc <- paste(inputPath, "teams.csv", sep="")
   T <- read.csv(teamsSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
   n <- nrow(T)

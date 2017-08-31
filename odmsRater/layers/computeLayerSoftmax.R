@@ -13,7 +13,7 @@ computeLayerSoftmax <- function(game, rOptions) {
   gamePrediction <- computePredictionSoftmax(zs)
   goals <- game$goals
   pWinTieLose <- gamePrediction[["pWinTieLose"]]
-  p <- pWinTieLose * as.numeric(c(
+  p <- pWinTieLose %*% as.numeric(c(
       goals[1] > goals[2],
       goals[1] == goals[2],
       goals[1] < goals[2]))

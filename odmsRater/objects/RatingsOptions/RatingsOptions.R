@@ -42,7 +42,7 @@ new.RatingsOptions <- function() {
     corrBetaUBd=0,
     thetaUBd=Inf,
     tieBiasUBd=Inf,
-    tieBetaUBd=-1,
+    tieBetaUBd=0,
     
     # Non-optimizable paramters
     fTree=list(
@@ -70,7 +70,7 @@ new.RatingsOptions <- function() {
     # Regularization
     slopeCost=0,
     strMeanCostReg=0.1,
-    slopeCostReg=0.001,
+    slopeCostReg=0.01,
 
     # L-BFGS-B parameters
     factr=1e-04 / .Machine$double.eps,
@@ -161,8 +161,11 @@ update.RatingsOptions <- function(rOptions, x) {
   rOptions$tieBias <- x[9]
   rOptions$tieBeta <- x[10]
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
-  rOptions$slopeCost <- rOptions$slopeCostReg *
-      norm(matrix(c(rOptions$b, rOptions$strBeta, rOptions$hA)), "f")
+  rOptions$slopeCost <- rOptions$slopeCostReg * norm(matrix(c(
+      rOptions$b,
+      rOptions$strBeta,
+      rOptions$hA,
+      rOptions$tieBeta)), "f")
   rOptions
 }
 

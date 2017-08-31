@@ -1,6 +1,6 @@
-constructGames <- function(gTree, rOptions, dataPath) {
+constructGames <- function(gTree, rOptions, inputPath) {
   dateFormat <- rOptions$dateFormat
-  matchSrc <- paste(dataPath, "matches.csv", sep="")
+  matchSrc <- paste(inputPath, "matches.csv", sep="")
   T <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
       stringsAsFactors=FALSE)
   T <- T[order(as.Date(T[["Date"]], format=dateFormat)), ]

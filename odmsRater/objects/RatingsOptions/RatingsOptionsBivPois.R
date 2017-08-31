@@ -57,7 +57,7 @@ new.RatingsOptionsBivPois <- function() {
     # Regularization
     slopeCost=0,
     strMeanCostReg=0.1,
-    slopeCostReg=0.001,
+    slopeCostReg=0.01,
 
     # L-BFGS-B parameters
     factr=1e-04 / .Machine$double.eps,
@@ -123,8 +123,10 @@ update.RatingsOptionsBivPois <- function(rOptions, x) {
   rOptions$hA <- x[6]
   rOptions$corrBeta <- x[7]
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
-  rOptions$slopeCost <- rOptions$slopeCostReg *
-      norm(matrix(c(rOptions$b, rOptions$strBeta, rOptions$hA)), "f")
+  rOptions$slopeCost <- rOptions$slopeCostReg * norm(matrix(c(
+      rOptions$b,
+      rOptions$strBeta,
+      rOptions$hA)), "f")
   rOptions
 }
 
