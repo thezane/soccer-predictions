@@ -94,10 +94,10 @@ updateCost <- function(rOutput, gamePrediction, game, gamePrev) {
     # Update cost of goals
     p <- gamePrediction[["p"]]
     reliability <- game$reliability
-    weight <- game$weight
-    weightCost <- min(reliability) * weight
+    weightContest <- game$weightContest
+    weightGame <- min(reliability) * weightContest
     dataset <- game$dataset
-    rOutput <- updateGoalsCost.RatingsOutput(rOutput, p, weightCost,
+    rOutput <- updateGoalsCost.RatingsOutput(rOutput, p, weightGame,
         dataset)
     costData <- list(rOutput=rOutput, game=game)
     costData

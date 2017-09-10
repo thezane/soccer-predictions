@@ -1,7 +1,6 @@
-new.Game <- function(T, i, rOptions, homeTeamName, awayTeamName,
-    gameDate) {
+new.Game <- function(T, i, rOptions, cTree,
+    homeTeamName, awayTeamName, gameDate) {
   contest <- T[[i, "Contest"]]
-  type <- T[[i, "Type"]]
   goals <- c(T[[i, "HomeGoals"]], T[[i, "AwayGoals"]])
   zeroesMat <- matrix(0, 2, 2)
   
@@ -36,20 +35,12 @@ new.Game <- function(T, i, rOptions, homeTeamName, awayTeamName,
     sse=0,
 
     # Contest
-    contest=contest,
-    isMajor=contest != "AFC Challenge Cup" &&
-        contest != "Copa Centroamericana" &&
-        contest != "Caribbean Cup",
-    type=type,
-    isFriendly=type=="Friendlies",
-    isQualifier=grepl("Qualifiers", type),
-    isPlayoff=grepl("Playoff", type),
-    isWorldCup=grepl("World Cup", contest)
+    contest=contest
   )
   
   game$dataset <- assignDataset.Game(game, rOptions$currentDate)
-  game$isRelevant <- computeRelevance.Game(game)
-  game$weight <- computeWeight.Game(game, rOptions)
+  game$isRelevant <- computeRelevance.Game(game, cTree)
+  game$weightContest <- computeWeight.Game(game, rOptions, cTree)
 
   class(game) <- "Game"
   game
@@ -66,27 +57,15 @@ assignDataset.Game <- function(game, currentDate) {
   dataset
 }
 
-computeRelevance.Game <- function(game) {
-  (!game$isFriendly && !game$isQualifier) || game$isPlayoff
+computeRelevance.Game <- function(game, cTree) {
+  contestData <- cTree[[game$contest]]
+  contestData[["relevance"]] == "high"
 }
 
-computeWeight.Game <- function(game, rOptions) {
+computeWeight.Game <- function(game, rOptions, cTree) {
   wTree = rOptions$wTree
-	
-  if (game$isWorldCup && !game$isQualifier && !game$isFriendly) {
-    weight = wTree[["very high"]]
-  }
-  else if (game$isMajor && !game$isQualifier && !game$isFriendly) {
-    weight = wTree[["high"]]
-  }
-  else if (!game$isFriendly) {
-    weight = wTree[["moderate"]]
-  }
-  else {
-    weight = wTree[["very low"]]
-  }
-
-  weight
+  contestData <- cTree[[game$contest]]
+  rOptions$wTree[[contestData[["weight"]]]]
 }
 
 computeReliability.Game <- function(game, rOptions,
@@ -94,9 +73,11 @@ computeReliability.Game <- function(game, rOptions,
   n <- rOptions$minUpdatesUntilReliable
   reliability <- c(1, 1)
   
+  # Home team played too few games but away team played enough games
   if (homeTeam$numUpdates < n && awayTeam$numUpdate >= n) {
     reliability[2] <- min(1, (1 + homeTeam$numUpdates) / (1 + n))
   }
+  # Away team played too few games but home team played enough games
   else if (awayTeam$numUpdates < n && homeTeam$numUpdates >= n) {
     reliability[1] <- min(1, (1 + awayTeam$numUpdates) / (1 + n))
   }

@@ -45,11 +45,11 @@ new.RatingsOptionsSoftmaxOdmMod <- function() {
     wTree=list(
         "very high"=1,
         "high"=5/6,
-        "moderate"=4/6,
+        "medium"=4/6,
         "low"=3/6,
         "very low"=2/6
     ),
-    dateFormat="%m/%d/%y",
+    dateFormat="%Y-%m-%d",
     isOptimized=FALSE,
     iterName="odms-iter-softmax-odmmod",
     minUpdatesUntilReliable=10,
@@ -67,7 +67,7 @@ new.RatingsOptionsSoftmaxOdmMod <- function() {
     lmm=10
   )
 
-  rOptions$currentDate <- as.Date("6/11/14", rOptions$dateFormat)
+  rOptions$currentDate <- as.Date("2014-06-11", rOptions$dateFormat)
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
   rOptions$layersComputer <-
       constructLayersComputer.RatingsOptionsSoftmaxOdmMod(rOptions)

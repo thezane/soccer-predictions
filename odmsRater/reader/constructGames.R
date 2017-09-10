@@ -1,4 +1,4 @@
-constructGames <- function(gTree, rOptions, inputPath) {
+constructGames <- function(gTree, cTree, rOptions, inputPath) {
   dateFormat <- rOptions$dateFormat
   matchSrc <- paste(inputPath, "matches.csv", sep="")
   T <- read.csv(matchSrc, header=TRUE, sep=",", quote="\"", 
@@ -11,8 +11,8 @@ constructGames <- function(gTree, rOptions, inputPath) {
     gameDate <- as.Date(T[[i, "Date"]], dateFormat)  
     homeTeamName <- T[[i, "HomeTeam"]]
     awayTeamName <- T[[i, "AwayTeam"]]
-    gameData <- addGame(T, i, rOptions,
-        gTree, homeTeamName, awayTeamName, gameDate)
+    gameData <- addGame(T, i, rOptions, gTree, cTree,
+        homeTeamName, awayTeamName, gameDate)
     gTree <- gameData[["gTree"]]
     tTree <- gameData[["tTree"]]
     game <- gameData[["game"]]
@@ -23,9 +23,9 @@ constructGames <- function(gTree, rOptions, inputPath) {
   gamesData
 }
 
-addGame <- function(T, i, rOptions, gTree, homeTeamName, awayTeamName,
-      gameDate) {
-  game <- new.Game(T, i, rOptions,
+addGame <- function(T, i, rOptions, gTree, cTree,
+      homeTeamName, awayTeamName, gameDate) {
+  game <- new.Game(T, i, rOptions, cTree,
       homeTeamName, awayTeamName, gameDate)
   gameDateStr <- game$gameDateStr
   

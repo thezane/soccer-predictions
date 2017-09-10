@@ -1,8 +1,9 @@
 from calendar import month_name
-from csv import writer
+from csv import DictWriter
 from datetime import date
 from io import BytesIO
 from lxml import etree
+import pandas
 import urllib.parse
 import urllib.request
 import pdb
@@ -22,7 +23,7 @@ def get_teams(url, data, headers) -> None:
     return ["http://www.eloratings.net/{}".format(team)
         for team in teams]
 
-def get_games(url, data, headers) -> None:
+def get_games(url, data, headers, fieldnames, writer) -> None:
   print("Getting games at: {}".format(url))
   req = urllib.request.Request(url, data, headers)
 
@@ -33,9 +34,9 @@ def get_games(url, data, headers) -> None:
     element_games = tree.xpath("//tr[@class='nh']")
    
     for element_game in element_games:
-      get_game(element_game)
+      get_game(element_game, fieldnames, writer)
 
-def get_game(element_game: "ElementTree") -> None:
+def get_game(element_game, fieldnames, writer) -> None:
   month_day_str_list = element_game[0].text.split()
   month_str = month_day_str_list[0]
 
@@ -58,7 +59,15 @@ def get_game(element_game: "ElementTree") -> None:
   home_goals = int(element_game[2].text)
   away_goals = int(element_game[2][0].tail)
   contest = element_game[3].text
-  home_advantage = home_team_name in element_game[3][0].tail
+  home_advantage = int(home_team_name in element_game[3][0].tail)
+  writer.writerow({
+      fieldnames[0]: home_team_name,
+      fieldnames[1]: away_team_name,
+      fieldnames[2]: date_str,
+      fieldnames[3]: contest,
+      fieldnames[4]: home_goals,
+      fieldnames[5]: away_goals,
+      fieldnames[6]: home_advantage})
 
 
 if __name__ == "__main__":
@@ -74,11 +83,24 @@ if __name__ == "__main__":
       "africa",
       "asia",
       "oceania"]
+  filename = "matches.csv"
 
-  for url_fed in urls_feds:
-    urls_teams = get_teams(
-        "http://www.eloratings.net/{}.html".format(url_fed),
-        data, headers)
+  with open(filename, "w") as csvfile:
+    fieldnames = ["HomeTeam", "AwayTeam", "Date", "Contest", 
+        "HomeGoals", "AwayGoals", "HomeAdvantage"]
+    writer = DictWriter(csvfile, delimiter=",", fieldnames=fieldnames, 
+        lineterminator="\n")
+    writer.writeheader()
 
-    for url_team in urls_teams:
-      get_games(url_team, data, headers)
+    for url_fed in urls_feds:
+      urls_teams = get_teams(
+          "http://www.eloratings.net/{}.html".format(url_fed),
+          data, headers)
+
+      for url_team in urls_teams:
+        get_games(url_team, data, headers, fieldnames, writer)
+
+  df = pandas.read_csv(filename, encoding="iso-8859-1", header=0,
+      sep=",")
+  df.drop_duplicates(subset=None, inplace=True)
+  df.to_csv(filename, index=False)
