@@ -10,7 +10,6 @@ new.RatingsOptions <- function() {
     # Bivariate Poisson layer
     meanGoals=1,
     strBeta=1.6,
-    hA=0.32,
     corrBeta=-1,
     
     # Poisson layer
@@ -26,7 +25,6 @@ new.RatingsOptions <- function() {
     kLBd=0,
     meanGoalsLBd=0.01,
     strBetaLBd=0.01,
-    hALBd=0,
     corrBetaLBd=-Inf,
     thetaLBd=0.01,
     tieBiasLBd=-Inf,
@@ -38,7 +36,6 @@ new.RatingsOptions <- function() {
     kUBd=1,
     meanGoalsUBd=Inf,
     strBetaUBd=Inf,
-    hAUBd=Inf,
     corrBetaUBd=0,
     thetaUBd=Inf,
     tieBiasUBd=Inf,
@@ -62,6 +59,7 @@ new.RatingsOptions <- function() {
     dateFormat="%Y-%m-%d",
     isOptimized=FALSE,
     iterName="odms-iter",
+    hA=0.32,
     minUpdatesUntilReliable=10,
     odmIter=10,
     pGoalsMatSize=20,
@@ -70,7 +68,7 @@ new.RatingsOptions <- function() {
     # Regularization
     slopeCost=0,
     strMeanCostReg=0.1,
-    slopeCostReg=0.1,
+    slopeCostReg=0.01,
 
     # L-BFGS-B parameters
     factr=1e-04 / .Machine$double.eps,
@@ -116,9 +114,9 @@ getModel <- function(class) {
 getModel.RatingsOptions <- function(rOptions) {
   c(rOptions$b, rOptions$c,
       rOptions$k,
-      rOptions$meanGoals, rOptions$strBeta, rOptions$hA,
-          rOptions$corrBeta,
-          rOptions$theta, rOptions$tieBias, rOptions$tieBeta)
+      rOptions$meanGoals, rOptions$strBeta,
+      rOptions$corrBeta,
+      rOptions$theta, rOptions$tieBias, rOptions$tieBeta)
 }
 
 getModelLBd <- function(class) {
@@ -128,9 +126,9 @@ getModelLBd <- function(class) {
 getModelLBd.RatingsOptions <- function(rOptions) {
   c(rOptions$bLBd, rOptions$cLBd,
       rOptions$kLBd,
-      rOptions$meanGoalsLBd, rOptions$strBetaLBd, rOptions$hALBd,
-          rOptions$corrBetaLBd,
-          rOptions$thetaLBd, rOptions$tieBiasLBd, rOptions$tieBetaLBd)
+      rOptions$meanGoalsLBd, rOptions$strBetaLBd,
+      rOptions$corrBetaLBd,
+      rOptions$thetaLBd, rOptions$tieBiasLBd, rOptions$tieBetaLBd)
 }
 
 getModelUBd <- function(class) {
@@ -140,9 +138,9 @@ getModelUBd <- function(class) {
 getModelUBd.RatingsOptions <- function(rOptions) {
   c(rOptions$bUBd, rOptions$cUBd,
       rOptions$kUBd,
-      rOptions$meanGoalsUBd, rOptions$strBetaUBd, rOptions$hAUBd,
-          rOptions$corrBetaUBd,
-          rOptions$thetaUBd, rOptions$tieBiasUBd, rOptions$tieBetaUBd)
+      rOptions$meanGoalsUBd, rOptions$strBetaUBd,
+      rOptions$corrBetaUBd,
+      rOptions$thetaUBd, rOptions$tieBiasUBd, rOptions$tieBetaUBd)
 }
 
 getSlopes <- function(class) {
@@ -163,11 +161,10 @@ update.RatingsOptions <- function(rOptions, x) {
   rOptions$k <- x[3]
   rOptions$meanGoals <- x[4]
   rOptions$strBeta <- x[5]
-  rOptions$hA <- x[6]
-  rOptions$corrBeta <- x[7]
-  rOptions$theta <- x[8]
-  rOptions$tieBias <- x[9]
-  rOptions$tieBeta <- x[10]
+  rOptions$corrBeta <- x[6]
+  rOptions$theta <- x[7]
+  rOptions$tieBias <- x[8]
+  rOptions$tieBeta <- x[9]
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
   slopes <- getSlopes.RatingsOptions(rOptions)
   rOptions$slopeCost <- rOptions$slopeCostReg *
@@ -181,7 +178,6 @@ print.RatingsOptions <- function(rOptions) {
   print(noquote(sprintf("k = %f", rOptions$k)))
   print(noquote(sprintf("mu = %f", rOptions$meanGoals)))
   print(noquote(sprintf("strBeta = %f", rOptions$strBeta)))
-  print(noquote(sprintf("ha = %f", rOptions$hA)))
   print(noquote(sprintf("corr = %f", rOptions$corrBeta)))
   print(noquote(sprintf("theta = %f", rOptions$theta)))
   print(noquote(sprintf("tieBias = %f", rOptions$tieBias)))
