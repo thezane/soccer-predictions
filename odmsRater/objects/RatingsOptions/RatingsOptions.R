@@ -77,7 +77,7 @@ new.RatingsOptions <- function() {
     lmm=10
   )
 
-  rOptions$currentDate <- as.Date("2014-06-11", rOptions$dateFormat)
+  rOptions$currentDate <- as.Date("1994-07-18", rOptions$dateFormat)
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
   rOptions$layersComputer <-
       constructLayersComputer.RatingsOptions(rOptions)

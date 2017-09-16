@@ -14700,12 +14700,12 @@
 "Bahrain","United Arab Emirates","2002-01-27","Gulf Cup",2,1,0
 "Costa Rica","Haiti","2002-01-26","CONCACAF Championship",2,1,0
 "Canada","Martinique","2002-01-26","CONCACAF Championship",1,1,0
-"Antigua and Barbuda","Saint Kitts","2002-01-26","Leeward Islands Championship",1,2,1
+"Antigua and Barbuda","Saint Kitts and Nevis","2002-01-26","Leeward Islands Championship",1,2,1
 "Senegal","Zambia","2002-01-26","African Nations Cup",1,0,0
 "Morocco","Burkina Faso","2002-01-26","African Nations Cup",2,1,0
 "Democratic Republic of Congo","Togo","2002-01-26","African Nations Cup",0,0,0
 "Qatar","Kuwait","2002-01-26","Gulf Cup",1,0,0
-"Saint Kitts","Saint Martin","2002-01-25","Leeward Islands Championship",3,0,0
+"Saint Kitts and Nevis","Saint Martin","2002-01-25","Leeward Islands Championship",3,0,0
 "Egypt","Tunisia","2002-01-25","African Nations Cup",1,0,0
 "Cameroon","Ivory Coast","2002-01-25","African Nations Cup",1,0,0
 "Algeria","Liberia","2002-01-25","African Nations Cup",2,2,0
@@ -15745,7 +15745,7 @@
 "Egypt","North Korea","2001-01-23","Friendly",1,0,1
 "Burkina Faso","Mali","2001-01-23","Friendly",0,2,1
 "Thailand","Kuwait","2001-01-23","Friendly",5,4,1
-"Saint Kitts","Antigua and Barbuda","2001-01-21","Leeward Islands Championship",2,0,0
+"Saint Kitts and Nevis","Antigua and Barbuda","2001-01-21","Leeward Islands Championship",2,0,0
 "Ivory Coast","Sudan","2001-01-20","African Nations Cup qualifier",2,0,1
 "Mali","Guinea","2001-01-20","Friendly",0,1,1
 "Iran","China","2001-01-19","Friendly tournament",4,0,1
@@ -16900,7 +16900,7 @@
 "Morocco","United States","1999-11-17","Friendly",2,1,1
 "Honduras","Trinidad and Tobago","1999-11-17","Friendly",3,2,1
 "Norway","Germany","1999-11-14","Friendly",0,1,1
-"Antigua and Barbuda","Saint Kitts","1999-11-14","Leeward Islands Championship",2,3,1
+"Antigua and Barbuda","Saint Kitts and Nevis","1999-11-14","Leeward Islands Championship",2,3,1
 "Egypt","Namibia","1999-11-14","Friendly",1,0,1
 "Gabon","Chad","1999-11-14","Unifac Cup",2,0,1
 "Central African Republic","Congo","1999-11-14","Unifac Cup",4,2,0
@@ -17651,7 +17651,7 @@
 "Uzbekistan","North Korea","1998-12-07","Asian Games",4,0,0
 "Kuwait","United Arab Emirates","1998-12-07","Asian Games",5,0,0
 "Turkmenistan","India","1998-12-07","Asian Games",3,2,0
-"Saint Kitts","Antigua and Barbuda","1998-12-06","Leeward Islands Championship",3,1,0
+"Saint Kitts and Nevis","Antigua and Barbuda","1998-12-06","Leeward Islands Championship",3,1,0
 "British Virgin Islands","Saint Vincent and the Grenadines","1998-12-06","Friendly",0,5,1
 "Sint Maarten","Antigua and Barbuda","1998-12-05","Leeward Islands Championship",0,2,1
 "Iran","Laos","1998-12-05","Asian Games",6,1,0
@@ -18450,7 +18450,7 @@
 "Jamaica","Mexico","1997-11-16","World Cup qualifier",0,0,1
 "Costa Rica","Canada","1997-11-16","World Cup qualifier",3,1,1
 "United States","El Salvador","1997-11-16","World Cup qualifier",4,2,1
-"Saint Kitts","Antigua and Barbuda","1997-11-16","Leeward Islands Championship",2,0,1
+"Saint Kitts and Nevis","Antigua and Barbuda","1997-11-16","Leeward Islands Championship",2,0,1
 "Japan","Iran","1997-11-16","World Cup qualifier",3,2,0
 "Germany","South Africa","1997-11-15","Friendly",3,0,1
 "Italy","Russia","1997-11-15","World Cup qualifier",1,0,1
@@ -23399,7 +23399,7 @@
 "Netherlands","Greece","1990-11-21","European Championship qualifier",2,0,1
 "United States","Soviet Union","1990-11-21","Friendly tournament",0,0,0
 "Trinidad and Tobago","United States","1990-11-18","Friendly tournament",0,0,1
-"Antigua and Barbuda","Saint Kitts","1990-11-18","Leeward Islands Championship",2,0,0
+"Antigua and Barbuda","Saint Kitts and Nevis","1990-11-18","Leeward Islands Championship",2,0,0
 "Albania","France","1990-11-17","European Championship qualifier",0,1,1
 "Czechoslovakia","Spain","1990-11-14","European Championship qualifier",3,2,1
 "Ireland","England","1990-11-14","European Championship qualifier",1,1,1
@@ -26219,7 +26219,7 @@
 "Saudi Arabia","Cameroon","1985-10-04","Afro-Asian Cup",2,1,1
 "Malawi","Uganda","1985-10-04","Cecafa Cup",1,0,0
 "Zimbabwe","Tanzania","1985-10-04","Cecafa Cup",1,0,1
-"Antigua and Barbuda","Saint Kitts","1985-10-01","Leeward Islands Championship",0,1,1
+"Antigua and Barbuda","Saint Kitts and Nevis","1985-10-01","Leeward Islands Championship",0,1,1
 "Anguilla","British Virgin Islands","1985-10-01","Leeward Islands Championship",0,1,1
 "Yugoslavia","East Germany","1985-09-28","World Cup qualifier",1,2,1
 "Australia","China","1985-09-27","Friendly tournament",3,0,1
@@ -34759,9 +34759,9 @@
 "East Germany","Denmark","1967-10-11","European Championship qualifier",3,2,1
 "El Salvador","Haiti","1967-10-10","Friendly",2,0,1
 "Tanzania","Democratic Republic of Congo","1967-10-10","African Nations Cup qualifier",0,1,1
-"Zanzibar","Tanganyika","1967-10-10","Cecafa Cup",3,0,0
+"Zanzibar","Tanzania","1967-10-10","Cecafa Cup",3,0,0
 "Japan","South Vietnam","1967-10-10","Olympic Games qualifier",1,0,1
-"Kenya","Tanganyika","1967-10-09","Cecafa Cup",5,3,1
+"Kenya","Tanzania","1967-10-09","Cecafa Cup",5,3,1
 "South Korea","Philippines","1967-10-09","Olympic Games qualifier",5,0,0
 "Lebanon","Taiwan","1967-10-09","Olympic Games qualifier",5,2,0
 "Belgium","Poland","1967-10-08","European Championship qualifier",2,4,1
@@ -34778,7 +34778,7 @@
 "Greece","Austria","1967-10-04","European Championship qualifier",4,1,1
 "Kenya","Zanzibar","1967-10-04","Cecafa Cup",6,0,1
 "South Korea","South Vietnam","1967-10-04","Olympic Games qualifier",3,0,0
-"Uganda","Tanganyika","1967-10-03","Cecafa Cup",2,1,0
+"Uganda","Tanzania","1967-10-03","Cecafa Cup",2,1,0
 "Japan","Lebanon","1967-10-03","Olympic Games qualifier",3,1,1
 "Taiwan","Philippines","1967-10-03","Olympic Games qualifier",7,2,0
 "Czechoslovakia","Spain","1967-10-01","European Championship qualifier",1,0,1
@@ -35502,15 +35502,15 @@
 "Greece","Soviet Union","1965-10-03","World Cup qualifier",1,4,1
 "Wales","England","1965-10-02","British International Championship",0,0,1
 "Northern Ireland","Scotland","1965-10-02","British International Championship",3,2,1
-"Uganda","Tanganyika","1965-10-02","Gossage Cup",1,1,1
+"Uganda","Tanzania","1965-10-02","Gossage Cup",1,1,1
 "Kenya","Zanzibar","1965-10-01","Gossage Cup",5,1,0
-"Tanganyika","Zanzibar","1965-09-29","Gossage Cup",3,0,0
+"Tanzania","Zanzibar","1965-09-29","Gossage Cup",3,0,0
 "Uganda","Kenya","1965-09-28","Gossage Cup",2,3,1
 "Sweden","West Germany","1965-09-26","World Cup qualifier",1,2,1
 "Bulgaria","Belgium","1965-09-26","World Cup qualifier",3,0,1
 "Finland","Poland","1965-09-26","World Cup qualifier",2,0,1
 "Norway","Denmark","1965-09-26","Nordic Championship",2,2,1
-"Tanganyika","Kenya","1965-09-26","Gossage Cup",2,0,0
+"Tanzania","Kenya","1965-09-26","Gossage Cup",2,0,0
 "Uganda","Zanzibar","1965-09-25","Gossage Cup",4,1,1
 "Democratic Republic of Congo","Liberia","1965-09-21","African Nations Cup qualifier",3,2,1
 "Luxembourg","Yugoslavia","1965-09-19","World Cup qualifier",2,5,1
@@ -38808,7 +38808,7 @@
 "Panama","Nicaragua","1951-02-28","CCCF Championship",4,0,1
 "Panama","Costa Rica","1951-02-27","CCCF Championship",2,0,1
 "Costa Rica","Nicaragua","1951-02-25","CCCF Championship",8,1,0
-"Antigua and Barbuda","Saint Kitts","1951-02-19","Leeward Islands Championship",4,3,0
+"Antigua and Barbuda","Saint Kitts and Nevis","1951-02-19","Leeward Islands Championship",4,3,0
 "Spain","Switzerland","1951-02-18","Friendly",6,3,1
 "Aruba","Curacao","1951-02-10","Friendly",4,4,1
 "France","Yugoslavia","1951-02-06","Friendly",2,1,1
@@ -38961,8 +38961,8 @@
 "Hong Kong","Philippines","1950-02-19","Friendly",6,1,1
 "Egypt","Greece","1950-02-17","Mediterranean Cup",2,0,1
 "Hong Kong","Burma","1950-02-17","Friendly",5,2,1
-"Saint Kitts","Montserrat","1950-02-04","Leeward Islands Championship",3,1,1
-"Saint Kitts","Antigua and Barbuda","1950-02-03","Leeward Islands Championship",1,1,1
+"Saint Kitts and Nevis","Montserrat","1950-02-04","Leeward Islands Championship",3,1,1
+"Saint Kitts and Nevis","Antigua and Barbuda","1950-02-03","Leeward Islands Championship",1,1,1
 "Antigua and Barbuda","Montserrat","1950-02-01","Leeward Islands Championship",2,0,0
 "Haiti","Jamaica","1949-12-19","Friendly",2,0,1
 "Yugoslavia","France","1949-12-11","World Cup qualifier",3,2,0
@@ -39035,3 +39035,466 @@
 "Denmark","Netherlands","1949-06-12","Friendly",1,2,1
 "France","Switzerland","1949-06-04","Friendly",4,2,1
 "Sweden","Ireland","1949-06-02","World Cup qualifier",3,1,1
+"Switzerland","Wales","1949-05-26","Friendly",4,0,1
+"Ireland","Portugal","1949-05-22","Friendly",1,0,1
+"France","England","1949-05-22","Friendly",1,3,1
+"Italy","Austria","1949-05-22","Dr. Gero International Cup",3,1,1
+"Belgium","Wales","1949-05-22","Friendly",3,1,1
+"Czechoslovakia","Romania","1949-05-22","Friendly",3,2,1
+"Norway","England","1949-05-18","Friendly",1,4,1
+"Greece","Egypt","1949-05-18","Mediterranean Cup",1,3,1
+"Portugal","Wales","1949-05-15","Friendly",3,2,1
+"Greece","Turkey","1949-05-15","Mediterranean Cup",1,2,1
+"Sweden","England","1949-05-13","Friendly",3,1,1
+"Turkey","Egypt","1949-05-13","Mediterranean Cup",3,2,0
+"Brazil","Paraguay","1949-05-11","Copa América",7,0,1
+"Romania","Poland","1949-05-08","Friendly",2,1,1
+"Hungary","Austria","1949-05-08","Dr. Gero International Cup",6,1,1
+"Brazil","Paraguay","1949-05-08","Copa América",1,2,1
+"Chile","Uruguay","1949-05-08","Copa América",3,1,0
+"Suriname","Aruba","1949-05-08","Friendly",6,1,1
+"Jamaica","Trinidad and Tobago","1949-05-07","Friendly",1,2,1
+"Hong Kong","Macao","1949-05-07","Friendly",7,0,1
+"Bolivia","Colombia","1949-05-06","Copa América",4,0,0
+"Peru","Uruguay","1949-05-04","Copa América",4,3,0
+"Jamaica","Trinidad and Tobago","1949-05-04","Friendly",2,1,1
+"Ecuador","Colombia","1949-05-03","Copa América",4,1,0
+"Jamaica","Trinidad and Tobago","1949-05-02","Friendly",3,1,1
+"Puerto Rico","Trinidad and Tobago","1949-05-01","Friendly",0,7,1
+"Suriname","Aruba","1949-05-01","Friendly",0,0,1
+"Ethiopia","French Somaliland","1949-05-01","Friendly",6,0,1
+"Brazil","Uruguay","1949-04-30","Copa América",5,1,1
+"Peru","Chile","1949-04-30","Copa América",3,0,0
+"Paraguay","Bolivia","1949-04-30","Copa América",7,0,0
+"Scotland","France","1949-04-27","Friendly",2,0,1
+"Peru","Bolivia","1949-04-27","Copa América",3,0,0
+"Paraguay","Chile","1949-04-27","Copa América",4,2,0
+"Colombia","Uruguay","1949-04-25","Copa América",2,2,0
+"Bolivia","Ecuador","1949-04-25","Copa América",2,0,0
+"Haiti","Trinidad and Tobago","1949-04-25","Friendly",5,0,1
+"Ireland","Belgium","1949-04-24","Friendly",0,2,1
+"Brazil","Peru","1949-04-24","Copa América",7,1,1
+"Netherlands","France","1949-04-23","Friendly",4,1,1
+"Haiti","Trinidad and Tobago","1949-04-23","Friendly",2,3,1
+"Chile","Colombia","1949-04-20","Copa América",1,1,0
+"Peru","Ecuador","1949-04-20","Copa América",4,0,0
+"Uruguay","Paraguay","1949-04-20","Copa América",2,1,0
+"Haiti","Trinidad and Tobago","1949-04-20","Friendly",2,2,1
+"Brazil","Colombia","1949-04-17","Copa América",5,0,1
+"Bolivia","Uruguay","1949-04-17","Copa América",3,2,0
+"Chile","Ecuador","1949-04-17","Copa América",1,0,0
+"Brazil","Chile","1949-04-13","Copa América",2,1,1
+"Paraguay","Peru","1949-04-13","Copa América",3,1,0
+"Uruguay","Ecuador","1949-04-13","Copa América",3,2,0
+"Czechoslovakia","Hungary","1949-04-10","Dr. Gero International Cup",5,2,1
+"Brazil","Bolivia","1949-04-10","Copa América",10,1,1
+"Peru","Colombia","1949-04-10","Copa América",4,0,0
+"Paraguay","Ecuador","1949-04-10","Copa América",1,0,0
+"England","Scotland","1949-04-09","British International Championship",1,3,1
+"Paraguay","Colombia","1949-04-06","Copa América",3,0,0
+"Bolivia","Chile","1949-04-06","Copa América",3,2,0
+"Switzerland","Austria","1949-04-03","Dr. Gero International Cup",1,2,1
+"Brazil","Ecuador","1949-04-03","Copa América",9,1,1
+"Spain","Italy","1949-03-27","Friendly",1,3,1
+"Czechoslovakia","Luxembourg","1949-03-23","Friendly",2,2,1
+"Portugal","Spain","1949-03-20","Friendly",1,1,1
+"Austria","Turkey","1949-03-20","Friendly",1,0,1
+"Netherlands","Belgium","1949-03-13","Friendly",3,3,1
+"Northern Ireland","Wales","1949-03-09","British International Championship",0,2,1
+"Reunion","Mauritius","1949-03-04","Triangulaire",0,6,1
+"Reunion","Madagascar","1949-03-03","Triangulaire",1,3,1
+"Mauritius","Madagascar","1949-03-02","Triangulaire",3,1,0
+"Italy","Portugal","1949-02-27","Friendly",4,1,1
+"Hong Kong","South Vietnam","1949-01-29","Friendly",3,1,1
+"Macao","South Korea","1949-01-25","Friendly",0,3,1
+"Saint Vincent and the Grenadines","Grenada","1949-01-24","Windward Islands Championship",2,3,1
+"South Vietnam","South Korea","1949-01-16","Friendly",3,3,1
+"South Vietnam","South Korea","1949-01-15","Friendly",2,4,1
+"Hong Kong","South Korea","1949-01-09","Friendly",2,4,1
+"Spain","Belgium","1949-01-02","Friendly",1,1,1
+"Hong Kong","South Korea","1949-01-01","Friendly",2,5,1
+"Egypt","Norway","1948-12-24","Friendly",1,1,1
+"Guadeloupe","Martinique","1948-12-20","Coupe des Caraibes",3,0,1
+"Martinique","Suriname","1948-12-18","Coupe des Caraibes",4,3,0
+"Guadeloupe","French Guiana","1948-12-18","Coupe des Caraibes",7,2,1
+"Guadeloupe","Haiti","1948-12-16","Coupe des Caraibes",1,0,1
+"Martinique","Dominica","1948-12-16","Coupe des Caraibes",6,0,0
+"Ireland","Switzerland","1948-12-05","Friendly",0,1,1
+"England","Switzerland","1948-12-02","Friendly",6,0,1
+"Turkey","Greece","1948-11-28","Friendly",2,1,1
+"Belgium","Netherlands","1948-11-21","Friendly",1,1,1
+"Scotland","Northern Ireland","1948-11-17","British International Championship",3,2,1
+"Austria","Sweden","1948-11-14","Friendly",2,1,1
+"England","Wales","1948-11-10","British International Championship",1,0,1
+"Bulgaria","Hungary","1948-11-07","Balkan Cup",1,0,1
+"Czechoslovakia","Austria","1948-10-31","Dr. Gero International Cup",3,1,1
+"Trinidad and Tobago","Haiti","1948-10-30","Friendly",4,0,1
+"Trinidad and Tobago","Haiti","1948-10-27","Friendly",4,0,1
+"Romania","Hungary","1948-10-24","Balkan Cup",1,5,1
+"Trinidad and Tobago","Haiti","1948-10-24","Friendly",0,0,1
+"Wales","Scotland","1948-10-23","British International Championship",1,3,1
+"France","Belgium","1948-10-17","Friendly",3,3,1
+"Poland","Finland","1948-10-17","Friendly",1,0,1
+"Jamaica","Haiti","1948-10-13","Friendly",1,2,1
+"Jamaica","Haiti","1948-10-11","Friendly",3,0,1
+"Switzerland","Czechoslovakia","1948-10-10","Dr. Gero International Cup",1,1,1
+"Poland","Romania","1948-10-10","Balkan Cup",0,0,1
+"Sweden","Denmark","1948-10-10","Nordic Championship",1,0,1
+"Northern Ireland","England","1948-10-09","British International Championship",2,6,1
+"Jamaica","Haiti","1948-10-09","Friendly",1,0,1
+"Hungary","Austria","1948-10-03","Friendly",2,1,1
+"French Guiana","British Guiana","1948-10-01","Coupe des Caraibes",3,2,1
+"Suriname","British Guiana","1948-10-01","Coupe des Caraibes",3,0,0
+"Denmark","England","1948-09-26","Friendly",0,0,1
+"French Guiana","Suriname","1948-09-26","Coupe des Caraibes",2,4,1
+"Uganda","Kenya","1948-09-25","Gossage Cup",2,1,1
+"Uganda","Tanganyika","1948-09-23","Gossage Cup",6,0,1
+"Kenya","Zanzibar","1948-09-22","Gossage Cup",3,1,0
+"Poland","Hungary","1948-09-19","Balkan Cup",2,6,1
+"Finland","Sweden","1948-09-19","Nordic Championship",2,2,1
+"Norway","Sweden","1948-09-19","Nordic Championship",3,5,1
+"New Zealand","Australia","1948-09-11","Friendly",1,8,1
+"Norway","Finland","1948-09-05","Nordic Championship",2,0,1
+"New Zealand","Australia","1948-09-04","Friendly",0,4,1
+"Martinique","Dominica","1948-09-01","Coupe des Caraibes",5,0,1
+"Bulgaria","Czechoslovakia","1948-08-29","Balkan Cup",1,0,1
+"New Zealand","Australia","1948-08-28","Friendly",0,7,1
+"Poland","Yugoslavia","1948-08-25","Balkan Cup",0,1,1
+"Thailand","China","1948-08-20","Friendly",1,6,1
+"New Zealand","Australia","1948-08-14","Friendly",0,6,1
+"Sweden","Yugoslavia","1948-08-13","Olympic Games",3,1,0
+"Northern Ireland","United States","1948-08-11","Friendly",5,0,1
+"Sweden","Denmark","1948-08-10","Olympic Games",4,2,0
+"Norway","United States","1948-08-06","Friendly",11,0,1
+"Denmark","Italy","1948-08-05","Olympic Games",5,3,0
+"Sweden","South Korea","1948-08-05","Olympic Games",12,0,0
+"Yugoslavia","Turkey","1948-08-05","Olympic Games",3,1,0
+"Sweden","Austria","1948-08-02","Olympic Games",3,0,0
+"Turkey","China","1948-08-02","Olympic Games",4,0,0
+"South Korea","Mexico","1948-08-02","Olympic Games",5,3,0
+"Denmark","Egypt","1948-07-31","Olympic Games",3,1,0
+"Yugoslavia","Luxembourg","1948-07-31","Olympic Games",6,1,0
+"Luxembourg","Afghanistan","1948-07-26","Olympic Games",6,0,0
+"Sweden","Austria","1948-07-11","Friendly",3,2,1
+"Singapore","China","1948-07-07","Friendly",3,4,1
+"Bulgaria","Yugoslavia","1948-07-04","Balkan Cup",1,3,1
+"Romania","Czechoslovakia","1948-07-04","Balkan Cup",2,1,1
+"Iceland","Finland","1948-07-02","Friendly",2,0,1
+"Madagascar","Reunion","1948-07-01","Triangulaire",2,1,0
+"Mauritius","Reunion","1948-07-01","Triangulaire",5,1,1
+"Mauritius","Madagascar","1948-07-01","Triangulaire",4,1,1
+"Yugoslavia","Albania","1948-06-27","Balkan Cup",0,0,1
+"Denmark","Poland","1948-06-26","Friendly",8,0,1
+"Switzerland","Spain","1948-06-20","Friendly",3,3,1
+"Romania","Bulgaria","1948-06-20","Balkan Cup",3,2,1
+"Singapore","Malaya","1948-06-20","Friendly",4,2,1
+"Finland","Denmark","1948-06-15","Nordic Championship",0,3,1
+"Czechoslovakia","France","1948-06-12","Friendly",0,4,1
+"Denmark","Norway","1948-06-12","Nordic Championship",1,2,1
+"Jamaica","Cuba","1948-06-12","Friendly",1,1,1
+"Netherlands","Sweden","1948-06-09","Friendly",1,0,1
+"Jamaica","Cuba","1948-06-09","Friendly",3,0,1
+"Belgium","France","1948-06-06","Friendly",4,2,1
+"Hungary","Romania","1948-06-06","Balkan Cup",9,0,1
+"India","Afghanistan","1948-06-03","Friendly",4,0,1
+"French Somaliland","Ethiopia","1948-06-01","Friendly",1,2,1
+"Spain","Ireland","1948-05-30","Friendly",2,1,1
+"Turkey","Austria","1948-05-30","Friendly",0,1,1
+"Norway","Netherlands","1948-05-26","Friendly",1,2,1
+"Argentina","Uruguay","1948-05-25","Friendly",0,2,1
+"Portugal","Ireland","1948-05-23","Friendly",2,0,1
+"France","Scotland","1948-05-23","Friendly",3,0,1
+"Hungary","Czechoslovakia","1948-05-23","Balkan Cup and Dr. Gero Cup",2,1,1
+"Albania","Hungary","1948-05-23","Balkan Cup",0,0,1
+"Singapore","China","1948-05-22","Friendly",1,0,1
+"Uruguay","Argentina","1948-05-18","Friendly",0,1,1
+"South Vietnam","China","1948-05-18","Friendly",1,3,1
+"Switzerland","Scotland","1948-05-17","Friendly",2,1,1
+"Italy","England","1948-05-16","Friendly",0,4,1
+"South Vietnam","China","1948-05-16","Friendly",3,3,1
+"Philippines","China","1948-05-05","Friendly",0,4,1
+"Romania","Albania","1948-05-02","Balkan Cup",0,1,1
+"Austria","Hungary","1948-05-02","Dr. Gero International Cup",3,2,1
+"Scotland","Belgium","1948-04-28","Friendly",2,0,1
+"Hong Kong","China","1948-04-25","Friendly",3,7,1
+"Hong Kong","China","1948-04-24","Friendly",3,1,1
+"Greece","Turkey","1948-04-23","Friendly",1,3,1
+"Hungary","Switzerland","1948-04-21","Dr. Gero International Cup",7,4,1
+"Netherlands","Belgium","1948-04-18","Friendly",2,2,1
+"Austria","Switzerland","1948-04-18","Friendly",3,1,1
+"Poland","Czechoslovakia","1948-04-18","Balkan Cup",3,1,1
+"Uruguay","Brazil","1948-04-11","Rio Branco Cup",4,2,1
+"Scotland","England","1948-04-10","British International Championship",0,2,1
+"France","Italy","1948-04-04","Friendly",1,3,1
+"Bulgaria","Poland","1948-04-04","Balkan Cup",1,1,1
+"Uruguay","Brazil","1948-04-04","Rio Branco Cup",1,1,1
+"Macao","Hong Kong","1948-03-29","Friendly",4,2,1
+"South Vietnam","Hong Kong","1948-03-28","Friendly",1,2,1
+"Spain","Portugal","1948-03-21","Friendly",2,0,1
+"Guatemala","Panama","1948-03-21","CCCF Championship",4,5,1
+"Curacao","Costa Rica","1948-03-20","CCCF Championship",4,1,0
+"Costa Rica","El Salvador","1948-03-18","CCCF Championship",6,0,0
+"Guatemala","Curacao","1948-03-18","CCCF Championship",2,2,1
+"Guatemala","Costa Rica","1948-03-17","CCCF Championship",3,2,1
+"Panama","El Salvador","1948-03-16","CCCF Championship",2,0,0
+"Suriname","Trinidad and Tobago","1948-03-16","Friendly",0,2,1
+"Belgium","Netherlands","1948-03-14","Friendly",1,1,1
+"Panama","Curacao","1948-03-14","CCCF Championship",5,2,0
+"Suriname","Trinidad and Tobago","1948-03-14","Friendly",0,0,1
+"Guatemala","El Salvador","1948-03-13","CCCF Championship",1,1,1
+"Suriname","Trinidad and Tobago","1948-03-12","Friendly",1,0,1
+"El Salvador","Curacao","1948-03-11","CCCF Championship",2,0,0
+"Wales","Northern Ireland","1948-03-10","British International Championship",2,0,1
+"Costa Rica","Panama","1948-03-10","CCCF Championship",3,1,0
+"Guatemala","Panama","1948-03-09","CCCF Championship",4,3,1
+"El Salvador","Curacao","1948-03-09","CCCF Championship",1,0,0
+"Panama","El Salvador","1948-03-07","CCCF Championship",2,1,0
+"Costa Rica","Curacao","1948-03-06","CCCF Championship",2,1,0
+"Guatemala","Curacao","1948-03-05","CCCF Championship",2,2,1
+"Curacao","Panama","1948-03-04","CCCF Championship",3,1,0
+"Guatemala","Costa Rica","1948-03-03","CCCF Championship",1,1,1
+"Guatemala","El Salvador","1948-03-02","CCCF Championship",3,0,1
+"Costa Rica","Panama","1948-03-01","CCCF Championship",7,0,0
+"South Vietnam","Hong Kong","1948-03-01","Friendly",7,0,1
+"Costa Rica","El Salvador","1948-02-29","CCCF Championship",3,1,0
+"Hong Kong","Philippines","1948-02-21","Friendly",4,1,1
+"Bolivia","Venezuela","1948-01-05","Bolivarian Games",2,2,0
+"Chile","Bolivia","1947-12-30","Copa América",4,3,0
+"Ecuador","Paraguay","1947-12-30","Copa América",0,4,1
+"Argentina","Uruguay","1947-12-28","Copa América",3,1,0
+"Chile","Colombia","1947-12-27","Copa América",4,1,0
+"Peru","Bolivia","1947-12-27","Copa América",2,0,0
+"Ecuador","Argentina","1947-12-25","Copa América",0,2,1
+"Uruguay","Peru","1947-12-25","Copa América",1,0,0
+"Peru","Colombia","1947-12-23","Copa América",5,1,0
+"Paraguay","Chile","1947-12-23","Copa América",1,0,0
+"Paraguay","Colombia","1947-12-20","Copa América",2,0,0
+"Ecuador","Peru","1947-12-20","Copa América",0,0,1
+"Argentina","Colombia","1947-12-18","Copa América",6,0,0
+"Paraguay","Bolivia","1947-12-18","Copa América",3,1,0
+"Argentina","Chile","1947-12-16","Copa América",1,1,0
+"Ecuador","Uruguay","1947-12-16","Copa América",1,6,1
+"Italy","Czechoslovakia","1947-12-14","Friendly",3,1,1
+"Bolivia","Colombia","1947-12-13","Copa América",0,0,0
+"Paraguay","Uruguay","1947-12-13","Copa América",4,2,0
+"Argentina","Peru","1947-12-11","Copa América",3,2,0
+"Ecuador","Chile","1947-12-11","Copa América",0,3,1
+"Cuba","Puerto Rico","1947-12-10","Friendly",0,0,1
+"Chile","Peru","1947-12-09","Copa América",2,1,0
+"Uruguay","Bolivia","1947-12-09","Copa América",3,0,0
+"Paraguay","Peru","1947-12-06","Copa América",2,2,0
+"Uruguay","Chile","1947-12-06","Copa América",6,0,0
+"Cuba","Puerto Rico","1947-12-06","Friendly",4,0,1
+"Ethiopia","French Somaliland","1947-12-05","Friendly",5,0,1
+"Argentina","Bolivia","1947-12-04","Copa América",7,0,0
+"Ecuador","Colombia","1947-12-04","Copa América",0,0,1
+"Argentina","Paraguay","1947-12-02","Copa América",6,0,0
+"Uruguay","Colombia","1947-12-02","Copa América",2,0,0
+"Ecuador","Bolivia","1947-11-30","Copa América",2,2,1
+"Portugal","France","1947-11-23","Friendly",2,4,1
+"England","Sweden","1947-11-19","Friendly",4,2,1
+"Trinidad and Tobago","British Guiana","1947-11-14","Friendly tournament",2,0,1
+"Trinidad and Tobago","Jamaica","1947-11-13","Friendly tournament",1,0,1
+"Scotland","Wales","1947-11-12","British International Championship",1,2,1
+"British Guiana","Jamaica","1947-11-10","Friendly tournament",0,0,0
+"Austria","Italy","1947-11-09","Friendly",5,1,1
+"Trinidad and Tobago","Jamaica","1947-11-08","Friendly tournament",6,0,1
+"British Guiana","Jamaica","1947-11-06","Friendly tournament",2,0,0
+"England","Northern Ireland","1947-11-05","British International Championship",2,2,1
+"Trinidad and Tobago","British Guiana","1947-11-04","Friendly tournament",1,2,1
+"Switzerland","Belgium","1947-11-02","Friendly",4,0,1
+"Romania","Poland","1947-10-26","Friendly",0,0,1
+"Yugoslavia","Poland","1947-10-19","Friendly",7,1,1
+"Wales","England","1947-10-18","British International Championship",0,3,1
+"Yugoslavia","Bulgaria","1947-10-12","Balkan Cup",2,1,1
+"Romania","Hungary","1947-10-12","Balkan Cup",0,3,1
+"Sweden","Norway","1947-10-05","Nordic Championship",4,1,1
+"Denmark","Finland","1947-10-05","Nordic Championship",4,1,1
+"Czechoslovakia","Austria","1947-10-05","Friendly",3,2,1
+"Northern Ireland","Scotland","1947-10-04","British International Championship",2,0,1
+"Belgium","England","1947-09-21","Friendly",2,5,1
+"Netherlands","Switzerland","1947-09-21","Friendly",6,2,1
+"Norway","Denmark","1947-09-21","Nordic Championship",3,5,1
+"Romania","Czechoslovakia","1947-09-21","Friendly",2,6,1
+"Tanganyika","Uganda","1947-09-20","Gossage Cup",2,4,1
+"Tanganyika","Zanzibar","1947-09-18","Gossage Cup",3,1,1
+"Finland","Poland","1947-09-17","Friendly",1,4,1
+"Uganda","Kenya","1947-09-17","Gossage Cup",3,2,0
+"Sweden","Poland","1947-09-14","Friendly",5,4,1
+"Albania","Yugoslavia","1947-09-14","Balkan Cup",2,4,1
+"Austria","Hungary","1947-09-14","Friendly",4,3,1
+"Finland","Norway","1947-09-07","Nordic Championship",3,3,1
+"Suriname","British Guiana","1947-09-07","Friendly",1,0,1
+"Suriname","British Guiana","1947-09-05","Friendly",0,0,1
+"Suriname","British Guiana","1947-09-01","Friendly",4,0,1
+"Czechoslovakia","Poland","1947-08-31","Friendly",6,3,1
+"Sweden","Finland","1947-08-24","Nordic Championship",7,0,1
+"Hungary","Albania","1947-08-20","Balkan Cup",3,0,1
+"Hungary","Bulgaria","1947-08-17","Balkan Cup",9,0,1
+"Iceland","Norway","1947-07-24","Friendly",2,4,1
+"Cuba","United States","1947-07-20","North American Championship",5,2,1
+"Poland","Romania","1947-07-19","Friendly",1,2,1
+"New Zealand","South Africa","1947-07-19","Friendly",1,4,1
+"Cuba","Mexico","1947-07-17","North American Championship",1,3,1
+"Mexico","United States","1947-07-13","North American Championship",5,0,0
+"New Zealand","South Africa","1947-07-12","Friendly",3,8,1
+"Bulgaria","Romania","1947-07-06","Balkan Cup",2,3,1
+"New Zealand","South Africa","1947-07-05","Friendly",0,6,1
+"Yugoslavia","Hungary","1947-06-29","Balkan Cup",2,3,1
+"Sweden","Norway","1947-06-28","Friendly tournament",5,1,0
+"New Zealand","South Africa","1947-06-28","Friendly",5,6,1
+"Sweden","Denmark","1947-06-26","Friendly tournament",6,1,1
+"Finland","Norway","1947-06-26","Friendly tournament",1,2,1
+"Romania","Yugoslavia","1947-06-22","Balkan Cup",1,3,1
+"Curacao","Aruba","1947-06-22","Friendly",0,0,1
+"Curacao","Aruba","1947-06-21","Friendly",4,1,1
+"Denmark","Czechoslovakia","1947-06-20","Friendly",2,2,1
+"Denmark","Sweden","1947-06-15","Nordic Championship",1,4,1
+"Bulgaria","Albania","1947-06-15","Balkan Cup",2,0,1
+"Australia","South Africa","1947-06-14","Friendly",1,2,1
+"Norway","Poland","1947-06-11","Friendly",3,1,1
+"Switzerland","France","1947-06-08","Friendly",1,2,1
+"Australia","South Africa","1947-06-07","Friendly",5,1,1
+"France","Belgium","1947-06-01","Friendly",4,2,1
+"Australia","South Africa","1947-05-31","Friendly",3,3,1
+"France","Netherlands","1947-05-26","Friendly",4,0,1
+"Portugal","England","1947-05-25","Friendly",0,10,1
+"Albania","Romania","1947-05-25","Balkan Cup",0,4,1
+"Luxembourg","Scotland","1947-05-24","Friendly",0,6,1
+"Australia","South Africa","1947-05-24","Friendly",2,4,1
+"Switzerland","England","1947-05-18","Friendly",1,0,1
+"Belgium","Scotland","1947-05-18","Friendly",2,1,1
+"Italy","Hungary","1947-05-11","Friendly",3,2,1
+"Czechoslovakia","Yugoslavia","1947-05-11","Friendly",3,1,1
+"Australia","South Africa","1947-05-10","Friendly",1,2,1
+"Ireland","Portugal","1947-05-04","Friendly",0,2,1
+"Belgium","Netherlands","1947-05-04","Friendly",1,2,1
+"Hungary","Austria","1947-05-04","Friendly",5,2,1
+"England","France","1947-05-03","Friendly",3,0,1
+"Italy","Switzerland","1947-04-27","Friendly",5,2,1
+"Hong Kong","South Vietnam","1947-04-20","Friendly",3,2,1
+"Northern Ireland","Wales","1947-04-16","British International Championship",2,1,1
+"England","Scotland","1947-04-12","British International Championship",1,1,1
+"Netherlands","Belgium","1947-04-07","Friendly",2,1,1
+"Brazil","Uruguay","1947-04-01","Rio Branco Cup",3,2,1
+"Uruguay","Brazil","1947-03-29","Rio Branco Cup",0,0,1
+"France","Portugal","1947-03-23","Friendly",1,0,1
+"Ireland","Spain","1947-03-02","Friendly",3,2,1
+"Curacao","Trinidad and Tobago","1947-03-02","Friendly",3,0,1
+"Suriname","French Guiana","1947-03-02","Friendly",9,0,1
+"Curacao","Trinidad and Tobago","1947-03-01","Friendly",4,0,1
+"Jamaica","Trinidad and Tobago","1947-02-26","Friendly",0,6,1
+"Jamaica","Trinidad and Tobago","1947-02-22","Friendly",1,2,1
+"Jamaica","Trinidad and Tobago","1947-02-19","Friendly",1,0,1
+"Jamaica","Trinidad and Tobago","1947-02-15","Friendly",2,1,1
+"Jamaica","Trinidad and Tobago","1947-02-11","Friendly",0,0,1
+"Portugal","Spain","1947-01-26","Friendly",4,1,1
+"Portugal","Switzerland","1947-01-05","Friendly",2,2,1
+"Panama","Costa Rica","1946-12-21","Central American and Caribbean Games",2,0,0
+"Colombia","Panama","1946-12-20","Central American and Caribbean Games",2,1,1
+"Curacao","Costa Rica","1946-12-20","Central American and Caribbean Games",4,2,0
+"Venezuela","Puerto Rico","1946-12-20","Central American and Caribbean Games",6,0,0
+"Curacao","Venezuela","1946-12-19","Central American and Caribbean Games",1,0,0
+"Guatemala","Puerto Rico","1946-12-19","Central American and Caribbean Games",4,1,0
+"Colombia","Costa Rica","1946-12-18","Central American and Caribbean Games",4,1,1
+"Venezuela","Guatemala","1946-12-18","Central American and Caribbean Games",3,2,0
+"Curacao","Panama","1946-12-17","Central American and Caribbean Games",2,2,0
+"Colombia","Puerto Rico","1946-12-16","Central American and Caribbean Games",4,1,1
+"Costa Rica","Guatemala","1946-12-16","Central American and Caribbean Games",6,0,0
+"Panama","Venezuela","1946-12-16","Central American and Caribbean Games",2,1,0
+"Colombia","Guatemala","1946-12-15","Central American and Caribbean Games",4,2,1
+"Curacao","Puerto Rico","1946-12-15","Central American and Caribbean Games",14,0,0
+"Costa Rica","Venezuela","1946-12-14","Central American and Caribbean Games",4,2,0
+"Panama","Puerto Rico","1946-12-13","Central American and Caribbean Games",12,1,0
+"Colombia","Venezuela","1946-12-12","Central American and Caribbean Games",2,0,1
+"Curacao","Guatemala","1946-12-12","Central American and Caribbean Games",2,2,0
+"Costa Rica","Puerto Rico","1946-12-10","Central American and Caribbean Games",12,0,0
+"Colombia","Curacao","1946-12-09","Central American and Caribbean Games",4,2,1
+"Panama","Guatemala","1946-12-09","Central American and Caribbean Games",4,2,0
+"Italy","Austria","1946-12-01","Friendly",3,2,1
+"England","Netherlands","1946-11-27","Friendly",8,2,1
+"Scotland","Northern Ireland","1946-11-27","British International Championship",0,0,1
+"Aruba","Curacao","1946-11-24","Friendly",3,1,1
+"Aruba","Curacao","1946-11-23","Friendly",0,4,1
+"England","Wales","1946-11-13","British International Championship",3,0,1
+"Switzerland","Austria","1946-11-10","Friendly",1,0,1
+"El Salvador","Panama","1946-11-10","Friendly",3,3,1
+"El Salvador","Panama","1946-11-05","Friendly",2,3,1
+"Luxembourg","Hungary","1946-10-30","Friendly",2,7,1
+"British Guiana","Suriname","1946-10-29","Friendly",3,1,1
+"Austria","Czechoslovakia","1946-10-27","Friendly",3,4,1
+"British Guiana","Suriname","1946-10-24","Friendly",0,1,1
+"British Guiana","Suriname","1946-10-21","Friendly",0,3,1
+"Denmark","Norway","1946-10-20","Friendly",7,1,1
+"Wales","Scotland","1946-10-19","British International Championship",3,1,1
+"Yugoslavia","Bulgaria","1946-10-13","Balkan Cup",2,1,0
+"Albania","Romania","1946-10-13","Balkan Cup",1,0,1
+"Romania","Yugoslavia","1946-10-11","Balkan Cup",2,1,0
+"Albania","Bulgaria","1946-10-09","Balkan Cup",3,1,1
+"Bulgaria","Romania","1946-10-08","Balkan Cup",2,2,0
+"Albania","Yugoslavia","1946-10-07","Balkan Cup",2,3,1
+"Sweden","Denmark","1946-10-06","Friendly",3,3,1
+"Hungary","Austria","1946-10-06","Friendly",2,0,1
+"Ireland","England","1946-09-30","Friendly",0,1,1
+"Yugoslavia","Czechoslovakia","1946-09-30","Friendly",4,2,1
+"Northern Ireland","England","1946-09-28","British International Championship",2,7,1
+"Kenya","Uganda","1946-09-21","Gossage Cup",2,1,1
+"Finland","Sweden","1946-09-15","Friendly",0,7,1
+"Norway","Sweden","1946-09-15","Friendly",0,3,1
+"Czechoslovakia","Switzerland","1946-09-14","Friendly",3,2,1
+"Finland","Denmark","1946-09-01","Friendly",2,5,1
+"Luxembourg","Norway","1946-07-28","Friendly",3,2,1
+"Iceland","Denmark","1946-07-17","Friendly",0,3,1
+"Denmark","Norway","1946-07-08","Friendly",2,0,1
+"Sweden","Switzerland","1946-07-07","Friendly",7,2,1
+"Norway","Finland","1946-06-28","Friendly",12,0,1
+"Spain","Ireland","1946-06-23","Friendly",0,1,1
+"Denmark","Sweden","1946-06-23","Friendly",3,1,1
+"Portugal","Ireland","1946-06-16","Friendly",3,1,1
+"Norway","Denmark","1946-06-16","Friendly",2,1,1
+"Curacao","Suriname","1946-06-10","Friendly tournament",6,0,1
+"Aruba","Suriname","1946-06-06","Friendly tournament",8,1,0
+"Belgium","Netherlands","1946-05-30","Friendly",2,2,1
+"Curacao","Aruba","1946-05-26","Friendly tournament",2,1,1
+"Scotland","Switzerland","1946-05-15","Friendly",3,1,1
+"Netherlands","Belgium","1946-05-12","Friendly",6,3,1
+"Czechoslovakia","Yugoslavia","1946-05-09","Friendly",0,2,1
+"France","Austria","1946-05-05","Friendly",3,1,1
+"Portugal","France","1946-04-14","Friendly",2,1,1
+"Austria","Hungary","1946-04-14","Friendly",3,2,1
+"France","Czechoslovakia","1946-04-07","Friendly",3,0,1
+"Costa Rica","El Salvador","1946-03-13","CCCF Championship",4,0,1
+"Guatemala","Panama","1946-03-13","CCCF Championship",3,3,0
+"Honduras","Nicaragua","1946-03-13","CCCF Championship",10,0,0
+"Luxembourg","Netherlands","1946-03-10","Friendly",2,6,1
+"Costa Rica","Guatemala","1946-03-10","CCCF Championship",1,4,1
+"Nicaragua","Panama","1946-03-10","CCCF Championship",2,0,0
+"El Salvador","Honduras","1946-03-10","CCCF Championship",3,1,0
+"Costa Rica","Honduras","1946-03-07","CCCF Championship",5,1,1
+"El Salvador","Panama","1946-03-07","CCCF Championship",4,1,0
+"Guatemala","Nicaragua","1946-03-07","CCCF Championship",7,0,0
+"Honduras","Guatemala","1946-02-28","CCCF Championship",5,3,0
+"El Salvador","Nicaragua","1946-02-28","CCCF Championship",7,2,0
+"Costa Rica","Panama","1946-02-26","CCCF Championship",7,0,1
+"Costa Rica","Nicaragua","1946-02-24","CCCF Championship",7,1,1
+"Belgium","Luxembourg","1946-02-23","Friendly",7,0,1
+"Panama","Honduras","1946-02-23","CCCF Championship",1,0,0
+"Guatemala","El Salvador","1946-02-23","CCCF Championship",3,1,0
+"Argentina","Brazil","1946-02-10","Copa América",2,0,1
+"Paraguay","Uruguay","1946-02-08","Copa América",2,1,0
+"Chile","Bolivia","1946-02-08","Copa América",4,1,0
+"Brazil","Chile","1946-02-03","Copa América",5,1,0
+"Argentina","Uruguay","1946-02-02","Copa América",3,1,1
+"Brazil","Paraguay","1946-01-29","Copa América",1,1,0
+"Uruguay","Bolivia","1946-01-29","Copa América",5,0,0
+"Argentina","Chile","1946-01-26","Copa América",3,1,1
+"Paraguay","Bolivia","1946-01-26","Copa América",4,2,0
+"Scotland","Belgium","1946-01-23","Friendly",2,2,1
+"Brazil","Uruguay","1946-01-23","Copa América",4,3,0
+"Argentina","Bolivia","1946-01-19","Copa América",7,1,1
+"Chile","Paraguay","1946-01-19","Copa América",2,1,0
+"Brazil","Bolivia","1946-01-16","Copa América",3,0,0
+"Uruguay","Chile","1946-01-16","Copa América",1,0,0
+"Argentina","Paraguay","1946-01-12","Copa América",2,0,1
+"Uruguay","Brazil","1946-01-10","Rio Branco Cup",1,1,1
+"Uruguay","Brazil","1946-01-05","Rio Branco Cup",4,3,1

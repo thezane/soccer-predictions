@@ -51,10 +51,12 @@ constructStrPrereqs <- function(rOptions, game, tTree) {
   awayTeam <- tTree[[awayTeamName]]
 
   if (is.null(homeTeam)) {
+	print(game$gameDateStr)
     print(homeTeamName)
   }
   
   if (is.null(awayTeam)) {
+	print(game$gameDateStr)
     print(awayTeamName)
   }
 
