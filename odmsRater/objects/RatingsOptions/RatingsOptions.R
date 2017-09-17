@@ -148,7 +148,7 @@ getSlopes <- function(class) {
 }
 
 getSlopes.RatingsOptions <- function(rOptions) {
-  rOptions$strBeta
+  0
 }
 
 update <- function(class, x) {
