@@ -34,7 +34,7 @@ trainRNN <- function(rData, outputPath) {
   }
   optimObj <- optim(x, fn, gr, method="L-BFGS-B",
       lower=xLBd, upper=xUBd, control=list(trace=3, lmm=rOptions$lmm,
-      factr=rOptions$factr, REPORT=1))
+      factr=rOptions$factr, REPORT=1, maxit=1))
   stopCluster(cluster)
   x <- readIter(iterFile)
   x
