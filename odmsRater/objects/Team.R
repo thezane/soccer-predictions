@@ -18,7 +18,8 @@ update.Team <- function(team, game, i) {
   team$strNorm <- game$strNextNorm[i, ]
   team$strNormBeta <- game$strNextNormBeta[i, ]
   team$strAgg <- game$strAggNext[i]
-  team$numUpdates <- team$numUpdates + game$weightContest
+  team$numUpdates <- team$numUpdates +
+      game$reliability[i] * game$weightContest
   team
 }
 
