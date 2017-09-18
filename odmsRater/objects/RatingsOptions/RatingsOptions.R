@@ -17,7 +17,7 @@ new.RatingsOptions <- function() {
     
     # Mixture layer
     tieBias=-3.2,
-    tieBeta=-4,  
+    tieBeta=-2,  
 
     # Lower bounds for optimizable parameters
     bLBd=0.01,
@@ -68,7 +68,7 @@ new.RatingsOptions <- function() {
     # Regularization
     slopeCost=0,
     strMeanCostReg=0.1,
-    slopeCostReg=0.01,
+    slopeCostReg=0.001,
 
     # L-BFGS-B parameters
     factr=1e-04 / .Machine$double.eps,
@@ -148,7 +148,7 @@ getSlopes <- function(class) {
 }
 
 getSlopes.RatingsOptions <- function(rOptions) {
-  0
+  c(rOptions$b, rOptions$strBeta, rOptions$tieBeta)
 }
 
 update <- function(class, x) {
