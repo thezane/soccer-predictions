@@ -15,8 +15,6 @@ new.Game <- function(T, i, rOptions, cTree,
 
     # Result
     goals=goals,
-    goalsNorm=c(0, 0),
-    meanGoals=c(0, 0),
     outcome=as.numeric(c(goals[1] > goals[2],
         goals[1] == goals[2], goals[1] < goals[2])),
     Ps=c(0, 0, 0),
@@ -31,7 +29,7 @@ new.Game <- function(T, i, rOptions, cTree,
     strNextNormBeta=zeroesMat,
     strAgg=c(0, 0),
     strAggNext=c(0, 0),
-    existsHA=T[[i, "HomeAdvantage"]],
+    existsHa=T[[i, "HomeAdvantage"]],
     sse=0,
 
     # Contest
@@ -86,18 +84,6 @@ computeReliability.Game <- function(game, rOptions,
   }
 
   reliability
-}
-
-# Adjust goals scored by teams with home advantage.
-normalizeGoals.Game <- function(game, rOptions) {
-  goals <- game$goals
-  goalsNorm <- goals
-  meanGoals <- computeMeanGoals(game$existsHA, rOptions)
-  goalsNorm[1] <- (meanGoals[2] / meanGoals[1]) * goalsNorm[1]
-  game$goalsNorm <- goalsNorm
-  game$meanGoals <- meanGoals
-  game$A <- matrix(c(0, goalsNorm[2], goalsNorm[1], 0), 2, 2, TRUE)
-  game
 }
 
 # Construct ratings matrix before game.

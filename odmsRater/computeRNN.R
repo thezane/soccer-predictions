@@ -13,7 +13,6 @@ computeRNN <- function(rOptions, rOutput) {
     
     if (class(event) == "Game") {
       game <- event
-      game <- normalizeGoals.Game(game, rOptions)
       strPrereqs <- constructStrPrereqs(rOptions, game, tTree)
       game <- strPrereqs[["game"]]
       tTree <- strPrereqs[["tTree"]]
@@ -51,12 +50,10 @@ constructStrPrereqs <- function(rOptions, game, tTree) {
   awayTeam <- tTree[[awayTeamName]]
 
   if (is.null(homeTeam)) {
-	print(game$gameDateStr)
     print(homeTeamName)
   }
   
   if (is.null(awayTeam)) {
-	print(game$gameDateStr)
     print(awayTeamName)
   }
 

@@ -1,7 +1,7 @@
 # Compute post-game strengths for teams in a game with model parameters
 # rOptions.
-computeLayerOdm <- function(game, rOptions) {
-  A <- rOptions$b * game$A + rOptions$c;
+computeLayerOdm <- function(game, rOptions, meanGoalsData) {
+  A <- rOptions$b * meanGoalsData[["A"]] + rOptions$c;
   teamStr <- exp(game$strNorm)
   a <- teamStr[, 1];
   d <- teamStr[, 2];
