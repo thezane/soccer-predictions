@@ -26,7 +26,7 @@ trainRNN <- function(rData, outputPath) {
   fn <- constructRNNComputer(rData, iterFile, TRUE)
   fi <- constructRNNComputer(rData, iterFile, FALSE)
   
-  cores <- min(detectCores() - 1, n)
+  cores <- min(round(detectCores() / 2), n)
   cluster <- makeCluster(cores)
   clusterExport(cluster, ls(envir=.GlobalEnv), envir=.GlobalEnv)
   gr <- function(x, n.=n, fn.=fn, e=1e-06, cluster.=cluster) {
