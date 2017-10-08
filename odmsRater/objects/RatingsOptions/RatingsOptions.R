@@ -2,9 +2,9 @@ new.RatingsOptions <- function() {
   rOptions <- list(
     # Ha layer
     meanGoals=1,
-    haBias=0.32,
-    haBeta=0.32,
-    timeBias=398.4,
+    haBias=0.4,
+    haBeta=0.2,
+    timeBias=394.4,
     timeBeta=-0.2,
 
     # ODM layer
