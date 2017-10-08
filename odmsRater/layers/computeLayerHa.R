@@ -4,7 +4,8 @@ computeLayerHa <- function(game, rOptions) {
   goalsNorm <- game$goals
 
   if (game$existsHa) {
-    haTime <- plogis(rOptions$timeBias + rOptions$timeBeta * game$year)
+    haTime <- plogis(rOptions$timeBias + rOptions$timeBeta * 
+        (game$year - rOptions$gameYearOffset))
     homeMeanGoals <- rOptions$meanGoals + rOptions$haBias + 
         rOptions$haBeta * haTime
     awayMeanGoals <- rOptions$meanGoals

@@ -4,8 +4,8 @@ new.RatingsOptions <- function() {
     meanGoals=1,
     haBias=0.4,
     haBeta=0.2,
-    timeBias=394.4,
-    timeBeta=-0.2,
+    timeBias=2.4,
+    timeBeta=-0.1,
 
     # ODM layer
     b=0.3,
@@ -71,6 +71,7 @@ new.RatingsOptions <- function() {
         "very low"=2/6
     ),
     dateFormat="%Y-%m-%d",
+    gameYearOffset=1946,
     isOptimized=FALSE,
     iterName="odms-iter",
     minUpdatesUntilReliable=10,
