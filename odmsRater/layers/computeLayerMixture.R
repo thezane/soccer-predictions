@@ -18,7 +18,7 @@ computeLayerMixture <- function (game, gamePredictionBivPois,
 }
 
 computeMixtureWeight <- function(tieBias, tieBeta, strAgg) {
-  plogis(tieBias + tieBeta * abs(diff(strAgg)))
+  plogis(tieBias + tieBeta * diff(strAgg) ^ 2)
 }
 
 computePrediction <- function(p, gamePredictionBivPois,
