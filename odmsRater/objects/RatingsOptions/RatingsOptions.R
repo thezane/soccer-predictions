@@ -76,7 +76,7 @@ new.RatingsOptions <- function() {
     slopeCostReg=0.01,
 
     # L-BFGS-B parameters
-    factr=1e-04 / .Machine$double.eps,
+    factr=1e-06 / .Machine$double.eps,
     lmm=10
   )
 
