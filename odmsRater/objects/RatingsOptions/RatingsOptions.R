@@ -73,7 +73,7 @@ new.RatingsOptions <- function() {
     # Regularization
     slopeCost=0,
     strMeanCostReg=0.1,
-    slopesCostReg=0.01,
+    slopeCostReg=0.01,
 
     # L-BFGS-B parameters
     factr=1e-06 / .Machine$double.eps,
@@ -178,7 +178,7 @@ update.RatingsOptions <- function(rOptions, x) {
   rOptions$tieBeta <- x[10]
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
   slopes <- getSlopes.RatingsOptions(rOptions)
-  rOptions$slopeCost <- rOptions$slopesCostReg * t(slopes) %*% slopes
+  rOptions$slopeCost <- rOptions$slopeCostReg * t(slopes) %*% slopes
   rOptions
 }
 
