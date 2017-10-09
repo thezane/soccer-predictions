@@ -73,7 +73,7 @@ new.RatingsOptions <- function() {
     # Regularization
     slopeCost=0,
     strMeanCostReg=0.1,
-    slopeCostReg=0.01,
+    slopeCostReg=0.001,
 
     # L-BFGS-B parameters
     factr=1e-06 / .Machine$double.eps,
