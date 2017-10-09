@@ -19,8 +19,8 @@ new.RatingsOptions <- function() {
     theta=1,
     
     # Mixture layer
-    tieBias=-3.2,
-    tieBeta=-1.2,  
+    tieBias=-2.8,
+    tieBeta=-0.8,  
 
     # Lower bounds for optimizable parameters
     meanGoalsLBd=0.01,
@@ -62,7 +62,6 @@ new.RatingsOptions <- function() {
         "very low"=2/6
     ),
     dateFormat="%Y-%m-%d",
-    gameYearOffset=1946,
     isOptimized=FALSE,
     iterName="odms-iter",
     minUpdatesUntilReliable=10,
