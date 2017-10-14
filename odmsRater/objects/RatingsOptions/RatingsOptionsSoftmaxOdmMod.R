@@ -1,7 +1,6 @@
 new.RatingsOptionsSoftmaxOdmMod <- function() {
   rOptions <- new.RatingsOptionsSoftmax()
   rOptions$odmIter <- 1
-  rOptions$slopeCostReg <- 0.01
   rOptions$iterName <- "odms-iter-softmax-odmmod"
   rOptions$writeName <- "odms-matches-softmax-odmmod"
   
