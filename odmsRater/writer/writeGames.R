@@ -12,10 +12,6 @@ getGamesData <- function(gi, T) {
   colNames = c(
       "HomeStrAgg", "AwayStrAgg",
       "HomeStrAggNext", "AwayStrAggNext",
-      "HomeAttack", "HomeDefense",
-      "AwayAttack", "AwayDefense",
-      "HomeAttackNext", "HomeDefenseNext",
-      "AwayAttackNext", "AwayDefenseNext",
       "HomeWin", "Tie", "AwayWin",
       "SSE")
   T[colNames] <- 0
@@ -50,14 +46,6 @@ updateGames <- function(T, game) {
   T[i, "AwayStrAgg"] <- strAgg[2]
   T[i, "HomeStrAggNext"] <- strAggNext[1]
   T[i, "AwayStrAggNext"] <- strAggNext[2]
-  T[i, "HomeAttack"] <- strNormBeta[1, 1]
-  T[i, "HomeDefense"] <- strNormBeta[1, 2]
-  T[i, "AwayAttack"] <- strNormBeta[2, 1]
-  T[i, "AwayDefense"] <- strNormBeta[2, 2]
-  T[i, "HomeAttackNext"] <- strNextNormBeta[1, 1]
-  T[i, "HomeDefenseNext"] <- strNextNormBeta[1, 2]
-  T[i, "AwayAttackNext"] <- strNextNormBeta[2, 1]
-  T[i, "AwayDefenseNext"] <- strNextNormBeta[2, 2]
   T[i, "HomeWin"] <- ps[1]
   T[i, "Tie"] <- ps[2]
   T[i, "AwayWin"] <- ps[3]
