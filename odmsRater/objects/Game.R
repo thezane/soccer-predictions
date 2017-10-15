@@ -14,11 +14,12 @@ new.Game <- function(T, i, rOptions, cTree,
     year=as.numeric(format(gameDate, "%Y")),
 
     # Result
+    A=zeroesMat,
+    Ps=c(0, 0, 0),
     goals=goals,
     outcome=as.numeric(c(goals[1] > goals[2],
         goals[1] == goals[2], goals[1] < goals[2])),
-    Ps=c(0, 0, 0),
-    A=zeroesMat,
+    pGoalsMatSize=rOptions$pGoalsMatSizeBase + max(goals),
 
     # Ratings
     reliability=c(1, 1),

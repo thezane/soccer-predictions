@@ -32,8 +32,7 @@ computeLambdas <- function(rOptions, homeMeanGoals, awayMeanGoals,
 
 computePredictionBivPois <- function(lambdas, game, rOptions) {
   goalsExpected <- c(lambdas[1], lambdas[2]) + lambdas[3]
-  goals <- game$goals
-  n <- rOptions$pGoalsMatSizeBase + max(goals)
+  n <- game$pGoalsMatSize
   pGoals <- matrix(0, nrow=n, ncol=n)
   pWinTieLose <- c(0, 0, 0)
   i <- 1
