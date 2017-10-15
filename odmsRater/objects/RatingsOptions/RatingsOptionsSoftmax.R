@@ -18,7 +18,7 @@ constructLayersComputer.RatingsOptionsSoftmax <- function(rOptions) {
     strPostNorm <- computeLayerOdm(game, rOptions, meanGoalsData)
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
 
-    if (game$isRelevant) {
+    if (game$isRelevant || rOptions$isOptimized) {
       gamePrediction <- computeLayerSoftmax(game, rOptions,
           meanGoalsData)
     }

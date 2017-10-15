@@ -3,10 +3,10 @@ optimizeRNN <- function(tTree, gTree, gi, rData, outputPath) {
   rOutput <- rData$rOutput
   rData <- list(rOptions=rOptions, rOutput=rOutput)
   x <- trainRNN(rData, outputPath)
-  rData <- updateRNN(x, rData)
   rOptions <- rData[["rOptions"]]
   rOptions$isOptimized <- TRUE
   rData[["rOptions"]] <- rOptions
+  rData <- updateRNN(x, rData)
   rData
 }
 

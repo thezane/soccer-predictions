@@ -2,7 +2,8 @@
 # rOptions.
 computeLayerPois <- function (game, rOptions) {
   theta <- rOptions$theta
-  n <- rOptions$pGoalsMatSize
+  goals <- game$goals
+  n <- rOptions$pGoalsMatSizeBase + max(goals)
   pGoals <- matrix(0, nrow=n, ncol=n)
   i <- 1
   

@@ -66,7 +66,7 @@ new.RatingsOptions <- function() {
     iterName="odms-iter",
     minUpdatesUntilReliable=10,
     odmIter=10,
-    pGoalsMatSize=20,
+    pGoalsMatSizeBase=10,
     writeName="odms-matches",
     
     # Regularization
@@ -94,7 +94,7 @@ constructLayersComputer.RatingsOptions <- function(rOptions) {
     strPostNorm <- computeLayerOdm(game, rOptions, meanGoalsData)
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
 
-    if (game$isRelevant) {
+    if (game$isRelevant || rOptions$isOptimized) {
       gamePredictionBivPois <- computeLayerBivPois(game, rOptions,
           meanGoalsData)
       gamePredictionPois <- computeLayerPois(game, rOptions)

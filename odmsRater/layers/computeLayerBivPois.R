@@ -9,7 +9,7 @@ computeLayerBivPois <- function(game, rOptions, meanGoalsData) {
   awayStr <- strNorm[2, ]
   lambdas <- computeLambdas(rOptions, homeMeanGoals, awayMeanGoals,
       homeStr, awayStr)
-  gamePrediction <- computePredictionBivPois(lambdas, rOptions)
+  gamePrediction <- computePredictionBivPois(lambdas, game, rOptions)
   goals <- game$goals
   pGoals <- gamePrediction[["pGoals"]]
   p <- pGoals[goals[1] + 1, goals[2] + 1]
@@ -30,9 +30,10 @@ computeLambdas <- function(rOptions, homeMeanGoals, awayMeanGoals,
   lambdas
 }
 
-computePredictionBivPois <- function(lambdas, rOptions) {
+computePredictionBivPois <- function(lambdas, game, rOptions) {
   goalsExpected <- c(lambdas[1], lambdas[2]) + lambdas[3]
-  n <- rOptions$pGoalsMatSize
+  goals <- game$goals
+  n <- rOptions$pGoalsMatSizeBase + max(goals)
   pGoals <- matrix(0, nrow=n, ncol=n)
   pWinTieLose <- c(0, 0, 0)
   i <- 1
