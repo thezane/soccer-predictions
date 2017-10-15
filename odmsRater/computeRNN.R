@@ -16,7 +16,6 @@ computeRNN <- function(rOptions, rOutput) {
       strPrereqs <- constructStrPrereqs(rOptions, game, tTree)
       game <- strPrereqs[["game"]]
       tTree <- strPrereqs[["tTree"]]
-      browser()
       layerOutput <- rOptions$layersComputer(rOptions, game)
       gamePrediction <- layerOutput[["gamePrediction"]]
       strNextNorm <- layerOutput[["strNextNorm"]]
