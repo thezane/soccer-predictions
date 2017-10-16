@@ -50,5 +50,5 @@ updateGames <- function(T, game) {
   T[i, "Tie"] <- ps[2]
   T[i, "AwayWin"] <- ps[3]
   T[i, "SSE"] <- round(game$sse, numDecimals)
-  T 
+  T
 }
