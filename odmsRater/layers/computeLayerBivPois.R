@@ -10,9 +10,9 @@ computeLayerBivPois <- function(game, rOptions, meanGoalsData) {
   lambdas <- computeLambdas(rOptions, homeMeanGoals, awayMeanGoals,
       homeStr, awayStr)
   gamePrediction <- computePredictionBivPois(lambdas, game, rOptions)
-  goals <- game$goals
+  goalsOutput <- game$goalsOutput
   pGoals <- gamePrediction[["pGoals"]]
-  p <- pGoals[goals[1] + 1, goals[2] + 1]
+  p <- pGoals[goalsOutput[1] + 1, goalsOutput[2] + 1]
   gamePrediction[["p"]] <- p
   gamePrediction[["strNormBeta"]] <- game$strNormBeta
   gamePrediction[["strAgg"]] <- game$strAgg

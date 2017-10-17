@@ -10,9 +10,9 @@ computeLayerMixture <- function (game, gamePredictionBivPois,
       game$strAgg)
   gamePrediction <- computePrediction(p, gamePredictionBivPois,
       gamePredictionPois)
-  goals <- game$goals
+  goalsOutput <- game$goalsOutput
   pGoals <- gamePrediction[["pGoals"]]
-  p <- pGoals[goals[1] + 1, goals[2] + 1]
+  p <- pGoals[goalsOutput[1] + 1, goalsOutput[2] + 1]
   gamePrediction[["p"]] <- p
   gamePrediction
 }
