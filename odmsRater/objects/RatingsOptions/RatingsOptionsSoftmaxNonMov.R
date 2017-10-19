@@ -1,8 +1,5 @@
 new.RatingsOptionsSoftmaxNonMov <- function() {
   rOptions <- new.RatingsOptionsSoftmax()
-  rOptions$tieBias <- 0.4
-  rOptions$tieBeta <- -1.0
-  rOptions$slopeCostReg <- 0.005
   rOptions$iterName <- "odms-iter-softmax-nonmov"
   rOptions$writeName <- "odms-matches-softmax-nonmov"
   rOptions$layersComputer <-
