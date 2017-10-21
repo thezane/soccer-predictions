@@ -11,13 +11,12 @@ new.RatingsOptionsBivPois <- function() {
 
 constructLayersComputer.RatingsOptionsBivPois <- function(rOptions) {
   computeLayers <- function(rOptions, game) {
-	meanGoalsData <- computeLayerHa(game, rOptions)
-    strPostNorm <- computeLayerOdm(game, rOptions, meanGoalsData)
+	meanGoals <- computeLayerHa(game, rOptions)
+    strPostNorm <- computeLayerOdm(game, rOptions, meanGoals)
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
 
     if (game$isRelevant || rOptions$isOptimized) {
-      gamePrediction <- computeLayerBivPois(game, rOptions,
-          meanGoalsData)
+      gamePrediction <- computeLayerBivPois(game, rOptions, meanGoals)
     }
     else {
       gamePrediction = NULL

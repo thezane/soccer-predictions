@@ -12,13 +12,12 @@ new.RatingsOptionsSoftmaxNonMov <- function() {
 constructLayersComputer.RatingsOptionsSoftmaxNonMov <- function(rOptions) {
   computeLayers <- function(rOptions, game) {
 	game <- computeLayerGoalsNonMov(game)
-	meanGoalsData <- computeLayerHa(game, rOptions)
-    strPostNorm <- computeLayerOdm(game, rOptions, meanGoalsData)
+	meanGoals <- computeLayerHa(game, rOptions)
+    strPostNorm <- computeLayerOdm(game, rOptions, meanGoals)
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
 
     if (game$isRelevant || rOptions$isOptimized) {
-      gamePrediction <- computeLayerSoftmax(game, rOptions,
-          meanGoalsData)
+      gamePrediction <- computeLayerSoftmax(game, rOptions, meanGoals)
     }
     else {
       gamePrediction = NULL

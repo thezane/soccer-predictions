@@ -1,7 +1,5 @@
-new.Game <- function(T, i, rOptions, cTree,
-    homeTeamName, awayTeamName, gameDate) {
-  contest <- T[[i, "Contest"]]
-  goals <- c(T[[i, "HomeGoals"]], T[[i, "AwayGoals"]])
+new.Game <- function(homeTeamName, awayTeamName, existsHa, rOptions,
+    gameDate=NULL, contest=NULL, goals=NULL, cTree=NULL, i=NULL) {
   zeroesMat <- matrix(0, 2, 2)
   
   game <- list(
@@ -32,7 +30,7 @@ new.Game <- function(T, i, rOptions, cTree,
     strNextNormBeta=zeroesMat,
     strAgg=c(0, 0),
     strAggNext=c(0, 0),
-    existsHa=T[[i, "HomeAdvantage"]],
+    existsHa=existsHa,
     sse=0,
 
     # Contest

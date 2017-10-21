@@ -1,7 +1,6 @@
 # Compute probability of win-tie-lose with softmax and model parameters
 # rOptions.
-computeLayerSoftmax <- function(game, rOptions, meanGoalsData) {
-  meanGoals <- meanGoalsData[["meanGoals"]]
+computeLayerSoftmax <- function(game, rOptions, meanGoals) {
   homeMeanGoals <- meanGoals[1]
   awayMeanGoals <- meanGoals[2]
   strNorm <- game$strNorm 
