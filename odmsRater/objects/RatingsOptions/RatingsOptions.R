@@ -157,7 +157,7 @@ getSlopes <- function(class) {
 
 getSlopes.RatingsOptions <- function(rOptions) {
   matrix(c(rOptions$haBias,
-      rOptions$c,
+      rOptions$b,
       rOptions$strBeta,
       rOptions$tieBeta))
 }

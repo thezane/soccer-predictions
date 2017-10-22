@@ -55,7 +55,7 @@ getModelUBd.RatingsOptionsBivPois <- function(rOptions) {
 
 getSlopes.RatingsOptionsBivPois <- function(rOptions) {
   matrix(c(rOptions$haBias,
-      rOptions$c,
+      rOptions$b,
       rOptions$strBeta))
 }
 

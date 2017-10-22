@@ -61,7 +61,7 @@ getModelUBd.RatingsOptionsSoftmax <- function(rOptions) {
 
 getSlopes.RatingsOptionsSoftmax <- function(rOptions) {
   matrix(c(rOptions$haBias,
-      rOptions$c,
+      rOptions$b,
       rOptions$strBeta,
       rOptions$tieBeta))
 }
