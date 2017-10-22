@@ -22,24 +22,27 @@ new.Game <- function(homeTeamName, awayTeamName, existsHa, rOptions,
     pGoalsMatSize=rOptions$pGoalsMatSizeBase + max(goals),
 
     # Ratings
+    computeRatings=TRUE,
+    existsHa=existsHa,
     reliability=c(1, 1),
-    teamNames=c(homeTeamName, awayTeamName),
+    sse=0,
     strNorm=zeroesMat,
     strNormBeta=zeroesMat,
     strNextNorm=zeroesMat,
     strNextNormBeta=zeroesMat,
     strAgg=c(0, 0),
     strAggNext=c(0, 0),
-    existsHa=existsHa,
-    sse=0,
+    teamNames=c(homeTeamName, awayTeamName),
 
     # Contest
     contest=contest
   )
   
-  game$dataset <- assignDataset.Game(game, rOptions$currentDate)
-  game$isRelevant <- computeRelevance.Game(game, cTree)
-  game$weightContest <- computeWeight.Game(game, rOptions, cTree)
+  if (!is.null(cTree)) {
+      game$dataset <- assignDataset.Game(game, rOptions$currentDate)
+      game$isRelevant <- computeRelevance.Game(game, cTree)
+      game$weightContest <- computeWeight.Game(game, rOptions, cTree)
+  }
 
   class(game) <- "Game"
   game
