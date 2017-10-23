@@ -78,13 +78,13 @@ computeReliability.Game <- function(game, rOptions,
   # Home team updates rating cautiously because away team played too
   # few games
   if (awayTeam$numUpdates < n) {
-    reliability[1] <- min(1, (1 + awayTeam$numUpdates) / (1 + n))
+    reliability[1] <- min(1, (1 + awayTeam$numUpdates) / (1 + n)) ^ 2
   }
   
   # Away team updates rating cautiously because home team played too
   # few games
   if (homeTeam$numUpdates < n) {
-    reliability[2] <- min(1, (1 + homeTeam$numUpdates) / (1 + n))
+    reliability[2] <- min(1, (1 + homeTeam$numUpdates) / (1 + n)) ^ 2
   }
 
   reliability
