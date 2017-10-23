@@ -14,8 +14,6 @@ new.GameHypo <- function(homeTeamName, awayTeamName, location, rData) {
     existsHA=homeTeamName %in% location
   )
 
-  gameHypo$meanGoals <- computeMeanGoals(gameHypo$existsHA, rOptions)
-
   class(gameHypo) <- "Game"
   gameHypo
 }

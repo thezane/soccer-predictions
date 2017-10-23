@@ -6,7 +6,8 @@ new.RatingsOptionsBivPoisOdmIter1 <- function() {
   rOptions$layersComputer <-
       constructLayersComputer.RatingsOptionsBivPois(rOptions)
 
-  class(rOptions) <- c("RatingsOptionsBivPoisOdmIter1", c(rOptions))
+  class(rOptions) <- c("RatingsOptionsBivPoisOdmIter1",
+      c(class(rOptions)))
   rOptions
 }
 
