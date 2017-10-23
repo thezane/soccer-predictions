@@ -64,7 +64,7 @@ new.RatingsOptions <- function() {
     dateFormat="%Y-%m-%d",
     isOptimized=FALSE,
     iterName="odms-iter",
-    minUpdatesUntilReliable=20,
+    minUpdatesUntilReliable=10,
     odmIter=10,
     pGoalsMatSizeBase=10,
     writeName="odms-matches",
