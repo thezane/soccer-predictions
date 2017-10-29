@@ -101,7 +101,6 @@ updateCost <- function(rOptions, rOutput, gamePrediction,
     rOutput <- updateGoalsCost.RatingsOutput(rOutput, p, weightGame,
         dataset)
     costData <- list(rOutput=rOutput, game=game)
-    costData
   }
   else {
     costData <- list(rOutput=rOutput, game=game)

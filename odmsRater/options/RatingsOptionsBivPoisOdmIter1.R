@@ -3,8 +3,6 @@ new.RatingsOptionsBivPoisOdmIter1 <- function() {
   rOptions$odmIter <- 1
   rOptions$iterName <- "odms-iter-bivpois-odmiter1"
   rOptions$writeName <- "odms-matches-bivpois-odmiter1"
-  rOptions$layersComputer <-
-      constructLayersComputer.RatingsOptionsBivPois(rOptions)
 
   class(rOptions) <- c("RatingsOptionsBivPoisOdmIter1",
       c(class(rOptions)))

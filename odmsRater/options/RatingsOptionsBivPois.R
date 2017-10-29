@@ -2,34 +2,10 @@ new.RatingsOptionsBivPois <- function() {
   rOptions <- new.RatingsOptions()
   rOptions$iterName <- "odms-iter-bivpois"
   rOptions$writeName <- "odms-matches-bivpois"
-  rOptions$layersComputer <-
-      constructLayersComputer.RatingsOptionsBivPois(rOptions)
+  rOptions$layersComputer <- computeLayers.RatingsOptionsBivPois
 
   class(rOptions) <- c("RatingsOptionsBivPois", class(rOptions))
   rOptions
-}
-
-constructLayersComputer.RatingsOptionsBivPois <- function(rOptions) {
-  computeLayers <- function(rOptions, game) {
-	gamePrediction <- NULL
-    strNextNorm <- NULL
-	meanGoals <- computeLayerHa(game, rOptions)
-	
-	if (game$computeRatings) {
-      strPostNorm <- computeLayerOdm(game, rOptions, meanGoals)
-      strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
-    }
-
-    if (game$isRelevant || rOptions$isOptimized) {
-      gamePrediction <- computeLayerBivPois(game, rOptions, meanGoals)
-    }
-
-    layerOutput <- list(gamePrediction=gamePrediction,
-        strNextNorm=strNextNorm)
-    layerOutput
-  }
-
-  computeLayers
 }
 
 getModel.RatingsOptionsBivPois <- function(rOptions) {

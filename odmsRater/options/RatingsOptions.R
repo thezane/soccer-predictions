@@ -2,7 +2,7 @@ new.RatingsOptions <- function() {
   rOptions <- list(
     # Ha layer
     meanGoals=1,
-    haBias=0.48,
+    haBias=0.4,
 
     # ODM layer
     b=0.3,
@@ -49,11 +49,11 @@ new.RatingsOptions <- function() {
     # Non-optimizable paramters
     fTree=list(
         "Africa"=c(0.04, -0.04),
-        "Asia"=c(-0.28, 0.28),
-        "Europe"=c(0.32, -0.32),
+        "Asia"=c(-0.2, 0.2),
+        "Europe"=c(0.28, -0.28),
         "North America"=c(-0.2, 0.2),
-        "Oceania"=c(-0.56, 0.56),
-        "South America"=c(0.52, -0.52)),
+        "Oceania"=c(-0.52, 0.52),
+        "South America"=c(0.48, -0.48)),
     wTree=list(
         "very high"=1,
         "high"=5/6,
@@ -64,7 +64,7 @@ new.RatingsOptions <- function() {
     dateFormat="%Y-%m-%d",
     isOptimized=FALSE,
     iterName="odms-iter",
-    minUpdatesUntilReliable=10,
+    minUpdatesUntilReliable=20,
     odmIter=10,
     pGoalsMatSizeBase=10,
     writeName="odms-matches",
@@ -81,38 +81,10 @@ new.RatingsOptions <- function() {
 
   rOptions$currentDate <- as.Date("2003-01-01", rOptions$dateFormat)
   rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
-  rOptions$layersComputer <-
-      constructLayersComputer.RatingsOptions(rOptions)
+  rOptions$layersComputer <- computeLayers.RatingsOptions
 
   class(rOptions) <- "RatingsOptions"
   rOptions
-}
-
-constructLayersComputer.RatingsOptions <- function(rOptions) {
-  computeLayers <- function(rOptions, game) {
-	gamePrediction <- NULL
-    strNextNorm <- NULL
-    meanGoals <- computeLayerHa(game, rOptions)
-	
-    if (game$computeRatings) {
-      strPostNorm <- computeLayerOdm(game, rOptions, meanGoals)
-      strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
-    }
-
-    if (game$isRelevant || rOptions$isOptimized) {
-      gamePredictionBivPois <- computeLayerBivPois(game, rOptions,
-          meanGoals)
-      gamePredictionPois <- computeLayerPois(game, rOptions)
-      gamePrediction <- computeLayerMixture(game,
-          gamePredictionBivPois, gamePredictionPois, rOptions)
-    }
-
-    layerOutput <- list(gamePrediction=gamePrediction,
-        strNextNorm=strNextNorm)
-    layerOutput
-  }
-
-  computeLayers
 }
 
 getModel <- function(class) {

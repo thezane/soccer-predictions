@@ -5,34 +5,10 @@ new.RatingsOptionsSoftmax <- function() {
   rOptions$slopeCostReg <- 0.01
   rOptions$iterName <- "odms-iter-softmax"
   rOptions$writeName <- "odms-matches-softmax"
-  rOptions$layersComputer <-
-      constructLayersComputer.RatingsOptionsSoftmax(rOptions)
+  rOptions$layersComputer <- computeLayers.RatingsOptionsSoftmax
 
   class(rOptions) <- c("RatingsOptionsSoftmax", class(rOptions))
   rOptions
-}
-
-constructLayersComputer.RatingsOptionsSoftmax <- function(rOptions) {
-  computeLayers <- function(rOptions, game) {
-	gamePrediction <- NULL
-    strNextNorm <- NULL
-	meanGoals <- computeLayerHa(game, rOptions)
-	
-	if (game$computeRatings) {
-      strPostNorm <- computeLayerOdm(game, rOptions, meanGoals)
-      strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
-    }
-
-    if (game$isRelevant || rOptions$isOptimized) {
-      gamePrediction <- computeLayerSoftmax(game, rOptions, meanGoals)
-    }
-
-    layerOutput <- list(gamePrediction=gamePrediction,
-        strNextNorm=strNextNorm)
-    layerOutput
-  }
-
-  computeLayers
 }
 
 getModel.RatingsOptionsSoftmax <- function(rOptions) {
