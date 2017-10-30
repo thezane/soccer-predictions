@@ -1,5 +1,6 @@
 new.RatingsOptionsSoftmaxDiffOdmIter1 <- function() {
   rOptions <- new.RatingsOptionsSoftmaxDiff()
+  rOptions$odmIter <- 1
   rOptions$iterName <- "odms-iter-softmax-diff-odmiter1"
   rOptions$writeName <- "odms-matches-softmax-diff-odmiter1"
 
