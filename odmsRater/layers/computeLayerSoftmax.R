@@ -38,4 +38,4 @@ computePredictionSoftmax <- function(zs) {
   gamePrediction <- list()
   gamePrediction[["pWinTieLose"]] <- pWinTieLose
   gamePrediction
-} 
+}
