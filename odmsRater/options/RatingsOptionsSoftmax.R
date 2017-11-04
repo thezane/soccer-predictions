@@ -1,8 +1,8 @@
 new.RatingsOptionsSoftmax <- function() {
   rOptions <- new.RatingsOptions()
-  rOptions$tieBias <- 0.4
+  rOptions$tieBias <- 0.0
   rOptions$tieBeta <- -1.0
-  rOptions$slopeCostReg <- 0.01
+  rOptions$slopeCostReg <- 0.1
   rOptions$iterName <- "odms-iter-softmax"
   rOptions$writeName <- "odms-matches-softmax"
   rOptions$layersComputer <- computeLayers.RatingsOptionsSoftmax
