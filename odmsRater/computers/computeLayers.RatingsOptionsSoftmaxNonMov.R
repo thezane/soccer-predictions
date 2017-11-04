@@ -8,7 +8,7 @@ computeLayers.RatingsOptionsSoftmaxNonMov <- function(rOptions, game) {
   }
 
   if (game$computeRatings) {
-	game <- computeLayerGoalsNonMov(game)
+    game <- computeLayerGoalsNonMov(game)
     strPostNorm <- computeLayerOdm(game, rOptions, meanGoals)
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
   }
