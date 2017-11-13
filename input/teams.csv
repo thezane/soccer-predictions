@@ -1,149 +1,129 @@
-Team,Federation
-Egypt,Africa
-Ethiopia,Africa
-French Somaliland,Africa
-Gold Coast,Africa
-Kenya,Africa
-Madagascar,Africa
-Mauritius,Africa
-Nigeria,Africa
-Reunion,Africa
-Sierra Leone,Africa
-South Africa,Africa
-Southern Rhodesia,Africa
-Tanganyika,Africa
-Uganda,Africa
-Zanzibar,Africa
-Afghanistan,Asia
-Brunei,Asia
-Burma,Asia
-China,Asia
-Hong Kong,Asia
-India,Asia
-Indonesia,Asia
-Iran,Asia
-Japan,Asia
-Lebanon,Asia
-Macao,Asia
-Malaya,Asia
-Mongolia,Asia
-Pakistan,Asia
-Palestine,Asia
-Philippines,Asia
-Singapore,Asia
-South Korea,Asia
-South Vietnam,Asia
-Syria,Asia
-Thailand,Asia
-Vietnam,Asia
-Albania,Europe
-Armenia,Europe
-Austria,Europe
-Azerbaijan,Europe
-Belarus,Europe
-Belgium,Europe
-Bulgaria,Europe
-Croatia,Europe
-Cyprus,Europe
-Czechoslovakia,Europe
-Denmark,Europe
-England,Europe
-Estonia,Europe
-Faroe Islands,Europe
-Finland,Europe
-France,Europe
-Georgia,Europe
-Greece,Europe
-Hungary,Europe
-Iceland,Europe
-Ireland,Europe
-Israel,Europe
-Italy,Europe
-Kazakhstan,Europe
-Latvia,Europe
-Liechtenstein,Europe
-Lithuania,Europe
-Luxembourg,Europe
-Macedonia,Europe
-Malta,Europe
-Netherlands,Europe
-Northern Ireland,Europe
-Norway,Europe
-Poland,Europe
-Portugal,Europe
-Romania,Europe
-San Marino,Europe
-Scotland,Europe
-Slovakia,Europe
-Slovenia,Europe
-Soviet Union,Europe
-Spain,Europe
-Sweden,Europe
-Switzerland,Europe
-Turkey,Europe
-Ukraine,Europe
-Wales,Europe
-West Germany,Europe
-Yugoslavia,Europe
-Anguilla,North America
-Antigua and Barbuda,North America
-Aruba,North America
-Bahamas,North America
-Barbados,North America
-Bermuda,North America
-Bonaire,North America
-British Guiana,North America
-British Virgin Islands,North America
-Canada,North America
-Cayman Islands,North America
-Costa Rica,North America
-Cuba,North America
-Curacao,North America
-Dominica,North America
-Dominican Republic,North America
-El Salvador,North America
-French Guiana,North America
-Grenada,North America
-Guadeloupe,North America
-Guatemala,North America
-Haiti,North America
-Honduras,North America
-Jamaica,North America
-Martinique,North America
-Montserrat,North America
-Netherlands Antilles,North America
-Nicaragua,North America
-Panama,North America
-Puerto Rico,North America
-Saint Kitts and Nevis,North America
-Saint Lucia,North America
-Saint Martin,North America
-Saint Vincent and the Grenadines,North America
-Sint Maarten,North America
-Suriname,North America
-Trinidad and Tobago,North America
-Turks and Caicos Islands,North America
-United States,North America
-American Samoa,Oceania
-Australia,Oceania
-Cook Islands,Oceania
-Fiji,Oceania
-New Caledonia,Oceania
-New Zealand,Oceania
-Papua New Guinea,Oceania
-Samoa,Oceania
-Solomon Islands,Oceania
-Tahiti,Oceania
-Tonga,Oceania
-Tuvalu,Oceania
-Argentina,South America
-Bolivia,South America
-Brazil,South America
-Chile,South America
-Colombia,South America
-Ecuador,South America
-Mexico,South America
-Paraguay,South America
-Peru,South America
-Uruguay,South America
-Venezuela,South America
+"Team","Federation"
+"Egypt","Africa"
+"Ethiopia","Africa"
+"French Somaliland","Africa"
+"Gold Coast","Africa"
+"Kenya","Africa"
+"Madagascar","Africa"
+"Mauritius","Africa"
+"Nigeria","Africa"
+"Reunion","Africa"
+"Sierra Leone","Africa"
+"South Africa","Africa"
+"Southern Rhodesia","Africa"
+"Tanganyika","Africa"
+"Uganda","Africa"
+"Zanzibar","Africa"
+"Afghanistan","Asia"
+"Brunei","Asia"
+"Burma","Asia"
+"China","Asia"
+"Hong Kong","Asia"
+"India","Asia"
+"Indonesia","Asia"
+"Iran","Asia"
+"Japan","Asia"
+"Lebanon","Asia"
+"Macao","Asia"
+"Malaya","Asia"
+"Mongolia","Asia"
+"Pakistan","Asia"
+"Palestine","Asia"
+"Philippines","Asia"
+"Singapore","Asia"
+"South Korea","Asia"
+"South Vietnam","Asia"
+"Syria","Asia"
+"Thailand","Asia"
+"Vietnam","Asia"
+"Albania","Europe"
+"Armenia","Europe"
+"Austria","Europe"
+"Azerbaijan","Europe"
+"Belarus","Europe"
+"Belgium","Europe"
+"Bulgaria","Europe"
+"Croatia","Europe"
+"Cyprus","Europe"
+"Czechoslovakia","Europe"
+"Denmark","Europe"
+"England","Europe"
+"Estonia","Europe"
+"Faroe Islands","Europe"
+"Finland","Europe"
+"France","Europe"
+"Georgia","Europe"
+"Greece","Europe"
+"Hungary","Europe"
+"Iceland","Europe"
+"Ireland","Europe"
+"Israel","Europe"
+"Italy","Europe"
+"Kazakhstan","Europe"
+"Latvia","Europe"
+"Liechtenstein","Europe"
+"Lithuania","Europe"
+"Luxembourg","Europe"
+"Macedonia","Europe"
+"Malta","Europe"
+"Netherlands","Europe"
+"Northern Ireland","Europe"
+"Norway","Europe"
+"Poland","Europe"
+"Portugal","Europe"
+"Romania","Europe"
+"San Marino","Europe"
+"Scotland","Europe"
+"Slovakia","Europe"
+"Slovenia","Europe"
+"Soviet Union","Europe"
+"Spain","Europe"
+"Sweden","Europe"
+"Switzerland","Europe"
+"Turkey","Europe"
+"Ukraine","Europe"
+"Wales","Europe"
+"West Germany","Europe"
+"Yugoslavia","Europe"
+"Antigua and Barbuda","North America"
+"Aruba","North America"
+"Barbados","North America"
+"British Guiana","North America"
+"Canada","North America"
+"Costa Rica","North America"
+"Cuba","North America"
+"Curacao","North America"
+"Dominica","North America"
+"El Salvador","North America"
+"French Guiana","North America"
+"Grenada","North America"
+"Guadeloupe","North America"
+"Guatemala","North America"
+"Haiti","North America"
+"Honduras","North America"
+"Jamaica","North America"
+"Martinique","North America"
+"Montserrat","North America"
+"Netherlands Antilles","North America"
+"Nicaragua","North America"
+"Panama","North America"
+"Puerto Rico","North America"
+"Saint Kitts and Nevis","North America"
+"Saint Lucia","North America"
+"Saint Vincent and the Grenadines","North America"
+"Suriname","North America"
+"Trinidad and Tobago","North America"
+"United States","North America"
+"Australia","Oceania"
+"New Zealand","Oceania"
+"Argentina","South America"
+"Bolivia","South America"
+"Brazil","South America"
+"Chile","South America"
+"Colombia","South America"
+"Ecuador","South America"
+"Mexico","South America"
+"Paraguay","South America"
+"Peru","South America"
+"Uruguay","South America"
+"Venezuela","South America"
