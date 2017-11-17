@@ -25,6 +25,8 @@ COLUMNS_TO_COLLECT = (
 	"AwayWin"
 )
 
+SUM_TO_ONE_TOLERANCE = .001
+
 # "HomeTeam":0, "AwayTeam":1, etc
 M = {CSV_HEADER[i]:i for i in range(len(CSV_HEADER))}
 
@@ -49,9 +51,9 @@ for filenum in range(len(IN_FILE_NAMES)):
 					outputs[col][datarow_ind].append(row[M[col]])
 
 				predict_sum = sum(Decimal(outputs[col][datarow_ind][-1]) for col in COLUMNS_TO_COLLECT)
-				assert abs(1 - predict_sum) <= .001, (
-					f"Filename {filename}, match on line {datarow_ind+2}, predictions sum to {predict_sum}: {[outputs[col][datarow_ind][-1] for col in COLUMNS_TO_COLLECT]}"					
-				)
+				if abs(1 - predict_sum) > SUM_TO_ONE_TOLERANCE:
+					print( f"Filename {filename}, match on line {datarow_ind+2}, predictions sum to {predict_sum}: {[outputs[col][datarow_ind][-1] for col in COLUMNS_TO_COLLECT]}"	)
+				
 
 				datarow_ind += 1
 
