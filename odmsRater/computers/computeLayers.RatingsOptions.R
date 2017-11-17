@@ -6,7 +6,8 @@ computeLayers.RatingsOptions <- function(rOptions, game) {
   if (game$isRelevant || rOptions$isOptimized) {
     gamePredictionBivPois <- computeLayerBivPois(game, rOptions,
         meanGoals)
-    gamePredictionPois <- computeLayerPois(game, rOptions)
+    gamePredictionPois <- computeLayerPois(game, gamePredictionBivPois,
+        rOptions)
     gamePrediction <- computeLayerMixture(game,
         gamePredictionBivPois, gamePredictionPois, rOptions)
   }

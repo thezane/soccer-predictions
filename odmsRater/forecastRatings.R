@@ -1,4 +1,4 @@
-forecastRatings <- function(rOptions=NULL) {
+forecastRatings <- function(rOptions) {
   library(MASS)
   library(hash)
   library(parallel)
@@ -8,11 +8,6 @@ forecastRatings <- function(rOptions=NULL) {
   srcFiles <- list.files(".", regexRFiles,
       full.names=TRUE, recursive=TRUE)
   sapply(srcFiles, source)
-  
-  if (is.null(rOptions)) {
-	rOptions = new.RatingsOptions()
-  }
-  
   readsData <- readData(rOptions, inputPath)
   tTree <- readsData[["tTree"]]
   gTree <- readsData[["gTree"]]

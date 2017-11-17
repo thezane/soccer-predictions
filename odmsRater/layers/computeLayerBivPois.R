@@ -31,7 +31,8 @@ computeLambdas <- function(rOptions, homeMeanGoals, awayMeanGoals,
 
 computePredictionBivPois <- function(lambdas, game, rOptions) {
   goalsExpected <- c(lambdas[1], lambdas[2]) + lambdas[3]
-  n <- game$pGoalsMatSize
+  goalsMax <- ceiling(max(c(game$goals, goalsExpected)))
+  n <- rOptions$pGoalsMatSize + goalsMax
   pGoals <- matrix(0, nrow=n, ncol=n)
   pWinTieLose <- c(0, 0, 0)
   i <- 1

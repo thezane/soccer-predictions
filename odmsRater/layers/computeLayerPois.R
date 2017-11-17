@@ -1,7 +1,8 @@
 # Compute probability of each tied scoreline with model parameters
 # rOptions.
-computeLayerPois <- function (game, rOptions) {
-  theta <- rOptions$theta
+computeLayerPois <- function (game, gamePredictionBivPois, rOptions) {
+  pGoals <- gamePredictionBivPois[["pGoals"]]
+  theta <- rOptions$theta + nrow(pGoals)
   n <- game$pGoalsMatSize
   pGoals <- matrix(0, nrow=n, ncol=n)
   i <- 1

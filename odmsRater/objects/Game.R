@@ -19,7 +19,6 @@ new.Game <- function(homeTeamName, awayTeamName, existsHa, rOptions,
     goalsOutput=goals,
     outcome=as.numeric(c(goals[1] > goals[2],
         goals[1] == goals[2], goals[1] < goals[2])),
-    pGoalsMatSize=rOptions$pGoalsMatSizeBase + max(goals),
 
     # Ratings
     computeRatings=TRUE,
