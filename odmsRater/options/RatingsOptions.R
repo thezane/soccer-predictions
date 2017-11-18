@@ -66,7 +66,7 @@ new.RatingsOptions <- function() {
     iterName="odms-iter",
     minUpdatesUntilReliable=20,
     odmIter=10,
-    pGoalsMatSizeBase=10,
+    pGoalsMatSizeBase=20,
     writeName="odms-matches",
     
     # Regularization

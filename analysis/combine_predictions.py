@@ -3,21 +3,40 @@ from decimal import *
 
 IN_ROOT = "../output/"
 IN_FILE_NAMES = (
-"odms-matches-bivpois-odmiter1.csv",
+"odms-matches.csv",
 "odms-matches-bivpois.csv",
+"odms-matches-bivpois-odmiter1.csv",
 "odms-matches-odmiter1.csv",
+"odms-matches-softmax.csv",
 "odms-matches-softmax-diff.csv",
+"odms-matches-softmax-diff-odmiter1.csv",
 "odms-matches-softmax-geomdiff-odmiter1.csv",
 "odms-matches-softmax-geomdiff.csv",
 "odms-matches-softmax-nonmov-odmiter1.csv",
 "odms-matches-softmax-nonmov.csv",
 "odms-matches-softmax-odmiter1.csv",
-"odms-matches-softmax.csv",
-"odms-matches.csv",
 )
 
 OUT_ROOT = "./output/"
-CSV_HEADER = ("HomeTeam","AwayTeam","Date","Contest","HomeGoals","AwayGoals","HomeAdvantage","HomeStrAgg","AwayStrAgg","HomeStrAggNext","AwayStrAggNext","HomeWin","Tie","AwayWin","SSE")
+CSV_HEADER = (
+	"HomeTeam",
+	"AwayTeam",
+	"Date",
+	"Contest",
+	"HomeGoals",
+	"AwayGoals",
+	"HomeGoalsFull",
+	"AwayGoalsFull",
+	"ExtraTimePossible",
+	"HomeAdvantage",
+	"HomeStrAgg",
+	"AwayStrAgg",
+	"HomeStrAggNext",
+	"AwayStrAggNext",
+	"HomeWin",
+	"Tie",
+	"AwayWin",
+	"SSE")
 
 COLUMNS_TO_COLLECT = (
 	"HomeWin",
@@ -52,7 +71,7 @@ for filenum in range(len(IN_FILE_NAMES)):
 
 				predict_sum = sum(Decimal(outputs[col][datarow_ind][-1]) for col in COLUMNS_TO_COLLECT)
 				if abs(1 - predict_sum) > SUM_TO_ONE_TOLERANCE:
-					print( f"Filename {filename}, match on line {datarow_ind+2}, predictions sum to {predict_sum}: {[outputs[col][datarow_ind][-1] for col in COLUMNS_TO_COLLECT]}"	)
+					print("Filename {}, row {} predictions only summed to {}".format(filename, datarow_ind, predict_sum))
 				
 
 				datarow_ind += 1
