@@ -67,7 +67,10 @@ def get_game(element_game, fieldnames, writer) -> None:
       fieldnames[3]: contest,
       fieldnames[4]: home_goals,
       fieldnames[5]: away_goals,
-      fieldnames[6]: home_advantage})
+      fieldnames[6]: home_goals,
+      fieldnames[7]: away_goals,
+      fieldnames[8]: 0,
+      fieldnames[9]: home_advantage})
 
 
 if __name__ == "__main__":
@@ -87,7 +90,8 @@ if __name__ == "__main__":
 
   with open(filename, "w") as csvfile:
     fieldnames = ["HomeTeam", "AwayTeam", "Date", "Contest", 
-        "HomeGoals", "AwayGoals", "HomeAdvantage"]
+        "HomeGoals", "AwayGoals", "HomeGoalsFull", "AwayGoalsFull",
+        "ExtraTimePossible", "HomeAdvantage"]
     writer = DictWriter(csvfile, delimiter=",", fieldnames=fieldnames, 
         lineterminator="\n")
     writer.writeheader()
