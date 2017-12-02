@@ -86,7 +86,7 @@ if __name__ == "__main__":
       "africa",
       "asia",
       "oceania"]
-  filename = "matches.csv"
+  filename = "matches-scrapped.csv"
 
   with open(filename, "w") as csvfile:
     fieldnames = ["HomeTeam", "AwayTeam", "Date", "Contest", 
