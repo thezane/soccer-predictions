@@ -11,12 +11,11 @@ new.Game <- function(homeTeamName, awayTeamName, existsHa, rOptions,
     gameDateStr=as.character(gameDate),
     year=as.numeric(format(gameDate, "%Y")),
 
-    # Result
+    # Outcome
     A=zeroesMat,
     Ps=c(0, 0, 0),
     goals=goals,
     goalsOdm=goals,
-    goalsOutput=goals,
     outcome=as.numeric(c(goals[1] > goals[2],
         goals[1] == goals[2], goals[1] < goals[2])),
 

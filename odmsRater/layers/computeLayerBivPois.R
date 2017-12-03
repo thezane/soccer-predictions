@@ -1,25 +1,21 @@
-# Compute probability of each scoreline with bivariate poisson model
-# and model parameters rOptions.
+# Compute probability of each scoreline with bivariate poisson pdf and
+# model parameters rOptions.
 computeLayerBivPois <- function(game, rOptions, meanGoals) {
   homeMeanGoals <- meanGoals[1]
   awayMeanGoals <- meanGoals[2]
   strNorm <- game$strNorm 
   homeStr <- strNorm[1, ]
   awayStr <- strNorm[2, ]
-  lambdas <- computeLambdas(rOptions, homeMeanGoals, awayMeanGoals,
-      homeStr, awayStr)
+  lambdas <- computeLambdasBivPois(rOptions,
+      homeMeanGoals, awayMeanGoals, homeStr, awayStr)
   gamePrediction <- computePredictionBivPois(lambdas, game, rOptions)
-  goalsOutput <- game$goalsOutput
-  pGoals <- gamePrediction[["pGoals"]]
-  p <- pGoals[goalsOutput[1] + 1, goalsOutput[2] + 1]
-  gamePrediction[["p"]] <- p
   gamePrediction[["strNormBeta"]] <- game$strNormBeta
   gamePrediction[["strAgg"]] <- game$strAgg
   gamePrediction
 }
 
-computeLambdas <- function(rOptions, homeMeanGoals, awayMeanGoals,
-    homeStr, awayStr) {
+computeLambdasBivPois <- function(rOptions,
+    homeMeanGoals, awayMeanGoals, homeStr, awayStr) {
   lambda1Log <- log(homeMeanGoals) +
       rOptions$strBeta * (homeStr[1] + awayStr[2])
   lambda2Log <- log(awayMeanGoals) +
@@ -53,7 +49,8 @@ computePredictionBivPois <- function(lambdas, game, rOptions) {
     i <- i + 1
   }
   
-  gamePrediction <- list(goalsExpected=goalsExpected, pGoals=pGoals,
-      pWinTieLose=pWinTieLose)
+  pOutcome <- pGoals[game$goals[1] + 1, game$goals[2] + 1]
+  gamePrediction <- list(goalsExpected=goalsExpected,
+      pOutcome=pOutcome, pGoals=pGoals, pWinTieLose=pWinTieLose)
   gamePrediction
 }

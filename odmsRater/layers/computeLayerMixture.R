@@ -1,28 +1,23 @@
 # Compute probability of each scoreline with probabilities from
-# bivariate and univariate poisson models and model parameters
-# rOptions.
+# bivariate and univariate poisson pdfs and model parameters rOptions.
 computeLayerMixture <- function (game, gamePredictionBivPois,
     gamePredictionPois, rOptions) {
   strNorm <- game$strNorm 
   homeStr <- strNorm[1, ]
   awayStr <- strNorm[2, ]
-  p <- computeMixtureWeight(rOptions$tieBias, rOptions$tieBeta,
+  p <- computePoisWeight(rOptions$tieBias, rOptions$tieBeta,
       game$strAgg)
-  gamePrediction <- computePrediction(p, gamePredictionBivPois,
-      gamePredictionPois)
-  goalsOutput <- game$goalsOutput
-  pGoals <- gamePrediction[["pGoals"]]
-  p <- pGoals[goalsOutput[1] + 1, goalsOutput[2] + 1]
-  gamePrediction[["p"]] <- p
+  gamePrediction <- computePrediction(gamePredictionBivPois,
+      gamePredictionPois, p, game)
   gamePrediction
 }
 
-computeMixtureWeight <- function(tieBias, tieBeta, strAgg) {
+computePoisWeight <- function(tieBias, tieBeta, strAgg) {
   plogis(tieBias + tieBeta * diff(strAgg) ^ 2)
 }
 
-computePrediction <- function(p, gamePredictionBivPois,
-    gamePredictionPois) {
+computePrediction <- function(gamePredictionBivPois,
+    gamePredictionPois, p, game) {
   goalsExpectedBivPois <- gamePredictionBivPois[["goalsExpected"]]
   goalsExpectedPois <- gamePredictionPois[["goalsExpected"]]
   pGoalsBivPois <- gamePredictionBivPois[["pGoals"]]
@@ -35,6 +30,8 @@ computePrediction <- function(p, gamePredictionBivPois,
       sum(diag(pGoals)),
       sum(pGoals[upper.tri(pGoals)]))
   gamePrediction <- list()
+  pOutcome <- pGoals[game$goals[1] + 1, game$goals[2] + 1]
+  gamePrediction[["p"]] <- pOutcome
   gamePrediction[["goalsExpected"]] <- goalsExpected
   gamePrediction[["pGoals"]] <- pGoals
   gamePrediction[["pWinTieLose"]] <- pWinTieLose

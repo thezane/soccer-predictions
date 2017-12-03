@@ -2,6 +2,7 @@ forecastRatings <- function(rOptions) {
   library(MASS)
   library(hash)
   library(parallel)
+  library(skellam)
   regexRFiles <- ".*\\.R"
   inputPath <- "../input/"
   outputPath <- "../output/"

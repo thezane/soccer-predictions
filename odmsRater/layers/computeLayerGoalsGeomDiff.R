@@ -12,7 +12,8 @@ computeLayerGoalsGeomDiff <- function(game, rOptions) {
 
   goalsDiff <- goalsOdm[maxGoalsI] - goalsOdm[minGoalsI]
   goalsOdm[minGoalsI] <- 0
-  goalsOdm[maxGoalsI] <- computeGeomSeriesPartialSum(goalsDiff, rOptions$r)
+  goalsOdm[maxGoalsI] <- computeGeomSeriesPartialSum(goalsDiff,
+      rOptions$r)
   game$goalsOdm <- goalsOdm
   game
 }

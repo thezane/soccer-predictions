@@ -1,5 +1,5 @@
-# Compute probability of each tied scoreline with model parameters
-# rOptions.
+# Compute probability of each tied scoreline with poisson pdf and model
+# parameters rOptions.
 computeLayerPois <- function (game, gamePredictionBivPois, rOptions) {
   theta <- rOptions$theta
   pGoals <- gamePredictionBivPois[["pGoals"]]
