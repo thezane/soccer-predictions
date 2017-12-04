@@ -1,15 +1,6 @@
 new.RatingsOptionsSoftmaxGeomDiff <- function() {
   rOptions <- new.RatingsOptionsSoftmax()
-  
-  # Goals layer
   rOptions$r <- 0.5
-  
-  # Lower bounds for optimizable parameters
-  rOptions$rLBd <- 0.0
-  
-  # Upper bounds for optimizable parameters
-  rOptions$rUBd <- 0.99
-  
   rOptions$iterName <- "odms-iter-softmax-geomdiff"
   rOptions$writeName <- "odms-matches-softmax-geomdiff"
   rOptions$layersComputer <-
@@ -21,30 +12,15 @@ new.RatingsOptionsSoftmaxGeomDiff <- function() {
 }
 
 getModel.RatingsOptionsSoftmaxGeomDiff <- function(rOptions) {
-  c(rOptions$meanGoals, rOptions$haBias,
-      rOptions$r,
-      rOptions$b, rOptions$c,
-      rOptions$k,
-      rOptions$strBeta,
-      rOptions$tieBias, rOptions$tieBeta)
+  getModel.RatingsOptionsSoftmax(rOptions)
 }
 
 getModelLBd.RatingsOptionsSoftmaxGeomDiff <- function(rOptions) {
-  c(rOptions$meanGoalsLBd, rOptions$haBiasLBd,
-    rOptions$rLBd,
-    rOptions$bLBd, rOptions$cLBd,
-    rOptions$kLBd,
-    rOptions$strBetaLBd,
-    rOptions$tieBiasLBd, rOptions$tieBetaLBd)
+  getModelLBd.RatingsOptionsSoftmax(rOptions)
 }
 
 getModelUBd.RatingsOptionsSoftmaxGeomDiff <- function(rOptions) {
-  c(rOptions$meanGoalsUBd, rOptions$haBiasUBd,
-    rOptions$rUBd,
-    rOptions$bUBd, rOptions$cUBd,
-    rOptions$kUBd,
-    rOptions$strBetaUBd,
-    rOptions$tieBiasUBd, rOptions$tieBetaUBd)
+  getModelUBd.RatingsOptionsSoftmax(rOptions)
 }
 
 getSlopes.RatingsOptionsSoftmaxGeomDiff <- function(rOptions) {
@@ -52,30 +28,9 @@ getSlopes.RatingsOptionsSoftmaxGeomDiff <- function(rOptions) {
 }
 
 update.RatingsOptionsSoftmaxGeomDiff <- function(rOptions, x) {
-  rOptions$meanGoals <- x[1]
-  rOptions$haBias <- x[2]
-  rOptions$r <- x[3]
-  rOptions$b <- x[4]
-  rOptions$c <- x[5]
-  rOptions$k <- x[6]
-  rOptions$strBeta <- x[7]
-  rOptions$tieBias <- x[8]
-  rOptions$tieBeta <- x[9]
-  rOptions$strBetas <- c(rOptions$strBeta, -rOptions$strBeta)
-  slopes <- getSlopes.RatingsOptions(rOptions)
-  rOptions$slopeCost <- rOptions$slopeCostReg *
-      (t(slopes) %*% slopes) / length(slopes)
-  rOptions
+  update.RatingsOptionsSoftmax(rOptions, x)
 }
 
 print.RatingsOptionsSoftmaxGeomDiff <- function(rOptions) {
-  print(noquote(sprintf("mu = %f", rOptions$meanGoals)))
-  print(noquote(sprintf("haBias = %f", rOptions$haBias)))
-  print(noquote(sprintf("r = %f", rOptions$r)))
-  print(noquote(sprintf("b = %f", rOptions$b)))
-  print(noquote(sprintf("c = %f", rOptions$c)))
-  print(noquote(sprintf("k = %f", rOptions$k)))
-  print(noquote(sprintf("strBeta = %f", rOptions$strBeta)))
-  print(noquote(sprintf("tieBias = %f", rOptions$tieBias)))
-  print(noquote(sprintf("tieBeta = %f", rOptions$tieBeta)))
+  print.RatingsOptionsSoftmax(rOptions)
 }
