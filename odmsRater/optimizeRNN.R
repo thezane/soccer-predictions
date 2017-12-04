@@ -26,9 +26,10 @@ trainRNN <- function(rData, outputPath) {
   fn <- constructRNNComputer(rData, iterFile, TRUE)
   fi <- constructRNNComputer(rData, iterFile, FALSE)
   
-  cores <- min(round(detectCores() / 2), n)
+  cores <- min(detectCores() - 1, n)
   cluster <- makeCluster(cores)
-  clusterExport(cluster, ls(envir=.GlobalEnv), envir=.GlobalEnv)
+  clusterExport(cluster, c(ls(envir=.GlobalEnv), "dskellam"),
+      envir=.GlobalEnv)
   gr <- function(x, n.=n, fn.=fn, e=1e-06, cluster.=cluster) {
       computeGradientPar(x, n, fi, e, cluster)
   }

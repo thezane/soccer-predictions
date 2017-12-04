@@ -13,11 +13,13 @@ getModel.RatingsOptionsSoftmaxGeomDiffOdmIter1 <- function(rOptions) {
   getModel.RatingsOptionsSoftmaxGeomDiff(rOptions)
 }
 
-getModelLBd.RatingsOptionsSoftmaxGeomDiffOdmIter1 <- function(rOptions) {
+getModelLBd.RatingsOptionsSoftmaxGeomDiffOdmIter1 <- function(
+    rOptions) {
   getModelLBd.RatingsOptionsSoftmaxGeomDiff(rOptions)
 }
 
-getModelUBd.RatingsOptionsSoftmaxGeomDiffOdmIter1 <- function(rOptions) {
+getModelUBd.RatingsOptionsSoftmaxGeomDiffOdmIter1 <- function(
+    rOptions) {
   getModelUBd.RatingsOptionsSoftmaxGeomDiff(rOptions)
 }
 

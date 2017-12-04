@@ -25,8 +25,8 @@ computeLambdasSkellam <- function(rOptions,
 }
 
 computePredictionSkellam <- function(lambdas, game, rOptions) {
-  goalsDiffExpected <- diff(lambdas)
-  goalsDiff <- diff(game$goals)
+  goalsDiffExpected <- lambdas[1] - lambdas[2]
+  goalsDiff <- game$goals[1] - game$goals[2]
   goalsDiffMax <- ceiling(max(abs(c(goalsDiffExpected, goalsDiff))))
   n <- rOptions$pGoalsMatSize + goalsDiffMax
 
@@ -40,6 +40,7 @@ computePredictionSkellam <- function(lambdas, game, rOptions) {
     pGoalsDiff[i] <- p
     pWinTieLose <- pWinTieLose + p * as.numeric(
           c(i > 0, i == 0, i < 0))
+    i <- i + 1
   }
   
   pOutcome <- pGoalsDiff[[as.character(goalsDiff)]]
