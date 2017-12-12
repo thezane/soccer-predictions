@@ -13,6 +13,7 @@ getGamesData <- function(gi, T) {
       "HomeStrAgg", "AwayStrAgg",
       "HomeStrAggNext", "AwayStrAggNext",
       "HomeWin", "Tie", "AwayWin",
+      "IsHomeReliable", "IsAwayReliable",
       "SSE")
   T[colNames] <- 0
   gi <- reset.EventIterator(gi)
@@ -50,5 +51,7 @@ updateGames <- function(T, game) {
   T[i, "Tie"] <- ps[2]
   T[i, "AwayWin"] <- ps[3]
   T[i, "SSE"] <- round(game$sse, numDecimals)
+  T[i, "IsHomeReliable"] <- game$reliability[1]
+  T[i, "IsAwayReliable"] <- game$reliability[2]
   T
 }
