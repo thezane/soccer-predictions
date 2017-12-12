@@ -50,8 +50,8 @@ updateGames <- function(T, game) {
   T[i, "HomeWin"] <- ps[1]
   T[i, "Tie"] <- ps[2]
   T[i, "AwayWin"] <- ps[3]
-  T[i, "SSE"] <- round(game$sse, numDecimals)
   T[i, "HomeReliability"] <- round(game$reliability[1], numDecimals)
   T[i, "AwayReliability"] <- round(game$reliability[2], numDecimals)
+  T[i, "SSE"] <- round(game$sse, numDecimals)
   T
 }
