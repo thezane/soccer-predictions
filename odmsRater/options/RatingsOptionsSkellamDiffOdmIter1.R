@@ -1,5 +1,6 @@
 new.RatingsOptionsSkellamDiffOdmIter1 <- function() {
   rOptions <- new.RatingsOptionsSkellamDiff()
+  rOptions$odmIter <- 1
   rOptions$iterName <- "odms-iter-skellam-diff-odmiter1"
   rOptions$writeName <- "odms-matches-skellam-diff-odmiter1"
 
