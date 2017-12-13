@@ -1,21 +1,10 @@
 import csv
+from os import listdir
 from decimal import *
 
 IN_ROOT = "../output/"
-IN_FILE_NAMES = (
-"odms-matches.csv",
-"odms-matches-bivpois.csv",
-"odms-matches-bivpois-odmiter1.csv",
-"odms-matches-odmiter1.csv",
-"odms-matches-softmax.csv",
-"odms-matches-softmax-diff.csv",
-"odms-matches-softmax-diff-odmiter1.csv",
-"odms-matches-softmax-geomdiff-odmiter1.csv",
-"odms-matches-softmax-geomdiff.csv",
-"odms-matches-softmax-nonmov-odmiter1.csv",
-"odms-matches-softmax-nonmov.csv",
-"odms-matches-softmax-odmiter1.csv",
-)
+IN_FILE_NAMES = [filename for filename in listdir(IN_ROOT)
+        if filename.endswith(".csv")]
 
 OUT_ROOT = "./output/"
 CSV_HEADER = (
@@ -36,6 +25,8 @@ CSV_HEADER = (
 	"HomeWin",
 	"Tie",
 	"AwayWin",
+	"HomeReliability",
+	"AwayReliability",
 	"SSE")
 
 COLUMNS_TO_COLLECT = (
