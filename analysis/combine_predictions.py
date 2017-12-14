@@ -49,12 +49,13 @@ for filenum in range(len(IN_FILE_NAMES)):
 		this_csv_header = None
 		datarow_ind = 0
 		for row in reader:
+
 			assert len(row) == len(CSV_HEADER)
 			if not this_csv_header:
 				# just to check that they all have the expected header
 				this_csv_header = row
 				assert tuple(this_csv_header) == CSV_HEADER
-			else:
+			elif float(row[M["HomeReliability"]]) == 1 and float(row[M["AwayReliability"]]) == 1:
 				for col in COLUMNS_TO_COLLECT:					
 					if datarow_ind > len(outputs[col]) - 1:
 						outputs[col].append([])

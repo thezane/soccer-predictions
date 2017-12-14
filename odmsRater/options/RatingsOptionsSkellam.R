@@ -1,6 +1,5 @@
 new.RatingsOptionsSkellam <- function() {
   rOptions <- new.RatingsOptions()
-  rOptions$pGoalsMatSize <- 20
   rOptions$iterName <- "odms-iter-skellam"
   rOptions$writeName <- "odms-matches-skellam"
   rOptions$layersComputer <- computeLayers.RatingsOptionsSkellam
