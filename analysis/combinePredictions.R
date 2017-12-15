@@ -1,3 +1,5 @@
+source("getOutputs.R")
+
 computeGameValidity <- function(outputs, i) {
   for (output in outputs) {
     if (output[i, "HomeReliability"] < 1 ||
@@ -7,19 +9,6 @@ computeGameValidity <- function(outputs, i) {
   }
 
   return(TRUE)
-}
-
-getOutputs <- function(outputNames) {
-  outputs <- list()
-
-  for (outputName in outputNames) {
-    outputPath <- paste(outputFolder, "/", outputName, sep="")
-    output <- read.csv(outputPath, header=TRUE, sep=",", quote="\"", 
-        stringsAsFactors=FALSE)
-    outputs[[outputName]] <- output
-  }
-
-  outputs
 }
 
 writeGameInfo <- function(outputs, outputFolder, outputFirst,
@@ -89,7 +78,7 @@ fileNames <- list.files(outputFolder)
 fileNameMatches <- grepl("^odms-matches.*\\.*csv$", fileNames, perl=TRUE)
 outputNamesExt <- fileNames[fileNameMatches]
 outputNames <- gsub("\\.csv$", "", outputNamesExt)
-outputs <- getOutputs(outputNamesExt)
+outputs <- getOutputs(outputNamesExt, outputFolder)
 numOutputs <- length(outputs)
 outputFirst <- outputs[[outputNamesExt[1]]]
 numGames <- nrow(outputFirst)
