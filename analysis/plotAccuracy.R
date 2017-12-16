@@ -1,3 +1,4 @@
+library(ggplot2)
 source("getOutputs.R")
 
 computeSds <- function(outputs, inputNames, numGames) {
@@ -144,6 +145,12 @@ computeSoftAccuracies <- function(outputs, inputNames, numGames) {
   softAccuracies
 }
 
+plotCorr <- function(x, y, xlab, ylab, outputFolder) {
+  plotSaved <- qplot(x, y, xlab=xlab, ylab=ylab)
+  ggsave(plotSaved,
+      file=paste(outputFolder, "/", xlab, ylab, ".png", sep=""))
+}
+
 outputFolder <- "output"
 inputNames <- list(
     gameInfoName="GameInfo.csv",
@@ -157,3 +164,18 @@ stdevs <- computeSds(outputs, inputNames, numGames)
 stdevs2 <- computeSds2(outputs, inputNames, numGames)
 softAccuracies <- computeSoftAccuracies(outputs, inputNames, numGames)
 hardAccuracies <- computeHardAccuracies(outputs, inputNames, numGames)
+homeWinStdevs <- unlist(stdevs[inputNames[["homeWinName"]]])
+tieStdevs <- unlist(stdevs[inputNames[["tieName"]]])
+awayWinStdevs <- unlist(stdevs[inputNames[["awayWinName"]]])
+plotCorr(
+    c(homeWinStdevs, tieStdevs, awayWinStdevs),
+    c(hardAccuracies, hardAccuracies, hardAccuracies),
+    "Stdev",
+    "HardAccuracy", outputFolder)
+plotCorr(
+    c(homeWinStdevs, tieStdevs, awayWinStdevs),
+    c(softAccuracies, softAccuracies, softAccuracies),
+    "Stdev",
+    "SoftAccuracy", outputFolder)
+plotCorr(stdevs2, hardAccuracies, "Stdev2", "HardAccuracy", outputFolder)
+plotCorr(stdevs2, softAccuracies, "Stdev2", "SoftAccuracy", outputFolder)
