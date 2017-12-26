@@ -187,14 +187,14 @@
 "Mali","Mauritania","1972-10-01","African Games qualifier and West African Cup",11,0,11,0,0,0
 "Guinea","Gambia","1972-09-28","African Games qualifier and West African Cup",8,0,8,0,0,0
 "Senegal","Mauritania","1972-09-28","African Games qualifier and West African Cup",10,1,10,1,0,1
-"Cameroon","Egypt","2017-02-05","African Nations Cup",2,1,2,1,0,0
-"Burkina Faso","Ghana","2017-02-04","African Nations Cup",1,0,1,0,0,0
-"Cameroon","Ghana","2017-02-02","African Nations Cup",2,0,2,0,0,0
-"Burkina Faso","Egypt","2017-02-01","African Nations Cup",1,1,1,1,0,0
-"Egypt","Morocco","2017-01-29","African Nations Cup",1,0,1,0,0,0
-"Ghana","Democratic Republic of Congo","2017-01-29","African Nations Cup",2,1,2,1,0,0
-"Cameroon","Senegal","2017-01-28","African Nations Cup",0,0,0,0,0,0
-"Burkina Faso","Tunisia","2017-01-28","African Nations Cup",2,0,2,0,0,0
+"Cameroon","Egypt","2017-02-05","African Nations Cup",2,1,2,1,1,0
+"Burkina Faso","Ghana","2017-02-04","African Nations Cup",1,0,1,0,1,0
+"Cameroon","Ghana","2017-02-02","African Nations Cup",2,0,2,0,1,0
+"Burkina Faso","Egypt","2017-02-01","African Nations Cup",1,1,1,1,1,0
+"Egypt","Morocco","2017-01-29","African Nations Cup",1,0,1,0,1,0
+"Ghana","Democratic Republic of Congo","2017-01-29","African Nations Cup",2,1,2,1,1,0
+"Cameroon","Senegal","2017-01-28","African Nations Cup",0,0,0,0,1,0
+"Burkina Faso","Tunisia","2017-01-28","African Nations Cup",2,0,2,0,1,0
 "Egypt","Ghana","2017-01-25","African Nations Cup",1,0,1,0,0,0
 "Mali","Uganda","2017-01-25","African Nations Cup",1,1,1,1,0,0
 "Morocco","Ivory Coast","2017-01-24","African Nations Cup",1,0,1,0,0,0
@@ -219,14 +219,14 @@
 "Algeria","Zimbabwe","2017-01-15","African Nations Cup",2,2,2,2,0,0
 "Burkina Faso","Cameroon","2017-01-14","African Nations Cup",1,1,1,1,0,0
 "Gabon","Guinea-Bissau","2017-01-14","African Nations Cup",1,1,1,1,0,1
-"Ghana","Ivory Coast","2015-02-08","African Nations Cup",0,0,0,0,0,0
-"Equatorial Guinea","Democratic Republic of Congo","2015-02-07","African Nations Cup",0,0,0,0,0,1
-"Equatorial Guinea","Ghana","2015-02-05","African Nations Cup",0,3,0,3,0,1
-"Ivory Coast","Democratic Republic of Congo","2015-02-04","African Nations Cup",3,1,3,1,0,0
-"Ivory Coast","Algeria","2015-02-01","African Nations Cup",3,1,3,1,0,0
-"Ghana","Guinea","2015-02-01","African Nations Cup",3,0,3,0,0,0
-"Equatorial Guinea","Tunisia","2015-01-31","African Nations Cup",2,1,2,1,0,1
-"Democratic Republic of Congo","Congo","2015-01-31","African Nations Cup",4,2,4,2,0,0
+"Ghana","Ivory Coast","2015-02-08","African Nations Cup",0,0,0,0,1,0
+"Equatorial Guinea","Democratic Republic of Congo","2015-02-07","African Nations Cup",0,0,0,0,1,1
+"Equatorial Guinea","Ghana","2015-02-05","African Nations Cup",0,3,0,3,1,1
+"Ivory Coast","Democratic Republic of Congo","2015-02-04","African Nations Cup",3,1,3,1,1,0
+"Ivory Coast","Algeria","2015-02-01","African Nations Cup",3,1,3,1,1,0
+"Ghana","Guinea","2015-02-01","African Nations Cup",3,0,3,0,1,0
+"Equatorial Guinea","Tunisia","2015-01-31","African Nations Cup",2,1,1,1,1,1
+"Democratic Republic of Congo","Congo","2015-01-31","African Nations Cup",4,2,4,2,1,0
 "Ivory Coast","Cameroon","2015-01-28","African Nations Cup",1,0,1,0,0,0
 "Guinea","Mali","2015-01-28","African Nations Cup",1,1,1,1,0,1
 "Algeria","Senegal","2015-01-27","African Nations Cup",2,0,2,0,0,0
@@ -251,14 +251,14 @@
 "Democratic Republic of Congo","Zambia","2015-01-18","African Nations Cup",1,1,1,1,0,0
 "Equatorial Guinea","Congo","2015-01-17","African Nations Cup",1,1,1,1,0,1
 "Gabon","Burkina Faso","2015-01-17","African Nations Cup",2,0,2,0,0,0
-"Nigeria","Burkina Faso","2013-02-10","African Nations Cup",1,0,1,0,0,0
-"Mali","Ghana","2013-02-09","African Nations Cup",3,1,3,1,0,0
-"Burkina Faso","Ghana","2013-02-06","African Nations Cup",1,1,1,1,0,0
-"Nigeria","Mali","2013-02-06","African Nations Cup",4,1,4,1,0,0
-"Burkina Faso","Togo","2013-02-03","African Nations Cup",1,0,1,0,0,0
-"Nigeria","Ivory Coast","2013-02-03","African Nations Cup",2,1,2,1,0,0
-"South Africa","Mali","2013-02-02","African Nations Cup",1,1,1,1,0,1
-"Ghana","Cape Verde","2013-02-02","African Nations Cup",2,0,2,0,0,0
+"Nigeria","Burkina Faso","2013-02-10","African Nations Cup",1,0,1,0,1,0
+"Mali","Ghana","2013-02-09","African Nations Cup",3,1,3,1,1,0
+"Burkina Faso","Ghana","2013-02-06","African Nations Cup",1,1,1,1,1,0
+"Nigeria","Mali","2013-02-06","African Nations Cup",4,1,4,1,1,0
+"Burkina Faso","Togo","2013-02-03","African Nations Cup",1,0,0,0,1,0
+"Nigeria","Ivory Coast","2013-02-03","African Nations Cup",2,1,2,1,1,0
+"South Africa","Mali","2013-02-02","African Nations Cup",1,1,1,1,1,1
+"Ghana","Cape Verde","2013-02-02","African Nations Cup",2,0,2,0,1,0
 "Togo","Tunisia","2013-01-30","African Nations Cup",1,1,1,1,0,0
 "Algeria","Ivory Coast","2013-01-30","African Nations Cup",2,2,2,2,0,0
 "Burkina Faso","Zambia","2013-01-29","African Nations Cup",0,0,0,0,0,0
@@ -283,14 +283,14 @@
 "Democratic Republic of Congo","Ghana","2013-01-20","African Nations Cup",2,2,2,2,0,0
 "Angola","Morocco","2013-01-19","African Nations Cup",0,0,0,0,0,0
 "South Africa","Cape Verde","2013-01-19","African Nations Cup",0,0,0,0,0,1
-"Ivory Coast","Zambia","2012-02-12","African Nations Cup",0,0,0,0,0,0
-"Mali","Ghana","2012-02-11","African Nations Cup",2,0,2,0,0,0
-"Ivory Coast","Mali","2012-02-08","African Nations Cup",1,0,1,0,0,0
-"Zambia","Ghana","2012-02-08","African Nations Cup",1,0,1,0,0,0
-"Gabon","Mali","2012-02-05","African Nations Cup",1,1,1,1,0,1
-"Ghana","Tunisia","2012-02-05","African Nations Cup",2,1,2,1,0,0
-"Equatorial Guinea","Ivory Coast","2012-02-04","African Nations Cup",0,3,0,3,0,1
-"Zambia","Sudan","2012-02-04","African Nations Cup",3,0,3,0,0,0
+"Ivory Coast","Zambia","2012-02-12","African Nations Cup",0,0,0,0,1,0
+"Mali","Ghana","2012-02-11","African Nations Cup",2,0,2,0,1,0
+"Ivory Coast","Mali","2012-02-08","African Nations Cup",1,0,1,0,1,0
+"Zambia","Ghana","2012-02-08","African Nations Cup",1,0,1,0,1,0
+"Gabon","Mali","2012-02-05","African Nations Cup",1,1,1,1,1,1
+"Ghana","Tunisia","2012-02-05","African Nations Cup",2,1,1,1,1,0
+"Equatorial Guinea","Ivory Coast","2012-02-04","African Nations Cup",0,3,0,3,1,1
+"Zambia","Sudan","2012-02-04","African Nations Cup",3,0,3,0,1,0
 "Ghana","Guinea","2012-02-01","African Nations Cup",1,1,1,1,0,0
 "Mali","Botswana","2012-02-01","African Nations Cup",2,1,2,1,0,0
 "Morocco","Niger","2012-01-31","African Nations Cup",1,0,1,0,0,0
@@ -315,14 +315,14 @@
 "Angola","Burkina Faso","2012-01-22","African Nations Cup",2,1,2,1,0,0
 "Equatorial Guinea","Libya","2012-01-21","African Nations Cup",1,0,1,0,0,1
 "Zambia","Senegal","2012-01-21","African Nations Cup",2,1,2,1,0,0
-"Egypt","Ghana","2010-01-31","African Nations Cup",1,0,1,0,0,0
-"Nigeria","Algeria","2010-01-30","African Nations Cup",1,0,1,0,0,0
-"Ghana","Nigeria","2010-01-28","African Nations Cup",1,0,1,0,0,0
-"Egypt","Algeria","2010-01-28","African Nations Cup",4,0,4,0,0,0
-"Nigeria","Zambia","2010-01-25","African Nations Cup",0,0,0,0,0,0
-"Egypt","Cameroon","2010-01-25","African Nations Cup",3,1,3,1,0,0
-"Angola","Ghana","2010-01-24","African Nations Cup",0,1,0,1,0,1
-"Algeria","Ivory Coast","2010-01-24","African Nations Cup",3,2,3,2,0,0
+"Egypt","Ghana","2010-01-31","African Nations Cup",1,0,1,0,1,0
+"Nigeria","Algeria","2010-01-30","African Nations Cup",1,0,1,0,1,0
+"Ghana","Nigeria","2010-01-28","African Nations Cup",1,0,1,0,1,0
+"Egypt","Algeria","2010-01-28","African Nations Cup",4,0,4,0,1,0
+"Nigeria","Zambia","2010-01-25","African Nations Cup",0,0,0,0,1,0
+"Egypt","Cameroon","2010-01-25","African Nations Cup",3,1,1,1,1,0
+"Angola","Ghana","2010-01-24","African Nations Cup",0,1,0,1,1,1
+"Algeria","Ivory Coast","2010-01-24","African Nations Cup",3,2,2,2,1,0
 "Cameroon","Tunisia","2010-01-21","African Nations Cup",2,2,2,2,0,0
 "Zambia","Gabon","2010-01-21","African Nations Cup",2,1,2,1,0,0
 "Egypt","Benin","2010-01-20","African Nations Cup",2,0,2,0,0,0
@@ -344,14 +344,14 @@
 "Burkina Faso","Ivory Coast","2010-01-11","African Nations Cup",0,0,0,0,0,0
 "Malawi","Algeria","2010-01-11","African Nations Cup",3,0,3,0,0,0
 "Angola","Mali","2010-01-10","African Nations Cup",4,4,4,4,0,1
-"Egypt","Cameroon","2008-02-10","African Nations Cup",1,0,1,0,0,0
-"Ghana","Ivory Coast","2008-02-09","African Nations Cup",4,2,4,2,0,1
-"Ghana","Cameroon","2008-02-07","African Nations Cup",0,1,0,1,0,1
-"Egypt","Ivory Coast","2008-02-07","African Nations Cup",4,1,4,1,0,0
-"Egypt","Angola","2008-02-04","African Nations Cup",2,1,2,1,0,0
-"Cameroon","Tunisia","2008-02-04","African Nations Cup",3,2,3,2,0,0
-"Ghana","Nigeria","2008-02-03","African Nations Cup",2,1,2,1,0,1
-"Ivory Coast","Guinea","2008-02-03","African Nations Cup",5,0,5,0,0,0
+"Egypt","Cameroon","2008-02-10","African Nations Cup",1,0,1,0,1,0
+"Ghana","Ivory Coast","2008-02-09","African Nations Cup",4,2,4,2,1,1
+"Ghana","Cameroon","2008-02-07","African Nations Cup",0,1,0,1,1,1
+"Egypt","Ivory Coast","2008-02-07","African Nations Cup",4,1,4,1,1,0
+"Egypt","Angola","2008-02-04","African Nations Cup",2,1,2,1,1,0
+"Cameroon","Tunisia","2008-02-04","African Nations Cup",3,2,3,2,1,0
+"Ghana","Nigeria","2008-02-03","African Nations Cup",2,1,2,1,1,1
+"Ivory Coast","Guinea","2008-02-03","African Nations Cup",5,0,5,0,1,0
 "Angola","Tunisia","2008-01-31","African Nations Cup",0,0,0,0,0,0
 "Senegal","South Africa","2008-01-31","African Nations Cup",1,1,1,1,0,0
 "Egypt","Zambia","2008-01-30","African Nations Cup",1,1,1,1,0,0
@@ -376,14 +376,14 @@
 "Mali","Benin","2008-01-21","African Nations Cup",1,0,1,0,0,0
 "Morocco","Namibia","2008-01-21","African Nations Cup",5,1,5,1,0,0
 "Ghana","Guinea","2008-01-20","African Nations Cup",2,1,2,1,0,1
-"Egypt","Ivory Coast","2006-02-10","African Nations Cup",0,0,0,0,0,1
-"Nigeria","Senegal","2006-02-09","African Nations Cup",1,0,1,0,0,0
-"Ivory Coast","Nigeria","2006-02-07","African Nations Cup",1,0,1,0,0,0
-"Egypt","Senegal","2006-02-07","African Nations Cup",2,1,2,1,0,1
-"Nigeria","Tunisia","2006-02-04","African Nations Cup",1,1,1,1,0,0
-"Cameroon","Ivory Coast","2006-02-04","African Nations Cup",1,1,1,1,0,0
-"Senegal","Guinea","2006-02-03","African Nations Cup",3,2,3,2,0,0
-"Egypt","Democratic Republic of Congo","2006-02-03","African Nations Cup",4,1,4,1,0,1
+"Egypt","Ivory Coast","2006-02-10","African Nations Cup",0,0,0,0,1,1
+"Nigeria","Senegal","2006-02-09","African Nations Cup",1,0,1,0,1,0
+"Ivory Coast","Nigeria","2006-02-07","African Nations Cup",1,0,1,0,1,0
+"Egypt","Senegal","2006-02-07","African Nations Cup",2,1,2,1,1,1
+"Nigeria","Tunisia","2006-02-04","African Nations Cup",1,1,1,1,1,0
+"Cameroon","Ivory Coast","2006-02-04","African Nations Cup",1,1,0,0,1,0
+"Senegal","Guinea","2006-02-03","African Nations Cup",3,2,3,2,1,0
+"Egypt","Democratic Republic of Congo","2006-02-03","African Nations Cup",4,1,4,1,1,1
 "Nigeria","Senegal","2006-01-31","African Nations Cup",2,1,2,1,0,0
 "Zimbabwe","Ghana","2006-01-31","African Nations Cup",2,1,2,1,0,0
 "Zambia","South Africa","2006-01-30","African Nations Cup",1,0,1,0,0,0
@@ -408,14 +408,14 @@
 "Democratic Republic of Congo","Togo","2006-01-21","African Nations Cup",2,0,2,0,0,0
 "Cameroon","Angola","2006-01-21","African Nations Cup",3,1,3,1,0,0
 "Egypt","Libya","2006-01-20","African Nations Cup",3,0,3,0,0,1
-"Tunisia","Morocco","2004-02-14","African Nations Cup",2,1,2,1,0,1
-"Nigeria","Mali","2004-02-13","African Nations Cup",2,1,2,1,0,0
-"Tunisia","Nigeria","2004-02-11","African Nations Cup",1,1,1,1,0,1
-"Morocco","Mali","2004-02-11","African Nations Cup",4,0,4,0,0,0
-"Nigeria","Cameroon","2004-02-08","African Nations Cup",2,1,2,1,0,0
-"Morocco","Algeria","2004-02-08","African Nations Cup",3,1,3,1,0,0
-"Tunisia","Senegal","2004-02-07","African Nations Cup",1,0,1,0,0,1
-"Mali","Guinea","2004-02-07","African Nations Cup",2,1,2,1,0,0
+"Tunisia","Morocco","2004-02-14","African Nations Cup",2,1,2,1,1,1
+"Nigeria","Mali","2004-02-13","African Nations Cup",2,1,2,1,1,0
+"Tunisia","Nigeria","2004-02-11","African Nations Cup",1,1,1,1,1,1
+"Morocco","Mali","2004-02-11","African Nations Cup",4,0,4,0,1,0
+"Nigeria","Cameroon","2004-02-08","African Nations Cup",2,1,2,1,1,0
+"Morocco","Algeria","2004-02-08","African Nations Cup",3,1,1,1,1,0
+"Tunisia","Senegal","2004-02-07","African Nations Cup",1,0,1,0,1,1
+"Mali","Guinea","2004-02-07","African Nations Cup",2,1,2,1,1,0
 "Morocco","South Africa","2004-02-04","African Nations Cup",1,1,1,1,0,0
 "Nigeria","Benin","2004-02-04","African Nations Cup",2,1,2,1,0,0
 "Cameroon","Egypt","2004-02-03","African Nations Cup",0,0,0,0,0,0
@@ -440,14 +440,14 @@
 "Egypt","Zimbabwe","2004-01-25","African Nations Cup",2,1,2,1,0,0
 "Guinea","Democratic Republic of Congo","2004-01-25","African Nations Cup",2,1,2,1,0,0
 "Tunisia","Rwanda","2004-01-24","African Nations Cup",2,1,2,1,0,1
-"Cameroon","Senegal","2002-02-10","African Nations Cup",0,0,0,0,0,0
-"Mali","Nigeria","2002-02-09","African Nations Cup",0,1,0,1,0,1
-"Mali","Cameroon","2002-02-07","African Nations Cup",0,3,0,3,0,1
-"Senegal","Nigeria","2002-02-07","African Nations Cup",2,1,2,1,0,0
-"Cameroon","Egypt","2002-02-04","African Nations Cup",1,0,1,0,0,0
-"Senegal","Democratic Republic of Congo","2002-02-04","African Nations Cup",2,0,2,0,0,0
-"Nigeria","Ghana","2002-02-03","African Nations Cup",1,0,1,0,0,0
-"Mali","South Africa","2002-02-03","African Nations Cup",2,0,2,0,0,1
+"Cameroon","Senegal","2002-02-10","African Nations Cup",0,0,0,0,1,0
+"Mali","Nigeria","2002-02-09","African Nations Cup",0,1,0,1,1,1
+"Mali","Cameroon","2002-02-07","African Nations Cup",0,3,0,3,1,1
+"Senegal","Nigeria","2002-02-07","African Nations Cup",2,1,1,1,1,0
+"Cameroon","Egypt","2002-02-04","African Nations Cup",1,0,1,0,1,0
+"Senegal","Democratic Republic of Congo","2002-02-04","African Nations Cup",2,0,2,0,1,0
+"Nigeria","Ghana","2002-02-03","African Nations Cup",1,0,1,0,1,0
+"Mali","South Africa","2002-02-03","African Nations Cup",2,0,2,0,1,1
 "Senegal","Tunisia","2002-01-31","African Nations Cup",0,0,0,0,0,0
 "Egypt","Zambia","2002-01-31","African Nations Cup",2,1,2,1,0,0
 "Ghana","Burkina Faso","2002-01-30","African Nations Cup",2,1,2,1,0,0
@@ -472,14 +472,14 @@
 "Senegal","Egypt","2002-01-20","African Nations Cup",1,0,1,0,0,0
 "Cameroon","Democratic Republic of Congo","2002-01-20","African Nations Cup",1,0,1,0,0,0
 "Mali","Liberia","2002-01-19","African Nations Cup",1,1,1,1,0,1
-"Nigeria","Cameroon","2000-02-13","African Nations Cup",2,2,2,2,0,1
-"South Africa","Tunisia","2000-02-12","African Nations Cup",2,2,2,2,0,0
-"Nigeria","South Africa","2000-02-10","African Nations Cup",2,0,2,0,0,1
-"Cameroon","Tunisia","2000-02-10","African Nations Cup",3,0,3,0,0,0
-"Tunisia","Egypt","2000-02-07","African Nations Cup",1,0,1,0,0,0
-"Nigeria","Senegal","2000-02-07","African Nations Cup",2,1,2,1,0,1
-"Ghana","South Africa","2000-02-06","African Nations Cup",0,1,0,1,0,1
-"Cameroon","Algeria","2000-02-06","African Nations Cup",2,1,2,1,0,0
+"Nigeria","Cameroon","2000-02-13","African Nations Cup",2,2,2,2,1,1
+"South Africa","Tunisia","2000-02-12","African Nations Cup",2,2,2,2,1,0
+"Nigeria","South Africa","2000-02-10","African Nations Cup",2,0,2,0,1,1
+"Cameroon","Tunisia","2000-02-10","African Nations Cup",3,0,3,0,1,0
+"Tunisia","Egypt","2000-02-07","African Nations Cup",1,0,1,0,1,0
+"Nigeria","Senegal","2000-02-07","African Nations Cup",2,1,2,1,1,1
+"Ghana","South Africa","2000-02-06","African Nations Cup",0,1,0,1,1,1
+"Cameroon","Algeria","2000-02-06","African Nations Cup",2,1,2,1,1,0
 "Tunisia","Congo","2000-02-03","African Nations Cup",1,0,1,0,0,0
 "Nigeria","Morocco","2000-02-03","African Nations Cup",2,0,2,0,0,1
 "Democratic Republic of Congo","Gabon","2000-02-02","African Nations Cup",0,0,0,0,0,0
@@ -504,14 +504,14 @@
 "South Africa","Gabon","2000-01-23","African Nations Cup",3,1,3,1,0,0
 "Nigeria","Tunisia","2000-01-23","African Nations Cup",4,2,4,2,0,1
 "Ghana","Cameroon","2000-01-22","African Nations Cup",1,1,1,1,0,1
-"Egypt","South Africa","1998-02-28","African Nations Cup",2,0,2,0,0,0
-"Burkina Faso","Democratic Republic of Congo","1998-02-27","African Nations Cup",4,4,4,4,0,1
-"Burkina Faso","Egypt","1998-02-25","African Nations Cup",0,2,0,2,0,1
-"South Africa","Democratic Republic of Congo","1998-02-25","African Nations Cup",2,1,2,1,0,0
-"South Africa","Morocco","1998-02-22","African Nations Cup",2,1,2,1,0,0
-"Egypt","Ivory Coast","1998-02-21","African Nations Cup",0,0,0,0,0,0
-"Burkina Faso","Tunisia","1998-02-21","African Nations Cup",1,1,1,1,0,1
-"Democratic Republic of Congo","Cameroon","1998-02-20","African Nations Cup",1,0,1,0,0,0
+"Egypt","South Africa","1998-02-28","African Nations Cup",2,0,2,0,1,0
+"Burkina Faso","Democratic Republic of Congo","1998-02-27","African Nations Cup",4,4,4,4,1,1
+"Burkina Faso","Egypt","1998-02-25","African Nations Cup",0,2,0,2,1,1
+"South Africa","Democratic Republic of Congo","1998-02-25","African Nations Cup",2,1,2,1,1,0
+"South Africa","Morocco","1998-02-22","African Nations Cup",2,1,2,1,1,0
+"Egypt","Ivory Coast","1998-02-21","African Nations Cup",0,0,0,0,1,0
+"Burkina Faso","Tunisia","1998-02-21","African Nations Cup",1,1,1,1,1,1
+"Democratic Republic of Congo","Cameroon","1998-02-20","African Nations Cup",1,0,1,0,1,0
 "Morocco","Egypt","1998-02-17","African Nations Cup",1,0,1,0,0,0
 "Zambia","Mozambique","1998-02-17","African Nations Cup",3,1,3,1,0,0
 "Democratic Republic of Congo","Ghana","1998-02-16","African Nations Cup",1,0,1,0,0,0
@@ -536,14 +536,14 @@
 "Guinea","Algeria","1998-02-08","African Nations Cup",1,0,1,0,0,0
 "Ivory Coast","Namibia","1998-02-08","African Nations Cup",4,3,4,3,0,0
 "Burkina Faso","Cameroon","1998-02-07","African Nations Cup",0,1,0,1,0,1
-"Zambia","Ghana","1996-02-03","African Nations Cup",1,0,1,0,0,0
-"South Africa","Tunisia","1996-02-03","African Nations Cup",2,0,2,0,0,1
-"South Africa","Ghana","1996-01-31","African Nations Cup",3,0,3,0,0,1
-"Tunisia","Zambia","1996-01-31","African Nations Cup",4,2,4,2,0,0
-"Gabon","Tunisia","1996-01-28","African Nations Cup",1,1,1,1,0,0
-"Ghana","Zaire","1996-01-28","African Nations Cup",1,0,1,0,0,0
-"South Africa","Algeria","1996-01-27","African Nations Cup",2,1,2,1,0,1
-"Zambia","Egypt","1996-01-27","African Nations Cup",3,1,3,1,0,0
+"Zambia","Ghana","1996-02-03","African Nations Cup",1,0,1,0,1,0
+"South Africa","Tunisia","1996-02-03","African Nations Cup",2,0,2,0,1,1
+"South Africa","Ghana","1996-01-31","African Nations Cup",3,0,3,0,1,1
+"Tunisia","Zambia","1996-01-31","African Nations Cup",4,2,4,2,1,0
+"Gabon","Tunisia","1996-01-28","African Nations Cup",1,1,1,1,1,0
+"Ghana","Zaire","1996-01-28","African Nations Cup",1,0,1,0,1,0
+"South Africa","Algeria","1996-01-27","African Nations Cup",2,1,2,1,1,1
+"Zambia","Egypt","1996-01-27","African Nations Cup",3,1,3,1,1,0
 "Ghana","Mozambique","1996-01-25","African Nations Cup",2,0,2,0,0,0
 "Zaire","Liberia","1996-01-25","African Nations Cup",2,0,2,0,0,0
 "Tunisia","Ivory Coast","1996-01-25","African Nations Cup",3,1,3,1,0,0
@@ -565,14 +565,14 @@
 "Algeria","Zambia","1996-01-14","African Nations Cup",0,0,0,0,0,0
 "Ghana","Ivory Coast","1996-01-14","African Nations Cup",2,0,2,0,0,0
 "South Africa","Cameroon","1996-01-13","African Nations Cup",3,0,3,0,0,1
-"Nigeria","Zambia","1994-04-10","African Nations Cup",2,1,2,1,0,0
-"Ivory Coast","Mali","1994-04-10","African Nations Cup",3,1,3,1,0,0
-"Ivory Coast","Nigeria","1994-04-06","African Nations Cup",2,2,2,2,0,0
-"Zambia","Mali","1994-04-06","African Nations Cup",4,0,4,0,0,0
-"Zambia","Senegal","1994-04-03","African Nations Cup",1,0,1,0,0,0
-"Ivory Coast","Ghana","1994-04-03","African Nations Cup",2,1,2,1,0,0
-"Mali","Egypt","1994-04-02","African Nations Cup",1,0,1,0,0,0
-"Nigeria","Zaire","1994-04-02","African Nations Cup",2,0,2,0,0,0
+"Nigeria","Zambia","1994-04-10","African Nations Cup",2,1,2,1,1,0
+"Ivory Coast","Mali","1994-04-10","African Nations Cup",3,1,3,1,1,0
+"Ivory Coast","Nigeria","1994-04-06","African Nations Cup",2,2,2,2,1,0
+"Zambia","Mali","1994-04-06","African Nations Cup",4,0,4,0,1,0
+"Zambia","Senegal","1994-04-03","African Nations Cup",1,0,1,0,1,0
+"Ivory Coast","Ghana","1994-04-03","African Nations Cup",2,1,2,1,1,0
+"Mali","Egypt","1994-04-02","African Nations Cup",1,0,1,0,1,0
+"Nigeria","Zaire","1994-04-02","African Nations Cup",2,0,2,0,1,0
 "Ghana","Senegal","1994-03-31","African Nations Cup",1,0,1,0,0,0
 "Zambia","Ivory Coast","1994-03-31","African Nations Cup",1,0,1,0,0,0
 "Egypt","Nigeria","1994-03-30","African Nations Cup",0,0,0,0,0,0
@@ -585,14 +585,14 @@
 "Ivory Coast","Sierra Leone","1994-03-27","African Nations Cup",4,0,4,0,0,0
 "Tunisia","Mali","1994-03-26","African Nations Cup",0,2,0,2,0,1
 "Nigeria","Gabon","1994-03-26","African Nations Cup",3,0,3,0,0,0
-"Ghana","Ivory Coast","1992-01-26","African Nations Cup",0,0,0,0,0,0
-"Nigeria","Cameroon","1992-01-25","African Nations Cup",2,1,2,1,0,0
-"Cameroon","Ivory Coast","1992-01-23","African Nations Cup",0,0,0,0,0,0
-"Ghana","Nigeria","1992-01-23","African Nations Cup",2,1,2,1,0,0
-"Ivory Coast","Zambia","1992-01-20","African Nations Cup",1,0,1,0,0,0
-"Ghana","Congo","1992-01-20","African Nations Cup",2,1,2,1,0,0
-"Senegal","Cameroon","1992-01-19","African Nations Cup",0,1,0,1,0,1
-"Nigeria","Zaire","1992-01-19","African Nations Cup",1,0,1,0,0,0
+"Ghana","Ivory Coast","1992-01-26","African Nations Cup",0,0,0,0,1,0
+"Nigeria","Cameroon","1992-01-25","African Nations Cup",2,1,2,1,1,0
+"Cameroon","Ivory Coast","1992-01-23","African Nations Cup",0,0,0,0,1,0
+"Ghana","Nigeria","1992-01-23","African Nations Cup",2,1,2,1,1,0
+"Ivory Coast","Zambia","1992-01-20","African Nations Cup",1,0,0,0,1,0
+"Ghana","Congo","1992-01-20","African Nations Cup",2,1,2,1,1,0
+"Senegal","Cameroon","1992-01-19","African Nations Cup",0,1,0,1,1,1
+"Nigeria","Zaire","1992-01-19","African Nations Cup",1,0,1,0,1,0
 "Ghana","Egypt","1992-01-17","African Nations Cup",1,0,1,0,0,0
 "Algeria","Congo","1992-01-17","African Nations Cup",1,1,1,1,0,0
 "Cameroon","Zaire","1992-01-16","African Nations Cup",1,1,1,1,0,0
@@ -605,10 +605,10 @@
 "Ivory Coast","Algeria","1992-01-13","African Nations Cup",3,0,3,0,0,0
 "Senegal","Nigeria","1992-01-12","African Nations Cup",1,2,1,2,0,1
 "Cameroon","Morocco","1992-01-12","African Nations Cup",1,0,1,0,0,0
-"Algeria","Nigeria","1990-03-16","African Nations Cup",1,0,1,0,0,1
-"Zambia","Senegal","1990-03-15","African Nations Cup",1,0,1,0,0,0
-"Algeria","Senegal","1990-03-12","African Nations Cup",2,1,2,1,0,1
-"Nigeria","Zambia","1990-03-12","African Nations Cup",2,0,2,0,0,0
+"Algeria","Nigeria","1990-03-16","African Nations Cup",1,0,1,0,1,1
+"Zambia","Senegal","1990-03-15","African Nations Cup",1,0,1,0,1,0
+"Algeria","Senegal","1990-03-12","African Nations Cup",2,1,2,1,1,1
+"Nigeria","Zambia","1990-03-12","African Nations Cup",2,0,2,0,1,0
 "Senegal","Zambia","1990-03-09","African Nations Cup",0,0,0,0,0,0
 "Cameroon","Kenya","1990-03-09","African Nations Cup",2,0,2,0,0,0
 "Nigeria","Ivory Coast","1990-03-08","African Nations Cup",1,0,1,0,0,0
@@ -621,10 +621,10 @@
 "Zambia","Cameroon","1990-03-03","African Nations Cup",1,0,1,0,0,0
 "Ivory Coast","Egypt","1990-03-02","African Nations Cup",3,1,3,1,0,0
 "Algeria","Nigeria","1990-03-02","African Nations Cup",5,1,5,1,0,1
-"Cameroon","Nigeria","1988-03-27","African Nations Cup",1,0,1,0,0,0
-"Morocco","Algeria","1988-03-26","African Nations Cup",1,1,1,1,0,1
-"Morocco","Cameroon","1988-03-23","African Nations Cup",0,1,0,1,0,1
-"Algeria","Nigeria","1988-03-23","African Nations Cup",1,1,1,1,0,0
+"Cameroon","Nigeria","1988-03-27","African Nations Cup",1,0,1,0,1,0
+"Morocco","Algeria","1988-03-26","African Nations Cup",1,1,1,1,1,1
+"Morocco","Cameroon","1988-03-23","African Nations Cup",0,1,0,1,1,1
+"Algeria","Nigeria","1988-03-23","African Nations Cup",1,1,1,1,1,0
 "Egypt","Nigeria","1988-03-20","African Nations Cup",0,0,0,0,0,0
 "Cameroon","Kenya","1988-03-20","African Nations Cup",0,0,0,0,0,0
 "Morocco","Ivory Coast","1988-03-19","African Nations Cup",0,0,0,0,0,1
@@ -637,10 +637,10 @@
 "Nigeria","Kenya","1988-03-14","African Nations Cup",3,0,3,0,0,0
 "Algeria","Ivory Coast","1988-03-13","African Nations Cup",1,1,1,1,0,0
 "Morocco","Zaire","1988-03-13","African Nations Cup",1,1,1,1,0,1
-"Egypt","Cameroon","1986-03-21","African Nations Cup",0,0,0,0,0,1
-"Ivory Coast","Morocco","1986-03-20","African Nations Cup",3,2,3,2,0,0
-"Egypt","Morocco","1986-03-17","African Nations Cup",1,0,1,0,0,1
-"Cameroon","Ivory Coast","1986-03-17","African Nations Cup",1,0,1,0,0,0
+"Egypt","Cameroon","1986-03-21","African Nations Cup",0,0,0,0,1,1
+"Ivory Coast","Morocco","1986-03-20","African Nations Cup",3,2,3,2,1,0
+"Egypt","Morocco","1986-03-17","African Nations Cup",1,0,1,0,1,1
+"Cameroon","Ivory Coast","1986-03-17","African Nations Cup",1,0,1,0,1,0
 "Morocco","Zambia","1986-03-14","African Nations Cup",1,0,1,0,0,0
 "Cameroon","Algeria","1986-03-14","African Nations Cup",3,2,3,2,0,0
 "Ivory Coast","Senegal","1986-03-13","African Nations Cup",1,0,1,0,0,0
@@ -653,10 +653,10 @@
 "Cameroon","Zambia","1986-03-08","African Nations Cup",3,2,3,2,0,0
 "Egypt","Senegal","1986-03-07","African Nations Cup",0,1,0,1,0,1
 "Ivory Coast","Mozambique","1986-03-07","African Nations Cup",3,0,3,0,0,0
-"Cameroon","Nigeria","1984-03-18","African Nations Cup",3,1,3,1,0,0
-"Algeria","Egypt","1984-03-17","African Nations Cup",3,1,3,1,0,0
-"Algeria","Cameroon","1984-03-14","African Nations Cup",0,0,0,0,0,0
-"Egypt","Nigeria","1984-03-14","African Nations Cup",2,2,2,2,0,0
+"Cameroon","Nigeria","1984-03-18","African Nations Cup",3,1,3,1,1,0
+"Algeria","Egypt","1984-03-17","African Nations Cup",3,1,3,1,1,0
+"Algeria","Cameroon","1984-03-14","African Nations Cup",0,0,0,0,1,0
+"Egypt","Nigeria","1984-03-14","African Nations Cup",2,2,2,2,1,0
 "Algeria","Nigeria","1984-03-11","African Nations Cup",0,0,0,0,0,0
 "Ghana","Malawi","1984-03-11","African Nations Cup",1,0,1,0,0,0
 "Egypt","Togo","1984-03-10","African Nations Cup",0,0,0,0,0,0
@@ -669,10 +669,10 @@
 "Algeria","Malawi","1984-03-05","African Nations Cup",3,0,3,0,0,0
 "Egypt","Cameroon","1984-03-04","African Nations Cup",1,0,1,0,0,0
 "Ivory Coast","Togo","1984-03-04","African Nations Cup",3,0,3,0,0,1
-"Libya","Ghana","1982-03-19","African Nations Cup",1,1,1,1,0,1
-"Zambia","Algeria","1982-03-18","African Nations Cup",2,0,2,0,0,0
-"Libya","Zambia","1982-03-16","African Nations Cup",2,1,2,1,0,1
-"Ghana","Algeria","1982-03-16","African Nations Cup",3,2,3,2,0,0
+"Libya","Ghana","1982-03-19","African Nations Cup",1,1,1,1,1,1
+"Zambia","Algeria","1982-03-18","African Nations Cup",2,0,2,0,1,0
+"Libya","Zambia","1982-03-16","African Nations Cup",2,1,2,1,1,1
+"Ghana","Algeria","1982-03-16","African Nations Cup",3,2,2,2,1,0
 "Algeria","Ethiopia","1982-03-13","African Nations Cup",0,0,0,0,0,0
 "Zambia","Nigeria","1982-03-13","African Nations Cup",3,0,3,0,0,0
 "Libya","Cameroon","1982-03-12","African Nations Cup",0,0,0,0,0,1
@@ -685,10 +685,10 @@
 "Nigeria","Ethiopia","1982-03-07","African Nations Cup",3,0,3,0,0,0
 "Cameroon","Tunisia","1982-03-05","African Nations Cup",1,1,1,1,0,0
 "Libya","Ghana","1982-03-05","African Nations Cup",2,2,2,2,0,1
-"Nigeria","Algeria","1980-03-22","African Nations Cup",3,0,3,0,0,1
-"Morocco","Egypt","1980-03-21","African Nations Cup",2,0,2,0,0,0
-"Nigeria","Morocco","1980-03-19","African Nations Cup",1,0,1,0,0,1
-"Algeria","Egypt","1980-03-19","African Nations Cup",2,2,2,2,0,0
+"Nigeria","Algeria","1980-03-22","African Nations Cup",3,0,3,0,1,1
+"Morocco","Egypt","1980-03-21","African Nations Cup",2,0,2,0,1,0
+"Nigeria","Morocco","1980-03-19","African Nations Cup",1,0,1,0,1,1
+"Algeria","Egypt","1980-03-19","African Nations Cup",2,2,2,2,1,0
 "Morocco","Ghana","1980-03-16","African Nations Cup",1,0,1,0,0,0
 "Algeria","Guinea","1980-03-16","African Nations Cup",3,2,3,2,0,0
 "Nigeria","Egypt","1980-03-15","African Nations Cup",1,0,1,0,0,1
@@ -701,10 +701,10 @@
 "Guinea","Morocco","1980-03-09","African Nations Cup",1,1,1,1,0,0
 "Egypt","Ivory Coast","1980-03-08","African Nations Cup",2,1,2,1,0,0
 "Nigeria","Tanzania","1980-03-08","African Nations Cup",3,1,3,1,0,1
-"Nigeria","Tunisia","1978-03-16","African Nations Cup",1,1,1,1,0,0
-"Ghana","Uganda","1978-03-16","African Nations Cup",2,0,2,0,0,1
-"Ghana","Tunisia","1978-03-14","African Nations Cup",1,0,1,0,0,1
-"Uganda","Nigeria","1978-03-14","African Nations Cup",2,1,2,1,0,0
+"Nigeria","Tunisia","1978-03-16","African Nations Cup",1,1,1,1,1,0
+"Ghana","Uganda","1978-03-16","African Nations Cup",2,0,2,0,1,1
+"Ghana","Tunisia","1978-03-14","African Nations Cup",1,0,1,0,1,1
+"Uganda","Nigeria","1978-03-14","African Nations Cup",2,1,2,1,1,0
 "Congo","Tunisia","1978-03-11","African Nations Cup",0,0,0,0,0,0
 "Uganda","Morocco","1978-03-11","African Nations Cup",3,0,3,0,0,0
 "Nigeria","Zambia","1978-03-10","African Nations Cup",0,0,0,0,0,0
@@ -735,11 +735,11 @@
 "Nigeria","Zaire","1976-03-01","African Nations Cup",4,2,4,2,0,0
 "Egypt","Guinea","1976-02-29","African Nations Cup",1,1,1,1,0,0
 "Ethiopia","Uganda","1976-02-29","African Nations Cup",2,0,2,0,0,1
-"Zaire","Zambia","1974-03-14","African Nations Cup",2,0,2,0,0,0
-"Zaire","Zambia","1974-03-12","African Nations Cup",2,2,2,2,0,0
-"Egypt","Congo","1974-03-11","African Nations Cup",4,0,4,0,0,1
-"Egypt","Zaire","1974-03-09","African Nations Cup",2,3,2,3,0,1
-"Zambia","Congo","1974-03-09","African Nations Cup",4,2,4,2,0,0
+"Zaire","Zambia","1974-03-14","African Nations Cup",2,0,2,0,1,0
+"Zaire","Zambia","1974-03-12","African Nations Cup",2,2,1,1,1,0
+"Egypt","Congo","1974-03-11","African Nations Cup",4,0,4,0,1,1
+"Egypt","Zaire","1974-03-09","African Nations Cup",2,3,2,3,1,1
+"Zambia","Congo","1974-03-09","African Nations Cup",4,2,2,2,1,0
 "Congo","Guinea","1974-03-07","African Nations Cup",1,1,1,1,0,0
 "Zaire","Mauritius","1974-03-07","African Nations Cup",4,1,4,1,0,0
 "Zambia","Uganda","1974-03-06","African Nations Cup",1,0,1,0,0,0
@@ -752,10 +752,10 @@
 "Congo","Mauritius","1974-03-03","African Nations Cup",2,0,2,0,0,0
 "Zambia","Ivory Coast","1974-03-02","African Nations Cup",1,0,1,0,0,0
 "Egypt","Uganda","1974-03-01","African Nations Cup",2,1,2,1,0,1
-"Congo","Mali","1972-03-05","African Nations Cup",3,2,3,2,0,0
-"Cameroon","Zaire","1972-03-04","African Nations Cup",5,2,5,2,0,1
-"Cameroon","Congo","1972-03-02","African Nations Cup",0,1,0,1,0,1
-"Mali","Zaire","1972-03-02","African Nations Cup",4,3,4,3,0,0
+"Congo","Mali","1972-03-05","African Nations Cup",3,2,3,2,1,0
+"Cameroon","Zaire","1972-03-04","African Nations Cup",5,2,5,2,1,1
+"Cameroon","Congo","1972-03-02","African Nations Cup",0,1,0,1,1,1
+"Mali","Zaire","1972-03-02","African Nations Cup",4,3,3,3,1,0
 "Morocco","Zaire","1972-02-29","African Nations Cup",1,1,1,1,0,0
 "Congo","Sudan","1972-02-29","African Nations Cup",4,2,4,2,0,0
 "Cameroon","Mali","1972-02-28","African Nations Cup",1,1,1,1,0,1
@@ -768,10 +768,10 @@
 "Sudan","Zaire","1972-02-25","African Nations Cup",1,1,1,1,0,0
 "Mali","Togo","1972-02-24","African Nations Cup",3,3,3,3,0,0
 "Cameroon","Kenya","1972-02-23","African Nations Cup",2,1,2,1,0,1
-"Sudan","Ghana","1970-02-16","African Nations Cup",1,0,1,0,0,1
-"Egypt","Ivory Coast","1970-02-16","African Nations Cup",3,1,3,1,0,0
-"Sudan","Egypt","1970-02-14","African Nations Cup",2,1,2,1,0,1
-"Ghana","Ivory Coast","1970-02-14","African Nations Cup",2,1,2,1,0,0
+"Sudan","Ghana","1970-02-16","African Nations Cup",1,0,1,0,1,1
+"Egypt","Ivory Coast","1970-02-16","African Nations Cup",3,1,3,1,1,0
+"Sudan","Egypt","1970-02-14","African Nations Cup",2,1,1,1,1,1
+"Ghana","Ivory Coast","1970-02-14","African Nations Cup",2,1,1,1,1,0
 "Egypt","Democratic Republic of Congo","1970-02-11","African Nations Cup",1,0,1,0,0,0
 "Ghana","Guinea","1970-02-11","African Nations Cup",1,1,1,1,0,0
 "Sudan","Cameroon","1970-02-10","African Nations Cup",2,1,2,1,0,1
@@ -784,10 +784,10 @@
 "Egypt","Guinea","1970-02-07","African Nations Cup",4,1,4,1,0,0
 "Cameroon","Ivory Coast","1970-02-06","African Nations Cup",3,2,3,2,0,0
 "Sudan","Ethiopia","1970-02-06","African Nations Cup",3,0,3,0,0,1
-"Ethiopia","Ivory Coast","1968-01-21","African Nations Cup",0,1,0,1,0,1
-"Democratic Republic of Congo","Ghana","1968-01-21","African Nations Cup",1,0,1,0,0,0
-"Ethiopia","Democratic Republic of Congo","1968-01-19","African Nations Cup",2,3,2,3,0,1
-"Ghana","Ivory Coast","1968-01-19","African Nations Cup",4,3,4,3,0,0
+"Ethiopia","Ivory Coast","1968-01-21","African Nations Cup",0,1,0,1,1,1
+"Democratic Republic of Congo","Ghana","1968-01-21","African Nations Cup",1,0,1,0,1,0
+"Ethiopia","Democratic Republic of Congo","1968-01-19","African Nations Cup",2,3,2,2,1,1
+"Ghana","Ivory Coast","1968-01-19","African Nations Cup",4,3,3,3,1,0
 "Democratic Republic of Congo","Senegal","1968-01-16","African Nations Cup",2,1,2,1,0,0
 "Ivory Coast","Uganda","1968-01-16","African Nations Cup",2,1,2,1,0,0
 "Ghana","Congo","1968-01-16","African Nations Cup",3,1,3,1,0,0
@@ -800,31 +800,31 @@
 "Democratic Republic of Congo","Congo","1968-01-12","African Nations Cup",3,0,3,0,0,0
 "Ethiopia","Uganda","1968-01-11","African Nations Cup",2,1,2,1,0,1
 "Ivory Coast","Algeria","1968-01-11","African Nations Cup",3,0,3,0,0,0
-"Ivory Coast","Senegal","1965-11-21","African Nations Cup",1,0,1,0,0,0
-"Tunisia","Ghana","1965-11-21","African Nations Cup",2,3,2,3,0,1
+"Ivory Coast","Senegal","1965-11-21","African Nations Cup",1,0,1,0,1,0
+"Tunisia","Ghana","1965-11-21","African Nations Cup",2,3,2,2,1,1
 "Ghana","Ivory Coast","1965-11-19","African Nations Cup",4,1,4,1,0,0
 "Senegal","Ethiopia","1965-11-19","African Nations Cup",5,1,5,1,0,0
 "Tunisia","Senegal","1965-11-14","African Nations Cup",0,0,0,0,0,1
 "Ivory Coast","Democratic Republic of Congo","1965-11-14","African Nations Cup",3,0,3,0,0,0
 "Tunisia","Ethiopia","1965-11-12","African Nations Cup",4,0,4,0,0,1
 "Ghana","Democratic Republic of Congo","1965-11-12","African Nations Cup",5,2,5,2,0,0
-"Ghana","Sudan","1963-12-01","African Nations Cup",3,0,3,0,0,1
-"Egypt","Ethiopia","1963-11-30","African Nations Cup",3,0,3,0,0,0
+"Ghana","Sudan","1963-12-01","African Nations Cup",3,0,3,0,1,1
+"Egypt","Ethiopia","1963-11-30","African Nations Cup",3,0,3,0,1,0
 "Sudan","Nigeria","1963-11-28","African Nations Cup",4,0,4,0,0,0
 "Ethiopia","Tunisia","1963-11-28","African Nations Cup",4,2,4,2,0,0
 "Egypt","Sudan","1963-11-26","African Nations Cup",2,2,2,2,0,0
 "Ghana","Ethiopia","1963-11-26","African Nations Cup",2,0,2,0,0,1
 "Ghana","Tunisia","1963-11-24","African Nations Cup",1,1,1,1,0,1
 "Egypt","Nigeria","1963-11-24","African Nations Cup",6,3,6,3,0,0
-"Ethiopia","Egypt","1962-01-21","African Nations Cup",4,2,4,2,0,1
-"Tunisia","Uganda","1962-01-20","African Nations Cup",3,0,3,0,0,0
-"Egypt","Uganda","1962-01-18","African Nations Cup",2,1,2,1,0,0
-"Ethiopia","Tunisia","1962-01-14","African Nations Cup",4,2,4,2,0,1
+"Ethiopia","Egypt","1962-01-21","African Nations Cup",4,2,2,2,1,1
+"Tunisia","Uganda","1962-01-20","African Nations Cup",3,0,3,0,1,0
+"Egypt","Uganda","1962-01-18","African Nations Cup",2,1,2,1,1,0
+"Ethiopia","Tunisia","1962-01-14","African Nations Cup",4,2,4,2,1,1
 "United Arab Republic","Sudan","1959-05-29","African Nations Cup",2,1,2,1,0,1
 "Sudan","Ethiopia","1959-05-25","African Nations Cup",1,0,1,0,0,0
 "United Arab Republic","Ethiopia","1959-05-22","African Nations Cup",4,0,4,0,0,1
-"Egypt","Ethiopia","1957-02-15","African Nations Cup",4,0,4,0,0,0
-"Sudan","Egypt","1957-02-10","African Nations Cup",1,2,1,2,0,1
+"Egypt","Ethiopia","1957-02-15","African Nations Cup",4,0,4,0,1,0
+"Sudan","Egypt","1957-02-10","African Nations Cup",1,2,1,2,1,1
 "Cape Verde","Uganda","2017-06-11","African Nations Cup qualifier",0,1,0,1,0,1
 "Tunisia","Egypt","2017-06-11","African Nations Cup qualifier",1,0,1,0,0,1
 "Algeria","Togo","2017-06-11","African Nations Cup qualifier",1,0,1,0,0,1
