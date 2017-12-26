@@ -9045,21 +9045,21 @@
 "Macao","Mongolia","2003-02-22","East Asian Cup qualifier",2,0,2,0,0,0
 "Macao","Mongolia","2001-05-23","East Asian Games",4,0,4,0,0,0
 "Northern Cyprus","Tibet","2006-11-21","ELF Cup",10,0,10,0,0,1
-"France","Portugal","2016-07-10","European Championship",0,1,0,1,0,1
-"France","Germany","2016-07-07","European Championship",2,0,2,0,0,1
-"Portugal","Wales","2016-07-06","European Championship",2,0,2,0,0,0
-"France","Iceland","2016-07-03","European Championship",5,2,5,2,0,1
-"Germany","Italy","2016-07-02","European Championship",1,1,1,1,0,0
-"Wales","Belgium","2016-07-01","European Championship",3,1,3,1,0,0
-"Poland","Portugal","2016-06-30","European Championship",1,1,1,1,0,0
-"Italy","Spain","2016-06-27","European Championship",2,0,2,0,0,0
-"Iceland","England","2016-06-27","European Championship",2,1,2,1,0,0
-"France","Ireland","2016-06-26","European Championship",2,1,2,1,0,1
-"Germany","Slovakia","2016-06-26","European Championship",3,0,3,0,0,0
-"Belgium","Hungary","2016-06-26","European Championship",4,0,4,0,0,0
-"Portugal","Croatia","2016-06-25","European Championship",1,0,1,0,0,0
-"Poland","Switzerland","2016-06-25","European Championship",1,1,1,1,0,0
-"Wales","Northern Ireland","2016-06-25","European Championship",1,0,1,0,0,0
+"France","Portugal","2016-07-10","European Championship",0,1,0,0,1,1
+"France","Germany","2016-07-07","European Championship",2,0,2,0,1,1
+"Portugal","Wales","2016-07-06","European Championship",2,0,2,0,1,0
+"France","Iceland","2016-07-03","European Championship",5,2,5,2,1,1
+"Germany","Italy","2016-07-02","European Championship",1,1,1,1,1,0
+"Wales","Belgium","2016-07-01","European Championship",3,1,3,1,1,0
+"Poland","Portugal","2016-06-30","European Championship",1,1,1,1,1,0
+"Italy","Spain","2016-06-27","European Championship",2,0,2,0,1,0
+"Iceland","England","2016-06-27","European Championship",2,1,2,1,1,0
+"France","Ireland","2016-06-26","European Championship",2,1,2,1,1,1
+"Germany","Slovakia","2016-06-26","European Championship",3,0,3,0,1,0
+"Belgium","Hungary","2016-06-26","European Championship",4,0,4,0,1,0
+"Portugal","Croatia","2016-06-25","European Championship",1,0,0,0,1,0
+"Poland","Switzerland","2016-06-25","European Championship",1,1,1,1,1,0
+"Wales","Northern Ireland","2016-06-25","European Championship",1,0,1,0,1,0
 "Ireland","Italy","2016-06-22","European Championship",1,0,1,0,0,0
 "Belgium","Sweden","2016-06-22","European Championship",1,0,1,0,0,0
 "Iceland","Austria","2016-06-22","European Championship",2,1,2,1,0,0
@@ -9096,13 +9096,13 @@
 "Switzerland","Albania","2016-06-11","European Championship",1,0,1,0,0,0
 "Wales","Slovakia","2016-06-11","European Championship",2,1,2,1,0,0
 "France","Romania","2016-06-10","European Championship",2,1,2,1,0,1
-"Spain","Italy","2012-07-01","European Championship",4,0,4,0,0,0
-"Italy","Germany","2012-06-28","European Championship",2,1,2,1,0,0
-"Portugal","Spain","2012-06-27","European Championship",0,0,0,0,0,0
-"England","Italy","2012-06-24","European Championship",0,0,0,0,0,0
-"Spain","France","2012-06-23","European Championship",2,0,2,0,0,0
-"Germany","Greece","2012-06-22","European Championship",4,2,4,2,0,0
-"Portugal","Czechia","2012-06-21","European Championship",1,0,1,0,0,0
+"Spain","Italy","2012-07-01","European Championship",4,0,4,0,1,0
+"Italy","Germany","2012-06-28","European Championship",2,1,2,1,1,0
+"Portugal","Spain","2012-06-27","European Championship",0,0,0,0,1,0
+"England","Italy","2012-06-24","European Championship",0,0,0,0,1,0
+"Spain","France","2012-06-23","European Championship",2,0,2,0,1,0
+"Germany","Greece","2012-06-22","European Championship",4,2,4,2,1,0
+"Portugal","Czechia","2012-06-21","European Championship",1,0,1,0,1,0
 "Ukraine","England","2012-06-19","European Championship",0,1,0,1,0,1
 "Sweden","France","2012-06-19","European Championship",2,0,2,0,0,0
 "Spain","Croatia","2012-06-18","European Championship",1,0,1,0,0,0
@@ -9127,13 +9127,13 @@
 "Denmark","Netherlands","2012-06-09","European Championship",1,0,1,0,0,0
 "Poland","Greece","2012-06-08","European Championship",1,1,1,1,0,1
 "Russia","Czechia","2012-06-08","European Championship",4,1,4,1,0,0
-"Spain","Germany","2008-06-29","European Championship",1,0,1,0,0,0
-"Spain","Russia","2008-06-26","European Championship",3,0,3,0,0,0
-"Germany","Turkey","2008-06-25","European Championship",3,2,3,2,0,0
-"Italy","Spain","2008-06-22","European Championship",0,0,0,0,0,0
-"Russia","Netherlands","2008-06-21","European Championship",3,1,3,1,0,0
-"Croatia","Turkey","2008-06-20","European Championship",1,1,1,1,0,0
-"Germany","Portugal","2008-06-19","European Championship",3,2,3,2,0,0
+"Spain","Germany","2008-06-29","European Championship",1,0,1,0,1,0
+"Spain","Russia","2008-06-26","European Championship",3,0,3,0,1,0
+"Germany","Turkey","2008-06-25","European Championship",3,2,3,2,1,0
+"Italy","Spain","2008-06-22","European Championship",0,0,0,0,1,0
+"Russia","Netherlands","2008-06-21","European Championship",3,1,1,1,1,0
+"Croatia","Turkey","2008-06-20","European Championship",1,1,0,0,1,0
+"Germany","Portugal","2008-06-19","European Championship",3,2,3,2,1,0
 "Spain","Greece","2008-06-18","European Championship",2,1,2,1,0,0
 "Russia","Sweden","2008-06-18","European Championship",2,0,2,0,0,0
 "Italy","France","2008-06-17","European Championship",2,0,2,0,0,0
@@ -9158,13 +9158,13 @@
 "Germany","Poland","2008-06-08","European Championship",2,0,2,0,0,0
 "Switzerland","Czechia","2008-06-07","European Championship",0,1,0,1,0,1
 "Portugal","Turkey","2008-06-07","European Championship",2,0,2,0,0,0
-"Portugal","Greece","2004-07-04","European Championship",0,1,0,1,0,1
-"Greece","Czechia","2004-07-01","European Championship",1,0,1,0,0,0
-"Portugal","Netherlands","2004-06-30","European Championship",2,1,2,1,0,1
-"Czechia","Denmark","2004-06-27","European Championship",3,0,3,0,0,0
-"Netherlands","Sweden","2004-06-26","European Championship",0,0,0,0,0,0
-"Greece","France","2004-06-25","European Championship",1,0,1,0,0,0
-"Portugal","England","2004-06-24","European Championship",2,2,2,2,0,1
+"Portugal","Greece","2004-07-04","European Championship",0,1,0,1,1,1
+"Greece","Czechia","2004-07-01","European Championship",1,0,0,0,1,0
+"Portugal","Netherlands","2004-06-30","European Championship",2,1,2,1,1,1
+"Czechia","Denmark","2004-06-27","European Championship",3,0,3,0,1,0
+"Netherlands","Sweden","2004-06-26","European Championship",0,0,0,0,1,0
+"Greece","France","2004-06-25","European Championship",1,0,1,0,1,0
+"Portugal","England","2004-06-24","European Championship",2,2,1,1,1,1
 "Czechia","Germany","2004-06-23","European Championship",2,1,2,1,0,0
 "Netherlands","Latvia","2004-06-23","European Championship",3,0,3,0,0,0
 "Italy","Bulgaria","2004-06-22","European Championship",2,1,2,1,0,0
@@ -9189,13 +9189,13 @@
 "France","England","2004-06-13","European Championship",2,1,2,1,0,0
 "Spain","Russia","2004-06-12","European Championship",1,0,1,0,0,0
 "Portugal","Greece","2004-06-12","European Championship",1,2,1,2,0,1
-"France","Italy","2000-07-02","European Championship",2,1,2,1,0,0
-"Netherlands","Italy","2000-06-29","European Championship",0,0,0,0,0,1
-"France","Portugal","2000-06-28","European Championship",2,1,2,1,0,0
-"France","Spain","2000-06-25","European Championship",2,1,2,1,0,0
-"Netherlands","Yugoslavia","2000-06-25","European Championship",6,1,6,1,0,1
-"Portugal","Turkey","2000-06-24","European Championship",2,0,2,0,0,0
-"Italy","Romania","2000-06-24","European Championship",2,0,2,0,0,0
+"France","Italy","2000-07-02","European Championship",2,1,1,1,1,0
+"Netherlands","Italy","2000-06-29","European Championship",0,0,0,0,1,1
+"France","Portugal","2000-06-28","European Championship",2,1,1,1,1,0
+"France","Spain","2000-06-25","European Championship",2,1,2,1,1,0
+"Netherlands","Yugoslavia","2000-06-25","European Championship",6,1,6,1,1,1
+"Portugal","Turkey","2000-06-24","European Championship",2,0,2,0,1,0
+"Italy","Romania","2000-06-24","European Championship",2,0,2,0,1,0
 "Norway","Slovenia","2000-06-21","European Championship",0,0,0,0,0,0
 "Czechia","Denmark","2000-06-21","European Championship",2,0,2,0,0,0
 "Netherlands","France","2000-06-21","European Championship",3,2,3,2,0,1
@@ -9220,13 +9220,13 @@
 "Italy","Turkey","2000-06-11","European Championship",2,1,2,1,0,0
 "France","Denmark","2000-06-11","European Championship",3,0,3,0,0,0
 "Belgium","Sweden","2000-06-10","European Championship",2,1,2,1,0,1
-"Germany","Czechia","1996-06-30","European Championship",2,1,2,1,0,0
-"Czechia","France","1996-06-26","European Championship",0,0,0,0,0,0
-"England","Germany","1996-06-26","European Championship",1,1,1,1,0,1
-"Czechia","Portugal","1996-06-23","European Championship",1,0,1,0,0,0
-"Germany","Croatia","1996-06-23","European Championship",2,1,2,1,0,0
-"England","Spain","1996-06-22","European Championship",0,0,0,0,0,1
-"France","Netherlands","1996-06-22","European Championship",0,0,0,0,0,0
+"Germany","Czechia","1996-06-30","European Championship",2,1,1,1,1,0
+"Czechia","France","1996-06-26","European Championship",0,0,0,0,1,0
+"England","Germany","1996-06-26","European Championship",1,1,1,1,1,1
+"Czechia","Portugal","1996-06-23","European Championship",1,0,1,0,1,0
+"Germany","Croatia","1996-06-23","European Championship",2,1,2,1,1,0
+"England","Spain","1996-06-22","European Championship",0,0,0,0,1,1
+"France","Netherlands","1996-06-22","European Championship",0,0,0,0,1,0
 "Germany","Italy","1996-06-19","European Championship",0,0,0,0,0,0
 "Portugal","Croatia","1996-06-19","European Championship",3,0,3,0,0,0
 "Denmark","Turkey","1996-06-19","European Championship",3,0,3,0,0,0
@@ -9251,9 +9251,9 @@
 "Denmark","Portugal","1996-06-09","European Championship",1,1,1,1,0,0
 "Germany","Czechia","1996-06-09","European Championship",2,0,2,0,0,0
 "England","Switzerland","1996-06-08","European Championship",1,1,1,1,0,1
-"Denmark","Germany","1992-06-26","European Championship",2,0,2,0,0,0
-"Denmark","Netherlands","1992-06-22","European Championship",2,2,2,2,0,0
-"Sweden","Germany","1992-06-21","European Championship",2,3,2,3,0,1
+"Denmark","Germany","1992-06-26","European Championship",2,0,2,0,1,0
+"Denmark","Netherlands","1992-06-22","European Championship",2,2,2,2,1,0
+"Sweden","Germany","1992-06-21","European Championship",2,3,2,3,1,1
 "Netherlands","Germany","1992-06-18","European Championship",3,1,3,1,0,0
 "Scotland","Commonwealth of Independent States","1992-06-18","European Championship",3,0,3,0,0,0
 "Denmark","France","1992-06-17","European Championship",2,1,2,1,0,0
@@ -9266,9 +9266,9 @@
 "Netherlands","Scotland","1992-06-12","European Championship",1,0,1,0,0,0
 "Denmark","England","1992-06-11","European Championship",0,0,0,0,0,0
 "Sweden","France","1992-06-10","European Championship",1,1,1,1,0,1
-"Netherlands","Soviet Union","1988-06-25","European Championship",2,0,2,0,0,0
-"Soviet Union","Italy","1988-06-22","European Championship",2,0,2,0,0,0
-"West Germany","Netherlands","1988-06-21","European Championship",1,2,1,2,0,1
+"Netherlands","Soviet Union","1988-06-25","European Championship",2,0,2,0,1,0
+"Soviet Union","Italy","1988-06-22","European Championship",2,0,2,0,1,0
+"West Germany","Netherlands","1988-06-21","European Championship",1,2,1,2,1,1
 "Netherlands","Ireland","1988-06-18","European Championship",1,0,1,0,0,0
 "Soviet Union","England","1988-06-18","European Championship",3,1,3,1,0,0
 "West Germany","Spain","1988-06-17","European Championship",2,0,2,0,0,1
@@ -9281,9 +9281,9 @@
 "Soviet Union","Netherlands","1988-06-12","European Championship",1,0,1,0,0,0
 "Spain","Denmark","1988-06-11","European Championship",3,2,3,2,0,0
 "West Germany","Italy","1988-06-10","European Championship",1,1,1,1,0,1
-"France","Spain","1984-06-27","European Championship",2,0,2,0,0,1
-"Denmark","Spain","1984-06-24","European Championship",1,1,1,1,0,0
-"France","Portugal","1984-06-23","European Championship",3,2,3,2,0,1
+"France","Spain","1984-06-27","European Championship",2,0,2,0,1,1
+"Denmark","Spain","1984-06-24","European Championship",1,1,1,1,1,0
+"France","Portugal","1984-06-23","European Championship",3,2,1,1,1,1
 "Spain","West Germany","1984-06-20","European Championship",1,0,1,0,0,0
 "Portugal","Romania","1984-06-20","European Championship",1,0,1,0,0,0
 "France","Yugoslavia","1984-06-19","European Championship",3,2,3,2,0,1
@@ -9296,8 +9296,8 @@
 "Romania","Spain","1984-06-14","European Championship",1,1,1,1,0,0
 "Belgium","Yugoslavia","1984-06-13","European Championship",2,0,2,0,0,0
 "France","Denmark","1984-06-12","European Championship",1,0,1,0,0,1
-"West Germany","Belgium","1980-06-22","European Championship",2,1,2,1,0,0
-"Italy","Czechoslovakia","1980-06-21","European Championship",1,1,1,1,0,1
+"West Germany","Belgium","1980-06-22","European Championship",2,1,2,1,1,0
+"Italy","Czechoslovakia","1980-06-21","European Championship",1,1,1,1,1,1
 "Italy","Belgium","1980-06-18","European Championship",0,0,0,0,0,1
 "England","Spain","1980-06-18","European Championship",2,1,2,1,0,0
 "Greece","West Germany","1980-06-17","European Championship",0,0,0,0,0,0
@@ -9310,27 +9310,27 @@
 "Belgium","England","1980-06-12","European Championship",1,1,1,1,0,0
 "West Germany","Czechoslovakia","1980-06-11","European Championship",1,0,1,0,0,0
 "Netherlands","Greece","1980-06-11","European Championship",1,0,1,0,0,0
-"Czechoslovakia","West Germany","1976-06-20","European Championship",2,2,2,2,0,0
-"Yugoslavia","Netherlands","1976-06-19","European Championship",2,3,2,3,0,1
-"Yugoslavia","West Germany","1976-06-17","European Championship",2,4,2,4,0,1
-"Czechoslovakia","Netherlands","1976-06-16","European Championship",3,1,3,1,0,0
-"West Germany","Soviet Union","1972-06-18","European Championship",3,0,3,0,0,0
-"Belgium","Hungary","1972-06-17","European Championship",2,1,2,1,0,1
-"Belgium","West Germany","1972-06-14","European Championship",1,2,1,2,0,1
-"Soviet Union","Hungary","1972-06-14","European Championship",1,0,1,0,0,0
-"Italy","Yugoslavia","1968-06-10","European Championship",2,0,2,0,0,1
-"Italy","Yugoslavia","1968-06-08","European Championship",1,1,1,1,0,1
-"England","Soviet Union","1968-06-08","European Championship",2,0,2,0,0,0
-"Italy","Soviet Union","1968-06-05","European Championship",0,0,0,0,0,1
-"Yugoslavia","England","1968-06-05","European Championship",1,0,1,0,0,0
-"Spain","Soviet Union","1964-06-21","European Championship",2,1,2,1,0,1
-"Hungary","Denmark","1964-06-20","European Championship",3,1,3,1,0,0
-"Spain","Hungary","1964-06-17","European Championship",2,1,2,1,0,1
-"Soviet Union","Denmark","1964-06-17","European Championship",3,0,3,0,0,0
-"Soviet Union","Yugoslavia","1960-07-10","European Championship",2,1,2,1,0,0
-"France","Czechoslovakia","1960-07-09","European Championship",0,2,0,2,0,1
-"Soviet Union","Czechoslovakia","1960-07-06","European Championship",3,0,3,0,0,0
-"France","Yugoslavia","1960-07-06","European Championship",4,5,4,5,0,1
+"Czechoslovakia","West Germany","1976-06-20","European Championship",2,2,2,2,1,0
+"Yugoslavia","Netherlands","1976-06-19","European Championship",2,3,2,2,1,1
+"Yugoslavia","West Germany","1976-06-17","European Championship",2,4,2,2,1,1
+"Czechoslovakia","Netherlands","1976-06-16","European Championship",3,1,1,1,1,0
+"West Germany","Soviet Union","1972-06-18","European Championship",3,0,3,0,1,0
+"Belgium","Hungary","1972-06-17","European Championship",2,1,2,1,1,1
+"Belgium","West Germany","1972-06-14","European Championship",1,2,1,2,1,1
+"Soviet Union","Hungary","1972-06-14","European Championship",1,0,1,0,1,0
+"Italy","Yugoslavia","1968-06-10","European Championship",2,0,2,0,1,1
+"Italy","Yugoslavia","1968-06-08","European Championship",1,1,1,1,1,1
+"England","Soviet Union","1968-06-08","European Championship",2,0,2,0,1,0
+"Italy","Soviet Union","1968-06-05","European Championship",0,0,0,0,1,1
+"Yugoslavia","England","1968-06-05","European Championship",1,0,1,0,1,0
+"Spain","Soviet Union","1964-06-21","European Championship",2,1,2,1,1,1
+"Hungary","Denmark","1964-06-20","European Championship",3,1,1,1,1,0
+"Spain","Hungary","1964-06-17","European Championship",2,1,1,1,1,1
+"Soviet Union","Denmark","1964-06-17","European Championship",3,0,3,0,1,0
+"Soviet Union","Yugoslavia","1960-07-10","European Championship",2,1,1,1,1,0
+"France","Czechoslovakia","1960-07-09","European Championship",0,2,0,2,1,1
+"Soviet Union","Czechoslovakia","1960-07-06","European Championship",3,0,3,0,1,0
+"France","Yugoslavia","1960-07-06","European Championship",4,5,4,5,1,1
 "Slovenia","Ukraine","2015-11-17","European Championship qualifier",1,1,1,1,0,1
 "Denmark","Sweden","2015-11-17","European Championship qualifier",2,2,2,2,0,1
 "Ireland","Bosnia and Herzegovina","2015-11-16","European Championship qualifier",2,0,2,0,0,1
