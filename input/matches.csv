@@ -3275,14 +3275,14 @@
 "Sri Lanka","Pakistan","2008-04-04","Asian Challenge Cup qualifier",7,1,7,1,0,0
 "Taiwan","Pakistan","2008-04-02","Asian Challenge Cup qualifier",1,2,1,2,0,1
 "Sri Lanka","Guam","2008-04-02","Asian Challenge Cup qualifier",5,1,5,1,0,0
-"Australia","South Korea","2015-01-31","Asian Cup",2,1,2,1,0,1
-"United Arab Emirates","Iraq","2015-01-30","Asian Cup",3,2,3,2,0,0
-"Australia","United Arab Emirates","2015-01-27","Asian Cup",2,0,2,0,0,1
-"South Korea","Iraq","2015-01-26","Asian Cup",2,0,2,0,0,0
-"Japan","United Arab Emirates","2015-01-23","Asian Cup",1,1,1,1,0,0
-"Iran","Iraq","2015-01-23","Asian Cup",3,3,3,3,0,0
-"South Korea","Uzbekistan","2015-01-22","Asian Cup",2,0,2,0,0,0
-"Australia","China","2015-01-22","Asian Cup",2,0,2,0,0,1
+"Australia","South Korea","2015-01-31","Asian Cup",2,1,1,1,1,1
+"United Arab Emirates","Iraq","2015-01-30","Asian Cup",3,2,3,2,1,0
+"Australia","United Arab Emirates","2015-01-27","Asian Cup",2,0,2,0,1,1
+"South Korea","Iraq","2015-01-26","Asian Cup",2,0,2,0,1,0
+"Japan","United Arab Emirates","2015-01-23","Asian Cup",1,1,1,1,1,0
+"Iran","Iraq","2015-01-23","Asian Cup",3,3,1,1,1,0
+"South Korea","Uzbekistan","2015-01-22","Asian Cup",2,0,0,0,1,0
+"Australia","China","2015-01-22","Asian Cup",2,0,2,0,1,1
 "Japan","Jordan","2015-01-20","Asian Cup",2,0,2,0,0,0
 "Iraq","Palestine","2015-01-20","Asian Cup",2,0,2,0,0,0
 "Iran","United Arab Emirates","2015-01-19","Asian Cup",1,0,1,0,0,0
@@ -3307,14 +3307,14 @@
 "China","Saudi Arabia","2015-01-10","Asian Cup",1,0,1,0,0,0
 "Uzbekistan","North Korea","2015-01-10","Asian Cup",1,0,1,0,0,0
 "Australia","Kuwait","2015-01-09","Asian Cup",4,1,4,1,0,1
-"Japan","Australia","2011-01-29","Asian Cup",1,0,1,0,0,0
-"South Korea","Uzbekistan","2011-01-28","Asian Cup",3,2,3,2,0,0
-"Japan","South Korea","2011-01-25","Asian Cup",2,2,2,2,0,0
-"Australia","Uzbekistan","2011-01-25","Asian Cup",6,0,6,0,0,0
-"South Korea","Iran","2011-01-22","Asian Cup",1,0,1,0,0,0
-"Australia","Iraq","2011-01-22","Asian Cup",1,0,1,0,0,0
-"Qatar","Japan","2011-01-21","Asian Cup",2,3,2,3,0,1
-"Uzbekistan","Jordan","2011-01-21","Asian Cup",2,1,2,1,0,0
+"Japan","Australia","2011-01-29","Asian Cup",1,0,0,0,1,0
+"South Korea","Uzbekistan","2011-01-28","Asian Cup",3,2,3,2,1,0
+"Japan","South Korea","2011-01-25","Asian Cup",2,2,1,1,1,0
+"Australia","Uzbekistan","2011-01-25","Asian Cup",6,0,6,0,1,0
+"South Korea","Iran","2011-01-22","Asian Cup",1,0,0,0,1,0
+"Australia","Iraq","2011-01-22","Asian Cup",1,0,0,0,1,0
+"Qatar","Japan","2011-01-21","Asian Cup",2,3,2,3,1,1
+"Uzbekistan","Jordan","2011-01-21","Asian Cup",2,1,2,1,1,0
 "Iraq","North Korea","2011-01-19","Asian Cup",1,0,1,0,0,0
 "Iran","United Arab Emirates","2011-01-19","Asian Cup",3,0,3,0,0,0
 "Australia","Bahrain","2011-01-18","Asian Cup",1,0,1,0,0,0
@@ -3339,14 +3339,14 @@
 "Syria","Saudi Arabia","2011-01-09","Asian Cup",2,1,2,1,0,0
 "China","Kuwait","2011-01-08","Asian Cup",2,0,2,0,0,0
 "Qatar","Uzbekistan","2011-01-07","Asian Cup",0,2,0,2,0,1
-"Iraq","Saudi Arabia","2007-07-29","Asian Cup",1,0,1,0,0,0
-"Japan","South Korea","2007-07-28","Asian Cup",0,0,0,0,0,0
-"Iraq","South Korea","2007-07-25","Asian Cup",0,0,0,0,0,0
-"Saudi Arabia","Japan","2007-07-25","Asian Cup",3,2,3,2,0,0
-"Iran","South Korea","2007-07-22","Asian Cup",0,0,0,0,0,0
-"Saudi Arabia","Uzbekistan","2007-07-22","Asian Cup",2,1,2,1,0,0
-"Australia","Japan","2007-07-21","Asian Cup",1,1,1,1,0,0
-"Iraq","Vietnam","2007-07-21","Asian Cup",2,0,2,0,0,0
+"Iraq","Saudi Arabia","2007-07-29","Asian Cup",1,0,1,0,1,0
+"Japan","South Korea","2007-07-28","Asian Cup",0,0,0,0,1,0
+"Iraq","South Korea","2007-07-25","Asian Cup",0,0,0,0,1,0
+"Saudi Arabia","Japan","2007-07-25","Asian Cup",3,2,3,2,1,0
+"Iran","South Korea","2007-07-22","Asian Cup",0,0,0,0,1,0
+"Saudi Arabia","Uzbekistan","2007-07-22","Asian Cup",2,1,2,1,1,0
+"Australia","Japan","2007-07-21","Asian Cup",1,1,1,1,1,0
+"Iraq","Vietnam","2007-07-21","Asian Cup",2,0,2,0,1,0
 "Malaysia","Iran","2007-07-18","Asian Cup",0,2,0,2,0,1
 "Indonesia","South Korea","2007-07-18","Asian Cup",0,1,0,1,0,1
 "Uzbekistan","China","2007-07-18","Asian Cup",3,0,3,0,0,0
@@ -3371,14 +3371,14 @@
 "Australia","Oman","2007-07-08","Asian Cup",1,1,1,1,0,0
 "Vietnam","United Arab Emirates","2007-07-08","Asian Cup",2,0,2,0,0,1
 "Thailand","Iraq","2007-07-07","Asian Cup",1,1,1,1,0,1
-"China","Japan","2004-08-07","Asian Cup",1,3,1,3,0,1
-"Iran","Bahrain","2004-08-06","Asian Cup",4,2,4,2,0,0
-"China","Iran","2004-08-03","Asian Cup",1,1,1,1,0,1
-"Japan","Bahrain","2004-08-03","Asian Cup",4,3,4,3,0,0
-"Japan","Jordan","2004-07-31","Asian Cup",1,1,1,1,0,0
-"Iran","South Korea","2004-07-31","Asian Cup",4,3,4,3,0,0
-"Bahrain","Uzbekistan","2004-07-30","Asian Cup",2,2,2,2,0,0
-"China","Iraq","2004-07-30","Asian Cup",3,0,3,0,0,1
+"China","Japan","2004-08-07","Asian Cup",1,3,1,3,1,1
+"Iran","Bahrain","2004-08-06","Asian Cup",4,2,4,2,1,0
+"China","Iran","2004-08-03","Asian Cup",1,1,1,1,1,1
+"Japan","Bahrain","2004-08-03","Asian Cup",4,3,4,3,1,0
+"Japan","Jordan","2004-07-31","Asian Cup",1,1,1,1,1,0
+"Iran","South Korea","2004-07-31","Asian Cup",4,3,4,3,1,0
+"Bahrain","Uzbekistan","2004-07-30","Asian Cup",2,2,2,2,1,0
+"China","Iraq","2004-07-30","Asian Cup",3,0,3,0,1,1
 "Iran","Japan","2004-07-28","Asian Cup",0,0,0,0,0,0
 "Oman","Thailand","2004-07-28","Asian Cup",2,0,2,0,0,0
 "Jordan","United Arab Emirates","2004-07-27","Asian Cup",0,0,0,0,0,0
@@ -3403,14 +3403,14 @@
 "Saudi Arabia","Turkmenistan","2004-07-18","Asian Cup",2,2,2,2,0,0
 "Indonesia","Qatar","2004-07-18","Asian Cup",2,1,2,1,0,0
 "China","Bahrain","2004-07-17","Asian Cup",2,2,2,2,0,1
-"Japan","Saudi Arabia","2000-10-29","Asian Cup",1,0,1,0,0,0
-"South Korea","China","2000-10-29","Asian Cup",1,0,1,0,0,0
-"Saudi Arabia","South Korea","2000-10-26","Asian Cup",2,1,2,1,0,0
-"Japan","China","2000-10-26","Asian Cup",3,2,3,2,0,0
-"Saudi Arabia","Kuwait","2000-10-24","Asian Cup",3,2,3,2,0,0
-"Japan","Iraq","2000-10-24","Asian Cup",4,1,4,1,0,0
-"South Korea","Iran","2000-10-23","Asian Cup",2,1,2,1,0,0
-"China","Qatar","2000-10-23","Asian Cup",3,1,3,1,0,0
+"Japan","Saudi Arabia","2000-10-29","Asian Cup",1,0,1,0,1,0
+"South Korea","China","2000-10-29","Asian Cup",1,0,1,0,1,0
+"Saudi Arabia","South Korea","2000-10-26","Asian Cup",2,1,2,1,1,0
+"Japan","China","2000-10-26","Asian Cup",3,2,3,2,1,0
+"Saudi Arabia","Kuwait","2000-10-24","Asian Cup",3,2,2,2,1,0
+"Japan","Iraq","2000-10-24","Asian Cup",4,1,4,1,1,0
+"South Korea","Iran","2000-10-23","Asian Cup",2,1,1,1,1,0
+"China","Qatar","2000-10-23","Asian Cup",3,1,3,1,1,0
 "Japan","Qatar","2000-10-20","Asian Cup",1,1,1,1,0,0
 "Saudi Arabia","Uzbekistan","2000-10-20","Asian Cup",5,0,5,0,0,0
 "China","Kuwait","2000-10-19","Asian Cup",0,0,0,0,0,0
@@ -3429,14 +3429,14 @@
 "China","South Korea","2000-10-13","Asian Cup",2,2,2,2,0,0
 "Lebanon","Iran","2000-10-12","Asian Cup",0,4,0,4,0,1
 "Iraq","Thailand","2000-10-12","Asian Cup",2,0,2,0,0,0
-"United Arab Emirates","Saudi Arabia","1996-12-21","Asian Cup",0,0,0,0,0,1
-"Iran","Kuwait","1996-12-21","Asian Cup",1,1,1,1,0,0
-"Iran","Saudi Arabia","1996-12-18","Asian Cup",0,0,0,0,0,0
-"United Arab Emirates","Kuwait","1996-12-18","Asian Cup",1,0,1,0,0,1
-"Saudi Arabia","China","1996-12-16","Asian Cup",4,3,4,3,0,0
-"Iran","South Korea","1996-12-16","Asian Cup",6,2,6,2,0,0
-"United Arab Emirates","Iraq","1996-12-15","Asian Cup",1,0,1,0,0,1
-"Kuwait","Japan","1996-12-15","Asian Cup",2,0,2,0,0,0
+"United Arab Emirates","Saudi Arabia","1996-12-21","Asian Cup",0,0,0,0,1,1
+"Iran","Kuwait","1996-12-21","Asian Cup",1,1,1,1,1,0
+"Iran","Saudi Arabia","1996-12-18","Asian Cup",0,0,0,0,1,0
+"United Arab Emirates","Kuwait","1996-12-18","Asian Cup",1,0,1,0,1,1
+"Saudi Arabia","China","1996-12-16","Asian Cup",4,3,4,3,1,0
+"Iran","South Korea","1996-12-16","Asian Cup",6,2,6,2,1,0
+"United Arab Emirates","Iraq","1996-12-15","Asian Cup",1,0,0,0,1,1
+"Kuwait","Japan","1996-12-15","Asian Cup",2,0,2,0,1,0
 "Japan","China","1996-12-12","Asian Cup",1,0,1,0,0,0
 "Syria","Uzbekistan","1996-12-12","Asian Cup",2,1,2,1,0,0
 "Iran","Saudi Arabia","1996-12-11","Asian Cup",3,0,3,0,0,0
@@ -3455,10 +3455,10 @@
 "Saudi Arabia","Thailand","1996-12-05","Asian Cup",6,0,6,0,0,0
 "United Arab Emirates","South Korea","1996-12-04","Asian Cup",1,1,1,1,0,1
 "Indonesia","Kuwait","1996-12-04","Asian Cup",2,2,2,2,0,0
-"Japan","Saudi Arabia","1992-11-08","Asian Cup",1,0,1,0,0,1
-"China","United Arab Emirates","1992-11-08","Asian Cup",1,1,1,1,0,0
-"Saudi Arabia","United Arab Emirates","1992-11-06","Asian Cup",2,0,2,0,0,0
-"Japan","China","1992-11-06","Asian Cup",3,2,3,2,0,1
+"Japan","Saudi Arabia","1992-11-08","Asian Cup",1,0,1,0,1,1
+"China","United Arab Emirates","1992-11-08","Asian Cup",1,1,1,1,1,0
+"Saudi Arabia","United Arab Emirates","1992-11-06","Asian Cup",2,0,2,0,1,0
+"Japan","China","1992-11-06","Asian Cup",3,2,3,2,1,1
 "Japan","Iran","1992-11-03","Asian Cup",1,0,1,0,0,1
 "United Arab Emirates","North Korea","1992-11-03","Asian Cup",2,1,2,1,0,0
 "China","Qatar","1992-11-02","Asian Cup",2,1,2,1,0,0
@@ -3471,10 +3471,10 @@
 "Iran","North Korea","1992-10-30","Asian Cup",2,0,2,0,0,0
 "China","Saudi Arabia","1992-10-29","Asian Cup",1,1,1,1,0,0
 "Qatar","Thailand","1992-10-29","Asian Cup",1,1,1,1,0,0
-"Saudi Arabia","South Korea","1988-12-18","Asian Cup",0,0,0,0,0,0
-"China","Iran","1988-12-17","Asian Cup",0,0,0,0,0,0
-"Saudi Arabia","Iran","1988-12-15","Asian Cup",1,0,1,0,0,0
-"South Korea","China","1988-12-14","Asian Cup",2,1,2,1,0,0
+"Saudi Arabia","South Korea","1988-12-18","Asian Cup",0,0,0,0,1,0
+"China","Iran","1988-12-17","Asian Cup",0,0,0,0,1,0
+"Saudi Arabia","Iran","1988-12-15","Asian Cup",1,0,1,0,1,0
+"South Korea","China","1988-12-14","Asian Cup",2,1,0,0,1,0
 "Saudi Arabia","China","1988-12-12","Asian Cup",1,0,1,0,0,0
 "Qatar","Japan","1988-12-12","Asian Cup",3,0,3,0,0,1
 "Syria","Bahrain","1988-12-11","Asian Cup",1,0,1,0,0,0
@@ -3495,10 +3495,10 @@
 "South Korea","United Arab Emirates","1988-12-03","Asian Cup",1,0,1,0,0,0
 "Qatar","Iran","1988-12-02","Asian Cup",0,2,0,2,0,1
 "Saudi Arabia","Syria","1988-12-02","Asian Cup",2,0,2,0,0,0
-"Iran","Kuwait","1984-12-16","Asian Cup",1,1,1,1,0,0
-"Saudi Arabia","China","1984-12-16","Asian Cup",2,0,2,0,0,0
-"China","Kuwait","1984-12-14","Asian Cup",1,0,1,0,0,0
-"Iran","Saudi Arabia","1984-12-13","Asian Cup",1,1,1,1,0,0
+"Iran","Kuwait","1984-12-16","Asian Cup",1,1,1,1,1,0
+"Saudi Arabia","China","1984-12-16","Asian Cup",2,0,2,0,1,0
+"China","Kuwait","1984-12-14","Asian Cup",1,0,0,0,1,0
+"Iran","Saudi Arabia","1984-12-13","Asian Cup",1,1,1,1,1,0
 "Saudi Arabia","Kuwait","1984-12-11","Asian Cup",1,0,1,0,0,0
 "China","United Arab Emirates","1984-12-11","Asian Cup",5,0,5,0,0,0
 "Singapore","Iran","1984-12-10","Asian Cup",1,1,1,1,0,1
@@ -3519,10 +3519,10 @@
 "Singapore","India","1984-12-02","Asian Cup",2,0,2,0,0,1
 "Qatar","Syria","1984-12-01","Asian Cup",1,1,1,1,0,0
 "Iran","United Arab Emirates","1984-12-01","Asian Cup",3,0,3,0,0,0
-"Kuwait","South Korea","1980-09-30","Asian Cup",3,0,3,0,0,1
-"Iran","North Korea","1980-09-29","Asian Cup",3,0,3,0,0,0
-"Kuwait","Iran","1980-09-28","Asian Cup",2,1,2,1,0,1
-"South Korea","North Korea","1980-09-28","Asian Cup",2,1,2,1,0,0
+"Kuwait","South Korea","1980-09-30","Asian Cup",3,0,3,0,1,1
+"Iran","North Korea","1980-09-29","Asian Cup",3,0,3,0,1,0
+"Kuwait","Iran","1980-09-28","Asian Cup",2,1,2,1,1,1
+"South Korea","North Korea","1980-09-28","Asian Cup",2,1,2,1,1,0
 "North Korea","Syria","1980-09-26","Asian Cup",2,1,2,1,0,0
 "Kuwait","Qatar","1980-09-25","Asian Cup",4,0,4,0,0,1
 "China","Bangladesh","1980-09-25","Asian Cup",6,0,6,0,0,0
@@ -3543,20 +3543,20 @@
 "Malaysia","South Korea","1980-09-16","Asian Cup",1,1,1,1,0,0
 "North Korea","Bangladesh","1980-09-16","Asian Cup",3,2,3,2,0,0
 "Kuwait","United Arab Emirates","1980-09-15","Asian Cup",1,1,1,1,0,1
-"Iran","Kuwait","1976-06-13","Asian Cup",1,0,1,0,0,1
-"China","Iraq","1976-06-13","Asian Cup",1,0,1,0,0,0
-"Iran","China","1976-06-11","Asian Cup",2,0,2,0,0,1
-"Kuwait","Iraq","1976-06-11","Asian Cup",3,2,3,2,0,0
+"Iran","Kuwait","1976-06-13","Asian Cup",1,0,1,0,1,1
+"China","Iraq","1976-06-13","Asian Cup",1,0,1,0,1,0
+"Iran","China","1976-06-11","Asian Cup",2,0,0,0,1,1
+"Kuwait","Iraq","1976-06-11","Asian Cup",3,2,1,1,1,0
 "Iran","South Yemen","1976-06-08","Asian Cup",8,0,8,0,0,1
 "Kuwait","China","1976-06-07","Asian Cup",1,0,1,0,0,0
 "Iraq","South Yemen","1976-06-06","Asian Cup",1,0,1,0,0,0
 "China","Malaysia","1976-06-05","Asian Cup",1,1,1,1,0,0
 "Iran","Iraq","1976-06-04","Asian Cup",2,0,2,0,0,1
 "Kuwait","Malaysia","1976-06-03","Asian Cup",2,0,2,0,0,0
-"Iran","South Korea","1972-05-19","Asian Cup",2,1,2,1,0,0
-"Thailand","Khmer Republic","1972-05-19","Asian Cup",2,2,2,2,0,1
-"Thailand","South Korea","1972-05-17","Asian Cup",1,1,1,1,0,1
-"Iran","Khmer Republic","1972-05-16","Asian Cup",2,1,2,1,0,0
+"Iran","South Korea","1972-05-19","Asian Cup",2,1,1,1,1,0
+"Thailand","Khmer Republic","1972-05-19","Asian Cup",2,2,2,2,1,1
+"Thailand","South Korea","1972-05-17","Asian Cup",1,1,0,0,1,1
+"Iran","Khmer Republic","1972-05-16","Asian Cup",2,1,2,1,1,0
 "Khmer Republic","Kuwait","1972-05-14","Asian Cup",4,0,4,0,0,0
 "Thailand","Iran","1972-05-13","Asian Cup",2,3,2,3,0,1
 "Kuwait","South Korea","1972-05-12","Asian Cup",2,1,2,1,0,0
@@ -7604,7 +7604,7 @@
 "Honduras","Panama","1993-07-10","CONCACAF Championship",5,1,5,1,0,0
 "United States","Honduras","1991-07-07","CONCACAF Championship",0,0,0,0,1,1
 "Mexico","Costa Rica","1991-07-07","CONCACAF Championship",2,0,2,0,1,0
-"Honduras","Costa Rica","1991-07-05","CONCACAF Championship",2,0,2,0,0,0
+"Honduras","Costa Rica","1991-07-05","CONCACAF Championship",2,0,2,0,1,0
 "United States","Mexico","1991-07-05","CONCACAF Championship",2,0,2,0,1,1
 "Honduras","Mexico","1991-07-03","CONCACAF Championship",1,1,1,1,0,0
 "Guatemala","Trinidad and Tobago","1991-07-03","CONCACAF Championship",1,0,1,0,0,0
@@ -28682,10 +28682,10 @@
 "Chile","Brazil","1957-09-15","O'Higgins Cup",1,0,1,0,0,1
 "Brazil","Chile","1955-09-20","O'Higgins Cup",2,1,2,1,0,1
 "Brazil","Chile","1955-09-18","O'Higgins Cup",1,1,1,1,0,1
-"Papua New Guinea","New Zealand","2016-06-11","Oceania Nations Cup",0,0,0,0,0,1
-"New Zealand","New Caledonia","2016-06-08","Oceania Nations Cup",1,0,1,0,0,0
-"Papua New Guinea","Solomon Islands","2016-06-08","Oceania Nations Cup",2,1,2,1,0,1
-"New Caledonia","Tahiti","2016-06-05","Oceania Nations Cup",1,1,1,1,0,0
+"Papua New Guinea","New Zealand","2016-06-11","Oceania Nations Cup",0,0,0,0,1,1
+"New Zealand","New Caledonia","2016-06-08","Oceania Nations Cup",1,0,1,0,1,0
+"Papua New Guinea","Solomon Islands","2016-06-08","Oceania Nations Cup",2,1,2,1,1,1
+"New Caledonia","Tahiti","2016-06-05","Oceania Nations Cup",1,1,1,1,1,0
 "Papua New Guinea","Samoa","2016-06-05","Oceania Nations Cup",8,0,8,0,0,1
 "New Zealand","Solomon Islands","2016-06-04","Oceania Nations Cup",1,0,1,0,0,0
 "Vanuatu","Fiji","2016-06-04","Oceania Nations Cup",3,2,3,2,0,0
@@ -28697,10 +28697,10 @@
 "Tahiti","Samoa","2016-05-29","Oceania Nations Cup",4,0,4,0,0,0
 "Solomon Islands","Vanuatu","2016-05-28","Oceania Nations Cup",1,0,1,0,0,0
 "New Zealand","Fiji","2016-05-28","Oceania Nations Cup",3,1,3,1,0,0
-"Tahiti","New Caledonia","2012-06-10","Oceania Nations Cup",1,0,1,0,0,0
-"Solomon Islands","New Zealand","2012-06-10","Oceania Nations Cup",3,4,3,4,0,1
-"Solomon Islands","Tahiti","2012-06-08","Oceania Nations Cup",0,1,0,1,0,1
-"New Caledonia","New Zealand","2012-06-08","Oceania Nations Cup",2,0,2,0,0,0
+"Tahiti","New Caledonia","2012-06-10","Oceania Nations Cup",1,0,1,0,1,0
+"Solomon Islands","New Zealand","2012-06-10","Oceania Nations Cup",3,4,3,4,1,1
+"Solomon Islands","Tahiti","2012-06-08","Oceania Nations Cup",0,1,0,1,1,1
+"New Caledonia","New Zealand","2012-06-08","Oceania Nations Cup",2,0,2,0,1,0
 "Solomon Islands","New Zealand","2012-06-06","Oceania Nations Cup",1,1,1,1,0,1
 "Fiji","Papua New Guinea","2012-06-06","Oceania Nations Cup",1,1,1,1,0,0
 "Tahiti","Vanuatu","2012-06-05","Oceania Nations Cup",4,1,4,1,0,0
@@ -28715,10 +28715,10 @@
 "Tahiti","Samoa","2012-06-01","Oceania Nations Cup",10,1,10,1,0,0
 "Australia","Solomon Islands","2004-10-12","Oceania Nations Cup",6,0,6,0,0,1
 "Solomon Islands","Australia","2004-10-09","Oceania Nations Cup",1,5,1,5,0,1
-"New Zealand","Australia","2002-07-14","Oceania Nations Cup",1,0,1,0,0,1
-"Tahiti","Vanuatu","2002-07-14","Oceania Nations Cup",1,0,1,0,0,0
-"Australia","Tahiti","2002-07-12","Oceania Nations Cup",2,1,2,1,0,0
-"New Zealand","Vanuatu","2002-07-12","Oceania Nations Cup",3,0,3,0,0,1
+"New Zealand","Australia","2002-07-14","Oceania Nations Cup",1,0,1,0,1,1
+"Tahiti","Vanuatu","2002-07-14","Oceania Nations Cup",1,0,1,0,1,0
+"Australia","Tahiti","2002-07-12","Oceania Nations Cup",2,1,1,1,1,0
+"New Zealand","Vanuatu","2002-07-12","Oceania Nations Cup",3,0,3,0,1,1
 "Vanuatu","New Caledonia","2002-07-10","Oceania Nations Cup",1,0,1,0,0,0
 "Australia","Fiji","2002-07-10","Oceania Nations Cup",8,0,8,0,0,0
 "Tahiti","Papua New Guinea","2002-07-09","Oceania Nations Cup",3,1,3,1,0,0
@@ -28731,20 +28731,20 @@
 "Fiji","New Caledonia","2002-07-06","Oceania Nations Cup",2,1,2,1,0,0
 "Papua New Guinea","Solomon Islands","2002-07-05","Oceania Nations Cup",0,0,0,0,0,0
 "New Zealand","Tahiti","2002-07-05","Oceania Nations Cup",4,0,4,0,0,1
-"Australia","New Zealand","2000-06-28","Oceania Nations Cup",2,0,2,0,0,0
-"Solomon Islands","Vanuatu","2000-06-28","Oceania Nations Cup",2,1,2,1,0,0
-"Australia","Vanuatu","2000-06-25","Oceania Nations Cup",1,0,1,0,0,0
-"New Zealand","Solomon Islands","2000-06-25","Oceania Nations Cup",2,0,2,0,0,0
+"Australia","New Zealand","2000-06-28","Oceania Nations Cup",2,0,2,0,1,0
+"Solomon Islands","Vanuatu","2000-06-28","Oceania Nations Cup",2,1,2,1,1,0
+"Australia","Vanuatu","2000-06-25","Oceania Nations Cup",1,0,1,0,1,0
+"New Zealand","Solomon Islands","2000-06-25","Oceania Nations Cup",2,0,2,0,1,0
 "Tahiti","Vanuatu","2000-06-23","Oceania Nations Cup",2,3,2,3,0,1
 "Australia","Solomon Islands","2000-06-23","Oceania Nations Cup",6,0,6,0,0,0
 "New Zealand","Vanuatu","2000-06-21","Oceania Nations Cup",3,1,3,1,0,0
 "Solomon Islands","Cook Islands","2000-06-21","Oceania Nations Cup",5,1,5,1,0,0
 "Tahiti","New Zealand","2000-06-19","Oceania Nations Cup",0,2,0,2,0,1
 "Australia","Cook Islands","2000-06-19","Oceania Nations Cup",17,0,17,0,0,0
-"Australia","New Zealand","1998-10-04","Oceania Nations Cup",0,1,0,1,0,1
-"Fiji","Tahiti","1998-10-04","Oceania Nations Cup",4,2,4,2,0,0
-"New Zealand","Fiji","1998-10-02","Oceania Nations Cup",1,0,1,0,0,0
-"Australia","Tahiti","1998-10-02","Oceania Nations Cup",4,1,4,1,0,1
+"Australia","New Zealand","1998-10-04","Oceania Nations Cup",0,1,0,1,1,1
+"Fiji","Tahiti","1998-10-04","Oceania Nations Cup",4,2,4,2,1,0
+"New Zealand","Fiji","1998-10-02","Oceania Nations Cup",1,0,1,0,1,0
+"Australia","Tahiti","1998-10-02","Oceania Nations Cup",4,1,4,1,1,1
 "Fiji","Cook Islands","1998-09-30","Oceania Nations Cup",3,0,3,0,0,0
 "Tahiti","Vanuatu","1998-09-30","Oceania Nations Cup",5,1,5,1,0,0
 "New Zealand","Vanuatu","1998-09-28","Oceania Nations Cup",8,1,8,1,0,0
@@ -28754,8 +28754,8 @@
 "Australia","Tahiti","1996-11-01","Oceania Nations Cup",5,0,5,0,0,1
 "Tahiti","Australia","1996-10-27","Oceania Nations Cup",0,6,0,6,0,1
 "Tahiti","Solomon Islands","1996-05-11","Oceania Nations Cup",2,1,2,1,0,1
-"New Caledonia","Fiji","1980-03-01","Oceania Nations Cup",2,1,2,1,0,1
-"Australia","Tahiti","1980-03-01","Oceania Nations Cup",4,2,4,2,0,0
+"New Caledonia","Fiji","1980-03-01","Oceania Nations Cup",2,1,2,1,1,1
+"Australia","Tahiti","1980-03-01","Oceania Nations Cup",4,2,4,2,1,0
 "New Zealand","Solomon Islands","1980-02-29","Oceania Nations Cup",6,1,6,1,0,0
 "Tahiti","Fiji","1980-02-29","Oceania Nations Cup",6,3,6,3,0,0
 "Australia","New Hebrides","1980-02-28","Oceania Nations Cup",1,0,1,0,0,0
@@ -28768,8 +28768,8 @@
 "Fiji","Solomon Islands","1980-02-25","Oceania Nations Cup",3,1,3,1,0,0
 "New Caledonia","Australia","1980-02-24","Oceania Nations Cup",0,8,0,8,0,1
 "Papua New Guinea","New Hebrides","1980-02-24","Oceania Nations Cup",4,3,4,3,0,0
-"New Zealand","Tahiti","1973-02-24","Oceania Nations Cup",2,0,2,0,0,1
-"New Caledonia","New Hebrides","1973-02-24","Oceania Nations Cup",2,1,2,1,0,0
+"New Zealand","Tahiti","1973-02-24","Oceania Nations Cup",2,0,2,0,1,1
+"New Caledonia","New Hebrides","1973-02-24","Oceania Nations Cup",2,1,2,1,1,0
 "New Zealand","New Hebrides","1973-02-23","Oceania Nations Cup",3,1,3,1,0,1
 "Tahiti","Fiji","1973-02-23","Oceania Nations Cup",4,0,4,0,0,0
 "New Zealand","New Caledonia","1973-02-21","Oceania Nations Cup",2,1,2,1,0,1
