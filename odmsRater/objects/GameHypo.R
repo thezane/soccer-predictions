@@ -10,6 +10,6 @@ new.GameHypo <- function(homeTeamName, awayTeamName, existsHa, rData) {
         2, 2, TRUE)
   game$strAgg <- c(homeTeam$strAgg, awayTeam$strAgg)
   
-  class(gameHypo) <- c("Game", class(game))
-  gameHypo
+  class(game) <- c("GameHypo", class(game))
+  game
 }

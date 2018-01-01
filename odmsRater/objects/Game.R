@@ -19,7 +19,7 @@ new.Game <- function(homeTeamName, awayTeamName, existsHa, rOptions,
     goalsOdm=goals,
 
     # Ratings
-    computeRatings=TRUE,
+    computeRatings=(!is.null(goals) && !is.null(goalsFull)),
     existsHa=existsHa,
     reliability=c(1, 1),
     sse=0,
@@ -32,7 +32,10 @@ new.Game <- function(homeTeamName, awayTeamName, existsHa, rOptions,
     teamNames=c(homeTeamName, awayTeamName),
 
     # Contest
-    contest=contest
+    contest=contest,
+    dataset="test",
+    isRelevant=FALSE,
+    weightContest=0
   )
   
   game$goalsOutcome <- computeGoalsOutcome.Game(game, rOptions, goalsFull)
