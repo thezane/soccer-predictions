@@ -14,12 +14,12 @@ new.Game <- function(homeTeamName, awayTeamName, existsHa, rOptions,
 
     # Outcome
     A=zeroesMat,
-    Ps=c(0, 0, 0),
     goals=goals,
     goalsOdm=goals,
+    hasOutcome=(!is.null(goals) && !is.null(goalsFull)),
+    Ps=c(0, 0, 0),
 
     # Ratings
-    computeRatings=(!is.null(goals) && !is.null(goalsFull)),
     existsHa=existsHa,
     reliability=c(1, 1),
     sse=0,
@@ -38,8 +38,10 @@ new.Game <- function(homeTeamName, awayTeamName, existsHa, rOptions,
     weightContest=0
   )
   
-  game$goalsOutcome <- computeGoalsOutcome.Game(game, rOptions, goalsFull)
-  game$outcome <- computeOutcome.Game(game)
+  if (game$hasOutcome) {
+    game$goalsOutcome <- computeGoalsOutcome.Game(game, rOptions, goalsFull)
+    game$outcome <- computeOutcome.Game(game)
+  }
   
   if (!is.null(cTree)) {
       game$dataset <- assignDataset.Game(game, rOptions)

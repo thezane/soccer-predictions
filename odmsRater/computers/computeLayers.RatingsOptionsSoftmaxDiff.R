@@ -7,7 +7,7 @@ computeLayers.RatingsOptionsSoftmaxDiff <- function(rOptions, game) {
     gamePrediction <- computeLayerSoftmax(game, rOptions, meanGoals)
   }
 
-  if (game$computeRatings) {
+  if (game$hasOutcome) {
     game <- computeLayerGoalsDiff(game)
     strPostNorm <- computeLayerOdm(game, rOptions, meanGoals)
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)

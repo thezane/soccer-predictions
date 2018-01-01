@@ -43,8 +43,13 @@ computePredictionSkellam <- function(lambdas, game, rOptions) {
     i <- i + 1
   }
   
-  pOutcome <- pGoalsDiff[[as.character(goalsDiff)]]
   gamePrediction <- list(goalsDiffExpected=goalsDiffExpected,
-      p=pOutcome, pGoalsDiff=pGoalsDiff, pWinTieLose=pWinTieLose)
+      pGoalsDiff=pGoalsDiff, pWinTieLose=pWinTieLose)
+      
+  if (game$hasOutcome) {
+    pOutcome <- pGoalsDiff[[as.character(goalsDiff)]]
+    gamePrediction[["p"]] <- pOutcome
+  }
+      
   gamePrediction
 }

@@ -11,10 +11,14 @@ computeLayerSoftmax <- function(game, rOptions, meanGoals) {
       homeStr, awayStr, strAgg)
   gamePrediction <- computePredictionSoftmax(zs)
   pWinTieLose <- gamePrediction[["pWinTieLose"]]
-  p <- pWinTieLose %*% as.numeric(game$outcome)
-  gamePrediction[["p"]] <- p
   gamePrediction[["strNormBeta"]] <- game$strNormBeta
   gamePrediction[["strAgg"]] <- game$strAgg
+  
+  if (game$hasOutcome) {
+    pOutcome <- pWinTieLose %*% as.numeric(game$outcome)
+    gamePrediction[["p"]] <- pOutcome
+  }
+  
   gamePrediction
 }
 

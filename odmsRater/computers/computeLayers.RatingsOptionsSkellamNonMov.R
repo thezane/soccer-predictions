@@ -7,7 +7,7 @@ computeLayers.RatingsOptionsSkellamNonMov <- function(rOptions, game) {
     gamePrediction <- computeLayerSkellam(game, rOptions, meanGoals)
   }
 
-  if (game$computeRatings) {
+  if (game$hasOutcome) {
 	game <- computeLayerGoalsNonMov(game)
     strPostNorm <- computeLayerOdm(game, rOptions, meanGoals)
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)

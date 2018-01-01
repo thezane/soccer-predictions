@@ -8,7 +8,7 @@ computeLayers.RatingsOptionsBivPois <- function(rOptions, game) {
         meanGoals)
   }
 
-  if (game$computeRatings) {
+  if (game$hasOutcome) {
     strPostNorm <- computeLayerOdm(game, rOptions, meanGoals)
     strNextNorm <- computeLayerRatings(game, rOptions, strPostNorm)
   }

@@ -51,6 +51,12 @@ computePredictionBivPois <- function(lambdas, game, rOptions) {
   
   pOutcome <- pGoals[game$goalsOutcome[1] + 1, game$goalsOutcome[2] + 1]
   gamePrediction <- list(goalsExpected=goalsExpected,
-      pOutcome=pOutcome, pGoals=pGoals, pWinTieLose=pWinTieLose)
+      pGoals=pGoals, pWinTieLose=pWinTieLose)
+      
+  if (game$hasOutcome) {
+	pOutcome <- pGoals[game$goalsOutcome[1] + 1, game$goalsOutcome[2] + 1]
+    gamePrediction[["p"]] <- pOutcome
+  }
+
   gamePrediction
 }

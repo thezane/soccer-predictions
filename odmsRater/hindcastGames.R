@@ -1,4 +1,4 @@
-forecastRatings <- function(rOptions) {
+hindcastGames <- function(rOptions) {
   library(MASS)
   library(hash)
   library(parallel)

@@ -30,13 +30,17 @@ computePrediction <- function(gamePredictionBivPois,
       sum(diag(pGoals)),
       sum(pGoals[upper.tri(pGoals)]))
   gamePrediction <- list()
-  pOutcome <- pGoals[game$goals[1] + 1, game$goals[2] + 1]
-  gamePrediction[["p"]] <- pOutcome
   gamePrediction[["goalsExpected"]] <- goalsExpected
   gamePrediction[["pGoals"]] <- pGoals
   gamePrediction[["pWinTieLose"]] <- pWinTieLose
   gamePrediction[["strNormBeta"]] <-
       gamePredictionBivPois[["strNormBeta"]]
   gamePrediction[["strAgg"]] <- gamePredictionBivPois[["strAgg"]]
+  
+  if (game$hasOutcome) {
+	pOutcome <- pGoals[game$goalsOutcome[1] + 1, game$goalsOutcome[2] + 1]
+    gamePrediction[["p"]] <- pOutcome
+  }
+  
   gamePrediction
 }
