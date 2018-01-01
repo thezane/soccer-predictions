@@ -27,7 +27,7 @@ computeLambdasBivPois <- function(rOptions,
 
 computePredictionBivPois <- function(lambdas, game, rOptions) {
   goalsExpected <- c(lambdas[1], lambdas[2]) + lambdas[3]
-  goalsMax <- ceiling(max(c(game$goals, goalsExpected)))
+  goalsMax <- ceiling(max(c(game$goalsOutcome, goalsExpected)))
   n <- rOptions$pGoalsMatSize + goalsMax
   pGoals <- matrix(0, nrow=n, ncol=n)
   pWinTieLose <- c(0, 0, 0)
@@ -49,7 +49,7 @@ computePredictionBivPois <- function(lambdas, game, rOptions) {
     i <- i + 1
   }
   
-  pOutcome <- pGoals[game$goals[1] + 1, game$goals[2] + 1]
+  pOutcome <- pGoals[game$goalsOutcome[1] + 1, game$goalsOutcome[2] + 1]
   gamePrediction <- list(goalsExpected=goalsExpected,
       pOutcome=pOutcome, pGoals=pGoals, pWinTieLose=pWinTieLose)
   gamePrediction

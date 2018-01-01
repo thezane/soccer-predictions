@@ -1,5 +1,6 @@
 new.Game <- function(homeTeamName, awayTeamName, existsHa, rOptions,
-    gameDate=NULL, contest=NULL, goals=NULL, cTree=NULL, i=NULL) {
+    gameDate=NULL, contest=NULL, goals=NULL, goalsFull=NULL,
+    cTree=NULL, i=NULL) {
   zeroesMat <- matrix(0, 2, 2)
   
   game <- list(
@@ -16,8 +17,6 @@ new.Game <- function(homeTeamName, awayTeamName, existsHa, rOptions,
     Ps=c(0, 0, 0),
     goals=goals,
     goalsOdm=goals,
-    outcome=as.numeric(c(goals[1] > goals[2],
-        goals[1] == goals[2], goals[1] < goals[2])),
 
     # Ratings
     computeRatings=TRUE,
@@ -36,8 +35,11 @@ new.Game <- function(homeTeamName, awayTeamName, existsHa, rOptions,
     contest=contest
   )
   
+  game$goalsOutcome <- computeGoalsOutcome.Game(game, rOptions, goalsFull)
+  game$outcome <- computeOutcome.Game(game)
+  
   if (!is.null(cTree)) {
-      game$dataset <- assignDataset.Game(game, rOptions$currentDate)
+      game$dataset <- assignDataset.Game(game, rOptions)
       game$isRelevant <- computeRelevance.Game(game, cTree)
       game$weightContest <- computeWeight.Game(game, rOptions, cTree)
   }
@@ -46,8 +48,8 @@ new.Game <- function(homeTeamName, awayTeamName, existsHa, rOptions,
   game
 }
 
-assignDataset.Game <- function(game, currentDate) {
-  if (game$gameDate <= currentDate) {
+assignDataset.Game <- function(game, rOptions) {
+  if (game$gameDate <= rOptions$currentDate) {
     dataset <- "training"
   }
   else {
@@ -55,6 +57,24 @@ assignDataset.Game <- function(game, currentDate) {
   }
 
   dataset
+}
+
+computeGoalsOutcome.Game <- function(game, rOptions, goalsFull) {
+  if (rOptions$isFullTime) {
+    goalsOutcome <- goalsFull
+  }
+  else {
+    goalsOutcome <- game$goals
+  }
+
+  goalsOutcome
+}
+
+computeOutcome.Game <- function(game, rOptions) {
+  goalsOutcome <- game$goalsOutcome
+  as.numeric(c(goalsOutcome[1] > goalsOutcome[2],
+        goalsOutcome[1] == goalsOutcome[2],
+        goalsOutcome[1] < goalsOutcome[2]))
 }
 
 computeRelevance.Game <- function(game, cTree) {

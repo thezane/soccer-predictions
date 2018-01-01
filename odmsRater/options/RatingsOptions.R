@@ -62,6 +62,7 @@ new.RatingsOptions <- function() {
         "very low"=2/6
     ),
     dateFormat="%Y-%m-%d",
+    isFullTime=FALSE,
     isOptimized=FALSE,
     iterName="odms-iter",
     minUpdatesUntilReliable=20,

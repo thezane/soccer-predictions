@@ -27,9 +27,10 @@ addGame <- function(T, i, rOptions, gTree, cTree,
       homeTeamName, awayTeamName, gameDate) {
   contest <- T[[i, "Contest"]]
   goals <- c(T[[i, "HomeGoals"]], T[[i, "AwayGoals"]])
+  goalsFull <- c(T[["HomeGoalsFull"]], T[["AwayGoalsFull"]])
   existsHa <- T[[i, "HomeAdvantage"]]
   game <- new.Game(homeTeamName, awayTeamName, existsHa, rOptions,
-      gameDate, contest, goals, cTree, i)
+      gameDate, contest, goals, goalsFull, cTree, i)
   gameDateStr <- game$gameDateStr
   
   if (!has.key(gameDateStr, gTree)) {
