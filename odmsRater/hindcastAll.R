@@ -19,9 +19,9 @@ hindcastAll <- function() {
   }
 }
 
-sourceFiles <- function(files, dir) {
+sourceFiles <- function(files, dir, env) {
   for (file in files) {
     file_full <- paste(dir, "/", file, sep="")
-    source(file_full, local=ENV)
+    source(file_full, local=env)
   }
 }
