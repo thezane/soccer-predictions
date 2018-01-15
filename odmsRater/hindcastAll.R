@@ -14,6 +14,7 @@ hindcastAll <- function() {
   source("hindcastGames.R", local=ENV)
 
   for (options_constructor_name in options_constructor_names) {
+    print(options_constructor_name)
     options_constructor <- get(options_constructor_name)
     rData <- hindcastGames(options_constructor())
   }
