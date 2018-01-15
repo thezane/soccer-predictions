@@ -38,7 +38,6 @@ trainRNN <- function(rData, outputPath) {
       factr=rOptions$factr, REPORT=1))
   stopCluster(cluster)
   x <- readIter(iterFile)
-  file.remove(iterFile)
   x
 }
 
