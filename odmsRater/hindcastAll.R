@@ -15,7 +15,7 @@ hindcastAll <- function() {
 
   for (options_constructor_name in options_constructor_names) {
     options_constructor <- get(options_constructor_name)
-    rData <- forecastRatings(options_constructor())
+    rData <- hindcastGames(options_constructor())
   }
 }
 
