@@ -9,9 +9,9 @@ hindcastGames <- function(rOptions) {
   srcFiles <- list.files(".", regexRFiles,
       full.names=TRUE, recursive=TRUE)
   sapply(srcFiles, source)
-  readsData <- readData(rOptions, inputPath)
-  tTree <- readsData[["tTree"]]
-  gTree <- readsData[["gTree"]]
+  #readsData <- readData(rOptions, inputPath)
+  #tTree <- readsData[["tTree"]]
+  #gTree <- readsData[["gTree"]]
   T <- readsData[["T"]]
   #gi <- new.EventIterator(gTree)
   #rOutput <- new.RatingsOutput(tTree, gTree, gi)
