@@ -4,8 +4,8 @@ hindcastAll <- function() {
   OPTIONS_DIR <- "options"
   computers_files <- list.files(COMPUTERS_DIR)
   options_files <- list.files(OPTIONS_DIR)
-  sourceFiles(list.files(COMPUTERS_DIR), COMPUTERS_DIR)
-  sourceFiles(list.files(OPTIONS_DIR),OPTIONS_DIR)
+  sourceFiles(list.files(COMPUTERS_DIR), COMPUTERS_DIR, ENV)
+  sourceFiles(list.files(OPTIONS_DIR),OPTIONS_DIR, ENV)
   function_names <- ls(ENV)
   options_constructor_names <- function_names[sapply(
       function_names,
