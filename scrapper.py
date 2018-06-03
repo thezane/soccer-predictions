@@ -81,7 +81,7 @@ def get_teams(feds: set, url_home: str, options: "Options") -> set:
 def get_games_for_all_teams(teams: set, url_home: str, fieldnames: list,
     options: "Options", writer: "DictWriter") -> None:
   for team in teams:
-    get_games(team, url_home, options, writer)
+    get_games(team, url_home, fieldnames, options, writer)
 
 def get_games(team: set, url_home: str, fieldnames: list, options: "Options",
     writer: "DictWriter") -> None:
