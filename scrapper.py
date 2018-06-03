@@ -1,68 +1,125 @@
 from calendar import month_name
 from csv import DictWriter
-from datetime import date
-from io import BytesIO
-from lxml import etree
+from datetime import datetime
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+from unidecode import unidecode
+import os
 import pandas
-import urllib.parse
-import urllib.request
+import re
+
 import pdb
 #pdb.set_trace()
 
-def get_teams(url, data, headers) -> None:
-  print("Getting teams at: {}".format(url))
-  req = urllib.request.Request(url, data, headers)
+DATA_LEN = 16
+MONTH_DAY_LEN = 2
 
-  with urllib.request.urlopen(req) as response:
-    fed_page = response.read()
-    parser = etree.HTMLParser()
-    tree = etree.parse(BytesIO(fed_page), parser)
-    teams = tree.xpath(
-        "//table/tr/td[text()='rank']" + \
-        "/parent::tr/parent::table//a/@href")
-    return ["http://www.eloratings.net/{}".format(team)
-        for team in teams]
 
-def get_games(url, data, headers, fieldnames, writer) -> None:
-  print("Getting games at: {}".format(url))
-  req = urllib.request.Request(url, data, headers)
+def main() -> None:
+  feds = {
+      "America",
+      "Africa",
+      "Asia",
+      "Europe",
+      "Oceania"}
+  fieldnames = [
+      "HomeTeam",
+      "AwayTeam",
+      "Date",
+      "Contest", 
+      "HomeGoals",
+      "AwayGoals",
+      "HomeGoalsFull",
+      "AwayGoalsFull",
+      "ExtraTimePossible",
+      "HomeAdvantage"]
+  filename = "matches-scrapped.csv"
+  url_home = "https://www.eloratings.net"
+  options = Options()
+  options.set_headless(headless=True)
+  teams = get_teams(feds, url_home, options)
 
-  with urllib.request.urlopen(req) as response:
-    team_page = response.read()
-    parser = etree.HTMLParser()
-    tree = etree.parse(BytesIO(team_page), parser)
-    element_games = tree.xpath("//tr[@class='nh']")
-   
-    for element_game in element_games:
-      get_game(element_game, fieldnames, writer)
+  with open(filename, "w") as csvfile:
+    writer = DictWriter(csvfile, delimiter=",", fieldnames=fieldnames, 
+        lineterminator="\n")
+    writer.writeheader()
+    get_games_for_all_teams(teams, url_home, fieldnames, options, writer)
 
-def get_game(element_game, fieldnames, writer) -> None:
-  month_day_str_list = element_game[0].text.split()
-  month_str = month_day_str_list[0]
+  df = pandas.read_csv(filename, encoding="iso-8859-1", header=0,
+      sep=",")
+  df.drop_duplicates(subset=None, inplace=True)
+  df.to_csv(filename, index=False)
 
-  if len(month_day_str_list) == 1 and month_str in month_to_int:
-    print("Game is missing day:")
-    print(etree.tostring(element_game, pretty_print=True))
-    day = 1
-  elif len(month_day_str_list) != 2:
-    print("Game is missing month and day:")
-    print(etree.tostring(element_game, pretty_print=True))
+def get_browser(options: "Options") -> "Webdriver":
+  return webdriver.Firefox(firefox_options=options)
+
+def get_teams(feds: set, url_home: str, options: "Options") -> set:
+  pattern = re.compile("^handleLink\(\'(.+)\'\); return false;$")
+  teams = set()
+
+  for fed in feds:
+    url_fed = os.path.join(url_home, fed)
+    browser = get_browser(options)
+    print("Read {}".format(url_fed))
+    browser.get(url_fed)
+    elements = browser.find_elements_by_xpath("//div/a[text()]")
+
+    for element in elements:
+      attribute_onclick = element.get_attribute("onclick")
+      match = pattern.match(attribute_onclick)
+
+      if not match:
+        print("Can't find team name in {}".format(attribute_onclick))
+        continue
+       
+      teams.add(match.group(1))
+    
+    browser.close()  
+
+  return teams
+
+def get_games_for_all_teams(teams: set, url_home: str, fieldnames: list,
+    options: "Options", writer: "DictWriter") -> None:
+  for team in teams:
+    get_games(team, url_home, options, writer)
+
+def get_games(team: set, url_home: str, fieldnames: list, options: "Options",
+    writer: "DictWriter") -> None:
+  url_team = os.path.join(url_home, team)
+  browser = get_browser(options)
+  print("Read {}".format(url_team))
+  browser.get(url_team)
+  elements_even = browser.find_elements_by_xpath(
+      "//div[@class='ui-widget-content slick-row even']")
+  elements_odd = browser.find_elements_by_xpath(
+      "//div[@class='ui-widget-content slick-row odd']")
+  elements = elements_even + elements_odd
+
+  for element in elements:
+    get_game(element, fieldnames, writer)
+
+def get_game(element: "FirefoxWebElement", fieldnames: list,
+    writer: "DictWriter") -> None:
+  data = element.text.split("\n")
+
+  if len(data) < DATA_LEN:
+    print("Missing fields in {}".format(data))
     return
-  else:
-    day = int(month_day_str_list[1])
+  elif len(data[0].split(" ")) < MONTH_DAY_LEN:
+    print("Missing day in {}".format(data))
+    return
 
-  month = month_to_int[month_str]
-  year = int(element_game[0][0].tail)
-  date_str = str(date(year, month, day))
-  home_team_name = element_game[1].text
-  away_team_name = element_game[1][0].tail
-  home_goals = int(element_game[2].text)
-  away_goals = int(element_game[2][0].tail)
-  contest = element_game[3].text
-  home_advantage = int(home_team_name in element_game[3][0].tail)
-  writer.writerow({
-      fieldnames[0]: home_team_name,
-      fieldnames[1]: away_team_name,
+  date = datetime.strptime(data[0] + " " + data[1], "%B %d %Y").date()
+  date_str = str(date)
+  home_team = unidecode(data[2])
+  away_team = unidecode(data[3])
+  home_goals = int(data[4])
+  away_goals = int(data[5])
+  contest = unidecode(data[6])
+  home_advantage = int(home_team in unidecode(data[7]))
+  row = {
+      fieldnames[0]: home_team,
+      fieldnames[1]: away_team,
       fieldnames[2]: date_str,
       fieldnames[3]: contest,
       fieldnames[4]: home_goals,
@@ -70,41 +127,13 @@ def get_game(element_game, fieldnames, writer) -> None:
       fieldnames[6]: home_goals,
       fieldnames[7]: away_goals,
       fieldnames[8]: 0,
-      fieldnames[9]: home_advantage})
+      fieldnames[9]: home_advantage}
+  writer.writerow(row)
+
+def write_to_file(contents: str, filename: str) -> None:
+  with open(filename, "wb") as f:
+    f.write(contents)
 
 
 if __name__ == "__main__":
-  month_to_int = {k: v for v, k in enumerate(month_name)}
-  user_agent = "Mozilla/5.0 (Windows NT 6.1; Win64; x64)"
-  values = {"language" : "Python"}
-  headers = {"User-Agent" : user_agent}
-  data = urllib.parse.urlencode(values)
-  data = data.encode("ascii")
-  urls_feds = [
-      "europe",
-      "america",
-      "africa",
-      "asia",
-      "oceania"]
-  filename = "matches-scrapped.csv"
-
-  with open(filename, "w") as csvfile:
-    fieldnames = ["HomeTeam", "AwayTeam", "Date", "Contest", 
-        "HomeGoals", "AwayGoals", "HomeGoalsFull", "AwayGoalsFull",
-        "ExtraTimePossible", "HomeAdvantage"]
-    writer = DictWriter(csvfile, delimiter=",", fieldnames=fieldnames, 
-        lineterminator="\n")
-    writer.writeheader()
-
-    for url_fed in urls_feds:
-      urls_teams = get_teams(
-          "http://www.eloratings.net/{}.html".format(url_fed),
-          data, headers)
-
-      for url_team in urls_teams:
-        get_games(url_team, data, headers, fieldnames, writer)
-
-  df = pandas.read_csv(filename, encoding="iso-8859-1", header=0,
-      sep=",")
-  df.drop_duplicates(subset=None, inplace=True)
-  df.to_csv(filename, index=False)
+  main()
