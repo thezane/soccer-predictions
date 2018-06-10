@@ -26,11 +26,11 @@ computeRNN <- function(rOptions, rOutput) {
         updateStrData <- updateStr(strPrereqs, rOptions, strNextNorm)
         game <- updateStrData[["game"]]
         tTree <- updateStrData[["tTree"]]
+        costData <- updateCost(rOptions, rOutput, gamePrediction, game, gamePrev)
+        rOutput <- costData[["rOutput"]]
+        game <- costData[["game"]]
       }
 
-      costData <- updateCost(rOptions, rOutput, gamePrediction, game, gamePrev)
-      rOutput <- costData[["rOutput"]]
-      game <- costData[["game"]]
       gDateList <- gTree[[game$gameDateStr]]
       gDateList[[game$gameNum]] <- game
       gTree[game$gameDateStr] <- gDateList
@@ -85,12 +85,7 @@ updateStr <- function(strPrereqs, rOptions, strNextNorm) {
 
 updateCost <- function(rOptions, rOutput, gamePrediction,
     game, gamePrev) {
-
-  if (!is.null(gamePrev) && gamePrev$year < game$year) {
-    rOutput <- updateStrMeanCosts.RatingsOutput(rOutput, game$dataset)
-  }
-
-  if (game$hasOutcome && (game$isRelevant || rOptions$isOptimized)) {
+  if (game$isRelevant || rOptions$isOptimized) {
     # Update cost of outcome
     resultExpected <- game$Ps
     resultActual <- game$outcome

@@ -23,8 +23,8 @@ trainRNN <- function(rData, outputPath) {
     file.remove(iterFile)
   }
 
-  fn <- constructRNNComputer(rData, iterFile, TRUE)
-  fi <- constructRNNComputer(rData, iterFile, FALSE)
+  fn <- constructComputer(rData, iterFile, TRUE)
+  fi <- constructComputer(rData, iterFile, FALSE)
   
   cores <- min(detectCores() - 1, n)
   cluster <- makeCluster(cores)

@@ -1,4 +1,4 @@
-constructRNNComputer <- function(rData, iterFile, enableWriteIter) {
+constructComputer <- function(rData, iterFile, enableWriteIter) {
   fn <- function(x, rData.=rData, iterFile.=iterFile,
       enableWriteIter.=enableWriteIter) {
     rData <- updateRNN(x, rData)
@@ -29,14 +29,11 @@ updateRNN <- function(x, rData) {
 
   # Compute cost
   goalsCosts <- computeGoalsCosts.RatingsOutput(rOutput)
-  strMeanCosts <- computeStrMeanCosts.RatingsOutput(rOutput)
   slopeCost <- rOptions$slopeCost
 
   # Print cost
   print(noquote(sprintf("rnnCostT = %f", goalsCosts[1])))
-  print(noquote(sprintf("strCostT = %f", strMeanCosts[1])))
   print(noquote(sprintf("rnnCostV = %f", goalsCosts[2])))
-  print(noquote(sprintf("strCostV = %f", strMeanCosts[2])))
   print(noquote(sprintf("slopeCost = %f", slopeCost)))
   rData[["rOptions"]] <- rOptions
   rData[["rOutput"]] <- rOutput
