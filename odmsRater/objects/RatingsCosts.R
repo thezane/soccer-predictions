@@ -19,10 +19,7 @@ updateGoalsCost.RatingsCosts <- function(rCosts, p, w) {
 
 updateTotalCost.RatingsCosts <- function(rCosts, rOptions) {
   rCosts$goalsCost <- computeGoalsCost.RatingsCosts(rCosts)
-  rCosts$strMeanCost <- rOptions$strMeanCostReg *
-      computeStrMeanCost.RatingsCosts(rCosts)
-  rCosts$totalCost <- rCosts$goalsCost + rCosts$strMeanCost +
-      rOptions$slopeCost
+  rCosts$totalCost <- rCosts$goalsCost + rOptions$slopeCost
   rCosts
 }
 
