@@ -18,12 +18,17 @@ computeRNN <- function(rOptions, rOutput) {
       tTree <- strPrereqs[["tTree"]]
       layerOutput <- rOptions$layersComputer(rOptions, game)
       gamePrediction <- layerOutput[["gamePrediction"]]
-      strNextNorm <- layerOutput[["strNextNorm"]]
-      updateStrData <- updateStr(strPrereqs, rOptions, strNextNorm)
-      game <- updateStrData[["game"]]
-      tTree <- updateStrData[["tTree"]]
-      costData <- updateCost(rOptions, rOutput, gamePrediction,
-          game, gamePrev)
+      game$Ps <- gamePrediction[["pWinTieLose"]]
+
+      if (game$hasOutcome) 
+      {
+        strNextNorm <- layerOutput[["strNextNorm"]]
+        updateStrData <- updateStr(strPrereqs, rOptions, strNextNorm)
+        game <- updateStrData[["game"]]
+        tTree <- updateStrData[["tTree"]]
+      }
+
+      costData <- updateCost(rOptions, rOutput, gamePrediction, game, gamePrev)
       rOutput <- costData[["rOutput"]]
       game <- costData[["game"]]
       gDateList <- gTree[[game$gameDateStr]]
@@ -51,11 +56,11 @@ constructStrPrereqs <- function(rOptions, game, tTree) {
   awayTeam <- tTree[[awayTeamName]]
 
   if (is.null(homeTeam)) {
-    print(homeTeamName)
+    print(c(homeTeamName, game$gameDateStr))
   }
   
   if (is.null(awayTeam)) {
-    print(awayTeamName)
+    print(c(awayTeamName, game$gameDateStr))
   }
 
   game <- updatePreRate.Game(game, rOptions, tTree,
@@ -85,12 +90,11 @@ updateCost <- function(rOptions, rOutput, gamePrediction,
     rOutput <- updateStrMeanCosts.RatingsOutput(rOutput, game$dataset)
   }
 
-  if (game$isRelevant || rOptions$isOptimized) {
+  if (game$hasOutcome && (game$isRelevant || rOptions$isOptimized)) {
     # Update cost of outcome
-    resultExpected <- gamePrediction[["pWinTieLose"]]
+    resultExpected <- game$Ps
     resultActual <- game$outcome
     game <- computeSSE.Game(game, resultExpected, resultActual)
-    game$Ps <- resultExpected
   
     # Update cost of goals
     p <- gamePrediction[["p"]]
@@ -100,11 +104,8 @@ updateCost <- function(rOptions, rOutput, gamePrediction,
     dataset <- game$dataset
     rOutput <- updateGoalsCost.RatingsOutput(rOutput, p, weightGame,
         dataset)
-    costData <- list(rOutput=rOutput, game=game)
-  }
-  else {
-    costData <- list(rOutput=rOutput, game=game)
   }
 
+  costData <- list(rOutput=rOutput, game=game)
   costData
 }

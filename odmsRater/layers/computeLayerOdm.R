@@ -2,7 +2,6 @@
 # rOptions.
 computeLayerOdm <- function(game, rOptions, meanGoals) {
   A <- constructA(game, rOptions, meanGoals)
-  A <- rOptions$b * A + rOptions$c
   teamStr <- exp(game$strNorm)
   a <- teamStr[, 1];
   d <- teamStr[, 2];
@@ -25,11 +24,10 @@ computeLayerOdm <- function(game, rOptions, meanGoals) {
 }
 
 constructA <- function(game, rOptions, meanGoals) {
-  goalsOdmHa <- game$goalsOdm
-  homeMeanGoals <- meanGoals[1]
-  awayMeanGoals <- meanGoals[2]
-  goalsOdmHa[1] <- (awayMeanGoals / homeMeanGoals) * goalsOdmHa[1]
-  A <- matrix(c(0, goalsOdmHa[2], goalsOdmHa[1], 0), 2, 2, TRUE)
+  goalsOdm <- game$goalsOdm
+  A <- matrix(c(0, goalsOdm[2], goalsOdm[1], 0), 2, 2, TRUE)
+  A <- rOptions$b * A + rOptions$c
+  A[2, 1] <- (meanGoals[2] / meanGoals[1]) * A[2, 1]
   A
 }
 

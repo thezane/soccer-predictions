@@ -65,7 +65,7 @@ new.RatingsOptions <- function() {
     isFullTime=FALSE,
     isOptimized=FALSE,
     iterName="odms-iter",
-    minUpdatesUntilReliable=30,
+    minUpdatesUntilReliable=20,
     odmIter=1,
     pGoalsMatSizeBase=20,
     writeName="odms-matches",
