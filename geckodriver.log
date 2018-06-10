@@ -19027,3 +19027,19 @@ Unable to read VR Path Registry from C:\Users\User\AppData\Local\openvr\openvrpa
 Unable to read VR Path Registry from C:\Users\User\AppData\Local\openvr\openvrpaths.vrpath
 1528655177705	Marionette	INFO	Listening on port 56616
 1528655178418	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 8316, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4808, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4808[Parent 8316, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9132, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9[Parent 8316, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8240, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1528655348146	geckodriver	INFO	geckodriver 0.20.1
+1528655348177	geckodriver	INFO	Listening on 127.0.0.1:57594
+1528655351209	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-profile" "C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofile.0EHCB0fSavec"
+*** You are running in headless mode.
+Unable to read VR Path Registry from C:\Users\User\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User\AppData\Local\openvr\openvrpaths.vrpath
+1528655357983	Marionette	INFO	Listening on port 57602
+1528655358721	Marionette	WARN	TLS certificate errors will be ignored for this session
