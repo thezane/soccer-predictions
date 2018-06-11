@@ -50,7 +50,6 @@ handleFederation.Change <- function(change, tTree) {
   fNameNew <- change$change
   team <- tTree[[teamName]]
   team$fName <- fNameNew
-  team$numUpdates <- 0
   tTree[[teamName]] <- team
   tTree
 }

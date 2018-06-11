@@ -57,10 +57,9 @@ def get_browser(url: str, options: "Options") -> "Webdriver":
     try:
       browser = webdriver.Firefox(firefox_options=options)
       browser.get(url)
+      break
     except Exception as e:
       print(str(e))
-    finally:
-      break
 
   return browser
 
@@ -69,10 +68,9 @@ def get_elements_by_xpath(browser: "Webdriver", xpath: str) -> list:
     try:
       wait = WebDriverWait(browser, WAIT_SECS)
       elements = wait.until(EC.presence_of_all_elements_located((By.XPATH, xpath)))
+      break
     except Exception as e:
       print(str(e))
-    finally:
-      break  
 
   return elements
 
