@@ -1,7 +1,10 @@
 from csv import DictWriter
 from datetime import datetime
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from unidecode import unidecode
 import os
 import pandas
@@ -12,7 +15,7 @@ import pdb
 
 DATA_LEN = 16
 MONTH_DAY_LEN = 2
-
+WAIT_SECS = 10
 
 def main() -> None:
   feds = {
@@ -50,9 +53,28 @@ def main() -> None:
   df.to_csv(filename, index=False)
 
 def get_browser(url: str, options: "Options") -> "Webdriver":
-  browser = webdriver.Firefox(firefox_options=options)
-  browser.get(url)
+  while True:
+    try:
+      browser = webdriver.Firefox(firefox_options=options)
+      browser.get(url)
+    except Exception as e:
+      print(str(e))
+    finally:
+      break
+
   return browser
+
+def get_elements_by_xpath(browser: "Webdriver", xpath: str) -> list:
+  while True:
+    try:
+      wait = WebDriverWait(browser, WAIT_SECS)
+      elements = wait.until(EC.presence_of_all_elements_located((By.XPATH, xpath)))
+    except Exception as e:
+      print(str(e))
+    finally:
+      break  
+
+  return elements
 
 def get_teams(feds: set, url_home: str, options: "Options") -> set:
   pattern = re.compile("^handleLink\(\'(.+)\'\); return false;$")
@@ -62,7 +84,7 @@ def get_teams(feds: set, url_home: str, options: "Options") -> set:
     url_fed = os.path.join(url_home, fed)
     print("Read {}".format(url_fed))
     browser = get_browser(url_fed, options)
-    elements = browser.find_elements_by_xpath("//div/a[text()]")
+    elements = get_elements_by_xpath(browser, "//div/a[text()]")
 
     for element in elements:
       attribute_onclick = element.get_attribute("onclick")
@@ -74,7 +96,7 @@ def get_teams(feds: set, url_home: str, options: "Options") -> set:
        
       teams.add(match.group(1)) 
 
-  browser.close()
+  browser.quit()
   return teams
 
 def get_games_for_all_teams(teams: set, url_home: str, fieldnames: list,
@@ -92,9 +114,9 @@ def get_games(team: str, url_home: str, fieldnames: list, options: "Options",
   url_team = os.path.join(url_home, team)
   print("Read {} for team {} / {}".format(url_team, team_number, num_teams))
   browser = get_browser(url_team, options)
-  elements_even = browser.find_elements_by_xpath(
+  elements_even = get_elements_by_xpath(browser,
       "//div[@class='ui-widget-content slick-row even']")
-  elements_odd = browser.find_elements_by_xpath(
+  elements_odd = get_elements_by_xpath(browser,
       "//div[@class='ui-widget-content slick-row odd']")
   elements = elements_even + elements_odd
   num_games = 0
@@ -104,7 +126,7 @@ def get_games(team: str, url_home: str, fieldnames: list, options: "Options",
       num_games += 1
 
   print("Found {} / {} games for {}".format(num_games, len(elements), team))
-  browser.close()
+  browser.quit()
 
 def get_game(element: "FirefoxWebElement", fieldnames: list,
     writer: "DictWriter") -> bool:
