@@ -19,7 +19,7 @@ new.RatingsOptions <- function() {
     theta=1,
     
     # Mixture layer
-    tieBias=-2.8,
+    tieBias=-3.2,
     tieBeta=-0.8,  
 
     # Lower bounds for optimizable parameters
