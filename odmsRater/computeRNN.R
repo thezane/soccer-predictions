@@ -18,19 +18,13 @@ computeRNN <- function(rOptions, rOutput) {
       tTree <- strPrereqs[["tTree"]]
       layerOutput <- rOptions$layersComputer(rOptions, game)
       gamePrediction <- layerOutput[["gamePrediction"]]
-      game$Ps <- gamePrediction[["pWinTieLose"]]
-
-      if (game$hasOutcome) 
-      {
-        strNextNorm <- layerOutput[["strNextNorm"]]
-        updateStrData <- updateStr(strPrereqs, rOptions, strNextNorm)
-        game <- updateStrData[["game"]]
-        tTree <- updateStrData[["tTree"]]
-        costData <- updateCost(rOptions, rOutput, gamePrediction, game, gamePrev)
-        rOutput <- costData[["rOutput"]]
-        game <- costData[["game"]]
-      }
-
+      strNextNorm <- layerOutput[["strNextNorm"]]
+      updateStrData <- updateStr(strPrereqs, rOptions, strNextNorm)
+      game <- updateStrData[["game"]]
+      tTree <- updateStrData[["tTree"]]
+      costData <- updateCost(rOptions, rOutput, gamePrediction, game, gamePrev)
+      rOutput <- costData[["rOutput"]]
+      game <- costData[["game"]]
       gDateList <- gTree[[game$gameDateStr]]
       gDateList[[game$gameNum]] <- game
       gTree[game$gameDateStr] <- gDateList
@@ -85,6 +79,8 @@ updateStr <- function(strPrereqs, rOptions, strNextNorm) {
 
 updateCost <- function(rOptions, rOutput, gamePrediction,
     game, gamePrev) {
+  game$Ps <- gamePrediction[["pWinTieLose"]]
+
   if (game$isRelevant || rOptions$isOptimized) {
     # Update cost of outcome
     resultExpected <- game$Ps

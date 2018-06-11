@@ -79,32 +79,40 @@ def get_teams(feds: set, url_home: str, options: "Options") -> set:
 
 def get_games_for_all_teams(teams: set, url_home: str, fieldnames: list,
     options: "Options", writer: "DictWriter") -> None:
-  for team in teams:
-    get_games(team, url_home, fieldnames, options, writer)
+  num_teams = len(teams)
+  team_number = 1
 
-def get_games(team: set, url_home: str, fieldnames: list, options: "Options",
-    writer: "DictWriter") -> None:
+  for team in teams:
+    get_games(team, url_home, fieldnames, options, writer,
+        team_number, num_teams)
+    team_number += 1
+
+def get_games(team: str, url_home: str, fieldnames: list, options: "Options",
+    writer: "DictWriter", team_number: int, num_teams: int) -> None:
   url_team = os.path.join(url_home, team)
-  print("Read {}".format(url_team))
+  print("Read {} for team {} / {}".format(url_team, team_number, num_teams))
   browser = get_browser(url_team, options)
   elements_even = browser.find_elements_by_xpath(
       "//div[@class='ui-widget-content slick-row even']")
   elements_odd = browser.find_elements_by_xpath(
       "//div[@class='ui-widget-content slick-row odd']")
   elements = elements_even + elements_odd
+  num_games = 0
 
   for element in elements:
-    get_game(element, fieldnames, writer)
+    if (get_game(element, fieldnames, writer)):
+      num_games += 1
 
+  print("Found {} / {} games for {}".format(num_games, len(elements), team))
   browser.close()
 
 def get_game(element: "FirefoxWebElement", fieldnames: list,
-    writer: "DictWriter") -> None:
+    writer: "DictWriter") -> bool:
   data = element.text.split("\n")
 
   if len(data) < DATA_LEN:
     print("Missing fields in {}".format(unidecode(str(data))))
-    return
+    return False
   elif len(data[0].split(" ")) < MONTH_DAY_LEN:
     data[0] += " 1"
 
@@ -128,6 +136,7 @@ def get_game(element: "FirefoxWebElement", fieldnames: list,
       fieldnames[8]: 0,
       fieldnames[9]: home_advantage}
   writer.writerow(row)
+  return True
 
 def write_to_file(contents: str, filename: str) -> None:
   with open(filename, "wb") as f:
