@@ -15,7 +15,7 @@ import pdb
 
 DATA_LEN = 16
 MONTH_DAY_LEN = 2
-WAIT_SECS = 10
+WAIT_SECS = 30
 
 def main() -> None:
   feds = {
@@ -64,15 +64,13 @@ def get_browser(url: str, options: "Options") -> "Webdriver":
   return browser
 
 def get_elements_by_xpath(browser: "Webdriver", xpath: str) -> list:
-  while True:
-    try:
-      wait = WebDriverWait(browser, WAIT_SECS)
-      elements = wait.until(EC.presence_of_all_elements_located((By.XPATH, xpath)))
-      break
-    except Exception as e:
-      print(str(e))
-
-  return elements
+  try:
+    wait = WebDriverWait(browser, WAIT_SECS)
+    elements = wait.until(EC.presence_of_all_elements_located((By.XPATH, xpath)))
+    return elements
+  except Exception as e:
+    print(str(e))
+    return []
 
 def get_teams(feds: set, url_home: str, options: "Options") -> set:
   pattern = re.compile("^handleLink\(\'(.+)\'\); return false;$")

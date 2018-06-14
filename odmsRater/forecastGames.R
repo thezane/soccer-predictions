@@ -18,7 +18,6 @@ forecastGames <- function(rData) {
       stringsAsFactors=FALSE)
   T <- T[order(as.Date(T[["Date"]], format=dateFormat)), ]
   colNames = c("HomeStrAgg", "AwayStrAgg",
-      "HomeStrAtk", "HomeStrDef", "AwayStrAtk", "AwayStrDef",
       "HomeWin", "Tie", "AwayWin")
   T[colNames] <- 0
   n <- nrow(T)
@@ -36,10 +35,6 @@ forecastGames <- function(rData) {
     pWinTieLose <- gamePrediction[["pWinTieLose"]]
     T[i, "HomeStrAgg"] <- homeTeam$strAgg
     T[i, "AwayStrAgg"] <- awayTeam$strAgg
-    T[i, "HomeStrAtk"] <- homeTeam$strNormBeta[1]
-    T[i, "HomeStrDef"] <- homeTeam$strNormBeta[2]
-    T[i, "AwayStrAtk"] <- awayTeam$strNormBeta[1]
-    T[i, "AwayStrDef"] <- awayTeam$strNormBeta[2]
     T[i, "HomeWin"] <- pWinTieLose[1]
     T[i, "Tie"] <- pWinTieLose[2]
     T[i, "AwayWin"] <- pWinTieLose[3]
