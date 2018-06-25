@@ -1,6 +1,22 @@
 "HomeTeam","AwayTeam","Date","Contest","HomeGoals","AwayGoals","HomeGoalsFull","AwayGoalsFull","ExtraTimePossible","HomeAdvantage"
+"Colombia","Poland","2018-06-24","World Cup",3,0,3,0,0,0
+"England","Panama","2018-06-24","World Cup",6,1,6,1,0,0
+"Japan","Senegal","2018-06-24","World Cup",2,2,2,2,0,0
+"Belgium","Tunisia","2018-06-23","World Cup",5,2,5,2,0,0
+"Germany","Sweden","2018-06-23","World Cup",2,1,2,1,0,0
+"Mexico","South Korea","2018-06-23","World Cup",2,1,2,1,0,0
+"Brazil","Costa Rica","2018-06-22","World Cup",2,0,2,0,0,0
+"Nigeria","Iceland","2018-06-22","World Cup",2,0,2,0,0,0
+"Switzerland","Serbia","2018-06-22","World Cup",2,1,2,1,0,0
+"Croatia","Argentina","2018-06-21","World Cup",3,0,3,0,0,0
+"Denmark","Australia","2018-06-21","World Cup",1,0,1,0,0,0
+"France","Peru","2018-06-21","World Cup",1,0,1,0,0,0
+"Portugal","Morocco","2018-06-20","World Cup",1,0,1,0,0,0
+"Spain","Iran","2018-06-20","World Cup",1,0,1,0,0,0
+"Uruguay","Saudi Arabia","2018-06-20","World Cup",1,0,1,0,0,0
 "Japan","Colombia","2018-06-19","World Cup",2,1,2,1,0,0
 "Senegal","Poland","2018-06-19","World Cup",2,1,2,1,0,0
+"Russia","Egypt","2018-06-19","World Cup",3,1,3,1,0,1
 "Sweden","South Korea","2018-06-18","World Cup",1,0,1,0,0,0
 "Belgium","Panama","2018-06-18","World Cup",3,0,3,0,0,0
 "England","Tunisia","2018-06-18","World Cup",2,1,2,1,0,0
@@ -10,7 +26,7 @@
 "Denmark","Peru","2018-06-16","World Cup",1,0,1,0,0,0
 "France","Australia","2018-06-16","World Cup",2,1,2,1,0,0
 "Argentina","Iceland","2018-06-16","World Cup",1,1,1,1,0,0
-"Croatia","Nigeria","2018-06-16","World Cup",2,1,2,1,0,0
+"Croatia","Nigeria","2018-06-16","World Cup",2,0,2,0,0,0
 "Uruguay","Egypt","2018-06-15","World Cup",1,0,1,0,0,0
 "Iran","Morocco","2018-06-15","World Cup",1,0,1,0,0,0
 "Portugal","Spain","2018-06-15","World Cup",3,3,3,3,0,0
